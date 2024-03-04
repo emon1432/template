@@ -1,0 +1,2123 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+   <title>Creote - Just another Html template</title>
+   <!-- Fav Icon -->
+   <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+   <!-- Fav Icon -->
+   <!-- Google Fonts -->
+   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Spartan%3A400%2C500%2C600%2C700%2C800%2C900%7CInter%3A300%2C400%2C500%2C600%2C700%2C800%2C900&amp;subset=latin%2Clatin-ext' type='text/css' media='all' />
+   <!-- Google Fonts -->
+   <!-- Style -->
+   <link rel='stylesheet' href='assets/css/bootstrap.min.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/owl.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/swiper.min.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/jquery.fancybox.min.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/icomoon.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/flexslider.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/font-awesome.min.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/style.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/scss/elements/theme-css.css' type='text/css' media='all' />
+   <link rel='stylesheet' id="creote-color-switcher-css" href='assets/css/scss/elements/color-switcher/color.css' type='text/css' media='all' />
+   <!-- Style-->
+   <!----woocommerce---->
+   <link rel='stylesheet' href='assets/css/woocommerce-layout.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/woocommerce.css' type='text/css' media='all' />
+   <!----woocommerce---->
+</head>
+<body class="home theme-creote page-home-default-one">
+   <div id="page" class="page_wapper hfeed site">
+      <div class="style-switcher">
+         <a href="#" id="switcher-toggler"><i class="fa fa-cog"></i></a>
+         <h3>Color Skins</h3>
+         <ul id="colorschemeOptions" title="Switch Color" data-css-path="assets/css/scss/elements/color-switcher/">
+            <li>
+               <a href="#" data-theme="color" style="background-color: #078586;"> </a>
+            </li>
+            <li>
+               <a href="#" data-theme="color1" style="background-color: #e5102a;"> </a>
+            </li>
+            <li>
+               <a href="#" data-theme="color2" style="background-color: #3ead3c;"> </a>
+            </li>
+            <li>
+               <a href="#" data-theme="color3" style="background-color: #fed000;"> </a>
+            </li>
+            <li>
+               <a href="#" data-theme="color4" style="background-color: #ff5538;"> </a>
+            </li>
+            <li>
+               <a href="#" data-theme="color5" style="background-color: #246af4;"> </a>
+            </li>
+         </ul>
+      </div>
+      <div id="wrapper_full" class="content_all_warpper">
+         <!----page-header----->
+         <div class="mini_cart_togglers fixed_cart">
+            <div class="mini-cart-count">
+               0
+            </div>
+            <i class="icon-shopping-cart"></i>
+         </div>
+         <!----preloader----->
+         <div class="preloader-wrap">
+            <div class="preloader" style="background-image:url(assets/images/preloader.gif)">
+            </div>
+            <div class="overlay"></div>
+         </div>
+         <!----preloader end----->
+         <!----header----->
+         <div class="header_area" id="header_contents">
+            <header class="header header_default style_three">
+               <div class="header_mid">
+                  <div class="medium-container">
+                     <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-2 col-md-12">
+                           <div class="logo mid_logo_icon">
+                              <a href="index.html" class="logo_mid">
+                                 <img src="assets/images/logo-default.png" alt="Creote Elementor" class="logo_default">
+                              </a>
+                           </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-10 col-md-12 hidden-sm">
+                           <div class="row">
+                              <div class="col-lg-4 same_column">
+                                 <div class="mid_content one">
+                                    <span class=" icon-deadline mid_icon"></span>
+                                    <div class="text">
+                                       <h4> 8:00AM - 6:00PM</h4>
+                                       <p>Monday to Saturday</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-4 same_column">
+                                 <div class="mid_content one">
+                                    <span class=" icon-24-hours mid_icon"></span>
+                                    <div class="text">
+                                       <h4> Online Services 24/7</h4>
+                                       <p>+1221234567</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-4 same_column">
+                                 <div class="mid_content one">
+                                    <span class=" icon-location mid_icon"></span>
+                                    <div class="text">
+                                       <h4> 219 Amara Fort Apt. 394</h4>
+                                       <p>New York, NY 941</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="navbar_outer mod_btn_enable get_sticky_header">
+                  <div class="medium-container">
+                     <div class="row align-items-center">
+                        <div class="col-lg-12 menu_column">
+                           <div class="navbar_togglers hamburger_menu">
+                              <span class="line"></span>
+                              <span class="line"></span>
+                              <span class="line"></span>
+                           </div>
+                           <div class="header_content_collapse">
+                              <div class="header_menu_box">
+                                 <div class="modal_box_buttom">
+                                    <button type="button" class="contact-toggler"><i class="icon-bar"></i></button>
+                                 </div>
+                                 <div class="navigation_menu">
+                                    <ul id="myNavbar" class="navbar_nav">
+                                       <li
+                                          class="menu-item  menu-item-has-children dropdown active dropdown_full position-static mega_menu nav-item">
+                                          <a href="index.html" class="dropdown-toggle nav-link">
+                                             <span>Home</span>
+                                          </a>
+                                          <ul class="dropdown-menu width_60_percentage">
+                                             <li>
+                                                <div class="row">
+                                                   <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                                                      <div class="list_item_box style_one">
+                                                         <ul>
+                                                            <li>
+                                                               <small class="d-flex align-items-center">
+                                                                  <i class="icon-home only_icon"></i>
+                                                                  <a class="nav_link" href="index.html">Home Page - 01</a>
+                                                               </small>
+                                                            </li>
+                                                            <li>
+                                                               <small class="d-flex align-items-center">
+                                                                  <i class="icon-home only_icon"></i>
+                                                                  <a class="nav_link" href="home-2.html">Home Page - 02</a>
+                                                               </small>
+                                                            </li>
+                                                            <li>
+                                                               <small class="d-flex align-items-center">
+                                                                  <i class="icon-home only_icon"></i>
+                                                                  <a class="nav_link" href="home-3.html">Home Page - 03</a>
+                                                               </small>
+                                                            </li>
+                                                            <li>
+                                                               <small class="d-flex align-items-center">
+                                                                  <i class="icon-home only_icon"></i>
+                                                                  <a class="nav_link" href="home-4.html">Home Page - 04</a>
+                                                               </small>
+                                                            </li>
+   
+                                                         </ul>
+                                                      </div>
+                                                   </div>
+                                                   <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                                                      <div class="list_item_box style_one">
+                                                         <ul>
+                                                            <li>
+                                                               <small class="d-flex align-items-center">
+                                                                 <i class="icon-home only_icon"></i>
+                                                                  <a class="nav_link" href="home-5.html">Home Page - 05</a>
+                                                               </small>
+                                                            </li>
+                                                            <li>
+                                                               <small class="d-flex align-items-center">
+                                                                  <i class="icon-home only_icon"></i>
+                                                                  <a class="nav_link" href="home-6.html">Home Page - 06</a>
+                                                               </small>
+                                                            </li>
+                                                            <li>
+                                                               <small class="d-flex align-items-center">
+                                                                  <i class="icon-home only_icon"></i>
+                                                                  <a class="nav_link" href="home-7.html">Home Page - 07</a>
+                                                               </small>
+                                                            </li>
+                                                            <li>
+                                                               <small class="d-flex align-items-center">
+                                                                  <i class="icon-home only_icon"></i>
+                                                                  <a class="nav_link" href="home-8.html">Home Page - 08</a>
+                                                               </small>
+                                                            </li>
+                                                         </ul>
+                                                      </div>
+                                                   </div>
+                                                   <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                                                      <div class="list_item_box style_one">
+                                                         <ul>
+   
+                                                            <li>
+                                                               <small class="d-flex align-items-center">
+                                                                  <i class="icon-home only_icon"></i>
+                                                                  <a class="nav_link" href="home-9.html">Home Page - 09</a>
+                                                               </small>
+                                                            </li>
+                                                            <li>
+                                                               <small class="d-flex align-items-center">
+                                                                  <i class="icon-home only_icon"></i>
+                                                                  <a class="nav_link" href="home-10.html">Home Page - 10</a>
+                                                               </small>
+                                                            </li>
+                                                            <li>
+                                                               <small class="d-flex align-items-center">
+                                                                  <i class="icon-home only_icon"></i>
+                                                                  <a class="nav_link" href="home-11.html">Home Page - 11</a>
+                                                               </small>
+                                                            </li>
+                                                            <li>
+                                                               <small class="d-flex align-items-center">
+                                                                  <i class="icon-home only_icon"></i>
+                                                                  <a class="nav_link" href="home-12.html">Home Page - 12</a>
+                                                               </small>
+                                                            </li>
+                                                         </ul>
+                                                      </div>
+                                                   </div>
+                                                   <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                                                      <div class="list_item_box style_one">
+                                                         <ul>
+                                                            <li>
+                                                               <small class="d-flex align-items-center">
+                                                                  <i class="icon-home only_icon"></i>
+                                                                  <a class="nav_link" href="home-13.html">Home Page - 13</a>
+                                                               </small>
+                                                            </li>
+                                                            <li>
+                                                               <small class="d-flex align-items-center">
+                                                                  <i class="icon-home only_icon"></i>
+                                                                  <a class="nav_link" href="home-14.html">Home Page - 14</a>
+                                                               </small>
+                                                            </li>
+                                                            <li>
+                                                               <small class="d-flex align-items-center">
+                                                                  <i class="icon-home only_icon"></i>
+                                                                  <a class="nav_link" href="home-15.html">Home Page - 15</a>
+                                                               </small>
+                                                            </li>
+                                                            <li>
+                                                               <small class="d-flex align-items-center">
+                                                                  <i class="icon-home only_icon"></i>
+                                                                  <a class="nav_link" href="home-16.html">Home Page - 16</a>
+                                                               </small>
+                                                            </li>
+   
+                                                         </ul>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </li>
+                                          </ul>
+                                       </li>
+                                       <li
+                                          class="menu-item menu-item-has-children dropdown nav-item">
+                                          <a href="#" class="dropdown-toggle nav-link">
+                                             <span>Pages</span>
+                                          </a>
+                                          <ul class="dropdown-menu">
+                                             <li class="menu-item  nav-item">
+                                                <a href="about-us.html" class="dropdown-item nav-link">
+                                                   <span>About Us</span>
+                                                </a>
+                                             </li>
+                                             <li
+                                                class="menu-item menu-item-has-children dropdown nav-item">
+                                                <a href="service-default.html"
+                                                   class="dropdown-item nav-link"><span>Service</span></a>
+                                                <ul class="dropdown-menu">
+                                                   <li
+                                                      class="menu-item  nav-item">
+                                                      <a href="service-classic.html" class="dropdown-item nav-link">
+                                                         <span>Service Classic</span>
+                                                      </a>
+                                                   </li>
+                                                   <li
+                                                      class="menu-item  nav-item">
+                                                      <a href="service-default.html" class="dropdown-item nav-link">
+                                                         <span>Service Default</span>
+                                                      </a>
+                                                   </li>
+                                                   <li
+                                                      class="menu-item nav-item">
+                                                      <a href="service-details.html" class="dropdown-item nav-link">
+                                                         <span>Service Details</span>
+                                                      </a>
+                                                   </li>
+                                                </ul>
+                                             </li>
+                                             <li class="menu-item  nav-item">
+                                                <a href="pricing-packages.html" class="dropdown-item nav-link">
+                                                   <span>Pricing Packages</span>
+                                                </a>
+                                             </li>
+                                             <li class="menu-item  nav-item">
+                                                <a href="our-team.html" class="dropdown-item nav-link">
+                                                   <span>Our Team</span>
+                                                </a>
+                                             </li>
+                                             <li class="menu-item  nav-item">
+                                                <a href="faqs.html" class="dropdown-item nav-link">
+                                                   <span>Faq’s</span>
+                                                </a>
+                                             </li>
+                                             <li class="menu-item  nav-item">
+                                                <a href="contact.html" class="dropdown-item nav-link">
+                                                   <span>Contact</span>
+                                                </a>
+                                             </li>
+                                             <li class="menu-item  nav-item">
+                                                <a href="coming-soon.html" class="dropdown-item nav-link">
+                                                   <span>Coming Soon</span>
+                                                </a>
+                                             </li>
+                                          </ul>
+                                       </li>
+                                       <li class="menu-item menu-item-has-children dropdown dropdown_full position-static mega_menu nav-item">
+                                          <a href="#"
+                                             class="dropdown-toggle nav-link"><span>Elements</span></a>
+                                          <ul class="dropdown-menu width_60_percentage">
+                                             <li>
+                                                <div class="row">
+                                                   <div class="col-lg-2 m_column">
+                                                      <h5>Content 01</h5>
+                                                      <div class="list_item_box style_one">
+                                                         <ul>
+                                                            <li><a href="elements/testimonial.html">Testimonial</a></li>
+                                                            <li><a href="elements/call-to-action.html">Contact List</a></li>
+                                                            <li><a href="elements/video-button.html">Video Button</a></li>
+                                                            <li><a href="elements/newsteller.html">Newsteller</a></li>
+                                                            <li><a href="elements/blog-posts.html">Blog Posts</a></li>
+                                                            <li><a href="elements/team.html">Team</a></li>
+                                                         </ul>
+                                                      </div>
+                                                   </div>
+                                                   <div class="col-lg-2 m_column">
+                                                      <h5>Content 02</h5>
+                                                      <div class="list_item_box style_one">
+                                                         <ul>
+                                                            <li><a href="elements/process.html">Process</a></li>
+                                                            <li><a href="elements/project-carousel.html">Project Carousel</a></li>
+                                                            <li><a href="elements/project-filter.html">Project Filter</a></li>
+                                                            <li><a href="elements/progress-bar.html">Progress Bar</a></li>
+                                                            <li><a href="elements/content-box.html">Content Box</a></li>
+                                                            <li><a href="elements/faqs-elements.html">Faq’s</a></li>
+                                                         </ul>
+                                                      </div>
+                                                   </div>
+                                                   <div class="col-lg-2 m_column">
+                                                      <h5>Presentational</h5>
+                                                      <div class="list_item_box style_one">
+                                                         <ul>
+                                                            <li><a href="elements/button.html">Button</a></li>
+                                                            <li><a href="elements/list-items.html">List Items</a></li>
+                                                            <li><a href="elements/contact-form.html">Contact Form</a></li>
+                                                            <li><a href="elements/service-post.html">Service Post</a></li>
+                                                            <li><a href="elements/sliders.html">Sliders</a></li>
+                                                            <li><a href="elements/tabs.html">Tabs</a></li>
+                                                         </ul>
+                                                      </div>
+                                                   </div>
+                                                   <div class="col-lg-2 m_column">
+                                                      <h5>Typography</h5>
+                                                      <div class="list_item_box style_one">
+                                                         <ul>
+                                                            <li><a href="elements/call-to-action.html">Call to Action</a></li>
+                                                            <li><a href="elements/extra-content.html">Extra Content</a></li>
+                                                            <li><a href="elements/simple-image.html">Simple Image</a></li>
+                                                            <li><a href="elements/client-image.html">Client Image</a></li>
+                                                            <li><a href="elements/price-plan.html">Price Plan</a></li>
+                                                            <li><a href="elements/title.html">Title</a></li>
+                                                         </ul>
+                                                      </div>
+                                                   </div>
+                                                   <div class="col-lg-2 m_column">
+                                                      <h5>Basic</h5>
+                                                      <div class="list_item_box style_one">
+                                                         <ul>
+                                                            <li><a href="elements/service-box.html">Service Box</a></li>
+                                                            <li><a href="elements/count-down.html">Count Down</a></li>
+                                                            <li><a href="elements/timeline.html">Time Line</a></li>
+                                                            <li><a href="elements/contact-box.html">Contact Box</a></li>
+                                                         </ul>
+                                                      </div>
+                                                   </div>
+                                                   <div class="col-lg-2 m_column">
+                                                      <h5>Infographic</h5>
+                                                      <div class="list_item_box style_one">
+                                                         <ul>
+                                                            <li><a href="elements/image-box.html">Image Box</a></li>
+                                                            <li><a href="elements/icon-box.html">Icon Box</a></li>
+                                                            <li><a href="elements/fun-facts.html">Fun Facts</a></li>
+                                                            <li><a href="elements/quotes.html">Quotes</a></li>
+                                                         </ul>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </li>
+                                          </ul>
+                                       </li>
+                                       <li
+                                          class="menu-item menu-item-has-children dropdown nav-item">
+                                          <a href="blog.html" class="dropdown-toggle nav-link">
+                                             <span>Blog</span>
+                                          </a>
+                                          <ul class="dropdown-menu">
+                                             <li class="menu-item nav-item">
+                                                <a href="blog.html" class="dropdown-item nav-link">
+                                                   <span>Blog Classic</span>
+                                                </a>
+                                             </li>
+                                             <li class="menu-item  nav-item">
+                                                <a href="blog-modern.html" class="dropdown-item nav-link">
+                                                   <span>Blog Modern</span>
+                                                </a>
+                                             </li>
+                                             <li class="menu-item  nav-item">
+                                                <a href="blog-simple.html" class="dropdown-item nav-link">
+                                                   <span>Blog Simple</span>
+                                                </a>
+                                             </li>
+                                             <li class="menu-item  nav-item">
+                                                <a href="blog-list-view.html" class="dropdown-item nav-link">
+                                                   <span>Blog List View</span>
+                                                </a>
+                                             </li>
+                                             <li class="menu-item  nav-item">
+                                                <a href="blog-metro-fullwidth.html" class="dropdown-item nav-link">
+                                                   <span>Metro Fullwidth</span>
+                                                </a>
+                                             </li>
+                                             <li class="menu-item nav-item">
+                                                <a href="blog-single.html" class="dropdown-item nav-link">
+                                                   <span>Single Post</span>
+                                                </a>
+                                             </li>
+                                          </ul>
+                                       </li>
+                                       <li
+                                          class="menu-item menu-item-has-children dropdown nav-item">
+                                          <a href="project-1-column-grid.html" class="dropdown-toggle nav-link">
+                                             <span>Projects</span>
+                                          </a>
+                                          <ul class="dropdown-menu">
+                                             <li class="menu-item  nav-item">
+                                                <a href="project-1-column-grid.html" class="dropdown-item nav-link">
+                                                   <span>1 Column Grid</span>
+                                                </a>
+                                             </li>
+                                             <li class="menu-item  nav-item">
+                                                <a href="project-1-column-with-sidebar.html"
+                                                   class="dropdown-item nav-link">
+                                                   <span>1 Column With Sidebar</span>
+                                                </a>
+                                             </li>
+                                             <li class="menu-item  nav-item">
+                                                <a href="project-2-column-grid.html" class="dropdown-item nav-link">
+                                                   <span>2 Columns Grid</span>
+                                                </a>
+                                             </li>
+                                             <li class="menu-item  nav-item">
+                                                <a href="project-3-column-grid.html" class="dropdown-item nav-link">
+                                                   <span>3 Columns Grid</span>
+                                                </a>
+                                             </li>
+                                             <li class="menu-item  nav-item">
+                                                <a href="project-3-column-overlay.html" class="dropdown-item nav-link">
+                                                   <span>3 Columns Overlay</span>
+                                                </a>
+                                             </li>
+                                             <li class="menu-item nav-item">
+                                                <a href="project-details.html" class="dropdown-item nav-link">
+                                                   <span>Project Details</span>
+                                                </a>
+                                             </li>
+                                          </ul>
+                                       </li>
+                                       <li
+                                          class="menu-item  menu-item-has-children dropdown nav-item">
+                                          <a href="shop.html" class="dropdown-toggle nav-link">
+                                             <span>Shop</span>
+                                          </a>
+                                          <ul class="dropdown-menu">
+                                             <li class="menu-item  nav-item">
+                                                <a href="shop.html" class="dropdown-item nav-link">
+                                                   <span>Products</span>
+                                                </a>
+                                             </li>
+                                             <li class="menu-item nav-item">
+                                                <a href="shop-details.html" class="dropdown-item nav-link">
+                                                   <span>Product Details</span>
+                                                </a>
+                                             </li>
+                                             <li class="menu-item nav-item">
+                                                <a href="shop-with-sidebar.html" class="dropdown-item nav-link">
+                                                   <span>Product With Sidebar</span>
+                                                </a>
+                                             </li>
+                                             <li class="menu-item  nav-item">
+                                                <a href="my-account.html" class="dropdown-item nav-link">
+                                                   <span>My account</span>
+                                                </a>
+                                             </li>
+                                             <li class="menu-item  nav-item">
+                                                <a href="checkout.html" class="dropdown-item nav-link">
+                                                   <span>Checkout</span>
+                                                </a>
+                                             </li>
+                                             <li class="menu-item  nav-item">
+                                                <a href="cart.html" class="dropdown-item nav-link">
+                                                   <span>Cart</span>
+                                                </a>
+                                             </li>
+                                          </ul>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="header_right_content">
+                                 <ul>
+                                    <li>
+                                       <button type="button" class="search-toggler"><i class="icon-search"></i></button>
+                                    </li>
+                                    <li>
+                                       <a href="index.html" target="_blank" rel="nofollow" class="theme-btn five"> Get
+                                          In Touch </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </header>
+         </div>
+         <!----header-end---->
+         <!--===============PAGE CONTENT ==============-->
+         <!--===============PAGE CONTENT ==============-->
+         <div id="content" class="site-content ">
+            <!---slider--->
+            <section class="slider style_three pag_position_two">
+               <div class="banner_carousel owl-carousel owl_nav_none owl_dots_block theme_carousel owl-theme"
+               data-options='{"loop": true, "margin": 0, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 7000, "smartSpeed": 1800, "responsive":{ "0" :{ "items": "1" }, "768" :{ "items" : "1" } , "1000":{ "items" : "1" }}}'>
+                  
+                  <div class="slide-item">
+                     <div class="slide-item-content content_center">
+                        <div class="image-layer" style="background-image:url(assets/images/sliders/slider-4-3.jpg)"></div>
+                        <div class="auto-container">
+                           <div class="row">
+                              <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                 <div class="slider_content" style="padding: 50px 0px;">
+                                    <h1 class="animated _fadeInDownBig">
+                                       Jump Start <br> Your Organization
+                                    </h1>
+                                    <p class="animated _flipInY">
+                                       These cases are perfectly simple and easy to distinguish. In a free <br>
+                                       hour, when our power of choice is untrammelled.
+                                    </p>
+                                    <ul>
+                                       <li>
+                                          <a href="#" target="_blank" rel="nofollow"
+                                             class="theme-btn five  animated _zoomIn">
+                                             Read More </a>
+                                       </li>
+                                       <li>
+                                          <div class="video_box animated _flipInX">
+                                             <a href="https://www.youtube.com/embed/-VK0axfge4A"
+                                                class="lightbox-image"><i class="icon-play"></i></a>
+                                          </div>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="slide-item">
+                     <div class="slide-item-content content_right">
+                        <div class="image-layer" style="background-image:url(assets/images/sliders/slider-4-2.jpg)"></div>
+                        <div class="auto-container">
+                           <div class="row">
+                              <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                 <div class="slider_content" style="padding: 50px 0px;">
+                                    <h1 class="animated _fadeInDownBig">
+                                       Strategic HR <br> On Commitment
+                                    </h1>
+                                    <p class="animated _flipInY">
+                                       Duty obligations of business it will frequently occur that pleasures <br>
+                                       have to be repudiated and annoyances accepted.
+                                    </p>
+                                    <ul>
+                                       <li>
+                                          <a href="#" target="_blank" rel="nofollow"
+                                             class="theme-btn five  animated _zoomIn">
+                                             Read More </a>
+                                       </li>
+                                       <li>
+                                          <div class="video_box animated _flipInX">
+                                             <a href="https://www.youtube.com/embed/-VK0axfge4A"
+                                                class="lightbox-image"><i class="icon-play"></i></a>
+                                          </div>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="slide-item">
+                     <div class="slide-item-content content_left">
+                        <div class="image-layer" style="background-image:url(assets/images/sliders/slider-4-1.jpg)"></div>
+                        <div class="auto-container">
+                           <div class="row">
+                              <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                 <div class="slider_content" style="padding: 50px 0px;">
+                                    <h1 class="animated _fadeInDownBig">
+                                       Countless <br>
+                                       Happy Clients
+                                    </h1>
+                                    <p class="animated _flipInY">
+                                       On the other hand, we denounce with righteous indignation <br> and dislike men
+                                       who are so beguiled.
+                                    </p>
+                                    <ul>
+                                       <li>
+                                          <a href="#" target="_blank" rel="nofollow"
+                                             class="theme-btn five  animated _zoomIn">
+                                             Read More </a>
+                                       </li>
+                                       <li>
+                                          <div class="video_box animated _flipInX">
+                                             <a href="https://www.youtube.com/embed/-VK0axfge4A"
+                                                class="lightbox-image"><i class="icon-play"></i></a>
+                                          </div>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+
+
+               </div>
+            </section>
+            <!---slider-end---->
+            <section class="service-section bg_light_1">
+               <!--===============spacing==============-->
+                 <div class="pd_top_80"></div>
+               <!--===============spacing==============-->
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-12">
+                        <div class="title_all_box style_three text-center dark_color">
+                           <div class="title_sections three">
+                              <div class="before_title">Leading</div>
+                              <h2>Effective Solutions</h2>
+                              <p>We work with your company to identify position requirements, implement recruitment
+                                 programs, and <br> initiate employee assessments that maximize recruitment efforts</p>
+                           </div>
+                           <!--===============spacing==============-->
+                              <div class="mr_bottom_30"></div>
+                           <!--===============spacing==============-->
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-12">
+                        <div class="service_section grid_all three_column  news_wrapper_grid dark_color">
+                           <div class="grid_show_case grid_layout clearfix">
+                              <div class="grid_box _card">
+                                 <div class="service_post style_three">
+                                    <div class="image_box">
+                                       <img width="500" height="500" src="assets/images/service/service-image-6.jpg"
+                                          alt="img">
+                                    </div>
+                                    <div class="text_box">
+                                       <div class="text_box_inner">
+                                          <span class="icon icon-thumbs-up icon"></span>
+                                          <h2 class="title_service"><a href="index.html/service/talent-management/index.html"
+                                                rel="bookmark">Talent Management</a></h2>
+                                          <p class="short_desc">Once your company has hired the best employees, the next
+                                             step.</p>
+                                          <a class="read_more" href="index.html/service/talent-management/index.html"> Read More<i
+                                                class="icon-right-arrow-long"></i></a>
+                                          <div class="bg_icon">
+                                             <span class="icon icon-thumbs-up icon"></span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid_box _card">
+                                 <div class="service_post style_three">
+                                    <div class="image_box">
+                                       <img width="500" height="500" src="assets/images/service/service-image-5.jpg" alt="img"
+                                         >
+                                    </div>
+                                    <div class="text_box">
+                                       <div class="text_box_inner">
+                                          <span class="icon icon-thumbs-up icon"></span>
+                                          <h2 class="title_service"><a href="index.html/service/health-care-benefits/index.html"
+                                                rel="bookmark">Health Care Benefits</a></h2>
+                                          <p class="short_desc">Workplace conflict can become a costly and time-consuming
+                                             process .</p>
+                                          <a class="read_more" href="index.html/service/health-care-benefits/index.html"> Read More<i
+                                                class="icon-right-arrow-long"></i></a>
+                                          <div class="bg_icon">
+                                             <span class="icon icon-thumbs-up icon"></span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="grid_box _card">
+                                 <div class="service_post style_three">
+                                    <div class="image_box">
+                                       <img width="500" height="500" src="assets/images/service/service-image-4.jpg" alt="img"
+                                         >
+                                    </div>
+                                    <div class="text_box">
+                                       <div class="text_box_inner">
+                                          <span class="icon icon-thumbs-up icon"></span>
+                                          <h2 class="title_service"><a href="index.html/service/risk-management/index.html"
+                                                rel="bookmark">Risk Management</a></h2>
+                                          <p class="short_desc">Mitigate workplace issues before they escalate ,Shared Time
+                                             Human.</p>
+                                          <a class="read_more" href="index.html/service/risk-management/index.html"> Read More<i
+                                                class="icon-right-arrow-long"></i></a>
+                                          <div class="bg_icon">
+                                             <span class="icon icon-thumbs-up icon"></span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--===============spacing==============-->
+               <div class="pd_bottom_60"></div>
+               <!--===============spacing==============-->
+            </section>
+            <!---about section--->
+            <section class="about-section">
+               <!--===============spacing==============-->
+                  <div class="pd_top_85"></div>
+               <!--===============spacing==============-->
+               <div class="container">
+                  <div class="row">
+                     <div class="col-xl-6 col-lg-12 mb-5 mb-lg-5 mb-xl-0">
+                        <div class="image_boxes style_four">
+                           <div class="image_box one">
+                              <img src="assets/images/about/about-11.jpg" class="img-fluid" alt="about">
+                           </div>
+                           <div class="image_box">
+                              <div class="row">
+                                 <div class="col-lg-6 col-md-12 ps-0 ps-lg-0 pe-0 pe-lg-3 pe-xl-3 mb-4 mb-lg-0 mb-xl-0">
+                                    <div class="imgs">
+                                       <img src="assets/images/about/about-3.jpg" class="img-fluid one_img" alt="about">
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-6 col-md-12 ps-0 ps-lg-3 pe-0 pe-lg-0 pe-xl-0">
+                                    <div class="imgs">
+                                       <img src="assets/images/about/about-4.jpg" class="img-fluid one_img" alt="about">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="image_content_inner viceo_en">
+                              <h2> 30+ Years Of Experience</h2>
+                              <div class="video_box_null">
+                                 <a href="https://www.youtube.com/embed/-VK0axfge4A" class="lightbox-image"><i
+                                       class="icon-play"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-6 col-lg-12">
+                        <div class="pd_left_20">
+                             <!--===============spacing==============-->
+                             <div class="pd_top_25"></div>
+                             <!--===============spacing==============-->
+                           <div class="title_all_box style_three  dark_color">
+                              <div class="title_sections three left">
+                                 <div class="before_title">Intelligent</div>
+                                 <h2>Leaders in HR Solution</h2>
+                                 <p>Countsy provides Finance, Accounting and HR Solutions to venture backed startups 
+                                    through a unique combination.</p>
+                              </div>
+                           </div>
+                           <!--===============spacing==============-->
+                              <div class="mr_bottom_25"></div>
+                           <!--===============spacing==============-->
+                           <div class="extra_content image_with_content dark_color">
+                              <div class="simple_image">
+                                 <img src="assets/images/cuntry-1.png" alt="img">
+                                 <h2> Since 1998, <br> Operating in Birmingham. </h2>
+                              </div>
+                           </div>
+                           <!--===============spacing==============-->
+                           <div class="mr_bottom_25"></div>
+                           <!--===============spacing==============-->
+                           <div class="description_box">
+                              <p>The great explorer of the truth, the master-builder of human happiness no one rejects
+                                 dislikes avoids pleasure itself because it is pleasure  rationally encounter. </p>
+                           </div>
+                           <!--===============spacing==============-->
+                           <div class="mr_bottom_25"></div>
+                           <!--===============spacing==============-->
+                             <div class="row gutter_15px">
+                                 <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="icon_box_all  style_two">
+                                       <div class="icon_content  icon_imgs ">
+                                          <div class="icon">
+                                             <img src="assets/images/icon-img-n-1.png" class="img-fluid svg_image"
+                                                alt="icon png">
+                                          </div>
+                                          <div class="txt_content">
+                                             <h3><a href="#" target="_blank" rel="nofollow">Tailored Advice &amp; Support</a>
+                                             </h3>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="icon_box_all  style_two">
+                                       <div class="icon_content  icon_imgs ">
+                                          <div class="icon">
+                                             <img src="assets/images/icon-img-n-2.png" class="img-fluid svg_image"
+                                                alt="icon png">
+                                          </div>
+                                          <div class="txt_content">
+                                             <h3><a href="#" target="_blank" rel="nofollow">Flexible Company Policies</a></h3>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                             </div>
+                             <!--===============spacing==============-->
+                             <div class="mr_bottom_30"></div>
+                             <!--===============spacing==============-->
+   
+                           <div class="theme_btn_all color_one">
+                              <a href="#" target="_blank" rel="nofollow" class="theme-btn five">
+                                 Contact us<i class="icon-right-arrow"></i>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--===============spacing==============-->
+                  <div class="pd_bottom_60"></div>
+               <!--===============spacing==============-->
+            </section>
+            <!---about section end--->
+            <section class="project-section bg_dark_3">
+               <!--===============spacing==============-->
+                  <div class="pd_top_85"></div>
+               <!--===============spacing==============-->
+               <div class="container">
+                  <div class="row align-items-center">
+                     <div class="col-lg-8 col-md-8 col-sm-12 mb-sm-5 mb-md-0 mb-lg-0 mb-xl-0">
+                        <div class="title_all_box style_three light_color">
+                           <div class="title_sections three left">
+                              <div class="before_title">Incredibly</div>
+                              <h2>Effective Case Studies</h2>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="theme_btn_all color_one text-md-end">
+                           <a href="#" target="_blank" rel="nofollow" class="theme-btn five">View More <i class="icon-right-arrow"></i></a>
+                        </div>
+                     </div>
+                     <!--===============spacing==============-->
+                        <div class="pd_bottom_35"></div>
+                     <!--===============spacing==============-->
+                  </div>
+               </div>
+                  <div class="container-fluid pd_zero">
+                     <div class="row"> 
+                        <div class="col-lg-12">
+                           <div class="project_caro_section  style_two light_color">
+                              <div class="swiper-container" data-swiper='{
+                                 "autoplay": {
+                                   "delay": 6000
+                                 },
+                                 "freeMode": true,
+                                 "loop": true,
+                                 "speed": 1000,
+                                 "centeredSlides": true,
+                                 "slidesPerView": 3,
+                                 "spaceBetween": 30,
+                                 "pagination": {
+                                   "el": ".swiper-pagination",
+                                   "clickable": true
+                                 },
+                                  
+                                 "breakpoints": {
+                                    "1200": {
+                                       "slidesPerView": 5
+                                    },
+                                    "1024": {
+                                     "slidesPerView": 3 
+                                    },
+                                   "768": {
+                                     "slidesPerView": 2 
+                                   },
+                                   "576": {
+                                     "slidesPerView": 1 
+                                   },
+                                   "0": {
+                                     "slidesPerView": 1 
+                                   }
+                                 }
+                               }'>
+                                 <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                       <div class="project_post style_seven">
+                                          <div class="image_box">
+                                             <img src="assets/images/projects/project-4-img.jpg" class="img-fluid" alt="img">
+                                          </div>
+                                          <div class="content_box ">
+                                             <h2 class="title_pro"><a href="#" rel="bookmark">Time HR Prepares Plastic
+                                                   Contract Manufacturer</a></h2>
+                                             <p>Pre sale</p>
+                                             <div class="image_zoom_box ">
+                                                <a href="assets/images/projects/project-4-img.jpg" data-fancybox="gallery"><span
+                                                      class="fa fa-plus zoom_icon"></span></a>
+                                             </div>
+                                          </div>
+                                          <div class="overlay ">
+                                             <div class="text ">
+                                                <h2 class="title_pro"><a href="#" rel="bookmark">Time HR Prepares Plastic
+                                                      Contract Manufacturer</a></h2>
+                                                <p class="short_desc">STHRM, Inc. was hired to evaluate the company’s human
+                                                   resources department and determine if the…</p>
+                                                <a href="#" class="read_more tp_five ">Read More</a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                       <div class="project_post style_seven">
+                                          <div class="image_box">
+                                             <img src="assets/images/projects/project-3-img.jpg" class="img-fluid" alt="img">
+                                          </div>
+                                          <div class="content_box ">
+                                             <h2 class="title_pro"><a href="#" rel="bookmark">Essential Steps to Writing Job
+                                                   Description</a></h2>
+                                             <p>Human Resources</p>
+                                             <div class="image_zoom_box ">
+                                                <a href="assets/images/projects/project-3-img.jpg" data-fancybox="gallery"><span
+                                                      class="fa fa-plus zoom_icon"></span></a>
+                                             </div>
+                                          </div>
+                                          <div class="overlay ">
+                                             <div class="text ">
+                                                <h2 class="title_pro"><a href="#" rel="bookmark">Essential Steps to Writing
+                                                      Job Description</a></h2>
+                                                <p class="short_desc">Power of choice untrammelled when nothing prevents our
+                                                   being able to do.</p>
+                                                <a href="#" class="read_more tp_five ">Read More</a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                       <div class="project_post style_seven">
+                                          <div class="image_box">
+                                             <img src="assets/images/projects/project-2-img.jpg" class="img-fluid"  alt="img">
+                                          </div>
+                                          <div class="content_box ">
+                                             <h2 class="title_pro"><a href="#" rel="bookmark">Complex Dismissal for a Small
+                                                   Company</a></h2>
+                                             <p>Coaching</p>
+                                             <div class="image_zoom_box ">
+                                                <a href="assets/images/projects/project-2-img.jpg" data-fancybox="gallery"><span
+                                                      class="fa fa-plus zoom_icon"></span></a>
+                                             </div>
+                                          </div>
+                                          <div class="overlay ">
+                                             <div class="text ">
+                                                <h2 class="title_pro"><a href="#" rel="bookmark">Complex Dismissal for a Small
+                                                      Company</a></h2>
+                                                <p class="short_desc">Beguiled and demoralized charms of pleasure of the
+                                                   moment so blinded.</p>
+                                                <a href="#" class="read_more tp_five ">Read More</a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                       <div class="project_post style_seven">
+                                          <div class="image_box">
+                                             <img src="assets/images/projects/project-6-img.jpg" class="img-fluid"  alt="img">
+                                          </div>
+                                          <div class="content_box ">
+                                             <h2 class="title_pro"><a href="#" rel="bookmark">Shared Time Human Resources
+                                                   Management</a></h2>
+                                             <p>Recruiting</p>
+                                             <div class="image_zoom_box ">
+                                                <a href="assets/images/projects/project-6-img.jpg" data-fancybox="gallery"><span
+                                                      class="fa fa-plus zoom_icon"></span></a>
+                                             </div>
+                                          </div>
+                                          <div class="overlay ">
+                                             <div class="text ">
+                                                <h2 class="title_pro"><a href="#" rel="bookmark">Shared Time Human Resources
+                                                      Management</a></h2>
+                                                <p class="short_desc">Shared Time Human Resources Management, Inc. is a
+                                                   value-oriented resource for companies in need of…</p>
+                                                <a href="#" class="read_more tp_five ">Read More</a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                       <div class="project_post style_seven">
+                                          <div class="image_box">
+                                             <img src="assets/images/projects/project-5-img.jpg" class="img-fluid" alt="img">
+                                          </div>
+                                          <div class="content_box ">
+                                             <h2 class="title_pro"><a href="#" rel="bookmark">Six Essential Steps To Writing
+                                                   Successful Job</a></h2>
+                                             <p>Values</p>
+                                             <div class="image_zoom_box ">
+                                                <a href="assets/images/projects/project-5-img.jpg" data-fancybox="gallery"><span
+                                                      class="fa fa-plus zoom_icon"></span></a>
+                                             </div>
+                                          </div>
+                                          <div class="overlay ">
+                                             <div class="text ">
+                                                <h2 class="title_pro"><a href="#" rel="bookmark">Six Essential Steps To
+                                                      Writing Successful Job</a></h2>
+                                                <p class="short_desc">In its purest form, a position description indicates the
+                                                   work to be performed by the…</p>
+                                                <a href="#" class="read_more tp_five ">Read More</a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                       <div class="project_post style_seven">
+                                          <div class="image_box">
+                                             <img src="assets/images/projects/project-4-img.jpg"  class="img-fluid"  alt="img">
+                                          </div>
+                                          <div class="content_box ">
+                                             <h2 class="title_pro"><a href="#" rel="bookmark">Time HR Prepares Plastic
+                                                   Contract Manufacturer</a></h2>
+                                             <p>Pre sale</p>
+                                             <div class="image_zoom_box ">
+                                                <a href="assets/images/projects/project-4-img.jpg" data-fancybox="gallery"><span
+                                                      class="fa fa-plus zoom_icon"></span></a>
+                                             </div>
+                                          </div>
+                                          <div class="overlay ">
+                                             <div class="text ">
+                                                <h2 class="title_pro"><a href="#" rel="bookmark">Time HR Prepares Plastic
+                                                      Contract Manufacturer</a></h2>
+                                                <p class="short_desc">STHRM, Inc. was hired to evaluate the company’s human
+                                                   resources department and determine if the…</p>
+                                                <a href="#" class="read_more tp_five ">Read More</a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                       <div class="project_post style_seven">
+                                          <div class="image_box">
+                                             <img src="assets/images/projects/project-3-img.jpg" class="img-fluid" alt="img">
+                                          </div>
+                                          <div class="content_box ">
+                                             <h2 class="title_pro"><a href="#" rel="bookmark">Essential Steps to Writing Job
+                                                   Description</a></h2>
+                                             <p>Human Resources</p>
+                                             <div class="image_zoom_box ">
+                                                <a href="assets/images/projects/project-3-img.jpg" data-fancybox="gallery"><span
+                                                      class="fa fa-plus zoom_icon"></span></a>
+                                             </div>
+                                          </div>
+                                          <div class="overlay ">
+                                             <div class="text ">
+                                                <h2 class="title_pro"><a href="#" rel="bookmark">Essential Steps to Writing
+                                                      Job Description</a></h2>
+                                                <p class="short_desc">Power of choice untrammelled when nothing prevents our
+                                                   being able to do.</p>
+                                                <a href="#" class="read_more tp_five ">Read More</a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                       <div class="project_post style_seven">
+                                          <div class="image_box">
+                                             <img src="assets/images/projects/project-2-img.jpg"  class="img-fluid"  alt="img">
+                                          </div>
+                                          <div class="content_box ">
+                                             <h2 class="title_pro"><a href="#" rel="bookmark">Complex Dismissal for a Small
+                                                   Company</a></h2>
+                                             <p>Coaching</p>
+                                             <div class="image_zoom_box ">
+                                                <a href="assets/images/projects/project-2-img.jpg" data-fancybox="gallery"><span
+                                                      class="fa fa-plus zoom_icon"></span></a>
+                                             </div>
+                                          </div>
+                                          <div class="overlay ">
+                                             <div class="text ">
+                                                <h2 class="title_pro"><a href="#" rel="bookmark">Complex Dismissal for a Small
+                                                      Company</a></h2>
+                                                <p class="short_desc">Beguiled and demoralized charms of pleasure of the
+                                                   moment so blinded.</p>
+                                                <a href="#" class="read_more tp_five ">Read More</a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                       <div class="project_post style_seven">
+                                          <div class="image_box">
+                                             <img src="assets/images/projects/project-6-img.jpg"  class="img-fluid"  alt="img">
+                                          </div>
+                                          <div class="content_box ">
+                                             <h2 class="title_pro"><a href="#" rel="bookmark">Shared Time Human Resources
+                                                   Management</a></h2>
+                                             <p>Recruiting</p>
+                                             <div class="image_zoom_box ">
+                                                <a href="assets/images/projects/project-6-img.jpg" data-fancybox="gallery"><span
+                                                      class="fa fa-plus zoom_icon"></span></a>
+                                             </div>
+                                          </div>
+                                          <div class="overlay ">
+                                             <div class="text ">
+                                                <h2 class="title_pro"><a href="#" rel="bookmark">Shared Time Human Resources
+                                                      Management</a></h2>
+                                                <p class="short_desc">Shared Time Human Resources Management, Inc. is a
+                                                   value-oriented resource for companies in need of…</p>
+                                                <a href="#" class="read_more tp_five ">Read More</a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                       <div class="project_post style_seven">
+                                          <div class="image_box">
+                                             <img src="assets/images/projects/project-5-img.jpg" class="img-fluid"   alt="img">
+                                          </div>
+                                          <div class="content_box ">
+                                             <h2 class="title_pro"><a href="#" rel="bookmark">Six Essential Steps To Writing
+                                                   Successful Job</a></h2>
+                                             <p>Values</p>
+                                             <div class="image_zoom_box ">
+                                                <a href="assets/images/projects/project-5-img.jpg" data-fancybox="gallery"><span
+                                                      class="fa fa-plus zoom_icon"></span></a>
+                                             </div>
+                                          </div>
+                                          <div class="overlay ">
+                                             <div class="text ">
+                                                <h2 class="title_pro"><a href="#" rel="bookmark">Six Essential Steps To
+                                                      Writing Successful Job</a></h2>
+                                                <p class="short_desc">In its purest form, a position description indicates the
+                                                   work to be performed by the…</p>
+                                                <a href="#" class="read_more tp_five ">Read More</a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                       <div class="project_post style_seven">
+                                          <div class="image_box">
+                                             <img src="assets/images/projects/project-4-img.jpg"  class="img-fluid"  alt="img">
+                                          </div>
+                                          <div class="content_box ">
+                                             <h2 class="title_pro"><a href="#" rel="bookmark">Time HR Prepares Plastic
+                                                   Contract Manufacturer</a></h2>
+                                             <p>Pre sale</p>
+                                             <div class="image_zoom_box ">
+                                                <a href="assets/images/projects/project-4-img.jpg" data-fancybox="gallery"><span
+                                                      class="fa fa-plus zoom_icon"></span></a>
+                                             </div>
+                                          </div>
+                                          <div class="overlay ">
+                                             <div class="text ">
+                                                <h2 class="title_pro"><a href="#" rel="bookmark">Time HR Prepares Plastic
+                                                      Contract Manufacturer</a></h2>
+                                                <p class="short_desc">STHRM, Inc. was hired to evaluate the company’s human
+                                                   resources department and determine if the…</p>
+                                                <a href="#" class="read_more tp_five ">Read More</a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="p_pagination">
+                                    <div class="swiper-pagination"></div>
+                                 </div>
+                                 </div>
+                             
+                              </div>
+                        </div>
+                     </div>
+                  </div>
+               
+             <!--===============spacing==============-->
+               <div class="pd_bottom_65"></div>
+             <!--===============spacing==============-->
+
+            </section>
+            <!----process---->
+            <section class="process-section">
+            <!--===============spacing==============-->
+               <div class="pd_top_80"></div>
+            <!--===============spacing==============-->
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-12">
+                        <div class="title_all_box style_three text-center dark_color">
+                           <div class="title_sections three">
+                              <div class="before_title">The Steps of</div>
+                              <h2>Recruitment Process</h2>
+                              <p>
+                                 Keep rising employee health care costs down. An employer's total benefit costs <br> can be
+                                 as much as 40 percent of the company's operating budget. 
+                              </p>
+                           </div>
+                           <!--===============spacing==============-->
+                              <div class="pd_bottom_25"></div>
+                           <!--===============spacing==============-->
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row align-items-center">
+                     <div class="col-lg-4 col-md-12 col-sm-12 mb-sm-5 mb-md-5 mb-lg-0 mb-xl-0">
+                        <div class="process_box style_three dark_color">
+                           <div class="process_box_outer_three left">
+                              <div class="icon">
+                                 <div class="img">
+                                    <img src="assets/images/service-ico-3.png" class="img-fluid svg_image"
+                                       alt="icon png">
+                                 </div>
+                              </div>
+                              <div class="content_box">
+                                 <h2><a href="#" target="_blank" rel="nofollow">Identifiying the Needs</a></h2>
+                                 <p>Holds in these matters principles all selection right rejects.</p>
+                              </div>
+                              <div class="number">
+                                 <h6>01</h6>
+                              </div>
+                           </div>
+                        </div>
+                        <!--===============spacing==============-->
+                           <div class="pd_top_30"></div>
+                        <!--===============spacing==============-->
+                        <div class="divider_1"></div>
+                        <!--===============spacing==============-->
+                           <div class="pd_bottom_40"></div>
+                        <!--===============spacing==============-->
+                        <div class="process_box style_three dark_color">
+                           <div class="process_box_outer_three left">
+                              <div class="icon">
+                                 <div class="img">
+                                    <img src="assets/images/process-icon-im-1.png" class="img-fluid svg_image"
+                                       alt="icon png">
+                                 </div>
+                              </div>
+                              <div class="content_box">
+                                 <h2> <a href="#" target="_blank" rel="nofollow">
+                                       Preparing Job Description </a>
+                                 </h2>
+                                 <p> Our unique approach locates skill based industry professionals</p>
+                              </div>
+                              <div class="number">
+                                 <h6> 02</h6>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-12 col-sm-12 mb-sm-5 mb-md-5 mb-lg-0 mb-xl-0">
+                        <div class="image_boxes style_three  border_yes ">
+                           <img src="assets/images/video-box-img-1.jpg" class="background_image" alt="image">
+                           <div class="video_box">
+                              <a href="https://www.youtube.com/embed/-VK0axfge4A" class="lightbox-image"><i
+                                    class="icon-play"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="process_box style_three dark_color">
+                           <div class="process_box_outer_three right">
+                              <div class="icon">
+                                 <div class="img">
+                                    <img src="assets/images/service-ico-2.png" class="img-fluid svg_image"
+                                       alt="icon png">
+                                 </div>
+                              </div>
+                              <div class="content_box">
+                                 <h2><a href="#" target="_blank" rel="nofollow">Find Talented Candidate</a></h2>
+                                 <p>Fault with man who choose enjoy a annoying consequences.</p>
+                              </div>
+                              <div class="number">
+                                 <h6>03</h6>
+                              </div>
+                           </div>
+                        </div>
+                        <!--===============spacing==============-->
+                           <div class="pd_top_30"></div>
+                        <!--===============spacing==============-->
+                        <div class="divider_1"></div>
+                        <!--===============spacing==============-->
+                           <div class="pd_bottom_40"></div>
+                        <!--===============spacing==============-->
+                        <div class="process_box style_three dark_color">
+                           <div class="process_box_outer_three right">
+                              <div class="icon">
+                                 <div class="img">
+                                    <img src="assets/images/process-icon-im-2.png" class="img-fluid svg_image"
+                                       alt="icon png">
+                                 </div>
+                              </div>
+                              <div class="content_box">
+                                 <h2><a href="#" target="_blank" rel="nofollow">Screening & Shortlisting</a></h2>
+                                 <p>Professional checks as well as a local records reference check</p>
+                              </div>
+                              <div class="number">
+                                 <h6>04</h6>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            <!--===============spacing==============-->
+               <div class="pd_bottom_75"></div>
+            <!--===============spacing==============-->
+            </section>
+            <!----process-end--->
+            <!----team---->
+            <section class="team-section">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-12">
+                        <div class="title_all_box style_three text-center dark_color">
+                           <div class="title_sections three">
+                              <div class="before_title">Dedicated Team</div>
+                              <h2>Professional Individuals</h2>
+                           </div>
+                           <!--===============spacing==============-->
+                              <div class="mr_bottom_30"></div>
+                           <!--===============spacing==============-->
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <div class="team_box style_two">
+                           <div class="team_box_outer">
+                              <div class="image_box ">
+                                 <img src="assets/images/team/team-1.jpg" alt="team image">
+                                 <div class="overlay ">
+                                    <a href="#" target="_blank" rel="nofollow" class="read_m">
+                                       View Profile <i class="icon-right-arrow"></i></a>
+                                    <ul>
+                                       <li><a href="#"> <i class="fa fa-facebook"> </i> </a></li>
+                                       <li><a href="#"> <i class="fa fa-twitter"> </i> </a></li>
+                                       <li><a href="#"> <i class="fa fa-skype"> </i> </a></li>
+                                       <li><a href="#"> <i class="fa fa-instagram"> </i> </a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="content_box ">
+                                 <h2> <a href="#" target="_blank" rel="nofollow">
+                                       Amelia Margaret</a>
+                                 </h2>
+                                 <p class="job_details">Director </p>
+                                 <p>The HR Manger of Creote, he is very intelligent and smart. </p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <div class="team_box style_two">
+                           <div class="team_box_outer">
+                              <div class="image_box ">
+                                 <img src="assets/images/team/team-2.jpg" alt="team image">
+                                 <div class="overlay ">
+                                    <a href="#" target="_blank" rel="nofollow" class="read_m">
+                                       View Profile <i class="icon-right-arrow"></i></a>
+                                    <ul>
+                                       <li><a href="#"> <i class="fa fa-facebook"> </i> </a></li>
+                                       <li><a href="#"> <i class="fa fa-twitter"> </i> </a></li>
+                                       <li><a href="#"> <i class="fa fa-skype"> </i> </a></li>
+                                       <li><a href="#"> <i class="fa fa-instagram"> </i> </a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="content_box ">
+                                 <h2> <a href="#" target="_blank" rel="nofollow">
+                                       Andrew Cameron</a>
+                                 </h2>
+                                 <p class="job_details">Team Leader </p>
+                                 <p>The HR Manger of Creote, he is very intelligent and smart. </p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <div class="team_box style_two">
+                           <div class="team_box_outer">
+                              <div class="image_box ">
+                                 <img src="assets/images/team/team-3.png" alt="team image">
+                                 <div class="overlay ">
+                                    <a href="#" target="_blank" rel="nofollow" class="read_m">
+                                       View Profile <i class="icon-right-arrow"></i></a>
+                                    <ul>
+                                       <li><a href="#"> <i class="fa fa-facebook"> </i> </a></li>
+                                       <li><a href="#"> <i class="fa fa-twitter"> </i> </a></li>
+                                       <li><a href="#"> <i class="fa fa-skype"> </i> </a></li>
+                                       <li><a href="#"> <i class="fa fa-instagram"> </i> </a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="content_box ">
+                                 <h2> <a href="#" target="_blank" rel="nofollow">
+                                       Sofia Charlotte</a>
+                                 </h2>
+                                 <p class="job_details">Manager </p>
+                                 <p>The HR Manger of Creote, he is very intelligent and smart. </p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--===============spacing==============-->
+               <div class="pd_bottom_70"></div>
+               <!--===============spacing==============-->
+            </section>
+            <!----team-end---->
+            <!----testimonial---->
+            <section class="testimonial-section bg_light_1">
+               <!--===============spacing==============-->
+                  <div class="pd_top_75"></div>
+               <!--===============spacing==============-->
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-12">
+                        <div class="title_all_box style_three text-center dark_color">
+                           <div class="title_sections three">
+                              <div class="before_title">Quote About</div>
+                              <h2>Customers Experience</h2>
+                              <p>Shared Time Human Resources Management, Inc. performs executive <br> searches and
+                                 professional recruitment for our clients.</p>
+                           </div>
+                           <!--===============spacing==============-->
+                              <div class="mr_bottom_25"></div>
+                           <!--===============spacing==============-->
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="testimonial_sec light_color style_three">
+                     <div class="swiper-container" data-swiper='{
+                        "autoplay": {
+                          "delay": 6000
+                        },
+                        "freeMode": true,
+                        "loop": true,
+                        "speed": 1000,
+                        "centeredSlides": true,
+                        "slidesPerView": 3,
+                        "spaceBetween": 10,
+                        "pagination": {
+                          "el": ".swiper-pagination",
+                          "clickable": true
+                        },
+                        "navigation": {
+                          "nextEl": ".next-single-one_three",
+                          "prevEl": ".prev-single-one_three"
+                        },
+                        "breakpoints": {
+                           "1200": {
+                              "slidesPerView": 3
+                           },
+                           "1024": {
+                            "slidesPerView": 3 
+                           },
+                          "768": {
+                            "slidesPerView": 2 
+                          },
+                          "576": {
+                            "slidesPerView": 1 
+                          },
+                          "0": {
+                            "slidesPerView": 1 
+                          }
+                        }
+                      }'>
+                        <div class="swiper-wrapper">
+                           <div class="swiper-slide">
+                              <div class="testimonial_box">
+                                 <i class="icon-quote"></i>
+                                 <p class="description">
+                                    While running an early stage startup everything feels
+                                    hard, that’s why it’s been so nice to have our accounting
+                                    feel easy. We recommed Qetus.
+                                 </p>
+                                 <h3 class="title">Jacob Leonardo</h3>
+                                 <p class="from">Senior Manager of Excel Solution</p>
+                                 <div class="pic">
+                                    <img src="assets/images/blog/blog-image-5.jpg" alt="image">
+                                 </div>
+                                 <div class="rating">
+                                    <ul>
+                                       <li><span class="fa fa-star fill"></span><span
+                                             class="fa fa-star fill"></span><span class="fa fa-star fill"></span><span
+                                             class="fa fa-star fill"></span><span class="fa fa-star empty"></span></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide">
+                              <div class="testimonial_box">
+                                 <i class="icon-quote"></i>
+                                 <p class="description">
+                                    While running an early stage startup everything feels
+                                    hard, that’s why it’s been so nice to have our accounting
+                                    feel easy. We recommed Qetus.
+                                 </p>
+                                 <h3 class="title">Jacob Leonardo</h3>
+                                 <p class="from">Senior Manager of Excel Solution</p>
+                                 <div class="pic">
+                                    <img src="assets/images/team/team-4.jpg" alt="image">
+                                 </div>
+                                 <div class="rating">
+                                    <ul>
+                                       <li><span class="fa fa-star fill"></span><span
+                                             class="fa fa-star fill"></span><span class="fa fa-star fill"></span><span
+                                             class="fa fa-star fill"></span><span class="fa fa-star fill"></span></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide">
+                              <div class="testimonial_box">
+                                 <i class="icon-quote"></i>
+                                 <p class="description">
+                                    While running an early stage startup everything feels
+                                    hard, that’s why it’s been so nice to have our accounting
+                                    feel easy. We recommed Qetus.
+                                 </p>
+                                 <h3 class="title">Jacob Leonardo</h3>
+                                 <p class="from">Senior Manager of Excel Solution</p>
+                                 <div class="pic">
+                                    <img src="assets/images/about-us-1-min.html" alt="image">
+                                 </div>
+                                 <div class="rating">
+                                    <ul>
+                                       <li><span class="fa fa-star fill"></span><span
+                                             class="fa fa-star fill"></span><span class="fa fa-star empty"></span><span
+                                             class="fa fa-star empty"></span><span class="fa fa-star empty"></span></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide">
+                              <div class="testimonial_box">
+                                 <i class="icon-quote"></i>
+                                 <p class="description">
+                                    While running an early stage startup everything feels
+                                    hard, that’s why it’s been so nice to have our accounting
+                                    feel easy. We recommed Qetus.
+                                 </p>
+                                 <h3 class="title">Jacob Leonardo</h3>
+                                 <p class="from">Senior Manager of Excel Solution</p>
+                                 <div class="pic">
+                                    <img src="assets/images/blog/blog-image-5.jpg" alt="image">
+                                 </div>
+                                 <div class="rating">
+                                    <ul>
+                                       <li><span class="fa fa-star fill"></span><span
+                                             class="fa fa-star fill"></span><span class="fa fa-star fill"></span><span
+                                             class="fa fa-star fill"></span><span class="fa fa-star empty"></span></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide">
+                              <div class="testimonial_box">
+                                 <i class="icon-quote"></i>
+                                 <p class="description">
+                                    While running an early stage startup everything feels
+                                    hard, that’s why it’s been so nice to have our accounting
+                                    feel easy. We recommed Qetus.
+                                 </p>
+                                 <h3 class="title">Jacob Leonardo</h3>
+                                 <p class="from">Senior Manager of Excel Solution</p>
+                                 <div class="pic">
+                                    <img src="assets/images/team/team-4.jpg" alt="image">
+                                 </div>
+                                 <div class="rating">
+                                    <ul>
+                                       <li><span class="fa fa-star fill"></span><span
+                                             class="fa fa-star fill"></span><span class="fa fa-star fill"></span><span
+                                             class="fa fa-star fill"></span><span class="fa fa-star fill"></span></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                           
+                        </div>
+                       
+                     </div>
+                     <div class="arrows">
+                        <div class="prev-single-one_three"></div>
+                        <div class="next-single-one_three"></div>
+                     </div>
+                  </div>
+               </div>
+               <!--===============spacing==============-->
+               <div class="pd_bottom_55"></div>
+               <!--===============spacing==============-->
+            </section>
+            <!----testimonial-end---->
+            <!----blo----->
+            <section class="blog-section">
+               <!--===============spacing==============-->
+                  <div class="pd_top_80"></div>
+               <!--===============spacing==============-->
+               <div class="container">
+                  <div class="row gutter_35px">
+                     <div class="col-lg-12">
+                        <div class="title_all_box style_three text-center dark_color">
+                           <div class="title_sections three">
+                              <div class="before_title">Find Out Our</div>
+                              <h2>Insights &amp; Intelligence</h2>
+                           </div>
+                           <!--===============spacing==============-->
+                              <div class="mr_bottom_25"></div>
+                           <!--===============spacing==============-->
+                        </div>
+                     </div>
+                     <div class="col-lg-12">
+                     <div class="blog_post_section  three_column news_wrapper_grid style_five">
+                        <div class="grid_show_case grid_layout clearfix">
+                           <div class="grid_box _card">
+                              <div class="news_box style_five">
+                                 <div class="content_box">
+                                    <ul>
+                                       <li>
+                                          <div class="comments">
+                                             <i class="icon-text"></i>
+                                             <a href="blog-single.html" class="Comments are Closed">Post Comment</a>
+                                          </div>
+                                       </li>
+                                       <li>
+                                          <a href="#"><span class="fa fa-clock-o"></span>October 6, 2023</a>
+                                       </li>
+                                    </ul>
+                                    <h2 class="title"><a href="blog-single.html" rel="bookmark">Policies &amp;
+                                          Procedures for Startups</a></h2>
+                                    <p class="short_desc">How well this mistaken ideas off denouncing pleasure &amp;
+                                       praisings will give you complete.</p>
+                                    <a href="blog-single.html" class="link__go">Read more<i
+                                          class="icon-right-arrow-long"></i></a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="grid_box _card">
+                              <div class="news_box style_five">
+                                 <div class="content_box">
+                                    <ul>
+                                       <li>
+                                          <div class="comments">
+                                             <i class="icon-text"></i>
+                                             <a href="blog-single.html" class="Comments are Closed">Post Comment</a>
+                                          </div>
+                                       </li>
+                                       <li>
+                                          <a href="#"><span class="fa fa-clock-o"></span>October 8, 2023</a>
+                                       </li>
+                                    </ul>
+                                    <h2 class="title"><a href="blog-single.html" rel="bookmark">Workplace problems in
+                                          your business?</a></h2>
+                                    <p class="short_desc">Banter! Could “workplace banter” cause problems in your
+                                       business? The short answer? Yes.</p>
+                                    <a href="blog-single.html" class="link__go">Read more<i
+                                          class="icon-right-arrow-long"></i></a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="grid_box _card">
+                              <div class="news_box style_five">
+                                 <div class="content_box">
+                                    <ul>
+                                       <li>
+                                          <div class="comments">
+                                             <i class="icon-text"></i>
+                                             <a href="blog-single.html" class="Comments are Closed">Post Comment</a>
+                                          </div>
+                                       </li>
+                                       <li>
+                                          <a href="#"><span class="fa fa-clock-o"></span>October 8, 2023</a>
+                                       </li>
+                                    </ul>
+                                    <h2 class="title"><a href="blog-single.html" rel="bookmark">How to Handle Your Good
+                                          Employee</a></h2>
+                                    <p class="short_desc">How well this mistaken ideas off denouncing pleasure &amp;
+                                       praisings will give you complete.</p>
+                                    <a href="#" class="link__go">Read more<i class="icon-right-arrow-long"></i></a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               </div>
+               <!--===============spacing==============-->
+                  <div class="pd_bottom_60"></div>
+               <!--===============spacing==============-->
+            </section>
+            <!----blo-end---->
+
+         </div>
+         <!--===============PAGE CONTENT ==============-->
+         <!--===============PAGE CONTENT ==============-->
+      </div>
+      <div class="footer_area footer_four bg_dark_3">
+         <!--===============spacing==============-->
+           <div class="pd_top_80"></div>
+         <!--===============spacing==============-->
+         <div class="footer_widgets_wrap">
+            <div class="auto-container">
+               <div class="row">
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-0">
+                     <div class="footer_contact_form light_c type_one">
+                        <div class="form_box_foo">
+                           <h2> Contact Us</h2>
+                           <div class="contact_form_shortcode">
+                              <div role="form" class="wpcf7" id="wpcf7-f1763-o1" lang="en-US" dir="ltr">
+                                 <div class="screen-reader-response">
+                                    <p role="status" aria-live="polite" aria-atomic="true"></p>
+                                    <ul></ul>
+                                 </div>
+                                 <form action="#" method="post"  class="wpcf7-form init" novalidate="novalidate" data-status="init">
+                                   
+                                    <p><label><br>
+                                          <span class="wpcf7-form-control-wrap" data-name="your-name"><input type="text"
+                                                name="your-name" value="" size="40"
+                                                class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                aria-required="true" aria-invalid="false"
+                                                placeholder="Enter Your Name"></span> </label>
+                                    </p>
+                                    <p><label><br>
+                                          <span class="wpcf7-form-control-wrap" data-name="your-email"><input
+                                                type="email" name="your-email" value="" size="40"
+                                                class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                                                aria-required="true" aria-invalid="false"
+                                                placeholder="Enter Your Mail"></span> </label>
+                                    </p>
+                                    <p><label><br>
+                                          <span class="wpcf7-form-control-wrap" data-name="your-subject"><input
+                                                type="text" name="your-subject" value="" size="40"
+                                                class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                aria-required="true" aria-invalid="false"
+                                                placeholder="Enter Your Subject"></span> </label>
+                                    </p>
+                                    <p> 
+                                       <input type="submit" value="Submit" class="wpcf7-form-control has-spinner wpcf7-submit"> 
+                                    </p>
+                              
+                                 </form>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-0">
+                     <!--===============spacing==============-->
+                        <div class="pd_top_30"></div>
+                     <!--===============spacing==============-->
+                     <div class="footer_widgets wid_tit style_two">
+                        <div class="fo_wid_title">
+                           <h2>Informations</h2>
+                        </div>
+                     </div>
+                     <div class="footer_widgets clearfix navigation_foo light_color style_three">
+                        <div class="navigation_foo_box">
+                           <div class="navigation_foo_inner">
+                              <div class="left">
+                                 <div class="menu-information-container">
+                                    <ul>
+                                       <li><a href="#">How it’s Work</a></li>
+                                       <li><a href="#">Partners</a></li>
+                                       <li><a href="#">Testimonials</a></li>
+                                       <li><a href="#">Key Areas</a></li>
+                                       <li><a href="#">Case Studies</a></li>
+                                       <li><a href="#">Pricing</a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="right">
+                                 <div class="menu-essentials-container">
+                                    <ul>
+                                       <li><a href="#">Careers</a></li>
+                                       <li><a href="#">Infrastructure</a></li>
+                                       <li><a href="#">Client Support</a></li>
+                                       <li><a href="#">Privacy Policy</a></li>
+                                       <li><a href="#">Terms of Use</a></li>
+                                       <li><a href="#">Sitemap</a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                     <!--===============spacing==============-->
+                        <div class="pd_top_30"></div>
+                     <!--===============spacing==============-->
+                     <div class="footer_widgets wid_tit style_two">
+                        <div class="fo_wid_title">
+                           <h2>Subscribe Us Today</h2>
+                        </div>
+                     </div>
+                     <div class="footer_widgets foo_subscribe light_color style_one">
+                        <div class="item_subscribe with_text">
+                           <p>Subscribe Us &amp; Recive Our Offers and Updates i Your Inbox Directly.</p>
+                           <div class="shortcodes">
+                              
+                              <form class="mc4wp-form" method="post" data-name="Subscibe">
+                                 <div class="mc4wp-form-fields">
+                                    <input type="email" name="EMAIL" placeholder="Your email address" required="">
+                                    <input type="submit" value="Sign up">
+                                 </div>
+                              </form>
+
+                           </div>
+                           <p>* We do not share your email id</p>
+                        </div>
+                     </div>
+                     <div class="social_media_v_one">
+                        <ul>
+                           <li>
+                              <a href="#"> <span class="fa fa-facebook"></span>
+                                 <small>facebook</small>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#"> <span class="fa fa-twitter"></span>
+                                 <small>twitter</small>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#"> <span class="fa fa-skype"></span>
+                                 <small>skype</small>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#"> <span class="fa fa-instagram"></span>
+                                 <small>instagram</small>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--===============spacing==============-->
+            <div class="pd_bottom_70"></div>
+         <!--===============spacing==============-->
+         <div class="footer-copyright bg_dark_1">
+            <!--===============spacing==============-->
+               <div class="pd_top_15"></div>
+            <!--===============spacing==============-->
+            <div class="auto-container">
+               <div class="footer_copy_right style_two">
+                  <div class="row">
+                     <div class="col-lg-6 col-md-12 mb-2 mb-lg-0 mb-xl-0">
+                        <div class="footer_copy_content color_white">
+                           © 2023 <a href="https://themeforest.net/user/steelthemes" class="color_white">Steelthemes.</a> All Rights
+                           Reserved.
+                        </div>
+                     </div>
+                     <div class="col-lg-6 col-md-12">
+                        <div class="footer_copy_content_right text-md-end">
+                           <div class="nav_link_v_one">
+                              <ul>
+                                 <li>
+                                    <a href="#" target="_blank" rel="nofollow" class="color_white">Terms Of User</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" target="_blank" rel="nofollow" class="color_white">Support</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" target="_blank" rel="nofollow" class="color_white">Private Policy</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--===============spacing==============-->
+               <div class="pd_bottom_10"></div>
+            <!--===============spacing==============-->
+         </div>
+      </div>
+      <!---==============footer end =================-->
+   <!---==============mobile menu =================-->
+   <div class="crt_mobile_menu">
+      <div class="menu-backdrop"></div>
+      <nav class="menu-box">
+         <div class="close-btn"><i class="icon-close"></i></div>
+         <form role="search" method="get" action="#">
+            <input type="search" class="search" placeholder="Search..." value="" name="s" title="Search" />
+            <button type="submit" class="sch_btn"> <i class="icon-search"></i></button>
+         </form>
+         <div class="menu-outer">
+            <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+         </div>
+      </nav>
+   </div>
+   <!---==============mobile menu end =================-->
+   <!---==============search popup =================-->
+   <div id="search-popup" class="search-popup">
+      <div class="close-search"><i class="fa fa-times"></i></div>
+      <div class="popup-inner">
+         <div class="overlay-layer"></div>
+         <div class="search-form">
+            <fieldset>
+               <form role="search" method="get" action="#">
+                  <input type="search" class="search" placeholder="Search..." value="" name="s" title="Search" />
+                  <button type="submit" class="sch_btn"> <i class="icon-search"></i></button>
+               </form>
+            </fieldset>
+         </div>
+      </div>
+   </div>
+   <!---==============search popup end =================-->
+   <!---==============modal popup =================-->
+   <div class="modal_popup one">
+      <div class="modal-popup-inner">
+         <div class="close-modal"><i class="fa fa-times"></i></div>
+         <div class="modal_box">
+            <div class="row">
+               <div class="col-lg-5 col-md-12 form_inner">
+                  <div class="form_content">
+               
+                         
+                        <form class="contact-form" method="post" action="https://themepanthers.com/html/creote-html/sendemail.php">
+                           <p>
+                              <label> Your name<br />
+                                <input type="text" name="name" value="" size="40"   aria-required="true" aria-invalid="false" placeholder="Enter Your Name" /> 
+                                <br />
+                                 <i class="fa fa-user"></i><br />
+                              </label>
+                           </p>
+                           <p><label> Your email<br />
+                               <input type="email" name="email" value="" size="40" aria-required="true" aria-invalid="false"  placeholder="Enter Your Email" />
+                               <br />
+                              <i class="fa fa-envelope"></i><br />
+                              </label>
+                           </p>
+                           <p>
+                              <label> Subject<br />
+                                <input type="text" name="subject" value="" size="40" aria-required="true" aria-invalid="false"  placeholder="Enter Your Subject" /> 
+                                <br />
+                                 <i class="fa fa-folder"></i><br />
+                              </label>
+                           </p>
+                           <p>
+                              <label> Your message (optional)<br />
+                                 <textarea name="message"  cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea"  aria-invalid="false" placeholder="Enter Your Message"></textarea> 
+                                 <br />
+                                 <i class="fa fa-comments"></i><br />
+                              </label>
+                           </p>
+                           <p><input type="submit" value="Submit" /></p>
+                        
+                        </form>
+                 
+                  </div>
+               </div>
+               <div class="col-lg-7 col-md-12 about_company_inner">
+                  <div class="abt_content">
+                     <div class="logo">
+                        <img src="assets/images/logo-default.png" alt="img" class="company_logo_modal">
+                     </div>
+                     <div class="text">
+                        <p> The great explorer of the truth, the master-builder of human happiness no one rejects
+                           dislikes avoids pleasure itself because it is pleasure but because know who do not those
+                           how to pursue pleasures rationally encounter consequences that are extremely painful
+                           desires to obtain.</p>
+                        <a href="#">Read More</a>
+                     </div>
+                     <div class="post_contet_modal">
+                        <h2> Latest News</h2>
+                        <div class="post_enable">
+                           <div class="modal_post_grid">
+                              <a href="blog-single.html">
+                                 <img width="852" height="812" src="assets/images/blog/blog-image-9.jpg"
+                                    class="main_img wp-post-image" alt="img" />
+                              </a>
+                           </div>
+                           <div class="modal_post_grid">
+                              <a href="blog-single.html">
+                                 <img width="852" height="812" src="assets/images/blog/blog-image-8.jpg"
+                                    class="main_img wp-post-image" alt="img" />
+                              </a>
+                           </div>
+                           <div class="modal_post_grid">
+                              <a href="blog-single.html">
+                                 <img width="852" height="812" src="assets/images/blog/blog-image-7.jpg"
+                                    class="main_img wp-post-image" alt="img" />
+                              </a>
+                           </div>
+                           <div class="modal_post_grid">
+                              <a href="blog-single.html">
+                                 <img width="852" height="812" src="assets/images/blog/blog-image-6.jpg"
+                                    class="main_img wp-post-image" alt="img" />
+                              </a>
+                           </div>
+                           <div class="modal_post_grid">
+                              <a href="blog-single.html">
+                                 <img width="852" height="812" src="assets/images/blog/blog-image-5.jpg"
+                                    class="main_img wp-post-image" alt="img" />
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="copright">
+                        © 2023 Creote. All Rights Reserved.
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!---==============modal popup end=================-->
+   <!---==============cart=================-->
+   <div class="side_bar_cart" id="mini_cart">
+      <div class="cart_overlay"></div>
+      <div class="cart_right_conten">
+         <div class="close">
+            <div class="close_btn_mini"><i class="icon-close"></i></div>
+         </div>
+         <div class="cart_content_box">
+            <div class="contnet_cart_box">
+               <div class="widget_shopping_cart_content">
+                  <p class="woocommerce-mini-cart__empty-message">No products in the cart.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!---==============cart=================-->
+ 
+</div>
+<!-- Back to top with progress indicator-->
+<div class="prgoress_indicator">
+   <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+   </svg>
+</div>
+   <!---========================== javascript ==========================-->
+   <script type='text/javascript' src='assets/js/jquery-3.6.0.min.js'></script>
+   <script type='text/javascript' src='assets/js/bootstrap.min.js'></script>
+   <script type='text/javascript' src='assets/js/jquery.fancybox.js'></script>
+   <script type='text/javascript' src='assets/js/jQuery.style.switcher.min.js'></script>
+   <script type='text/javascript' src='assets/js/jquery.flexslider-min.js'></script>
+   <script type='text/javascript' src='assets/js/color-scheme.js'></script>
+   <script type='text/javascript' src='assets/js/owl.js'></script>
+   <script type='text/javascript' src='assets/js/swiper.min.js'></script>
+   <script type='text/javascript' src='assets/js/isotope.min.js'></script>
+   <script type='text/javascript' src='assets/js/countdown.js'></script>
+   <script type='text/javascript' src='assets/js/simpleParallax.min.js'></script>
+   <script type='text/javascript' src='assets/js/appear.js'></script>
+   <script type='text/javascript' src='assets/js/jquery.countTo.js'></script>
+   <script type='text/javascript' src='assets/js/sharer.js'></script>
+   <script type='text/javascript' src='assets/js/validation.js'></script>
+   <!-- map script -->
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-CE0deH3Jhj6GN4YvdCFZS7DpbXexzGU"></script>
+   <script src="assets/js/gmaps.js"></script>
+   <script src="assets/js/map-helper.js"></script>
+   <!-- main-js -->
+   <script type='text/javascript' src='assets/js/creote-extension.js'></script>
+   <!---========================== javascript ==========================-->
+</body>
+
+</html>
