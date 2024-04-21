@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from anvogue-html.vercel.app/coming-soon.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Apr 2024 07:12:44 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="dist/output-scss.css">
+    <link rel="stylesheet" href="dist/output-tailwind.css">
+</head>
+
+<body>
+    <div class="coming-soon relative w-screen h-screen">
+        <img src='assets/images/other/bg-coming-soon.png' alt='bg'
+            class='absolute top-0 left-0 w-full h-full object-cover' />
+        <div class="container w-full h-full">
+            <div class="text-content w-full h-full flex items-center justify-center relative">
+                <div class="content-main flex flex-col items-center lg:w-1/2 sm:w-3/5 w-full">
+                    <div class="text-display">Coming Soon</div>
+                    <div class="countdown-time flex items-center gap-5 lg:mt-[60px] md:mt-10 mt-6">
+                        <div class="item flex flex-col items-center">
+                            <div class="countdown-day time heading1">35</div>
+                            <div class='text-button-uppercase font-medium'>Days</div>
+                        </div>
+                        <span class='heading4'>:</span>
+                        <div class="item flex flex-col items-center">
+                            <div class="countdown-hour time heading1">18</div>
+                            <div class='text-button-uppercase font-medium'>Hours</div>
+                        </div>
+                        <span class='heading4'>:</span>
+                        <div class="item flex flex-col items-center">
+                            <div class="countdown-minute time heading1">52</div>
+                            <div class='text-button-uppercase font-medium'>Minutes</div>
+                        </div>
+                        <span class='heading4'>:</span>
+                        <div class="item flex flex-col items-center">
+                            <div class="countdown-second time heading1">49</div>
+                            <div class='text-button-uppercase font-medium'>Seconds</div>
+                        </div>
+                    </div>
+                    <div class="input-block w-full h-[52px] mt-6">
+                        <form class='w-full h-full relative'>
+                            <input type="email" placeholder='Enter your e-mail'
+                                class='caption1 w-full h-full pl-4 pr-14 rounded-xl border border-line' required />
+                            <button
+                                class='bg-black text-white absolute top-1 bottom-1 right-1 aspect-square rounded-xl flex items-center justify-center'>
+                                <i class="ph ph-arrow-right text-white heading5"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="list-link flex items-center gap-6 justify-center mt-6">
+                        <a href='https://www.facebook.com/' target='_blank'>
+                            <div class="icon-facebook text-xl"></div>
+                        </a>
+                        <a href='https://www.instagram.com/' target='_blank'>
+                            <div class="icon-instagram text-xl"></div>
+                        </a>
+                        <a href='https://www.youtube.com/' target='_blank'>
+                            <div class="icon-youtube text-xl"></div>
+                        </a>
+                        <a href='https://www.twitter.com/' target='_blank'>
+                            <div class="icon-twitter text-xl"></div>
+                        </a>
+                        <a href='https://www.pinterest.com/' target='_blank'>
+                            <div class="icon-pinterest text-xl"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/phosphor-icons.js"></script>
+    <script>
+        const countDown = new Date("June 09, 2024 00:00:00").getTime()
+            const setCountDown = setInterval(function () {
+                let now = new Date().getTime()
+                let distance = countDown - now
+
+                let days = Math.floor(distance / (1000 * 60 * 60 * 24))
+                if (days / 10 < 1) {
+                    days = `0${days}`
+                }
+
+                let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+                if (hours / 10 < 1) {
+                    hours = `0${hours}`
+                }
+
+                let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
+                if (minutes / 10 < 1) {
+                    minutes = `0${minutes}`
+                }
+
+                let seconds = Math.floor((distance % (1000 * 60)) / 1000)
+                if (seconds / 10 < 1) {
+                    seconds = `0${seconds}`
+                }
+
+                const dayTime = document.querySelectorAll('.countdown-day')
+                const hourTime = document.querySelectorAll('.countdown-hour')
+                const minuteTime = document.querySelectorAll('.countdown-minute')
+                const secondTime = document.querySelectorAll('.countdown-second')
+
+                if (dayTime) {
+                    dayTime.forEach(time => {
+                        time.innerHTML = days
+                    })
+                }
+                if (hourTime) {
+                    hourTime.forEach(time => {
+                        time.innerHTML = hours
+                    })
+                }
+                if (minuteTime) {
+                    minuteTime.forEach(time => {
+                        time.innerHTML = minutes
+                    })
+                }
+                if (secondTime) {
+                    secondTime.forEach(time => {
+                        time.innerHTML = seconds
+                    })
+                }
+
+                if (distance < 0) {
+                    clearInterval(x)
+                    if (dayTime) {
+                        dayTime.forEach(time => {
+                            time.innerHTML = '00'
+                        })
+                    }
+                    if (hourTime) {
+                        hourTime.forEach(time => {
+                            time.innerHTML = '00'
+                        })
+                    }
+                    if (minuteTime) {
+                        minuteTime.forEach(time => {
+                            time.innerHTML = '00'
+                        })
+                    }
+                    if (secondTime) {
+                        secondTime.forEach(time => {
+                            time.innerHTML = '00'
+                        })
+                    }
+                }
+            }, 1000)
+    </script>
+</body>
+
+
+<!-- Mirrored from anvogue-html.vercel.app/coming-soon.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Apr 2024 07:12:44 GMT -->
+</html>
