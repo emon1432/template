@@ -1,0 +1,498 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700|Roboto:400,500&amp;display=swap');
+
+
+/* 2 Reboot CSS */
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #fff;
+    font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 600;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #0c0c0c;
+    line-height: 1.5
+}
+
+a,
+a:hover,
+a:focus {
+    -webkit-transition: all 500ms ease 0s;
+    -o-transition: all 500ms ease 0s;
+    transition: all 500ms ease 0s;
+    text-decoration: none;
+    outline: none
+}
+
+p {
+    color: #656565;
+    line-height: 1.9;
+    font-weight: 500;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px
+}
+
+ol li,
+ul li {
+    list-style: outside none none
+}
+
+img {
+    height: auto;
+    max-width: 100%
+}
+
+.container-fluid {
+    padding-left: 50px;
+    padding-right: 50px
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+.single_page_content{
+    position: relative;
+}
+.single_page_content a{
+    position: relative;
+}
+
+.card-badge{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #c71212;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+/* :: Preloader CSS */
+
+#preloader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+}
+
+#hasro-load {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: #6e00ff;
+    -webkit-animation: hasroRotate 2400ms linear infinite;
+    animation: hasroRotate 2400ms linear infinite;
+    z-index: 999;
+}
+
+#hasro-load:before {
+    content: "";
+    position: absolute;
+    top: 7.5px;
+    left: 7.5px;
+    right: 7.5px;
+    bottom: 7.5px;
+    border-radius: 50%;
+    border: 3px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: #e84393;
+    -webkit-animation: hasroRotate 2700ms linear infinite;
+    animation: hasroRotate 2700ms linear infinite
+}
+
+#hasro-load:after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 50%;
+    border: 3px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: #6e00ff;
+    -webkit-animation: hasroRotate 1800ms linear infinite;
+    animation: hasroRotate 1800ms linear infinite
+}
+
+@-webkit-keyframes hasroRotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes hasroRotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+/* 3.1 Header Area */
+.header-area {
+    position: relative;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+    height: 80px;
+    -webkit-box-shadow: 0 0 35px 0 rgba(154, 161, 171, 0.30);
+    box-shadow: 0 0 35px 0 rgba(154, 161, 171, 0.30);
+
+}
+
+.nav-brand {
+    max-width: 90px
+}
+
+.single_page_content {
+    position: relative;
+    z-index: 1;
+}
+
+.ribbon-info {
+    background: #00c292;
+}
+
+.ribbon {
+    padding: 0 30px;
+    height: 35px;
+    line-height: 35px;
+    clear: left;
+    position: absolute;
+    top: 12px;
+    left: -2px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.header-area .nav li a {
+    font-size: 14px;
+    text-transform: capitalize;
+    padding: 0 20px;
+    color: #656565;
+    font-weight: 600
+}
+
+.header-area .nav li a:hover {
+    color: #6e00ff;
+}
+
+.text-primary {
+    color: #6e00ff !important;
+}
+
+.bg-darken {
+    background-color: #060826;
+}
+
+.header-area .nav li a.btn-primary {
+    padding: 10px 26px;
+    border-radius: 4px;
+    color: #fff
+}
+
+.bg-img {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.bg-gray {
+    background-color: #f1f3f8;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.btn-primary {
+    height: 46px;
+    min-width: 150px;
+    line-height: 46px;
+    padding: 0;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #fff;
+    color: #444;
+    left: 1px;
+    border: none;
+}
+
+
+/* 3.2 Hero Area */
+.preview-welcome-area {
+    position: relative;
+    z-index: 99;
+    height: 600px;
+}
+
+
+.intro-heading h4 {
+    font-size: 46px;
+    line-height: 1.4;
+}
+
+.intro-heading h6 {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+
+/* 3.3 Features */
+
+.btn.focus,
+.btn:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.elements {
+    margin: 0;
+}
+
+.elements li img {
+    max-height: 25px;
+    margin: 0 15px;
+}
+
+.demo-title>p {
+    font-size: 16px;
+}
+
+.feature_img>i {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.text-big-md {
+    font-size: 64px !important;
+    font-size: 64px !important;
+    font-size: 4rem !important;
+}
+
+.feature_text h4 {
+    color: #fff;
+    font-weight: 400
+}
+
+.single_page_icon {
+    margin: auto;
+    padding: 0 15px;
+    font-size: 32px;
+    color: #6e00ff;
+}
+
+.intro-heading p {
+    font-size: 18px;
+}
+
+.single_page_icon img {
+    max-height: 40px
+}
+
+.single_page__content>h5 {
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.single_page__content>p {
+    margin-bottom: 0;
+    font-size: 14px
+}
+
+.single_page__content {
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    border: 1px solid #ebebeb;
+    background-color: #fff
+}
+
+.single_page_content a {
+    display: block;
+    -webkit-box-shadow: 0 5px 15px -4px #cdcfe1;
+    box-shadow: 0 5px 15px -4px #cdcfe1;
+    -webkit-transition-duration: 400ms;
+    -o-transition-duration: 400ms;
+    transition-duration: 400ms;
+}
+
+.single_page_content a:hover {
+    -webkit-box-shadow: 0 5px 50px -4px #cdcfe1;
+    box-shadow: 0 5px 50px -4px #cdcfe1;
+}
+
+.single_page_content a img {
+    border-radius: 5px
+}
+
+.title a h6 {
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+/* 4 Footer Area */
+.footer_area {
+    position: relative;
+    z-index: 1;
+    background-color: #6e00ff;
+    padding: 30px 0
+}
+
+.footer_area p {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.footer_area a {
+    color: #fff
+}
+
+.footer_bottom p>i,
+.footer_bottom p>a:hover {
+    color: #fff
+}
+
+.footer_copywrite_area p,
+.footer_copywrite_area a {
+    color: #fff;
+    font-size: 16px
+}
+
+/* 5 Responsive CSS */
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .intro-heading h4 {
+        font-size: 34px
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:575px) {
+    .header-area .nav li a {
+        display: none
+    }
+
+    .header-area .nav li a.btn-primary {
+        display: block
+    }
+
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px
+    }
+
+    .nav-brand {
+        max-width: 100px
+    }
+
+    .intro-heading h4 {
+        font-size: 28px
+    }
+
+    .elements li img {
+        max-height: 20px
+    }
+
+    .intro-heading h2 {
+        font-size: 30px
+    }
+
+    .intro-heading h6 {
+        font-size: 16px
+    }
+
+    .footer_area p {
+        font-size: 14px
+    }
+
+    .welcome-thumb {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (min-width:480px) and (max-width:767px) {
+    .container-fluid {
+        padding-left: 30px;
+        padding-right: 30px
+    }
+
+    .nav-brand {
+        max-width: 100px;
+    }
+
+    .intro-heading h4 {
+        font-size: 32px;
+    }
+
+    .welcome-thumb {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width:767px) {
+    .header-area .nav li a {
+        display: none
+    }
+
+    .header-area .nav li a.btn-primary {
+        display: block
+    }
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}

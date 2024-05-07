@@ -1,0 +1,1 @@
+!function(a){"use strict";void 0!==a.fn.knob&&a(".knob").each(function(){var n=a(this),t=n.attr("data-rel");n.knob({draw:function(){a(this.i).val(this.cv+"%")}}),n.appear(function(){a({value:0}).animate({value:t},{duration:2e3,easing:"swing",step:function(){n.val(Math.ceil(this.value)).trigger("change")}})},{accX:0,accY:-150})})}(jQuery);
