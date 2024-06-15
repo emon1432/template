@@ -1,0 +1,142 @@
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+
+
+}
+
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1199px) {
+a.dtbtn {
+	font-size: 15px !important;
+	padding: 9px 25px !important;
+}
+.techno_menu > ul > li > a {
+	font-size: 16px !important;
+	margin:30px 6px !important; 
+}
+.owl-prev, .owl-next{
+	display:none;
+}
+.bg-thumb {
+    margin-top: 31px !important;
+}
+.live-demo-button a {
+    padding: 7px 22px !important;
+}
+.left-box-ds {
+    margin-left: 27px !important; 
+}
+.section-title h1 {
+    font-size: 38px !important;
+}
+
+
+}
+
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+.header_top_menu {
+	display: none;
+}
+.owl-prev, .owl-next{
+	display:none;
+}
+.bg-thumb {
+    margin-top: 93px !important;
+}
+.left-box-ds {
+    margin-left: 0 !important;
+}
+.copy-right-text {
+    text-align: center;
+}
+.footer-menu ul {
+    text-align: center !important;
+}
+}
+
+/* Large Mobile :600px. */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+.header_top_menu {
+	display: none;
+}
+.owl-prev, .owl-next{
+	display:none;
+}
+.slider_text_inner h1 {
+	font-size: 36px !important;
+}
+.slider_text_inner h5 {
+	font-size: 16px !important;
+}
+.bg-thumb {
+    margin-top: 204px !important;
+}
+.left-box-ds {
+    margin-left: 0 !important;
+}
+.copy-right-text {
+    text-align: center;
+}
+.footer-menu ul {
+    text-align: center !important;
+}
+.footer-content h1 {
+    font-size: 38px !important;
+}
+}
+
+
+
+/* small mobile :320px. */
+@media only screen and (min-width: 320px) and (max-width: 599px) {
+.header_top_menu {
+	display: none;
+}
+.owl-prev, .owl-next{
+	display:none;
+}
+.bg-thumb {
+    margin-top: 112px !important;
+}
+.slider_text_inner h1 {
+    font-size: 30px !important;
+}
+.slider1 {
+    height: 800px !important;
+}
+.section-title {
+    text-align: center !important;
+}
+.section-title h1 {
+    font-size: 30px !important;
+}
+.single-counter {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.live-demo-button a {
+    margin: 1px 0 !important;
+}
+.left-box-ds {
+    margin-left: 0 !important;
+}
+.copy-right-text {
+    text-align: center;
+}
+.footer-menu ul {
+    text-align: center !important;
+}
+.footer-content h1 {
+    font-size: 38px !important;
+}
+.footer-area svg {
+    height: 80px !important; 
+    margin-top: -312px !important;
+    left: -45px !important;
+}
+}
+
+
