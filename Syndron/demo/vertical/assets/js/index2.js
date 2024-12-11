@@ -2,82 +2,11 @@ $(function() {
 	"use strict";
 	var e = {
 		series: [{
-			name: "Sessions",
-			data: [14, 3, 10, 9, 29, 19, 22, 9, 12, 7, 19, 5]
-		}],
-		chart: {
-			foreColor: "#9ba7b2",
-			height: 310,
-			type: "area",
-			zoom: {
-				enabled: !1
-			},
-			toolbar: {
-				show: !0
-			},
-			dropShadow: {
-				enabled: !0,
-				top: 3,
-				left: 14,
-				blur: 4,
-				opacity: .1
-			}
-		},
-		stroke: {
-			width: 5,
-			curve: "smooth"
-		},
-		xaxis: {
-			//type: "datetime",
-			categories: ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC']
-		},
-		title: {
-			text: "Sessions",
-			align: "left",
-			style: {
-				fontSize: "16px",
-				color: "#666"
-			}
-		},
-		fill: {
-			type: "gradient",
-			gradient: {
-				shade: "light",
-				gradientToColors: ["#0d6efd"],
-				shadeIntensity: 1,
-				type: "vertical",
-				opacityFrom: .7,
-				opacityTo: .2,
-				stops: [0, 100, 100, 100]
-			}
-		},
-		markers: {
-			size: 5,
-			colors: ["#0d6efd"],
-			strokeColors: "#fff",
-			strokeWidth: 2,
-			hover: {
-				size: 7
-			}
-		},
-		dataLabels: {
-			enabled: !1
-		},
-		colors: ["#0d6efd"],
-		grid: {
-			show: true,
-			borderColor: 'rgba(0, 0, 0, 0.15)',
-			strokeDashArray: 4,
-		}
-	};
-	new ApexCharts(document.querySelector("#chart1"), e).render();
-	e = {
-		series: [{
-			name: "Total Users",
+			name: "Revenue",
 			data: [240, 160, 671, 414, 555, 257, 901, 613, 727, 414, 555, 257]
 		}],
 		chart: {
-			type: "bar",
+			type: "line",
 			height: 65,
 			toolbar: {
 				show: !1
@@ -106,19 +35,12 @@ $(function() {
 				size: 7
 			}
 		},
-		plotOptions: {
-			bar: {
-				horizontal: !1,
-				columnWidth: "30%",
-				endingShape: "rounded"
-			}
-		},
 		dataLabels: {
 			enabled: !1
 		},
 		stroke: {
 			show: !0,
-			width: 0,
+			width: 3,
 			curve: "smooth"
 		},
 		colors: ["#17a00e"],
@@ -148,14 +70,85 @@ $(function() {
 			}
 		}
 	};
-	new ApexCharts(document.querySelector("#chart2"), e).render();
+	new ApexCharts(document.querySelector("#chart1"), e).render();
 	e = {
 		series: [{
-			name: "Page Views",
+			name: "Customers",
 			data: [240, 160, 671, 414, 555, 257, 901, 613, 727, 414, 555, 257]
 		}],
 		chart: {
-			type: "bar",
+			type: "line",
+			height: 65,
+			toolbar: {
+				show: !1
+			},
+			zoom: {
+				enabled: !1
+			},
+			dropShadow: {
+				enabled: !0,
+				top: 3,
+				left: 14,
+				blur: 4,
+				opacity: .12,
+				color: "#ffc107"
+			},
+			sparkline: {
+				enabled: !0
+			}
+		},
+		markers: {
+			size: 0,
+			colors: ["#ffc107"],
+			strokeColors: "#fff",
+			strokeWidth: 2,
+			hover: {
+				size: 7
+			}
+		},
+		dataLabels: {
+			enabled: !1
+		},
+		stroke: {
+			show: !0,
+			width: 3,
+			curve: "smooth"
+		},
+		colors: ["#ffc107"],
+		xaxis: {
+			categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+		},
+		fill: {
+			opacity: 1
+		},
+		tooltip: {
+			theme: "dark",
+			fixed: {
+				enabled: !1
+			},
+			x: {
+				show: !1
+			},
+			y: {
+				title: {
+					formatter: function(e) {
+						return ""
+					}
+				}
+			},
+			marker: {
+				show: !1
+			}
+		}
+	};
+	new ApexCharts(document.querySelector("#chart2"), e).render();
+	e = {
+		series: [{
+			name: "Store Visitores",
+			data: [240, 160, 671, 414, 555, 257, 901, 613, 727, 414, 555, 257]
+		}],
+		chart: {
+			type: "line",
 			height: 65,
 			toolbar: {
 				show: !1
@@ -184,19 +177,12 @@ $(function() {
 				size: 7
 			}
 		},
-		plotOptions: {
-			bar: {
-				horizontal: !1,
-				columnWidth: "30%",
-				endingShape: "rounded"
-			}
-		},
 		dataLabels: {
 			enabled: !1
 		},
 		stroke: {
 			show: !0,
-			width: 0,
+			width: 3,
 			curve: "smooth"
 		},
 		colors: ["#f41127"],
@@ -229,12 +215,67 @@ $(function() {
 	new ApexCharts(document.querySelector("#chart3"), e).render();
 	e = {
 		series: [{
-			name: "Avg. Session Duration",
-			data: [240, 160, 671, 414, 555, 257, 901, 613, 727, 414, 555, 257]
+			name: "Total Sales",
+			data: [44, 55, 57, 56, 61, 58, 63, 60, 66]
+		}, {
+			name: "Customers",
+			data: [76, 85, 101, 98, 87, 105, 91, 114, 94]
+		}, {
+			name: "Store Visitores",
+			data: [35, 41, 36, 26, 45, 48, 52, 53, 41]
 		}],
 		chart: {
+			foreColor: "#9ba7b2",
 			type: "bar",
-			height: 65,
+			height: 300,
+			toolbar: {
+				show: !1
+			}
+		},
+		plotOptions: {
+			bar: {
+				horizontal: !1,
+				columnWidth: "55%",
+				endingShape: "rounded"
+			}
+		},
+		dataLabels: {
+			enabled: !1
+		},
+		stroke: {
+			show: !0,
+			width: 2,
+			colors: ["transparent"]
+		},
+		colors: ["#0dcaf0", "#0d6efd", "#e5e7e8"],
+		xaxis: {
+			categories: ["Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct"]
+		},
+		grid: {
+			show: true,
+			borderColor: 'rgba(0, 0, 0, 0.15)',
+			strokeDashArray: 4,
+		},
+		fill: {
+			opacity: 1
+		},
+		tooltip: {
+			y: {
+				formatter: function(e) {
+					return "$ " + e + " thousands"
+				}
+			}
+		}
+	};
+	new ApexCharts(document.querySelector("#chart4"), e).render();
+	e = {
+		series: [{
+			name: "Revenue",
+			data: [240, 160, 671, 414, 555, 257, 901, 613]
+		}],
+		chart: {
+			type: "area",
+			height: 45,
 			toolbar: {
 				show: !1
 			},
@@ -242,7 +283,7 @@ $(function() {
 				enabled: !1
 			},
 			dropShadow: {
-				enabled: !0,
+				enabled: !1,
 				top: 3,
 				left: 14,
 				blur: 4,
@@ -262,19 +303,12 @@ $(function() {
 				size: 7
 			}
 		},
-		plotOptions: {
-			bar: {
-				horizontal: !1,
-				columnWidth: "30%",
-				endingShape: "rounded"
-			}
-		},
 		dataLabels: {
 			enabled: !1
 		},
 		stroke: {
 			show: !0,
-			width: 0,
+			width: 2,
 			curve: "smooth"
 		},
 		colors: ["#0d6efd"],
@@ -304,15 +338,15 @@ $(function() {
 			}
 		}
 	};
-	new ApexCharts(document.querySelector("#chart4"), e).render();
+	new ApexCharts(document.querySelector("#chart5"), e).render();
 	e = {
 		series: [{
-			name: "Bounce Rate",
-			data: [240, 160, 671, 414, 555, 257, 901, 613, 727, 414, 555, 257]
+			name: "Revenue",
+			data: [240, 160, 671, 414, 555, 257, 901, 613]
 		}],
 		chart: {
-			type: "bar",
-			height: 65,
+			type: "area",
+			height: 45,
 			toolbar: {
 				show: !1
 			},
@@ -320,12 +354,12 @@ $(function() {
 				enabled: !1
 			},
 			dropShadow: {
-				enabled: !0,
+				enabled: !1,
 				top: 3,
 				left: 14,
 				blur: 4,
 				opacity: .12,
-				color: "#ffb207"
+				color: "#0d6efd"
 			},
 			sparkline: {
 				enabled: !0
@@ -333,18 +367,11 @@ $(function() {
 		},
 		markers: {
 			size: 0,
-			colors: ["#ffb207"],
+			colors: ["#0d6efd"],
 			strokeColors: "#fff",
 			strokeWidth: 2,
 			hover: {
 				size: 7
-			}
-		},
-		plotOptions: {
-			bar: {
-				horizontal: !1,
-				columnWidth: "30%",
-				endingShape: "rounded"
 			}
 		},
 		dataLabels: {
@@ -352,10 +379,10 @@ $(function() {
 		},
 		stroke: {
 			show: !0,
-			width: 0,
+			width: 2,
 			curve: "smooth"
 		},
-		colors: ["#ffb207"],
+		colors: ["#0d6efd"],
 		xaxis: {
 			categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 		},
@@ -382,352 +409,1086 @@ $(function() {
 			}
 		}
 	};
-	new ApexCharts(document.querySelector("#chart5"), e).render(), Highcharts.chart("chart6", {
+	new ApexCharts(document.querySelector("#chart6"), e).render();
+	e = {
+		series: [{
+			name: "Revenue",
+			data: [240, 160, 671, 414, 555, 257, 901, 613]
+		}],
 		chart: {
-			height: 350,
-			type: "column",
-			styledMode: !0
-		},
-		credits: {
-			enabled: !1
-		},
-		title: {
-			text: "Traffic Sources Status. January, 2020"
-		},
-		accessibility: {
-			announceNewData: {
+			type: "area",
+			height: 45,
+			toolbar: {
+				show: !1
+			},
+			zoom: {
+				enabled: !1
+			},
+			dropShadow: {
+				enabled: !1,
+				top: 3,
+				left: 14,
+				blur: 4,
+				opacity: .12,
+				color: "#0d6efd"
+			},
+			sparkline: {
 				enabled: !0
 			}
 		},
-		xAxis: {
-			type: "category"
-		},
-		yAxis: {
-			title: {
-				text: "Total percent market share"
+		markers: {
+			size: 0,
+			colors: ["#0d6efd"],
+			strokeColors: "#fff",
+			strokeWidth: 2,
+			hover: {
+				size: 7
 			}
-		},
-		legend: {
-			enabled: !1
-		},
-		plotOptions: {
-			series: {
-				borderWidth: 0,
-				dataLabels: {
-					enabled: !0,
-					format: "{point.y:.1f}%"
-				}
-			}
-		},
-		tooltip: {
-			headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-			pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
-		},
-		series: [{
-			name: "Traffic Sources",
-			colorByPoint: !0,
-			data: [{
-				name: "Organic Search",
-				y: 62.74,
-				drilldown: "Organic Search"
-			}, {
-				name: "Direct",
-				y: 40.57,
-				drilldown: "Direct"
-			}, {
-				name: "Referral",
-				y: 25.23,
-				drilldown: "Referral"
-			}, {
-				name: "Others",
-				y: 10.58,
-				drilldown: "Others"
-			}]
-		}],
-		drilldown: {
-			series: [{
-				name: "Chrome",
-				id: "Chrome",
-				data: [
-					["v65.0", .1],
-					["v64.0", 1.3],
-					["v63.0", 53.02],
-					["v62.0", 1.4],
-					["v61.0", .88],
-					["v60.0", .56],
-					["v59.0", .45],
-					["v58.0", .49],
-					["v57.0", .32],
-					["v56.0", .29],
-					["v55.0", .79],
-					["v54.0", .18],
-					["v51.0", .13],
-					["v49.0", 2.16],
-					["v48.0", .13],
-					["v47.0", .11],
-					["v43.0", .17],
-					["v29.0", .26]
-				]
-			}, {
-				name: "Firefox",
-				id: "Firefox",
-				data: [
-					["v58.0", 1.02],
-					["v57.0", 7.36],
-					["v56.0", .35],
-					["v55.0", .11],
-					["v54.0", .1],
-					["v52.0", .95],
-					["v51.0", .15],
-					["v50.0", .1],
-					["v48.0", .31],
-					["v47.0", .12]
-				]
-			}, {
-				name: "Internet Explorer",
-				id: "Internet Explorer",
-				data: [
-					["v11.0", 6.2],
-					["v10.0", .29],
-					["v9.0", .27],
-					["v8.0", .47]
-				]
-			}, {
-				name: "Safari",
-				id: "Safari",
-				data: [
-					["v11.0", 3.39],
-					["v10.1", .96],
-					["v10.0", .36],
-					["v9.1", .54],
-					["v9.0", .13],
-					["v5.1", .2]
-				]
-			}, {
-				name: "Edge",
-				id: "Edge",
-				data: [
-					["v16", 2.6],
-					["v15", .92],
-					["v14", .4],
-					["v13", .1]
-				]
-			}, {
-				name: "Opera",
-				id: "Opera",
-				data: [
-					["v50.0", .96],
-					["v49.0", .82],
-					["v12.1", .14]
-				]
-			}]
-		}
-	}), Highcharts.chart("chart7", {
-		chart: {
-			height: 350,
-			plotBackgroundColor: null,
-			plotBorderWidth: null,
-			plotShadow: !1,
-			type: "pie",
-			styledMode: !0
-		},
-		credits: {
-			enabled: !1
-		},
-		title: {
-			text: "Sessions Device"
-		},
-		subtitle: {
-			text: "Ratio of devices use by users"
-		},
-		tooltip: {
-			pointFormat: "{series.name}: <b>{point.percentage:.1f}%</b>"
-		},
-		accessibility: {
-			point: {
-				valueSuffix: "%"
-			}
-		},
-		plotOptions: {
-			pie: {
-				allowPointSelect: !0,
-				cursor: "pointer",
-				innerSize: 120,
-				dataLabels: {
-					enabled: !0,
-					format: "<b>{point.name}</b>: {point.percentage:.1f} %"
-				},
-				showInLegend: !0
-			}
-		},
-		series: [{
-			name: "Users",
-			colorByPoint: !0,
-			data: [{
-				name: "Desktop",
-				y: 56
-			}, {
-				name: "Mobile",
-				y: 30
-			}, {
-				name: "Tablet",
-				y: 14
-			}]
-		}],
-		responsive: {
-			rules: [{
-				condition: {
-					maxWidth: 500
-				},
-				chartOptions: {
-					plotOptions: {
-						pie: {
-							innerSize: 140,
-							dataLabels: {
-								enabled: !1
-							}
-						}
-					}
-				}
-			}]
-		}
-	}), Highcharts.chart("chart8", {
-		chart: {
-			type: "bar",
-			styledMode: !0
-		},
-		credits: {
-			enabled: !1
-		},
-		exporting: {
-			buttons: {
-				contextButton: {
-					enabled: !1
-				}
-			}
-		},
-		title: {
-			text: "Visitor by Gender"
-		},
-		xAxis: {
-			categories: ["Jan", "Feb", "Mar", "Apr", "May"]
-		},
-		yAxis: {
-			min: 0,
-			title: {
-				text: "Visitor by Genders",
-				style: {
-					display: "none"
-				}
-			}
-		},
-		legend: {
-			reversed: !1
-		},
-		plotOptions: {
-			series: {
-				stacking: "normal"
-			}
-		},
-		series: [{
-			name: "Male",
-			data: [5, 3, 4, 7, 2]
-		}, {
-			name: "Female",
-			data: [2, 2, 3, 2, 1]
-		}, {
-			name: "Others",
-			data: [3, 4, 4, 2, 5]
-		}]
-	});
-	e = {
-		series: [42, 47, 52, 58, 65],
-		chart: {
-			height: 340,
-			type: "polarArea"
-		},
-		labels: ["Chrome", "Firefox", "Edge", "Opera", "Safari"],
-		fill: {
-			opacity: 1
-		},
-		stroke: {
-			width: 1,
-			colors: void 0
-		},
-		colors: ["#17a00e", "#0dcaf0", "#f41127", "#ffc107", "#0d6efd"],
-		yaxis: {
-			show: !1
 		},
 		dataLabels: {
 			enabled: !1
 		},
-		legend: {
-			show: !1,
-			position: "bottom"
+		stroke: {
+			show: !0,
+			width: 2,
+			curve: "smooth"
 		},
-		plotOptions: {
-			polarArea: {
-				rings: {
-					strokeWidth: 0
+		colors: ["#0d6efd"],
+		xaxis: {
+			categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+		},
+		fill: {
+			opacity: 1
+		},
+		tooltip: {
+			theme: "dark",
+			fixed: {
+				enabled: !1
+			},
+			x: {
+				show: !1
+			},
+			y: {
+				title: {
+					formatter: function(e) {
+						return ""
+					}
 				}
+			},
+			marker: {
+				show: !1
 			}
 		}
 	};
-	new ApexCharts(document.querySelector("#chart9"), e).render(), jQuery("#geographic-map").vectorMap({
-		map: "world_mill_en",
-		backgroundColor: "transparent",
-		borderColor: "#818181",
-		borderOpacity: .25,
-		borderWidth: 1,
-		zoomOnScroll: !1,
-		color: "#009efb",
-		regionStyle: {
-			initial: {
-				fill: "#6c757d"
-			}
-		},
-		markerStyle: {
-			initial: {
-				r: 9,
-				fill: "#fff",
-				"fill-opacity": 1,
-				stroke: "#000",
-				"stroke-width": 5,
-				"stroke-opacity": .4
-			}
-		},
-		enableZoom: !0,
-		hoverColor: "#009efb",
-		markers: [{
-			latLng: [21, 78],
-			name: "I Love My India"
+	new ApexCharts(document.querySelector("#chart7"), e).render();
+	e = {
+		series: [{
+			name: "Revenue",
+			data: [240, 160, 671, 414, 555, 257, 901, 613]
 		}],
-		series: {
-			regions: [{
-				values: {
-					IN: "#0d6efd",
-					US: "#15b70a",
-					RU: "#f41127",
-					AU: "#ffb207"
-				}
-			}]
+		chart: {
+			type: "area",
+			height: 45,
+			toolbar: {
+				show: !1
+			},
+			zoom: {
+				enabled: !1
+			},
+			dropShadow: {
+				enabled: !1,
+				top: 3,
+				left: 14,
+				blur: 4,
+				opacity: .12,
+				color: "#0d6efd"
+			},
+			sparkline: {
+				enabled: !0
+			}
 		},
-		hoverOpacity: null,
-		normalizeFunction: "linear",
-		scaleColors: ["#b6d6ff", "#005ace"],
-		selectedColor: "#c9dfaf",
-		selectedRegions: [],
-		showTooltip: !0,
-		onRegionClick: function(e, t, o) {
-			var r = 'You clicked "' + o + '" which has the code: ' + t.toUpperCase();
-			alert(r)
+		markers: {
+			size: 0,
+			colors: ["#0d6efd"],
+			strokeColors: "#fff",
+			strokeWidth: 2,
+			hover: {
+				size: 7
+			}
+		},
+		dataLabels: {
+			enabled: !1
+		},
+		stroke: {
+			show: !0,
+			width: 2,
+			curve: "smooth"
+		},
+		colors: ["#0d6efd"],
+		xaxis: {
+			categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+		},
+		fill: {
+			opacity: 1
+		},
+		tooltip: {
+			theme: "dark",
+			fixed: {
+				enabled: !1
+			},
+			x: {
+				show: !1
+			},
+			y: {
+				title: {
+					formatter: function(e) {
+						return ""
+					}
+				}
+			},
+			marker: {
+				show: !1
+			}
 		}
-	}),
+	};
+	new ApexCharts(document.querySelector("#chart8"), e).render();
+	e = {
+		series: [{
+			name: "Revenue",
+			data: [240, 160, 671, 414, 555, 257, 901, 613]
+		}],
+		chart: {
+			type: "area",
+			height: 45,
+			toolbar: {
+				show: !1
+			},
+			zoom: {
+				enabled: !1
+			},
+			dropShadow: {
+				enabled: !1,
+				top: 3,
+				left: 14,
+				blur: 4,
+				opacity: .12,
+				color: "#0d6efd"
+			},
+			sparkline: {
+				enabled: !0
+			}
+		},
+		markers: {
+			size: 0,
+			colors: ["#0d6efd"],
+			strokeColors: "#fff",
+			strokeWidth: 2,
+			hover: {
+				size: 7
+			}
+		},
+		dataLabels: {
+			enabled: !1
+		},
+		stroke: {
+			show: !0,
+			width: 2,
+			curve: "smooth"
+		},
+		colors: ["#0d6efd"],
+		xaxis: {
+			categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+		},
+		fill: {
+			opacity: 1
+		},
+		tooltip: {
+			theme: "dark",
+			fixed: {
+				enabled: !1
+			},
+			x: {
+				show: !1
+			},
+			y: {
+				title: {
+					formatter: function(e) {
+						return ""
+					}
+				}
+			},
+			marker: {
+				show: !1
+			}
+		}
+	};
+	new ApexCharts(document.querySelector("#chart9"), e).render();
+	e = {
+		series: [{
+			name: "Revenue",
+			data: [240, 160, 671, 414, 555, 257, 901, 613]
+		}],
+		chart: {
+			type: "area",
+			height: 45,
+			toolbar: {
+				show: !1
+			},
+			zoom: {
+				enabled: !1
+			},
+			dropShadow: {
+				enabled: !1,
+				top: 3,
+				left: 14,
+				blur: 4,
+				opacity: .12,
+				color: "#0d6efd"
+			},
+			sparkline: {
+				enabled: !0
+			}
+		},
+		markers: {
+			size: 0,
+			colors: ["#0d6efd"],
+			strokeColors: "#fff",
+			strokeWidth: 2,
+			hover: {
+				size: 7
+			}
+		},
+		dataLabels: {
+			enabled: !1
+		},
+		stroke: {
+			show: !0,
+			width: 2,
+			curve: "smooth"
+		},
+		colors: ["#0d6efd"],
+		xaxis: {
+			categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+		},
+		fill: {
+			opacity: 1
+		},
+		tooltip: {
+			theme: "dark",
+			fixed: {
+				enabled: !1
+			},
+			x: {
+				show: !1
+			},
+			y: {
+				title: {
+					formatter: function(e) {
+						return ""
+					}
+				}
+			},
+			marker: {
+				show: !1
+			}
+		}
+	};
+	new ApexCharts(document.querySelector("#chart10"), e).render();
+	e = {
+		series: [{
+			name: "Revenue",
+			data: [240, 160, 671, 414, 555, 257, 901, 613]
+		}],
+		chart: {
+			type: "area",
+			height: 45,
+			toolbar: {
+				show: !1
+			},
+			zoom: {
+				enabled: !1
+			},
+			dropShadow: {
+				enabled: !1,
+				top: 3,
+				left: 14,
+				blur: 4,
+				opacity: .12,
+				color: "#0d6efd"
+			},
+			sparkline: {
+				enabled: !0
+			}
+		},
+		markers: {
+			size: 0,
+			colors: ["#0d6efd"],
+			strokeColors: "#fff",
+			strokeWidth: 2,
+			hover: {
+				size: 7
+			}
+		},
+		dataLabels: {
+			enabled: !1
+		},
+		stroke: {
+			show: !0,
+			width: 2,
+			curve: "smooth"
+		},
+		colors: ["#0d6efd"],
+		xaxis: {
+			categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+		},
+		fill: {
+			opacity: 1
+		},
+		tooltip: {
+			theme: "dark",
+			fixed: {
+				enabled: !1
+			},
+			x: {
+				show: !1
+			},
+			y: {
+				title: {
+					formatter: function(e) {
+						return ""
+					}
+				}
+			},
+			marker: {
+				show: !1
+			}
+		}
+	};
+	new ApexCharts(document.querySelector("#chart11"), e).render();
+	e = {
+		series: [{
+			name: "Revenue",
+			data: [332, 540, 160, 240, 160, 671, 355, 671, 414, 555, 257, 901, 613]
+		}],
+		chart: {
+			type: "area",
+			height: 100,
+			toolbar: {
+				show: !1
+			},
+			zoom: {
+				enabled: !1
+			},
+			dropShadow: {
+				enabled: !1,
+				top: 3,
+				left: 14,
+				blur: 4,
+				opacity: .12,
+				color: "#17a00e"
+			},
+			sparkline: {
+				enabled: !0
+			}
+		},
+		markers: {
+			size: 0,
+			colors: ["#17a00e"],
+			strokeColors: "#fff",
+			strokeWidth: 2,
+			hover: {
+				size: 7
+			}
+		},
+		dataLabels: {
+			enabled: !1
+		},
+		stroke: {
+			show: !0,
+			width: 2,
+			curve: "smooth"
+		},
+		colors: ["#17a00e"],
+		xaxis: {
+			categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+		},
+		fill: {
+			opacity: 1
+		},
+		tooltip: {
+			theme: "dark",
+			fixed: {
+				enabled: !1
+			},
+			x: {
+				show: !1
+			},
+			y: {
+				title: {
+					formatter: function(e) {
+						return ""
+					}
+				}
+			},
+			marker: {
+				show: !1
+			}
+		}
+	};
+	new ApexCharts(document.querySelector("#chart12"), e).render();
+	e = {
+		series: [{
+			name: "Pageviews",
+			data: [332, 540, 160, 240, 160, 671, 355, 671, 414, 555, 257, 901, 613]
+		}],
+		chart: {
+			type: "area",
+			height: 100,
+			toolbar: {
+				show: !1
+			},
+			zoom: {
+				enabled: !1
+			},
+			dropShadow: {
+				enabled: !1,
+				top: 3,
+				left: 14,
+				blur: 4,
+				opacity: .12,
+				color: "#f41127"
+			},
+			sparkline: {
+				enabled: !0
+			}
+		},
+		markers: {
+			size: 0,
+			colors: ["#f41127"],
+			strokeColors: "#fff",
+			strokeWidth: 2,
+			hover: {
+				size: 7
+			}
+		},
+		dataLabels: {
+			enabled: !1
+		},
+		stroke: {
+			show: !0,
+			width: 2,
+			curve: "smooth"
+		},
+		colors: ["#f41127"],
+		xaxis: {
+			categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+		},
+		fill: {
+			opacity: 1
+		},
+		tooltip: {
+			theme: "dark",
+			fixed: {
+				enabled: !1
+			},
+			x: {
+				show: !1
+			},
+			y: {
+				title: {
+					formatter: function(e) {
+						return ""
+					}
+				}
+			},
+			marker: {
+				show: !1
+			}
+		}
+	};
+	new ApexCharts(document.querySelector("#chart13"), e).render();
+	e = {
+		series: [{
+			name: "New Sessions",
+			data: [332, 540, 160, 240, 160, 671, 355, 671, 414, 555, 257, 901, 613]
+		}],
+		chart: {
+			type: "area",
+			height: 100,
+			toolbar: {
+				show: !1
+			},
+			zoom: {
+				enabled: !1
+			},
+			dropShadow: {
+				enabled: !1,
+				top: 3,
+				left: 14,
+				blur: 4,
+				opacity: .12,
+				color: "#0dcaf0"
+			},
+			sparkline: {
+				enabled: !0
+			}
+		},
+		markers: {
+			size: 0,
+			colors: ["#0dcaf0"],
+			strokeColors: "#fff",
+			strokeWidth: 2,
+			hover: {
+				size: 7
+			}
+		},
+		dataLabels: {
+			enabled: !1
+		},
+		stroke: {
+			show: !0,
+			width: 2,
+			curve: "smooth"
+		},
+		colors: ["#0dcaf0"],
+		xaxis: {
+			categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+		},
+		fill: {
+			opacity: 1
+		},
+		tooltip: {
+			theme: "dark",
+			fixed: {
+				enabled: !1
+			},
+			x: {
+				show: !1
+			},
+			y: {
+				title: {
+					formatter: function(e) {
+						return ""
+					}
+				}
+			},
+			marker: {
+				show: !1
+			}
+		}
+	};
+	new ApexCharts(document.querySelector("#chart14"), e).render();
+	e = {
+		series: [25, 65, 10, 14],
+		chart: {
+			height: 240,
+			type: "donut"
+		},
+		legend: {
+			position: "bottom",
+			show: !1
+		},
+		plotOptions: {
+			pie: {
+				donut: {
+					size: "80%"
+				}
+			}
+		},
+		colors: ["#17a00e", "#0d6efd", "#f41127", "#ffc107"],
+		dataLabels: {
+			enabled: !1
+		},
+		labels: ["Kids", "Men", "Women", "Furniture"],
+		responsive: [{
+			breakpoint: 480,
+			options: {
+				chart: {
+					height: 200
+				},
+				legend: {
+					position: "bottom"
+				}
+			}
+		}]
+	};
+	new ApexCharts(document.querySelector("#chart15"), e).render();
+	e = {
+		chart: {
+			height: 180,
+			type: "radialBar",
+			toolbar: {
+				show: !1
+			}
+		},
+		plotOptions: {
+			radialBar: {
+				hollow: {
+					margin: 0,
+					size: "78%",
+					background: "transparent",
+					image: void 0,
+					imageOffsetX: 0,
+					imageOffsetY: 0,
+					position: "front",
+					dropShadow: {
+						enabled: !1,
+						top: 3,
+						left: 0,
+						blur: 4,
+						color: "rgba(0, 169, 255, 0.85)",
+						opacity: .65
+					}
+				},
+				track: {
+					background: 'rgba(0, 0, 0, 0.1)',
+					margin: 0,
+					dropShadow: {
+						enabled: !1,
+						top: -3,
+						left: 0,
+						blur: 4,
+						color: "rgba(0, 169, 255, 0.5)",
+						opacity: .65
+					}
+				},
+				dataLabels: {
+					showOn: "always",
+					name: {
+						offsetY: -8,
+						show: !0,
+						color: "#6c757d",
+						fontSize: "15px"
+					},
+					value: {
+						formatter: function(e) {
+							return e + "%"
+						},
+						color: "#000",
+						fontSize: "25px",
+						show: !0,
+						offsetY: 10
+					}
+				}
+			}
+		},
+		fill: {
+			type: "gradient",
+			gradient: {
+				shade: "light",
+				type: "horizontal",
+				shadeIntensity: .5,
+				gradientToColors: ["#17a00e"],
+				inverseColors: !1,
+				opacityFrom: 1,
+				opacityTo: 1,
+				stops: [0, 100]
+			}
+		},
+		colors: ["#17a00e"],
+		series: [68],
+		stroke: {
+			lineCap: "round",
+			width: "5"
+		},
+		labels: ["Completed"]
+	};
+	new ApexCharts(document.querySelector("#chart16"), e).render();
+	e = {
+		chart: {
+			height: 180,
+			type: "radialBar",
+			toolbar: {
+				show: !1
+			}
+		},
+		plotOptions: {
+			radialBar: {
+				hollow: {
+					margin: 0,
+					size: "78%",
+					background: "transparent",
+					image: void 0,
+					imageOffsetX: 0,
+					imageOffsetY: 0,
+					position: "front",
+					dropShadow: {
+						enabled: !1,
+						top: 3,
+						left: 0,
+						blur: 4,
+						color: "rgba(0, 169, 255, 0.85)",
+						opacity: .65
+					}
+				},
+				track: {
+					background: 'rgba(0, 0, 0, 0.1)',
+					margin: 0,
+					dropShadow: {
+						enabled: !1,
+						top: -3,
+						left: 0,
+						blur: 4,
+						color: "rgba(0, 169, 255, 0.85)",
+						opacity: .65
+					}
+				},
+				dataLabels: {
+					showOn: "always",
+					name: {
+						offsetY: -8,
+						show: !0,
+						color: "#6c757d",
+						fontSize: "15px"
+					},
+					value: {
+						formatter: function(e) {
+							return e + "%"
+						},
+						color: "#000",
+						fontSize: "25px",
+						show: !0,
+						offsetY: 10
+					}
+				}
+			}
+		},
+		fill: {
+			type: "gradient",
+			gradient: {
+				shade: "light",
+				type: "horizontal",
+				shadeIntensity: .5,
+				gradientToColors: ["#f41127"],
+				inverseColors: !1,
+				opacityFrom: 1,
+				opacityTo: 1,
+				stops: [0, 100]
+			}
+		},
+		colors: ["#f41127"],
+		series: [60],
+		stroke: {
+			lineCap: "round"
+		},
+		labels: ["Cancelled"]
+	};
+	new ApexCharts(document.querySelector("#chart17"), e).render();
+	e = {
+		chart: {
+			height: 180,
+			type: "radialBar",
+			toolbar: {
+				show: !1
+			}
+		},
+		plotOptions: {
+			radialBar: {
+				hollow: {
+					margin: 0,
+					size: "78%",
+					background: "transparent",
+					image: void 0,
+					imageOffsetX: 0,
+					imageOffsetY: 0,
+					position: "front",
+					dropShadow: {
+						enabled: !1,
+						top: 3,
+						left: 0,
+						blur: 4,
+						color: "rgba(0, 169, 255, 0.85)",
+						opacity: .65
+					}
+				},
+				track: {
+					background: 'rgba(0, 0, 0, 0.1)',
+					margin: 0,
+					dropShadow: {
+						enabled: !1,
+						top: -3,
+						left: 0,
+						blur: 4,
+						color: "rgba(0, 169, 255, 0.85)",
+						opacity: .65
+					}
+				},
+				dataLabels: {
+					showOn: "always",
+					name: {
+						offsetY: -8,
+						show: !0,
+						color: "#6c757d",
+						fontSize: "15px"
+					},
+					value: {
+						formatter: function(e) {
+							return e + "%"
+						},
+						color: "#000",
+						fontSize: "25px",
+						show: !0,
+						offsetY: 10
+					}
+				}
+			}
+		},
+		fill: {
+			type: "gradient",
+			gradient: {
+				shade: "light",
+				type: "horizontal",
+				shadeIntensity: .5,
+				gradientToColors: ["#ffc107"],
+				inverseColors: !1,
+				opacityFrom: 1,
+				opacityTo: 1,
+				stops: [0, 100]
+			}
+		},
+		colors: ["#ffc107"],
+		series: [45],
+		stroke: {
+			lineCap: "round"
+		},
+		labels: ["In Progress"]
+	};
+	new ApexCharts(document.querySelector("#chart18"), e).render();
+	e = {
+		series: [{
+			name: "Orders",
+			data: [240, 160, 671, 414, 555, 257, 901, 613, 727, 414, 555, 257]
+		}],
+		chart: {
+			foreColor: "#9ba7b2",
+			type: "area",
+			height: 270,
+			toolbar: {
+				show: !1
+			},
+			zoom: {
+				enabled: !1
+			},
+			dropShadow: {
+				enabled: !0,
+				top: 3,
+				left: 14,
+				blur: 4,
+				opacity: .12,
+				color: "#0d6efd"
+			},
+			sparkline: {
+				enabled: !1
+			}
+		},
+		markers: {
+			size: 0,
+			colors: ["#0d6efd"],
+			strokeColors: "#fff",
+			strokeWidth: 2,
+			hover: {
+				size: 7
+			}
+		},
+		grid: {
+			show: true,
+			borderColor: 'rgba(0, 0, 0, 0.15)',
+			strokeDashArray: 4,
+		},
+		plotOptions: {
+			bar: {
+				horizontal: !1,
+				columnWidth: "30%",
+				endingShape: "rounded"
+			}
+		},
+		dataLabels: {
+			enabled: !1
+		},
+		stroke: {
+			show: !0,
+			width: 3,
+			curve: "smooth"
+		},
+		colors: ["#0d6efd"],
+		xaxis: {
+			categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+		},
+		fill: {
+			opacity: 1
+		},
+		tooltip: {
+			theme: "dark",
+			fixed: {
+				enabled: !1
+			},
+			x: {
+				show: !0
+			},
+			y: {
+				formatter: function(e) {
+					return " " + e + " "
+				}
+			},
+			marker: {
+				show: !1
+			}
+		}
+	};
+	new ApexCharts(document.querySelector("#chart19"), e).render();
+	e = {
+		series: [87],
+		chart: {
+			height: 310,
+			type: "radialBar",
+			offsetY: -10
+		},
+		plotOptions: {
+			radialBar: {
+				startAngle: -135,
+				endAngle: 135,
+				hollow: {
+					margin: 0,
+					size: "70%",
+					background: "transparent"
+				},
+				track: {
+					strokeWidth: "100%",
+					dropShadow: {
+						enabled: !1,
+						top: -3,
+						left: 0,
+						blur: 4,
+						opacity: .12
+					}
+				},
+				dataLabels: {
+					name: {
+						fontSize: "16px",
+						color: "#212529",
+						offsetY: 5
+					},
+					value: {
+						offsetY: 20,
+						fontSize: "30px",
+						color: "#212529",
+						formatter: function(e) {
+							return e + "%"
+						}
+					}
+				}
+			}
+		},
+		fill: {
+			type: "gradient",
+			gradient: {
+				shade: "dark",
+				shadeIntensity: .15,
+				inverseColors: !1,
+				opacityFrom: 1,
+				opacityTo: 1,
+				stops: [0, 50, 65, 91]
+			}
+		},
+		colors: ["#17a00e"],
+		stroke: {
+			dashArray: 4
+		},
+		labels: ["Total Sales"],
+		responsive: [{
+			breakpoint: 480,
+			options: {
+				chart: {
+					height: 300
+				}
+			}
+		}]
+	};
+	new ApexCharts(document.querySelector("#chart20"), e).render();
+	e = {
+		series: [{
+			name: "Visitors",
+			data: [427, 613, 801, 457, 605, 414, 671, 360, 540]
+		}],
+		chart: {
+			foreColor: "#6c757d",
+			type: "bar",
+			height: 390,
+			toolbar: {
+				show: !1
+			},
+			zoom: {
+				enabled: !1
+			},
+			dropShadow: {
+				enabled: !1,
+				top: 3,
+				left: 10,
+				blur: 3,
+				opacity: .1,
+				color: "#0d6efd"
+			},
+			sparkline: {
+				enabled: !1
+			}
+		},
+		plotOptions: {
+			radialBar: {
+				hollow: {
+					size: "70%"
+				}
+			},
+			bar: {
+				horizontal: !1,
+				columnWidth: "35%",
+				endingShape: "rounded"
+			}
+		},
+		markers: {
+			size: 0,
+			colors: ["#0d6efd"],
+			strokeColors: "#fff",
+			strokeWidth: 2,
+			hover: {
+				size: 7
+			}
+		},
+		dataLabels: {
+			enabled: !1
+		},
+		stroke: {
+			show: !0,
+			width: 3,
+			curve: "smooth"
+		},
+		colors: ["#0d6efd"],
+		xaxis: {
+			categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"]
+		},
+		grid: {
+			show: true,
+			borderColor: 'rgba(0, 0, 0, 0.15)',
+			strokeDashArray: 4,
+		},
+		fill: {
+			opacity: 1
+		}
+	};
+	new ApexCharts(document.querySelector("#chart21"), e).render()
+	
+	$(document).ready(function() {
+		$('#Transaction-History').DataTable({
+			lengthMenu: [[6, 10, 20, -1], [6, 10, 20, 'Todos']]
+		});
+	  } );
+	  
+	  
+	  
+	  
+	    new PerfectScrollbar('.product-list');
+		new PerfectScrollbar('.customers-list');
 	
 	
-	
-	
-	new PerfectScrollbar('.dashboard-top-countries');
 	
 	
 	

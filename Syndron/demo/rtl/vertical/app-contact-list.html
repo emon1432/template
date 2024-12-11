@@ -1,31 +1,32 @@
 <!doctype html>
-<html lang="en" dir="rtl">
+<html lang="en" data-bs-theme="light" dir="rtl">
 
 
-<!-- Mirrored from codervent.com/syndron/demo/rtl/vertical/app-contact-list.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 Feb 2024 16:46:18 GMT -->
+<!-- Mirrored from codervent.com/syndron/demo/rtl/vertical/app-contact-list.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 08 Dec 2024 11:18:12 GMT -->
 <head>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--favicon-->
-	<link rel="icon" href="assets/images/favicon-32x32.png" type="image/png" />
+	<link rel="icon" href="assets/images/favicon-32x32.png" type="image/png">
 	<!--plugins-->
-	<link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
-	<link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
-	<link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+	<link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet">
+	<link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+	<link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet">
 	<!-- loader-->
-	<link href="assets/css/pace.min.css" rel="stylesheet" />
+	<link href="assets/css/pace.min.css" rel="stylesheet">
 	<script src="assets/js/pace.min.js"></script>
 	<!-- Bootstrap CSS -->
-	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
-	<link href="assets/css/bootstrap-extended.css" rel="stylesheet">
-	<link href="../../../../../fonts.googleapis.com/css276c7.css?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet">
-	<link href="assets/css/app.css" rel="stylesheet">
+	<link href="assets/css/rtl-css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/rtl-css/bootstrap-extended.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet">
+	
+	<link href="assets/css/rtl-css/app.css" rel="stylesheet">
 	<link href="assets/css/icons.css" rel="stylesheet">
 	<!-- Theme Style CSS -->
-	<link rel="stylesheet" href="assets/css/dark-theme.css" />
-	<link rel="stylesheet" href="assets/css/semi-dark.css" />
-	<link rel="stylesheet" href="assets/css/header-colors.css" />
+	<link rel="stylesheet" href="assets/css/rtl-css/dark-theme.css">
+	<link rel="stylesheet" href="assets/css/rtl-css/semi-dark.css">
+	<link rel="stylesheet" href="assets/css/rtl-css/bordered-theme.css">
 	<title>Syndron - Bootstrap 5 Admin Dashboard Template</title>
 </head>
 
@@ -41,7 +42,7 @@
 				<div>
 					<h4 class="logo-text">Syndron</h4>
 				</div>
-				<div class="toggle-icon ms-auto"><i class='bx bx-arrow-back'></i>
+				<div class="mobile-toggle-icon ms-auto"><i class='bx bx-x'></i>
 				</div>
 			 </div>
 			<!--navigation-->
@@ -53,9 +54,11 @@
 						<div class="menu-title">Dashboard</div>
 					</a>
 					<ul>
-						<li> <a href="index.html"><i class='bx bx-radio-circle'></i>eCommerce</a>
+						<li> <a href="index.html"><i class='bx bx-radio-circle'></i>Infographic</a>
 						</li>
-						<li> <a href="index2.html"><i class='bx bx-radio-circle'></i>Analytics</a>
+						<li> <a href="index2.html"><i class='bx bx-radio-circle'></i>eCommerce</a>
+						</li>
+						<li> <a href="index3.html"><i class='bx bx-radio-circle'></i>Analytics</a>
 						</li>
 					</ul>
 				</li>
@@ -380,15 +383,14 @@
 		<!--end sidebar wrapper -->
 		<!--start header -->
 		<header>
-			<div class="topbar d-flex align-items-center">
-				<nav class="navbar navbar-expand gap-3">
-					<div class="mobile-toggle-menu"><i class='bx bx-menu'></i>
+			<div class="topbar">
+				<nav class="navbar navbar-expand gap-2 align-items-center">
+					<div class="mobile-toggle-menu d-flex"><i class='bx bx-menu'></i>
 					</div>
 
 					  <div class="search-bar d-lg-block d-none" data-bs-toggle="modal" data-bs-target="#SearchModal">
 					     <a href="avascript:;" class="btn d-flex align-items-center"><i class="bx bx-search"></i>Search</a>
 					  </div>
-
 
 					  <div class="top-menu ms-auto">
 						<ul class="navbar-nav align-items-center gap-1">
@@ -1186,7 +1188,7 @@
 		<!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
 		<!--End Back To Top Button-->
 		<footer class="page-footer">
-			<p class="mb-0">Copyright © 2023. All right reserved.</p>
+			<p class="mb-0">Copyright © 2024. All right reserved.</p>
 		</footer>
 	</div>
 	<!--end wrapper-->
@@ -1241,102 +1243,58 @@
 
 
 
-	<!--start switcher-->
-	<div class="switcher-wrapper">
-		<div class="switcher-btn"> <i class='bx bx-cog bx-spin'></i>
-		</div>
-		<div class="switcher-body">
-			<div class="d-flex align-items-center">
-				<h5 class="mb-0 text-uppercase">Theme Customizer</h5>
-				<button type="button" class="btn-close ms-auto close-switcher" aria-label="Close"></button>
-			</div>
-			<hr/>
-			<h6 class="mb-0">Theme Styles</h6>
-			<hr/>
-			<div class="d-flex align-items-center justify-content-between">
-				<div class="form-check">
-					<input class="form-check-input" type="radio" name="flexRadioDefault" id="lightmode" checked>
-					<label class="form-check-label" for="lightmode">Light</label>
-				</div>
-				<div class="form-check">
-					<input class="form-check-input" type="radio" name="flexRadioDefault" id="darkmode">
-					<label class="form-check-label" for="darkmode">Dark</label>
-				</div>
-				<div class="form-check">
-					<input class="form-check-input" type="radio" name="flexRadioDefault" id="semidark">
-					<label class="form-check-label" for="semidark">Semi Dark</label>
-				</div>
-			</div>
-			<hr/>
-			<div class="form-check">
-				<input class="form-check-input" type="radio" id="minimaltheme" name="flexRadioDefault">
-				<label class="form-check-label" for="minimaltheme">Minimal Theme</label>
-			</div>
-			<hr/>
-			<h6 class="mb-0">Header Colors</h6>
-			<hr/>
-			<div class="header-colors-indigators">
-				<div class="row row-cols-auto g-3">
-					<div class="col">
-						<div class="indigator headercolor1" id="headercolor1"></div>
-					</div>
-					<div class="col">
-						<div class="indigator headercolor2" id="headercolor2"></div>
-					</div>
-					<div class="col">
-						<div class="indigator headercolor3" id="headercolor3"></div>
-					</div>
-					<div class="col">
-						<div class="indigator headercolor4" id="headercolor4"></div>
-					</div>
-					<div class="col">
-						<div class="indigator headercolor5" id="headercolor5"></div>
-					</div>
-					<div class="col">
-						<div class="indigator headercolor6" id="headercolor6"></div>
-					</div>
-					<div class="col">
-						<div class="indigator headercolor7" id="headercolor7"></div>
-					</div>
-					<div class="col">
-						<div class="indigator headercolor8" id="headercolor8"></div>
-					</div>
-				</div>
-			</div>
-			<hr/>
-			<h6 class="mb-0">Sidebar Colors</h6>
-			<hr/>
-			<div class="header-colors-indigators">
-				<div class="row row-cols-auto g-3">
-					<div class="col">
-						<div class="indigator sidebarcolor1" id="sidebarcolor1"></div>
-					</div>
-					<div class="col">
-						<div class="indigator sidebarcolor2" id="sidebarcolor2"></div>
-					</div>
-					<div class="col">
-						<div class="indigator sidebarcolor3" id="sidebarcolor3"></div>
-					</div>
-					<div class="col">
-						<div class="indigator sidebarcolor4" id="sidebarcolor4"></div>
-					</div>
-					<div class="col">
-						<div class="indigator sidebarcolor5" id="sidebarcolor5"></div>
-					</div>
-					<div class="col">
-						<div class="indigator sidebarcolor6" id="sidebarcolor6"></div>
-					</div>
-					<div class="col">
-						<div class="indigator sidebarcolor7" id="sidebarcolor7"></div>
-					</div>
-					<div class="col">
-						<div class="indigator sidebarcolor8" id="sidebarcolor8"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--end switcher-->
+<!--start switcher-->
+<button class="btn btn-primary position-fixed bottom-0 end-0 m-3 d-flex align-items-center gap-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop">
+    <i class='bx bx-cog bx-spin'></i>Customize
+  </button>
+  
+  <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="staticBackdrop">
+    <div class="offcanvas-header border-bottom h-60">
+      <div class="">
+        <h5 class="mb-0 text-uppercase">Theme Customizer</h5>
+      </div>
+	  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        <p>Theme variation</p>
+
+        <div class="row g-3">
+          <div class="col-12 col-xl-6">
+            <input type="radio" class="btn-check" name="theme-options" id="LightTheme" checked>
+            <label class="btn btn-outline-secondary d-flex flex-column gap-2 align-items-center justify-content-center p-3" for="LightTheme">
+				<span><i class='bx bx-sun fs-2'></i></span>
+                <span>Light</span>
+            </label>
+          </div>
+          <div class="col-12 col-xl-6">
+            <input type="radio" class="btn-check" name="theme-options" id="DarkTheme">
+            <label class="btn btn-outline-secondary d-flex flex-column gap-2 align-items-center justify-content-center p-3" for="DarkTheme">
+				<span><i class='bx bx-moon fs-2'></i></span>
+                <span>Dark</span>
+            </label>
+          </div>
+          <div class="col-12 col-xl-6">
+            <input type="radio" class="btn-check" name="theme-options" id="SemiDarkTheme">
+            <label class="btn btn-outline-secondary d-flex flex-column gap-2 align-items-center justify-content-center p-3" for="SemiDarkTheme">
+				<span><i class='bx bx-brightness-half fs-2'></i></span>
+                <span>Semi Dark</span>
+            </label>
+          </div>
+          <div class="col-12 col-xl-6">
+            <input type="radio" class="btn-check" name="theme-options" id="BoderedTheme">
+            <label class="btn btn-outline-secondary d-flex flex-column gap-2 align-items-center justify-content-center p-3" for="BoderedTheme">
+				<span><i class='bx bx-border-all fs-2'></i></span>
+                <span>Bordered</span>
+            </label>
+          </div>
+        </div><!--end row-->
+
+      </div>
+    </div>
+  </div>
+  <!--start switcher-->
+
 	<!-- Bootstrap JS -->
 	<script src="assets/js/bootstrap.bundle.min.js"></script>
 	<!--plugins-->
@@ -1349,5 +1307,5 @@
 </body>
 
 
-<!-- Mirrored from codervent.com/syndron/demo/rtl/vertical/app-contact-list.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 Feb 2024 16:46:19 GMT -->
+<!-- Mirrored from codervent.com/syndron/demo/rtl/vertical/app-contact-list.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 08 Dec 2024 11:18:13 GMT -->
 </html>

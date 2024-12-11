@@ -3,9 +3,15 @@
 html.dark-theme .switcher-wrapper {
 	background: #212529;
 }
+
+
 html.dark-theme body {
 	color: #e4e5e6;
 	background-color: #212529;
+}
+
+html.dark-theme p {
+	color: #e4e5e6;
 }
 html.dark-theme .h1,
 html.dark-theme .h2,
@@ -286,6 +292,7 @@ html.dark-theme .table {
 html.dark-theme .table td,
 html.dark-theme .table th {
 	border-color: rgb(255 255 255 / 12%);
+	color: #a7a7a7;
 }
 html.dark-theme .table thead th {
 	border-bottom: 2px solid rgb(255 255 255 / 12%);
