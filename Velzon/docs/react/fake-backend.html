@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="en" data-layout="vertical" data-layout-style="" data-layout-position=""  data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-layout-width="">
+
+
+<!-- Mirrored from themesbrand.com/velzon/docs/react/fake-backend.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Dec 2024 05:16:12 GMT -->
+<head>
+
+    <meta charset="utf-8" />
+    <title>FakeBackend | Velzon - React Js Admin & Dashboard Template Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Velzon React js Premium Multipurpose Admin & Dashboard Template Documentation" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="../assets/images/favicon.ico">
+
+    <!-- Layout config Js -->
+    <script src="../assets/js/layout.js"></script>
+    <!-- Bootstrap Css -->
+    <link href="../assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="../assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+<!-- Begin page -->
+<div id="layout-wrapper">
+
+    <header id="page-topbar">
+    <div class="layout-width">
+        <div class="navbar-header">
+            <div class="d-flex">
+                <!-- LOGO -->
+                <div class="navbar-brand-box horizontal-logo">
+                    <a href="index.html" class="logo logo-dark">
+                        <span class="logo-sm">
+                            <img src="../assets/images/logo-sm.png" alt="" height="22">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="../assets/images/logo-dark.png" alt="" height="17">
+                        </span>
+                    </a>
+
+                    <a href="index.html" class="logo logo-light">
+                        <span class="logo-sm">
+                            <img src="../assets/images/logo-sm.png" alt="" height="22">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="../assets/images/logo-light.png" alt="" height="17">
+                        </span>
+                    </a>
+                </div>
+
+                <button type="button" class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger" id="topnav-hamburger-icon">
+                    <span class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+
+                <div class="header-item ms-2">
+                    <div class="avatar-sm me-1 me-md-2 flex-shrink-0">
+                        <div class="avatar-title bg-white rounded-circle border">
+                            <img src="../assets/images/brand-logos/reactjs.png" alt="" height="23">
+                        </div>
+                    </div>
+                    <span class="h5 mb-0">React JS & TS Docs</span>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center">
+
+                <div class="header-item me-1 me-md-3">
+                    <a href="https://1.envato.market/velzon-support" target="_blank" class="btn btn-success"><i class="ri-lifebuoy-line me-1 align-middle"></i> Support</a>
+                </div>
+
+                <div class="header-item">
+                    <a href="https://1.envato.market/velzon-admin" target="_blank" class="btn btn-primary"><i class="ri-shopping-basket-2-line me-1 align-middle"></i> Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <!-- ========== App Menu ========== -->
+    <div class="app-menu navbar-menu">
+        <!-- LOGO -->
+        <div class="navbar-brand-box">
+            <!-- Dark Logo-->
+            <a href="index.html" class="logo logo-dark">
+                <span class="logo-sm">
+                    <img src="../assets/images/logo-sm.png" alt="" height="22">
+                </span>
+                <span class="logo-lg">
+                    <img src="../assets/images/logo-dark.png" alt="" height="17">
+                </span>
+            </a>
+            <!-- Light Logo-->
+            <a href="index.html" class="logo logo-light">
+                <span class="logo-sm">
+                    <img src="../assets/images/logo-sm.png" alt="" height="22">
+                </span>
+                <span class="logo-lg">
+                    <img src="../assets/images/logo-light.png" alt="" height="17"> <span
+                        class="badge badge-soft-danger fs-14 ms-1">React 18.*</span>
+                </span>
+            </a>
+            <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover"
+                id="vertical-hover">
+                <i class="ri-record-circle-line"></i>
+            </button>
+        </div>
+
+        <div id="scrollbar">
+            <div class="container-fluid">
+
+                <ul class="navbar-nav" id="navbar-nav">
+                    <li class="menu-title"><span>Menu</span></li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="index.html">
+                            <i class="ri-honour-line"></i> <span>Introduction</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="https://youtu.be/FUUQSBcf9RU?si=vq1qqwhvBcRW5F-o" target="_blank">
+                            <i class="ri-live-line"></i> <span>Video (JS)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="https://youtu.be/xiKsgXBrGFk?si=hSqsXi-QrZJdaK1i" target="_blank">
+                            <i class="ri-live-line"></i> <span>Video (TS)</span>
+                        </a>
+                    </li>
+                    <li class="menu-title"><span>Development</span></li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="getting-started.html">
+                            <i class="ri-settings-6-line"></i> <span>Getting Started</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="folder-structure.html">
+                            <i class="ri-folder-2-line"></i> <span>Folder Structure</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="react-structure.html">
+                            <i class="ri-html5-line"></i> <span>React Structure</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="layout.html">
+                            <i class="ri-stack-line"></i> <span>Layout Integration</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="navigation.html">
+                            <i class="ri-menu-line"></i> <span>Navigation</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="starter-kit.html">
+                            <i class="ri-rocket-line"></i> <span>Starter Kit vs Full Admin</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarLayouts" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="sidebarLayouts">
+                            <i class="ri-layout-3-line"></i> <span>Theme Configuration</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarLayouts">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="vertical.html" class="nav-link">Vertical</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="horizontal.html" class="nav-link">Horizontal</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="detached.html" class="nav-link">Detached</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="two-column.html" class="nav-link">Two Column</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="hovered.html" class="nav-link">Hovered</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="semibox.html" class="nav-link">Semibox</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="themesetup.html" class="nav-link">Theme Setup</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="routing.html">
+                            <i class="ri-route-line"></i> <span>Routing</span>
+                        </a>
+                    </li>
+                 
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="multi-language.html">
+                            <i class="ri-global-line"></i> <span>Multi Language</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="redux.html">
+                            <i class="ri-registered-line"></i> <span>Redux</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="create-new-page.html">
+                            <i class="ri-file-add-line"></i> <span>Create New Page</span>
+                        </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#customization" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="customization">
+                            <i class="ri-equalizer-line"></i> <span>Customization</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="customization">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="scss.html" class="nav-link">SASS</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li> <!-- end Dashboard Menu -->
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="light-mode.html">
+                            <i class="ri-contrast-line"></i> <span>Light Mode</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="dark-mode.html">
+                            <i class="ri-contrast-2-line"></i> <span>Dark Mode</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="rtl.html">
+                            <i class="ri-align-right"></i> <span>RTL Mode</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="sources.html">
+                            <i class="ri-pantone-line"></i> <span>Sources & Credits</span>
+                        </a>
+                    </li>
+
+                    <li class="menu-title"><span>Integrations</span></li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="api-integration.html">
+                            <i class="ri-database-2-line"></i> <span>Api Integrations</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="firebase.html">
+                            <i class="ri-fire-line"></i> <span>Firebase Setup</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="fake-backend.html">
+                            <i class="ri-code-fill"></i> <span>Fake Backend Setup</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="social.html">
+                            <i class="ri-server-line"></i> <span>Social Authentication</span>
+                        </a>
+                    </li>
+
+                    <li class="menu-title"><i class="ri-more-fill"></i> <span>Components</span></li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="bootstrap-ui.html">
+                            <i class="ri-bold"></i> <span>Bootstrap UI</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="reactstrap.html">
+                            <i class="ri-pencil-ruler-2-line "></i> <span>Reactstrap</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="icons.html">
+                            <i class="ri-compasses-2-line"></i> <span>Icons</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarAdvanceUI" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="sidebarAdvanceUI">
+                            <i class="ri-stack-line"></i> <span>Advance UI</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarAdvanceUI">
+                            <ul class="nav nav-sm flex-column">         
+                                <li class="nav-item">
+                                    <a href="simplebar.html" class="nav-link">Simplebar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="swiper-slider.html" class="nav-link">Swiper Slider</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="ratings.html" class="nav-link">Raterjs - Ratings</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="prismjs-highlight.html" class="nav-link">Prismjs - Highlight</a>
+                                </li>                            
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarForms" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="sidebarForms">
+                            <i class="ri-file-list-3-line"></i> <span>Forms</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarForms">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="choices.html" class="nav-link">Choices</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="flatpickr.html" class="nav-link"> Flatpickr </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="colorpicker.html" class="nav-link">Pickr - Colorpicker</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="input-mask.html" class="nav-link"> Cleavejs - Input Mask</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="dualListBox.html" class="nav-link">DualListBox</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="rangeslider.html" class="nav-link">RangeSlider</a>
+                                </li>                            
+                                <li class="nav-item">
+                                    <a href="ckeditor.html" class="nav-link">Ckeditor</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="quilljs.html" class="nav-link">Quilljs Editor</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="dropzone.html" class="nav-link">Dropzone - File Uploads</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="filepond.html" class="nav-link">Filepond - File Uploads</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarTables" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="sidebarTables">
+                            <i class="ri-layout-grid-line"></i> <span>Tables</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarTables">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="reacttable.html" class="nav-link">React Table</a>
+                                </li>
+                                <!-- <li class="nav-item">
+                                    <a href="datatables.html" class="nav-link">Data Tables</a>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarCharts" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="sidebarCharts">
+                            <i class="ri-pie-chart-line"></i> <span>Charts</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarCharts">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="apexcharts.html" class="nav-link"> Apexcharts </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="chartjs.html" class="nav-link"> Chartjs </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="echarts.html" class="nav-link"> Echarts </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarMaps" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="sidebarMaps">
+                            <i class="ri-map-pin-line"></i> <span>Maps</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarMaps">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="google-maps.html" class="nav-link">
+                                        Google
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- Sidebar -->
+        </div>
+    </div>
+    <!-- Left Sidebar End -->
+    <!-- Vertical Overlay-->
+    <div class="vertical-overlay"></div>
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content">
+
+        <div class="page-content">
+            <div class="container-fluid">
+                <!-- start page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                            <h4 class="mb-sm-0">FakeBackend</h4>
+
+                            <div class="page-title-right">
+                                <ol class="breadcrumb m-0">
+                                    <li class="breadcrumb-item"><a href="javascript: void(0);">Docs</a></li>
+                                    <li class="breadcrumb-item active">FakeBackend</li>
+                                </ol>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="p-lg-1">
+
+                                    <div class="d-xl-flex">
+
+                                        <div class="w-100">
+                                            <div id="fake-backend">
+                                                <h4 class="mb-4">Fake-Backend</h4>
+                                                <div>
+                                                    <div class="alert alert-info">
+                                                        Note : Applicable in Backend Version Only.
+                                                    </div>
+
+                                                    <p class="mb-1">
+                                                        Set <code> REACT_APP_DEFAULTAUTH=fake </code> in the
+                                                        <code>.env</code>
+                                                        file. <br>
+                                                        Remove the firebase
+                                                        setup code from the
+                                                        <code>App.js</code> in javascript and <code>App.tsx</code> in
+                                                        typescript
+                                                        file. <br>
+                                                        Now just uncomment
+                                                        the below
+                                                        fake-backend setup
+                                                        code in the <code>App.js</code> in javascript and
+                                                        <code>App.tsx</code> in typescript
+                                                        file. <br>
+                                                    </p>
+                                                <pre class="language-js p-3 mb-2"><code>import fakeBackend from "src/helpers/AuthType/fakeBackend.ts"; // "fakeBackend.js"
+                                
+// Activating fake backend
+
+fakeBackend();</code></pre>
+                                                    <p class="mb-0">It is often used for development and testing
+                                                        purposes, as it
+                                                        allows developers to test their code without having to worry
+                                                        about the
+                                                        availability of a real backend.</p>
+
+                                                </div>
+                                                <h5 class="fs-lg mt-3 text-decoration-underline">
+                                                    How to Integrate custom FakeBackend?
+                                                </h5>
+                                                <p>Please follow the below steps:</p>
+                                                <div>
+                                                    <p class="mb-1">-> First you needs to create json data files,
+                                                        which you can put in
+                                                        the
+                                                        folder <code>src/Common/data</code> from where the data/json
+                                                        will be called.
+                                                    </p>
+                                                    <pre class="language-js p-3 mb-2"><code>const data = [
+    {
+    id: "1",
+    orderdate: "22 Feb, 2023",
+    customer: "Deondre Fahey",
+    name: "Ratke Group",
+    paymethod: "COD",
+    },
+    {
+    id: "2",
+    orderdate: "14 Feb, 2023",
+    customer: "Warren Anderson",
+    name: "Zibra Fashion",
+    paymethod: "Mastercard",
+    },
+]
+    
+export { data } </code></pre>
+                                                </div>
+
+                                                <p>
+                                                    -> In your React component or container, you dispatch an action
+                                                    to request data
+                                                    from the fake backend. This action triggers the thunk.
+                                                    For getting the data you should get data from the thunk.ts or thunk.js file.
+                                                    And we can get
+                                                    data in thunk as response from fakebackend_helper.ts or  file.
+                                                </p>
+
+                                                <div>
+                                                    <p class="mb-1">-> Reducer is also worked as middleware for
+                                                        react, which is placed
+                                                        at <code>src/slices/ecommerce/reducer.js</code> in javascript and
+                                                        <code>src/slices/ecommerce/reducer.ts</code> in typescript folder.
+                                                    </p>
+                                                    <pre class="language-js p-3 mb-2"><code>import { createSlice } from "@reduxjs/toolkit";
+import { getData } from "./thunk"
+
+export const initialState ={
+    dataList: [],
+}
+
+const EcommerceSlice = createSlice({
+    name : "Data",
+    initialState,
+    reducers: {},
+
+    extraReducers: (builder) => {
+
+        //data
+        builder.addCase(getData.fulfilled, (state: any, action: any) => {
+            state.dataList = action.payload;
+        });
+        builder.addCase(getData.rejected, (state: any, action: any) => {
+            state.error = action.payload.error || null;
+        });
+    },
+})</code></pre>
+                                                </div>
+
+                                                <div>
+                                                    <p class="mb-1">-> A thunk works as a middleware, which is
+                                                        placed at
+                                                        <code>src/slices/Data/thunk.ts or thunk.js</code> file.
+                                                    </p>
+                                                    <pre class="language-js p-3 mb-2"><code>import { createAsyncThunk } from "@reduxjs/toolkit";
+import {
+    getData as getDataApi,
+} from "src/helpers/fakebackend_helper"
+        
+export const getData = createAsyncThunk("datas/getData", async () => {
+    try {
+        const response = getDataApi();
+        return response;
+    } catch (error) {
+        return error;
+    }
+});</code></pre>
+                                                </div>
+
+                                                <div>
+                                                    <p>
+                                                        -> After exporting data from reducer.ts or reducer.js file there was a
+                                                        main file for whole
+                                                        reducers files that combines all the reducers into one.
+                                                        <code>src/slices/index.ts or index.js</code> here we combines the
+                                                        rootReducers for store.
+                                                    </p>
+                                                    <pre class="language-js p-3 mb-2"><code>import dataReducer from "./Data/reducer"
+const rootReducer = combineReducers ({
+        Data: dataReducer,
+})
+export default rootReducer</code></pre>
+
+                                                    <p>
+                                                        -> Same as above all the thunks file are also imported and
+                                                        exported in main
+                                                        thunk file. <code>src/slices/thunk.ts or thunk.js</code> we use this
+                                                        file to get response in
+                                                        react component.
+                                                    </p>
+                                                    <pre
+                                                        class="language-js p-3 mb-2"><code>export { getData } from "./Data/thunk"</code></pre>
+                                                </div>
+
+                                                <div>
+                                                    <p class="mb-1">-> A Fakebackend is a server that is used to
+                                                        simulate the behavior
+                                                        of a real backend.
+                                                        <code>src/helpers/fakebackend_helper.ts or fakebackend_helper.js</code> is path for
+                                                        fakeBackend file where you have to import
+                                                        <code>"./url_helper"</code> and
+                                                        <code>"./api_helper"</code> file for exporting the data.
+                                                    </p>
+                                                    <pre class="language-js p-3 mb-2"><code>import * as url from "./url_helper";
+//  Api 
+import { APIClient } from "./api_helper";
+
+const api = new APIClient();
+
+export const getData = () => api.get(url.GET_DATA, null);</code></pre>
+                                                </div>
+
+                                                <div>
+                                                    <p class="mb-1">-> The url_helper is a helper function that is
+                                                        used to generate
+                                                        URLs.
+                                                        For that we have created file
+                                                        <code>src/helpers/url_helper.ts or url_helper.js</code>. From where
+                                                        we can get fake url for functionality.
+                                                    </p>
+                                                    <pre
+                                                        class="language-js p-3 mb-2"><code>export const GET_DATA = "/invoice";</code></pre>
+                                                </div>
+
+
+                                                <div>
+                                                    <p class="mb-1">-> FakeBackend through we will getdata from
+                                                        <code>Common/data</code>
+                                                        and with the help of axios we can pass the data, which is
+                                                        placed at
+                                                        <code>src/helpers/AuthType/fakeBackend.ts or fakeBackend.js</code> file.
+                                                    </p>
+                                                    <pre class="language-js p-3 mb-2"><code>import MockAdapter from "axios-mock-adapter";                                
+import * as url from "../url_helpers"
+import axios from "axios";
+
+import { data } from "Common/data";
+       
+const fakeBackend = () => {
+
+    mock.onGet(url.GET_DATA).reply(() => {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            if (data) {
+              // Passing fake JSON data as response
+              resolve([200, data]);
+            } else {
+                reject([400, "Cannot get contact list"]);
+            }
+          });
+        });
+    });
+
+}
+export default fakeBackend;</code></pre>
+                                                </div>
+                                                <div>
+                                                    <p class="mb-1">-> After following the above steps you can call
+                                                        data and use it in
+                                                        your components or pages where is needed by the dispatch
+                                                        data method and
+                                                        managing the
+                                                        state.</p>
+
+                                                    <pre class="language-js p-3"><code>import { getData as onGetData} from "slices/thunk";  
+const datasTable = createSelector(
+
+    (state : any) => state.Data,
+    (state) => ({
+        dataList: state.dataList,
+    })
+);
+
+const { dataList } = useSelector(datasTable);
+    
+useEffect(() => {
+    dispatch(onGetData())
+}, [dispatch]);     </code></pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+
+            </div> <!-- container-fluid -->
+        </div>
+        <!-- End Page-content -->
+
+        
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <script>document.write(new Date().getFullYear())</script> © Velzon.
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="text-sm-end d-none d-sm-block">
+                            Design & Develop by Themesbrand
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="alert alert-danger position-fixed bottom-0 start-50 translate-middle z-50 mb-0"><b>Warning :-</b> We are deprecating the saga version by the end of
+            December this year.</div>
+    </div>
+    <!-- end main content-->
+
+</div>
+<!-- END layout-wrapper -->
+
+
+
+<!-- JAVASCRIPT -->
+<script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/libs/simplebar/simplebar.min.js"></script>
+<script src="../assets/libs/node-waves/waves.min.js"></script>
+<script src="../assets/libs/feather-icons/feather.min.js"></script>
+<script src="../assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
+<script src="../assets/libs/prismjs/prism.js"></script>
+
+<!-- App js -->
+<script src="../assets/js/app.js"></script>
+</body>
+
+
+<!-- Mirrored from themesbrand.com/velzon/docs/react/fake-backend.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Dec 2024 05:16:12 GMT -->
+</html>

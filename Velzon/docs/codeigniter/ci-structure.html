@@ -1,0 +1,949 @@
+<!doctype html>
+<html lang="en" data-layout="vertical" data-layout-style="" data-layout-position=""  data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-layout-width="">
+
+
+<!-- Mirrored from themesbrand.com/velzon/docs/codeigniter/ci-structure.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Dec 2024 05:16:49 GMT -->
+<head>
+
+    <meta charset="utf-8" />
+    <title>CI Structure | Velzon Codeigniter 4 - Admin & Dashboard Template Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Velzon Codeigniter 4 Premium Multipurpose Admin & Dashboard Template Documentation" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="../assets/images/favicon.ico">
+
+    <!-- Layout config Js -->
+    <script src="../assets/js/layout.js"></script>
+    <!-- Bootstrap Css -->
+    <link href="../assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="../assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+<body>
+
+<!-- Begin page -->
+<div id="layout-wrapper">
+
+    <header id="page-topbar">
+    <div class="layout-width">
+        <div class="navbar-header">
+            <div class="d-flex">
+                <!-- LOGO -->
+                <div class="navbar-brand-box horizontal-logo">
+                    <a href="index.html" class="logo logo-dark">
+                        <span class="logo-sm">
+                            <img src="../assets/images/logo-sm.png" alt="" height="22">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="../assets/images/logo-dark.png" alt="" height="17">
+                        </span>
+                    </a>
+
+                    <a href="index.html" class="logo logo-light">
+                        <span class="logo-sm">
+                            <img src="../assets/images/logo-sm.png" alt="" height="22">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="../assets/images/logo-light.png" alt="" height="17">
+                        </span>
+                    </a>
+                </div>
+
+                <button type="button" class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger" id="topnav-hamburger-icon">
+                    <span class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+
+                <div class="header-item ms-2">
+                    <div class="avatar-sm me-1 me-md-2 flex-shrink-0">
+                        <div class="avatar-title bg-white rounded-circle border">
+                            <img src="../assets/images/brand-logos/codeigniter.png" alt="" height="23">
+                        </div>
+                    </div>
+                    <span class="h5 mb-0">Codeigniter Docs</span>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center">
+
+                <div class="header-item me-1 me-md-3">
+                    <a href="https://1.envato.market/velzon-support" target="_blank" class="btn btn-success"><i class="ri-lifebuoy-line me-1 align-middle"></i> Support</a>
+                </div>
+
+                <div class="header-item">
+                    <a href="https://1.envato.market/velzon-admin" target="_blank" class="btn btn-primary"><i class="ri-shopping-basket-2-line me-1 align-middle"></i> Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <!-- ========== App Menu ========== -->
+    <div class="app-menu navbar-menu">
+        <!-- LOGO -->
+        <div class="navbar-brand-box">
+            <!-- Dark Logo-->
+            <a href="index.html" class="logo logo-dark">
+                <span class="logo-sm">
+                    <img src="../assets/images/logo-sm.png" alt="" height="22">
+                </span>
+                <span class="logo-lg">
+                    <img src="../assets/images/logo-dark.png" alt="" height="17">
+                </span>
+            </a>
+            <!-- Light Logo-->
+            <a href="index.html" class="logo logo-light">
+                <span class="logo-sm">
+                    <img src="../assets/images/logo-sm.png" alt="" height="22">
+                </span>
+                <span class="logo-lg">
+                    <img src="../assets/images/logo-light.png" alt="" height="17"> <span
+                        class="badge badge-soft-danger fs-14 ms-1">CI 4</span>
+                </span>
+            </a>
+            <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover"
+                id="vertical-hover">
+                <i class="ri-record-circle-line"></i>
+            </button>
+        </div>
+
+        <div id="scrollbar">
+            <div class="container-fluid">
+
+                <ul class="navbar-nav" id="navbar-nav">
+                    <li class="menu-title"><span>Menu</span></li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="index.html">
+                            <i class="ri-honour-line"></i> <span>Introduction</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="folder-structure.html">
+                            <i class="ri-folder-2-line"></i> <span>Folder Structure</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="getting-started.html">
+                            <i class="ri-settings-6-line"></i> <span>Getting Started</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#customization" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="customization">
+                            <i class="ri-equalizer-line"></i> <span>Customization</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="customization">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="css.html" class="nav-link">CSS</a>
+                                </li>
+                                <!-- <li class="nav-item">
+                                    <a href="scss.html" class="nav-link">SASS</a>
+                                </li> -->
+                                <li class="nav-item">
+                                    <a href="javascript.html" class="nav-link">Javascript</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li> <!-- end Dashboard Menu -->
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="ci-structure.html">
+                            <i class="ri-code-s-slash-line"></i> <span>CI Structure</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="starter-kit.html">
+                            <i class="ri-rocket-line"></i> <span>Starter Kit vs Full Admin</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link active" href="theme-setup.html">
+                            <i class="ri-paint-line"></i> <span>Theme Setup</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarLayouts" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="sidebarLayouts">
+                            <i class="ri-layout-3-line"></i> <span>Layouts</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarLayouts">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="vertical.html" class="nav-link">Vertical</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="horizontal.html" class="nav-link">Horizontal</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="detached.html" class="nav-link">Detached</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="two-column.html" class="nav-link">Two Column</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="hovered.html" class="nav-link">Hovered</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="multi-language.html">
+                            <i class="ri-global-line"></i> <span>Multi Language</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="dark-mode.html">
+                            <i class="ri-contrast-2-line"></i> <span>Dark Mode</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="rtl.html">
+                            <i class="ri-layout-right-2-line"></i> <span>RTL Version</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="sources.html">
+                            <i class="ri-pantone-line"></i> <span>Sources & Credits</span>
+                        </a>
+                    </li>
+
+                    <!-- <li class="nav-item">
+                        <a class="nav-link menu-link" href="upgrade.html">
+                            <i class="ri-server-line"></i> <span>Upgrade</span>
+                        </a>
+                    </li> -->
+
+                    <!-- <li class="nav-item">
+                        <a class="nav-link menu-link" href="changelog.html">
+                            <i class="ri-draft-line"></i> <span>Change Log</span>
+                        </a>
+                    </li> -->
+
+                    <!-- <li class="nav-item">
+                        <a class="nav-link menu-link" href="github.html">
+                            <i class="ri-github-line"></i> <span>Github Access</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="">
+                            <i class="ri-discuss-line"></i> <span>Suggestions</span>
+                        </a>
+                    </li> -->
+
+                    <li class="menu-title"><i class="ri-more-fill"></i> <span>Components</span></li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="bootstrap-ui.html">
+                            <i class="ri-pencil-ruler-2-line"></i> <span>Bootstrap UI</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="icons.html">
+                            <i class="ri-compasses-2-line"></i> <span>Icons</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarAdvanceUI" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="sidebarAdvanceUI">
+                            <i class="ri-stack-line"></i> <span>Advance UI</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarAdvanceUI">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="sweetalert2.html" class="nav-link">Sweetalert2</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="sortablejs.html" class="nav-link">Sortablejs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="simplebar.html" class="nav-link">Simplebar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="animation.html" class="nav-link">Aos Animation</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="shepherdjs-tour.html" class="nav-link">Shepherd Js - Tour</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="swiper-slider.html" class="nav-link">Swiper Slider</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="ratings.html" class="nav-link">Raterjs - Ratings</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="prismjs-highlight.html" class="nav-link">Prismjs - Highlight</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="glightbox.html" class="nav-link">Glightbox</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarForms" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="sidebarForms">
+                            <i class="ri-file-list-3-line"></i> <span>Forms</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarForms">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="choices.html" class="nav-link">Choices</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="flatpickr.html" class="nav-link"> Flatpickr </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="colorpicker.html" class="nav-link">Pickr - Colorpicker</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="input-mask.html" class="nav-link"> Cleavejs - Input Mask</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="multi-js.html" class="nav-link">Multi Js</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="autocomplete.html" class="nav-link">Autocomplete</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="input-spin.html" class="nav-link"> Input Spin </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="nouislider.html" class="nav-link">Nouislider - Range</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="wizard.html" class="nav-link">Wizard</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="ckeditor.html" class="nav-link">Ckeditor</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="quilljs.html" class="nav-link">Quilljs Editor</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="dropzone.html" class="nav-link">Dropzone - File Uploads</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="filepond.html" class="nav-link">Filepond - File Uploads</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="select2.html" class="nav-link">Select 2</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarTables" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="sidebarTables">
+                            <i class="ri-layout-grid-line"></i> <span>Tables</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarTables">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="gridjs.html" class="nav-link">Grid Js</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="listjs.html" class="nav-link">List Js</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="datatables.html" class="nav-link">Data Tables</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarCharts" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="sidebarCharts">
+                            <i class="ri-pie-chart-line"></i> <span>Charts</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarCharts">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="apexcharts.html" class="nav-link"> Apexcharts </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="chartjs.html" class="nav-link"> Chartjs </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="echarts.html" class="nav-link"> Echarts </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarMaps" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="sidebarMaps">
+                            <i class="ri-map-pin-line"></i> <span>Maps</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarMaps">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="google-maps.html" class="nav-link">
+                                        Google
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="jsvectormap.html" class="nav-link">
+                                        Jsvectormap
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="leaflet.html" class="nav-link">
+                                        Leaflet
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- Sidebar -->
+        </div>
+    </div>
+    <!-- Left Sidebar End -->
+    <!-- Vertical Overlay-->
+    <div class="vertical-overlay"></div>
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content">
+
+        <div class="page-content">
+            <div class="container-fluid">
+
+                <!-- start page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                            <h4 class="mb-sm-0">CI Structure</h4>
+
+                            <div class="page-title-right">
+                                <ol class="breadcrumb m-0">
+                                    <li class="breadcrumb-item"><a href="javascript: void(0);">Docs</a></li>
+                                    <li class="breadcrumb-item active">CI Structure</li>
+                                </ol>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title mb-0">CI Folder Structure</h4>
+                            </div>
+                            <div class="card-body">
+
+                                <ul class="nav nav-pills nav-success mb-3" role="tablist">
+                                    <li class="nav-item waves-effect waves-light" role="presentation">
+                                        <a class="nav-link active" data-bs-toggle="tab" href="#v351" role="tab" aria-selected="true"> &lt;= v3.*</a>
+                                    </li>
+                                    <li class="nav-item waves-effect waves-light" role="presentation">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#v400" role="tab" aria-selected="false" tabindex="-1"> &gt;= v4.0.0</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content text-muted">
+                                    <div class="tab-pane active" id="v351" role="tabpanel">
+                                        <div class="verti-sitemap">
+                                            <ul class="list-unstyled mb-0">
+                                                <li class="p-0 parent-title"><a href="javascript: void(0);"
+                                                        class="fw-medium fs-14"><img src="../assets/images/extra/folder.png" class="folder-icon me-1" alt="">default</a>
+                                                </li>
+                                                <li>
+                                                    <div class="first-list">
+                                                        <div class="list-wrap">
+                                                            <a href="javascript: void(0);"
+                                                                class="fw-medium text-primary"><img src="../assets/images/extra/folder.png" class="folder-icon me-1" alt="">public</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="first-list">
+                                                        <div class="list-wrap">
+                                                            <a href="javascript: void(0);"
+                                                                class="fw-medium text-primary"><img src="../assets/images/extra/folder.png" class="folder-icon me-1" alt="">app</a>
+                                                            <ul class="second-list list-unstyled">
+                                                                <li>
+                                                                    <a href="javascript: void(0);"><img src="../assets/images/extra/folder.png" class="folder-icon me-1" alt="">Views</a>
+                                                                    <ul class="second-list list-unstyled">
+                                                                        <li> <a href="javascript: void(0);"><img src="../assets/images/extra/folder.png" class="folder-icon me-1" alt="">partials</a>
+                                                                            <ul class="second-list list-unstyled">
+                                                                                <li> <a href="javascript: void(0);"><img src="../assets/images/extra/file.png" class="me-1" alt="">customizer.php
+                                                                                        <span class="text-muted">/
+                                                                                            Contain the right sidebar
+                                                                                            theme customization HTML
+                                                                                            code.</span></a>
+                                                                                </li>
+                                                                                <li> <a href="javascript: void(0);"><img src="../assets/images/extra/file.png" class="me-1" alt="">footer.php
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li> <a href="javascript: void(0);"><img src="../assets/images/extra/file.png" class="me-1" alt="">head-css.php
+                                                                                        <span class="text-muted">/
+                                                                                            / added common css files
+                                                                                            link in this
+                                                                                            file.</span></a>
+                                                                                </li>
+                                                                                <li> <a href="javascript: void(0);"><img src="../assets/images/extra/file.png" class="me-1" alt="">main.php
+                                                                                        <span class="text-muted">/
+                                                                                            html tag with attributes is
+                                                                                            stored in this common
+                                                                                            file.</span></a>
+                                                                                </li>
+                                                                                <li> <a href="javascript: void(0);"><img src="../assets/images/extra/file.png" class="me-1" alt="">menu.php
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li> <a href="javascript: void(0);"><img src="../assets/images/extra/file.png" class="me-1" alt="">page-title.php
+                                                                                        <span class="text-muted">/
+                                                                                            Breadcrumb is defined in
+                                                                                            this file.</span></a>
+                                                                                </li>
+                                                                                <li> <a href="javascript: void(0);"><img src="../assets/images/extra/file.png" class="me-1" alt="">sidebar.php
+                                                                                        <span class="text-muted">/
+                                                                                            Sidebar menu-related code is
+                                                                                            in this file.</span></a>
+                                                                                </li>
+                                                                                <li> <a href="javascript: void(0);"><img src="../assets/images/extra/file.png" class="me-1" alt="">title-meta.php
+                                                                                        <span class="text-muted">/
+                                                                                            Page title and meta tags are
+                                                                                            defined in this
+                                                                                            file.</span></a>
+                                                                                </li>
+                                                                                <li> <a href="javascript: void(0);"><img src="../assets/images/extra/file.png" class="me-1" alt="">topbar.php
+                                                                                        <span class="text-muted">/
+                                                                                            Topbar-related code is in
+                                                                                            this file.</span></a>
+                                                                                </li>
+                                                                                <li> <a href="javascript: void(0);"><img src="../assets/images/extra/file.png" class="me-1" alt="">vendor-scripts.php
+                                                                                        <span class="text-muted">/
+                                                                                            Common js files are
+                                                                                            linked in this
+                                                                                            file.</span></a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li> <a href="javascript: void(0);"><img src="../assets/images/extra/folder.png" class="folder-icon me-1" alt="">All
+                                                                                PHP files will be here of the default
+                                                                                theme. </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="v400" role="tabpanel">
+                                        <div class="verti-sitemap">
+                                            <ul class="list-unstyled mb-0">
+                                                <li class="p-0 parent-title"><a href="javascript: void(0);"
+                                                        class="fw-medium fs-14"><img src="../assets/images/extra/folder.png" class="folder-icon me-1" alt="">Master</a>
+                                                </li>
+                                                <li>
+                                                    <div class="first-list">
+                                                        <div class="list-wrap">
+                                                            <a href="javascript: void(0);"
+                                                                class="fw-medium text-primary"><img src="../assets/images/extra/folder.png" class="folder-icon me-1" alt="">public</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="first-list">
+                                                        <div class="list-wrap">
+                                                            <a href="javascript: void(0);"
+                                                                class="fw-medium text-primary"><img src="../assets/images/extra/folder.png" class="folder-icon me-1" alt="">app</a>
+                                                            <ul class="second-list list-unstyled">
+                                                                <li>
+                                                                    <a href="javascript: void(0);"><img src="../assets/images/extra/folder.png" class="folder-icon me-1" alt="">Views</a>
+                                                                    <ul class="second-list list-unstyled">
+                                                                        <li> <a href="javascript: void(0);"><img src="../assets/images/extra/folder.png" class="folder-icon me-1" alt="">partials</a>
+                                                                            <ul class="second-list list-unstyled">
+                                                                                <li> <a href="javascript: void(0);"><img src="../assets/images/extra/file.png" class="me-1" alt="">customizer.php
+                                                                                        <span class="text-muted">/
+                                                                                            Contain the right sidebar
+                                                                                            theme customization HTML
+                                                                                            code.</span></a>
+                                                                                </li>
+                                                                                <li> <a href="javascript: void(0);"><img src="../assets/images/extra/file.png" class="me-1" alt="">footer.php
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li> <a href="javascript: void(0);"><img src="../assets/images/extra/file.png" class="me-1" alt="">head-css.php
+                                                                                        <span class="text-muted">/
+                                                                                            / added common css files
+                                                                                            link in this
+                                                                                            file.</span></a>
+                                                                                </li>
+                                                                                <li> <a href="javascript: void(0);"><img src="../assets/images/extra/file.png" class="me-1" alt="">main.php
+                                                                                        <span class="text-muted">/
+                                                                                            html tag with attributes is
+                                                                                            stored in this common
+                                                                                            file.</span></a>
+                                                                                </li>
+                                                                                <li> <a href="javascript: void(0);"><img src="../assets/images/extra/file.png" class="me-1" alt="">menu.php
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li> <a href="javascript: void(0);"><img src="../assets/images/extra/file.png" class="me-1" alt="">page-title.php
+                                                                                        <span class="text-muted">/
+                                                                                            Breadcrumb is defined in
+                                                                                            this file.</span></a>
+                                                                                </li>
+                                                                                <li> <a href="javascript: void(0);"><img src="../assets/images/extra/file.png" class="me-1" alt="">sidebar.php
+                                                                                        <span class="text-muted">/
+                                                                                            Sidebar menu-related code is
+                                                                                            in this file.</span></a>
+                                                                                </li>
+                                                                                <li> <a href="javascript: void(0);"><img src="../assets/images/extra/file.png" class="me-1" alt="">title-meta.php
+                                                                                        <span class="text-muted">/
+                                                                                            Page title and meta tags are
+                                                                                            defined in this
+                                                                                            file.</span></a>
+                                                                                </li>
+                                                                                <li> <a href="javascript: void(0);"><img src="../assets/images/extra/file.png" class="me-1" alt="">topbar.php
+                                                                                        <span class="text-muted">/
+                                                                                            Topbar-related code is in
+                                                                                            this file.</span></a>
+                                                                                </li>
+                                                                                <li> <a href="javascript: void(0);"><img src="../assets/images/extra/file.png" class="me-1" alt="">vendor-scripts.php
+                                                                                        <span class="text-muted">/
+                                                                                            Common js files are
+                                                                                            linked in this
+                                                                                            file.</span></a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li> <a href="javascript: void(0);"><img src="../assets/images/extra/folder.png" class="folder-icon me-1" alt="">All
+                                                                                PHP files will be here of the default
+                                                                                theme. </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end card-body-->
+                        </div>
+                        <!--end card-->
+                    </div>
+                    <!--end col-->
+
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title mb-0">File structure</h4>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="fw-semibold">Overview </h5>
+                                
+
+                                <pre><code class="language-markup">
+    &lt;?= $this->include&#40;&quot;partials/main&quot;) ?&gt;
+
+    &lt;head>
+
+        &lt;?php echo view&#40;'partials/title-meta', array('title' => 'Dashboard')); ?&gt;
+
+        &lt;?= $this->include&#40;&quot;partials/head-css&quot;) ?&gt;
+
+    &lt;/head>
+
+    &lt;body>
+
+        &lt;!-- Begin page -->
+        &lt;div id="layout-wrapper">
+
+            &lt;?= $this->include&#40;&quot;partials/menu&quot;) ?&gt;
+
+            &lt;!-- ============================================================== -->
+            &lt;!-- Start right Content here -->
+            &lt;!-- ============================================================== -->
+            &lt;div class="main-content">
+
+                &lt;div class="page-content">
+                    &lt;div class="container-fluid">
+
+                        &lt;?php echo view&#40;'partials/page-title', array('pagetitle': 'Dashboards', 'title' => 'Dashboard')); ?&gt;
+
+                    &lt;/div>
+                    &lt;!-- container-fluid -->
+                &lt;/div>
+                &lt;!-- End Page-content -->
+
+                &lt;?= $this->include&#40;&quot;partials/footer&quot;) ?&gt;
+            &lt;/div>
+            &lt;!-- end main content-->
+
+        &lt;/div>
+        &lt;!-- END layout-wrapper -->
+
+        &lt;?= $this->include&#40;&quot;partials/customizer&quot;) ?&gt;
+
+        &lt;?= $this->include&#40;&quot;partials/vendor-scripts&quot;) ?&gt;
+
+        &lt;!-- App js -->
+        &lt;script src="/assets/js/app.js"></script>
+
+    &lt;/body>
+&lt;/html>                                            
+</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end col-->
+
+
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title mb-0">Layout setup</h4>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted mb-4">You can set the default layout in the
+                                    <code>app/Views/partials/main.php</code> file in the html tag.
+                                </p>
+
+                                <code class="language-markup">
+&lt;html data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg">
+                                        </code>
+                                <table class="table table-bordered mb-0 mt-3">
+                                    <tbody>
+                                        <tr>
+                                            <th>data-layout="vertical"</th>
+                                            <td>To set default layout as Vertical</td>
+                                        </tr>
+                                        <tr>
+                                            <th>data-layout="horizontal"</th>
+                                            <td>To set default layout as Horizontal</td>
+                                        </tr>
+                                        <tr>
+                                            <th>data-layout="twocolumn"</th>
+                                            <td>To set default layout as Two column</td>
+                                        </tr>
+                                        <tr>
+                                            <th>data-layout-mode="light"</th>
+                                            <td>To set Light layout mode.</td>
+                                        </tr>
+                                        <tr>
+                                            <th>data-layout-mode="dark"</th>
+                                            <td>To set Dark layout mode.</td>
+                                        </tr>
+                                        <tr>
+                                            <th>data-sidebar-size="lg" data-layout-width="fluid"</th>
+                                            <td>To set layout width Fluid and left sidebar large.</td>
+                                        </tr>
+                                        <tr>
+                                            <th>data-sidebar-size="sm-hover" data-layout-width="boxed"</th>
+                                            <td>To set layout width Boxed and left sidebar on hover show menu.</td>
+                                        </tr>
+                                        <tr>
+                                            <th>data-layout-position="fixed"</th>
+                                            <td>To set layout position Fixed.</td>
+                                        </tr>
+                                        <tr>
+                                            <th>data-layout-position="scrollable"</th>
+                                            <td>To set layout position Scrollable.</td>
+                                        </tr>
+                                        <tr>
+                                            <th>data-topbar="light"</th>
+                                            <td>To set the Light color of Topbar.</td>
+                                        </tr>
+                                        <tr>
+                                            <th>data-topbar="dark"</th>
+                                            <td>To set the dark color of Topbar.</td>
+                                        </tr>
+                                        <tr>
+                                            <th>data-sidebar-size="lg"</th>
+                                            <td>To set the Large left sidebar.</td>
+                                        </tr>
+                                        <tr>
+                                            <th>data-sidebar-size="md"</th>
+                                            <td>To set the Compact left sidebar.</td>
+                                        </tr>
+                                        <tr>
+                                            <th>data-sidebar-size="sm"</th>
+                                            <td>To set the Icon view left sidebar.</td>
+                                        </tr>
+                                        <tr>
+                                            <th>data-sidebar-size="sm-hover"</th>
+                                            <td>To set the Icon hover left sidebar.</td>
+                                        </tr>
+                                        <tr>
+                                            <th>data-layout-style="default"</th>
+                                            <td>To set the Default layout.</td>
+                                        </tr>
+                                        <tr>
+                                            <th>data-layout-style="detached"</th>
+                                            <td>To set the Detached layout.</td>
+                                        </tr>
+                                        <tr>
+                                            <th>data-sidebar="light"</th>
+                                            <td>To set the Light color of left Sidebar.</td>
+                                        </tr>
+                                        <tr>
+                                            <th>data-sidebar="dark"</th>
+                                            <td>To set the Dark color of left Sidebar.</td>
+                                        </tr>
+                                        <tr>
+                                            <th>data-sidebar="gradient"</th>
+                                            <td>To set the Gradient color of left Sidebar.</td>
+                                        </tr>
+                                        <tr>
+                                            <th>data-sidebar="gradient-2"</th>
+                                            <td>To set the Gradient-2 color of left Sidebar.</td>
+                                        </tr>
+                                        <tr>
+                                            <th>data-sidebar="gradient-3"</th>
+                                            <td>To set the Gradient-3 color of left Sidebar.</td>
+                                        </tr>
+                                        <tr>
+                                            <th>data-sidebar="gradient-4"</th>
+                                            <td>To set the Gradient-4 color of left Sidebar.</td>
+                                        </tr>
+                                        <tr>
+                                            <th>data-sidebar-image="none"</th>
+                                            <td>To Disable image on left Sidebar.</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>data-sidebar-image="img-1"</th>
+                                            <td>To set the img-1 Image of left Sidebar.</td>
+                                        </tr>
+                                        <tr>
+                                            <th>data-sidebar-image="img-2"</th>
+                                            <td>To set the img-2 Image of left Sidebar.</td>
+                                        </tr>
+                                        <tr>
+                                            <th>data-sidebar-image="img-3"</th>
+                                            <td>To set the img-3 Image of left Sidebar.</td>
+                                        </tr>
+                                        <tr>
+                                            <th>data-sidebar-image="img-4"</th>
+                                            <td>To set the img-4 Image of left Sidebar.</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>data-preloader="enable"</th>
+                                            <td>To enable the preloader on the Page.</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>data-preloader="disable"</th>
+                                            <td>To disable the preloader on the Page.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--end col-->
+
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title mb-0">Galaxy Layout setup</h4>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted mb-4">You can set the galaxy layout in the
+                                    <code>app/Views/partials/main.php</code> file in the html tag.
+                                </p>
+                    
+                                <code class="language-markup">
+                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span> <span class="token attr-name">data-layout</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>vertical<span class="token punctuation">"</span></span> <span class="token attr-name">data-topbar</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>light<span class="token punctuation">"</span></span> <span class="token attr-name">data-sidebar</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>dark<span class="token punctuation">"</span></span> <span class="token attr-name">data-sidebar-size</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>lg<span class="token punctuation">"</span></span> <span class="token attr-name">data-sidebar-image</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>none<span class="token punctuation">"</span></span> <span class="token attr-name">data-layout-mode</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>dark<span class="token punctuation">"</span></span> <span class="token attr-name">data-body-image</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>img-1<span class="token punctuation">"</span></span> <span class="token attr-name">data-preloader</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>disable<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                </code>
+                                <table class="table table-bordered mb-0 mt-3">
+                                    <tbody>
+                                        <tr>
+                                            <th>data-body-image="img-1"</th>
+                                            <td>To set img-1 on whole page(body).</td>
+                                        </tr>
+                                        <tr>
+                                            <th>data-body-image="img-2"</th>
+                                            <td>To set img-2 on whole page(body).</td>
+                                        </tr>
+                                        <tr>
+                                            <th>data-body-image="img-3"</th>
+                                            <td>To set img-3 on whole page(body).</td>
+                                        </tr>
+                                        <tr>
+                                            <th>data-body-image="none"</th>
+                                            <td>To remove image on whole page(body).</td>
+                                        </tr>
+                    
+                                    </tbody>
+                                </table>
+                                <p class="mt-4 mb-0 alert alert-danger"><code>Notes:</code>Above attributes works only in Galaxy version layout.</p>
+                    
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--end row-->
+
+            </div>
+            <!-- container-fluid -->
+        </div>
+        <!-- End Page-content -->
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <script>document.write(new Date().getFullYear())</script> © Velzon.
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="text-sm-end d-none d-sm-block">
+                            Design & Develop by Themesbrand
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- end main content-->
+
+</div>
+<!-- END layout-wrapper -->
+
+
+
+<!-- JAVASCRIPT -->
+<script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/libs/simplebar/simplebar.min.js"></script>
+<script src="../assets/libs/node-waves/waves.min.js"></script>
+<script src="../assets/libs/feather-icons/feather.min.js"></script>
+<script src="../assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
+<script src="../assets/libs/prismjs/prism.js"></script>
+
+<!-- App js -->
+<script src="../assets/js/app.js"></script>
+</body>
+
+
+<!-- Mirrored from themesbrand.com/velzon/docs/codeigniter/ci-structure.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Dec 2024 05:16:49 GMT -->
+</html>

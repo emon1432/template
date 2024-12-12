@@ -1,0 +1,1033 @@
+<!doctype html>
+<html lang="en" data-layout="vertical" data-layout-style="" data-layout-position=""  data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-layout-width="">
+
+
+<!-- Mirrored from themesbrand.com/velzon/docs/mvc/sweetalert2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Dec 2024 05:17:18 GMT -->
+<head>
+
+    <meta charset="utf-8" />
+    <title>Sweetalert2 | Velzon ASP.Net Mvc - Admin & Dashboard Template Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Velzon Premium Multipurpose Admin & Dashboard Template built with ASP.Net Mvc Documentation" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="../assets/images/favicon.ico">
+
+    <!-- Layout config Js -->
+    <script src="../assets/js/layout.js"></script>
+    <!-- Bootstrap Css -->
+    <link href="../assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="../assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+<!-- Begin page -->
+<div id="layout-wrapper">
+
+    <header id="page-topbar">
+    <div class="layout-width">
+        <div class="navbar-header">
+            <div class="d-flex">
+                <!-- LOGO -->
+                <div class="navbar-brand-box horizontal-logo">
+                    <a href="index.html" class="logo logo-dark">
+                        <span class="logo-sm">
+                            <img src="../assets/images/logo-sm.png" alt="" height="22">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="../assets/images/logo-dark.png" alt="" height="17">
+                        </span>
+                    </a>
+
+                    <a href="index.html" class="logo logo-light">
+                        <span class="logo-sm">
+                            <img src="../assets/images/logo-sm.png" alt="" height="22">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="../assets/images/logo-light.png" alt="" height="17">
+                        </span>
+                    </a>
+                </div>
+
+                <button type="button" class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger" id="topnav-hamburger-icon">
+                    <span class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+
+                <div class="header-item ms-2">
+                    <div class="avatar-sm me-1 me-md-2 flex-shrink-0">
+                        <div class="avatar-title bg-white rounded-circle border">
+                            <img src="../assets/images/brand-logos/MVC.png" alt="" height="23">
+                        </div>
+                    </div>
+                    <span class="h5 mb-0">ASP.Net Mvc 5 Docs</span>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center">
+
+                <div class="header-item me-1 me-md-3">
+                    <a href="https://1.envato.market/velzon-support" target="_blank" class="btn btn-success"><i class="ri-lifebuoy-line me-1 align-middle"></i> Support</a>
+                </div>
+
+                <div class="header-item">
+                    <a href="https://1.envato.market/velzon-admin" target="_blank" class="btn btn-primary"><i class="ri-shopping-basket-2-line me-1 align-middle"></i> Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <!-- ========== App Menu ========== -->
+    <div class="app-menu navbar-menu">
+        <!-- LOGO -->
+        <div class="navbar-brand-box">
+            <!-- Dark Logo-->
+            <a href="index.html" class="logo logo-dark">
+                <span class="logo-sm">
+                    <img src="../assets/images/logo-sm.png" alt="" height="22">
+                </span>
+                <span class="logo-lg">
+                    <img src="../assets/images/logo-dark.png" alt="" height="17">
+                </span>
+            </a>
+            <!-- Light Logo-->
+            <a href="index.html" class="logo logo-light">
+                <span class="logo-sm">
+                    <img src="../assets/images/logo-sm.png" alt="" height="22">
+                </span>
+                <span class="logo-lg">
+                    <img src="../assets/images/logo-light.png" alt="" height="17"> <span
+                        class="badge badge-soft-danger fs-12 ms-1">ASP.Net Mvc</span>
+                </span>
+            </a>
+            <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover"
+                id="vertical-hover">
+                <i class="ri-record-circle-line"></i>
+            </button>
+        </div>
+
+        <div id="scrollbar">
+            <div class="container-fluid">
+
+                <ul class="navbar-nav" id="navbar-nav">
+                    <li class="menu-title"><span>Menu</span></li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="index.html">
+                            <i class="ri-honour-line"></i> <span>Introduction</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="https://youtu.be/OxbdP-Y7J8g?si=83wslaZORZSzWgOc"
+                            target="_blank">
+                            <i class="ri-live-line"></i> <span>Video</span>
+                        </a>
+                    </li>
+                    <li class="menu-title"><span>Development</span></li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="getting-started.html">
+                            <i class="ri-settings-6-line"></i> <span>Getting Started</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="folder-structure.html">
+                            <i class="ri-folder-2-line"></i> <span>Folder Structure</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="mvc-structure.html">
+                            <i class="ri-code-box-line"></i> <span>Mvc Structure</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="starter-kit.html">
+                            <i class="ri-rocket-line"></i> <span>Starter Kit</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="view.html">
+                            <i class="ri-pages-line"></i> <span>Views</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#customization" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="customization">
+                            <i class="ri-equalizer-line"></i> <span>Customization</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="customization">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="css.html" class="nav-link">CSS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="scss.html" class="nav-link">SASS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="javascript.html" class="nav-link">Javascript</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li> <!-- end Dashboard Menu -->
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="theme-setup.html">
+                            <i class="ri-paint-line"></i> <span>Theme Setup</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarLayouts" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="sidebarLayouts">
+                            <i class="ri-layout-3-line"></i> <span>Layouts</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarLayouts">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="vertical.html" class="nav-link">Vertical</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="horizontal.html" class="nav-link">Horizontal</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="detached.html" class="nav-link">Detached</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="two-column.html" class="nav-link">Two Column</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="hovered.html" class="nav-link">Hovered</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="semibox.html" class="nav-link">Semibox</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="multi-language.html">
+                            <i class="ri-global-line"></i> <span>Multi Language</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="dark-mode.html">
+                            <i class="ri-contrast-2-line"></i> <span>Dark Mode</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="rtl.html">
+                            <i class="ri-layout-right-2-line"></i> <span>RTL Version</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="sources.html">
+                            <i class="ri-pantone-line"></i> <span>Sources & Credits</span>
+                        </a>
+                    </li>
+
+                    <!-- <li class="nav-item">
+                        <a class="nav-link menu-link" href="upgrade.html">
+                            <i class="ri-server-line"></i> <span>Upgrade</span>
+                        </a>
+                    </li> -->
+
+                    <li class="menu-title"><i class="ri-more-fill"></i> <span>Components</span></li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="bootstrap-ui.html">
+                            <i class="ri-pencil-ruler-2-line"></i> <span>Bootstrap UI</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="icons.html">
+                            <i class="ri-compasses-2-line"></i> <span>Icons</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarAdvanceUI" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="sidebarAdvanceUI">
+                            <i class="ri-stack-line"></i> <span>Advance UI</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarAdvanceUI">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="sweetalert2.html" class="nav-link">Sweetalert2</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="sortablejs.html" class="nav-link">Sortablejs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="simplebar.html" class="nav-link">Simplebar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="animation.html" class="nav-link">Aos Animation</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="shepherdjs-tour.html" class="nav-link">Shepherd Js - Tour</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="swiper-slider.html" class="nav-link">Swiper Slider</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="ratings.html" class="nav-link">Raterjs - Ratings</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="prismjs-highlight.html" class="nav-link">Prismjs - Highlight</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="glightbox.html" class="nav-link">Glightbox</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarForms" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="sidebarForms">
+                            <i class="ri-file-list-3-line"></i> <span>Forms</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarForms">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="choices.html" class="nav-link">Choices</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="flatpickr.html" class="nav-link"> Flatpickr </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="colorpicker.html" class="nav-link">Pickr - Colorpicker</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="input-mask.html" class="nav-link"> Cleavejs - Input Mask</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="multi-js.html" class="nav-link">Multi Js</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="autocomplete.html" class="nav-link">Autocomplete</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="input-spin.html" class="nav-link"> Input Spin </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="nouislider.html" class="nav-link">Nouislider - Range</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="wizard.html" class="nav-link">Wizard</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="ckeditor.html" class="nav-link">Ckeditor</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="quilljs.html" class="nav-link">Quilljs Editor</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="dropzone.html" class="nav-link">Dropzone - File Uploads</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="filepond.html" class="nav-link">Filepond - File Uploads</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarTables" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="sidebarTables">
+                            <i class="ri-layout-grid-line"></i> <span>Tables</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarTables">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="gridjs.html" class="nav-link">Grid Js</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="listjs.html" class="nav-link">List Js</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarCharts" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="sidebarCharts">
+                            <i class="ri-pie-chart-line"></i> <span>Charts</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarCharts">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="apexcharts.html" class="nav-link"> Apexcharts </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="chartjs.html" class="nav-link"> Chartjs </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="echarts.html" class="nav-link"> Echarts </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarMaps" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="sidebarMaps">
+                            <i class="ri-map-pin-line"></i> <span>Maps</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarMaps">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="google-maps.html" class="nav-link">
+                                        Google
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="jsvectormap.html" class="nav-link">
+                                        Jsvectormap
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="leaflet.html" class="nav-link">
+                                        Leaflet
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- Sidebar -->
+        </div>
+    </div>
+    <!-- Left Sidebar End -->
+    <!-- Vertical Overlay-->
+    <div class="vertical-overlay"></div>
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content">
+
+        <div class="page-content">
+            <div class="container-fluid">
+
+                <!-- start page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                            <h4 class="mb-sm-0">Sweetalert2</h4>
+
+                            <div class="page-title-right">
+                                <ol class="breadcrumb m-0">
+                                    <li class="breadcrumb-item"><a href="javascript: void(0);">Advance UI</a></li>
+                                    <li class="breadcrumb-item active">Sweetalert2</li>
+                                </ol>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title -->
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+
+                            <div class="card-body mb-2">
+
+                                <h5 class="fw-semibold">Overview <a href="https://sweetalert2.github.io/"
+                                        target="_blank" class="float-end badge badge-soft-success">Official Website <i
+                                            class="ri-external-link-line"></i></a></h5>
+                                <p class="text-muted mb-4">A beautiful, responsive, customizable, accessible (WAI-ARIA)
+                                    replacement for JavaScript's popup boxes.</p>
+                                <h6>CSS</h6>
+                                <pre><code class="language-markup">&lt;!-- Sweet Alert css--&gt;
+&lt;link href=&quot;~/assets/libs/sweetalert2/sweetalert2.min.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;</code></pre>
+
+                                <h6 class="mt-3">Javascript</h6>
+                                <pre><code class="language-markup">&lt;!-- Sweet Alerts js --&gt;
+&lt;script src=&quot;~/assets/libs/sweetalert2/sweetalert2.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+
+                                <h6 class="mt-3">Initjs (Custom js)</h6>
+                                <pre><code class="language-markup">&lt;!-- Sweet alert init js--&gt;
+&lt;script src=&quot;~/assets/js/pages/sweetalerts.init.js&quot;&gt;&lt;/script&gt;</code></pre>
+
+                                <h6 class="mt-3">Add Package</h6>
+                                <pre><code class="language-markup">yarn add sweetalert2 --save</code></pre>
+
+                                <h6 class="mt-3">Remove Package</h6>
+                                <pre><code class="language-markup">yarn remove sweetalert2 or you can remove package by removing specific package from package.json .</code></pre>
+
+                            </div><!-- end card-body -->
+
+                            <div class="card-body border-top border-2 border-top-dashed">
+                                <h5 class="fw-semibold">Examples</h5>
+
+                                <div class="table-responsive">
+                                    <table class="table mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" style="width:40%">Title</th>
+                                                <th scope="col">Javascript</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">A Basic Message</th>
+                                                <td>
+                                                    <pre><code class="language-js">document.getElementById(&quot;sa-basic&quot;).addEventListener(&quot;click&quot;, function() {
+    Swal.fire(
+            {
+                title: 'Any fool can use a computer',
+                confirmButtonClass: 'btn btn-primary w-xs mt-2',
+                buttonsStyling: false,
+                showCloseButton: true
+            }
+    )
+});</code></pre>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row ">A Title with a Text Under</th>
+                                                <td>
+                                                    <pre><code class="language-js">document.getElementById("sa-title").addEventListener("click", function() {
+    Swal.fire(
+            {
+                title: "The Internet?",
+                text: 'That thing is still around?',
+                icon: 'question',
+                confirmButtonClass: 'btn btn-primary w-xs mt-2',
+                buttonsStyling: false,
+                showCloseButton: true
+            }
+    )
+});</code></pre>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row ">A Success message!</th>
+                                                <td>
+                                                    <pre><code class="language-js">document.getElementById("sa-success").addEventListener("click", function() {
+    Swal.fire(
+            {
+                title: 'Good job!',
+                text: 'You clicked the button!',
+                icon: 'success',
+                showCancelButton: true,
+                confirmButtonClass: 'btn btn-primary w-xs me-2 mt-2',
+                cancelButtonClass: 'btn btn-danger w-xs mt-2',
+                buttonsStyling: false,
+                showCloseButton: true
+            }
+    )
+});</code></pre>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">A Modal with a title, an error icon, a text, and a
+                                                    footer</th>
+                                                <td>
+                                                    <pre><code class="language-js">document.getElementById("sa-error").addEventListener("click", function() {
+    Swal.fire(
+            {
+                title: 'Oops...',
+                text: 'Something went wrong!',
+                icon: 'error',
+                confirmButtonClass: 'btn btn-primary w-xs mt-2',
+                buttonsStyling: false,
+                footer: '<a href="#">Why do I have this issue?</a>',
+                showCloseButton: true
+            }
+    )
+});</code></pre>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">A Modal window with a long content inside</th>
+                                                <td>
+                                                    <pre><code class="language-js">document.getElementById("sa-longcontent").addEventListener("click", function() {
+    Swal.fire(
+        {
+            imageUrl: 'https://placeholder.pics/svg/300x1500',
+            imageHeight: 1500,
+            imageAlt: 'A tall image',
+            confirmButtonClass: 'btn btn-primary w-xs mt-2',
+            buttonsStyling: false,
+            showCloseButton: true
+        }
+    )
+});</code></pre>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">A Warning message, with a function attached to the
+                                                    "Confirm"-button...</th>
+                                                <td>
+                                                    <pre><code class="language-js">document.getElementById("sa-warning").addEventListener("click", function() {
+    Swal.fire({
+        title: "Are you sure?",
+        text: "You won't be able to revert this!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonClass: 'btn btn-primary w-xs me-2 mt-2',
+        cancelButtonClass: 'btn btn-danger w-xs mt-2',
+        confirmButtonText: "Yes, delete it!",
+        buttonsStyling: false,
+        showCloseButton: true
+      }).then(function (result) {
+        if (result.value) {
+            Swal.fire({
+                title: 'Deleted!',
+                text: 'Your file has been deleted.',
+                icon: 'success',
+                confirmButtonClass: 'btn btn-primary w-xs mt-2',
+                buttonsStyling: false
+            })
+        }
+    });
+});</code></pre>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">By passing a parameter, you can execute something else
+                                                    for "Cancel".</th>
+                                                <td>
+                                                    <pre><code class="language-js">document.getElementById("sa-params").addEventListener("click", function() {
+    Swal.fire({
+        title: 'Are you sure?',
+        text: "You won't be able to revert this!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Yes, delete it!',
+        cancelButtonText: 'No, cancel!',
+        confirmButtonClass: 'btn btn-primary w-xs me-2 mt-2',
+        cancelButtonClass: 'btn btn-danger w-xs mt-2',
+        buttonsStyling: false,
+        showCloseButton: true
+    }).then(function (result) {
+        if (result.value) {
+            Swal.fire({
+                title: 'Deleted!',
+                text: 'Your file has been deleted.',
+                icon: 'success',
+                confirmButtonClass: 'btn btn-primary w-xs mt-2',
+                buttonsStyling: false
+            })
+          } else if (
+            // Read more about handling dismissals
+            result.dismiss === Swal.DismissReason.cancel
+          ) {
+            Swal.fire({
+              title: 'Cancelled',
+              text: 'Your imaginary file is safe :)',
+              icon: 'error',
+              confirmButtonClass: 'btn btn-primary mt-2',
+              buttonsStyling: false
+            })
+          }
+    });
+});</code></pre>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">A message with custom Image Header.</th>
+                                                <td>
+                                                    <pre><code class="language-js">document.getElementById("sa-image").addEventListener("click", function() {
+    Swal.fire({
+        title: 'Sweet!',
+        text: 'Modal with a custom image.',
+        imageUrl: 'assets/images/logo-sm.png',
+        imageHeight: 40,
+        confirmButtonClass: 'btn btn-primary w-xs mt-2',
+        buttonsStyling: false,
+        animation: false,
+        showCloseButton: true
+    })
+});</code></pre>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">A message with auto close timer.</th>
+                                                <td>
+                                                    <pre><code class="language-js">document.getElementById("sa-close").addEventListener("click", function() {
+    var timerInterval;
+    Swal.fire({
+        title: 'Auto close alert!',
+        html: 'I will close in <strong></strong> seconds.',
+        timer: 2000,
+        timerProgressBar: true,
+        showCloseButton: true,
+        didOpen:function () {
+            Swal.showLoading()
+            timerInterval = setInterval(function() {
+            var content = Swal.getHtmlContainer()
+            if (content) {
+                var b = content.querySelector('b')
+                if (b) {
+                    b.textContent = Swal.getTimerLeft()
+                }
+            }
+            }, 100)
+        },
+        onClose: function () {
+            clearInterval(timerInterval)
+        }
+        }).then(function (result) {
+            /* Read more about handling dismissals below */
+            if (result.dismiss === Swal.DismissReason.timer) {
+                console.log('I was closed by the timer')
+            }
+        })
+});</code></pre>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Custom HTML description and buttons.</th>
+                                                <td>
+                                                    <pre><code class="language-js">document.getElementById("custom-html-alert").addEventListener("click", function() {
+    Swal.fire({
+            title: '<i>HTML</i> <u>example</u>',
+            icon: 'info',
+            html: 'You can use <b>bold text</b>, ' +
+            '<a href="http://themesbrand.in/">links</a> ' +
+            'and other HTML tags',
+            showCloseButton: true,
+            showCancelButton: true,
+            confirmButtonClass: 'btn btn-success me-2',
+            cancelButtonClass: 'btn btn-danger',
+            buttonsStyling: false,
+            confirmButtonText: '<i class="ri-thumb-up-fill align-bottom me-1"></i> Great!',
+            cancelButtonText: '<i class="ri-thumb-down-fill align-bottom"></i>',
+            showCloseButton: true
+    })
+});</code></pre>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">A dialog with three buttons.</th>
+                                                <td>
+                                                    <pre><code class="language-js">document.getElementById("sa-dialog-three-btn").addEventListener("click", function() {
+    Swal.fire({
+            title: 'Do you want to save the changes?',
+            showDenyButton: true,
+            showCancelButton: true,
+            confirmButtonText: 'Save',
+            confirmButtonClass: 'btn btn-success w-xs me-2',
+            cancelButtonClass: 'btn btn-danger w-xs',
+            denyButtonClass: 'btn btn-info w-xs me-2',
+            buttonsStyling: false,
+            denyButtonText: 'Don\'t save',
+            showCloseButton: true
+        }).then(function (result) {
+            /* Read more about isConfirmed, isDenied below */
+            if (result.isConfirmed) {
+            Swal.fire({
+                title: 'Saved!',
+                icon: 'success',
+                confirmButtonClass: 'btn btn-primary w-xs',
+                buttonsStyling: false,
+            })
+            } else if (result.isDenied) {
+            Swal.fire({
+                title: 'Changes are not saved',
+                icon: 'info',
+                confirmButtonClass: 'btn btn-primary w-xs',
+                buttonsStyling: false,
+            })
+        }
+      })
+});</code></pre>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">A custom positioned dialog.</th>
+                                                <td>
+                                                    <pre><code class="language-js">document.getElementById("sa-position").addEventListener("click", function() {
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Your work has been saved',
+        showConfirmButton: false,
+        timer: 1500,
+        showCloseButton: true
+    })
+});</code></pre>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">A message with custom width, padding and background.
+                                                </th>
+                                                <td>
+                                                    <pre><code class="language-js">document.getElementById("custom-padding-width-alert").addEventListener("click", function() {
+    Swal.fire({
+        title: 'Custom width, padding, background.',
+        width: 600,
+        padding: 100,
+        confirmButtonClass: 'btn btn-primary w-xs',
+        buttonsStyling: false,
+        background: '#fff url(assets/images/auth-bg.jpg)'
+    })
+});</code></pre>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Ajax request example.</th>
+                                                <td>
+                                                    <pre><code class="language-js">document.getElementById("ajax-alert").addEventListener("click", function() {
+    Swal.fire({
+        title: 'Submit email to run ajax request',
+        input: 'email',
+        showCancelButton: true,
+        confirmButtonText: 'Submit',
+        showLoaderOnConfirm: true,
+        confirmButtonClass: 'btn btn-primary w-xs me-2',
+        cancelButtonClass: 'btn btn-danger w-xs',
+        buttonsStyling: false,
+        showCloseButton: true,
+        preConfirm: function (email) {
+            return new Promise(function (resolve, reject) {
+                setTimeout(function () {
+                    if (email === 'taken@example.com') {
+                        reject('This email is already taken.')
+                    } else {
+                        resolve()
+                    }
+                }, 2000)
+            })
+        },
+        allowOutsideClick: false
+    }).then(function (email) {
+        Swal.fire({
+            icon: 'success',
+            title: 'Ajax request finished!',
+            confirmButtonClass: 'btn btn-primary w-xs',
+            buttonsStyling: false,
+            html: 'Submitted email: ' + email
+        })
+    })
+});</code></pre>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- end table -->
+                                </div>
+                                <!-- end table responsive -->
+                            </div><!-- end card-body -->
+                            <div class="card-body border-top border-2 border-top-dashed">
+                                <h5 class="fw-semibold">Custom Sweetalert Example</h5>
+
+                                <div class="table-responsive">
+                                    <table class="table align-middle mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" style="width:40%">Title</th>
+                                                <th scope="col">Javascript</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Success Message</th>
+                                                <td>
+                                                    <pre><code class="language-js">document.getElementById("custom-sa-success").addEventListener("click", function() {
+    Swal.fire({
+        html: '<div class="mt-3">' +
+            '<lord-icon src="https://cdn.lordicon.com/lupuorrc.json" trigger="loop" colors="primary:#0ab39c,secondary:#405189" style="width:120px;height:120px"></lord-icon>' +
+            '<div class="mt-4 pt-2 fs-15">' +
+                '<h4>Well done !</h4>' +
+                '<p class="text-muted mx-4 mb-0">Aww yeah, you successfully read this important message.</p>' +
+            '</div>' +
+        '</div>',
+        showCancelButton: true,
+        showConfirmButton: false,
+        cancelButtonClass: 'btn btn-primary w-xs mb-1',
+        cancelButtonText: 'Back',
+        buttonsStyling: false,
+        showCloseButton: true
+    })
+});</code></pre>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">Error Message</th>
+                                                <td>
+                                                    <pre><code class="language-js">document.getElementById("custom-sa-error").addEventListener("click", function() {
+    Swal.fire({
+        html: '<div class="mt-3">' +
+            '<lord-icon src="https://cdn.lordicon.com/tdrtiskw.json" trigger="loop" colors="primary:#f06548,secondary:#f7b84b" style="width:120px;height:120px"></lord-icon>' +
+            '<div class="mt-4 pt-2 fs-15">' +
+                '<h4>Oops...! Something went Wrong !</h4>' +
+                '<p class="text-muted mx-4 mb-0">Your email Address is invalid</p>' +
+            '</div>' +
+        '</div>',
+        showCancelButton: true,
+        showConfirmButton: false,
+        cancelButtonClass: 'btn btn-primary w-xs mb-1',
+        cancelButtonText: 'Dismiss',
+        buttonsStyling: false,
+        showCloseButton: true
+    })
+});</code></pre>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Warning Message</th>
+                                                <td>
+                                                    <pre><code class="language-js">document.getElementById("custom-sa-warning").addEventListener("click", function() {
+    Swal.fire({
+        html: '<div class="mt-3">' +
+            '<lord-icon src="https://cdn.lordicon.com/gsqxdxog.json" trigger="loop" colors="primary:#f7b84b,secondary:#f06548" style="width:100px;height:100px"></lord-icon>' +
+            '<div class="mt-4 pt-2 fs-15 mx-5">' +
+                '<h4>Are you Sure ?</h4>' +
+                '<p class="text-muted mx-4 mb-0">Are you Sure You want to Delete this Account ?</p>' +
+            '</div>' +
+        '</div>',
+        showCancelButton: true,
+        confirmButtonClass: 'btn btn-primary w-xs me-2 mb-1',
+        confirmButtonText: 'Yes, Delete It!',
+        cancelButtonClass: 'btn btn-danger w-xs mb-1',
+        buttonsStyling: false,
+        showCloseButton: true
+    })
+});</code></pre>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Join Our Community</th>
+                                                <td>
+                                                    <pre><code class="language-js">document.getElementById("custom-sa-community").addEventListener("click", function() {
+    Swal.fire({
+        title: 'Join Our Community',
+        html: 'You can use <b>bold text</b>, ' +
+        '<a href="http://themesbrand.in/">links</a> ' +
+        'and other HTML tags',
+        html: '<div class="mt-3 text-start">' +
+            '<label for="input-email" class="form-label fs-13">Email</label>' +
+            '<input type="email" class="form-control" id="input-email" placeholder="Enter Email Address">' +
+        '</div>',
+        imageUrl: 'assets/images/logo-sm.png',
+        footer: '<p class="fs-13 text-muted mb-0">Already have an account ? <a href="#" class="fw-semibold text-decoration-underline"> Signin </a> </p>',
+        imageHeight: 40,
+        confirmButtonClass: 'btn btn-primary w-xs mb-2',
+        confirmButtonText: 'Register <i class="ri-arrow-right-line ms-1 align-bottom"></i>',
+        buttonsStyling: false,
+        showCloseButton: true
+    })
+});</code></pre>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Email Verification</th>
+                                                <td>
+                                                    <pre><code class="language-js">document.getElementById("custom-sa-email-verify").addEventListener("click", function() {
+    Swal.fire({
+        html: '<div class="mt-3">' +
+            '<div class="avatar-lg mx-auto">' +
+                '<div class="avatar-title bg-light text-success display-5 rounded-circle">' +
+                    '<i class="ri-mail-send-fill"></i>' +
+                '</div>' +
+            '</div>' +
+            '<div class="mt-4 pt-2 fs-15">' +
+                '<h4 class="fs-20 fw-semibold">Verify Your Email</h4>' +
+                '<p class="text-muted mb-0 mt-3 fs-13">We have sent you verification email <span class="fw-medium text-dark">example@abc.com</span>, <br/> Please check it.</p>' +
+            '</div>' +
+        '</div>',
+        showCancelButton: false,
+        confirmButtonClass: 'btn btn-primary mb-1',
+        confirmButtonText: 'Verify Email',
+        buttonsStyling: false,
+        footer: '<p class="fs-14 text-muted mb-0">Didn\'t receive an email ? <a href="#" class="fw-semibold text-decoration-underline">Resend</a></p>',
+        showCloseButton: true
+    })
+});</code></pre>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Notification Message</th>
+                                                <td>
+                                                    <pre><code class="language-js">document.getElementById("custom-sa-notification").addEventListener("click", function() {
+    Swal.fire({
+        html: '<div class="mt-3">' +
+            '<div class="avatar-lg mx-auto">' +
+                '<img src="assets/images/users/avatar-2.html" class="rounded-circle img-thumbnail" alt="thumbnail">' +
+            '</div>' +
+            '<div class="mt-4 pt-2 fs-15">' +
+                '<h4 class="fs-18 fw-semibold">Welcome <span class="fw-semibold">Mike Mayer</span></h4>' +
+                '<p class="text-muted mb-0 fs-13">You have <span class="fw-semibold text-success">2</span> Notifications</p>' +
+            '</div>' +
+        '</div>',
+        showCancelButton: false,
+        confirmButtonClass: 'btn btn-primary mb-1',
+        confirmButtonText: 'Show Me <i class="ri-arrow-right-line ms-1 align-bottom"></i>',
+        buttonsStyling: false,
+        showCloseButton: true
+    })
+});</code></pre>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- end table -->
+                                </div>
+                                <!-- end table responsive -->
+                            </div><!-- end card-body -->
+                        </div><!-- end card -->
+                    </div>
+                    <!-- end col -->
+                </div>
+
+            </div>
+            <!-- container-fluid -->
+        </div>
+        <!-- End Page-content -->
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <script>document.write(new Date().getFullYear())</script> © Velzon.
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="text-sm-end d-none d-sm-block">
+                            Design & Develop by Themesbrand
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- end main content-->
+
+</div>
+<!-- END layout-wrapper -->
+
+
+
+<!-- JAVASCRIPT -->
+<script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/libs/simplebar/simplebar.min.js"></script>
+<script src="../assets/libs/node-waves/waves.min.js"></script>
+<script src="../assets/libs/feather-icons/feather.min.js"></script>
+<script src="../assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
+<script src="../assets/libs/prismjs/prism.js"></script>
+
+<!-- App js -->
+<script src="../assets/js/app.js"></script>
+</body>
+
+
+<!-- Mirrored from themesbrand.com/velzon/docs/mvc/sweetalert2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Dec 2024 05:17:18 GMT -->
+</html>

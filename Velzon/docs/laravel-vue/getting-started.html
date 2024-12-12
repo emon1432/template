@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="en" data-layout="vertical" data-layout-style="" data-layout-position=""  data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-layout-width="">
+
+
+<!-- Mirrored from themesbrand.com/velzon/docs/laravel-vue/getting-started.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Dec 2024 05:16:29 GMT -->
+<head>
+
+    <meta charset="utf-8" />
+    <title>Getting Started | Velzon - Admin & Dashboard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="../assets/images/favicon.ico">
+
+    <!-- Layout config Js -->
+    <script src="../assets/js/layout.js"></script>
+    <!-- Bootstrap Css -->
+    <link href="../assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="../assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+<!-- Begin page -->
+<div id="layout-wrapper">
+
+    <header id="page-topbar">
+    <div class="layout-width">
+        <div class="navbar-header">
+            <div class="d-flex">
+                <!-- LOGO -->
+                <div class="navbar-brand-box horizontal-logo">
+                    <a href="index.html" class="logo logo-dark">
+                        <span class="logo-sm">
+                            <img src="../assets/images/logo-sm.png" alt="" height="22">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="../assets/images/logo-dark.png" alt="" height="17">
+                        </span>
+                    </a>
+
+                    <a href="index.html" class="logo logo-light">
+                        <span class="logo-sm">
+                            <img src="../assets/images/logo-sm.png" alt="" height="22">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="../assets/images/logo-light.png" alt="" height="17">
+                        </span>
+                    </a>
+                </div>
+
+                <button type="button" class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger" id="topnav-hamburger-icon">
+                    <span class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+
+                <div class="header-item ms-2">
+                    <div class="avatar-sm me-1 me-md-2 flex-shrink-0">
+                        <div class="avatar-title bg-white rounded-circle border">
+                            <img src="../assets/images/brand-logos/laravel.png" alt="" height="23">
+                        </div>
+                    </div>
+                    <div class="avatar-sm me-1 me-md-2 flex-shrink-0">
+                        <div class="avatar-title bg-white rounded-circle border">
+                            <img src="../assets/images/brand-logos/vuejs.png" alt="" height="23">
+                        </div>
+                    </div>
+                    <span class="h5 mb-0 d-none d-lg-block">Laravel + Vue Js Docs</span>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center">
+
+                <div class="header-item me-1 me-md-3">
+                    <a href="https://1.envato.market/velzon-support" target="_blank" class="btn btn-success"><i class="ri-lifebuoy-line me-1 align-middle"></i> Support</a>
+                </div>
+
+                <div class="header-item">
+                    <a href="https://1.envato.market/velzon-admin" target="_blank" class="btn btn-primary"><i class="ri-shopping-basket-2-line me-1 align-middle"></i> Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <!-- ========== App Menu ========== -->
+    <div class="app-menu navbar-menu">
+        <!-- LOGO -->
+        <div class="navbar-brand-box">
+            <!-- Dark Logo-->
+            <a href="index.html" class="logo logo-dark">
+                <span class="logo-sm">
+                    <img src="../assets/images/logo-sm.png" alt="" height="22">
+                </span>
+                <span class="logo-lg">
+                    <img src="../assets/images/logo-dark.png" alt="" height="17">
+                </span>
+            </a>
+            <!-- Light Logo-->
+            <a href="index.html" class="logo logo-light">
+                <span class="logo-sm">
+                    <img src="../assets/images/logo-sm.png" alt="" height="22">
+                </span>
+                <span class="logo-lg">
+                    <img src="../assets/images/logo-light.png" alt="" height="17">
+                </span>
+            </a>
+            <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover" id="vertical-hover">
+                <i class="ri-record-circle-line"></i>
+            </button>
+        </div>
+
+        <div id="scrollbar">
+            <div class="container-fluid">
+
+                <ul class="navbar-nav" id="navbar-nav">
+                    <li class="menu-title"><span>Menu</span></li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="index.html">
+                            <i class="ri-honour-line"></i> <span>Introduction</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="folder-structure.html">
+                            <i class="ri-folder-2-line"></i> <span>Folder Structure</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="getting-started.html">
+                            <i class="ri-settings-6-line"></i> <span>Getting Started</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#customization" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="customization">
+                            <i class="ri-equalizer-line"></i> <span>Customization</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="customization">
+                            <ul class="nav nav-sm flex-column">
+
+                                <li class="nav-item">
+                                    <a href="scss.html" class="nav-link">SASS</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li> <!-- end Dashboard Menu -->
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="laravel-vue-structure.html">
+                            <i class="ri-html5-line"></i> <span>Laravel Vue Structure</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="starter-kit.html">
+                            <i class="ri-rocket-line"></i> <span>Starter Kit</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="theme-setup.html">
+                            <i class="ri-paint-line"></i> <span>Theme Setup</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarLayouts" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLayouts">
+                            <i class="ri-layout-3-line"></i> <span>Layouts</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarLayouts">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="vertical.html" class="nav-link">Vertical</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="horizontal.html" class="nav-link">Horizontal</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="detached.html" class="nav-link">Detached</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="two-column.html" class="nav-link">Two Column</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="hovered.html" class="nav-link">Hovered</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="semibox.html" class="nav-link">Semibox</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="create-new-page.html">
+                            <i class="ri-add-circle-line"></i> <span>Create New Page</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="dark-mode.html">
+                            <i class="ri-contrast-2-line"></i> <span>Dark Mode</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="rtl.html">
+                            <i class="ri-layout-right-2-line"></i> <span>RTL Version</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="multi-language.html">
+                            <i class="ri-global-line"></i> <span>Multi Language</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="sources.html">
+                            <i class="ri-pantone-line"></i> <span>Sources & Credits</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="other.html">
+                            <i class="ri-tools-line"></i> <span>Other Settings</span><span class="badge bg-warning">Imp.</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="available-verisons.html">
+                            <i class="ri-store-line"></i> <span>Available Versions</span>
+                        </a>
+                    </li>
+                    <li class="menu-title"><i class="ri-more-fill"></i> <span>Integration</span></li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="jetstream.html">
+                            <i class="ri-database-2-line"></i> <span>Jetstream</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="inertiajs.html">
+                            <i class="ri-code-view"></i> <span>InertiaJS</span>
+                        </a>
+                    </li>
+
+                    <li class="menu-title"><i class="ri-more-fill"></i> <span>Components</span></li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="bootstrap-ui.html">
+                            <i class="ri-pencil-ruler-2-line"></i> <span>Bootstrap UI</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="icons.html">
+                            <i class="ri-compasses-2-line"></i> <span>Icons</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarAdvanceUI" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAdvanceUI">
+                            <i class="ri-stack-line"></i> <span>Advance UI</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarAdvanceUI">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="sweetalert2.html" class="nav-link">Sweetalert2</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="animation.html" class="nav-link">Aos Animation</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="swiper-slider.html" class="nav-link">Swiper Slider</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="prismjs-highlight.html" class="nav-link">Prismjs - Highlight</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarForms" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarForms">
+                            <i class="ri-file-list-3-line"></i> <span>Forms</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarForms">
+                            <ul class="nav nav-sm flex-column">
+
+                                <li class="nav-item">
+                                    <a href="flatpickr.html" class="nav-link"> Flatpickr </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="colorpicker.html" class="nav-link">Pickr - Colorpicker</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="nouislider.html" class="nav-link">Nouislider - Range</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="ckeditor.html" class="nav-link">Ckeditor</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="dropzone.html" class="nav-link">Dropzone - File Uploads</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarTables" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarTables">
+                            <i class="ri-layout-grid-line"></i> <span>Tables</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarTables">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="gridjs.html" class="nav-link">Grid Js</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarCharts" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCharts">
+                            <i class="ri-pie-chart-line"></i> <span>Charts</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarCharts">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="apexcharts.html" class="nav-link"> Apexcharts </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="chartjs.html" class="nav-link"> Chartjs </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="echarts.html" class="nav-link"> Echarts </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarMaps" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarMaps">
+                            <i class="ri-map-pin-line"></i> <span>Maps</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarMaps">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="google-maps.html" class="nav-link">
+                                        Google
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="leaflet.html" class="nav-link">
+                                        Leaflet
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- Sidebar -->
+        </div>
+    </div>
+    <!-- Left Sidebar End -->
+    <!-- Vertical Overlay-->
+    <div class="vertical-overlay"></div>
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content">
+
+        <div class="page-content">
+            <div class="container-fluid">
+
+                <!-- start page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                            <h4 class="mb-sm-0">Getting Started</h4>
+
+                            <div class="page-title-right">
+                                <ol class="breadcrumb m-0">
+                                    <li class="breadcrumb-item"><a href="javascript: void(0);">Docs</a></li>
+                                    <li class="breadcrumb-item active">Getting Started</li>
+                                </ol>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title -->
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body p-4">
+                                <div>
+                                    <div class="alert alert-warning pb-0">
+                                        <p> <strong>Note :- </strong>Make sure that you have installed <a class="alert-link" href="https://www.apachefriends.org/"><u> Xampp</u> </a>, <a class="alert-link" href="https://getcomposer.org/"><u> Composer</u> </a>,<a class="alert-link" href="https://nodejs.org/"><u> Node</u> </a> and <a class="alert-link" href="https://yarnpkg.com/"><u> Yarn</u> </a>/ <a class="alert-link" href="https://www.npmjs.com/"><u> npm</u></a> already.</p>
+                                    </div>
+                                </div>
+    
+                                <div>
+                                    <h5 class="fs-lg text-decoration-underline mt-4 mb-3">Prerequisites :</h5>
+                                    <p class="text-muted">For installation and setup all
+                                        prerequisites, please follow the below steps:</p>
+    
+                                    <table class="table table-bordered">
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Xampp</strong></td>
+                                                <td>
+                                                    <p>
+                                                        Make sure to have the <a href="https://www.apachefriends.org/" class="text-danger" target="_blank">Xampp</a>
+                                                        installed &amp; running in your computer. PHP Version 8.1 or Higher must be required for Laravel 11.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Composer</strong></td>
+                                                <td>
+                                                    <p>
+                                                        Make sure to have the <a href="https://getcomposer.org/" class="text-danger" target="_blank">Composer</a>
+                                                        installed &amp; running in your computer. make sure the composer version must be 2.2.0 or Higher.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Nodejs</strong></td>
+                                                <td>
+                                                    <p class="mt-1">Make sure to have <a class="text-danger" href="https://nodejs.org/" target="_blank">Node.js</a> installed &
+                                                        running on your computer. If you already have installed Node on your
+                                                        computer, you can skip this step if your existing node version is greater
+                                                        than 18. We suggest you to use LTS version of Node.js. </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Git</strong></td>
+                                                <td>
+                                                    <p class="mt-1">Make sure to have <a class="text-danger" href="https://git-scm.com/" target="_blank">Git</a> installed globally &
+                                                        running on your computer. If you already have installed git on your
+                                                        computer, you can skip this step.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+    
+                                <div>
+                                    <p class="text-muted">After finishing with the above prerequisites steps, you can run the below
+                                        commands into the terminal/command prompt from the root directory of the project to run the project
+                                        locally or build for production use:</p>
+    
+    
+                                    <table class="table table-bordered m-0">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 20%;">
+                                                    <i class="ti-file"></i> Command
+                                                </th>
+                                                <th>Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <code>npm install</code>
+                                                </td>
+                                                <td>
+                                                    This would install all the required dependencies in the
+                                                    <code>node_modules</code> folder.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <code>composer install</code>
+                                                </td>
+                                                <td>
+                                                    command to install all of the framework's dependencies.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <h6>
+                                                        Please run the below command to generate the new key.
+                                                    </h6>
+                                                    <pre class=" language-markup my-3"
+                                                                    tabindex="0"><code class=" language-markup">php artisan key:generate</code></pre>
+                                                    <h6 class="mb-3">
+                                                        Please fill your DB credentials in the .env file.
+                                                    </h6>
+                                                    <div class="p-3 mb-3 bg-light text-muted">
+                                                        DB_CONNECTION=mysql<br> DB_HOST=127.0.0.1
+                                                        <br> DB_PORT=3306
+                                                        <br> DB_DATABASE=velzon
+                                                        <br> DB_USERNAME=root
+                                                        <br> DB_PASSWORD=
+                                                    </div>
+                                                    <p class="alert alert-danger text-danger">Email credentials are mendatory. if you don't have credentials <a href="https://mailtrap.io/" class="text-info fw-semibold">Get Free</a>.</p>
+                                                    <h6 class="mb-3">
+                                                        Please fill your email credentials in the .env file.
+                                                    </h6>
+                                                    <div class="p-3 bg-light text-muted">
+                                                        MAIL_MAILER=<br>
+                                                        MAIL_HOST=<br>
+                                                        MAIL_PORT=<br>
+                                                        MAIL_USERNAME=<br>
+                                                        MAIL_PASSWORD=<br>
+                                                        MAIL_ENCRYPTION=<br>
+                                                        MAIL_FROM_ADDRESS="support@velzon.com"<br>
+                                                        MAIL_FROM_NAME="${APP_NAME}"
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <code>npm run build</code>
+                                                </td>
+                                                <td>
+                                                    To compile all scss to css and copy all files from resource to public directory.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <h6>
+                                                        Please run the following commands to clear all cache from the
+                                                        project.
+                                                    </h6>
+                                                    <pre class="language-markup" tabindex="0"><code class=" language-markup">php artisan optimize:clear</code></pre>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <code>php artisan migrate</code>
+                                                </td>
+                                                <td>
+                                                    This will migrate the database tables. For more details visit <a href="https://laravel.com/docs/10.x/migrations" target="_blank">https://laravel.com/docs/10.x/migrations </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <code>php artisan db:seed</code>
+                                                </td>
+                                                <td>
+                                                    This will seed the database tables. For more details visit <a href="https://laravel.com/docs/10.x/seeding" target="_blank">https://laravel.com/docs/10.x/seeding </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <code>php artisan serve</code>
+                                                </td>
+                                                <td>
+                                                    The development server is accessible at <a href="http://localhost:8000/">http://localhost:8000</a>.
+                                                    <br> To run on other port just run command : php artisan serve
+                                                    --port=8001
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="card">
+                            <div class="card-header py-3">
+                                <h5 class="card-title">Frequently Asked Questions?</h5>
+                            </div>
+                            <div class="card-body">
+                                <div>
+                                    <div class="accordion mb-3" id="accordionExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    What is Inertia.js and How to install it ?
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    Inertia is a new approach to building classic server-driven web apps. We call it the modern monolith. to install that <a href="inertia.html" class="text-danger">Click Here</a>.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    What is the Laravel Jetstream?
+                                                </button>
+                                            </h2>
+                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    Laravel <a class="text-danger" href="https://jetstream.laravel.com/introduction.html" target="_blank">Jetstream</a> is a beautifully designed application starter kit for Laravel and provides the perfect starting point for your next Laravel application.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingThree">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    How to create new page in Judia Laravel + Vue ?
+                                                </button>
+                                            </h2>
+                                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    To create a new page you have to just follow the steps. <a href="create-new-page.html" class="text-danger">click here</a> for steps.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- container-fluid -->
+        </div>
+        <!-- End Page-content -->
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <script>document.write(new Date().getFullYear())</script> © Velzon.
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="text-sm-end d-none d-sm-block">
+                            Design & Develop by Themesbrand
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- end main content-->
+
+</div>
+<!-- END layout-wrapper -->
+
+
+
+<!-- JAVASCRIPT -->
+<script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/libs/simplebar/simplebar.min.js"></script>
+<script src="../assets/libs/node-waves/waves.min.js"></script>
+<script src="../assets/libs/feather-icons/feather.min.js"></script>
+<script src="../assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
+<script src="../assets/libs/prismjs/prism.js"></script>
+
+<!-- App js -->
+<script src="../assets/js/app.js"></script>
+</body>
+
+
+<!-- Mirrored from themesbrand.com/velzon/docs/laravel-vue/getting-started.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Dec 2024 05:16:30 GMT -->
+</html>

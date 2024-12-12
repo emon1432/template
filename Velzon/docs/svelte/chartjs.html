@@ -1,0 +1,840 @@
+<!doctype html>
+<html lang="en" data-layout="vertical" data-layout-style="" data-layout-position=""  data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-layout-width="">
+
+
+<!-- Mirrored from themesbrand.com/velzon/docs/svelte/chartjs.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Dec 2024 05:17:17 GMT -->
+<head>
+
+    <meta charset="utf-8" />
+    <title>Chart Js | Velzon - Svelte Admin & Dashboard Template Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Velzon Svelte Premium Multipurpose Admin & Dashboard Template Documentation" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="../assets/images/favicon.ico">
+
+    <!-- Layout config Js -->
+    <script src="../assets/js/layout.js"></script>
+    <!-- Bootstrap Css -->
+    <link href="../assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="../assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+<!-- Begin page -->
+<div id="layout-wrapper">
+
+    <header id="page-topbar">
+    <div class="layout-width">
+        <div class="navbar-header">
+            <div class="d-flex">
+                <!-- LOGO -->
+                <div class="navbar-brand-box horizontal-logo">
+                    <a href="index.html" class="logo logo-dark">
+                        <span class="logo-sm">
+                            <img src="../assets/images/logo-sm.png" alt="" height="22">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="../assets/images/logo-dark.png" alt="" height="17">
+                        </span>
+                    </a>
+
+                    <a href="index.html" class="logo logo-light">
+                        <span class="logo-sm">
+                            <img src="../assets/images/logo-sm.png" alt="" height="22">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="../assets/images/logo-light.png" alt="" height="17">
+                        </span>
+                    </a>
+                </div>
+
+                <button type="button" class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger" id="topnav-hamburger-icon">
+                    <span class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+
+                <div class="header-item ms-2">
+                    <div class="avatar-sm me-1 me-md-2 flex-shrink-0">
+                        <div class="avatar-title bg-white rounded-circle border">
+                            <img src="../assets/images/brand-logos/svelte.png" alt="" height="23">
+                        </div>
+                    </div>
+                    <span class="h5 mb-0">Svelte Docs</span>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center">
+
+                <div class="header-item me-1 me-md-3">
+                    <a href="https://1.envato.market/velzon-support" target="_blank" class="btn btn-success"><i class="ri-lifebuoy-line me-1 align-middle"></i> Support</a>
+                </div>
+
+                <div class="header-item">
+                    <a href="https://1.envato.market/velzon-admin" target="_blank" class="btn btn-primary"><i class="ri-shopping-basket-2-line me-1 align-middle"></i> Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <!-- ========== App Menu ========== -->
+    <div class="app-menu navbar-menu">
+        <!-- LOGO -->
+        <div class="navbar-brand-box">
+            <!-- Dark Logo-->
+            <a href="index.html" class="logo logo-dark">
+                <span class="logo-sm">
+                    <img src="../assets/images/logo-sm.png" alt="" height="22">
+                </span>
+                <span class="logo-lg">
+                    <img src="../assets/images/logo-dark.png" alt="" height="17">
+                </span>
+            </a>
+            <!-- Light Logo-->
+            <a href="index.html" class="logo logo-light">
+                <span class="logo-sm">
+                    <img src="../assets/images/logo-sm.png" alt="" height="22">
+                </span>
+                <span class="logo-lg">
+                    <img src="../assets/images/logo-light.png" alt="" height="17"> <span
+                        class="badge badge-soft-danger fs-14 ms-1">Svelte</span>
+                </span>
+            </a>
+            <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover"
+                id="vertical-hover">
+                <i class="ri-record-circle-line"></i>
+            </button>
+        </div>
+
+        <div id="scrollbar">
+            <div class="container-fluid">
+
+                <ul class="navbar-nav" id="navbar-nav">
+                    <li class="menu-title"><span>Menu</span></li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="index.html">
+                            <i class="ri-honour-line"></i> <span>Introduction</span>
+                        </a>
+                    </li>
+                    <li class="menu-title"><span>Development</span></li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="getting-started.html">
+                            <i class="ri-settings-6-line"></i> <span>Getting Started</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="folder-structure.html">
+                            <i class="ri-folder-2-line"></i> <span>Folder Structure</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="html-structure.html">
+                            <i class="ri-html5-line"></i> <span>Svelte Structure</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="navigation.html">
+                            <i class="ri-menu-line"></i> <span>Navigation</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="starter-kit.html">
+                            <i class="ri-rocket-line"></i> <span>Starter Kit vs Full Admin</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarLayouts" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="sidebarLayouts">
+                            <i class="ri-layout-3-line"></i> <span>Theme Configuration</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarLayouts">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="vertical.html" class="nav-link">Vertical</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="horizontal.html" class="nav-link">Horizontal</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="detached.html" class="nav-link">Detached</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="two-column.html" class="nav-link">Two Column</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="hovered.html" class="nav-link">Hovered</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="routing.html">
+                            <i class="ri-route-line"></i> <span>Routing</span>
+                        </a>
+                    </li>
+                 
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="multi-language.html">
+                            <i class="ri-global-line"></i> <span>Multi Language</span>
+                        </a>
+                    </li>              
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="create-new-page.html">
+                            <i class="ri-file-add-line"></i> <span>Create New Page</span>
+                        </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#customization" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="customization">
+                            <i class="ri-equalizer-line"></i> <span>Customization</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="customization">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="scss.html" class="nav-link">SASS</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li> <!-- end Dashboard Menu -->
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="light-mode.html">
+                            <i class="ri-contrast-line"></i> <span>Light Mode</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="dark-mode.html">
+                            <i class="ri-contrast-2-line"></i> <span>Dark Mode</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="rtl.html">
+                            <i class="ri-align-right"></i> <span>RTL Mode</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="sources.html">
+                            <i class="ri-pantone-line"></i> <span>Sources & Credits</span>
+                        </a>
+                    </li>
+
+                    <li class="menu-title"><i class="ri-more-fill"></i> <span>Components</span></li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="bootstrap-ui.html">
+                            <i class="ri-pencil-ruler-2-line"></i> <span>Bootstrap UI</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="sveltestrap.html">
+                            <i class="ri-stack-fill"></i> <span>Sveltestrap</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="icons.html">
+                            <i class="ri-compasses-2-line"></i> <span>Icons</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarAdvanceUI" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="sidebarAdvanceUI">
+                            <i class="ri-stack-line"></i> <span>Advance UI</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarAdvanceUI">
+                            <ul class="nav nav-sm flex-column">                      
+ 
+                                <li class="nav-item">
+                                    <a href="animation.html" class="nav-link">Aos Animation</a>
+                                </li>                            
+                                <li class="nav-item">
+                                    <a href="swiper-slider.html" class="nav-link">Swiper Slider</a>
+                                </li>                            
+                                <li class="nav-item">
+                                    <a href="prismjs-highlight.html" class="nav-link">Prismjs - Highlight</a>
+                                </li>                            
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarForms" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="sidebarForms">
+                            <i class="ri-file-list-3-line"></i> <span>Forms</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarForms">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="choices.html" class="nav-link">Choices</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="flatpickr.html" class="nav-link"> Flatpickr </a>
+                                </li>                            
+                                <li class="nav-item">
+                                    <a href="input-mask.html" class="nav-link"> Cleavejs - Input Mask</a>
+                                </li>                            
+                                <li class="nav-item">
+                                    <a href="rangeslider.html" class="nav-link">RangeSlider</a>
+                                </li>                         
+                                <li class="nav-item">
+                                    <a href="dropzone.html" class="nav-link">Dropzone - File Uploads</a>
+                                </li>
+                            
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarTables" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="sidebarTables">
+                            <i class="ri-layout-grid-line"></i> <span>Tables</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarTables">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="gridjs.html" class="nav-link">Grid Js</a>
+                                </li>                          
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarCharts" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="sidebarCharts">
+                            <i class="ri-pie-chart-line"></i> <span>Charts</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarCharts">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="apexcharts.html" class="nav-link"> Apexcharts </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="chartjs.html" class="nav-link"> Chartjs </a>
+                                </li>                            
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarMaps" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="sidebarMaps">
+                            <i class="ri-map-pin-line"></i> <span>Maps</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarMaps">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="google-maps.html" class="nav-link">
+                                        Google
+                                    </a>
+                                </li>                            
+                                <li class="nav-item">
+                                    <a href="jsvectormap.html" class="nav-link">
+                                        Vector Map
+                                    </a>
+                                </li>                            
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- Sidebar -->
+        </div>
+    </div>
+    <!-- Left Sidebar End -->
+    <!-- Vertical Overlay-->
+    <div class="vertical-overlay"></div>
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content">
+
+        <div class="page-content">
+            <div class="container-fluid">
+
+                <!-- start page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                            <h4 class="mb-sm-0">Chart Js</h4>
+
+                            <div class="page-title-right">
+                                <ol class="breadcrumb m-0">
+                                    <li class="breadcrumb-item"><a href="javascript: void(0);">Charts</a></li>
+                                    <li class="breadcrumb-item active">Chart Js</li>
+                                </ol>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title -->
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+
+                            <div class="card-body mb-2">
+
+                                <h5 class="fw-semibold">Overview<a href="https://www.npmjs.com/package/svelte-chartjs"
+                                        target="_blank" class="float-end badge badge-soft-success">Official Website <i
+                                            class="ri-external-link-line"></i></a> </h5>
+                                <p class="text-muted mb-4">Svelte components for Chart.js, the most popular charting library.</p>
+
+                                <h6 class="mt-3">Import Package</h6>
+                                <pre><code class="language-js">&lt;!-- Chart JS --&gt;
+import LineChart from './LineChart.svelte';
+import BarChart from './BarChart.svelte';
+import PieChart from './PieChart.svelte';
+import DonutChart from './DonutChart.svelte';
+import PolarChart from './PolarChart.svelte';
+import RadarChart from './RadarChart.svelte';"</code></pre>                                    
+
+                                <h6 class="mt-3">Add Package</h6>
+                                <pre><code class="language-js">yarn add svelte-chartjs chart.js --save</code></pre>
+
+                                <h6 class="mt-3">Remove Package</h6>
+                                <pre><code class="language-js">yarn remove svelte-chartjs chart.js (you can remove package by removing specific package from package.json)</code></pre>
+
+                            </div><!-- end card-body -->
+
+                            <div class="card-body border-top border-2 border-top-dashed">
+                                <h5 class="fw-semibold">Examples</h5>
+
+                                <div class="table-responsive">
+                                    <table class="table mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" style="width:40%">Title</th>
+                                                <th scope="col">Javascript</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>                                            
+                                            <tr>
+                                                <th scope="row">Line Chart</th>
+                                                <td>
+                                                    <pre><code class="language-js">&lt;script&gt;
+	import Line from 'svelte-chartjs/src/Line.svelte';
+	export let dataColors;
+	function getChartColorsArray(colors) {
+		// colors = JSON.parse(colors);
+		return colors.map(function (value) {
+			var newValue = value.replace(' ', '');
+			if (newValue.indexOf(',') === -1) {
+				var color = getComputedStyle(document.documentElement).getPropertyValue(newValue);
+				if (color.indexOf('#') !== -1) color = color.replace(' ', '');
+				if (color) return color;
+				else return newValue;
+			} else {
+				var val = value.split(',');
+				if (val.length === 2) {
+					var rgbaColor = getComputedStyle(document.documentElement).getPropertyValue(val[0]);
+					rgbaColor = 'rgba(' + rgbaColor + ',' + val[1] + ')';
+					return rgbaColor;
+				} else {
+					return newValue;
+				}
+			}
+		});
+	}
+
+	var lineChartColor = getChartColorsArray(dataColors);
+	const data = {
+		labels: [
+			'January',
+			'February',
+			'March',
+			'April',
+			'May',
+			'June',
+			'July',
+			'August',
+			'September',
+			'October'
+		],
+		datasets: [
+			{
+				label: 'Sales Analytics',
+				fill: true,
+				lineTension: 0.5,
+				backgroundColor: lineChartColor[0],
+				borderColor: lineChartColor[1],
+				borderCapStyle: 'butt',
+				borderDash: [],
+				borderDashOffset: 0.0,
+				borderJoinStyle: 'miter',
+				pointBorderColor: lineChartColor[1],
+				pointBackgroundColor: '#fff',
+				pointBorderWidth: 1,
+				pointHoverRadius: 5,
+				pointHoverBackgroundColor: lineChartColor[1],
+				pointHoverBorderColor: '#fff',
+				pointHoverBorderWidth: 2,
+				pointRadius: 1,
+				pointHitRadius: 10,
+				data: [65, 59, 80, 81, 56, 55, 40, 55, 30, 80]
+			},
+			{
+				label: 'Monthly Earnings',
+				fill: true,
+				lineTension: 0.5,
+				backgroundColor: lineChartColor[2],
+				borderColor: lineChartColor[3],
+				borderCapStyle: 'butt',
+				borderDash: [],
+				borderDashOffset: 0.0,
+				borderJoinStyle: 'miter',
+				pointBorderColor: lineChartColor[3],
+				pointBackgroundColor: '#fff',
+				pointBorderWidth: 1,
+				pointHoverRadius: 5,
+				pointHoverBackgroundColor: lineChartColor[3],
+				pointHoverBorderColor: '#eef0f2',
+				pointHoverBorderWidth: 2,
+				pointRadius: 1,
+				pointHitRadius: 10,
+				data: [80, 23, 56, 65, 23, 35, 85, 25, 92, 36]
+			}
+		],
+        
+	};
+&lt;/script&gt;
+
+&lt;Line class=&quot;chartjs-chart&quot; {data} option={{ responsive: true }} /&gt;
+</code></pre>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">Bar Chart</th>
+                                                <td>
+                                                    <pre><code class="language-js">&lt;script&gt;
+	  import Bar from &quot;svelte-chartjs/src/Bar.svelte&quot;
+	export let dataColors;
+	function getChartColorsArray(colors) {
+		// colors = JSON.parse(colors);
+		return colors.map(function (value) {
+			var newValue = value.replace(' ', '');
+			if (newValue.indexOf(',') === -1) {
+				var color = getComputedStyle(document.documentElement).getPropertyValue(newValue);
+				if (color.indexOf('#') !== -1) color = color.replace(' ', '');
+				if (color) return color;
+				else return newValue;
+			} else {
+				var val = value.split(',');
+				if (val.length === 2) {
+					var rgbaColor = getComputedStyle(document.documentElement).getPropertyValue(val[0]);
+					rgbaColor = 'rgba(' + rgbaColor + ',' + val[1] + ')';
+					return rgbaColor;
+				} else {
+					return newValue;
+				}
+			}
+		});
+	}
+
+    var barChartColor =  getChartColorsArray(dataColors);  
+
+    const data = {
+        labels: [&quot;January&quot;, &quot;February&quot;, &quot;March&quot;, &quot;April&quot;, &quot;May&quot;, &quot;June&quot;, &quot;July&quot;],
+        datasets: [
+            {
+                label: &quot;Sales Analytics&quot;,
+                backgroundColor: barChartColor[0],
+                borderColor: barChartColor[0],
+                borderWidth: 1,
+                hoverBackgroundColor: barChartColor[1],
+                hoverBorderColor: barChartColor[1],
+                data: [65, 59, 81, 45, 56, 80, 50,20]
+            }
+        ]
+    }
+&lt;/script&gt;
+
+&lt;Bar class=&quot;chartjs-chart&quot; {data} option={{ responsive: true }} /&gt;
+</code></pre>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Pie Chart</th>
+                                                <td>
+                                                    <pre><code class="language-js">&lt;script&gt;
+    import Pie from 'svelte-chartjs/src/Pie.svelte';
+	export let dataColors;
+	function getChartColorsArray(colors) {
+		// colors = JSON.parse(colors);
+		return colors.map(function (value) {
+			var newValue = value.replace(' ', '');
+			if (newValue.indexOf(',') === -1) {
+				var color = getComputedStyle(document.documentElement).getPropertyValue(newValue);
+				if (color.indexOf('#') !== -1) color = color.replace(' ', '');
+				if (color) return color;
+				else return newValue;
+			} else {
+				var val = value.split(',');
+				if (val.length === 2) {
+					var rgbaColor = getComputedStyle(document.documentElement).getPropertyValue(val[0]);
+					rgbaColor = 'rgba(' + rgbaColor + ',' + val[1] + ')';
+					return rgbaColor;
+				} else {
+					return newValue;
+				}
+			}
+		});
+	}
+
+    var pieChartColors =  getChartColorsArray(dataColors);
+
+    const data={
+        labels: [
+            &quot;Desktops&quot;,
+            &quot;Tablets&quot;
+        ],
+        datasets: [
+            {
+                data: [300, 180],
+                backgroundColor: pieChartColors,
+                hoverBackgroundColor: pieChartColors,
+                hoverBorderColor: &quot;#fff&quot;
+            }]
+    }
+&lt;/script&gt;
+
+&lt;Pie class=&quot;chartjs-chart&quot; {data} option={{ responsive: true, maintainAspectRatio: false }} /&gt;
+</code></pre>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Donut Chart</th>
+                                                <td>
+                                                    <pre><code class="language-js">&lt;script&gt;
+import Doughnut from 'svelte-chartjs/src/Doughnut.svelte';
+export let dataColors;
+function getChartColorsArray(colors) {
+    // colors = JSON.parse(colors);
+    return colors.map(function (value) {
+        var newValue = value.replace(' ', '');
+        if (newValue.indexOf(',') === -1) {
+            var color = getComputedStyle(document.documentElement).getPropertyValue(newValue);
+            if (color.indexOf('#') !== -1) color = color.replace(' ', '');
+            if (color) return color;
+            else return newValue;
+        } else {
+            var val = value.split(',');
+            if (val.length === 2) {
+                var rgbaColor = getComputedStyle(document.documentElement).getPropertyValue(val[0]);
+                rgbaColor = 'rgba(' + rgbaColor + ',' + val[1] + ')';
+                return rgbaColor;
+            } else {
+                return newValue;
+            }
+        }
+    });
+}
+
+var doughnutChartColors =  getChartColorsArray(dataColors);    
+const data = {
+    labels: [
+        &quot;Desktops&quot;,
+        &quot;Tablets&quot;
+    ],
+    datasets: [
+        {
+            data: [300, 210],
+            backgroundColor: doughnutChartColors,
+            hoverBackgroundColor: doughnutChartColors,
+            hoverBorderColor: &quot;#fff&quot;
+        }]
+}
+&lt;/script&gt;
+
+&lt;Doughnut {data} option={{ responsive: true }} class=&quot;chartjs-chart&quot; /&gt;
+</code></pre>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Polar Chart</th>
+                                                <td>
+                                                    <pre><code class="language-js">&lt;script&gt;
+	import Polar from 'svelte-chartjs/src/Polar.svelte';
+	export let dataColors;
+	function getChartColorsArray(colors) {
+		// colors = JSON.parse(colors);
+		return colors.map(function (value) {
+			var newValue = value.replace(' ', '');
+			if (newValue.indexOf(',') === -1) {
+				var color = getComputedStyle(document.documentElement).getPropertyValue(newValue);
+				if (color.indexOf('#') !== -1) color = color.replace(' ', '');
+				if (color) return color;
+				else return newValue;
+			} else {
+				var val = value.split(',');
+				if (val.length === 2) {
+					var rgbaColor = getComputedStyle(document.documentElement).getPropertyValue(val[0]);
+					rgbaColor = 'rgba(' + rgbaColor + ',' + val[1] + ')';
+					return rgbaColor;
+				} else {
+					return newValue;
+				}
+			}
+		});
+	}
+
+    var polarAreaChartColors =  getChartColorsArray(dataColors);    
+    const data = {
+        labels: [
+            &quot;Series 1&quot;,
+            &quot;Series 2&quot;,
+            &quot;Series 3&quot;,
+            &quot;Series 4&quot;
+        ],
+        datasets: [{
+            data: [
+                11,
+                16,
+                7,
+                18
+            ],
+            backgroundColor: polarAreaChartColors,
+            label: 'My dataset', // for legend
+            hoverBorderColor: &quot;#fff&quot;
+        }]
+    }
+
+&lt;/script&gt;
+
+&lt;Polar {data} option={{ responsive: true }}  class=&quot;chartjs-chart&quot; /&gt;
+</code></pre>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Radar Chart</th>
+                                                <td>
+                                                    <pre><code class="language-js">&lt;script&gt;
+	import Radar from 'svelte-chartjs/src/Radar.svelte';
+
+	export let dataColors;
+	function getChartColorsArray(colors) {
+		// colors = JSON.parse(colors);
+		return colors.map(function (value) {
+			var newValue = value.replace(' ', '');
+			if (newValue.indexOf(',') === -1) {
+				var color = getComputedStyle(document.documentElement).getPropertyValue(newValue);
+				if (color.indexOf('#') !== -1) color = color.replace(' ', '');
+				if (color) return color;
+				else return newValue;
+			} else {
+				var val = value.split(',');
+				if (val.length === 2) {
+					var rgbaColor = getComputedStyle(document.documentElement).getPropertyValue(val[0]);
+					rgbaColor = 'rgba(' + rgbaColor + ',' + val[1] + ')';
+					return rgbaColor;
+				} else {
+					return newValue;
+				}
+			}
+		});
+	}
+
+	var radarChartColors = getChartColorsArray(dataColors);
+	const data = {
+		labels: ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'],
+		datasets: [
+			{
+				label: 'Desktops',
+				backgroundColor: radarChartColors[0],
+				borderColor: radarChartColors[1], //&quot;#2ab57d&quot;,
+				pointBackgroundColor: radarChartColors[1], //&quot;#2ab57d&quot;,
+				pointBorderColor: '#fff',
+				pointHoverBackgroundColor: '#fff',
+				pointHoverBorderColor: radarChartColors[1], //&quot;#2ab57d&quot;,
+				data: [65, 59, 90, 81, 56, 55, 40]
+			},
+			{
+				label: 'Tablets',
+				backgroundColor: radarChartColors[2], //&quot;rgba(81, 86, 190, 0.2)&quot;,
+				borderColor: radarChartColors[3], //&quot;#5156be&quot;,
+				pointBackgroundColor: radarChartColors[3], //&quot;#5156be&quot;,
+				pointBorderColor: '#fff',
+				pointHoverBackgroundColor: '#fff',
+				pointHoverBorderColor: radarChartColors[3], //&quot;#5156be&quot;,
+				data: [28, 48, 40, 19, 96, 27, 100]
+			}
+		]
+	};
+&lt;/script&gt;
+
+&lt;Radar {data} option={{ responsive: true }}  class=&quot;chartjs-chart&quot; /&gt;
+</code></pre>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- end table -->
+                                </div>
+                                <!-- end table responsive -->
+                            </div><!-- end card-body -->
+
+                        </div><!-- end card -->
+                    </div>
+                    <!-- end col -->
+                </div>
+
+            </div>
+            <!-- container-fluid -->
+        </div>
+        <!-- End Page-content -->
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <script>document.write(new Date().getFullYear())</script> © Velzon.
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="text-sm-end d-none d-sm-block">
+                            Design & Develop by Themesbrand
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- end main content-->
+
+</div>
+<!-- END layout-wrapper -->
+
+
+
+<!-- JAVASCRIPT -->
+<script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/libs/simplebar/simplebar.min.js"></script>
+<script src="../assets/libs/node-waves/waves.min.js"></script>
+<script src="../assets/libs/feather-icons/feather.min.js"></script>
+<script src="../assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
+<script src="../assets/libs/prismjs/prism.js"></script>
+
+<!-- App js -->
+<script src="../assets/js/app.js"></script>
+</body>
+
+
+<!-- Mirrored from themesbrand.com/velzon/docs/svelte/chartjs.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Dec 2024 05:17:17 GMT -->
+</html>

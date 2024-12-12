@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en" data-layout="vertical" data-layout-style="" data-layout-position=""  data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-layout-width="">
+
+
+<!-- Mirrored from themesbrand.com/velzon/docs/angular/getting-started.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Dec 2024 05:16:16 GMT -->
+<head>
+
+  <meta charset="utf-8" />
+  <title>Getting Started | Velzon - Angular 18 Admin & Dashboard Template Documentation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="Velzon Angular 18 Premium Multipurpose Admin & Dashboard Template Documentation" name="description" />
+  <meta content="Themesbrand" name="author" />
+  <!-- App favicon -->
+  <link rel="shortcut icon" href="../assets/images/favicon.ico">
+
+  <!-- Layout config Js -->
+  <script src="../assets/js/layout.js"></script>
+  <!-- Bootstrap Css -->
+  <link href="../assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+  <!-- Icons Css -->
+  <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+  <!-- App Css-->
+  <link href="../assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+<!-- Begin page -->
+<div id="layout-wrapper">
+
+  <header id="page-topbar">
+    <div class="layout-width">
+        <div class="navbar-header">
+            <div class="d-flex">
+                <!-- LOGO -->
+                <div class="navbar-brand-box horizontal-logo">
+                    <a href="index.html" class="logo logo-dark">
+                        <span class="logo-sm">
+                            <img src="../assets/images/logo-sm.png" alt="" height="22">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="../assets/images/logo-dark.png" alt="" height="17">
+                        </span>
+                    </a>
+
+                    <a href="index.html" class="logo logo-light">
+                        <span class="logo-sm">
+                            <img src="../assets/images/logo-sm.png" alt="" height="22">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="../assets/images/logo-light.png" alt="" height="17">
+                        </span>
+                    </a>
+                </div>
+
+                <button type="button" class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger" id="topnav-hamburger-icon">
+                    <span class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+
+                <div class="header-item ms-2">
+                    <div class="avatar-sm me-1 me-md-2 flex-shrink-0">
+                        <div class="avatar-title bg-white rounded-circle border">
+                            <img src="../assets/images/brand-logos/angular.png" alt="" height="23">
+                        </div>
+                    </div>
+                    <span class="h5 mb-0">Angular Docs</span>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center">
+
+                <div class="header-item me-1 me-md-3">
+                    <a href="https://1.envato.market/velzon-support" target="_blank" class="btn btn-success"><i class="ri-lifebuoy-line me-1 align-middle"></i> Support</a>
+                </div>
+                <div class="header-item">
+                    <a href="https://1.envato.market/velzon-admin" target="_blank" class="btn btn-primary"><i class="ri-shopping-basket-2-line me-1 align-middle"></i> Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+  <!-- ========== App Menu ========== -->
+  <div class="app-menu navbar-menu">
+      <!-- LOGO -->
+      <div class="navbar-brand-box">
+          <!-- Dark Logo-->
+          <a href="index.html" class="logo logo-dark">
+              <span class="logo-sm">
+                  <img src="../assets/images/logo-sm.png" alt="" height="22">
+              </span>
+              <span class="logo-lg">
+                  <img src="../assets/images/logo-dark.png" alt="" height="17">
+              </span>
+          </a>
+          <!-- Light Logo-->
+          <a href="index.html" class="logo logo-light">
+              <span class="logo-sm">
+                  <img src="../assets/images/logo-sm.png" alt="" height="22">
+              </span>
+              <span class="logo-lg">
+                  <img src="../assets/images/logo-light.png" alt="" height="17"> <span class="badge badge-soft-danger fs-14 ms-1">Angular 18</span>
+              </span>
+          </a>
+          <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover" id="vertical-hover">
+              <i class="ri-record-circle-line"></i>
+          </button>
+      </div>
+
+      <div id="scrollbar">
+          <div class="container-fluid">
+
+              <ul class="navbar-nav" id="navbar-nav">
+                  <li class="menu-title"><span>Menu</span></li>
+                  <li class="nav-item">
+                      <a class="nav-link menu-link" href="index.html">
+                          <i class="ri-honour-line"></i> <span>Introduction</span>
+                      </a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link menu-link" href="https://youtu.be/-UmEFNtwWNM?si=JHRlcT3Dzoh6tQP9" target="_blank">
+                          <i class="ri-live-line"></i> <span>Video</span>
+                      </a>
+                  </li>
+
+                  <li class="menu-title"><span>Development</span></li>
+
+                  <li class="nav-item">
+                      <a class="nav-link menu-link" href="getting-started.html">
+                          <i class="ri-settings-6-line"></i> <span>Getting Started</span>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link menu-link" href="deployment.html">
+                          <i class="ri-settings-6-line"></i> <span>Deployment</span>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link menu-link" href="folder-structure.html">
+                          <i class="ri-folder-2-line"></i> <span>Folder Structure</span>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link menu-link" href="angular-structure.html">
+                          <i class="ri-angularjs-line"></i> <span>Angular Structure</span>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link menu-link" href="navigation.html">
+                          <i class="ri-menu-line"></i> <span>Navigation</span>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link menu-link" href="starter-kit.html">
+                          <i class="ri-rocket-line"></i> <span>Starter Kit vs Full Admin</span>
+                      </a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link menu-link" href="theme-setup.html">
+                          <i class="ri-paint-line"></i> <span>Theme Setup</span>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link menu-link" href="#sidebarLayouts" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLayouts">
+                          <i class="ri-layout-3-line"></i> <span>Theme Configuration</span>
+                      </a>
+                      <div class="collapse menu-dropdown" id="sidebarLayouts">
+                          <ul class="nav nav-sm flex-column">
+                              <li class="nav-item">
+                                  <a href="vertical.html" class="nav-link">Vertical</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a href="horizontal.html" class="nav-link">Horizontal</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a href="detached.html" class="nav-link">Detached</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a href="two-column.html" class="nav-link">Two Column</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a href="hovered.html" class="nav-link">Hovered</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a href="semibox.html" class="nav-link">Semibox</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link menu-link" href="routing.html">
+                          <i class="ri-route-line"></i> <span>Routing</span>
+                      </a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link menu-link" href="multi-language.html">
+                          <i class="ri-global-line"></i> <span>Multi Language</span>
+                      </a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link menu-link" href="create-new-page.html">
+                          <i class="ri-file-add-line"></i> <span>Create New Page</span>
+                      </a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link menu-link" href="#customization" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="customization">
+                          <i class="ri-equalizer-line"></i> <span>Customization</span>
+                      </a>
+                      <div class="collapse menu-dropdown" id="customization">
+                          <ul class="nav nav-sm flex-column">
+                              <li class="nav-item">
+                                  <a href="scss.html" class="nav-link">SASS</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link menu-link" href="light-mode.html">
+                          <i class="ri-contrast-line"></i> <span>Light Mode</span>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link menu-link" href="dark-mode.html">
+                          <i class="ri-contrast-2-line"></i> <span>Dark Mode</span>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link menu-link" href="rtl.html">
+                          <i class="ri-align-right"></i> <span>RTL Mode</span>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link menu-link" href="sources.html">
+                          <i class="ri-pantone-line"></i> <span>Sources & Credits</span>
+                      </a>
+                  </li>
+
+                  <li class="menu-title"><span>Integrations</span></li>
+
+                  <li class="nav-item">
+                      <a class="nav-link menu-link" href="api-integration.html">
+                          <i class="ri-database-2-line"></i> <span>Api Integrations</span>
+                      </a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link menu-link" href="social-setup.html">
+                          <i class="ri-fire-line"></i> <span>Firebase Setup</span>
+                      </a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link menu-link" href="fake-backend.html">
+                          <i class="ri-code-fill"></i> <span>Fake Backend Setup</span>
+                      </a>
+                  </li>
+
+                  <li class="menu-title"><i class="ri-more-fill"></i> <span>Components</span></li>
+
+                  <li class="nav-item">
+                      <a class="nav-link menu-link" href="bootstrap-ui.html">
+                          <i class="ri-pencil-ruler-2-line"></i> <span>Bootstrap UI</span>
+                      </a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link menu-link" href="icons.html">
+                          <i class="ri-compasses-2-line"></i> <span>Icons</span>
+                      </a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link menu-link" href="#sidebarAdvanceUI" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAdvanceUI">
+                          <i class="ri-stack-line"></i> <span>Advance UI</span>
+                      </a>
+                      <div class="collapse menu-dropdown" id="sidebarAdvanceUI">
+                          <ul class="nav nav-sm flex-column">
+                              <li class="nav-item">
+                                  <a href="sweetalert2.html" class="nav-link">Sweetalert2</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a href="simplebar.html" class="nav-link">Simplebar</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a href="shepherdjs-tour.html" class="nav-link">Shepherd Js - Tour</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a href="swiper-slider.html" class="nav-link">Swiper Slider</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a href="ratings.html" class="nav-link">Raterjs - Ratings</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link menu-link" href="#sidebarForms" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarForms">
+                          <i class="ri-file-list-3-line"></i> <span>Forms</span>
+                      </a>
+                      <div class="collapse menu-dropdown" id="sidebarForms">
+                          <ul class="nav nav-sm flex-column">
+                              <li class="nav-item">
+                                  <a href="choices.html" class="nav-link">Choices</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a href="flatpickr.html" class="nav-link"> Flatpickr </a>
+                              </li>
+                              <li class="nav-item">
+                                  <a href="colorpicker.html" class="nav-link">Pickr - Colorpicker</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a href="input-mask.html" class="nav-link"> Cleavejs - Input Mask</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a href="rangeslider.html" class="nav-link">RangeSlider</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a href="wizard.html" class="nav-link">Wizard</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a href="ckeditor.html" class="nav-link">Ckeditor</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a href="filepond.html" class="nav-link">Filepond - File Uploads</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link menu-link" href="#sidebarCharts" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCharts">
+                          <i class="ri-pie-chart-line"></i> <span>Charts</span>
+                      </a>
+                      <div class="collapse menu-dropdown" id="sidebarCharts">
+                          <ul class="nav nav-sm flex-column">
+                              <li class="nav-item">
+                                  <a href="apexcharts.html" class="nav-link"> Apexcharts </a>
+                              </li>
+                              <li class="nav-item">
+                                  <a href="chartjs.html" class="nav-link"> Chartjs </a>
+                              </li>
+                              <li class="nav-item">
+                                  <a href="echarts.html" class="nav-link"> Echarts </a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link menu-link" href="#sidebarMaps" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarMaps">
+                          <i class="ri-map-pin-line"></i> <span>Maps</span>
+                      </a>
+                      <div class="collapse menu-dropdown" id="sidebarMaps">
+                          <ul class="nav nav-sm flex-column">
+                              <li class="nav-item">
+                                  <a href="google-maps.html" class="nav-link">
+                                      Google
+                                  </a>
+                              </li>
+                              <li class="nav-item">
+                                  <a href="leaflet.html" class="nav-link">
+                                      Leaflet
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+
+              </ul>
+          </div>
+          <!-- Sidebar -->
+      </div>
+  </div>
+  <!-- Left Sidebar End -->
+  <!-- Vertical Overlay-->
+  <div class="vertical-overlay"></div>
+
+  <!-- ============================================================== -->
+  <!-- Start right Content here -->
+  <!-- ============================================================== -->
+  <div class="main-content">
+
+    <div class="page-content">
+      <div class="container-fluid">
+
+        <!-- start page title -->
+        <div class="row">
+            <div class="col-12">
+                <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                    <h4 class="mb-sm-0">Getting Started</h4>
+
+                    <div class="page-title-right">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item"><a href="javascript: void(0);">Docs</a></li>
+                            <li class="breadcrumb-item active">Getting Started</li>
+                        </ol>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- end page title -->
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title mb-0">Getting Started</h4>
+              </div>
+              <div class="card-body">
+        
+                <p class="text-muted"> We are using <a class="text-danger" href="https://angular.io/cli" target="_blank">Angular CLI</a> is a command-line interface tool that you use to initialize, develop, scaffold, and maintain Angular applications directly from a command shell.</p>
+
+                <h5> Prerequisites:</h5>
+                <p class="text-muted"> Please follow the below steps to install and setup all
+                  prerequisites:</p>
+                  <ul>
+                    <li>
+                      <strong>Nodejs</strong>
+                      <p class="mt-1">Make sure to have <a class="text-danger" href="https://nodejs.org/" target="_blank">Node.js</a> installed &amp; running on your computer. If you already have installed Node on your computer, you can skip this step if your existing node version is greater than 18. We suggest you to use LTS version of Node.js. </p>
+                    </li>
+                    <li>
+                      <strong>NPM</strong>
+                      <p class="mt-1">
+                        Make sure to have the <a class="text-danger" href="https://docs.npmjs.com/cli/v8/commands/npm-install" target="_blank">NPM</a> installed &amp; running on your computer. If you already have installed NPM on your computer, you can skip this step.</p>
+        
+                      <pre class="language-markup p-3 rounded mb-4 bg-ligh position-relative"><button class="position-absolute badge bg-light text-white bg-opacity-10 top-0 end-0 m-3 rounded border-0 fs-6 fw-normal btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Copy to clipboard" title="Copy to clipboard">Copy</button> <code>npm install -g npm </code> </pre>
+        
+                    </li>
+                    <li>
+                      <strong>Angular CLI</strong>
+                      <p class="mt-1">Make sure to have the <a class="text-danger" href="https://gulpjs.com/" target="_blank">Angular cli</a> installed &amp; running on your computer. Install it before start with the Angular app</p>
+                      <pre class="language-markup p-3 rounded mb-4 bg-ligh position-relative"><button class="position-absolute badge bg-light text-white bg-opacity-10 top-0 end-0 m-3 rounded border-0 fs-6 fw-normal btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Copy to clipboard" title="Copy to clipboard">Copy</button> <code>npm install --global @angular/cli@latest</code> </pre>
+        
+                      <div class="alert alert-danger text-danger">
+                        <i class=" bi bi-exclamation-circle-fill fs-3 align-middle me-2"></i> Warning: If you have Angular CLI installed previously, update it to the latest Angular CLI. Remove the older version and re-install it.
+                      </div>
+                      <pre class="language-markup p-3 rounded mb-4 bg-ligh position-relative"><button class="position-absolute badge bg-light text-white bg-opacity-10 top-0 end-0 m-3 rounded border-0 fs-6 fw-normal btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Copy to clipboard" title="Copy to clipboard">Copy</button> <code>npm uninstall --global @angular/cli</code> </pre>
+        
+                      <pre class="language-markup p-3 rounded mb-4 bg-ligh position-relative"><button class="position-absolute badge bg-light text-white bg-opacity-10 top-0 end-0 m-3 rounded border-0 fs-6 fw-normal btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Copy to clipboard" title="Copy to clipboard">Copy</button> <code>npm install --global @angular/cli@latest</code> </pre>
+                    </li>
+                    <li>
+                      <strong>Git</strong>
+        
+                      <p class="mt-1">Make sure to have <a class="text-danger" href="https://git-scm.com/" target="_blank">Git</a> installed globally &amp; running on your computer. If you already have installed git on your computer, you can skip this step. <br /> To install in Linux OS please run the below commands.</p>
+        
+                      <pre class="language-markup p-3 rounded mb-4 bg-ligh position-relative"><button class="position-absolute badge bg-light text-white bg-opacity-10 top-0 end-0 m-3 rounded border-0 fs-6 fw-normal btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Copy to clipboard" title="Copy to clipboard">Copy</button><code>sudo apt-get update
+sudo apt-get install git </code> </pre>
+                    </li>
+                  </ul>
+
+                  <p class="text-muted mt-4">After you finished with the above steps, you can run the following commands into the terminal/command prompt from the root directory <span class="fw-semibold">(Judia_*/HTML/ )</span> of the project to run the project locally or build for production use:</p>
+
+                  <strong>Install the Angular local project dependencies by executing following commands:</strong>
+        
+                  <p>This command will clear your old cached node_modules.</p>
+        
+                  <pre class="language-markup p-3 rounded mb-4 bg-ligh position-relative"><button class="position-absolute badge bg-light text-white bg-opacity-10 top-0 end-0 m-3 rounded border-0 fs-6 fw-normal btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Copy to clipboard" title="Copy to clipboard">Copy</button><code>npm clear cache --force </code> </pre>
+        
+                  <p>This command will install the dependencies in the local node_modules folder. By default, <a class="text-danger" href="#">npm install --legacy-peer-deps</a> will install all modules listed as dependencies in <a class="text-danger" href="#">package.json</a>.</p>
+        
+                  <pre class="language-markup p-3 rounded mb-4 bg-ligh position-relative"><button class="position-absolute badge bg-light text-white bg-opacity-10 top-0 end-0 m-3 rounded border-0 fs-6 fw-normal btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Copy to clipboard" title="Copy to clipboard">Copy</button><code>npm install --legacy-peer-deps </code> </pre>
+        
+                  <p>This command launches the server, watches your files, and rebuilds the app as you make changes to those files. Using the <a class="text-danger" href="#">--open (or use -o)</a> option will automatically open your browser on <a class="text-danger" href="http://localhost:4200/">http://localhost:4200/.</a> This command will take some time to finsh. Please wait for it to complete.</p>
+        
+                  <pre class="language-markup p-3 rounded mb-4 bg-ligh position-relative"><button class="position-absolute badge bg-light text-white bg-opacity-10 top-0 end-0 m-3 rounded border-0 fs-6 fw-normal btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Copy to clipboard" title="Copy to clipboard">Copy</button><code>ng serve </code> </pre>
+        
+                  <p>For more detailed information to install the Angular application, visit this official Angular <a class="text-danger" href="https://angular.io/start"></a>documentation website.</a></p>
+                </div>
+
+                <div class="alert alert-info mb-0">
+                  SCSS: We suggest you to do not change any scss files from the <span
+                    class="fw-semibold">src/assets/scss/custom.scss</span> folders because to get new updates will might
+                  be break your SCSS changes if any you have made. We strongly suggest you to use custom.scss file and
+                  use that instead of overwrite any theme's scss files.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- container-fluid -->
+  </div>
+  <!-- End Page-content -->
+
+  <footer class="footer">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-sm-6">
+                  <script>document.write(new Date().getFullYear())</script> © Velzon.
+              </div>
+              <div class="col-sm-6">
+                  <div class="text-sm-end d-none d-sm-block">
+                      Design & Develop by Themesbrand
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+</div>
+<!-- end main content-->
+
+</div>
+<!-- END layout-wrapper -->
+
+
+
+<!-- JAVASCRIPT -->
+<script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/libs/simplebar/simplebar.min.js"></script>
+<script src="../assets/libs/node-waves/waves.min.js"></script>
+<script src="../assets/libs/feather-icons/feather.min.js"></script>
+<script src="../assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
+<script src="../assets/libs/prismjs/prism.js"></script>
+
+<!-- App js -->
+<script src="../assets/js/app.js"></script>
+</body>
+
+
+<!-- Mirrored from themesbrand.com/velzon/docs/angular/getting-started.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Dec 2024 05:16:16 GMT -->
+</html>

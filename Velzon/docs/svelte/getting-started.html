@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="en" data-layout="vertical" data-layout-style="" data-layout-position=""  data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-layout-width="">
+
+
+<!-- Mirrored from themesbrand.com/velzon/docs/svelte/getting-started.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Dec 2024 05:17:14 GMT -->
+<head>
+
+    <meta charset="utf-8" />
+    <title>Getting Started | Velzon - Svelte Admin & Dashboard Template Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Velzon Svelte Premium Multipurpose Admin & Dashboard Template Documentation" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="../assets/images/favicon.ico">
+
+    <!-- Layout config Js -->
+    <script src="../assets/js/layout.js"></script>
+    <!-- Bootstrap Css -->
+    <link href="../assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="../assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+<!-- Begin page -->
+<div id="layout-wrapper">
+
+    <header id="page-topbar">
+    <div class="layout-width">
+        <div class="navbar-header">
+            <div class="d-flex">
+                <!-- LOGO -->
+                <div class="navbar-brand-box horizontal-logo">
+                    <a href="index.html" class="logo logo-dark">
+                        <span class="logo-sm">
+                            <img src="../assets/images/logo-sm.png" alt="" height="22">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="../assets/images/logo-dark.png" alt="" height="17">
+                        </span>
+                    </a>
+
+                    <a href="index.html" class="logo logo-light">
+                        <span class="logo-sm">
+                            <img src="../assets/images/logo-sm.png" alt="" height="22">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="../assets/images/logo-light.png" alt="" height="17">
+                        </span>
+                    </a>
+                </div>
+
+                <button type="button" class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger" id="topnav-hamburger-icon">
+                    <span class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+
+                <div class="header-item ms-2">
+                    <div class="avatar-sm me-1 me-md-2 flex-shrink-0">
+                        <div class="avatar-title bg-white rounded-circle border">
+                            <img src="../assets/images/brand-logos/svelte.png" alt="" height="23">
+                        </div>
+                    </div>
+                    <span class="h5 mb-0">Svelte Docs</span>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center">
+
+                <div class="header-item me-1 me-md-3">
+                    <a href="https://1.envato.market/velzon-support" target="_blank" class="btn btn-success"><i class="ri-lifebuoy-line me-1 align-middle"></i> Support</a>
+                </div>
+
+                <div class="header-item">
+                    <a href="https://1.envato.market/velzon-admin" target="_blank" class="btn btn-primary"><i class="ri-shopping-basket-2-line me-1 align-middle"></i> Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <!-- ========== App Menu ========== -->
+    <div class="app-menu navbar-menu">
+        <!-- LOGO -->
+        <div class="navbar-brand-box">
+            <!-- Dark Logo-->
+            <a href="index.html" class="logo logo-dark">
+                <span class="logo-sm">
+                    <img src="../assets/images/logo-sm.png" alt="" height="22">
+                </span>
+                <span class="logo-lg">
+                    <img src="../assets/images/logo-dark.png" alt="" height="17">
+                </span>
+            </a>
+            <!-- Light Logo-->
+            <a href="index.html" class="logo logo-light">
+                <span class="logo-sm">
+                    <img src="../assets/images/logo-sm.png" alt="" height="22">
+                </span>
+                <span class="logo-lg">
+                    <img src="../assets/images/logo-light.png" alt="" height="17"> <span
+                        class="badge badge-soft-danger fs-14 ms-1">Svelte</span>
+                </span>
+            </a>
+            <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover"
+                id="vertical-hover">
+                <i class="ri-record-circle-line"></i>
+            </button>
+        </div>
+
+        <div id="scrollbar">
+            <div class="container-fluid">
+
+                <ul class="navbar-nav" id="navbar-nav">
+                    <li class="menu-title"><span>Menu</span></li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="index.html">
+                            <i class="ri-honour-line"></i> <span>Introduction</span>
+                        </a>
+                    </li>
+                    <li class="menu-title"><span>Development</span></li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="getting-started.html">
+                            <i class="ri-settings-6-line"></i> <span>Getting Started</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="folder-structure.html">
+                            <i class="ri-folder-2-line"></i> <span>Folder Structure</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="html-structure.html">
+                            <i class="ri-html5-line"></i> <span>Svelte Structure</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="navigation.html">
+                            <i class="ri-menu-line"></i> <span>Navigation</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="starter-kit.html">
+                            <i class="ri-rocket-line"></i> <span>Starter Kit vs Full Admin</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarLayouts" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="sidebarLayouts">
+                            <i class="ri-layout-3-line"></i> <span>Theme Configuration</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarLayouts">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="vertical.html" class="nav-link">Vertical</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="horizontal.html" class="nav-link">Horizontal</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="detached.html" class="nav-link">Detached</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="two-column.html" class="nav-link">Two Column</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="hovered.html" class="nav-link">Hovered</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="routing.html">
+                            <i class="ri-route-line"></i> <span>Routing</span>
+                        </a>
+                    </li>
+                 
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="multi-language.html">
+                            <i class="ri-global-line"></i> <span>Multi Language</span>
+                        </a>
+                    </li>              
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="create-new-page.html">
+                            <i class="ri-file-add-line"></i> <span>Create New Page</span>
+                        </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#customization" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="customization">
+                            <i class="ri-equalizer-line"></i> <span>Customization</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="customization">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="scss.html" class="nav-link">SASS</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li> <!-- end Dashboard Menu -->
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="light-mode.html">
+                            <i class="ri-contrast-line"></i> <span>Light Mode</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="dark-mode.html">
+                            <i class="ri-contrast-2-line"></i> <span>Dark Mode</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="rtl.html">
+                            <i class="ri-align-right"></i> <span>RTL Mode</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="sources.html">
+                            <i class="ri-pantone-line"></i> <span>Sources & Credits</span>
+                        </a>
+                    </li>
+
+                    <li class="menu-title"><i class="ri-more-fill"></i> <span>Components</span></li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="bootstrap-ui.html">
+                            <i class="ri-pencil-ruler-2-line"></i> <span>Bootstrap UI</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="sveltestrap.html">
+                            <i class="ri-stack-fill"></i> <span>Sveltestrap</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="icons.html">
+                            <i class="ri-compasses-2-line"></i> <span>Icons</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarAdvanceUI" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="sidebarAdvanceUI">
+                            <i class="ri-stack-line"></i> <span>Advance UI</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarAdvanceUI">
+                            <ul class="nav nav-sm flex-column">                      
+ 
+                                <li class="nav-item">
+                                    <a href="animation.html" class="nav-link">Aos Animation</a>
+                                </li>                            
+                                <li class="nav-item">
+                                    <a href="swiper-slider.html" class="nav-link">Swiper Slider</a>
+                                </li>                            
+                                <li class="nav-item">
+                                    <a href="prismjs-highlight.html" class="nav-link">Prismjs - Highlight</a>
+                                </li>                            
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarForms" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="sidebarForms">
+                            <i class="ri-file-list-3-line"></i> <span>Forms</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarForms">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="choices.html" class="nav-link">Choices</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="flatpickr.html" class="nav-link"> Flatpickr </a>
+                                </li>                            
+                                <li class="nav-item">
+                                    <a href="input-mask.html" class="nav-link"> Cleavejs - Input Mask</a>
+                                </li>                            
+                                <li class="nav-item">
+                                    <a href="rangeslider.html" class="nav-link">RangeSlider</a>
+                                </li>                         
+                                <li class="nav-item">
+                                    <a href="dropzone.html" class="nav-link">Dropzone - File Uploads</a>
+                                </li>
+                            
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarTables" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="sidebarTables">
+                            <i class="ri-layout-grid-line"></i> <span>Tables</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarTables">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="gridjs.html" class="nav-link">Grid Js</a>
+                                </li>                          
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarCharts" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="sidebarCharts">
+                            <i class="ri-pie-chart-line"></i> <span>Charts</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarCharts">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="apexcharts.html" class="nav-link"> Apexcharts </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="chartjs.html" class="nav-link"> Chartjs </a>
+                                </li>                            
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarMaps" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="sidebarMaps">
+                            <i class="ri-map-pin-line"></i> <span>Maps</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarMaps">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="google-maps.html" class="nav-link">
+                                        Google
+                                    </a>
+                                </li>                            
+                                <li class="nav-item">
+                                    <a href="jsvectormap.html" class="nav-link">
+                                        Vector Map
+                                    </a>
+                                </li>                            
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- Sidebar -->
+        </div>
+    </div>
+    <!-- Left Sidebar End -->
+    <!-- Vertical Overlay-->
+    <div class="vertical-overlay"></div>
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content">
+
+        <div class="page-content">
+            <div class="container-fluid">
+
+                <!-- start page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                            <h4 class="mb-sm-0">Getting Started</h4>
+
+                            <div class="page-title-right">
+                                <ol class="breadcrumb m-0">
+                                    <li class="breadcrumb-item"><a href="javascript: void(0);">Docs</a></li>
+                                    <li class="breadcrumb-item active">Getting Started</li>
+                                </ol>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title -->
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <p>
+                                    Velzon is a fully featured premium admin dashboard template in <a href="https://svelte.dev/" class="text-danger" target="_blank">Svelte</a>  with
+                                    <strong><a href="https://kit.svelte.dev/" class="text-danger" target="_blank">Sveltekit</a></strong> and with
+                                    <strong>ViteJs</strong> and developer-friendly codes.
+                                    <br>
+                                </p>
+
+                                <h5> Prerequisites:</h5>
+                                <p class="text-muted"> Please follow the below steps to install and setup all
+                                    prerequisites:</p>
+                                <ul>
+                                    <li>
+                                        <strong>Nodejs</strong>
+                                        <p>
+                                            Make sure to have the <a href="https://nodejs.org/" class="text-danger" target="_blank">Node.js</a> installed &amp; running on your computer. If
+                                            you already have installed Node on your computer, you can skip this step if your existing node version is greater than equal to 18.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <strong>Node version support policy</strong>
+                                        <ol>
+                                          <li>
+                                            Supported Node.js versions vary by release, please consult the
+                                            <a href="https://github.com/sass/node-sass/releases" class="text-danger" target="_blank"> releases page.</a>
+                                          </li>
+                                          <li>
+                                            Node versions that hit the end of life <a href="https://github.com/nodejs/Release" class="text-danger" target="_blank">
+                                              https://github.com/nodejs/Release</a>, will be dropped from support at each node-sass release (major, minor).
+                                          </li>
+                                          <li>
+                                            We will stop building binaries for unsupported releases, and testing for breakages in dependency compatibility, but we will not
+                                            block installations for those that want to support themselves.
+                                          </li>
+                                          <li>
+                                            New node releases require minor internal changes along with support from CI providers (AppVeyor, GitHub Actions). We will open a
+                                            single issue for interested parties to subscribe to, and close additional issues.
+                                          </li>
+                                        </ol>
+                                        <strong>Below is a quick guide for minimum and maximum support supported versions of node-sass:-
+                                        </strong>
+                                        <table class="table table-bordered mt-3">
+                                          <thead>
+                                            <tr>
+                                              <th>NodeJS</th>
+                                              <th>Supported node-sass version</th>
+                                              <th>Node Module</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <td>Node 20</td>
+                                              <td>9.0+</td>
+                                              <td>115</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Node 19</td>
+                                              <td>8.0+</td>
+                                              <td>111</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Node 18</td>
+                                              <td>8.0+</td>
+                                              <td>108</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Node 16</td>
+                                              <td>6.0+</td>
+                                              <td>93</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Node 15</td>
+                                              <td>5.0+</td>
+                                              <td>88</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Node 14</td>
+                                              <td>4.14+</td>
+                                              <td>83</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Node 13</td>
+                                              <td>4.13+, &lt;5.0</td>
+                                              <td>79</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Node 12</td>
+                                              <td>4.12+</td>
+                                              <td>72</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Node 11</td>
+                                              <td>4.10+, &lt;5.0</td>
+                                              <td>67</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Node 10</td>
+                                              <td>4.9+, &lt;6.0</td>
+                                              <td>64</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Node 8</td>
+                                              <td>4.5.3+, &lt;5.0</td>
+                                              <td>57</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Node &lt;8</td>
+                                              <td>&lt;5.0</td>
+                                              <td>&lt;57</td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </li>
+                                    <li>
+                                        <strong>Git</strong>
+
+                                        <p>Make sure to have <a class="text-danger" href="https://git-scm.com/"
+                                                target="_blank">Git</a> installed globally &amp;
+                                            running on your computer. If you already have installed
+                                            Git on your computer, you can skip this step.</p>
+                                    </li>
+                                </ul>
+
+                                <p class="text-muted">
+                                    After you finished with the above steps, you can run the following commands into the
+                                    terminal/command prompt from the root directory ( Velzon/admin ) of the project to
+                                    run the project locally or build it for production use:
+                                </p>
+
+                                <table class="table table-bordered m-0">
+                                    <thead>
+                                      <tr>
+                                        <th style="width: 20%">
+                                          <i class="ti-file"></i>
+                                          Command
+                                        </th>
+                                        <th>Description</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                          <code>npm install</code>
+                                        </td>
+                                        <td>
+                                          This would install all the required
+                                          dependencies in the
+                                          <code>node_modules</code>
+                                          folder.
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <code>npm run dev</code>
+                                        </td>
+                                        <td>
+                                          Runs the project locally, starts the
+                                          development server and watches for any
+                                          changes in your code. The development server
+                                          is accessible at
+                                          <a href="http://localhost:5173/" class="text-danger">http://localhost:5173</a>.
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <code>npm build</code>
+                                        </td>
+                                        <td>
+                                          Generates a <code>/build</code>
+                                          directory with all the production files.
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+
+                                <div class="alert alert-info mb-0 mt-4">
+                                    SCSS: We suggest you to do not change any scss files from the <span
+                                    class="fw-semibold">src/assets/scss/custom.scss</span> folders because getting new updates will break your SCSS changes if any you have made. We strongly suggest you use custom.scss file and use that instead of overwriting any theme's scss files.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- container-fluid -->
+    </div>
+    <!-- End Page-content -->
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <script>document.write(new Date().getFullYear())</script> © Velzon.
+                </div>
+                <div class="col-sm-6">
+                    <div class="text-sm-end d-none d-sm-block">
+                        Design & Develop by Themesbrand
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- end main content-->
+
+</div>
+<!-- END layout-wrapper -->
+
+
+
+<!-- JAVASCRIPT -->
+<script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/libs/simplebar/simplebar.min.js"></script>
+<script src="../assets/libs/node-waves/waves.min.js"></script>
+<script src="../assets/libs/feather-icons/feather.min.js"></script>
+<script src="../assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
+<script src="../assets/libs/prismjs/prism.js"></script>
+
+<!-- App js -->
+<script src="../assets/js/app.js"></script>
+</body>
+
+
+<!-- Mirrored from themesbrand.com/velzon/docs/svelte/getting-started.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Dec 2024 05:17:14 GMT -->
+</html>
