@@ -1,0 +1,2864 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- =========================================================
+* Vuexy - Bootstrap Dashboard PRO | v3.0.0
+==============================================================
+
+* Product Page: https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599
+* Created by: Pixinvent
+
+    * License: You must have a valid license purchased in order to legally use the theme for your project.
+  
+* Copyright Pixinvent (https://pixinvent.com)
+
+=========================================================
+ -->
+  <!-- beautify ignore:start -->
+
+<html lang="en" class="docs-page  layout-menu-fixed-offcanvas " data-assets-path="assets/" data-skin="bordered">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Docs: Forms - Pickers | Vuexy - Bootstrap Dashboard PRO</title>
+
+    <meta name="description" content="Vuexy is the best bootstrap 5 dashboard for responsive web apps. Streamline your app development process with ease." />
+    <meta name="keywords" content="Vuexy bootstrap dashboard, vuexy bootstrap 5 dashboard, themeselection, html dashboard, web dashboard, frontend dashboard, responsive bootstrap theme" />
+    <meta property="og:title" content="Vuexy bootstrap Dashboard by Pixinvent" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" />
+    <meta property="og:image" content="https://pixinvent.com/wp-content/uploads/2023/06/vuexy-hero-image.png" />
+    <meta property="og:description" content="Vuexy is the best bootstrap 5 dashboard for responsive web apps. Streamline your app development process with ease." />
+    <meta property="og:site_name" content="Pixinvent" />
+
+    <!-- Canonical SEO -->
+    <link rel="canonical" href="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" />
+
+    
+      
+      <script>
+        (function (w, d, s, l, i) {
+          w[l] = w[l] || [];
+          w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+          });
+          var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+          j.async = true;
+          j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+          f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5J3LMKC');
+      </script>
+      
+    
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="48x48" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="16x16" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="32x32" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="180x180" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="192x192" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="512x512" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendor/fonts/iconify-icons.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/node-waves/node-waves.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/highlight/highlight.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/flatpickr/flatpickr.css" />
+  <link rel="stylesheet" href="assets/vendor/libs/pickr/pickr-themes.css" />
+  <link rel="stylesheet" href="assets/vendor/libs/bootstrap-daterangepicker/bootstrap-daterangepicker.css" />
+  <link rel="stylesheet" href="assets/vendor/libs/jquery-timepicker/jquery-timepicker.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="assets/vendor/css/core.css" />
+    <link rel="stylesheet" href="assets/css/demo.css" />
+    <link rel="stylesheet" href="assets/css/docs.css" />
+
+    <!-- Page CSS -->
+    
+
+    <!-- Core JS -->
+    <script src="assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: Don't remove unless you are aware of it, To hide customizer set displayCustomizer value false in config.js.  -->
+    <!-- <script src="assets/vendor/js/template-customizer.js"></script> -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="assets/js/config.js"></script>
+  </head>
+
+  <body>
+    
+      
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5J3LMKC" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+      
+    
+
+    <!-- Layout wrapper -->
+  <div class="layout-wrapper layout-navbar-full ">
+    <div class="layout-container">
+      
+        
+
+
+<!-- Navbar main -->
+
+<nav class="layout-navbar navbar navbar-expand-lg align-items-lg-center bg-white border-bottom" id="layout-navbar">
+  <div class="container-fluid">
+    
+      <!-- Menu toggle (see assets/css/demo/demo.css) -->
+      <div class="layout-menu-toggle navbar-nav d-lg-none align-items-lg-center">
+        <a class="nav-item nav-link px-0 me-lg-4" href="javascript:void(0)">
+          <i class="icon-base ti tabler-menu-2 icon-md align-middle"></i>
+        </a>
+      </div>
+    
+
+    <!-- Brand demo (see assets/css/demo/demo.css) -->
+    <div class="navbar-brand app-brand demo py-0 me-md-auto me-12 ms-lg-0 ms-0">
+      <a href="index.html" class="app-brand-link">
+        <span class="app-brand-logo demo">
+  <span class="text-primary">
+    <svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.00172773 0V6.85398C0.00172773 6.85398 -0.133178 9.01207 1.98092 10.8388L13.6912 21.9964L19.7809 21.9181L18.8042 9.88248L16.4951 7.17289L9.23799 0H0.00172773Z" fill="currentColor" />
+      <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd" d="M7.69824 16.4364L12.5199 3.23696L16.5541 7.25596L7.69824 16.4364Z" fill="#161616" />
+      <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd" d="M8.07751 15.9175L13.9419 4.63989L16.5849 7.28475L8.07751 15.9175Z" fill="#161616" />
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z" fill="currentColor" />
+    </svg>
+  </span>
+</span>
+        <span class="app-brand-text demo menu-text fw-bold">Vuexy</span>
+      </a>
+    </div>
+
+    <div class="d-flex ms-md-6 gap-3">
+      
+      <div class="navbar-nav align-items-lg-center justify-content-center">
+        <!-- Search -->
+        <div class="navbar-nav align-items-center">
+          <div class="nav-item navbar-search-wrapper mb-0">
+            <a class="nav-item nav-link search-toggler border rounded-3 py-2 px-md-4 px-2 d-flex align-items-center" href="javascript:void(0);">
+              <span class="d-inline-block text-body-secondary fw-normal" id="autocomplete"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbar-collapse">
+        <hr class="d-lg-none w-100 my-2" />
+        <!-- Divider -->
+
+        <div class="navbar-nav align-items-lg-center">
+          
+          <ul class="navbar-nav">
+            <!-- Technology dropdown -->
+            
+            
+              
+                <li class="nav-item dropdown me-2">
+                  <button class="btn dropdown-toggle py-2 btn-primary" type="button" id="livePreview" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-base ti tabler-current-location me-2"></i> Live preview</button>
+                  <ul class="dropdown-menu" aria-labelledby="livePreview">
+                    <li>
+                      <a href="https://pixinvent.com/vuexy-bootstrap-html-admin-template/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>HTML preview</a>
+                    </li>
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-laravel-admin-template/demo-1/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>Laravel preview</a>
+                      </li>
+                    
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-admin-template/html/vertical-menu-template/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>.Net Core preview</a>
+                      </li>
+                    
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-django-admin-template/demo-1/" target="_blank" class="nav-link text-nowrap"><i class="icon-base ti tabler-current-location me-2"></i>Django preview</a>
+                      </li>
+                    
+                  </ul>
+                </li>
+              
+            
+            
+              <li class="nav-item me-2">
+                <a href="https://pixinvent.ticksy.com/" target="_blank" class="nav-link d-flex align-items-center">
+                  <i class="icon-base ti tabler-lifebuoy me-2"></i>
+                  <span>Support</span>
+                </a>
+              </li>
+            
+            
+              <li class="nav-item">
+                <a href="https://themeforest.net/user/pixinvent/portfolio" target="_blank" class="nav-link d-flex align-items-center">
+                  <i class="icon-base ti tabler-gift me-2"></i>
+                  <span> More Themes</span>
+                </a>
+              </li>
+            
+            
+              <li class="nav-item">
+                <a href="https://themeselection.com/hire-us/" target="_blank" class="nav-link"><i class="icon-base ti tabler-briefcase"></i> Hire Us</a>
+              </li>
+            
+          </ul>
+
+          <!-- Divider -->
+          <div class="nav-item d-none d-lg-block text-big fw-light lh-1 me-4 ms-1">|</div>
+
+          
+            <div class="buy-now-btn">
+              <a href="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" target="_blank" class="btn btn-danger d-flex align-items-center gap-2">
+                <i class="icon-base ti tabler-shopping-cart"></i>
+                <span>Buy Now</span>
+              </a>
+            </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</nav>
+<!-- / Navbar main -->
+
+      
+
+      <!-- Layout page -->
+      <div class="layout-page">
+        
+          
+
+
+
+
+<!-- Menu -->
+<aside id="layout-menu" class="layout-menu menu-doc menu menu-vertical bg-menu-theme">
+  
+  <div class="menu-divider mt-0   d-xl-none "></div>
+
+  <!-- Links -->
+  <ul class="menu-inner py-1">
+    <li class="menu-header text-uppercase small fw-medium">Getting Started</li>
+    <li class="menu-item">
+      <a href="index.html" class="menu-link">
+        <div>Introduction</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="licenses.html" class="menu-link">
+        <div>Licenses</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="folder-structure.html" class="menu-link">
+        <div>Folder Structure</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="quick-start.html" class="menu-link">
+        <div>Quick Start</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="config.html" class="menu-link">
+        <div>Config ð¤©</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="installation-build.html" class="menu-link">
+        <div>Installation & Build</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="template-customizer.html" class="menu-link">
+        <div>Template Customizer</div>
+        
+      </a>
+    </li>
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Customization</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="customization-sass.html" class="menu-link">
+            <div>SASS</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="customization-js.html" class="menu-link">
+            <div>JavaScript</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="customization-third-party-plugins.html" class="menu-link">
+            <div>Third Party Plugins</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="layouts.html" class="menu-link">
+        <div>Layouts</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="dependencies.html" class="menu-link">
+        <div>Dependencies</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="faq.html" class="menu-link">
+        <div>FAQs</div>
+      </a>
+    </li>
+    
+      <!-- Laravel Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row">
+        <span class="me-1">Laravel</span>
+        <span class="badge badge-demo bg-label-danger ms-auto">HTML + Laravel Only</span>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="laravel-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-starter-kit-vs-full-version.html" class="menu-link">
+              <div>Starter-kit Vs Full-version</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-demo-config.html" class="menu-link">
+              <div>Demo Configs</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Auth & ACL</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-auth-jetstream.html" class="menu-link">
+              <div>JetStream</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-passport.html" class="menu-link">
+              <div>Passport</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-sanctum.html" class="menu-link">
+              <div>Sanctum</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-acl.html" class="menu-link">
+              <div>ACL</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-articles-database-connections.html" class="menu-link">
+              <div>Database Connections</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-existing-project.html" class="menu-link">
+              <div>Exiting Project Migration</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-form-validation-integration.html" class="menu-link">
+              <div>Form Validation Package Integration</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-localization.html" class="menu-link">
+          <div>Localization</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-search.html" class="menu-link">
+          <div>Search</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-sail-docker.html" class="menu-link">
+          <div>Sail & Docker</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-deployment.html" class="menu-link">
+          <div>Deployment</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Dotnet Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>ASP.NET CORE</span> <span class="badge badge-demo bg-label-danger ms-auto">Razor Pages</span></li>
+
+      <li class="menu-item">
+        <a href="net-core-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-assets-compilation.html" class="menu-link">
+              <div>Assets Compilation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-start-with-doker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-starter-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="net-core-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Dotnet Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>ASP.NET CORE MVC</span> <span class="badge badge-demo bg-label-danger ms-auto">MVC</span></li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-mvc-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-assets-compilation.html" class="menu-link">
+              <div>Assets Compilation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-start-with-docker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-starter-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="net-core-mvc-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-mvc-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Django Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>Django</span> <span class="badge badge-demo bg-label-danger ms-auto">Django Only</span></li>
+
+      <li class="menu-item">
+        <a href="django-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="django-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-start-with-doker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-demo-config.html" class="menu-link">
+              <div>Demo Config</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-starter-kit-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="django-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="django-articles-create-new-page.html" class="menu-link">
+              <div>Create New Apps & Pages</div>
+            </a>
+          </li>
+          <!-- <li class="menu-item">
+          <a href="django-articles-existing-project.html" class="menu-link">
+            <div>Exiting Project Migration</div>
+          </a>
+        </li> -->
+          <li class="menu-item">
+            <a href="django-articles-admin-superuser.html" class="menu-link">
+              <div>Admin and Create User</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-authentication.html" class="menu-link">
+              <div>Authentication</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="django-articles-permissions-authorization.html" class="menu-link">
+              <div>Permissions & Authorization</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-crud.html" class="menu-link">
+              <div>CRUD Example</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-admin-db.html" class="menu-link">
+              <div>Admin and Database</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-localization.html" class="menu-link">
+          <div>Localization</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-search.html" class="menu-link">
+          <div>Search</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-theme-api.html" class="menu-link">
+          <div>Theme API</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-deployment.html" class="menu-link">
+          <div>Deployment</div>
+        </a>
+      </li>
+    
+    <!-- Apps & Pages -->
+    <li class="menu-divider mb-1"></li>
+    <li class="menu-header text-uppercase small fw-medium">Design System</li>
+
+    <li class="menu-item">
+      <a href="typography.html" class="menu-link">
+        <div>Typography</div>
+      </a>
+    </li>
+
+    <li class="menu-item">
+      <a href="colors.html" class="menu-link">
+        <div>Colors</div>
+      </a>
+    </li>
+
+    <li class="menu-item">
+      <a href="Icons.html" class="menu-link">
+        <div>Icons</div>
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+    <!-- Components -->
+    <li class="menu-header text-uppercase small fw-medium">Components</li>
+
+    <!-- UI Elements -->
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>UI Elements</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="ui-accordion.html" class="menu-link">
+            <div>Accordion</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-alerts.html" class="menu-link">
+            <div>Alerts</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-app-brand.html" class="menu-link">
+            <div>App Brand</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-badges.html" class="menu-link">
+            <div>Badges</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-buttons.html" class="menu-link">
+            <div>Buttons</div>
+          </a>
+        </li>
+        <li class="menu-item
+  ">
+          <a href="javascript:void(0);" class="menu-link menu-toggle">
+            <div>Cards</div>
+          </a>
+          <ul class="menu-sub">
+            <li class="menu-item">
+              <a href="ui-cards-basic.html" class="menu-link">
+                <div>Basic</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="ui-cards-actions.html" class="menu-link">
+                <div>Actions</div>
+                
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="ui-carousel.html" class="menu-link">
+            <div>Carousel</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-collapse.html" class="menu-link">
+            <div>Collapse</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-dropdowns.html" class="menu-link">
+            <div>Dropdowns</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-footer.html" class="menu-link">
+            <div>Footer</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-list-groups.html" class="menu-link">
+            <div>List groups</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-modals.html" class="menu-link">
+            <div>Modals</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-menu.html" class="menu-link">
+            <div>Menu</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-navbar.html" class="menu-link">
+            <div>Navbar</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-offcanvas.html" class="menu-link">
+            <div>Offcanvas</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-pagination-breadcrumbs.html" class="menu-link">
+            <div>Pagination &amp; Breadcrumbs</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-popovers.html" class="menu-link">
+            <div>Popovers</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-progress.html" class="menu-link">
+            <div>Progress</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-spinners.html" class="menu-link">
+            <div>Spinners</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-navs.html" class="menu-link">
+            <div>Navs</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-tabs-pills.html" class="menu-link">
+            <div>Tabs &amp; Pills</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-toasts.html" class="menu-link">
+            <div>Toasts</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-tooltips.html" class="menu-link">
+            <div>Tooltips</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+
+    <!-- Extended components -->
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Extended UI</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="extended-ui-avatar.html" class="menu-link">
+            <div>Avatar</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-blockui.html" class="menu-link">
+            <div>BlockUI</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-drag-and-drop.html" class="menu-link">
+            <div>Drag &amp; Drop</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-media-player.html" class="menu-link">
+            <div>Media Player</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-perfect-scrollbar.html" class="menu-link">
+            <div>Perfect scrollbar</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-star-ratings.html" class="menu-link">
+            <div>Star Ratings</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-sweetalert2.html" class="menu-link">
+            <div>SweetAlert2</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-text-divider.html" class="menu-link">
+            <div>Text Divider</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-timeline.html" class="menu-link">
+            <div>Timeline</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-tour.html" class="menu-link">
+            <div>Tour</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-treeview.html" class="menu-link">
+            <div>Treeview</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-misc.html" class="menu-link">
+            <div>Miscellaneous</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Forms -->
+    <li class="menu-item
+   active open">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Forms</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="forms-basic-inputs.html" class="menu-link">
+            <div>Basic Inputs</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-input-groups.html" class="menu-link">
+            <div>Input groups</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-custom-options.html" class="menu-link">
+            <div>Custom Options</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-editors.html" class="menu-link">
+            <div>Editors</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-file-upload.html" class="menu-link">
+            <div>File Upload</div>
+            
+          </a>
+        </li>
+        <li class="menu-item active">
+          <a href="forms-pickers.html" class="menu-link">
+            <div>Pickers</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-selects.html" class="menu-link">
+            <div>Select &amp; Tags</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-sliders.html" class="menu-link">
+            <div>Sliders</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-switches.html" class="menu-link">
+            <div>Switches</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-extras.html" class="menu-link">
+            <div>Extras</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-validation.html" class="menu-link">
+            <div>Validation</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-wizard.html" class="menu-link">
+            <div>Wizard</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-layouts-sticky.html" class="menu-link">
+            <div>Sticky Actions</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <!-- Tables -->
+    <li class="menu-item">
+      <a href="tables-basic.html" class="menu-link">
+        <div>Tables</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="tables-datatables.html" class="menu-link">
+        <div>Datatables</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="utilities.html" class="menu-link">
+        <div>Utilities</div>
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+    <!-- Charts & Maps -->
+    <li class="menu-header text-uppercase small fw-medium">Charts &amp; Maps</li>
+
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <div data-i18n="Charts">Charts</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="charts-apex.html" class="menu-link">
+            <div>Apex Charts</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="charts-chartjs.html" class="menu-link">
+            <div>ChartJS</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="maps-leaflet.html" class="menu-link">
+        <div>Leaflet</div>
+        
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+
+    <!-- Charts & Maps -->
+    <li class="menu-header text-uppercase small fw-medium">Others</li>
+    <li class="menu-item">
+      <a href="credits.html" class="menu-link">
+        <div>Credits</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="https://pixinvent.ticksy.com/" target="_blank" class="menu-link">
+        <div>Support</div>
+      </a>
+    </li>
+  </ul>
+</aside>
+<!-- / Menu -->
+
+        
+
+        <!-- Content wrapper -->
+        <div class="content-wrapper">
+          <!-- Content -->
+          <div class="container-xxl flex-grow-1 container-p-y">
+  <div class="row flex-xl-nowrap">
+    <div class="DocSearch-content col-12 col-xl-10 container-p-y">
+      <h2 class="mb-6 doc-page-title">Picker</h2>
+      <p>We are using different kinds of components for date & time picker which are Flatpickr, Bootstrap datepicker, Bootstrap daterange picker, jQuery timepicker and Pickr (color picker).</p>
+      <p>
+        Read the official
+        <a href="https://flatpickr.js.org/examples/" target="_blank" rel="noopener noreferrer">Flatpickr</a>, <a href="http://www.daterangepicker.com/" target="_blank" rel="noopener noreferrer">Bootstrap daterange picker</a>, <a href="https://www.jonthornton.com/jquery-timepicker/" target="_blank" rel="noopener noreferrer">jQuery timepicker</a>, <a href="https://github.com/Simonwep/pickr" target="_blank" rel="noopener noreferrer">Pickr</a> Documentations for a full list of instructions and other
+        options.
+      </p>
+
+      <hr class="my-12" />
+
+      <!-- Flatpickr -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="flatpickr" class="anchor-heading fw-bold">Flatpickr</h4>
+          <p>Flatpickr is a lightweight, powerful javascript datetimepicker with no dependencies</p>
+          <p class="anchor-heading fw-bold mt-6" id="usage">Usage</p>
+          <p>In order to use flatpickr on your page, It is required to include the following vendors css in the "Vendors CSS" area from the page's header:</p>
+          <div class="doc-example css-code">
+            <div class="doc-example-content" data-label="Code">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;link rel=&quot;stylesheet&quot; href=&quot;../../assets/vendor/libs/flatpickr/flatpickr.css&quot; /&gt;</code></pre>
+            </div>
+          </div>
+          <p class="mt-6">Include the following vendors script in the "Vendors JS" area from the page's footer:</p>
+          <div class="doc-example js-code">
+            <div class="doc-example-content" data-label="Code">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;script src=&quot;../../assets/vendor/libs/flatpickr/flatpickr.js&quot; /&gt;</code></pre>
+            </div>
+          </div>
+
+          <!-- Datepicker -->
+          <div class="row mt-6">
+            <div class="col-12">
+              <p id="datepicker" class="anchor-heading fw-bold mt-6">Datepicker</p>
+              <p>Use <code>YOUR_ELEMENT.flatpickr()</code> to create a basic datepicker</p>
+              <div class="doc-example tour-example mt-4">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="datepicker-preview-tab" data-bs-toggle="tab" data-bs-target="#datepicker-preview" role="tab" aria-controls="datepicker-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="datepicker-html-tab" data-bs-toggle="tab" data-bs-target="#datepicker-html" role="tab" aria-controls="datepicker-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="datepicker-js-tab" data-bs-toggle="tab" data-bs-target="#datepicker-js" role="tab" aria-controls="datepicker-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="datepicker-preview" role="tabpanel" aria-labelledby="datepicker-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6 col-12">
+                        <label for="flatpickr-date" class="form-label">Date Picker</label>
+                        <input type="text" class="form-control" placeholder="YYYY-MM-DD" id="flatpickr-date" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="datepicker-html" role="tabpanel" aria-labelledby="datepicker-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;flatpickr-date&quot; class=&quot;form-label&quot;&gt;Date Picker&lt;/label&gt;&#10;  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;YYYY-MM-DD&quot; id=&quot;flatpickr-date&quot; /&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="datepicker-js" role="tabpanel" aria-labelledby="datepicker-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">var flatpickrDate = document.querySelector("#flatpickr-date");
+
+flatpickrDate.flatpickr({
+  monthSelectorType: "static",
+  static: true
+});</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Datepicker -->
+
+          <hr class="my-12" />
+
+          <!-- Timepicker -->
+          <div class="row">
+            <div class="col-12">
+              <p id="timepicker" class="anchor-heading fw-bold">Timepicker</p>
+              <p>
+                If you want to create a timepicker, add these parameters with your initialization:
+                <code>{enableTime: true, noCalendar: true}</code>.
+              </p>
+              <div class="doc-example tour-example mt-4">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="timepicker-preview-tab" data-bs-toggle="tab" data-bs-target="#timepicker-preview" role="tab" aria-controls="timepicker-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="timepicker-html-tab" data-bs-toggle="tab" data-bs-target="#timepicker-html" role="tab" aria-controls="timepicker-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="timepicker-js-tab" data-bs-toggle="tab" data-bs-target="#timepicker-js" role="tab" aria-controls="timepicker-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="timepicker-preview" role="tabpanel" aria-labelledby="timepicker-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6 col-12">
+                        <label for="flatpickr-time" class="form-label">Time Picker</label>
+                        <input type="text" class="form-control" placeholder="HH:MM" id="flatpickr-time" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="timepicker-html" role="tabpanel" aria-labelledby="timepicker-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;flatpickr-time&quot; class=&quot;form-label&quot;&gt;Time Picker&lt;/label&gt;&#10;  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;HH:MM&quot; id=&quot;flatpickr-time&quot; /&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="timepicker-js" role="tabpanel" aria-labelledby="timepicker-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">var flatpickrTime = document.querySelector("#flatpickr-time");
+
+flatpickrTime.flatpickr({
+  enableTime: true,
+  noCalendar: true,
+  static: true
+});</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Timepicker -->
+
+          <hr class="my-12" />
+
+          <!-- Date Time Picker -->
+          <div class="row">
+            <div class="col-12">
+              <p id="date-time" class="anchor-heading fw-bold">Date Time Picker</p>
+              <p>Use <code>enableTime: true</code> to have both date and time pickers.</p>
+              <div class="doc-example tour-example mt-4">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="date-time-preview-tab" data-bs-toggle="tab" data-bs-target="#date-time-preview" role="tab" aria-controls="date-time-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="date-time-html-tab" data-bs-toggle="tab" data-bs-target="#date-time-html" role="tab" aria-controls="date-time-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="date-time-js-tab" data-bs-toggle="tab" data-bs-target="#date-time-js" role="tab" aria-controls="date-time-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="date-time-preview" role="tabpanel" aria-labelledby="date-time-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6 col-12">
+                        <label for="flatpickr-datetime" class="form-label">Datetime Picker</label>
+                        <input type="text" class="form-control" placeholder="YYYY-MM-DD HH:MM" id="flatpickr-datetime" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="date-time-html" role="tabpanel" aria-labelledby="date-time-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;flatpickr-datetime&quot; class=&quot;form-label&quot;&gt;Datetime Picker&lt;/label&gt;&#10;  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;YYYY-MM-DD HH:MM&quot; id=&quot;flatpickr-datetime&quot; /&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="date-time-js" role="tabpanel" aria-labelledby="date-time-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">var flatpickrDateTime = document.querySelector("#flatpickr-datetime");
+
+flatpickrDateTime.flatpickr({
+  enableTime: true,
+  dateFormat: "Y-m-d H:i",
+  static: true
+});</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Date Time Picker -->
+
+          <hr class="my-12" />
+
+          <!-- Multi Date Picker -->
+          <div class="row">
+            <div class="col-12">
+              <p id="multi-picker" class="anchor-heading fw-bold">Multi Dates Picker</p>
+              <p>Use <code>mode: "multiple"</code> to select multiple dates.</p>
+              <div class="doc-example tour-example mt-4">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="multi-picker-preview-tab" data-bs-toggle="tab" data-bs-target="#multi-picker-preview" role="tab" aria-controls="multi-picker-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="multi-picker-html-tab" data-bs-toggle="tab" data-bs-target="#multi-picker-html" role="tab" aria-controls="multi-picker-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="multi-picker-js-tab" data-bs-toggle="tab" data-bs-target="#multi-picker-js" role="tab" aria-controls="multi-picker-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="multi-picker-preview" role="tabpanel" aria-labelledby="multi-picker-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6 col-12">
+                        <label for="flatpickr-multi" class="form-label">Multiple Dates Picker</label>
+                        <input type="text" class="form-control" placeholder="YYYY-MM-DD HH:MM" id="flatpickr-multi" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="multi-picker-html" role="tabpanel" aria-labelledby="multi-picker-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;flatpickr-multi&quot; class=&quot;form-label&quot;&gt;Multiple Dates Picker&lt;/label&gt;&#10;  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;YYYY-MM-DD HH:MM&quot; id=&quot;flatpickr-multi&quot; /&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="multi-picker-js" role="tabpanel" aria-labelledby="multi-picker-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">var flatpickrMulti = document.querySelector("#flatpickr-multi");
+
+flatpickrMulti.flatpickr({
+  weekNumbers: true,
+  enableTime: true,
+  mode: "multiple",
+  minDate: "today",
+  static: true
+});</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Multi Dates Picker -->
+
+          <hr class="my-12" />
+
+          <!-- Range Picker -->
+          <div class="row">
+            <div class="col-12">
+              <p id="range-picker" class="anchor-heading fw-bold">Range Picker</p>
+              <p>Use <code>mode: "range"</code> to select dates in range.</p>
+              <div class="doc-example tour-example mt-4">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="range-picker-preview-tab" data-bs-toggle="tab" data-bs-target="#range-picker-preview" role="tab" aria-controls="range-picker-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="range-picker-html-tab" data-bs-toggle="tab" data-bs-target="#range-picker-html" role="tab" aria-controls="range-picker-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="range-picker-js-tab" data-bs-toggle="tab" data-bs-target="#range-picker-js" role="tab" aria-controls="range-picker-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="range-picker-preview" role="tabpanel" aria-labelledby="range-picker-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6 col-12">
+                        <label for="flatpickr-range" class="form-label">Range Picker</label>
+                        <input type="text" class="form-control" placeholder="YYYY-MM-DD to YYYY-MM-DD" id="flatpickr-range" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="range-picker-html" role="tabpanel" aria-labelledby="range-picker-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;flatpickr-range&quot; class=&quot;form-label&quot;&gt;Range Picker&lt;/label&gt;&#10;  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;YYYY-MM-DD to YYYY-MM-DD&quot; id=&quot;flatpickr-range&quot; /&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="range-picker-js" role="tabpanel" aria-labelledby="range-picker-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">var flatpickrRange = document.querySelector("#flatpickr-range");
+
+flatpickrRange.flatpickr({
+  mode: "range",
+  static: true
+});</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Range Picker -->
+
+          <hr class="my-12" />
+
+          <!-- Human Friendly Picker -->
+          <div class="row">
+            <div class="col-12">
+              <p id="human-friendly" class="anchor-heading fw-bold">Human Friendly Picker</p>
+              <p>Refer below mentioned example to create a human friendly picker.</p>
+              <div class="doc-example tour-example mt-4">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="human-friendly-preview-tab" data-bs-toggle="tab" data-bs-target="#human-friendly-preview" role="tab" aria-controls="human-friendly-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="human-friendly-html-tab" data-bs-toggle="tab" data-bs-target="#human-friendly-html" role="tab" aria-controls="human-friendly-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="human-friendly-js-tab" data-bs-toggle="tab" data-bs-target="#human-friendly-js" role="tab" aria-controls="human-friendly-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="human-friendly-preview" role="tabpanel" aria-labelledby="human-friendly-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6 col-12">
+                        <label for="flatpickr-human-friendly" class="form-label">Human Friendly Date Picker</label>
+                        <input type="text" class="form-control" placeholder="Month DD, YYYY" id="flatpickr-human-friendly" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="human-friendly-html" role="tabpanel" aria-labelledby="human-friendly-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;flatpickr-human-friendly&quot; class=&quot;form-label&quot;&gt;Human Friendly Date Picker&lt;/label&gt;&#10;  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Month DD, YYYY&quot; id=&quot;flatpickr-human-friendly&quot; /&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="human-friendly-js" role="tabpanel" aria-labelledby="human-friendly-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">var flatpickrFriendly = document.querySelector("#flatpickr-human-friendly");
+
+flatpickrFriendly.flatpickr({
+  altInput: true,
+  altFormat: "F j, Y",
+  dateFormat: "Y-m-d",
+  static: true
+});</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Human Friendly Picker -->
+
+          <hr class="my-12" />
+
+          <!-- Disabled Range Picker -->
+          <div class="row">
+            <div class="col-12">
+              <p id="disabled-range" class="anchor-heading fw-bold">Disabled Range Picker</p>
+              <p>Create an array of disabled date like this: <code> disable: [{from: "DATE", to: "DATE"}]</code> to create a disabled range dates picker</p>
+              <div class="doc-example tour-example mt-4">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="disabled-range-preview-tab" data-bs-toggle="tab" data-bs-target="#disabled-range-preview" role="tab" aria-controls="disabled-range-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="disabled-range-html-tab" data-bs-toggle="tab" data-bs-target="#disabled-range-html" role="tab" aria-controls="disabled-range-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="disabled-range-js-tab" data-bs-toggle="tab" data-bs-target="#disabled-range-js" role="tab" aria-controls="disabled-range-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="disabled-range-preview" role="tabpanel" aria-labelledby="disabled-range-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6 col-12">
+                        <label for="flatpickr-disabled-range" class="form-label">Disabled Range</label>
+                        <input type="text" class="form-control" placeholder="YYYY-MM-DD" id="flatpickr-disabled-range" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="disabled-range-html" role="tabpanel" aria-labelledby="disabled-range-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;flatpickr-disabled-range&quot; class=&quot;form-label&quot;&gt;Disabled Range&lt;/label&gt;&#10;  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;YYYY-MM-DD&quot; id=&quot;flatpickr-disabled-range&quot; /&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="disabled-range-js" role="tabpanel" aria-labelledby="disabled-range-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">var flatpickrDisabledRange = document.querySelector("#flatpickr-disabled-range");
+
+flatpickrDisabledRange.flatpickr({
+  dateFormat: "Y-m-d",
+  disable: [
+    {
+      from: "2021-10-01",
+      to: "2021-10-10"
+    }
+  ],
+  static: true
+});</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Disabled Range Picker -->
+
+          <hr class="my-12" />
+
+          <!-- Inline Picker -->
+          <div class="row">
+            <div class="col-12">
+              <p id="inline-picker" class="anchor-heading fw-bold">Inline Picker</p>
+              <p>Use <code>inline : true</code> to make your picker inline.</p>
+              <div class="doc-example tour-example mt-4">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="inline-preview-tab" data-bs-toggle="tab" data-bs-target="#inline-preview" role="tab" aria-controls="inline-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="inline-html-tab" data-bs-toggle="tab" data-bs-target="#inline-html" role="tab" aria-controls="inline-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="inline-js-tab" data-bs-toggle="tab" data-bs-target="#inline-js" role="tab" aria-controls="inline-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="inline-preview" role="tabpanel" aria-labelledby="inline-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6 col-12">
+                        <label for="flatpickr-inline" class="form-label">Inline Picker</label>
+                        <input type="text" class="form-control mb-1" placeholder="YYYY-MM-DD" id="flatpickr-inline" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="inline-html" role="tabpanel" aria-labelledby="inline-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;flatpickr-inline&quot; class=&quot;form-label&quot;&gt;Inline Picker&lt;/label&gt;&#10;  &lt;input type=&quot;text&quot; class=&quot;form-control mb-1&quot; placeholder=&quot;YYYY-MM-DD&quot; id=&quot;flatpickr-inline&quot; /&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="inline-js" role="tabpanel" aria-labelledby="inline-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">var flatpickrInline = document.querySelector("#flatpickr-inline");
+
+flatpickrInline.flatpickr({
+  inline: true,
+  allowInput: false,
+  monthSelectorType: "static"
+});</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Inline Picker -->
+        </div>
+      </div>
+      <!-- /Flatpickr -->
+
+      <hr class="my-12" />
+
+      <!-- Bootstrap Daterangepicker -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="bs-daterangepicker" class="anchor-heading fw-bold">Bootstrap Daterangepicker</h4>
+          <p>Bootstrap Datepicker is a bootstrap compatible date range picker based on jQuery. We have customized picker for LTR & RTL with it's <code>opens</code> option.</p>
+          <p class="anchor-heading fw-bold mt-6" id="bs-daterangepicker-usage">Usage</p>
+          <p>In order to use Bootstrap Daterangepicker on your page, It is required to include the following vendors css in the "Vendors CSS" area from the page's header:</p>
+          <div class="doc-example css-code">
+            <div class="doc-example-content" data-label="Code">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;link rel=&quot;stylesheet&quot; href=&quot;../../assets/vendor/libs/bootstrap-daterangepicker/bootstrap-daterangepicker.css&quot; /&gt;</code></pre>
+            </div>
+          </div>
+          <p class="mt-6">Include the following vendors script in the "Vendors JS" area from the page's footer:</p>
+          <div class="doc-example js-code">
+            <div class="doc-example-content" data-label="Code">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;script src=&quot;../../assets/vendor/libs/bootstrap-daterangepicker/bootstrap-daterangepicker.js&quot; /&gt;</code></pre>
+            </div>
+          </div>
+
+          <!-- Basic -->
+          <div class="row mt-6">
+            <div class="col-12">
+              <p id="bs-daterangepicker-basic" class="anchor-heading fw-bold mt-6">Basic</p>
+              <p>Use <code>YOUR_ELEMENT.daterangepicker()</code> to create a basic datepicker.</p>
+              <div class="doc-example tour-example mt-4">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="bs-basic-daterangepicker-preview-tab" data-bs-toggle="tab" data-bs-target="#bs-basic-daterangepicker-preview" role="tab" aria-controls="bs-basic-daterangepicker-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-basic-daterangepicker-html-tab" data-bs-toggle="tab" data-bs-target="#bs-basic-daterangepicker-html" role="tab" aria-controls="bs-basic-daterangepicker-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-basic-daterangepicker-js-tab" data-bs-toggle="tab" data-bs-target="#bs-basic-daterangepicker-js" role="tab" aria-controls="bs-basic-daterangepicker-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="bs-basic-daterangepicker-preview" role="tabpanel" aria-labelledby="bs-basic-daterangepicker-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6 col-12">
+                        <label for="bs-rangepicker-basic" class="form-label">Basic</label>
+                        <input type="text" id="bs-rangepicker-basic" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="bs-basic-daterangepicker-html" role="tabpanel" aria-labelledby="bs-basic-daterangepicker-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;bs-rangepicker-basic&quot; class=&quot;form-label&quot;&gt;Basic&lt;/label&gt;&#10;  &lt;input type=&quot;text&quot; id=&quot;bs-rangepicker-basic&quot; class=&quot;form-control&quot; /&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="bs-basic-daterangepicker-js" role="tabpanel" aria-labelledby="bs-basic-daterangepicker-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">$("#bs-rangepicker-basic").daterangepicker({
+  opens: isRtl ? 'left' : 'right'
+});</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Basic -->
+
+          <hr class="my-12" />
+
+          <!-- Single -->
+          <div class="row">
+            <div class="col-12">
+              <p id="bs-daterangepicker-single" class="anchor-heading fw-bold">Single</p>
+              <p>Use <code>singleDatePicker: true</code> property to create a single datepicker.</p>
+              <div class="doc-example tour-example mt-4">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="bs-single-daterangepicker-preview-tab" data-bs-toggle="tab" data-bs-target="#bs-single-daterangepicker-preview" role="tab" aria-controls="bs-single-daterangepicker-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-single-daterangepicker-html-tab" data-bs-toggle="tab" data-bs-target="#bs-single-daterangepicker-html" role="tab" aria-controls="bs-single-daterangepicker-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-single-daterangepicker-js-tab" data-bs-toggle="tab" data-bs-target="#bs-single-daterangepicker-js" role="tab" aria-controls="bs-single-daterangepicker-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="bs-single-daterangepicker-preview" role="tabpanel" aria-labelledby="bs-single-daterangepicker-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6 col-12">
+                        <label for="bs-rangepicker-single" class="form-label">Single Picker</label>
+                        <input type="text" id="bs-rangepicker-single" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="bs-single-daterangepicker-html" role="tabpanel" aria-labelledby="bs-single-daterangepicker-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;bs-rangepicker-single&quot; class=&quot;form-label&quot;&gt;Single Picker&lt;/label&gt;&#10;  &lt;input type=&quot;text&quot; id=&quot;bs-rangepicker-single&quot; class=&quot;form-control&quot; /&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="bs-single-daterangepicker-js" role="tabpanel" aria-labelledby="bs-single-daterangepicker-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">$("#bs-rangepicker-single").daterangepicker({
+  singleDatePicker: true,
+  opens: isRtl ? 'left' : 'right'
+});</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Single -->
+
+          <hr class="my-12" />
+
+          <!-- Timepicker -->
+          <div class="row">
+            <div class="col-12">
+              <p id="bs-daterangepicker-time" class="anchor-heading fw-bold">With Timepicker</p>
+              <p>Use <code>timePicker: true</code> property to add a timepicker.</p>
+              <div class="doc-example tour-example mt-4">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="bs-single-daterangepicker-preview-tab" data-bs-toggle="tab" data-bs-target="#bs-time-daterangepicker-preview" role="tab" aria-controls="bs-time-daterangepicker-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-time-daterangepicker-html-tab" data-bs-toggle="tab" data-bs-target="#bs-time-daterangepicker-html" role="tab" aria-controls="bs-time-daterangepicker-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-time-daterangepicker-js-tab" data-bs-toggle="tab" data-bs-target="#bs-time-daterangepicker-js" role="tab" aria-controls="bs-time-daterangepicker-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="bs-time-daterangepicker-preview" role="tabpanel" aria-labelledby="bs-time-daterangepicker-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6 col-12">
+                        <label for="bs-rangepicker-time" class="form-label">With Time Picker</label>
+                        <input type="text" id="bs-rangepicker-time" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="bs-time-daterangepicker-html" role="tabpanel" aria-labelledby="bs-time-daterangepicker-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;bs-rangepicker-time&quot; class=&quot;form-label&quot;&gt;With Time Picker&lt;/label&gt;&#10;  &lt;input type=&quot;text&quot; id=&quot;bs-rangepicker-time&quot; class=&quot;form-control&quot; /&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="bs-time-daterangepicker-js" role="tabpanel" aria-labelledby="bs-time-daterangepicker-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">$("#bs-rangepicker-time").daterangepicker({
+  timePicker: true,
+  timePickerIncrement: 30,
+  locale: {
+    format: 'MM/DD/YYYY h:mm A'
+  },
+  opens: isRtl ? 'left' : 'right'
+});</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Timepicker -->
+
+          <hr class="my-12" />
+
+          <!-- Ranges -->
+          <div class="row">
+            <div class="col-12">
+              <p id="bs-daterangepicker-range" class="anchor-heading fw-bold">Range</p>
+              <p>Use <code>ranges</code> property for ranges of picker.</p>
+              <div class="doc-example tour-example mt-4">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="bs-range-daterangepicker-preview-tab" data-bs-toggle="tab" data-bs-target="#bs-range-daterangepicker-preview" role="tab" aria-controls="bs-range-daterangepicker-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-range-daterangepicker-html-tab" data-bs-toggle="tab" data-bs-target="#bs-range-daterangepicker-html" role="tab" aria-controls="bs-range-daterangepicker-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-range-daterangepicker-js-tab" data-bs-toggle="tab" data-bs-target="#bs-range-daterangepicker-js" role="tab" aria-controls="bs-range-daterangepicker-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="bs-range-daterangepicker-preview" role="tabpanel" aria-labelledby="bs-range-daterangepicker-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6 col-12">
+                        <label for="bs-rangepicker-range" class="form-label">Ranges</label>
+                        <input type="text" id="bs-rangepicker-range" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="bs-range-daterangepicker-html" role="tabpanel" aria-labelledby="bs-range-daterangepicker-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;bs-rangepicker-range&quot; class=&quot;form-label&quot;&gt;Ranges&lt;/label&gt;&#10;  &lt;input type=&quot;text&quot; id=&quot;bs-rangepicker-range&quot; class=&quot;form-control&quot; /&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="bs-range-daterangepicker-js" role="tabpanel" aria-labelledby="bs-range-daterangepicker-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">$(".bs-rangepicker-range").daterangepicker({
+  ranges: {
+    Today: [moment(), moment()],
+    Yesterday: [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+    'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+    'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+    'This Month': [moment().startOf('month'), moment().endOf('month')],
+    'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+  },
+  opens: isRtl ? 'left' : 'right'
+});</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Ranges -->
+
+          <hr class="my-12" />
+
+          <!-- Week Numbers -->
+          <div class="row">
+            <div class="col-12">
+              <p id="bs-daterangepicker-week" class="anchor-heading fw-bold">Week Numbers</p>
+              <p>Use <code>showWeekNumbers: true</code> property to show week numbers.</p>
+              <div class="doc-example tour-example mt-4">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="bs-week-num-daterangepicker-preview-tab" data-bs-toggle="tab" data-bs-target="#bs-week-num-daterangepicker-preview" role="tab" aria-controls="bs-week-num-daterangepicker-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-week-num-daterangepicker-html-tab" data-bs-toggle="tab" data-bs-target="#bs-week-num-daterangepicker-html" role="tab" aria-controls="bs-week-num-daterangepicker-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-week-num-daterangepicker-js-tab" data-bs-toggle="tab" data-bs-target="#bs-week-num-daterangepicker-js" role="tab" aria-controls="bs-week-num-daterangepicker-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="bs-week-num-daterangepicker-preview" role="tabpanel" aria-labelledby="bs-week-num-daterangepicker-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6 col-12">
+                        <label for="bs-rangepicker-week-num" class="form-label">Week Numbers</label>
+                        <input type="text" id="bs-rangepicker-week-num" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="bs-week-num-daterangepicker-html" role="tabpanel" aria-labelledby="bs-week-num-daterangepicker-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;bs-rangepicker-week-num&quot; class=&quot;form-label&quot;&gt;Week Numbers&lt;/label&gt;&#10;  &lt;input type=&quot;text&quot; id=&quot;bs-rangepicker-week-num&quot; class=&quot;form-control&quot; /&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="bs-week-num-daterangepicker-js" role="tabpanel" aria-labelledby="bs-week-num-daterangepicker-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">$("#bs-rangepicker-week-num").daterangepicker({
+  showWeekNumbers: true,
+  opens: isRtl ? 'left' : 'right'
+});</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Week Numbers -->
+
+          <hr class="my-12" />
+
+          <!-- Month & Year Dropdown -->
+          <div class="row">
+            <div class="col-12">
+              <p id="bs-daterangepicker-dropdown" class="anchor-heading fw-bold">Month & Week Dropdown</p>
+              <p>Use <code>showDropdowns: true</code> property to show dropdowns for month and year.</p>
+              <div class="doc-example tour-example mt-4">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="bs-dd-daterangepicker-preview-tab" data-bs-toggle="tab" data-bs-target="#bs-dd-daterangepicker-preview" role="tab" aria-controls="bs-dd-daterangepicker-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-dd-daterangepicker-html-tab" data-bs-toggle="tab" data-bs-target="#bs-dd-daterangepicker-html" role="tab" aria-controls="bs-dd-daterangepicker-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-dd-daterangepicker-js-tab" data-bs-toggle="tab" data-bs-target="#bs-dd-daterangepicker-js" role="tab" aria-controls="bs-dd-daterangepicker-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="bs-dd-daterangepicker-preview" role="tabpanel" aria-labelledby="bs-dd-daterangepicker-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6 col-12">
+                        <label for="bs-rangepicker-dropdown" class="form-label">Month & Year Dropdown</label>
+                        <input type="text" id="bs-rangepicker-dropdown" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="bs-dd-daterangepicker-html" role="tabpanel" aria-labelledby="bs-dd-daterangepicker-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;bs-rangepicker-dropdown&quot; class=&quot;form-label&quot;&gt;Month &amp; Year Dropdown&lt;/label&gt;&#10;  &lt;input type=&quot;text&quot; id=&quot;bs-rangepicker-dropdown&quot; class=&quot;form-control&quot; /&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="bs-dd-daterangepicker-js" role="tabpanel" aria-labelledby="bs-dd-daterangepicker-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">$("#bs-rangepicker-dropdown").daterangepicker({
+  showDropdowns: true,
+  opens: isRtl ? 'left' : 'right'
+});</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Month & Year Dropdown -->
+        </div>
+      </div>
+      <!-- /Bootstrap Daterangepicker -->
+
+      <hr class="my-12" />
+
+      <!-- jQuery Timepicker -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="jq-timepicker" class="anchor-heading fw-bold">jQuery Timepicker</h4>
+          <p>jQuery Timepicker a lightweight, customizable javascript timepicker plugin for jQuery inspired by Google Calendar. We have customized Timepicker for LTR & RTL with it's <code>orientation</code> option.</p>
+          <p class="anchor-heading fw-bold mt-6" id="jq-timepicker-usage">Usage</p>
+          <p>In order to use jQuery Timepicker on your page, It is required to include the following vendors css in the "Vendors CSS" area from the page's header:</p>
+          <div class="doc-example css-code">
+            <div class="doc-example-content" data-label="Code">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;link rel=&quot;stylesheet&quot; href=&quot;../../assets/vendor/libs/jquery-timepicker/jquery-timepicker.css&quot; /&gt;</code></pre>
+            </div>
+          </div>
+          <p class="mt-6">Include the following vendors script in the "Vendors JS" area from the page's footer:</p>
+          <div class="doc-example js-code">
+            <div class="doc-example-content" data-label="Code">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;script src=&quot;../../assets/vendor/libs/jquery-timepicker/jquery-timepicker.js&quot; /&gt;</code></pre>
+            </div>
+          </div>
+          <!-- Basic -->
+          <div class="row mt-6">
+            <div class="col-12">
+              <p id="jq-timepicker-basic" class="anchor-heading fw-bold mt-6">Basic</p>
+              <p>Use <code>YOUR_ELEMENT.timepicker()</code> to create a basic timepicker.</p>
+              <div class="doc-example tour-example mt-4">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="bs-basic-timepicker-preview-tab" data-bs-toggle="tab" data-bs-target="#bs-basic-timepicker-preview" role="tab" aria-controls="bs-basic-timepicker-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-basic-timepicker-html-tab" data-bs-toggle="tab" data-bs-target="#bs-basic-timepicker-html" role="tab" aria-controls="bs-basic-timepicker-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-basic-timepicker-js-tab" data-bs-toggle="tab" data-bs-target="#bs-basic-timepicker-js" role="tab" aria-controls="bs-basic-timepicker-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="bs-basic-timepicker-preview" role="tabpanel" aria-labelledby="bs-basic-timepicker-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6 col-12">
+                        <label for="timepicker-basic" class="form-label">Basic</label>
+                        <input type="text" id="timepicker-basic" placeholder="HH:MMam" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="bs-basic-timepicker-html" role="tabpanel" aria-labelledby="bs-basic-timepicker-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;timepicker-basic&quot; class=&quot;form-label&quot;&gt;Basic&lt;/label&gt;&#10;  &lt;input type=&quot;text&quot; id=&quot;timepicker-basic&quot; placeholder=&quot;HH:MMam&quot; class=&quot;form-control&quot; /&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="bs-basic-timepicker-js" role="tabpanel" aria-labelledby="bs-basic-timepicker-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">$("#timepicker-basic").timepicker({
+  orientation: isRtl ? 'r' : 'l'
+});</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Basic -->
+
+          <hr class="my-12" />
+
+          <!-- Min Max -->
+          <div class="row">
+            <div class="col-12">
+              <p id="jq-timepicker-min-max" class="anchor-heading fw-bold mt-6">Min Max</p>
+              <p>Use <code>minTime</code> and <code>maxTime</code> to create a timepicker with min and max time. Use <code>showDuration: true</code> property to show time duration along with the time.</p>
+              <div class="doc-example tour-example mt-4">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="bs-min-max-timepicker-preview-tab" data-bs-toggle="tab" data-bs-target="#bs-min-max-timepicker-preview" role="tab" aria-controls="bs-min-max-timepicker-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-min-max-timepicker-html-tab" data-bs-toggle="tab" data-bs-target="#bs-min-max-timepicker-html" role="tab" aria-controls="bs-min-max-timepicker-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-min-max-timepicker-js-tab" data-bs-toggle="tab" data-bs-target="#bs-min-max-timepicker-js" role="tab" aria-controls="bs-min-max-timepicker-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="bs-min-max-timepicker-preview" role="tabpanel" aria-labelledby="bs-min-max-timepicker-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6 col-12">
+                        <label for="timepicker-min-max" class="form-label">Min-Max</label>
+                        <input type="text" id="timepicker-min-max" placeholder="HH:MMam" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="bs-min-max-timepicker-html" role="tabpanel" aria-labelledby="bs-min-max-timepicker-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;timepicker-min-max&quot; class=&quot;form-label&quot;&gt;Min-Max&lt;/label&gt;&#10;  &lt;input type=&quot;text&quot; id=&quot;timepicker-min-max&quot; placeholder=&quot;HH:MMam&quot; class=&quot;form-control&quot; /&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="bs-min-max-timepicker-js" role="tabpanel" aria-labelledby="bs-min-max-timepicker-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">$("#timepicker-min-max").timepicker({
+  minTime: '2:00pm',
+  maxTime: '7:00pm',
+  showDuration: true,
+  orientation: isRtl ? 'r' : 'l'
+});</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Min Max -->
+
+          <hr class="my-12" />
+
+          <!-- Disabled Times -->
+          <div class="row ">
+            <div class="col-12">
+              <p id="jq-timepicker-disabled-times" class="anchor-heading fw-bold mt-6">Disabled Times</p>
+              <p>Use <code>disableTimeRanges</code> property to disable range of time.</p>
+              <div class="doc-example tour-example mt-4">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="bs-dis-timepicker-preview-tab" data-bs-toggle="tab" data-bs-target="#bs-dis-timepicker-preview" role="tab" aria-controls="bs-dis-timepicker-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-dis-timepicker-html-tab" data-bs-toggle="tab" data-bs-target="#bs-dis-timepicker-html" role="tab" aria-controls="bs-dis-timepicker-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-dis-timepicker-js-tab" data-bs-toggle="tab" data-bs-target="#bs-dis-timepicker-js" role="tab" aria-controls="bs-dis-timepicker-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="bs-dis-timepicker-preview" role="tabpanel" aria-labelledby="bs-dis-timepicker-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6 col-12">
+                        <label for="timepicker-disabled-times" class="form-label">Disabled Times</label>
+                        <input type="text" id="timepicker-disabled-times" placeholder="HH:MMam" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="bs-dis-timepicker-html" role="tabpanel" aria-labelledby="bs-dis-timepicker-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;timepicker-disabled-times&quot; class=&quot;form-label&quot;&gt;Disabled Times&lt;/label&gt;&#10;  &lt;input type=&quot;text&quot; id=&quot;timepicker-disabled-times&quot; placeholder=&quot;HH:MMam&quot; class=&quot;form-control&quot; /&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="bs-dis-timepicker-js" role="tabpanel" aria-labelledby="bs-dis-timepicker-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">$("#timepicker-disabled-times").timepicker({
+  disableTimeRanges: [
+    ['12am', '3am'],
+    ['4am', '4:30am']
+  ],
+  orientation: isRtl ? 'r' : 'l'
+});</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Disabled Times -->
+
+          <hr class="my-12" />
+
+          <!-- Format -->
+          <div class="row">
+            <div class="col-12">
+              <p id="jq-timepicker-format" class="anchor-heading fw-bold mt-6">Format</p>
+              <p>Use <code>timeFormat</code> property to change the format of time.</p>
+              <div class="doc-example tour-example mt-4">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="bs-format-timepicker-preview-tab" data-bs-toggle="tab" data-bs-target="#bs-format-timepicker-preview" role="tab" aria-controls="bs-format-timepicker-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-format-timepicker-html-tab" data-bs-toggle="tab" data-bs-target="#bs-format-timepicker-html" role="tab" aria-controls="bs-format-timepicker-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-format-timepicker-js-tab" data-bs-toggle="tab" data-bs-target="#bs-format-timepicker-js" role="tab" aria-controls="bs-format-timepicker-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="bs-format-timepicker-preview" role="tabpanel" aria-labelledby="bs-format-timepicker-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6 col-12">
+                        <label for="timepicker-format" class="form-label">Format</label>
+                        <input type="text" id="timepicker-format" placeholder="HH:MM:SS" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="bs-format-timepicker-html" role="tabpanel" aria-labelledby="bs-format-timepicker-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="html">&lt;div class=&quot;col-md-6 col-12&quot;&gt;&#10;  &lt;label for=&quot;timepicker-format&quot; class=&quot;form-label&quot;&gt;Format&lt;/label&gt;&#10;  &lt;input type=&quot;text&quot; id=&quot;timepicker-format&quot; placeholder=&quot;HH:MM:SS&quot; class=&quot;form-control&quot; /&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="bs-format-timepicker-js" role="tabpanel" aria-labelledby="bs-format-timepicker-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">$("#timepicker-format").timepicker({
+  show: '24:00',
+  timeFormat: 'H:i:s',
+  orientation: isRtl ? 'r' : 'l'
+});</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Format -->
+
+          <hr class="my-12" />
+
+          <!-- Steps -->
+          <div class="row">
+            <div class="col-12">
+              <p id="jq-timepicker-steps" class="anchor-heading fw-bold mt-6">Steps</p>
+              <p>Use <code>steps</code> property to create a timepicker with steps.</p>
+              <div class="doc-example tour-example mt-4">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="bs-steps-timepicker-preview-tab" data-bs-toggle="tab" data-bs-target="#bs-steps-timepicker-preview" role="tab" aria-controls="bs-steps-timepicker-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-steps-timepicker-html-tab" data-bs-toggle="tab" data-bs-target="#bs-steps-timepicker-html" role="tab" aria-controls="bs-steps-timepicker-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-steps-timepicker-js-tab" data-bs-toggle="tab" data-bs-target="#bs-steps-timepicker-js" role="tab" aria-controls="bs-steps-timepicker-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="bs-steps-timepicker-preview" role="tabpanel" aria-labelledby="bs-steps-timepicker-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6 col-12">
+                        <label for="timepicker-step" class="form-label">Step</label>
+                        <input type="text" id="timepicker-step" placeholder="HH:MMam" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="bs-steps-timepicker-html" role="tabpanel" aria-labelledby="bs-steps-timepicker-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;timepicker-step&quot; class=&quot;form-label&quot;&gt;Step&lt;/label&gt;&#10;  &lt;input type=&quot;text&quot; id=&quot;timepicker-step&quot; placeholder=&quot;HH:MMam&quot; class=&quot;form-control&quot; /&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="bs-steps-timepicker-js" role="tabpanel" aria-labelledby="bs-steps-timepicker-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">$("#timepicker-step").timepicker({
+  step: 15,
+  orientation: isRtl ? 'r' : 'l'
+});</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Steps -->
+
+          <hr class="my-12" />
+
+          <!-- Steps -->
+          <div class="row">
+            <div class="col-12">
+              <p id="jq-timepicker-24hrs" class="anchor-heading fw-bold mt-6">24 Hours Time Format</p>
+              <p>Use <code>show: "24:00"</code> property to create a timepicker with 24 hours time format. You may also use <code>timeFormat</code> property for your preferred format of time.</p>
+              <div class="doc-example tour-example mt-4">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="bs-24hrs-timepicker-preview-tab" data-bs-toggle="tab" data-bs-target="#bs-24hrs-timepicker-preview" role="tab" aria-controls="bs-24hrs-timepicker-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-24hrs-timepicker-html-tab" data-bs-toggle="tab" data-bs-target="#bs-24hrs-timepicker-html" role="tab" aria-controls="bs-24hrs-timepicker-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-24hrs-timepicker-js-tab" data-bs-toggle="tab" data-bs-target="#bs-24hrs-timepicker-js" role="tab" aria-controls="bs-24hrs-timepicker-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="bs-24hrs-timepicker-preview" role="tabpanel" aria-labelledby="bs-24hrs-timepicker-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6 col-12">
+                        <label for="timepicker-24hours" class="form-label">24 Hours Format</label>
+                        <input type="text" id="timepicker-24hours" placeholder="20:00:00" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="bs-24hrs-timepicker-html" role="tabpanel" aria-labelledby="bs-24hrs-timepicker-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;timepicker-24hours&quot; class=&quot;form-label&quot;&gt;24 Hours Format&lt;/label&gt;&#10;  &lt;input type=&quot;text&quot; id=&quot;timepicker-24hours&quot; placeholder=&quot;20:00:00&quot; class=&quot;form-control&quot; /&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="bs-24hrs-timepicker-js" role="tabpanel" aria-labelledby="bs-24hrs-timepicker-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">$("#timepicker-24hours").timepicker({
+  show: "24:00",
+  timeFormat: 'H:i:s',
+});</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Steps -->
+        </div>
+      </div>
+      <!-- /jQuery Timepicker -->
+
+      <hr class="my-12" />
+
+      <!-- Pickr -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="colorPicker" class="anchor-heading fw-bold mt-6">Pickr</h4>
+          <p>Pickr is a flat, simple, multi-themed, responsive and hackable Color-Picker library. No dependencies, no jQuery. Compatible with all CSS Frameworks e.g. Bootstrap, Materialize. Supports alpha channel, rgba, hsla, hsva and more!</p>
+          <p class="anchor-heading fw-bold mt-6" id="color-usage">Usage</p>
+          <p>In order to use pickr on your page, It is required to include the following vendors css in the "Vendors CSS" area from the page's header:</p>
+
+          <div class="doc-example css-code">
+            <div class="doc-example-content" data-label="Code">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;!-- Below file includes three styles in the pickr-themes.css --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;../../assets/vendor/libs/pickr/pickr-themes.css&quot; /&gt;</code></pre>
+            </div>
+          </div>
+          <p class="mt-6">Include the following vendors script in the "Vendors JS" area from the page's footer:</p>
+          <div class="doc-example js-code">
+            <div class="doc-example-content" data-label="Code">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;script src=&quot;../../assets/vendor/libs/pickr/pickr.js&quot; /&gt;</code></pre>
+            </div>
+          </div>
+          <p class="anchor-heading fw-bold mt-6" id="classic">Classic</p>
+          <p>Use <code>theme: "classic"</code> property to have a classic styled color picker.</p>
+          <div class="doc-example tour-example mt-4">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="classic-preview-tab" data-bs-toggle="tab" data-bs-target="#classic-preview" role="tab" aria-controls="classic-preview" aria-selected="true"> Preview </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="classic-html-tab" data-bs-toggle="tab" data-bs-target="#classic-html" role="tab" aria-controls="classic-html" aria-selected="false"> HTML </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="classic-js-tab" data-bs-toggle="tab" data-bs-target="#classic-js" role="tab" aria-controls="classic-js" aria-selected="false"> JS </a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+              <div class="tab-pane fade show active" id="classic-preview" role="tabpanel" aria-labelledby="classic-preview-tab">
+                <div id="color-picker-classic"></div>
+              </div>
+              <div class="tab-pane fade" id="classic-html" role="tabpanel" aria-labelledby="classic-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre class="docs-code"><code class="html">&lt;div id=&quot;color-picker-classic&quot;&gt;&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="classic-js" role="tabpanel" aria-labelledby="classic-js-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre class="docs-code"><code class="js">const classicPickr = new Pickr({
+  el: classicPicker,
+  theme: 'classic',
+  default: 'rgba(102, 108, 232, 1)',
+  swatches: [
+    'rgba(102, 108, 232, 1)',
+    'rgba(40, 208, 148, 1)',
+    'rgba(255, 73, 97, 1)',
+    'rgba(255, 145, 73, 1)',
+    'rgba(30, 159, 242, 1)'
+  ],
+  components: {
+    // Main components
+    preview: true,
+    opacity: true,
+    hue: true,
+
+    // Input / output Options
+    interaction: {
+      hex: true,
+      rgba: true,
+      hsla: true,
+      hsva: true,
+      cmyk: true,
+      input: true,
+      clear: true,
+      save: true
+    }
+  }
+});</code></pre>
+              </div>
+            </div>
+          </div>
+          <hr class="my-12" />
+          <p class="anchor-heading fw-bold mt-6" id="monolith">Monolith</p>
+          <p>Use <code>theme: "monolith" </code> property to have a monolith styled color picker.</p>
+          <div class="doc-example tour-example mt-4">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="monolith-preview-tab" data-bs-toggle="tab" data-bs-target="#monolith-preview" role="tab" aria-controls="monolith-preview" aria-selected="true"> Preview </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="monolith-html-tab" data-bs-toggle="tab" data-bs-target="#monolith-html" role="tab" aria-controls="monolith-html" aria-selected="false"> HTML </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="monolith-js-tab" data-bs-toggle="tab" data-bs-target="#monolith-js" role="tab" aria-controls="monolith-js" aria-selected="false"> JS </a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+              <div class="tab-pane fade show active" id="monolith-preview" role="tabpanel" aria-labelledby="monolith-preview-tab">
+                <div id="color-picker-monolith"></div>
+              </div>
+              <div class="tab-pane fade" id="monolith-html" role="tabpanel" aria-labelledby="monolith-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre class="docs-code"><code class="html">&lt;div id=&quot;color-picker-monolith&quot;&gt;&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="monolith-js" role="tabpanel" aria-labelledby="monolith-js-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre class="docs-code"><code class="js">const monoPickr = new Pickr({
+  el: monolithPicker,
+  theme: 'monolith',
+  default: 'rgba(40, 208, 148, 1)',
+  swatches: [
+    'rgba(102, 108, 232, 1)',
+    'rgba(40, 208, 148, 1)',
+    'rgba(255, 73, 97, 1)',
+    'rgba(255, 145, 73, 1)',
+    'rgba(30, 159, 242, 1)'
+  ],
+  components: {
+    // Main components
+    preview: true,
+    opacity: true,
+    hue: true,
+
+    // Input / output Options
+    interaction: {
+      hex: true,
+      rgba: true,
+      hsla: true,
+      hsva: true,
+      cmyk: true,
+      input: true,
+      clear: true,
+      save: true
+    }
+  }
+});</code></pre>
+              </div>
+            </div>
+          </div>
+          <hr class="my-12" />
+          <p class="anchor-heading fw-bold mt-6" id="nano">Nano</p>
+          <p>Use <code>theme: "nano" </code> property to have a nano styled color picker.</p>
+          <div class="doc-example tour-example mt-4">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="nano-preview-tab" data-bs-toggle="tab" data-bs-target="#nano-preview" role="tab" aria-controls="nano-preview" aria-selected="true"> Preview </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="nano-html-tab" data-bs-toggle="tab" data-bs-target="#nano-html" role="tab" aria-controls="nano-html" aria-selected="false"> HTML </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="nano-js-tab" data-bs-toggle="tab" data-bs-target="#nano-js" role="tab" aria-controls="nano-js" aria-selected="false"> JS </a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+              <div class="tab-pane fade show active" id="nano-preview" role="tabpanel" aria-labelledby="nano-preview-tab">
+                <div id="color-picker-nano"></div>
+              </div>
+              <div class="tab-pane fade" id="nano-html" role="tabpanel" aria-labelledby="nano-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre class="docs-code"><code class="html">&lt;div id=&quot;color-picker-nano&quot;&gt;&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="nano-js" role="tabpanel" aria-labelledby="nano-js-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre class="docs-code"><code class="js">const nanoPickr = new Pickr({
+  el: nanoPicker,
+  theme: 'nano',
+  default: 'rgba(255, 73, 97, 1)',
+  swatches: [
+    'rgba(102, 108, 232, 1)',
+    'rgba(40, 208, 148, 1)',
+    'rgba(255, 73, 97, 1)',
+    'rgba(255, 145, 73, 1)',
+    'rgba(30, 159, 242, 1)'
+  ],
+  components: {
+    // Main components
+    preview: true,
+    opacity: true,
+    hue: true,
+
+    // Input / output Options
+    interaction: {
+      hex: true,
+      rgba: true,
+      hsla: true,
+      hsva: true,
+      cmyk: true,
+      input: true,
+      clear: true,
+      save: true
+    }
+  }
+});</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Pickr -->
+    </div>
+    <div class="d-none d-xl-block col-xl-2 doc-sidebar container-p-y">
+      <nav id="vertical-nav" class="navbar p-0">
+        <ul class="doc-sidebar-nav">
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#flatpickr">FlatPickr</a>
+            <ul>
+              <li class="doc-entry doc-h3">
+                <a class="nav-link" href="#usage">Usage</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a class="nav-link" href="#datepicker">Datepicker</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a class="nav-link" href="#timepicker">Timepicker</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a class="nav-link" href="#date-time">Datetime Picker</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a class="nav-link" href="#multi-picker">Multiple Dates picker</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a class="nav-link" href="#range-picker">Range Picker</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a class="nav-link" href="#human-friendly"> Human Friendly </a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a class="nav-link" href="#disabled-range"> Disabled Range </a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a class="nav-link" href="#inline-picker"> Inline Picker </a>
+              </li>
+            </ul>
+          </li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#bs-daterangepicker">Daterangepicker</a>
+            <ul>
+              <li class="doc-entry doc-h3">
+                <a class="nav-link" href="#bs-daterangepicker-usage">Usage</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a class="nav-link" href="#bs-daterangepicker-basic">Basic</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a class="nav-link" href="#bs-daterangepicker-single">Single</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a class="nav-link" href="#bs-daterangepicker-time">Time</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a class="nav-link" href="#bs-daterangepicker-range">Range</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a class="nav-link" href="#bs-daterangepicker-week">Week Numbers</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a class="nav-link" href="#bs-daterangepicker-dropdown">Month & Year Dropdown</a>
+              </li>
+            </ul>
+          </li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#jq-timepicker">jQuery Timepicker</a>
+            <ul>
+              <li class="doc-entry doc-h3">
+                <a class="nav-link" href="#jq-timepicker-usage">Usage</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a class="nav-link" href="#jq-timepicker-basic">Basic</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a class="nav-link" href="#jq-timepicker-min-max">Min-Max</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a class="nav-link" href="#jq-timepicker-disabled-times">Disabled Times</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a class="nav-link" href="#jq-timepicker-format">Format</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a class="nav-link" href="#jq-timepicker-steps">Steps</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a class="nav-link" href="#jq-timepicker-24hrs">24 Hours Format</a>
+              </li>
+            </ul>
+          </li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#colorPicker">Pickr</a>
+            <ul>
+              <li class="doc-entry doc-h3">
+                <a class="nav-link" href="#color-usage">Usage</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a class="nav-link" href="#classic">Classic</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a class="nav-link" href="#monolith">Monolith</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a class="nav-link" href="#nano">Nano</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div></div>
+          <!-- / Content -->
+
+          
+            <footer class="content-footer footer">
+  <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center text-center py-4">
+    <div>
+      &#169; 2017-
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      
+        <a href="https://pixinvent.com" class="footer-text fw-medium" target="_blank">Pixinvent</a>, Hand-crafted & Made with â¤ï¸
+      
+    </div>
+    <div>
+      
+        <a href="https://www.facebook.com/pixinvents/" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-facebook"></i></a>
+      
+      
+        <a href="https://x.com/pixinvents" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-twitter"></i></a>
+      
+      
+        <a href="https://github.com/pixinvent" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-github"></i></a>
+      
+      
+        <a href="https://dribbble.com/pixinvent" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-dribbble"></i></a>
+      
+      
+        <a href="https://www.instagram.com/pixinvents/" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-instagram"></i></a>
+      
+    </div>
+  </div>
+</footer>
+
+          
+        </div>
+        <!-- Content wrapper -->
+      </div>
+      <!-- / Layout page -->
+    </div>
+
+    
+      
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    
+    <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+    <div class="drag-target"></div>
+  </div>
+  <!-- / Layout wrapper -->
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="assets/vendor/libs/highlight/highlight.js"></script>
+    <script src="assets/vendor/libs/clipboard/clipboard.js"></script>
+    
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/vendor/libs/node-waves/node-waves.js"></script>
+    <script src="assets/vendor/libs/@algolia/autocomplete-js.js"></script>
+    <script src="assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="assets/vendor/js/menu.js"></script>
+    <!-- Vendors JS -->
+    <script src="assets/vendor/libs/moment/moment.js"></script>
+  <script src="assets/vendor/libs/flatpickr/flatpickr.js"></script>
+  <script src="assets/vendor/libs/pickr/pickr.js"></script>
+  <script src="assets/vendor/libs/bootstrap-daterangepicker/bootstrap-daterangepicker.js"></script>
+  <script src="assets/vendor/libs/jquery-timepicker/jquery-timepicker.js"></script>
+
+    <!-- Page JS -->
+    <script src="assets/js/docs.js"></script>
+    <script src="assets/js/forms-pickers.js"></script>
+  </body>
+</html>
+
+  <!-- beautify ignore:end -->
+

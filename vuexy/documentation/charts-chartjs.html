@@ -1,0 +1,2091 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- =========================================================
+* Vuexy - Bootstrap Dashboard PRO | v3.0.0
+==============================================================
+
+* Product Page: https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599
+* Created by: Pixinvent
+
+    * License: You must have a valid license purchased in order to legally use the theme for your project.
+  
+* Copyright Pixinvent (https://pixinvent.com)
+
+=========================================================
+ -->
+  <!-- beautify ignore:start -->
+
+<html lang="en" class="docs-page  layout-menu-fixed-offcanvas " data-assets-path="assets/" data-skin="bordered">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Docs: Charts - ChartJS | Vuexy - Bootstrap Dashboard PRO</title>
+
+    <meta name="description" content="Vuexy is the best bootstrap 5 dashboard for responsive web apps. Streamline your app development process with ease." />
+    <meta name="keywords" content="Vuexy bootstrap dashboard, vuexy bootstrap 5 dashboard, themeselection, html dashboard, web dashboard, frontend dashboard, responsive bootstrap theme" />
+    <meta property="og:title" content="Vuexy bootstrap Dashboard by Pixinvent" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" />
+    <meta property="og:image" content="https://pixinvent.com/wp-content/uploads/2023/06/vuexy-hero-image.png" />
+    <meta property="og:description" content="Vuexy is the best bootstrap 5 dashboard for responsive web apps. Streamline your app development process with ease." />
+    <meta property="og:site_name" content="Pixinvent" />
+
+    <!-- Canonical SEO -->
+    <link rel="canonical" href="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" />
+
+    
+      
+      <script>
+        (function (w, d, s, l, i) {
+          w[l] = w[l] || [];
+          w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+          });
+          var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+          j.async = true;
+          j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+          f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5J3LMKC');
+      </script>
+      
+    
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="48x48" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="16x16" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="32x32" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="180x180" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="192x192" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="512x512" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendor/fonts/iconify-icons.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/node-waves/node-waves.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/highlight/highlight.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/chartjs/chartjs.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="assets/vendor/css/core.css" />
+    <link rel="stylesheet" href="assets/css/demo.css" />
+    <link rel="stylesheet" href="assets/css/docs.css" />
+
+    <!-- Page CSS -->
+    
+
+    <!-- Core JS -->
+    <script src="assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: Don't remove unless you are aware of it, To hide customizer set displayCustomizer value false in config.js.  -->
+    <!-- <script src="assets/vendor/js/template-customizer.js"></script> -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="assets/js/config.js"></script>
+  </head>
+
+  <body>
+    
+      
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5J3LMKC" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+      
+    
+
+    <!-- Layout wrapper -->
+  <div class="layout-wrapper layout-navbar-full ">
+    <div class="layout-container">
+      
+        
+
+
+<!-- Navbar main -->
+
+<nav class="layout-navbar navbar navbar-expand-lg align-items-lg-center bg-white border-bottom" id="layout-navbar">
+  <div class="container-fluid">
+    
+      <!-- Menu toggle (see assets/css/demo/demo.css) -->
+      <div class="layout-menu-toggle navbar-nav d-lg-none align-items-lg-center">
+        <a class="nav-item nav-link px-0 me-lg-4" href="javascript:void(0)">
+          <i class="icon-base ti tabler-menu-2 icon-md align-middle"></i>
+        </a>
+      </div>
+    
+
+    <!-- Brand demo (see assets/css/demo/demo.css) -->
+    <div class="navbar-brand app-brand demo py-0 me-md-auto me-12 ms-lg-0 ms-0">
+      <a href="index.html" class="app-brand-link">
+        <span class="app-brand-logo demo">
+  <span class="text-primary">
+    <svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.00172773 0V6.85398C0.00172773 6.85398 -0.133178 9.01207 1.98092 10.8388L13.6912 21.9964L19.7809 21.9181L18.8042 9.88248L16.4951 7.17289L9.23799 0H0.00172773Z" fill="currentColor" />
+      <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd" d="M7.69824 16.4364L12.5199 3.23696L16.5541 7.25596L7.69824 16.4364Z" fill="#161616" />
+      <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd" d="M8.07751 15.9175L13.9419 4.63989L16.5849 7.28475L8.07751 15.9175Z" fill="#161616" />
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z" fill="currentColor" />
+    </svg>
+  </span>
+</span>
+        <span class="app-brand-text demo menu-text fw-bold">Vuexy</span>
+      </a>
+    </div>
+
+    <div class="d-flex ms-md-6 gap-3">
+      
+      <div class="navbar-nav align-items-lg-center justify-content-center">
+        <!-- Search -->
+        <div class="navbar-nav align-items-center">
+          <div class="nav-item navbar-search-wrapper mb-0">
+            <a class="nav-item nav-link search-toggler border rounded-3 py-2 px-md-4 px-2 d-flex align-items-center" href="javascript:void(0);">
+              <span class="d-inline-block text-body-secondary fw-normal" id="autocomplete"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbar-collapse">
+        <hr class="d-lg-none w-100 my-2" />
+        <!-- Divider -->
+
+        <div class="navbar-nav align-items-lg-center">
+          
+          <ul class="navbar-nav">
+            <!-- Technology dropdown -->
+            
+            
+              
+                <li class="nav-item dropdown me-2">
+                  <button class="btn dropdown-toggle py-2 btn-primary" type="button" id="livePreview" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-base ti tabler-current-location me-2"></i> Live preview</button>
+                  <ul class="dropdown-menu" aria-labelledby="livePreview">
+                    <li>
+                      <a href="https://pixinvent.com/vuexy-bootstrap-html-admin-template/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>HTML preview</a>
+                    </li>
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-laravel-admin-template/demo-1/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>Laravel preview</a>
+                      </li>
+                    
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-admin-template/html/vertical-menu-template/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>.Net Core preview</a>
+                      </li>
+                    
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-django-admin-template/demo-1/" target="_blank" class="nav-link text-nowrap"><i class="icon-base ti tabler-current-location me-2"></i>Django preview</a>
+                      </li>
+                    
+                  </ul>
+                </li>
+              
+            
+            
+              <li class="nav-item me-2">
+                <a href="https://pixinvent.ticksy.com/" target="_blank" class="nav-link d-flex align-items-center">
+                  <i class="icon-base ti tabler-lifebuoy me-2"></i>
+                  <span>Support</span>
+                </a>
+              </li>
+            
+            
+              <li class="nav-item">
+                <a href="https://themeforest.net/user/pixinvent/portfolio" target="_blank" class="nav-link d-flex align-items-center">
+                  <i class="icon-base ti tabler-gift me-2"></i>
+                  <span> More Themes</span>
+                </a>
+              </li>
+            
+            
+              <li class="nav-item">
+                <a href="https://themeselection.com/hire-us/" target="_blank" class="nav-link"><i class="icon-base ti tabler-briefcase"></i> Hire Us</a>
+              </li>
+            
+          </ul>
+
+          <!-- Divider -->
+          <div class="nav-item d-none d-lg-block text-big fw-light lh-1 me-4 ms-1">|</div>
+
+          
+            <div class="buy-now-btn">
+              <a href="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" target="_blank" class="btn btn-danger d-flex align-items-center gap-2">
+                <i class="icon-base ti tabler-shopping-cart"></i>
+                <span>Buy Now</span>
+              </a>
+            </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</nav>
+<!-- / Navbar main -->
+
+      
+
+      <!-- Layout page -->
+      <div class="layout-page">
+        
+          
+
+
+
+
+<!-- Menu -->
+<aside id="layout-menu" class="layout-menu menu-doc menu menu-vertical bg-menu-theme">
+  
+  <div class="menu-divider mt-0   d-xl-none "></div>
+
+  <!-- Links -->
+  <ul class="menu-inner py-1">
+    <li class="menu-header text-uppercase small fw-medium">Getting Started</li>
+    <li class="menu-item">
+      <a href="index.html" class="menu-link">
+        <div>Introduction</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="licenses.html" class="menu-link">
+        <div>Licenses</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="folder-structure.html" class="menu-link">
+        <div>Folder Structure</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="quick-start.html" class="menu-link">
+        <div>Quick Start</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="config.html" class="menu-link">
+        <div>Config ð¤©</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="installation-build.html" class="menu-link">
+        <div>Installation & Build</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="template-customizer.html" class="menu-link">
+        <div>Template Customizer</div>
+        
+      </a>
+    </li>
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Customization</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="customization-sass.html" class="menu-link">
+            <div>SASS</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="customization-js.html" class="menu-link">
+            <div>JavaScript</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="customization-third-party-plugins.html" class="menu-link">
+            <div>Third Party Plugins</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="layouts.html" class="menu-link">
+        <div>Layouts</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="dependencies.html" class="menu-link">
+        <div>Dependencies</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="faq.html" class="menu-link">
+        <div>FAQs</div>
+      </a>
+    </li>
+    
+      <!-- Laravel Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row">
+        <span class="me-1">Laravel</span>
+        <span class="badge badge-demo bg-label-danger ms-auto">HTML + Laravel Only</span>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="laravel-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-starter-kit-vs-full-version.html" class="menu-link">
+              <div>Starter-kit Vs Full-version</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-demo-config.html" class="menu-link">
+              <div>Demo Configs</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Auth & ACL</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-auth-jetstream.html" class="menu-link">
+              <div>JetStream</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-passport.html" class="menu-link">
+              <div>Passport</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-sanctum.html" class="menu-link">
+              <div>Sanctum</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-acl.html" class="menu-link">
+              <div>ACL</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-articles-database-connections.html" class="menu-link">
+              <div>Database Connections</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-existing-project.html" class="menu-link">
+              <div>Exiting Project Migration</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-form-validation-integration.html" class="menu-link">
+              <div>Form Validation Package Integration</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-localization.html" class="menu-link">
+          <div>Localization</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-search.html" class="menu-link">
+          <div>Search</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-sail-docker.html" class="menu-link">
+          <div>Sail & Docker</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-deployment.html" class="menu-link">
+          <div>Deployment</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Dotnet Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>ASP.NET CORE</span> <span class="badge badge-demo bg-label-danger ms-auto">Razor Pages</span></li>
+
+      <li class="menu-item">
+        <a href="net-core-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-assets-compilation.html" class="menu-link">
+              <div>Assets Compilation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-start-with-doker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-starter-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="net-core-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Dotnet Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>ASP.NET CORE MVC</span> <span class="badge badge-demo bg-label-danger ms-auto">MVC</span></li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-mvc-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-assets-compilation.html" class="menu-link">
+              <div>Assets Compilation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-start-with-docker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-starter-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="net-core-mvc-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-mvc-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Django Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>Django</span> <span class="badge badge-demo bg-label-danger ms-auto">Django Only</span></li>
+
+      <li class="menu-item">
+        <a href="django-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="django-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-start-with-doker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-demo-config.html" class="menu-link">
+              <div>Demo Config</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-starter-kit-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="django-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="django-articles-create-new-page.html" class="menu-link">
+              <div>Create New Apps & Pages</div>
+            </a>
+          </li>
+          <!-- <li class="menu-item">
+          <a href="django-articles-existing-project.html" class="menu-link">
+            <div>Exiting Project Migration</div>
+          </a>
+        </li> -->
+          <li class="menu-item">
+            <a href="django-articles-admin-superuser.html" class="menu-link">
+              <div>Admin and Create User</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-authentication.html" class="menu-link">
+              <div>Authentication</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="django-articles-permissions-authorization.html" class="menu-link">
+              <div>Permissions & Authorization</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-crud.html" class="menu-link">
+              <div>CRUD Example</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-admin-db.html" class="menu-link">
+              <div>Admin and Database</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-localization.html" class="menu-link">
+          <div>Localization</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-search.html" class="menu-link">
+          <div>Search</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-theme-api.html" class="menu-link">
+          <div>Theme API</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-deployment.html" class="menu-link">
+          <div>Deployment</div>
+        </a>
+      </li>
+    
+    <!-- Apps & Pages -->
+    <li class="menu-divider mb-1"></li>
+    <li class="menu-header text-uppercase small fw-medium">Design System</li>
+
+    <li class="menu-item">
+      <a href="typography.html" class="menu-link">
+        <div>Typography</div>
+      </a>
+    </li>
+
+    <li class="menu-item">
+      <a href="colors.html" class="menu-link">
+        <div>Colors</div>
+      </a>
+    </li>
+
+    <li class="menu-item">
+      <a href="Icons.html" class="menu-link">
+        <div>Icons</div>
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+    <!-- Components -->
+    <li class="menu-header text-uppercase small fw-medium">Components</li>
+
+    <!-- UI Elements -->
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>UI Elements</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="ui-accordion.html" class="menu-link">
+            <div>Accordion</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-alerts.html" class="menu-link">
+            <div>Alerts</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-app-brand.html" class="menu-link">
+            <div>App Brand</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-badges.html" class="menu-link">
+            <div>Badges</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-buttons.html" class="menu-link">
+            <div>Buttons</div>
+          </a>
+        </li>
+        <li class="menu-item
+  ">
+          <a href="javascript:void(0);" class="menu-link menu-toggle">
+            <div>Cards</div>
+          </a>
+          <ul class="menu-sub">
+            <li class="menu-item">
+              <a href="ui-cards-basic.html" class="menu-link">
+                <div>Basic</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="ui-cards-actions.html" class="menu-link">
+                <div>Actions</div>
+                
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="ui-carousel.html" class="menu-link">
+            <div>Carousel</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-collapse.html" class="menu-link">
+            <div>Collapse</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-dropdowns.html" class="menu-link">
+            <div>Dropdowns</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-footer.html" class="menu-link">
+            <div>Footer</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-list-groups.html" class="menu-link">
+            <div>List groups</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-modals.html" class="menu-link">
+            <div>Modals</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-menu.html" class="menu-link">
+            <div>Menu</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-navbar.html" class="menu-link">
+            <div>Navbar</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-offcanvas.html" class="menu-link">
+            <div>Offcanvas</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-pagination-breadcrumbs.html" class="menu-link">
+            <div>Pagination &amp; Breadcrumbs</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-popovers.html" class="menu-link">
+            <div>Popovers</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-progress.html" class="menu-link">
+            <div>Progress</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-spinners.html" class="menu-link">
+            <div>Spinners</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-navs.html" class="menu-link">
+            <div>Navs</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-tabs-pills.html" class="menu-link">
+            <div>Tabs &amp; Pills</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-toasts.html" class="menu-link">
+            <div>Toasts</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-tooltips.html" class="menu-link">
+            <div>Tooltips</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+
+    <!-- Extended components -->
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Extended UI</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="extended-ui-avatar.html" class="menu-link">
+            <div>Avatar</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-blockui.html" class="menu-link">
+            <div>BlockUI</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-drag-and-drop.html" class="menu-link">
+            <div>Drag &amp; Drop</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-media-player.html" class="menu-link">
+            <div>Media Player</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-perfect-scrollbar.html" class="menu-link">
+            <div>Perfect scrollbar</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-star-ratings.html" class="menu-link">
+            <div>Star Ratings</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-sweetalert2.html" class="menu-link">
+            <div>SweetAlert2</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-text-divider.html" class="menu-link">
+            <div>Text Divider</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-timeline.html" class="menu-link">
+            <div>Timeline</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-tour.html" class="menu-link">
+            <div>Tour</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-treeview.html" class="menu-link">
+            <div>Treeview</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-misc.html" class="menu-link">
+            <div>Miscellaneous</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Forms -->
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Forms</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="forms-basic-inputs.html" class="menu-link">
+            <div>Basic Inputs</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-input-groups.html" class="menu-link">
+            <div>Input groups</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-custom-options.html" class="menu-link">
+            <div>Custom Options</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-editors.html" class="menu-link">
+            <div>Editors</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-file-upload.html" class="menu-link">
+            <div>File Upload</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-pickers.html" class="menu-link">
+            <div>Pickers</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-selects.html" class="menu-link">
+            <div>Select &amp; Tags</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-sliders.html" class="menu-link">
+            <div>Sliders</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-switches.html" class="menu-link">
+            <div>Switches</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-extras.html" class="menu-link">
+            <div>Extras</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-validation.html" class="menu-link">
+            <div>Validation</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-wizard.html" class="menu-link">
+            <div>Wizard</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-layouts-sticky.html" class="menu-link">
+            <div>Sticky Actions</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <!-- Tables -->
+    <li class="menu-item">
+      <a href="tables-basic.html" class="menu-link">
+        <div>Tables</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="tables-datatables.html" class="menu-link">
+        <div>Datatables</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="utilities.html" class="menu-link">
+        <div>Utilities</div>
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+    <!-- Charts & Maps -->
+    <li class="menu-header text-uppercase small fw-medium">Charts &amp; Maps</li>
+
+    <li class="menu-item
+   active open">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <div data-i18n="Charts">Charts</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="charts-apex.html" class="menu-link">
+            <div>Apex Charts</div>
+            
+          </a>
+        </li>
+        <li class="menu-item active">
+          <a href="charts-chartjs.html" class="menu-link">
+            <div>ChartJS</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="maps-leaflet.html" class="menu-link">
+        <div>Leaflet</div>
+        
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+
+    <!-- Charts & Maps -->
+    <li class="menu-header text-uppercase small fw-medium">Others</li>
+    <li class="menu-item">
+      <a href="credits.html" class="menu-link">
+        <div>Credits</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="https://pixinvent.ticksy.com/" target="_blank" class="menu-link">
+        <div>Support</div>
+      </a>
+    </li>
+  </ul>
+</aside>
+<!-- / Menu -->
+
+        
+
+        <!-- Content wrapper -->
+        <div class="content-wrapper">
+          <!-- Content -->
+          <div class="container-xxl flex-grow-1 container-p-y">
+  <div class="row flex-xl-nowrap">
+    <div class="DocSearch-content col-12 col-xl-10 container-p-y">
+      <h2 class="mb-6 doc-page-title">ChartJS</h2>
+      <p>ChartJS is simple yet flexible JavaScript charting library for designers & developers.<br />Please refer <a href="https://www.chartjs.org/docs/latest/" target="_blank">ChartJS Documentation</a> for a full list of instructions and other options.</p>
+      <div class="alert alert-primary mt-6" role="alert">
+        <strong>Tip:</strong> To change chart colors according to your theme, Use <code>config.js</code> file to set JavaScript global variables (colors) which are used in charts.
+        <a href="config.html#global-variables">Read more</a>
+      </div>
+      <hr class="my-12" />
+
+      <!-- Usage -->
+      <div class="row">
+        <div class="col-12">
+          <h4 class="anchor-heading fw-bold mb-6" id="usage">Usage</h4>
+          <p class="mt-6">Include the following vendors script in the "Vendors JS" area from the page's footer:</p>
+          <div class="doc-example">
+            <div class="doc-example-content" data-label="Code">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;script src=&quot;../../assets/vendor/libs/chartjs/chartjs.js&quot;&gt;&lt;script&gt;</code></pre>
+            </div>
+          </div>
+          <div class="alert alert-info mt-6" role="alert"><strong>Note:</strong> Use below files and <code>custom-legend</code> class while using legends.</div>
+          <p class="mt-6">Include the following script in the "Page JS" area.</p>
+          <div class="doc-example">
+            <div class="doc-example-content" data-label="Code">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;script src=&quot;../../assets/js/charts-chartjs-legend.js&quot;&gt;&lt;/script&gt;</code></pre>
+            </div>
+          </div>
+          <p class="mt-6">Include the following stylesheet in the "Vendors css" area.</p>
+          <div class="doc-example">
+            <div class="doc-example-content" data-label="Code">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;link rel=&quot;stylesheet&quot; href=&quot;../../assets/vendor/libs/chartjs/chartjs.css&quot; /&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Usage -->
+
+      <div class="row">
+        <!-- Bar Chart-->
+        <div class="col-12">
+          <h4 id="bar-chart-ex" class="anchor-heading mt-12 mb-6 fw-bold">Bar Chart</h4>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="barExample-preview-tab" data-bs-toggle="tab" data-bs-target="#barExample-preview" role="tab" aria-controls="barExample-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="barExample-html-tab" data-bs-toggle="tab" data-bs-target="#barExample-html" role="tab" aria-controls="barExample-html" aria-selected="false">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="barExample-js-tab" data-bs-toggle="tab" data-bs-target="#barExample-js" role="tab" aria-controls="barExample-js" aria-selected="false">JS</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="barExample-preview" role="tabpanel" aria-labelledby="barExample-preview-tab">
+                <div class="card">
+                  <div class="card-header header-elements p-4 my-n1">
+                    <h5 class="card-title mb-0 pl-0 pl-sm-2 p-2">Latest Statistics</h5>
+                    <div class="card-action-element ms-auto py-0">
+                      <div class="dropdown">
+                        <button type="button" class="btn dropdown-toggle p-0" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="icon-base ti tabler-calendar"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                          <li>
+                            <a href="javascript:void(0);" class="dropdown-item d-flex align-items-center">Today</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" class="dropdown-item d-flex align-items-center">Yesterday</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" class="dropdown-item d-flex align-items-center">Last 7 Days</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" class="dropdown-item d-flex align-items-center">Last 30 Days</a>
+                          </li>
+                          <li>
+                            <hr class="dropdown-divider" />
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" class="dropdown-item d-flex align-items-center">Current Month</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" class="dropdown-item d-flex align-items-center">Last Month</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <canvas id="barChart" class="chartjs" data-height="400"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="barExample-html" role="tabpanel" aria-labelledby="barExample-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;card&quot;&gt;&#13;&#10;&lt;div class=&quot;card-header header-elements p-4 my-n1&quot;&gt;&#13;&#10;  &lt;h5 class=&quot;card-title mb-0 pl-0 pl-sm-2 p-2&quot;&gt;Latest Statistics&lt;/h5&gt;&#13;&#10;  &lt;div class=&quot;card-action-element ms-auto py-0&quot;&gt;&#13;&#10;    &lt;div class=&quot;dropdown&quot;&gt;&#13;&#10;      &lt;button type=&quot;button&quot; class=&quot;btn dropdown-toggle p-0&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;&lt;i class=&quot;icon-base ti tabler-calendar&quot;&gt;&lt;/i&gt;&lt;/button&gt;&#13;&#10;      &lt;ul class=&quot;dropdown-menu dropdown-menu-end&quot;&gt;&#13;&#10;        &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot; class=&quot;dropdown-item d-flex align-items-center&quot;&gt;Today&lt;/a&gt;&lt;/li&gt;&#13;&#10;        &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot; class=&quot;dropdown-item d-flex align-items-center&quot;&gt;Yesterday&lt;/a&gt;&lt;/li&gt;&#13;&#10;        &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot; class=&quot;dropdown-item d-flex align-items-center&quot;&gt;Last 7 Days&lt;/a&gt;&lt;/li&gt;&#13;&#10;        &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot; class=&quot;dropdown-item d-flex align-items-center&quot;&gt;Last 30 Days&lt;/a&gt;&lt;/li&gt;&#13;&#10;        &lt;li&gt;&#13;&#10;          &lt;hr class=&quot;dropdown-divider&quot;&gt;&#13;&#10;        &lt;/li&gt;&#13;&#10;        &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot; class=&quot;dropdown-item d-flex align-items-center&quot;&gt;Current Month&lt;/a&gt;&lt;/li&gt;&#13;&#10;        &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot; class=&quot;dropdown-item d-flex align-items-center&quot;&gt;Last Month&lt;/a&gt;&lt;/li&gt;&#13;&#10;      &lt;/ul&gt;&#13;&#10;    &lt;/div&gt;&#13;&#10;  &lt;/div&gt;&#13;&#10;&lt;/div&gt;&#13;&#10;&lt;div class=&quot;card-body&quot;&gt;&#13;&#10;  &lt;canvas id=&quot;barChart&quot; class=&quot;chartjs&quot; data-height=&quot;400&quot;&gt;&lt;/canvas&gt;&#13;&#10;&lt;/div&gt;&#13;&#10;&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="barExample-js" role="tabpanel" aria-labelledby="barExample-js-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="js">// Color Variableslet cardColor, headingColor, labelColor, borderColor, legendColor;&#13;&#10;&#13;&#10;if (isDarkStyle) {&#13;&#10;  cardColor = config.colors_dark.cardColor;&#13;&#10;  headingColor = config.colors_dark.headingColor;&#13;&#10;  labelColor = config.colors_dark.textMuted;&#13;&#10;  legendColor = config.colors_dark.bodyColor;&#13;&#10;  borderColor = config.colors_dark.borderColor;&#13;&#10;} else {&#13;&#10;  cardColor = config.colors.cardColor;&#13;&#10;  headingColor = config.colors.headingColor;&#13;&#10;  labelColor = config.colors.textMuted;&#13;&#10;  legendColor = config.colors.bodyColor;&#13;&#10;  borderColor = config.colors.borderColor;&#13;&#10;}&#13;&#10;const barChart = document.getElementById(&apos;barChart&apos;);&#13;&#10;if (barChart) {&#13;&#10;  const barChartVar = new Chart(barChart, {&#13;&#10;    type: &apos;bar&apos;,&#13;&#10;    data: {&#13;&#10;      labels: [&#13;&#10;        &apos;7/12&apos;,&#13;&#10;        &apos;8/12&apos;,&#13;&#10;        &apos;9/12&apos;,&#13;&#10;        &apos;10/12&apos;,&#13;&#10;        &apos;11/12&apos;,&#13;&#10;        &apos;12/12&apos;,&#13;&#10;        &apos;13/12&apos;,&#13;&#10;        &apos;14/12&apos;,&#13;&#10;        &apos;15/12&apos;,&#13;&#10;        &apos;16/12&apos;,&#13;&#10;        &apos;17/12&apos;,&#13;&#10;        &apos;18/12&apos;,&#13;&#10;        &apos;19/12&apos;&#13;&#10;      ],&#13;&#10;      datasets: [&#13;&#10;        {&#13;&#10;          data: [275, 90, 190, 205, 125, 85, 55, 87, 127, 150, 230, 280, 190],&#13;&#10;          backgroundColor: cyanColor,&#13;&#10;          borderColor: &apos;transparent&apos;,&#13;&#10;          maxBarThickness: 15,&#13;&#10;          borderRadius: {&#13;&#10;            topRight: 15,&#13;&#10;            topLeft: 15&#13;&#10;          }&#13;&#10;        }&#13;&#10;      ]&#13;&#10;    },&#13;&#10;    options: {&#13;&#10;      responsive: true,&#13;&#10;      maintainAspectRatio: false,&#13;&#10;      animation: {&#13;&#10;        duration: 500&#13;&#10;      },&#13;&#10;      plugins: {&#13;&#10;        tooltip: {&#13;&#10;          rtl: isRtl,&#13;&#10;          backgroundColor: cardColor,&#13;&#10;          titleColor: headingColor,&#13;&#10;          bodyColor: legendColor,&#13;&#10;          borderWidth: 1,&#13;&#10;          borderColor: borderColor&#13;&#10;        },&#13;&#10;        legend: {&#13;&#10;          display: false&#13;&#10;        }&#13;&#10;      },&#13;&#10;      scales: {&#13;&#10;        x: {&#13;&#10;          grid: {&#13;&#10;            color: borderColor,&#13;&#10;            drawBorder: false,&#13;&#10;            borderColor: borderColor&#13;&#10;          },&#13;&#10;          ticks: {&#13;&#10;            color: labelColor&#13;&#10;          }&#13;&#10;        },&#13;&#10;        y: {&#13;&#10;          min: 0,&#13;&#10;          max: 400,&#13;&#10;          grid: {&#13;&#10;            color: borderColor,&#13;&#10;            drawBorder: false,&#13;&#10;            borderColor: borderColor&#13;&#10;          },&#13;&#10;          ticks: {&#13;&#10;            stepSize: 100,&#13;&#10;            color: labelColor&#13;&#10;          }&#13;&#10;        }&#13;&#10;      }&#13;&#10;    }&#13;&#10;  });&#13;&#10;}</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Bar Chart-->
+
+        <div class="col-12">
+          <hr class="my-12" />
+        </div>
+
+        <!-- Horizontal Bar Chart-->
+        <div class="col-12">
+          <h4 id="horizontal-bar-ex" class="anchor-heading mb-6 fw-bold">Horizontal Bar Chart</h4>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="horiBarExample-preview-tab" data-bs-toggle="tab" data-bs-target="#horiBarExample-preview" role="tab" aria-controls="horiBarExample-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="horiBarExample-html-tab" data-bs-toggle="tab" data-bs-target="#horiBarExample-html" role="tab" aria-controls="horiBarExample-html" aria-selected="false">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="horiBarExample-js-tab" data-bs-toggle="tab" data-bs-target="#horiBarExample-js" role="tab" aria-controls="horiBarExample-js" aria-selected="false">JS</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="horiBarExample-preview" role="tabpanel" aria-labelledby="horiBarExample-preview-tab">
+                <div class="card">
+                  <div class="card-header header-elements">
+                    <div class="ps-0 ps-sm-2 d-flex flex-column mb-2 mb-sm-0">
+                      <p class="card-subtitle text-body-secondary mb-1">Balance</p>
+                      <h5 class="card-title mb-0">$74,123</h5>
+                    </div>
+                    <div class="card-action-element ms-auto py-0">
+                      <div class="dropdown">
+                        <button type="button" class="btn dropdown-toggle p-0" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="icon-base ti tabler-calendar"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                          <li>
+                            <a href="javascript:void(0);" class="dropdown-item d-flex align-items-center">Today</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" class="dropdown-item d-flex align-items-center">Yesterday</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" class="dropdown-item d-flex align-items-center">Last 7 Days</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" class="dropdown-item d-flex align-items-center">Last 30 Days</a>
+                          </li>
+                          <li>
+                            <hr class="dropdown-divider" />
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" class="dropdown-item d-flex align-items-center">Current Month</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" class="dropdown-item d-flex align-items-center">Last Month</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <canvas id="horizontalBarChart" class="chartjs" data-height="400"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="horiBarExample-html" role="tabpanel" aria-labelledby="horiBarExample-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;card&quot;&gt;&#13;&#10;&lt;div class=&quot;card-header header-elements&quot;&gt;&#13;&#10;  &lt;div class=&quot;ps-0 ps-sm-2 d-flex flex-column mb-2 mb-sm-0&quot;&gt;&#13;&#10;    &lt;p class=&quot;card-subtitle text-body-secondary mb-1&quot;&gt;Balance&lt;/p&gt;&#13;&#10;    &lt;h5 class=&quot;card-title mb-0&quot;&gt;$74,123&lt;/h5&gt;&#13;&#10;  &lt;/div&gt;&#13;&#10;  &lt;div class=&quot;card-action-element ms-auto py-0&quot;&gt;&#13;&#10;    &lt;div class=&quot;dropdown&quot;&gt;&#13;&#10;      &lt;button type=&quot;button&quot; class=&quot;btn dropdown-toggle p-0&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;&lt;i class=&quot;icon-base ti tabler-calendar&quot;&gt;&lt;/i&gt;&lt;/button&gt;&#13;&#10;      &lt;ul class=&quot;dropdown-menu dropdown-menu-end&quot;&gt;&#13;&#10;        &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot; class=&quot;dropdown-item d-flex align-items-center&quot;&gt;Today&lt;/a&gt;&lt;/li&gt;&#13;&#10;        &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot; class=&quot;dropdown-item d-flex align-items-center&quot;&gt;Yesterday&lt;/a&gt;&lt;/li&gt;&#13;&#10;        &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot; class=&quot;dropdown-item d-flex align-items-center&quot;&gt;Last 7 Days&lt;/a&gt;&lt;/li&gt;&#13;&#10;        &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot; class=&quot;dropdown-item d-flex align-items-center&quot;&gt;Last 30 Days&lt;/a&gt;&lt;/li&gt;&#13;&#10;        &lt;li&gt;&#13;&#10;          &lt;hr class=&quot;dropdown-divider&quot;&gt;&#13;&#10;        &lt;/li&gt;&#13;&#10;        &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot; class=&quot;dropdown-item d-flex align-items-center&quot;&gt;Current Month&lt;/a&gt;&lt;/li&gt;&#13;&#10;        &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot; class=&quot;dropdown-item d-flex align-items-center&quot;&gt;Last Month&lt;/a&gt;&lt;/li&gt;&#13;&#10;      &lt;/ul&gt;&#13;&#10;    &lt;/div&gt;&#13;&#10;  &lt;/div&gt;&#13;&#10;&lt;/div&gt;&#13;&#10;&lt;div class=&quot;card-body&quot;&gt;&#13;&#10;  &lt;canvas id=&quot;horizontalBarChart&quot; class=&quot;chartjs&quot; data-height=&quot;400&quot;&gt;&lt;/canvas&gt;&#13;&#10;&lt;/div&gt;&#13;&#10;&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="horiBarExample-js" role="tabpanel" aria-labelledby="horiBarExample-js-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="js">// Color Variables&#13;&#10;let cardColor, headingColor, labelColor, borderColor, legendColor;&#13;&#10;&#13;&#10;if (isDarkStyle) {&#13;&#10;  cardColor = config.colors_dark.cardColor;&#13;&#10;  headingColor = config.colors_dark.headingColor;&#13;&#10;  labelColor = config.colors_dark.textMuted;&#13;&#10;  legendColor = config.colors_dark.bodyColor;&#13;&#10;  borderColor = config.colors_dark.borderColor;&#13;&#10;} else {&#13;&#10;  cardColor = config.colors.cardColor;&#13;&#10;  headingColor = config.colors.headingColor;&#13;&#10;  labelColor = config.colors.textMuted;&#13;&#10;  legendColor = config.colors.bodyColor;&#13;&#10;  borderColor = config.colors.borderColor;&#13;&#10;}&#13;&#10;&#13;&#10;const horizontalBarChart = document.getElementById(&apos;horizontalBarChart&apos;);&#13;&#10;if (horizontalBarChart) {&#13;&#10;  const horizontalBarChartVar = new Chart(horizontalBarChart, {&#13;&#10;    type: &apos;bar&apos;,&#13;&#10;    data: {&#13;&#10;      labels: [&apos;MON&apos;, &apos;TUE&apos;, &apos;WED &apos;, &apos;THU&apos;, &apos;FRI&apos;, &apos;SAT&apos;, &apos;SUN&apos;],&#13;&#10;      datasets: [&#13;&#10;        {&#13;&#10;          data: [710, 350, 470, 580, 230, 460, 120],&#13;&#10;          backgroundColor: config.colors.info,&#13;&#10;          borderColor: &apos;transparent&apos;,&#13;&#10;          maxBarThickness: 15&#13;&#10;        }&#13;&#10;      ]&#13;&#10;    },&#13;&#10;    options: {&#13;&#10;      indexAxis: &apos;y&apos;,&#13;&#10;      responsive: true,&#13;&#10;      maintainAspectRatio: false,&#13;&#10;      animation: {&#13;&#10;        duration: 500&#13;&#10;      },&#13;&#10;      elements: {&#13;&#10;        bar: {&#13;&#10;          borderRadius: {&#13;&#10;            topRight: 15,&#13;&#10;            bottomRight: 15&#13;&#10;          }&#13;&#10;        }&#13;&#10;      },&#13;&#10;      plugins: {&#13;&#10;        tooltip: {&#13;&#10;          rtl: isRtl,&#13;&#10;          backgroundColor: cardColor,&#13;&#10;          titleColor: headingColor,&#13;&#10;          bodyColor: legendColor,&#13;&#10;          borderWidth: 1,&#13;&#10;          borderColor: borderColor&#13;&#10;        },&#13;&#10;        legend: {&#13;&#10;          display: false&#13;&#10;        }&#13;&#10;      },&#13;&#10;      scales: {&#13;&#10;        x: {&#13;&#10;          min: 0,&#13;&#10;          grid: {&#13;&#10;            color: borderColor,&#13;&#10;            borderColor: borderColor&#13;&#10;          },&#13;&#10;          ticks: {&#13;&#10;            color: labelColor&#13;&#10;          }&#13;&#10;        },&#13;&#10;        y: {&#13;&#10;          grid: {&#13;&#10;            borderColor: borderColor,&#13;&#10;            display: false,&#13;&#10;            drawBorder: false&#13;&#10;          },&#13;&#10;          ticks: {&#13;&#10;            color: labelColor&#13;&#10;          }&#13;&#10;        }&#13;&#10;      }&#13;&#10;    }&#13;&#10;  });&#13;&#10;}</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Horizontal Bar Chart-->
+
+        <div class="col-12">
+          <hr class="my-12" />
+        </div>
+
+        <!-- Line Chart-->
+        <div class="col-12">
+          <h4 id="line-chart-ex" class="anchor-heading mb-6 fw-bold">Line Chart</h4>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="lineExample-preview-tab" data-bs-toggle="tab" data-bs-target="#lineExample-preview" role="tab" aria-controls="lineExample-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="lineExample-html-tab" data-bs-toggle="tab" data-bs-target="#lineExample-html" role="tab" aria-controls="lineExample-html" aria-selected="false">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="lineExample-js-tab" data-bs-toggle="tab" data-bs-target="#lineExample-js" role="tab" aria-controls="lineExample-js" aria-selected="false">JS</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="lineExample-preview" role="tabpanel" aria-labelledby="lineExample-preview-tab">
+                <div class="card">
+                  <div class="card-header header-elements">
+                    <div>
+                      <h5 class="card-title mb-0">Statistics</h5>
+                      <small class="text-body-secondary">Commercial networks and enterprises</small>
+                    </div>
+                    <div class="card-header-elements ms-auto py-0">
+                      <h5 class="mb-0 me-4">$ 78,000</h5>
+                      <span class="badge bg-label-secondary">
+                        <i class="icon-base ti tabler-arrow-up icon-xs text-success"></i>
+                        <span class="align-middle">37%</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="card-body pt-2">
+                    <div id="legendContainer" class="custom-legend"></div>
+                    <div>
+                      <canvas id="lineChart" class="chartjs" data-height="500"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="lineExample-html" role="tabpanel" aria-labelledby="lineExample-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;card&quot;&gt;&#10;  &lt;div class=&quot;card-header header-elements&quot;&gt;&#10;    &lt;div&gt;&#10;      &lt;h5 class=&quot;card-title mb-0&quot;&gt;Statistics&lt;/h5&gt;&#10;      &lt;small class=&quot;text-body-secondary&quot;&gt;Commercial networks and enterprises&lt;/small&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;card-header-elements ms-auto py-0&quot;&gt;&#10;      &lt;h5 class=&quot;mb-0 me-4&quot;&gt;$ 78,000&lt;/h5&gt;&#10;      &lt;span class=&quot;badge bg-label-secondary&quot;&gt;&#10;        &lt;i class=&apos;icon-base ti tabler-arrow-up icon-xs text-success&apos;&gt;&lt;/i&gt;&#10;        &lt;span class=&quot;align-middle&quot;&gt;37%&lt;/span&gt;&#10;      &lt;/span&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;card-body pt-2&quot;&gt;&#10;    &lt;div id=&quot;legendContainer&quot; class=&quot;custom-legend&quot;&gt;&lt;/div&gt;&#10;    &lt;div&gt;&#10;      &lt;canvas id=&quot;lineChart&quot; class=&quot;chartjs&quot; data-height=&quot;500&quot;&gt;&lt;/canvas&gt;&#10;    &lt;/div&gt;&#10;    &lt;/div&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="lineExample-js" role="tabpanel" aria-labelledby="lineExample-js-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="js">// Color Variables&#13;&#10;const yellowColor = &apos;#ffe800&apos;5&#13;&#10;let borderColor, gridColor, tickColor;&#13;&#10;if (isDarkStyle) {&#13;&#10;  borderColor = &apos;rgba(100, 100, 100, 1)&apos;;&#13;&#10;  gridColor = &apos;rgba(100, 100, 100, 1)&apos;;&#13;&#10;  tickColor = &apos;rgba(255, 255, 255, 0.75)&apos;; // x &amp; y axis tick color&#13;&#10;} else {&#13;&#10;  borderColor = &apos;#f0f0f0&apos;;&#13;&#10;  gridColor = &apos;#f0f0f0&apos;;&#13;&#10;  tickColor = &apos;rgba(0, 0, 0, 0.75)&apos;; // x &amp; y axis tick color&#13;&#10;}&#13;&#10;const lineChart = document.getElementById(&apos;lineChart&apos;);&#13;&#10;if (lineChart) {&#13;&#10;  const lineChartVar = new Chart(lineChart, {&#13;&#10;    type: &apos;line&apos;,&#13;&#10;    data: {&#13;&#10;      labels: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140],&#13;&#10;      datasets: [&#13;&#10;        {&#13;&#10;          data: [80, 150, 180, 270, 210, 160, 160, 202, 265, 210, 270, 255, 290, 360, 375],&#13;&#10;          label: &apos;Europe&apos;,&#13;&#10;          borderColor: config.colors.danger,&#13;&#10;          tension: 0.5,&#13;&#10;          pointStyle: &apos;circle&apos;,&#13;&#10;          backgroundColor: config.colors.danger,&#13;&#10;          fill: false,&#13;&#10;          pointRadius: 1,&#13;&#10;          pointHoverRadius: 5,&#13;&#10;          pointHoverBorderWidth: 5,&#13;&#10;          pointBorderColor: &apos;transparent&apos;,&#13;&#10;          pointHoverBorderColor: cardColor,&#13;&#10;          pointHoverBackgroundColor: config.colors.danger&#13;&#10;        },&#13;&#10;        {&#13;&#10;          data: [80, 125, 105, 130, 215, 195, 140, 160, 230, 300, 220, 170, 210, 200, 280],&#13;&#10;          label: &apos;Asia&apos;,&#13;&#10;          borderColor: config.colors.primary,&#13;&#10;          tension: 0.5,&#13;&#10;          pointStyle: &apos;circle&apos;,&#13;&#10;          backgroundColor: config.colors.primary,&#13;&#10;          fill: false,&#13;&#10;          pointRadius: 1,&#13;&#10;          pointHoverRadius: 5,&#13;&#10;          pointHoverBorderWidth: 5,&#13;&#10;          pointBorderColor: &apos;transparent&apos;,&#13;&#10;          pointHoverBorderColor: cardColor,&#13;&#10;          pointHoverBackgroundColor: config.colors.primary&#13;&#10;        },&#13;&#10;        {&#13;&#10;          data: [80, 99, 82, 90, 115, 115, 74, 75, 130, 155, 125, 90, 140, 130, 180],&#13;&#10;          label: &apos;Africa&apos;,&#13;&#10;          borderColor: yellowColor,&#13;&#10;          tension: 0.5,&#13;&#10;          pointStyle: &apos;circle&apos;,&#13;&#10;          backgroundColor: yellowColor,&#13;&#10;          fill: false,&#13;&#10;          pointRadius: 1,&#13;&#10;          pointHoverRadius: 5,&#13;&#10;          pointHoverBorderWidth: 5,&#13;&#10;          pointBorderColor: &apos;transparent&apos;,&#13;&#10;          pointHoverBorderColor: cardColor,&#13;&#10;          pointHoverBackgroundColor: yellowColor&#13;&#10;        }&#13;&#10;      ]&#13;&#10;    },&#13;&#10;    options: {&#13;&#10;      responsive: true,&#13;&#10;      maintainAspectRatio: false,&#13;&#10;      scales: {&#13;&#10;        x: {&#13;&#10;          grid: {&#13;&#10;            color: borderColor,&#13;&#10;            drawBorder: false,&#13;&#10;            borderColor: borderColor&#13;&#10;          },&#13;&#10;          ticks: {&#13;&#10;            color: labelColor&#13;&#10;          }&#13;&#10;        },&#13;&#10;        y: {&#13;&#10;          scaleLabel: {&#13;&#10;            display: true&#13;&#10;          },&#13;&#10;          min: 0,&#13;&#10;          max: 400,&#13;&#10;          ticks: {&#13;&#10;            color: labelColor,&#13;&#10;            stepSize: 100&#13;&#10;          },&#13;&#10;          grid: {&#13;&#10;            color: borderColor,&#13;&#10;            drawBorder: false,&#13;&#10;            borderColor: borderColor&#13;&#10;          }&#13;&#10;        }&#13;&#10;      },&#13;&#10;      plugins: {&#13;&#10;        tooltip: {&#13;&#10;          // Updated default tooltip UI&#13;&#10;          rtl: isRtl,&#13;&#10;          backgroundColor: cardColor,&#13;&#10;          titleColor: headingColor,&#13;&#10;          bodyColor: legendColor,&#13;&#10;          borderWidth: 1,&#13;&#10;          borderColor: borderColor&#13;&#10;        },&#13;&#10;        legend: {&#13;&#10;          position: &apos;top&apos;,&#13;&#10;          align: &apos;start&apos;,&#13;&#10;          rtl: isRtl,&#13;&#10;          labels: {&#13;&#10;            usePointStyle: true,&#13;&#10;            padding: 35,&#13;&#10;            boxWidth: 6,&#13;&#10;            boxHeight: 6,&#13;&#10;            color: legendColor&#13;&#10;          }&#13;&#10;        }&#13;&#10;      }&#13;&#10;    }&#13;&#10;  });&#13;&#10;}</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Line Chart-->
+
+        <div class="col-12">
+          <hr class="my-12" />
+        </div>
+
+        <!-- Radar Chart-->
+        <div class="col-12">
+          <h4 id="radar-chart-ex" class="anchor-heading mb-6 fw-bold">Radar Chart</h4>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="radarExample-preview-tab" data-bs-toggle="tab" data-bs-target="#radarExample-preview" role="tab" aria-controls="radarExample-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="radarExample-html-tab" data-bs-toggle="tab" data-bs-target="#radarExample-html" role="tab" aria-controls="radarExample-html" aria-selected="false">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="radarExample-js-tab" data-bs-toggle="tab" data-bs-target="#radarExample-js" role="tab" aria-controls="radarExample-js" aria-selected="false">JS</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="radarExample-preview" role="tabpanel" aria-labelledby="radarExample-preview-tab">
+                <div class="card">
+                  <div class="card-header">
+                    <h5 class="card-title mb-0">Radar Chart</h5>
+                  </div>
+                  <div class="card-body pt-2">
+                    <canvas class="chartjs" id="radarChart" data-height="355"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="radarExample-html" role="tabpanel" aria-labelledby="radarExample-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre class="docs-code"><code class="html">&lt;div class=&quot;card&quot;&gt;&#13;&#10;  &lt;div class=&quot;card-header&quot;&gt;&#13;&#10;    &lt;h5 class=&quot;card-title mb-0&quot;&gt;Radar Chart&lt;/h5&gt;&#13;&#10;  &lt;/div&gt;&#13;&#10;  &lt;div class=&quot;card-body pt-2&quot;&gt;&#13;&#10;    &lt;canvas class=&quot;chartjs&quot; id=&quot;radarChart&quot; data-height=&quot;355&quot;&gt;&lt;/canvas&gt;&#13;&#10;  &lt;/div&gt;&#13;&#10;&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="radarExample-js" role="tabpanel" aria-labelledby="radarExample-js-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="js">// Color Variables&#13;&#10;let cardColor, headingColor, labelColor, borderColor, legendColor;&#13;&#10;&#13;&#10;if (isDarkStyle) {&#13;&#10;  cardColor = config.colors_dark.cardColor;&#13;&#10;  headingColor = config.colors_dark.headingColor;&#13;&#10;  labelColor = config.colors_dark.textMuted;&#13;&#10;  legendColor = config.colors_dark.bodyColor;&#13;&#10;  borderColor = config.colors_dark.borderColor;&#13;&#10;} else {&#13;&#10;  cardColor = config.colors.cardColor;&#13;&#10;  headingColor = config.colors.headingColor;&#13;&#10;  labelColor = config.colors.textMuted;&#13;&#10;  legendColor = config.colors.bodyColor;&#13;&#10;  borderColor = config.colors.borderColor;&#13;&#10;}&#13;&#10;const radarChart = document.getElementById(&apos;radarChart&apos;);&#13;&#10;if (radarChart) {&#13;&#10;  // For radar gradient color&#13;&#10;  const gradientBlue = radarChart.getContext(&apos;2d&apos;).createLinearGradient(0, 0, 0, 150);&#13;&#10;  gradientBlue.addColorStop(0, &apos;rgba(85, 85, 255, 0.9)&apos;);&#13;&#10;  gradientBlue.addColorStop(1, &apos;rgba(151, 135, 255, 0.8)&apos;);&#13;&#10;&#13;&#10;  const gradientRed = radarChart.getContext(&apos;2d&apos;).createLinearGradient(0, 0, 0, 150);&#13;&#10;  gradientRed.addColorStop(0, &apos;rgba(255, 85, 184, 0.9)&apos;);&#13;&#10;  gradientRed.addColorStop(1, &apos;rgba(255, 135, 135, 0.8)&apos;);&#13;&#10;&#13;&#10;  const radarChartVar = new Chart(radarChart, {&#13;&#10;    type: &apos;radar&apos;,&#13;&#10;    data: {&#13;&#10;      labels: [&apos;STA&apos;, &apos;STR&apos;, &apos;AGI&apos;, &apos;VIT&apos;, &apos;CHA&apos;, &apos;INT&apos;],&#13;&#10;      datasets: [&#13;&#10;        {&#13;&#10;          label: &apos;Dont&eacute; Panlin&apos;,&#13;&#10;          data: [25, 59, 90, 81, 60, 82],&#13;&#10;          fill: true,&#13;&#10;          pointStyle: &apos;dash&apos;,&#13;&#10;          backgroundColor: gradientRed,&#13;&#10;          borderColor: &apos;transparent&apos;,&#13;&#10;          pointBorderColor: &apos;transparent&apos;&#13;&#10;        },&#13;&#10;        {&#13;&#10;          label: &apos;Mireska Sunbreeze&apos;,&#13;&#10;          data: [40, 100, 40, 90, 40, 90],&#13;&#10;          fill: true,&#13;&#10;          pointStyle: &apos;dash&apos;,&#13;&#10;          backgroundColor: gradientBlue,&#13;&#10;          borderColor: &apos;transparent&apos;,&#13;&#10;          pointBorderColor: &apos;transparent&apos;&#13;&#10;        }&#13;&#10;      ]&#13;&#10;    },&#13;&#10;    options: {&#13;&#10;      responsive: true,&#13;&#10;      maintainAspectRatio: false,&#13;&#10;      animation: {&#13;&#10;        duration: 500&#13;&#10;      },&#13;&#10;      scales: {&#13;&#10;        r: {&#13;&#10;          ticks: {&#13;&#10;            maxTicksLimit: 1,&#13;&#10;            display: false,&#13;&#10;            color: labelColor&#13;&#10;          },&#13;&#10;          grid: {&#13;&#10;            color: borderColor&#13;&#10;          },&#13;&#10;          angleLines: { color: borderColor },&#13;&#10;          pointLabels: {&#13;&#10;            color: labelColor&#13;&#10;          }&#13;&#10;        }&#13;&#10;      },&#13;&#10;      plugins: {&#13;&#10;        legend: {&#13;&#10;          rtl: isRtl,&#13;&#10;          position: &apos;top&apos;,&#13;&#10;          labels: {&#13;&#10;            padding: 25,&#13;&#10;            color: legendColor&#13;&#10;          }&#13;&#10;        },&#13;&#10;        tooltip: {&#13;&#10;          // Updated default tooltip UI&#13;&#10;          rtl: isRtl,&#13;&#10;          backgroundColor: cardColor,&#13;&#10;          titleColor: headingColor,&#13;&#10;          bodyColor: legendColor,&#13;&#10;          borderWidth: 1,&#13;&#10;          borderColor: borderColor&#13;&#10;        }&#13;&#10;      }&#13;&#10;    }&#13;&#10;  });&#13;&#10;}</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Radar Chart-->
+
+        <div class="col-12">
+          <hr class="my-12" />
+        </div>
+
+        <!-- Polar Chart-->
+        <div class="col-12">
+          <h4 id="polar-chart-ex" class="anchor-heading mb-6 fw-bold">Polar Chart</h4>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="polarExample-preview-tab" data-bs-toggle="tab" data-bs-target="#polarExample-preview" role="tab" aria-controls="polarExample-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="polarExample-html-tab" data-bs-toggle="tab" data-bs-target="#polarExample-html" role="tab" aria-controls="polarExample-html" aria-selected="false">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="polarExample-js-tab" data-bs-toggle="tab" data-bs-target="#polarExample-js" role="tab" aria-controls="polarExample-js" aria-selected="false">JS</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="polarExample-preview" role="tabpanel" aria-labelledby="polarExample-preview-tab">
+                <div class="card">
+                  <div class="card-header header-elements">
+                    <h5 class="card-title mb-0">Average Skills</h5>
+                    <div class="card-header-elements ms-auto py-0 dropdown">
+                      <button type="button" class="btn dropdown-toggle hide-arrow p-0" id="heat-chart-dd" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="icon-base ti tabler-dots-vertical"></i>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="heat-chart-dd">
+                        <a class="dropdown-item" href="javascript:void(0);">Last 28 Days</a>
+                        <a class="dropdown-item" href="javascript:void(0);">Last Month</a>
+                        <a class="dropdown-item" href="javascript:void(0);">Last Year</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <canvas id="polarChart" class="chartjs" data-height="337"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="polarExample-html" role="tabpanel" aria-labelledby="polarExample-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;card&quot;&gt;&#13;&#10;  &lt;div class=&quot;card-header header-elements&quot;&gt;&#13;&#10;    &lt;h5 class=&quot;card-title mb-0&quot;&gt;Average Skills&lt;/h5&gt;&#13;&#10;    &lt;div class=&quot;card-header-elements ms-auto py-0 dropdown&quot;&gt;&#13;&#10;      &lt;button type=&quot;button&quot; class=&quot;btn dropdown-toggle hide-arrow p-0&quot; id=&quot;heat-chart-dd&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;&lt;i class=&quot;icon-base ti tabler-dots-vertical&quot;&gt;&lt;/i&gt;&lt;/button&gt;&#13;&#10;      &lt;div class=&quot;dropdown-menu dropdown-menu-end&quot; aria-labelledby=&quot;heat-chart-dd&quot;&gt;&#13;&#10;        &lt;a class=&quot;dropdown-item&quot; href=&quot;javascript:void(0);&quot;&gt;Last 28 Days&lt;/a&gt;&#13;&#10;        &lt;a class=&quot;dropdown-item&quot; href=&quot;javascript:void(0);&quot;&gt;Last Month&lt;/a&gt;&#13;&#10;        &lt;a class=&quot;dropdown-item&quot; href=&quot;javascript:void(0);&quot;&gt;Last Year&lt;/a&gt;&#13;&#10;      &lt;/div&gt;&#13;&#10;    &lt;/div&gt;&#13;&#10;  &lt;/div&gt;&#13;&#10;  &lt;div class=&quot;card-body&quot;&gt;&#13;&#10;    &lt;canvas id=&quot;polarChart&quot; class=&quot;chartjs&quot; data-height=&quot;337&quot;&gt;&lt;/canvas&gt;&#13;&#10;  &lt;/div&gt;&#13;&#10;&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="polarExample-js" role="tabpanel" aria-labelledby="polarExample-js-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="js">// Color Variables&#13;&#10;const purpleColor = &apos;#836AF9&apos;,&#13;&#10;  yellowColor = &apos;#ffe800&apos;,&#13;&#10;  cyanColor = &apos;#28dac6&apos;,&#13;&#10;  orangeColor = &apos;#FF8132&apos;,&#13;&#10;  oceanBlueColor = &apos;#299AFF&apos;,&#13;&#10;  greyColor = &apos;#4F5D70&apos;;&#13;&#10;let cardColor, headingColor, labelColor, borderColor, legendColor;&#13;&#10;&#13;&#10;if (isDarkStyle) {&#13;&#10;  cardColor = config.colors_dark.cardColor;&#13;&#10;  headingColor = config.colors_dark.headingColor;&#13;&#10;  labelColor = config.colors_dark.textMuted;&#13;&#10;  legendColor = config.colors_dark.bodyColor;&#13;&#10;  borderColor = config.colors_dark.borderColor;&#13;&#10;} else {&#13;&#10;  cardColor = config.colors.cardColor;&#13;&#10;  headingColor = config.colors.headingColor;&#13;&#10;  labelColor = config.colors.textMuted;&#13;&#10;  legendColor = config.colors.bodyColor;&#13;&#10;  borderColor = config.colors.borderColor;&#13;&#10;}&#13;&#10;const polarChart = document.getElementById(&apos;polarChart&apos;);&#13;&#10;if (polarChart) {&#13;&#10;  const polarChartVar = new Chart(polarChart, {&#13;&#10;    type: &apos;polarArea&apos;,&#13;&#10;    data: {&#13;&#10;      labels: [&apos;Africa&apos;, &apos;Asia&apos;, &apos;Europe&apos;, &apos;America&apos;, &apos;Antarctica&apos;, &apos;Australia&apos;],&#13;&#10;      datasets: [&#13;&#10;        {&#13;&#10;          label: &apos;Population (millions)&apos;,&#13;&#10;          backgroundColor: [purpleColor, yellowColor, orangeColor, oceanBlueColor, greyColor, cyanColor],&#13;&#10;          data: [19, 17.5, 15, 13.5, 11, 9],&#13;&#10;          borderWidth: 0&#13;&#10;        }&#13;&#10;      ]&#13;&#10;    },&#13;&#10;    options: {&#13;&#10;      responsive: true,&#13;&#10;      maintainAspectRatio: false,&#13;&#10;      animation: {&#13;&#10;        duration: 500&#13;&#10;      },&#13;&#10;      scales: {&#13;&#10;        r: {&#13;&#10;          ticks: {&#13;&#10;            display: false,&#13;&#10;            color: labelColor&#13;&#10;          },&#13;&#10;          grid: {&#13;&#10;            display: false&#13;&#10;          }&#13;&#10;        }&#13;&#10;      },&#13;&#10;      plugins: {&#13;&#10;        tooltip: {&#13;&#10;          // Updated default tooltip UI&#13;&#10;          rtl: isRtl,&#13;&#10;          backgroundColor: cardColor,&#13;&#10;          titleColor: headingColor,&#13;&#10;          bodyColor: legendColor,&#13;&#10;          borderWidth: 1,&#13;&#10;          borderColor: borderColor&#13;&#10;        },&#13;&#10;        legend: {&#13;&#10;          rtl: isRtl,&#13;&#10;          position: &apos;right&apos;,&#13;&#10;          labels: {&#13;&#10;            usePointStyle: true,&#13;&#10;            padding: 25,&#13;&#10;            boxWidth: 8,&#13;&#10;            boxHeight: 8,&#13;&#10;            color: legendColor&#13;&#10;          }&#13;&#10;        }&#13;&#10;      }&#13;&#10;    }&#13;&#10;  });&#13;&#10;}</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Polar Chart-->
+
+        <div class="col-12">
+          <hr class="my-12" />
+        </div>
+
+        <!-- Bubble Chart-->
+        <div class="col-12">
+          <h4 id="bubble-chart-ex" class="anchor-heading mb-6 fw-bold">Bubble Chart</h4>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="bubbleExample-preview-tab" data-bs-toggle="tab" data-bs-target="#bubbleExample-preview" role="tab" aria-controls="bubbleExample-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="bubbleExample-html-tab" data-bs-toggle="tab" data-bs-target="#bubbleExample-html" role="tab" aria-controls="bubbleExample-html" aria-selected="false">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="bubbleExample-js-tab" data-bs-toggle="tab" data-bs-target="#bubbleExample-js" role="tab" aria-controls="bubbleExample-js" aria-selected="false">JS</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="bubbleExample-preview" role="tabpanel" aria-labelledby="bubbleExample-preview-tab">
+                <div class="card">
+                  <div class="card-header header-elements">
+                    <h5 class="card-title mb-0">Bubble Chart</h5>
+                    <div class="card-header-elements ms-auto py-0">
+                      <h5 class="mb-0 me-4">$ 100,000</h5>
+                      <span class="badge bg-label-secondary">
+                        <i class="icon-base ti tabler-arrow-down icon-xs text-danger"></i>
+                        <span class="align-middle">20%</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <canvas id="bubbleChart" class="chartjs" data-height="500"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="bubbleExample-html" role="tabpanel" aria-labelledby="bubbleExample-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;card&quot;&gt;&#13;&#10;  &lt;div class=&quot;card-header header-elements&quot;&gt;&#13;&#10;    &lt;h5 class=&quot;card-title mb-0&quot;&gt;Bubble Chart&lt;/h5&gt;&#13;&#10;    &lt;div class=&quot;card-header-elements ms-auto py-0&quot;&gt;&#13;&#10;      &lt;h5 class=&quot;mb-0 me-4&quot;&gt;$ 100,000&lt;/h5&gt;&#13;&#10;      &lt;span class=&quot;badge bg-label-secondary&quot;&gt;&#13;&#10;        &lt;i class=&apos;icon-base ti tabler-arrow-down icon-xs text-danger&apos;&gt;&lt;/i&gt;&#13;&#10;        &lt;span class=&quot;align-middle&quot;&gt;20%&lt;/span&gt;&#13;&#10;      &lt;/span&gt;&#13;&#10;    &lt;/div&gt;&#13;&#10;  &lt;/div&gt;&#13;&#10;  &lt;div class=&quot;card-body&quot;&gt;&#13;&#10;    &lt;canvas id=&quot;bubbleChart&quot; class=&quot;chartjs&quot; data-height=&quot;500&quot;&gt;&lt;/canvas&gt;&#13;&#10;  &lt;/div&gt;&#13;&#10;&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="bubbleExample-js" role="tabpanel" aria-labelledby="bubbleExample-js-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="js">// Color Variables&#13;&#10;const purpleColor = &apos;#836AF9&apos;,&#13;&#10;  yellowColor = &apos;#ffe800&apos;;&#13;&#10;let cardColor, headingColor, labelColor, borderColor, legendColor;&#13;&#10;&#13;&#10;if (isDarkStyle) {&#13;&#10;  cardColor = config.colors_dark.cardColor;&#13;&#10;  headingColor = config.colors_dark.headingColor;&#13;&#10;  labelColor = config.colors_dark.textMuted;&#13;&#10;  legendColor = config.colors_dark.bodyColor;&#13;&#10;  borderColor = config.colors_dark.borderColor;&#13;&#10;} else {&#13;&#10;  cardColor = config.colors.cardColor;&#13;&#10;  headingColor = config.colors.headingColor;&#13;&#10;  labelColor = config.colors.textMuted;&#13;&#10;  legendColor = config.colors.bodyColor;&#13;&#10;  borderColor = config.colors.borderColor;&#13;&#10;}&#13;&#10;const bubbleChart = document.getElementById(&apos;bubbleChart&apos;);&#13;&#10;if (bubbleChart) {&#13;&#10;  const bubbleChartVar = new Chart(bubbleChart, {&#13;&#10;    type: &apos;bubble&apos;,&#13;&#10;    data: {&#13;&#10;      animation: {&#13;&#10;        duration: 10000&#13;&#10;      },&#13;&#10;      datasets: [&#13;&#10;        {&#13;&#10;          label: &apos;Dataset 1&apos;,&#13;&#10;          backgroundColor: purpleColor,&#13;&#10;          borderColor: purpleColor,&#13;&#10;          data: [&#13;&#10;            {&#13;&#10;              x: 20,&#13;&#10;              y: 74,&#13;&#10;              r: 10&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 10,&#13;&#10;              y: 110,&#13;&#10;              r: 5&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 30,&#13;&#10;              y: 165,&#13;&#10;              r: 7&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 40,&#13;&#10;              y: 200,&#13;&#10;              r: 20&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 90,&#13;&#10;              y: 185,&#13;&#10;              r: 7&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 50,&#13;&#10;              y: 240,&#13;&#10;              r: 7&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 60,&#13;&#10;              y: 275,&#13;&#10;              r: 10&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 70,&#13;&#10;              y: 305,&#13;&#10;              r: 5&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 80,&#13;&#10;              y: 325,&#13;&#10;              r: 4&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 100,&#13;&#10;              y: 310,&#13;&#10;              r: 5&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 110,&#13;&#10;              y: 240,&#13;&#10;              r: 5&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 120,&#13;&#10;              y: 270,&#13;&#10;              r: 7&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 130,&#13;&#10;              y: 300,&#13;&#10;              r: 6&#13;&#10;            }&#13;&#10;          ]&#13;&#10;        },&#13;&#10;        {&#13;&#10;          label: &apos;Dataset 2&apos;,&#13;&#10;          backgroundColor: yellowColor,&#13;&#10;          borderColor: yellowColor,&#13;&#10;          data: [&#13;&#10;            {&#13;&#10;              x: 30,&#13;&#10;              y: 72,&#13;&#10;              r: 5&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 40,&#13;&#10;              y: 110,&#13;&#10;              r: 7&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 20,&#13;&#10;              y: 135,&#13;&#10;              r: 6&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 10,&#13;&#10;              y: 160,&#13;&#10;              r: 12&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 50,&#13;&#10;              y: 285,&#13;&#10;              r: 5&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 60,&#13;&#10;              y: 235,&#13;&#10;              r: 5&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 70,&#13;&#10;              y: 275,&#13;&#10;              r: 7&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 80,&#13;&#10;              y: 290,&#13;&#10;              r: 4&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 90,&#13;&#10;              y: 250,&#13;&#10;              r: 10&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 100,&#13;&#10;              y: 220,&#13;&#10;              r: 7&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 120,&#13;&#10;              y: 230,&#13;&#10;              r: 4&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 110,&#13;&#10;              y: 320,&#13;&#10;              r: 15&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 130,&#13;&#10;              y: 330,&#13;&#10;              r: 7&#13;&#10;            }&#13;&#10;          ]&#13;&#10;        }&#13;&#10;      ]&#13;&#10;    },&#13;&#10;    options: {&#13;&#10;      responsive: true,&#13;&#10;      maintainAspectRatio: false,&#13;&#10;&#13;&#10;      scales: {&#13;&#10;        x: {&#13;&#10;          min: 0,&#13;&#10;          max: 140,&#13;&#10;          grid: {&#13;&#10;            color: borderColor,&#13;&#10;            drawBorder: false,&#13;&#10;            borderColor: borderColor&#13;&#10;          },&#13;&#10;          ticks: {&#13;&#10;            stepSize: 10,&#13;&#10;            color: labelColor&#13;&#10;          }&#13;&#10;        },&#13;&#10;        y: {&#13;&#10;          min: 0,&#13;&#10;          max: 400,&#13;&#10;          grid: {&#13;&#10;            color: borderColor,&#13;&#10;            drawBorder: false,&#13;&#10;            borderColor: borderColor&#13;&#10;          },&#13;&#10;          ticks: {&#13;&#10;            stepSize: 100,&#13;&#10;            color: labelColor&#13;&#10;          }&#13;&#10;        }&#13;&#10;      },&#13;&#10;      plugins: {&#13;&#10;        legend: {&#13;&#10;          display: false&#13;&#10;        },&#13;&#10;        tooltip: {&#13;&#10;          // Updated default tooltip UI&#13;&#10;          rtl: isRtl,&#13;&#10;          backgroundColor: cardColor,&#13;&#10;          titleColor: headingColor,&#13;&#10;          bodyColor: legendColor,&#13;&#10;          borderWidth: 1,&#13;&#10;          borderColor: borderColor&#13;&#10;        }&#13;&#10;      }&#13;&#10;    }&#13;&#10;  });&#13;&#10;}</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Bubble Chart-->
+
+        <div class="col-12">
+          <hr class="my-12" />
+        </div>
+
+        <!-- Doughnut Chart-->
+        <div class="col-12">
+          <h4 id="doughnut-chart-ex" class="anchor-heading mb-6 fw-bold">Doughnut Chart</h4>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="doughnutExample-preview-tab" data-bs-toggle="tab" data-bs-target="#doughnutExample-preview" role="tab" aria-controls="doughnutExample-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="doughnutExample-html-tab" data-bs-toggle="tab" data-bs-target="#doughnutExample-html" role="tab" aria-controls="doughnutExample-html" aria-selected="false">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="doughnutExample-js-tab" data-bs-toggle="tab" data-bs-target="#doughnutExample-js" role="tab" aria-controls="doughnutExample-js" aria-selected="false">JS</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="doughnutExample-preview" role="tabpanel" aria-labelledby="doughnutExample-preview-tab">
+                <div class="card col-md-6">
+                  <h5 class="card-header">User by Devices</h5>
+                  <div class="card-body">
+                    <canvas id="doughnutChart" class="chartjs" data-height="350"></canvas>
+                    <ul class="doughnut-legend d-flex justify-content-around ps-0 mb-2 mt-6 pt-1">
+                      <li class="ct-series-0 d-flex flex-column">
+                        <h5 class="mb-0">Desktop</h5>
+                        <span class="badge badge-dot my-2 cursor-pointer rounded-pill" style="background-color: rgb(102, 110, 232);width:35px; height:6px;"></span>
+                        <div class="text-body-secondary">80 %</div>
+                      </li>
+                      <li class="ct-series-1 d-flex flex-column">
+                        <h5 class="mb-0">Tablet</h5>
+                        <span class="badge badge-dot my-2 cursor-pointer rounded-pill" style="background-color: rgb(40, 208, 148);width:35px; height:6px;"></span>
+                        <div class="text-body-secondary">10 %</div>
+                      </li>
+                      <li class="ct-series-2 d-flex flex-column">
+                        <h5 class="mb-0">Mobile</h5>
+                        <span class="badge badge-dot my-2 cursor-pointer rounded-pill" style="background-color: rgb(253, 172, 52);width:35px; height:6px;"></span>
+                        <div class="text-body-secondary">10 %</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="doughnutExample-html" role="tabpanel" aria-labelledby="doughnutExample-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;card&quot;&gt;&#13;&#10;  &lt;h5 class=&quot;card-header&quot;&gt;User by Devices&lt;/h5&gt;&#13;&#10;  &lt;div class=&quot;card-body&quot;&gt;&#13;&#10;    &lt;canvas id=&quot;doughnutChart&quot; class=&quot;chartjs&quot; data-height=&quot;350&quot;&gt;&lt;/canvas&gt;&#13;&#10;    &lt;ul class=&quot;doughnut-legend d-flex justify-content-around ps-0 mb-2 mt-6 pt-1&quot;&gt;&#13;&#10;      &lt;li class=&quot;ct-series-0 d-flex flex-column&quot;&gt;&#13;&#10;        &lt;h5 class=&quot;mb-0&quot;&gt;Desktop&lt;/h5&gt;&#13;&#10;        &lt;span class=&quot;badge badge-dot my-2 cursor-pointer rounded-pill&quot; style=&quot;background-color: rgb(102, 110, 232);width:35px; height:6px;&quot;&gt;&lt;/span&gt;&#13;&#10;        &lt;div class=&quot;text-body-secondary&quot;&gt;80 %&lt;/div&gt;&#13;&#10;      &lt;/li&gt;&#13;&#10;      &lt;li class=&quot;ct-series-1 d-flex flex-column&quot;&gt;&#13;&#10;        &lt;h5 class=&quot;mb-0&quot;&gt;Tablet&lt;/h5&gt;&#13;&#10;        &lt;span class=&quot;badge badge-dot my-2 cursor-pointer rounded-pill&quot; style=&quot;background-color: rgb(40, 208, 148);width:35px; height:6px;&quot;&gt;&lt;/span&gt;&#13;&#10;        &lt;div class=&quot;text-body-secondary&quot;&gt;10 %&lt;/div&gt;&#13;&#10;      &lt;/li&gt;&#13;&#10;      &lt;li class=&quot;ct-series-2 d-flex flex-column&quot;&gt;&#13;&#10;        &lt;h5 class=&quot;mb-0&quot;&gt;Mobile&lt;/h5&gt;&#13;&#10;        &lt;span class=&quot;badge badge-dot my-2 cursor-pointer rounded-pill&quot; style=&quot;background-color: rgb(253, 172, 52);width:35px; height:6px;&quot;&gt;&lt;/span&gt;&#13;&#10;        &lt;div class=&quot;text-body-secondary&quot;&gt;10 %&lt;/div&gt;&#13;&#10;      &lt;/li&gt;&#13;&#10;    &lt;/ul&gt;&#13;&#10;  &lt;/div&gt;&#13;&#10;&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="doughnutExample-js" role="tabpanel" aria-labelledby="doughnutExample-js-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="js">// Color Variables&#13;&#10;const cyanColor = &apos;#28dac6&apos;,&#13;&#10;  orangeLightColor = &apos;#FDAC34&apos;;&#13;&#10;let cardColor, headingColor, labelColor, borderColor, legendColor;&#13;&#10;&#13;&#10;if (isDarkStyle) {&#13;&#10;  cardColor = config.colors_dark.cardColor;&#13;&#10;  headingColor = config.colors_dark.headingColor;&#13;&#10;  labelColor = config.colors_dark.textMuted;&#13;&#10;  legendColor = config.colors_dark.bodyColor;&#13;&#10;  borderColor = config.colors_dark.borderColor;&#13;&#10;} else {&#13;&#10;  cardColor = config.colors.cardColor;&#13;&#10;  headingColor = config.colors.headingColor;&#13;&#10;  labelColor = config.colors.textMuted;&#13;&#10;  legendColor = config.colors.bodyColor;&#13;&#10;  borderColor = config.colors.borderColor;&#13;&#10;}&#13;&#10;const doughnutChart = document.getElementById(&apos;doughnutChart&apos;);&#13;&#10;if (doughnutChart) {&#13;&#10;  const doughnutChartVar = new Chart(doughnutChart, {&#13;&#10;    type: &apos;doughnut&apos;,&#13;&#10;    data: {&#13;&#10;      labels: [&apos;Tablet&apos;, &apos;Mobile&apos;, &apos;Desktop&apos;],&#13;&#10;      datasets: [&#13;&#10;        {&#13;&#10;          data: [10, 10, 80],&#13;&#10;          backgroundColor: [cyanColor, orangeLightColor, config.colors.primary],&#13;&#10;          borderWidth: 0,&#13;&#10;          pointStyle: &apos;rectRounded&apos;&#13;&#10;        }&#13;&#10;      ]&#13;&#10;    },&#13;&#10;    options: {&#13;&#10;      responsive: true,&#13;&#10;      animation: {&#13;&#10;        duration: 500&#13;&#10;      },&#13;&#10;      cutout: &apos;68%&apos;,&#13;&#10;      plugins: {&#13;&#10;        legend: {&#13;&#10;          display: false&#13;&#10;        },&#13;&#10;        tooltip: {&#13;&#10;          callbacks: {&#13;&#10;            label: function (context) {&#13;&#10;              const label = context.labels || &apos;&apos;,&#13;&#10;                value = context.parsed;&#13;&#10;              const output = &apos; &apos; + label + &apos; : &apos; + value + &apos; %&apos;;&#13;&#10;              return output;&#13;&#10;            }&#13;&#10;          },&#13;&#10;          // Updated default tooltip UI&#13;&#10;          rtl: isRtl,&#13;&#10;          backgroundColor: cardColor,&#13;&#10;          titleColor: headingColor,&#13;&#10;          bodyColor: legendColor,&#13;&#10;          borderWidth: 1,&#13;&#10;          borderColor: borderColor&#13;&#10;        }&#13;&#10;      }&#13;&#10;    }&#13;&#10;  });&#13;&#10;}</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Doughnut Chart-->
+
+        <div class="col-12">
+          <hr class="my-12" />
+        </div>
+
+        <!-- Scatter Chart-->
+        <div class="col-12">
+          <h4 id="scatter-chart-ex" class="anchor-heading mb-6 fw-bold">Scatter Chart</h4>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="lineAreaExample-preview-tab" data-bs-toggle="tab" data-bs-target="#scatterExample-preview" role="tab" aria-controls="scatterExample-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="scatterExample-html-tab" data-bs-toggle="tab" data-bs-target="#scatterExample-html" role="tab" aria-controls="scatterExample-html" aria-selected="false">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="scatterExample-js-tab" data-bs-toggle="tab" data-bs-target="#scatterExample-js" role="tab" aria-controls="scatterExample-js" aria-selected="false">JS</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="scatterExample-preview" role="tabpanel" aria-labelledby="scatterExample-preview-tab">
+                <div class="card">
+                  <div class="card-header flex-nowrap header-elements">
+                    <h5 class="card-title mb-0">New Product Data</h5>
+                    <div class="card-header-elements ms-auto py-0 d-none d-sm-block">
+                      <div class="btn-group" role="group" aria-label="radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradio" id="dailyRadio" checked />
+                        <label class="btn btn-outline-secondary" for="dailyRadio">Daily</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="monthlyRadio" />
+                        <label class="btn btn-outline-secondary" for="monthlyRadio">Monthly</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="yearlyRadio" />
+                        <label class="btn btn-outline-secondary" for="yearlyRadio">Yearly</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body pt-2">
+                    <div id="legendContainer2" class="custom-legend"></div>
+                    <div>
+                      <canvas id="scatterChart" class="chartjs" data-height="435"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="scatterExample-html" role="tabpanel" aria-labelledby="scatterExample-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;card&quot;&gt;&#10;  &lt;div class=&quot;card-header flex-nowrap header-elements&quot;&gt;&#10;    &lt;h5 class=&quot;card-title mb-0&quot;&gt;New Product Data&lt;/h5&gt;&#10;    &lt;div class=&quot;card-header-elements ms-auto py-0 d-none d-sm-block&quot;&gt;&#10;      &lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;radio toggle button group&quot;&gt;&#10;        &lt;input type=&quot;radio&quot; class=&quot;btn-check&quot; name=&quot;btnradio&quot; id=&quot;dailyRadio&quot; checked&gt;&#10;        &lt;label class=&quot;btn btn-outline-secondary&quot; for=&quot;dailyRadio&quot;&gt;Daily&lt;/label&gt;&#10;&#10;        &lt;input type=&quot;radio&quot; class=&quot;btn-check&quot; name=&quot;btnradio&quot; id=&quot;monthlyRadio&quot;&gt;&#10;        &lt;label class=&quot;btn btn-outline-secondary&quot; for=&quot;monthlyRadio&quot;&gt;Monthly&lt;/label&gt;&#10;&#10;        &lt;input type=&quot;radio&quot; class=&quot;btn-check&quot; name=&quot;btnradio&quot; id=&quot;yearlyRadio&quot;&gt;&#10;        &lt;label class=&quot;btn btn-outline-secondary&quot; for=&quot;yearlyRadio&quot;&gt;Yearly&lt;/label&gt;&#10;      &lt;/div&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;card-body pt-2&quot;&gt;&#10;    &lt;div id=&quot;legendContainer2&quot; class=&quot;custom-legend&quot;&gt;&lt;/div&gt;&#10;    &lt;div&gt;&#10;      &lt;canvas id=&quot;scatterChart&quot; class=&quot;chartjs&quot; data-height=&quot;435&quot;&gt;&lt;/canvas&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="scatterExample-js" role="tabpanel" aria-labelledby="scatterExample-js-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="js">// Color Variables&#13;&#10;const yellowColor = &apos;#ffe800&apos;,&#13;&#10;  cyanColor = &apos;#28dac6&apos;;&#13;&#10;let cardColor, headingColor, labelColor, borderColor, legendColor;&#13;&#10;&#13;&#10;if (isDarkStyle) {&#13;&#10;  cardColor = config.colors_dark.cardColor;&#13;&#10;  headingColor = config.colors_dark.headingColor;&#13;&#10;  labelColor = config.colors_dark.textMuted;&#13;&#10;  legendColor = config.colors_dark.bodyColor;&#13;&#10;  borderColor = config.colors_dark.borderColor;&#13;&#10;} else {&#13;&#10;  cardColor = config.colors.cardColor;&#13;&#10;  headingColor = config.colors.headingColor;&#13;&#10;  labelColor = config.colors.textMuted;&#13;&#10;  legendColor = config.colors.bodyColor;&#13;&#10;  borderColor = config.colors.borderColor;&#13;&#10;}&#13;&#10;const scatterChart = document.getElementById(&apos;scatterChart&apos;);&#13;&#10;if (scatterChart) {&#13;&#10;  const scatterChartVar = new Chart(scatterChart, {&#13;&#10;    type: &apos;scatter&apos;,&#13;&#10;    data: {&#13;&#10;      datasets: [&#13;&#10;        {&#13;&#10;          label: &apos;iPhone&apos;,&#13;&#10;          data: [&#13;&#10;            {&#13;&#10;              x: 72,&#13;&#10;              y: 225&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 81,&#13;&#10;              y: 270&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 90,&#13;&#10;              y: 230&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 103,&#13;&#10;              y: 305&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 103,&#13;&#10;              y: 245&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 108,&#13;&#10;              y: 275&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 110,&#13;&#10;              y: 290&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 111,&#13;&#10;              y: 315&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 109,&#13;&#10;              y: 350&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 116,&#13;&#10;              y: 340&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 113,&#13;&#10;              y: 260&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 117,&#13;&#10;              y: 275&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 117,&#13;&#10;              y: 295&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 126,&#13;&#10;              y: 280&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 127,&#13;&#10;              y: 340&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 133,&#13;&#10;              y: 330&#13;&#10;            }&#13;&#10;          ],&#13;&#10;          backgroundColor: config.colors.primary,&#13;&#10;          borderColor: &apos;transparent&apos;,&#13;&#10;          pointBorderWidth: 2,&#13;&#10;          pointHoverBorderWidth: 2,&#13;&#10;          pointRadius: 5&#13;&#10;        },&#13;&#10;        {&#13;&#10;          label: &apos;Samsung Note&apos;,&#13;&#10;          data: [&#13;&#10;            {&#13;&#10;              x: 13,&#13;&#10;              y: 95&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 22,&#13;&#10;              y: 105&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 17,&#13;&#10;              y: 115&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 19,&#13;&#10;              y: 130&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 21,&#13;&#10;              y: 125&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 35,&#13;&#10;              y: 125&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 13,&#13;&#10;              y: 155&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 21,&#13;&#10;              y: 165&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 25,&#13;&#10;              y: 155&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 18,&#13;&#10;              y: 190&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 26,&#13;&#10;              y: 180&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 43,&#13;&#10;              y: 180&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 53,&#13;&#10;              y: 202&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 61,&#13;&#10;              y: 165&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 67,&#13;&#10;              y: 225&#13;&#10;            }&#13;&#10;          ],&#13;&#10;          backgroundColor: yellowColor,&#13;&#10;          borderColor: &apos;transparent&apos;,&#13;&#10;          pointRadius: 5&#13;&#10;        },&#13;&#10;        {&#13;&#10;          label: &apos;OnePlus&apos;,&#13;&#10;          data: [&#13;&#10;            {&#13;&#10;              x: 70,&#13;&#10;              y: 195&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 72,&#13;&#10;              y: 270&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 98,&#13;&#10;              y: 255&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 100,&#13;&#10;              y: 215&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 87,&#13;&#10;              y: 240&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 94,&#13;&#10;              y: 280&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 99,&#13;&#10;              y: 300&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 102,&#13;&#10;              y: 290&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 110,&#13;&#10;              y: 275&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 111,&#13;&#10;              y: 250&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 94,&#13;&#10;              y: 280&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 92,&#13;&#10;              y: 340&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 100,&#13;&#10;              y: 335&#13;&#10;            },&#13;&#10;            {&#13;&#10;              x: 108,&#13;&#10;              y: 330&#13;&#10;            }&#13;&#10;          ],&#13;&#10;          backgroundColor: cyanColor,&#13;&#10;          borderColor: &apos;transparent&apos;,&#13;&#10;          pointBorderWidth: 2,&#13;&#10;          pointHoverBorderWidth: 2,&#13;&#10;          pointRadius: 5&#13;&#10;        }&#13;&#10;      ]&#13;&#10;    },&#13;&#10;    options: {&#13;&#10;      responsive: true,&#13;&#10;      maintainAspectRatio: false,&#13;&#10;      animation: {&#13;&#10;        duration: 800&#13;&#10;      },&#13;&#10;      plugins: {&#13;&#10;        legend: {&#13;&#10;          position: &apos;top&apos;,&#13;&#10;          rtl: isRtl,&#13;&#10;          align: &apos;start&apos;,&#13;&#10;          labels: {&#13;&#10;            usePointStyle: true,&#13;&#10;            padding: 25,&#13;&#10;            boxWidth: 6,&#13;&#10;            boxHeight: 6,&#13;&#10;            color: legendColor&#13;&#10;          }&#13;&#10;        },&#13;&#10;        tooltip: {&#13;&#10;          // Updated default tooltip UI&#13;&#10;          rtl: isRtl,&#13;&#10;          backgroundColor: cardColor,&#13;&#10;          titleColor: headingColor,&#13;&#10;          bodyColor: legendColor,&#13;&#10;          borderWidth: 1,&#13;&#10;          borderColor: borderColor&#13;&#10;        }&#13;&#10;      },&#13;&#10;      scales: {&#13;&#10;        x: {&#13;&#10;          min: 0,&#13;&#10;          max: 140,&#13;&#10;          grid: {&#13;&#10;            color: borderColor,&#13;&#10;            drawTicks: false,&#13;&#10;            drawBorder: false,&#13;&#10;            borderColor: borderColor&#13;&#10;          },&#13;&#10;          ticks: {&#13;&#10;            stepSize: 10,&#13;&#10;            color: labelColor&#13;&#10;          }&#13;&#10;        },&#13;&#10;        y: {&#13;&#10;          min: 0,&#13;&#10;          max: 400,&#13;&#10;          grid: {&#13;&#10;            color: borderColor,&#13;&#10;            drawTicks: false,&#13;&#10;            drawBorder: false,&#13;&#10;            borderColor: borderColor&#13;&#10;          },&#13;&#10;          ticks: {&#13;&#10;            stepSize: 100,&#13;&#10;            color: labelColor&#13;&#10;          }&#13;&#10;        }&#13;&#10;      }&#13;&#10;    }&#13;&#10;  });&#13;&#10;}</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Scatter Chart-->
+
+        <div class="col-12">
+          <hr class="my-12" />
+        </div>
+
+        <!-- Line Area Chart-->
+        <div class="col-12">
+          <h4 id="line-area-chart-ex" class="anchor-heading mb-6 fw-bold">Line Area Chart</h4>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="lineAreaExample-preview-tab" data-bs-toggle="tab" data-bs-target="#lineAreaExample-preview" role="tab" aria-controls="lineAreaExample-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="lineAreaExample-html-tab" data-bs-toggle="tab" data-bs-target="#lineAreaExample-html" role="tab" aria-controls="lineAreaExample-html" aria-selected="false">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="lineAreaExample-js-tab" data-bs-toggle="tab" data-bs-target="#lineAreaExample-js" role="tab" aria-controls="lineAreaExample-js" aria-selected="false">JS</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="lineAreaExample-preview" role="tabpanel" aria-labelledby="lineAreaExample-preview-tab">
+                <div class="card">
+                  <div class="card-header header-elements">
+                    <h5 class="card-title mb-0">Data Science</h5>
+                    <div class="card-header-elements py-0 ms-auto">
+                      <div class="dropdown">
+                        <button type="button" class="btn dropdown-toggle p-0" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="icon-base ti tabler-calendar"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                          <li>
+                            <a href="javascript:void(0);" class="dropdown-item d-flex align-items-center">Today</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" class="dropdown-item d-flex align-items-center">Yesterday</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" class="dropdown-item d-flex align-items-center">Last 7 Days</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" class="dropdown-item d-flex align-items-center">Last 30 Days</a>
+                          </li>
+                          <li>
+                            <hr class="dropdown-divider" />
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" class="dropdown-item d-flex align-items-center">Current Month</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" class="dropdown-item d-flex align-items-center">Last Month</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body pt-2">
+                    <div id="legendContainer1" class="custom-legend"></div>
+                    <div>
+                      <canvas id="lineAreaChart" class="chartjs" data-height="450"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="lineAreaExample-html" role="tabpanel" aria-labelledby="lineAreaExample-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;card&quot;&gt;&#10;  &lt;div class=&quot;card-header header-elements&quot;&gt;&#10;    &lt;h5 class=&quot;card-title mb-0&quot;&gt;Data Science&lt;/h5&gt;&#10;    &lt;div class=&quot;card-header-elements py-0 ms-auto&quot;&gt;&#10;      &lt;div class=&quot;dropdown&quot;&gt;&#10;        &lt;button type=&quot;button&quot; class=&quot;btn dropdown-toggle p-0&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;&lt;i class=&quot;icon-base ti tabler-calendar&quot;&gt;&lt;/i&gt;&lt;/button&gt;&#10;        &lt;ul class=&quot;dropdown-menu dropdown-menu-end&quot;&gt;&#10;          &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot; class=&quot;dropdown-item d-flex align-items-center&quot;&gt;Today&lt;/a&gt;&lt;/li&gt;&#10;          &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot; class=&quot;dropdown-item d-flex align-items-center&quot;&gt;Yesterday&lt;/a&gt;&lt;/li&gt;&#10;          &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot; class=&quot;dropdown-item d-flex align-items-center&quot;&gt;Last 7 Days&lt;/a&gt;&lt;/li&gt;&#10;          &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot; class=&quot;dropdown-item d-flex align-items-center&quot;&gt;Last 30 Days&lt;/a&gt;&lt;/li&gt;&#10;          &lt;li&gt;&#10;            &lt;hr class=&quot;dropdown-divider&quot;&gt;&#10;          &lt;/li&gt;&#10;          &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot; class=&quot;dropdown-item d-flex align-items-center&quot;&gt;Current Month&lt;/a&gt;&lt;/li&gt;&#10;          &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot; class=&quot;dropdown-item d-flex align-items-center&quot;&gt;Last Month&lt;/a&gt;&lt;/li&gt;&#10;        &lt;/ul&gt;&#10;      &lt;/div&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;card-body pt-2&quot;&gt;&#10;    &lt;div id=&quot;legendContainer1&quot; class=&quot;custom-legend&quot;&gt;&lt;/div&gt;&#10;    &lt;div&gt;&#10;      &lt;canvas id=&quot;lineAreaChart&quot; class=&quot;chartjs&quot; data-height=&quot;450&quot;&gt;&lt;/canvas&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="lineAreaExample-js" role="tabpanel" aria-labelledby="lineAreaExample-js-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="js">// Color Variables&#13;&#10;const greyLightColor = &apos;#EDF1F4&apos;,&#13;&#10;  blueColor = &apos;#2B9AFF&apos;,&#13;&#10;  blueLightColor = &apos;#84D0FF&apos;;&#13;&#10;let cardColor, headingColor, labelColor, borderColor, legendColor;&#13;&#10;&#13;&#10;if (isDarkStyle) {&#13;&#10;  cardColor = config.colors_dark.cardColor;&#13;&#10;  headingColor = config.colors_dark.headingColor;&#13;&#10;  labelColor = config.colors_dark.textMuted;&#13;&#10;  legendColor = config.colors_dark.bodyColor;&#13;&#10;  borderColor = config.colors_dark.borderColor;&#13;&#10;} else {&#13;&#10;  cardColor = config.colors.cardColor;&#13;&#10;  headingColor = config.colors.headingColor;&#13;&#10;  labelColor = config.colors.textMuted;&#13;&#10;  legendColor = config.colors.bodyColor;&#13;&#10;  borderColor = config.colors.borderColor;&#13;&#10;}&#13;&#10;const lineAreaChart = document.getElementById(&apos;lineAreaChart&apos;);&#13;&#10;if (lineAreaChart) {&#13;&#10;  const lineAreaChartVar = new Chart(lineAreaChart, {&#13;&#10;    type: &apos;line&apos;,&#13;&#10;    data: {&#13;&#10;      labels: [&#13;&#10;        &apos;7/12&apos;,&#13;&#10;        &apos;8/12&apos;,&#13;&#10;        &apos;9/12&apos;,&#13;&#10;        &apos;10/12&apos;,&#13;&#10;        &apos;11/12&apos;,&#13;&#10;        &apos;12/12&apos;,&#13;&#10;        &apos;13/12&apos;,&#13;&#10;        &apos;14/12&apos;,&#13;&#10;        &apos;15/12&apos;,&#13;&#10;        &apos;16/12&apos;,&#13;&#10;        &apos;17/12&apos;,&#13;&#10;        &apos;18/12&apos;,&#13;&#10;        &apos;19/12&apos;,&#13;&#10;        &apos;20/12&apos;,&#13;&#10;        &apos;&apos;&#13;&#10;      ],&#13;&#10;      datasets: [&#13;&#10;        {&#13;&#10;          label: &apos;Africa&apos;,&#13;&#10;          data: [40, 55, 45, 75, 65, 55, 70, 60, 100, 98, 90, 120, 125, 140, 155],&#13;&#10;          tension: 0,&#13;&#10;          fill: true,&#13;&#10;          backgroundColor: blueColor,&#13;&#10;          pointStyle: &apos;circle&apos;,&#13;&#10;          borderColor: &apos;transparent&apos;,&#13;&#10;          pointRadius: 0.5,&#13;&#10;          pointHoverRadius: 5,&#13;&#10;          pointHoverBorderWidth: 5,&#13;&#10;          pointBorderColor: &apos;transparent&apos;,&#13;&#10;          pointHoverBackgroundColor: blueColor,&#13;&#10;          pointHoverBorderColor: cardColor&#13;&#10;        },&#13;&#10;        {&#13;&#10;          label: &apos;Asia&apos;,&#13;&#10;          data: [70, 85, 75, 150, 100, 140, 110, 105, 160, 150, 125, 190, 200, 240, 275],&#13;&#10;          tension: 0,&#13;&#10;          fill: true,&#13;&#10;          backgroundColor: blueLightColor,&#13;&#10;          pointStyle: &apos;circle&apos;,&#13;&#10;          borderColor: &apos;transparent&apos;,&#13;&#10;          pointRadius: 0.5,&#13;&#10;          pointHoverRadius: 5,&#13;&#10;          pointHoverBorderWidth: 5,&#13;&#10;          pointBorderColor: &apos;transparent&apos;,&#13;&#10;          pointHoverBackgroundColor: blueLightColor,&#13;&#10;          pointHoverBorderColor: cardColor&#13;&#10;        },&#13;&#10;        {&#13;&#10;          label: &apos;Europe&apos;,&#13;&#10;          data: [240, 195, 160, 215, 185, 215, 185, 200, 250, 210, 195, 250, 235, 300, 315],&#13;&#10;          tension: 0,&#13;&#10;          fill: true,&#13;&#10;          backgroundColor: greyLightColor,&#13;&#10;          pointStyle: &apos;circle&apos;,&#13;&#10;          borderColor: &apos;transparent&apos;,&#13;&#10;          pointRadius: 0.5,&#13;&#10;          pointHoverRadius: 5,&#13;&#10;          pointHoverBorderWidth: 5,&#13;&#10;          pointBorderColor: &apos;transparent&apos;,&#13;&#10;          pointHoverBackgroundColor: greyLightColor,&#13;&#10;          pointHoverBorderColor: cardColor&#13;&#10;        }&#13;&#10;      ]&#13;&#10;    },&#13;&#10;    options: {&#13;&#10;      responsive: true,&#13;&#10;      maintainAspectRatio: false,&#13;&#10;      plugins: {&#13;&#10;        legend: {&#13;&#10;          position: &apos;top&apos;,&#13;&#10;          rtl: isRtl,&#13;&#10;          align: &apos;start&apos;,&#13;&#10;          labels: {&#13;&#10;            usePointStyle: true,&#13;&#10;            padding: 35,&#13;&#10;            boxWidth: 6,&#13;&#10;            boxHeight: 6,&#13;&#10;            color: legendColor&#13;&#10;          }&#13;&#10;        },&#13;&#10;        tooltip: {&#13;&#10;          // Updated default tooltip UI&#13;&#10;          rtl: isRtl,&#13;&#10;          backgroundColor: cardColor,&#13;&#10;          titleColor: headingColor,&#13;&#10;          bodyColor: legendColor,&#13;&#10;          borderWidth: 1,&#13;&#10;          borderColor: borderColor&#13;&#10;        }&#13;&#10;      },&#13;&#10;      scales: {&#13;&#10;        x: {&#13;&#10;          grid: {&#13;&#10;            color: &apos;transparent&apos;,&#13;&#10;            borderColor: borderColor&#13;&#10;          },&#13;&#10;          ticks: {&#13;&#10;            color: labelColor&#13;&#10;          }&#13;&#10;        },&#13;&#10;        y: {&#13;&#10;          min: 0,&#13;&#10;          max: 400,&#13;&#10;          grid: {&#13;&#10;            color: &apos;transparent&apos;,&#13;&#10;            borderColor: borderColor&#13;&#10;          },&#13;&#10;          ticks: {&#13;&#10;            stepSize: 100,&#13;&#10;            color: labelColor&#13;&#10;          }&#13;&#10;        }&#13;&#10;      }&#13;&#10;    }&#13;&#10;  });&#13;&#10;}</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Line Area Chart-->
+    </div>
+
+    <div class="d-none d-xl-block col-xl-2 doc-sidebar container-p-y">
+      <nav id="vertical-nav" class="navbar p-0">
+        <ul class="doc-sidebar-nav">
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#usage">Usage</a>
+          </li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#bar-chart-ex">Bar Chart</a>
+          </li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#horizontal-bar-ex">Horizontal Bar Chart</a>
+          </li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#line-chart-ex">Line Chart</a>
+          </li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#radar-chart-ex">Radar Chart</a>
+          </li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#polar-chart-ex">Polar Area Chart</a>
+          </li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#bubble-chart-ex">Bubble Chart</a>
+          </li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#doughnut-chart-ex">Doughnut Chart</a>
+          </li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#scatter-chart-ex">Scatter Chart</a>
+          </li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#line-area-chart-ex">Line Area Chart</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+          <!-- / Content -->
+
+          
+            <footer class="content-footer footer">
+  <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center text-center py-4">
+    <div>
+      &#169; 2017-
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      
+        <a href="https://pixinvent.com" class="footer-text fw-medium" target="_blank">Pixinvent</a>, Hand-crafted & Made with â¤ï¸
+      
+    </div>
+    <div>
+      
+        <a href="https://www.facebook.com/pixinvents/" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-facebook"></i></a>
+      
+      
+        <a href="https://x.com/pixinvents" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-twitter"></i></a>
+      
+      
+        <a href="https://github.com/pixinvent" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-github"></i></a>
+      
+      
+        <a href="https://dribbble.com/pixinvent" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-dribbble"></i></a>
+      
+      
+        <a href="https://www.instagram.com/pixinvents/" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-instagram"></i></a>
+      
+    </div>
+  </div>
+</footer>
+
+          
+        </div>
+        <!-- Content wrapper -->
+      </div>
+      <!-- / Layout page -->
+    </div>
+
+    
+      
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    
+    <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+    <div class="drag-target"></div>
+  </div>
+  <!-- / Layout wrapper -->
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="assets/vendor/libs/highlight/highlight.js"></script>
+    <script src="assets/vendor/libs/clipboard/clipboard.js"></script>
+    
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/vendor/libs/node-waves/node-waves.js"></script>
+    <script src="assets/vendor/libs/@algolia/autocomplete-js.js"></script>
+    <script src="assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="assets/vendor/js/menu.js"></script>
+    <!-- Vendors JS -->
+    <script src="assets/vendor/libs/chartjs/chartjs.js"></script>
+
+    <!-- Page JS -->
+    <script src="assets/js/docs.js"></script>
+    <script src="assets/js/charts-chartjs-legend.js"></script>
+  <script src="assets/js/charts-chartjs.js"></script>
+  </body>
+</html>
+
+  <!-- beautify ignore:end -->
+

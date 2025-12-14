@@ -1,0 +1,1941 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- =========================================================
+* Vuexy - Bootstrap Dashboard PRO | v3.0.0
+==============================================================
+
+* Product Page: https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599
+* Created by: Pixinvent
+
+    * License: You must have a valid license purchased in order to legally use the theme for your project.
+  
+* Copyright Pixinvent (https://pixinvent.com)
+
+=========================================================
+ -->
+  <!-- beautify ignore:start -->
+
+<html lang="en" class="docs-page  layout-menu-fixed-offcanvas " data-assets-path="assets/" data-skin="bordered">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Docs: Miscellaneous - Extended UI | Vuexy - Bootstrap Dashboard PRO</title>
+
+    <meta name="description" content="Vuexy is the best bootstrap 5 dashboard for responsive web apps. Streamline your app development process with ease." />
+    <meta name="keywords" content="Vuexy bootstrap dashboard, vuexy bootstrap 5 dashboard, themeselection, html dashboard, web dashboard, frontend dashboard, responsive bootstrap theme" />
+    <meta property="og:title" content="Vuexy bootstrap Dashboard by Pixinvent" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" />
+    <meta property="og:image" content="https://pixinvent.com/wp-content/uploads/2023/06/vuexy-hero-image.png" />
+    <meta property="og:description" content="Vuexy is the best bootstrap 5 dashboard for responsive web apps. Streamline your app development process with ease." />
+    <meta property="og:site_name" content="Pixinvent" />
+
+    <!-- Canonical SEO -->
+    <link rel="canonical" href="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" />
+
+    
+      
+      <script>
+        (function (w, d, s, l, i) {
+          w[l] = w[l] || [];
+          w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+          });
+          var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+          j.async = true;
+          j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+          f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5J3LMKC');
+      </script>
+      
+    
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="48x48" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="16x16" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="32x32" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="180x180" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="192x192" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="512x512" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendor/fonts/iconify-icons.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/node-waves/node-waves.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/highlight/highlight.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/notyf/notyf.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="assets/vendor/css/core.css" />
+    <link rel="stylesheet" href="assets/css/demo.css" />
+    <link rel="stylesheet" href="assets/css/docs.css" />
+
+    <!-- Page CSS -->
+    
+
+    <!-- Core JS -->
+    <script src="assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: Don't remove unless you are aware of it, To hide customizer set displayCustomizer value false in config.js.  -->
+    <!-- <script src="assets/vendor/js/template-customizer.js"></script> -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="assets/js/config.js"></script>
+  </head>
+
+  <body>
+    
+      
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5J3LMKC" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+      
+    
+
+    <!-- Layout wrapper -->
+  <div class="layout-wrapper layout-navbar-full ">
+    <div class="layout-container">
+      
+        
+
+
+<!-- Navbar main -->
+
+<nav class="layout-navbar navbar navbar-expand-lg align-items-lg-center bg-white border-bottom" id="layout-navbar">
+  <div class="container-fluid">
+    
+      <!-- Menu toggle (see assets/css/demo/demo.css) -->
+      <div class="layout-menu-toggle navbar-nav d-lg-none align-items-lg-center">
+        <a class="nav-item nav-link px-0 me-lg-4" href="javascript:void(0)">
+          <i class="icon-base ti tabler-menu-2 icon-md align-middle"></i>
+        </a>
+      </div>
+    
+
+    <!-- Brand demo (see assets/css/demo/demo.css) -->
+    <div class="navbar-brand app-brand demo py-0 me-md-auto me-12 ms-lg-0 ms-0">
+      <a href="index.html" class="app-brand-link">
+        <span class="app-brand-logo demo">
+  <span class="text-primary">
+    <svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.00172773 0V6.85398C0.00172773 6.85398 -0.133178 9.01207 1.98092 10.8388L13.6912 21.9964L19.7809 21.9181L18.8042 9.88248L16.4951 7.17289L9.23799 0H0.00172773Z" fill="currentColor" />
+      <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd" d="M7.69824 16.4364L12.5199 3.23696L16.5541 7.25596L7.69824 16.4364Z" fill="#161616" />
+      <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd" d="M8.07751 15.9175L13.9419 4.63989L16.5849 7.28475L8.07751 15.9175Z" fill="#161616" />
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z" fill="currentColor" />
+    </svg>
+  </span>
+</span>
+        <span class="app-brand-text demo menu-text fw-bold">Vuexy</span>
+      </a>
+    </div>
+
+    <div class="d-flex ms-md-6 gap-3">
+      
+      <div class="navbar-nav align-items-lg-center justify-content-center">
+        <!-- Search -->
+        <div class="navbar-nav align-items-center">
+          <div class="nav-item navbar-search-wrapper mb-0">
+            <a class="nav-item nav-link search-toggler border rounded-3 py-2 px-md-4 px-2 d-flex align-items-center" href="javascript:void(0);">
+              <span class="d-inline-block text-body-secondary fw-normal" id="autocomplete"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbar-collapse">
+        <hr class="d-lg-none w-100 my-2" />
+        <!-- Divider -->
+
+        <div class="navbar-nav align-items-lg-center">
+          
+          <ul class="navbar-nav">
+            <!-- Technology dropdown -->
+            
+            
+              
+                <li class="nav-item dropdown me-2">
+                  <button class="btn dropdown-toggle py-2 btn-primary" type="button" id="livePreview" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-base ti tabler-current-location me-2"></i> Live preview</button>
+                  <ul class="dropdown-menu" aria-labelledby="livePreview">
+                    <li>
+                      <a href="https://pixinvent.com/vuexy-bootstrap-html-admin-template/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>HTML preview</a>
+                    </li>
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-laravel-admin-template/demo-1/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>Laravel preview</a>
+                      </li>
+                    
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-admin-template/html/vertical-menu-template/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>.Net Core preview</a>
+                      </li>
+                    
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-django-admin-template/demo-1/" target="_blank" class="nav-link text-nowrap"><i class="icon-base ti tabler-current-location me-2"></i>Django preview</a>
+                      </li>
+                    
+                  </ul>
+                </li>
+              
+            
+            
+              <li class="nav-item me-2">
+                <a href="https://pixinvent.ticksy.com/" target="_blank" class="nav-link d-flex align-items-center">
+                  <i class="icon-base ti tabler-lifebuoy me-2"></i>
+                  <span>Support</span>
+                </a>
+              </li>
+            
+            
+              <li class="nav-item">
+                <a href="https://themeforest.net/user/pixinvent/portfolio" target="_blank" class="nav-link d-flex align-items-center">
+                  <i class="icon-base ti tabler-gift me-2"></i>
+                  <span> More Themes</span>
+                </a>
+              </li>
+            
+            
+              <li class="nav-item">
+                <a href="https://themeselection.com/hire-us/" target="_blank" class="nav-link"><i class="icon-base ti tabler-briefcase"></i> Hire Us</a>
+              </li>
+            
+          </ul>
+
+          <!-- Divider -->
+          <div class="nav-item d-none d-lg-block text-big fw-light lh-1 me-4 ms-1">|</div>
+
+          
+            <div class="buy-now-btn">
+              <a href="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" target="_blank" class="btn btn-danger d-flex align-items-center gap-2">
+                <i class="icon-base ti tabler-shopping-cart"></i>
+                <span>Buy Now</span>
+              </a>
+            </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</nav>
+<!-- / Navbar main -->
+
+      
+
+      <!-- Layout page -->
+      <div class="layout-page">
+        
+          
+
+
+
+
+<!-- Menu -->
+<aside id="layout-menu" class="layout-menu menu-doc menu menu-vertical bg-menu-theme">
+  
+  <div class="menu-divider mt-0   d-xl-none "></div>
+
+  <!-- Links -->
+  <ul class="menu-inner py-1">
+    <li class="menu-header text-uppercase small fw-medium">Getting Started</li>
+    <li class="menu-item">
+      <a href="index.html" class="menu-link">
+        <div>Introduction</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="licenses.html" class="menu-link">
+        <div>Licenses</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="folder-structure.html" class="menu-link">
+        <div>Folder Structure</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="quick-start.html" class="menu-link">
+        <div>Quick Start</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="config.html" class="menu-link">
+        <div>Config ð¤©</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="installation-build.html" class="menu-link">
+        <div>Installation & Build</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="template-customizer.html" class="menu-link">
+        <div>Template Customizer</div>
+        
+      </a>
+    </li>
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Customization</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="customization-sass.html" class="menu-link">
+            <div>SASS</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="customization-js.html" class="menu-link">
+            <div>JavaScript</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="customization-third-party-plugins.html" class="menu-link">
+            <div>Third Party Plugins</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="layouts.html" class="menu-link">
+        <div>Layouts</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="dependencies.html" class="menu-link">
+        <div>Dependencies</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="faq.html" class="menu-link">
+        <div>FAQs</div>
+      </a>
+    </li>
+    
+      <!-- Laravel Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row">
+        <span class="me-1">Laravel</span>
+        <span class="badge badge-demo bg-label-danger ms-auto">HTML + Laravel Only</span>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="laravel-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-starter-kit-vs-full-version.html" class="menu-link">
+              <div>Starter-kit Vs Full-version</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-demo-config.html" class="menu-link">
+              <div>Demo Configs</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Auth & ACL</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-auth-jetstream.html" class="menu-link">
+              <div>JetStream</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-passport.html" class="menu-link">
+              <div>Passport</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-sanctum.html" class="menu-link">
+              <div>Sanctum</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-acl.html" class="menu-link">
+              <div>ACL</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-articles-database-connections.html" class="menu-link">
+              <div>Database Connections</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-existing-project.html" class="menu-link">
+              <div>Exiting Project Migration</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-form-validation-integration.html" class="menu-link">
+              <div>Form Validation Package Integration</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-localization.html" class="menu-link">
+          <div>Localization</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-search.html" class="menu-link">
+          <div>Search</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-sail-docker.html" class="menu-link">
+          <div>Sail & Docker</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-deployment.html" class="menu-link">
+          <div>Deployment</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Dotnet Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>ASP.NET CORE</span> <span class="badge badge-demo bg-label-danger ms-auto">Razor Pages</span></li>
+
+      <li class="menu-item">
+        <a href="net-core-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-assets-compilation.html" class="menu-link">
+              <div>Assets Compilation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-start-with-doker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-starter-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="net-core-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Dotnet Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>ASP.NET CORE MVC</span> <span class="badge badge-demo bg-label-danger ms-auto">MVC</span></li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-mvc-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-assets-compilation.html" class="menu-link">
+              <div>Assets Compilation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-start-with-docker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-starter-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="net-core-mvc-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-mvc-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Django Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>Django</span> <span class="badge badge-demo bg-label-danger ms-auto">Django Only</span></li>
+
+      <li class="menu-item">
+        <a href="django-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="django-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-start-with-doker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-demo-config.html" class="menu-link">
+              <div>Demo Config</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-starter-kit-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="django-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="django-articles-create-new-page.html" class="menu-link">
+              <div>Create New Apps & Pages</div>
+            </a>
+          </li>
+          <!-- <li class="menu-item">
+          <a href="django-articles-existing-project.html" class="menu-link">
+            <div>Exiting Project Migration</div>
+          </a>
+        </li> -->
+          <li class="menu-item">
+            <a href="django-articles-admin-superuser.html" class="menu-link">
+              <div>Admin and Create User</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-authentication.html" class="menu-link">
+              <div>Authentication</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="django-articles-permissions-authorization.html" class="menu-link">
+              <div>Permissions & Authorization</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-crud.html" class="menu-link">
+              <div>CRUD Example</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-admin-db.html" class="menu-link">
+              <div>Admin and Database</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-localization.html" class="menu-link">
+          <div>Localization</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-search.html" class="menu-link">
+          <div>Search</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-theme-api.html" class="menu-link">
+          <div>Theme API</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-deployment.html" class="menu-link">
+          <div>Deployment</div>
+        </a>
+      </li>
+    
+    <!-- Apps & Pages -->
+    <li class="menu-divider mb-1"></li>
+    <li class="menu-header text-uppercase small fw-medium">Design System</li>
+
+    <li class="menu-item">
+      <a href="typography.html" class="menu-link">
+        <div>Typography</div>
+      </a>
+    </li>
+
+    <li class="menu-item">
+      <a href="colors.html" class="menu-link">
+        <div>Colors</div>
+      </a>
+    </li>
+
+    <li class="menu-item">
+      <a href="Icons.html" class="menu-link">
+        <div>Icons</div>
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+    <!-- Components -->
+    <li class="menu-header text-uppercase small fw-medium">Components</li>
+
+    <!-- UI Elements -->
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>UI Elements</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="ui-accordion.html" class="menu-link">
+            <div>Accordion</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-alerts.html" class="menu-link">
+            <div>Alerts</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-app-brand.html" class="menu-link">
+            <div>App Brand</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-badges.html" class="menu-link">
+            <div>Badges</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-buttons.html" class="menu-link">
+            <div>Buttons</div>
+          </a>
+        </li>
+        <li class="menu-item
+  ">
+          <a href="javascript:void(0);" class="menu-link menu-toggle">
+            <div>Cards</div>
+          </a>
+          <ul class="menu-sub">
+            <li class="menu-item">
+              <a href="ui-cards-basic.html" class="menu-link">
+                <div>Basic</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="ui-cards-actions.html" class="menu-link">
+                <div>Actions</div>
+                
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="ui-carousel.html" class="menu-link">
+            <div>Carousel</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-collapse.html" class="menu-link">
+            <div>Collapse</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-dropdowns.html" class="menu-link">
+            <div>Dropdowns</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-footer.html" class="menu-link">
+            <div>Footer</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-list-groups.html" class="menu-link">
+            <div>List groups</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-modals.html" class="menu-link">
+            <div>Modals</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-menu.html" class="menu-link">
+            <div>Menu</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-navbar.html" class="menu-link">
+            <div>Navbar</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-offcanvas.html" class="menu-link">
+            <div>Offcanvas</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-pagination-breadcrumbs.html" class="menu-link">
+            <div>Pagination &amp; Breadcrumbs</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-popovers.html" class="menu-link">
+            <div>Popovers</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-progress.html" class="menu-link">
+            <div>Progress</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-spinners.html" class="menu-link">
+            <div>Spinners</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-navs.html" class="menu-link">
+            <div>Navs</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-tabs-pills.html" class="menu-link">
+            <div>Tabs &amp; Pills</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-toasts.html" class="menu-link">
+            <div>Toasts</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-tooltips.html" class="menu-link">
+            <div>Tooltips</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+
+    <!-- Extended components -->
+    <li class="menu-item
+   active open">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Extended UI</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="extended-ui-avatar.html" class="menu-link">
+            <div>Avatar</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-blockui.html" class="menu-link">
+            <div>BlockUI</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-drag-and-drop.html" class="menu-link">
+            <div>Drag &amp; Drop</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-media-player.html" class="menu-link">
+            <div>Media Player</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-perfect-scrollbar.html" class="menu-link">
+            <div>Perfect scrollbar</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-star-ratings.html" class="menu-link">
+            <div>Star Ratings</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-sweetalert2.html" class="menu-link">
+            <div>SweetAlert2</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-text-divider.html" class="menu-link">
+            <div>Text Divider</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-timeline.html" class="menu-link">
+            <div>Timeline</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-tour.html" class="menu-link">
+            <div>Tour</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-treeview.html" class="menu-link">
+            <div>Treeview</div>
+            
+          </a>
+        </li>
+        <li class="menu-item active">
+          <a href="extended-ui-misc.html" class="menu-link">
+            <div>Miscellaneous</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Forms -->
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Forms</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="forms-basic-inputs.html" class="menu-link">
+            <div>Basic Inputs</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-input-groups.html" class="menu-link">
+            <div>Input groups</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-custom-options.html" class="menu-link">
+            <div>Custom Options</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-editors.html" class="menu-link">
+            <div>Editors</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-file-upload.html" class="menu-link">
+            <div>File Upload</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-pickers.html" class="menu-link">
+            <div>Pickers</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-selects.html" class="menu-link">
+            <div>Select &amp; Tags</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-sliders.html" class="menu-link">
+            <div>Sliders</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-switches.html" class="menu-link">
+            <div>Switches</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-extras.html" class="menu-link">
+            <div>Extras</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-validation.html" class="menu-link">
+            <div>Validation</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-wizard.html" class="menu-link">
+            <div>Wizard</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-layouts-sticky.html" class="menu-link">
+            <div>Sticky Actions</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <!-- Tables -->
+    <li class="menu-item">
+      <a href="tables-basic.html" class="menu-link">
+        <div>Tables</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="tables-datatables.html" class="menu-link">
+        <div>Datatables</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="utilities.html" class="menu-link">
+        <div>Utilities</div>
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+    <!-- Charts & Maps -->
+    <li class="menu-header text-uppercase small fw-medium">Charts &amp; Maps</li>
+
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <div data-i18n="Charts">Charts</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="charts-apex.html" class="menu-link">
+            <div>Apex Charts</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="charts-chartjs.html" class="menu-link">
+            <div>ChartJS</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="maps-leaflet.html" class="menu-link">
+        <div>Leaflet</div>
+        
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+
+    <!-- Charts & Maps -->
+    <li class="menu-header text-uppercase small fw-medium">Others</li>
+    <li class="menu-item">
+      <a href="credits.html" class="menu-link">
+        <div>Credits</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="https://pixinvent.ticksy.com/" target="_blank" class="menu-link">
+        <div>Support</div>
+      </a>
+    </li>
+  </ul>
+</aside>
+<!-- / Menu -->
+
+        
+
+        <!-- Content wrapper -->
+        <div class="content-wrapper">
+          <!-- Content -->
+          <div class="container-xxl flex-grow-1 container-p-y">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-xl-10">
+      <h2 class="mb-6 doc-page-title">Miscellaneous</h2>
+      <p>Miscellaneous page has Clipboard, Ideal Timer and NumeralJS.<br />Read the official <a href="https://clipboardjs.com/" target="_blank" rel="noopener noreferrer">ClipboardJs</a>, <a href="https://github.com/thorst/jquery-idletimer" target="_blank" rel="noopener noreferrer">Idle Timer</a>, <a href="http://numeraljs.com/" target="_blank" rel="noopener noreferrer">NumeralJS</a> documentations for a full list of instructions and other options.</p>
+
+      <hr class="my-12" />
+
+      <!-- Clipboard -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="clipboard" class="anchor-heading fw-bold mt-6">Clipboard</h4>
+          <p>Copying text to the clipboard shouldn't be hard. It shouldn't require dozens of steps to configure or hundreds of KBs to load. But most of all, it shouldn't depend on Flash or any bloated framework. That's why we have used clipboard.js.</p>
+          <p class="anchor-heading fw-bold my-6" id="clipboard-usage">Usage</p>
+          <p>Include the following vendors script in the "Vendors JS" area from the page's footer:</p>
+          <div class="doc-example">
+            <div class="doc-example-content" data-label="Code">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;script src=&quot;../../assets/vendor/libs/clipboard/clipboard.js&quot; /&gt; </code></pre>
+            </div>
+          </div>
+          <!-- Example -->
+          <p class="anchor-heading fw-bold mt-6" id="clipboard-example">Example</p>
+          <div class="doc-example mt-4">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="clipboard-preview-tab" data-bs-toggle="tab" data-bs-target="#clipboard-preview" role="tab" aria-controls="clipboard-preview" aria-selected="true"> Preview </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="clipboard-html-tab" data-bs-toggle="tab" data-bs-target="#clipboard-html" role="tab" aria-controls="clipboard-html" aria-selected="false"> HTML </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="clipboard-js-tab" data-bs-toggle="tab" data-bs-target="#clipboard-js" role="tab" aria-controls="clipboard-js" aria-selected="false"> JS </a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+              <div class="tab-pane fade show active" id="clipboard-preview" role="tabpanel" aria-labelledby="clipboard-preview-tab">
+                <div class="d-flex flex-wrap">
+                  <div class="input">
+                    <input class="form-control" id="clipboard-example-input" type="text" value="Copy Me!" />
+                  </div>
+                  <button class="clipboard-btn btn btn-primary mx-2" data-clipboard-action="copy" data-clipboard-target="#clipboard-example-input">Copy</button>
+                  <button class="clipboard-btn btn btn-primary" data-clipboard-action="cut" data-clipboard-target="#clipboard-example-input">Cut</button>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="clipboard-html" role="tabpanel" aria-labelledby="clipboard-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;d-flex flex-wrap&quot;&gt;&#10;  &lt;div class=&quot;input&quot;&gt;&#10;    &lt;input class=&quot;form-control&quot; id=&quot;clipboard-example-input&quot; type=&quot;text&quot; value=&quot;Copy Me!&quot; /&gt;&#10;  &lt;/div&gt;&#10;  &lt;button class=&quot;clipboard-btn btn btn-primary mx-2&quot; data-clipboard-action=&quot;copy&quot; data-clipboard-target=&quot;#clipboard-example-input&quot;&gt;&#10;    Copy&#10;  &lt;/button&gt;&#10;  &lt;button class=&quot;clipboard-btn btn btn-primary&quot; data-clipboard-action=&quot;cut&quot; data-clipboard-target=&quot;#clipboard-example-input&quot;&gt;&#10;    Cut&#10;  &lt;/button&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="clipboard-js" role="tabpanel" aria-labelledby="clipboard-js-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre class="docs-code"><code class="js">const clipboardList = [].slice.call(document.querySelectorAll('.clipboard-btn'));
+
+const notyf = new Notyf({
+  duration: 3000,
+  dismissible: true,
+  position: { x: 'right', y: 'top' }
+});
+if (ClipboardJS) {
+  clipboardList.map(function (clipboardEl) {
+    const clipboard = new ClipboardJS(clipboardEl);
+    clipboard.on('success', function (e) {
+      if (e.action === 'copy') {
+        notyf.success('Copied to Clipboard!!');
+      }
+    });
+  });
+} else {
+  clipboardList.map(function (clipboardEl) {
+    clipboardEl.setAttribute('disabled', true);
+  });
+}</code></pre>
+              </div>
+            </div>
+          </div>
+          <!-- /Example -->
+        </div>
+      </div>
+      <!-- /Clipboard -->
+
+      <hr class="my-12" />
+
+      <!-- Idle Timer -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="idle-timer" class="anchor-heading fw-bold">Idle Timer</h4>
+          <p class="anchor-heading fw-bold my-6" id="timer-usage">Usage</p>
+          <p>Idle Timer provides you a way to monitor user activity with a page. Check out below mentioned example code to create a timer.</p>
+          <p>Include the following vendors script in the "Vendors JS" area from the page's footer:</p>
+          <div class="doc-example">
+            <div class="doc-example-content" data-label="Code">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;script src=&quot;../../assets/vendor/libs/moment/moment.js&quot; /&gt;
+&lt;script src=&quot;../../assets/vendor/libs/jquery-idletimer/jquery-idletimer.js&quot; /&gt;</code></pre>
+            </div>
+          </div>
+          <p class="anchor-heading fw-bold mt-6" id="timer-example">Example</p>
+          <!-- Example -->
+          <div class="doc-example mt-4">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="idle-preview-tab" data-bs-toggle="tab" data-bs-target="#idle-preview" role="tab" aria-controls="idle-preview" aria-selected="true"> Preview </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="idle-html-tab" data-bs-toggle="tab" data-bs-target="#idle-html" role="tab" aria-controls="idle-html" aria-selected="false"> HTML </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="idle-js-tab" data-bs-toggle="tab" data-bs-target="#idle-js" role="tab" aria-controls="idle-js" aria-selected="false"> JS </a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+              <div class="tab-pane fade show active" id="idle-preview" role="tabpanel" aria-labelledby="idle-preview-tab">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-6 col-12">
+                        <h5>
+                          Document
+                          <small>5 second timeout</small>
+                        </h5>
+                        <div class="btn-group mb-4">
+                          <button type="button" id="document-Pause" class="btn btn-primary btn-sm">Pause</button>
+                          <button type="button" id="document-Resume" class="btn btn-primary btn-sm">Resume</button>
+                          <button type="button" id="document-Elapsed" class="btn btn-primary btn-sm">Elapsed</button>
+                          <button type="button" id="document-Init" class="btn btn-primary btn-sm">Init</button>
+                          <button type="button" id="document-Destroy" class="btn btn-primary btn-sm">Destroy</button>
+                        </div>
+                        <textarea rows="10" cols="30" id="document-Status" class="form-control alert"></textarea>
+                      </div>
+                      <div class="col-md-6 col-12 mt-md-0 mt-6">
+                        <h5>
+                          Element
+                          <small>3 second timeout</small>
+                        </h5>
+                        <div class="btn-group mb-4">
+                          <button type="button" id="element-Reset" class="btn btn-primary btn-sm">Reset</button>
+                          <button type="button" id="element-LastActive" class="btn btn-primary btn-sm">Last Active</button>
+                          <button type="button" id="element-Remaining" class="btn btn-primary btn-sm">Remaining</button>
+                          <button type="button" id="element-State" class="btn btn-primary btn-sm">State</button>
+                        </div>
+                        <textarea rows="10" cols="30" id="element-Status" class="form-control alert"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="idle-html" role="tabpanel" aria-labelledby="idle-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;card&quot;&gt;&#10;  &lt;div class=&quot;card-body&quot;&gt;&#10;    &lt;div class=&quot;row&quot;&gt;&#10;      &lt;div class=&quot;col-md-6 col-12&quot;&gt;&#10;        &lt;h5&gt;&#10;          Document&#10;          &lt;small&gt;5 second timeout&lt;/small&gt;&#10;        &lt;/h5&gt;&#10;        &lt;div class=&quot;btn-group mb-4&quot;&gt;&#10;          &lt;button type=&quot;button&quot; id=&quot;document-Pause&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;&#10;            Pause&#10;          &lt;/button&gt;&#10;          &lt;button type=&quot;button&quot; id=&quot;document-Resume&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;&#10;            Resume&#10;          &lt;/button&gt;&#10;          &lt;button type=&quot;button&quot; id=&quot;document-Elapsed&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;&#10;            Elapsed&#10;          &lt;/button&gt;&#10;          &lt;button type=&quot;button&quot; id=&quot;document-Init&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;&#10;            Init&#10;          &lt;/button&gt;&#10;          &lt;button type=&quot;button&quot; id=&quot;document-Destroy&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;&#10;            Destroy&#10;          &lt;/button&gt;&#10;        &lt;/div&gt;&#10;        &lt;textarea rows=&quot;10&quot; cols=&quot;30&quot; id=&quot;document-Status&quot; class=&quot;form-control alert&quot;&gt;&lt;/textarea&gt;&#10;      &lt;/div&gt;&#10;      &lt;div class=&quot;col-md-6 col-12 mt-md-0 mt-6&quot;&gt;&#10;        &lt;h5&gt;&#10;          Element&#10;          &lt;small&gt;3 second timeout&lt;/small&gt;&#10;        &lt;/h5&gt;&#10;        &lt;div class=&quot;btn-group mb-4&quot;&gt;&#10;          &lt;button type=&quot;button&quot; id=&quot;element-Reset&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;&#10;            Reset&#10;          &lt;/button&gt;&#10;          &lt;button type=&quot;button&quot; id=&quot;element-LastActive&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;&#10;            Last Active&#10;          &lt;/button&gt;&#10;          &lt;button type=&quot;button&quot; id=&quot;element-Remaining&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;&#10;            Remaining&#10;          &lt;/button&gt;&#10;          &lt;button type=&quot;button&quot; id=&quot;element-State&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;&#10;            State&#10;          &lt;/button&gt;&#10;        &lt;/div&gt;&#10;        &lt;textarea rows=&quot;10&quot; cols=&quot;30&quot; id=&quot;element-Status&quot; class=&quot;form-control alert&quot;&gt;&lt;/textarea&gt;&#10;      &lt;/div&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="idle-js" role="tabpanel" aria-labelledby="idle-js-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre class="docs-code"><code class="js">$(document).ready(function() {
+  /*** Document 5 Sec Timeout ***/
+  var docTimeout = 5000;
+
+  // Handle raised idle/active events
+  $(document).on("idle.idleTimer", function(event, elem, obj) {
+    $("#document-Status")
+      .val(function(i, v) {
+        return v + "Idle @ " + moment().format() + " \n";
+      })
+      .removeClass("alert-success")
+      .addClass("alert-warning");
+  });
+  $(document).on("active.idleTimer", function(event, elem, obj, e) {
+    $("#document-Status")
+      .val(function(i, v) {
+        return v + "Active [" + e.type + "] [" + e.target.nodeName + "] @ " + moment().format() + " \n";
+      })
+      .addClass("alert-success")
+      .removeClass("alert-warning");
+  });
+
+  // Handle button events
+  $("#document-Pause").on('click', function() {
+    $(document).idleTimer("pause");
+    $("#document-Status").val(function(i, v) {
+      return v + "Paused @ " + moment().format() + " \n";
+    });
+    $(this).blur();
+    return false;
+  });
+  $("#document-Resume").on('click', function() {
+    $(document).idleTimer("resume");
+    $("#document-Status").val(function(i, v) {
+      return v + "Resumed @ " + moment().format() + " \n";
+    });
+    $(this).blur();
+    return false;
+  });
+  $("#document-Elapsed").on('click', function() {
+    $("#document-Status").val(function(i, v) {
+      return v + "Elapsed (since becoming active): " + $(document).idleTimer("getElapsedTime") + " \n";
+    });
+    $(this).blur();
+    return false;
+  });
+  $("#document-Destroy").on('click', function() {
+    $(document).idleTimer("destroy");
+    $("#document-Status")
+      .val(function(i, v) {
+        return v + "Destroyed: @ " + moment().format() + " \n";
+      })
+      .removeClass("alert-success")
+      .removeClass("alert-warning");
+    $(this).blur();
+    return false;
+  });
+  $("#document-Init").on('click', function() {
+    // for demo purposes show init with just object
+    $(document).idleTimer({ timeout: docTimeout });
+    $("#document-Status").val(function(i, v) {
+      return v + "Init: @ " + moment().format() + " \n";
+    });
+
+    //Apply classes for default state
+    if ($(document).idleTimer("isIdle")) {
+      $("#document-Status")
+        .removeClass("alert-success")
+        .addClass("alert-warning");
+    } else {
+      $("#document-Status")
+        .addClass("alert-success")
+        .removeClass("alert-warning");
+    }
+    $(this).blur();
+    return false;
+  });
+
+  //Clear old statuses
+  $("#document-Status").val("");
+
+  //Start timeout, passing no options
+  //Same as $.idleTimer(docTimeout, docOptions);
+  $(document).idleTimer(docTimeout);
+
+  //For demo purposes, style based on initial state
+  if ($(document).idleTimer("isIdle")) {
+    $("#document-Status")
+      .val(function(i, v) {
+        return v + "Initial Idle State @ " + moment().format() + " \n";
+      })
+      .removeClass("alert-success")
+      .addClass("alert-warning");
+  } else {
+    $("#document-Status")
+      .val(function(i, v) {
+        return v + "Initial Active State @ " + moment().format() + " \n";
+      })
+      .addClass("alert-success")
+      .removeClass("alert-warning");
+  }
+
+  /*** Element 3 Sec Timeout ***/
+
+  var elTimeout = 3000;
+
+  // Handle raised idle/active events
+  $("#element-Status").on("idle.idleTimer", function(event, elem, obj) {
+    //If you don't stop propagation it will bubble up to document event handler
+    event.stopPropagation();
+
+    $("#element-Status")
+      .val(function(i, v) {
+        return v + "Idle @ " + moment().format() + " \n";
+      })
+      .removeClass("alert-success")
+      .addClass("alert-warning");
+  });
+  $("#element-Status").on("active.idleTimer", function(event) {
+    //If you don't stop propagation it will bubble up to document event handler
+    event.stopPropagation();
+
+    $("#element-Status")
+      .val(function(i, v) {
+        return v + "Active @ " + moment().format() + " \n";
+      })
+      .addClass("alert-success")
+      .removeClass("alert-warning");
+  });
+
+  // Handle button events
+  $("#element-Reset").on('click', function() {
+    $("#element-Status")
+      .idleTimer("reset")
+      .val(function(i, v) {
+        return v + "Reset @ " + moment().format() + " \n";
+      });
+
+    //Apply classes for default state
+    if ($("#element-Status").idleTimer("isIdle")) {
+      $("#element-Status")
+        .removeClass("alert-success")
+        .addClass("alert-warning");
+    } else {
+      $("#element-Status")
+        .addClass("alert-success")
+        .removeClass("alert-warning");
+    }
+    $(this).blur();
+    return false;
+  });
+  $("#element-Remaining").on('click', function() {
+    $("#element-Status").val(function(i, v) {
+      return v + "Remaining: " + $("#element-Status").idleTimer("getRemainingTime") + " \n";
+    });
+    $(this).blur();
+    return false;
+  });
+  $("#element-LastActive").on('click', function() {
+    $("#element-Status").val(function(i, v) {
+      return v + "LastActive: " + $("#element-Status").idleTimer("getLastActiveTime") + " \n";
+    });
+    $(this).blur();
+    return false;
+  });
+  $("#element-State").on('click', function() {
+    $("#element-Status").val(function(i, v) {
+      return v + "State: " + ($("#element-Status").idleTimer("isIdle") ? "idle" : "active") + " \n";
+    });
+    $(this).blur();
+    return false;
+  });
+
+  //Clear value if there was one cached & start time
+  $("#element-Status")
+    .val("")
+    .idleTimer(elTimeout);
+
+  //For demo purposes, show initial state
+  if ($("#element-Status").idleTimer("isIdle")) {
+    $("#element-Status")
+      .val(function(i, v) {
+        return v + "Initial Idle @ " + moment().format() + " \n";
+      })
+      .removeClass("alert-success")
+      .addClass("alert-warning");
+  } else {
+    $("#element-Status")
+      .val(function(i, v) {
+        return v + "Initial Active @ " + moment().format() + " \n";
+      })
+      .addClass("alert-success")
+      .removeClass("alert-warning");
+  }
+}); </code></pre>
+              </div>
+            </div>
+          </div>
+          <!-- /Example -->
+        </div>
+      </div>
+      <!-- /Idle Timer -->
+
+      <hr class="my-12" />
+
+      <!-- NumeralJS -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="numeraljs" class="anchor-heading fw-bold">NumeralJS</h4>
+          <p class="anchor-heading fw-bold my-6" id="numeral-usage">Usage</p>
+          <p>Include the following vendors script in the "Vendors JS" area from the page's footer:</p>
+          <div class="doc-example">
+            <div class="doc-example-content" data-label="Code">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;script src=&quot;../../assets/vendor/libs/numeral/numeral.js&quot; /&gt;</code></pre>
+            </div>
+          </div>
+          <p class="anchor-heading fw-bold mt-6" id="numeral-example">Example</p>
+          <p>NumeralJS is a javascript library for formatting and manipulating numbers.</p>
+          <!-- Example -->
+          <div class="doc-example mt-4">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="numeral-preview-tab" data-bs-toggle="tab" data-bs-target="#numeral-preview" role="tab" aria-controls="numeral-preview" aria-selected="true"> Preview </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="numeral-html-tab" data-bs-toggle="tab" data-bs-target="#numeral-html" role="tab" aria-controls="numeral-html" aria-selected="false"> HTML </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="numeral-js-tab" data-bs-toggle="tab" data-bs-target="#numeral-js" role="tab" aria-controls="numeral-js" aria-selected="false"> JS </a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+              <div class="tab-pane fade show active" id="numeral-preview" role="tabpanel" aria-labelledby="numeral-preview-tab">
+                <div class="table-responsive">
+                  <table class="table ">
+                    <thead>
+                      <tr>
+                        <th class="border-top-0">Input</th>
+                        <th class="border-top-0">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>numeral(974)</td>
+                        <td class="dNum"></td>
+                      </tr>
+                      <tr>
+                        <td>numeral(1230974).format('0.0a')</td>
+                        <td class="fNum"></td>
+                      </tr>
+                      <tr>
+                        <td>numeral(1000.234).format('$0,0.00')</td>
+                        <td class="fCurrency"></td>
+                      </tr>
+                      <tr>
+                        <td>numeral(3467479682787).format('0.000 ib')</td>
+                        <td class="fBytes"></td>
+                      </tr>
+                      <tr>
+                        <td>numeral(0.974878234).format('0.000%')</td>
+                        <td class="fPercent"></td>
+                      </tr>
+                      <tr>
+                        <td>numeral(63846).format('00:00:00')</td>
+                        <td class="fTime"></td>
+                      </tr>
+                      <tr>
+                        <td>numeral(1123456789).format('0,0e+0')</td>
+                        <td class="fExponential"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="numeral-html" role="tabpanel" aria-labelledby="numeral-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;table-responsive&quot;&gt;&#10;  &lt;table class=&quot;table &quot;&gt;&#10;    &lt;thead&gt;&#10;      &lt;tr&gt;&#10;        &lt;th class=&quot;border-top-0&quot;&gt;Input&lt;/th&gt;&#10;        &lt;th class=&quot;border-top-0&quot;&gt;Value&lt;/th&gt;&#10;      &lt;/tr&gt;&#10;    &lt;/thead&gt;&#10;    &lt;tbody&gt;&#10;      &lt;tr&gt;&#10;        &lt;td&gt;numeral(974)&lt;/td&gt;&#10;        &lt;td class=&quot;dNum&quot;&gt;&lt;/td&gt;&#10;      &lt;/tr&gt;&#10;      &lt;tr&gt;&#10;        &lt;td&gt;numeral(1230974).format(&apos;0.0a&apos;)&lt;/td&gt;&#10;        &lt;td class=&quot;fNum&quot;&gt;&lt;/td&gt;&#10;      &lt;/tr&gt;&#10;      &lt;tr&gt;&#10;        &lt;td&gt;numeral(1000.234).format(&apos;$0,0.00&apos;)&lt;/td&gt;&#10;        &lt;td class=&quot;fCurrency&quot;&gt;&lt;/td&gt;&#10;      &lt;/tr&gt;&#10;      &lt;tr&gt;&#10;        &lt;td&gt;numeral(3467479682787).format(&apos;0.000 ib&apos;)&lt;/td&gt;&#10;        &lt;td class=&quot;fBytes&quot;&gt;&lt;/td&gt;&#10;      &lt;/tr&gt;&#10;      &lt;tr&gt;&#10;        &lt;td&gt;numeral(0.974878234).format(&apos;0.000%&apos;)&lt;/td&gt;&#10;        &lt;td class=&quot;fPercent&quot;&gt;&lt;/td&gt;&#10;      &lt;/tr&gt;&#10;      &lt;tr&gt;&#10;        &lt;td&gt;numeral(63846).format(&apos;00:00:00&apos;)&lt;/td&gt;&#10;        &lt;td class=&quot;fTime&quot;&gt;&lt;/td&gt;&#10;      &lt;/tr&gt;&#10;      &lt;tr&gt;&#10;        &lt;td&gt;numeral(1123456789).format(&apos;0,0e+0&apos;)&lt;/td&gt;&#10;        &lt;td class=&quot;fExponential&quot;&gt;&lt;/td&gt;&#10;      &lt;/tr&gt;&#10;    &lt;/tbody&gt;&#10;  &lt;/table&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="numeral-js" role="tabpanel" aria-labelledby="numeral-js-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre class="docs-code"><code class="js">const dNum = document.querySelector('.dNum'),
+  fNum = document.querySelector('.fNum'),
+  fCurrency = document.querySelector('.fCurrency'),
+  fBytes = document.querySelector('.fBytes'),
+  fPercent = document.querySelector('.fPercent'),
+  fTime = document.querySelector('.fTime'),
+  fExponential = document.querySelector('.fExponential');
+
+if (dNum) {
+  dNum.innerHTML = numeral(974).value();
+}
+if (fNum) {
+  fNum.innerHTML = numeral(1230974).format('0.0a');
+}
+if (fCurrency) {
+  fCurrency.innerHTML = numeral(1000.234).format('$0,0.000');
+}
+if (fBytes) {
+  fBytes.innerHTML = numeral(3467479682787).format('0.000ib');
+}
+if (fPercent) {
+  fPercent.innerHTML = numeral(0.974878234).format('0.000%');
+}
+if (fTime) {
+  fTime.innerHTML = numeral(63846).format('00:00:00');
+}
+if (fExponential) {
+  fExponential.innerHTML = numeral(1123456789).format('0,0e+0');
+}</code></pre>
+              </div>
+            </div>
+          </div>
+          <!-- /Example -->
+        </div>
+      </div>
+      <!-- /NumeralJS -->
+    </div>
+    <div class="d-none d-xl-block col-xl-2 doc-sidebar container-p-y">
+      <nav id="vertical-nav" class="navbar p-0">
+        <ul class="doc-sidebar-nav">
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#clipboard">Clipboard</a>
+            <ul>
+              <li class="doc-entry doc-h3">
+                <a href="#clipboard-usage" class="nav-link">Usage</a>
+                <a href="#clipboard-example" class="nav-link">Example</a>
+              </li>
+            </ul>
+          </li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#idle-timer">Ideal Timer</a>
+            <ul>
+              <li class="doc-entry doc-h3">
+                <a href="#timer-usage" class="nav-link">Usage</a>
+                <a href="#timer-example" class="nav-link">Example</a>
+              </li>
+            </ul>
+          </li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#numeraljs">NumeralJS</a>
+            <ul>
+              <li class="doc-entry doc-h3">
+                <a href="#numeral-usage" class="nav-link">Usage</a>
+                <a href="#numeral-example" class="nav-link">Example</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div></div>
+          <!-- / Content -->
+
+          
+            <footer class="content-footer footer">
+  <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center text-center py-4">
+    <div>
+      &#169; 2017-
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      
+        <a href="https://pixinvent.com" class="footer-text fw-medium" target="_blank">Pixinvent</a>, Hand-crafted & Made with â¤ï¸
+      
+    </div>
+    <div>
+      
+        <a href="https://www.facebook.com/pixinvents/" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-facebook"></i></a>
+      
+      
+        <a href="https://x.com/pixinvents" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-twitter"></i></a>
+      
+      
+        <a href="https://github.com/pixinvent" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-github"></i></a>
+      
+      
+        <a href="https://dribbble.com/pixinvent" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-dribbble"></i></a>
+      
+      
+        <a href="https://www.instagram.com/pixinvents/" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-instagram"></i></a>
+      
+    </div>
+  </div>
+</footer>
+
+          
+        </div>
+        <!-- Content wrapper -->
+      </div>
+      <!-- / Layout page -->
+    </div>
+
+    
+      
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    
+    <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+    <div class="drag-target"></div>
+  </div>
+  <!-- / Layout wrapper -->
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="assets/vendor/libs/highlight/highlight.js"></script>
+    <script src="assets/vendor/libs/clipboard/clipboard.js"></script>
+    
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/vendor/libs/node-waves/node-waves.js"></script>
+    <script src="assets/vendor/libs/@algolia/autocomplete-js.js"></script>
+    <script src="assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="assets/vendor/js/menu.js"></script>
+    <!-- Vendors JS -->
+    <script src="assets/vendor/libs/clipboard/clipboard.js"></script>
+  <script src="assets/vendor/libs/moment/moment.js"></script>
+  <script src="assets/vendor/libs/jquery-idletimer/jquery-idletimer.js"></script>
+  <script src="assets/vendor/libs/numeral/numeral.js"></script>
+  <script src="assets/vendor/libs/notyf/notyf.js"></script>
+
+    <!-- Page JS -->
+    <script src="assets/js/docs.js"></script>
+    <script src="assets/js/extended-ui-misc-clipboardjs.js"></script>
+  <script src="assets/js/extended-ui-misc-idle-timer.js"></script>
+  <script src="assets/js/extended-ui-misc-numeraljs.js"></script>
+  </body>
+</html>
+
+  <!-- beautify ignore:end -->
+

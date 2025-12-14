@@ -1,0 +1,2049 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- =========================================================
+* Vuexy - Bootstrap Dashboard PRO | v3.0.0
+==============================================================
+
+* Product Page: https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599
+* Created by: Pixinvent
+
+    * License: You must have a valid license purchased in order to legally use the theme for your project.
+  
+* Copyright Pixinvent (https://pixinvent.com)
+
+=========================================================
+ -->
+  <!-- beautify ignore:start -->
+
+<html lang="en" class="docs-page  layout-menu-fixed-offcanvas " data-assets-path="assets/" data-skin="bordered">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Docs: Star Ratings - Extended UI | Vuexy - Bootstrap Dashboard PRO</title>
+
+    <meta name="description" content="Vuexy is the best bootstrap 5 dashboard for responsive web apps. Streamline your app development process with ease." />
+    <meta name="keywords" content="Vuexy bootstrap dashboard, vuexy bootstrap 5 dashboard, themeselection, html dashboard, web dashboard, frontend dashboard, responsive bootstrap theme" />
+    <meta property="og:title" content="Vuexy bootstrap Dashboard by Pixinvent" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" />
+    <meta property="og:image" content="https://pixinvent.com/wp-content/uploads/2023/06/vuexy-hero-image.png" />
+    <meta property="og:description" content="Vuexy is the best bootstrap 5 dashboard for responsive web apps. Streamline your app development process with ease." />
+    <meta property="og:site_name" content="Pixinvent" />
+
+    <!-- Canonical SEO -->
+    <link rel="canonical" href="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" />
+
+    
+      
+      <script>
+        (function (w, d, s, l, i) {
+          w[l] = w[l] || [];
+          w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+          });
+          var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+          j.async = true;
+          j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+          f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5J3LMKC');
+      </script>
+      
+    
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="48x48" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="16x16" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="32x32" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="180x180" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="192x192" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="512x512" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendor/fonts/iconify-icons.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/node-waves/node-waves.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/highlight/highlight.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/raty-js/raty-js.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="assets/vendor/css/core.css" />
+    <link rel="stylesheet" href="assets/css/demo.css" />
+    <link rel="stylesheet" href="assets/css/docs.css" />
+
+    <!-- Page CSS -->
+    
+
+    <!-- Core JS -->
+    <script src="assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: Don't remove unless you are aware of it, To hide customizer set displayCustomizer value false in config.js.  -->
+    <!-- <script src="assets/vendor/js/template-customizer.js"></script> -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="assets/js/config.js"></script>
+  </head>
+
+  <body>
+    
+      
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5J3LMKC" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+      
+    
+
+    <!-- Layout wrapper -->
+  <div class="layout-wrapper layout-navbar-full ">
+    <div class="layout-container">
+      
+        
+
+
+<!-- Navbar main -->
+
+<nav class="layout-navbar navbar navbar-expand-lg align-items-lg-center bg-white border-bottom" id="layout-navbar">
+  <div class="container-fluid">
+    
+      <!-- Menu toggle (see assets/css/demo/demo.css) -->
+      <div class="layout-menu-toggle navbar-nav d-lg-none align-items-lg-center">
+        <a class="nav-item nav-link px-0 me-lg-4" href="javascript:void(0)">
+          <i class="icon-base ti tabler-menu-2 icon-md align-middle"></i>
+        </a>
+      </div>
+    
+
+    <!-- Brand demo (see assets/css/demo/demo.css) -->
+    <div class="navbar-brand app-brand demo py-0 me-md-auto me-12 ms-lg-0 ms-0">
+      <a href="index.html" class="app-brand-link">
+        <span class="app-brand-logo demo">
+  <span class="text-primary">
+    <svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.00172773 0V6.85398C0.00172773 6.85398 -0.133178 9.01207 1.98092 10.8388L13.6912 21.9964L19.7809 21.9181L18.8042 9.88248L16.4951 7.17289L9.23799 0H0.00172773Z" fill="currentColor" />
+      <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd" d="M7.69824 16.4364L12.5199 3.23696L16.5541 7.25596L7.69824 16.4364Z" fill="#161616" />
+      <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd" d="M8.07751 15.9175L13.9419 4.63989L16.5849 7.28475L8.07751 15.9175Z" fill="#161616" />
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z" fill="currentColor" />
+    </svg>
+  </span>
+</span>
+        <span class="app-brand-text demo menu-text fw-bold">Vuexy</span>
+      </a>
+    </div>
+
+    <div class="d-flex ms-md-6 gap-3">
+      
+      <div class="navbar-nav align-items-lg-center justify-content-center">
+        <!-- Search -->
+        <div class="navbar-nav align-items-center">
+          <div class="nav-item navbar-search-wrapper mb-0">
+            <a class="nav-item nav-link search-toggler border rounded-3 py-2 px-md-4 px-2 d-flex align-items-center" href="javascript:void(0);">
+              <span class="d-inline-block text-body-secondary fw-normal" id="autocomplete"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbar-collapse">
+        <hr class="d-lg-none w-100 my-2" />
+        <!-- Divider -->
+
+        <div class="navbar-nav align-items-lg-center">
+          
+          <ul class="navbar-nav">
+            <!-- Technology dropdown -->
+            
+            
+              
+                <li class="nav-item dropdown me-2">
+                  <button class="btn dropdown-toggle py-2 btn-primary" type="button" id="livePreview" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-base ti tabler-current-location me-2"></i> Live preview</button>
+                  <ul class="dropdown-menu" aria-labelledby="livePreview">
+                    <li>
+                      <a href="https://pixinvent.com/vuexy-bootstrap-html-admin-template/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>HTML preview</a>
+                    </li>
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-laravel-admin-template/demo-1/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>Laravel preview</a>
+                      </li>
+                    
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-admin-template/html/vertical-menu-template/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>.Net Core preview</a>
+                      </li>
+                    
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-django-admin-template/demo-1/" target="_blank" class="nav-link text-nowrap"><i class="icon-base ti tabler-current-location me-2"></i>Django preview</a>
+                      </li>
+                    
+                  </ul>
+                </li>
+              
+            
+            
+              <li class="nav-item me-2">
+                <a href="https://pixinvent.ticksy.com/" target="_blank" class="nav-link d-flex align-items-center">
+                  <i class="icon-base ti tabler-lifebuoy me-2"></i>
+                  <span>Support</span>
+                </a>
+              </li>
+            
+            
+              <li class="nav-item">
+                <a href="https://themeforest.net/user/pixinvent/portfolio" target="_blank" class="nav-link d-flex align-items-center">
+                  <i class="icon-base ti tabler-gift me-2"></i>
+                  <span> More Themes</span>
+                </a>
+              </li>
+            
+            
+              <li class="nav-item">
+                <a href="https://themeselection.com/hire-us/" target="_blank" class="nav-link"><i class="icon-base ti tabler-briefcase"></i> Hire Us</a>
+              </li>
+            
+          </ul>
+
+          <!-- Divider -->
+          <div class="nav-item d-none d-lg-block text-big fw-light lh-1 me-4 ms-1">|</div>
+
+          
+            <div class="buy-now-btn">
+              <a href="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" target="_blank" class="btn btn-danger d-flex align-items-center gap-2">
+                <i class="icon-base ti tabler-shopping-cart"></i>
+                <span>Buy Now</span>
+              </a>
+            </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</nav>
+<!-- / Navbar main -->
+
+      
+
+      <!-- Layout page -->
+      <div class="layout-page">
+        
+          
+
+
+
+
+<!-- Menu -->
+<aside id="layout-menu" class="layout-menu menu-doc menu menu-vertical bg-menu-theme">
+  
+  <div class="menu-divider mt-0   d-xl-none "></div>
+
+  <!-- Links -->
+  <ul class="menu-inner py-1">
+    <li class="menu-header text-uppercase small fw-medium">Getting Started</li>
+    <li class="menu-item">
+      <a href="index.html" class="menu-link">
+        <div>Introduction</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="licenses.html" class="menu-link">
+        <div>Licenses</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="folder-structure.html" class="menu-link">
+        <div>Folder Structure</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="quick-start.html" class="menu-link">
+        <div>Quick Start</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="config.html" class="menu-link">
+        <div>Config ð¤©</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="installation-build.html" class="menu-link">
+        <div>Installation & Build</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="template-customizer.html" class="menu-link">
+        <div>Template Customizer</div>
+        
+      </a>
+    </li>
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Customization</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="customization-sass.html" class="menu-link">
+            <div>SASS</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="customization-js.html" class="menu-link">
+            <div>JavaScript</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="customization-third-party-plugins.html" class="menu-link">
+            <div>Third Party Plugins</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="layouts.html" class="menu-link">
+        <div>Layouts</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="dependencies.html" class="menu-link">
+        <div>Dependencies</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="faq.html" class="menu-link">
+        <div>FAQs</div>
+      </a>
+    </li>
+    
+      <!-- Laravel Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row">
+        <span class="me-1">Laravel</span>
+        <span class="badge badge-demo bg-label-danger ms-auto">HTML + Laravel Only</span>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="laravel-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-starter-kit-vs-full-version.html" class="menu-link">
+              <div>Starter-kit Vs Full-version</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-demo-config.html" class="menu-link">
+              <div>Demo Configs</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Auth & ACL</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-auth-jetstream.html" class="menu-link">
+              <div>JetStream</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-passport.html" class="menu-link">
+              <div>Passport</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-sanctum.html" class="menu-link">
+              <div>Sanctum</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-acl.html" class="menu-link">
+              <div>ACL</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-articles-database-connections.html" class="menu-link">
+              <div>Database Connections</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-existing-project.html" class="menu-link">
+              <div>Exiting Project Migration</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-form-validation-integration.html" class="menu-link">
+              <div>Form Validation Package Integration</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-localization.html" class="menu-link">
+          <div>Localization</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-search.html" class="menu-link">
+          <div>Search</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-sail-docker.html" class="menu-link">
+          <div>Sail & Docker</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-deployment.html" class="menu-link">
+          <div>Deployment</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Dotnet Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>ASP.NET CORE</span> <span class="badge badge-demo bg-label-danger ms-auto">Razor Pages</span></li>
+
+      <li class="menu-item">
+        <a href="net-core-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-assets-compilation.html" class="menu-link">
+              <div>Assets Compilation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-start-with-doker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-starter-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="net-core-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Dotnet Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>ASP.NET CORE MVC</span> <span class="badge badge-demo bg-label-danger ms-auto">MVC</span></li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-mvc-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-assets-compilation.html" class="menu-link">
+              <div>Assets Compilation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-start-with-docker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-starter-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="net-core-mvc-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-mvc-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Django Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>Django</span> <span class="badge badge-demo bg-label-danger ms-auto">Django Only</span></li>
+
+      <li class="menu-item">
+        <a href="django-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="django-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-start-with-doker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-demo-config.html" class="menu-link">
+              <div>Demo Config</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-starter-kit-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="django-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="django-articles-create-new-page.html" class="menu-link">
+              <div>Create New Apps & Pages</div>
+            </a>
+          </li>
+          <!-- <li class="menu-item">
+          <a href="django-articles-existing-project.html" class="menu-link">
+            <div>Exiting Project Migration</div>
+          </a>
+        </li> -->
+          <li class="menu-item">
+            <a href="django-articles-admin-superuser.html" class="menu-link">
+              <div>Admin and Create User</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-authentication.html" class="menu-link">
+              <div>Authentication</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="django-articles-permissions-authorization.html" class="menu-link">
+              <div>Permissions & Authorization</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-crud.html" class="menu-link">
+              <div>CRUD Example</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-admin-db.html" class="menu-link">
+              <div>Admin and Database</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-localization.html" class="menu-link">
+          <div>Localization</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-search.html" class="menu-link">
+          <div>Search</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-theme-api.html" class="menu-link">
+          <div>Theme API</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-deployment.html" class="menu-link">
+          <div>Deployment</div>
+        </a>
+      </li>
+    
+    <!-- Apps & Pages -->
+    <li class="menu-divider mb-1"></li>
+    <li class="menu-header text-uppercase small fw-medium">Design System</li>
+
+    <li class="menu-item">
+      <a href="typography.html" class="menu-link">
+        <div>Typography</div>
+      </a>
+    </li>
+
+    <li class="menu-item">
+      <a href="colors.html" class="menu-link">
+        <div>Colors</div>
+      </a>
+    </li>
+
+    <li class="menu-item">
+      <a href="Icons.html" class="menu-link">
+        <div>Icons</div>
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+    <!-- Components -->
+    <li class="menu-header text-uppercase small fw-medium">Components</li>
+
+    <!-- UI Elements -->
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>UI Elements</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="ui-accordion.html" class="menu-link">
+            <div>Accordion</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-alerts.html" class="menu-link">
+            <div>Alerts</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-app-brand.html" class="menu-link">
+            <div>App Brand</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-badges.html" class="menu-link">
+            <div>Badges</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-buttons.html" class="menu-link">
+            <div>Buttons</div>
+          </a>
+        </li>
+        <li class="menu-item
+  ">
+          <a href="javascript:void(0);" class="menu-link menu-toggle">
+            <div>Cards</div>
+          </a>
+          <ul class="menu-sub">
+            <li class="menu-item">
+              <a href="ui-cards-basic.html" class="menu-link">
+                <div>Basic</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="ui-cards-actions.html" class="menu-link">
+                <div>Actions</div>
+                
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="ui-carousel.html" class="menu-link">
+            <div>Carousel</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-collapse.html" class="menu-link">
+            <div>Collapse</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-dropdowns.html" class="menu-link">
+            <div>Dropdowns</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-footer.html" class="menu-link">
+            <div>Footer</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-list-groups.html" class="menu-link">
+            <div>List groups</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-modals.html" class="menu-link">
+            <div>Modals</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-menu.html" class="menu-link">
+            <div>Menu</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-navbar.html" class="menu-link">
+            <div>Navbar</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-offcanvas.html" class="menu-link">
+            <div>Offcanvas</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-pagination-breadcrumbs.html" class="menu-link">
+            <div>Pagination &amp; Breadcrumbs</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-popovers.html" class="menu-link">
+            <div>Popovers</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-progress.html" class="menu-link">
+            <div>Progress</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-spinners.html" class="menu-link">
+            <div>Spinners</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-navs.html" class="menu-link">
+            <div>Navs</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-tabs-pills.html" class="menu-link">
+            <div>Tabs &amp; Pills</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-toasts.html" class="menu-link">
+            <div>Toasts</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-tooltips.html" class="menu-link">
+            <div>Tooltips</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+
+    <!-- Extended components -->
+    <li class="menu-item
+   active open">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Extended UI</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="extended-ui-avatar.html" class="menu-link">
+            <div>Avatar</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-blockui.html" class="menu-link">
+            <div>BlockUI</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-drag-and-drop.html" class="menu-link">
+            <div>Drag &amp; Drop</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-media-player.html" class="menu-link">
+            <div>Media Player</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-perfect-scrollbar.html" class="menu-link">
+            <div>Perfect scrollbar</div>
+          </a>
+        </li>
+        <li class="menu-item active">
+          <a href="extended-ui-star-ratings.html" class="menu-link">
+            <div>Star Ratings</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-sweetalert2.html" class="menu-link">
+            <div>SweetAlert2</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-text-divider.html" class="menu-link">
+            <div>Text Divider</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-timeline.html" class="menu-link">
+            <div>Timeline</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-tour.html" class="menu-link">
+            <div>Tour</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-treeview.html" class="menu-link">
+            <div>Treeview</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-misc.html" class="menu-link">
+            <div>Miscellaneous</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Forms -->
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Forms</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="forms-basic-inputs.html" class="menu-link">
+            <div>Basic Inputs</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-input-groups.html" class="menu-link">
+            <div>Input groups</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-custom-options.html" class="menu-link">
+            <div>Custom Options</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-editors.html" class="menu-link">
+            <div>Editors</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-file-upload.html" class="menu-link">
+            <div>File Upload</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-pickers.html" class="menu-link">
+            <div>Pickers</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-selects.html" class="menu-link">
+            <div>Select &amp; Tags</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-sliders.html" class="menu-link">
+            <div>Sliders</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-switches.html" class="menu-link">
+            <div>Switches</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-extras.html" class="menu-link">
+            <div>Extras</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-validation.html" class="menu-link">
+            <div>Validation</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-wizard.html" class="menu-link">
+            <div>Wizard</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-layouts-sticky.html" class="menu-link">
+            <div>Sticky Actions</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <!-- Tables -->
+    <li class="menu-item">
+      <a href="tables-basic.html" class="menu-link">
+        <div>Tables</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="tables-datatables.html" class="menu-link">
+        <div>Datatables</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="utilities.html" class="menu-link">
+        <div>Utilities</div>
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+    <!-- Charts & Maps -->
+    <li class="menu-header text-uppercase small fw-medium">Charts &amp; Maps</li>
+
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <div data-i18n="Charts">Charts</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="charts-apex.html" class="menu-link">
+            <div>Apex Charts</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="charts-chartjs.html" class="menu-link">
+            <div>ChartJS</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="maps-leaflet.html" class="menu-link">
+        <div>Leaflet</div>
+        
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+
+    <!-- Charts & Maps -->
+    <li class="menu-header text-uppercase small fw-medium">Others</li>
+    <li class="menu-item">
+      <a href="credits.html" class="menu-link">
+        <div>Credits</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="https://pixinvent.ticksy.com/" target="_blank" class="menu-link">
+        <div>Support</div>
+      </a>
+    </li>
+  </ul>
+</aside>
+<!-- / Menu -->
+
+        
+
+        <!-- Content wrapper -->
+        <div class="content-wrapper">
+          <!-- Content -->
+          <div class="container-xxl flex-grow-1 container-p-y"><div class="row flex-xl-nowrap">
+  <div class="DocSearch-content col-12 col-xl-10 container-p-y">
+    <h2 class="mb-6 doc-page-title">Star Ratings</h2>
+    <p>
+      We use <b>Raty.js</b> for our star rating component. <b>Raty.js</b> is a flexible, lightweight star rating library that supports custom SVGs as well as image-based stars, giving you complete control over the appearance of your ratings.<br />Read the official
+      <a href="https://github.com/wbotelhos/raty/blob/main/tutorial.md" target="_blank" rel="noopener noreferrer">Raty-js Documentation</a>
+      for a full list of instructions and other options.
+    </p>
+
+    <hr class="my-12" />
+
+    <!-- Usage -->
+    <div class="row">
+      <div class="col-12">
+        <h4 class="anchor-heading fw-bold mb-6" id="usage">Usage</h4>
+        <p>
+          In order to use raty-js on your page, It is required to include the following vendors css in the "Vendors
+          CSS" area from the page's header:
+        </p>
+        <div class="doc-example">
+          <div class="doc-example-content" data-label="Code">
+            <div class="doc-clipboard">
+              <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">
+                Copy
+              </button>
+            </div>
+            <pre class="docs-code"><code class="html">&lt;link rel=&quot;stylesheet&quot; href=&quot;../../assets/vendor/libs/raty-js/raty-js.css&quot; /&gt;</code></pre>
+          </div>
+        </div>
+        <p class="mt-6">Include the following vendors script in the "Vendors JS" area from the page's footer:</p>
+        <div class="doc-example">
+          <div class="doc-example-content" data-label="Code">
+            <div class="doc-clipboard">
+              <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">
+                Copy
+              </button>
+            </div>
+            <pre class="docs-code"><code class="html">&lt;script src=&quot;../../assets/vendor/libs/raty-js/raty-js.js&quot;&gt;&lt;script&gt;</code></pre>
+          </div>
+        </div>
+        <p class="mt-6">We are using custom-svgs for stars. you can find them here <code>extended-ui-star-ratings.js</code>.</p>
+        <div class="doc-example">
+          <div class="doc-example-content" data-label="Code">
+            <div class="doc-clipboard">
+              <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">
+                Copy
+              </button>
+            </div>
+            <pre class="docs-code"><code class="js">let r = parseInt(window.Helpers.getCssVar(&apos;gray-200&apos;, true).slice(1, 3), 16);&#10;let g = parseInt(window.Helpers.getCssVar(&apos;gray-200&apos;, true).slice(3, 5), 16);&#10;let b = parseInt(window.Helpers.getCssVar(&apos;gray-200&apos;, true).slice(5, 7), 16);&#10;const halfStarGray = window.Helpers.getCssVar(&apos;gray-200&apos;, true).replace(&apos;#&apos;, &apos;%23&apos;);&#10;const halfStarGradient = isRtl&#10;  ? `%3Cstop offset=&apos;50%25&apos; style=&apos;stop-color:${halfStarGray}&apos; /%3E%3Cstop offset=&apos;50%25&apos; style=&apos;stop-color:%23FFD700&apos; /%3E`&#10;  : `%3Cstop offset=&apos;50%25&apos; style=&apos;stop-color:%23FFD700&apos; /%3E%3Cstop offset=&apos;50%25&apos; style=&apos;stop-color:${halfStarGray}&apos; /%3E`;&#10;const fullStarSVG = `data:image/svg+xml,%3Csvg xmlns=&apos;http://www.w3.org/2000/svg&apos; viewBox=&apos;0 0 24 24&apos;%3E%3Cpath fill=&apos;%23FFD700&apos; d=&apos;m8.243 7.34l-6.38.925l-.113.023a1 1 0 0 0-.44 1.684l4.622 4.499l-1.09 6.355l-.013.11a1 1 0 0 0 1.464.944l5.706-3l5.693 3l.1.046a1 1 0 0 0 1.352-1.1l-1.091-6.355l4.624-4.5l.078-.085a1 1 0 0 0-.633-1.62l-6.38-.926l-2.852-5.78a1 1 0 0 0-1.794 0z&apos;/%3E%3C/svg%3E`;&#10;&#10;const halfStarSVG = `data:image/svg+xml,%3Csvg xmlns=&apos;http://www.w3.org/2000/svg&apos; viewBox=&apos;0 0 24 24&apos;%3E%3Cdefs%3E%3ClinearGradient id=&apos;halfStarGradient&apos;%3E${halfStarGradient}%3C/linearGradient%3E%3C/defs%3E%3Cpath fill=&apos;url(%23halfStarGradient)&apos; d=&apos;m8.243 7.34l-6.38.925l-.113.023a1 1 0 0 0-.44 1.684l4.622 4.499l-1.09 6.355l-.013.11a1 1 0 0 0 1.464.944l5.706-3l5.693 3l.1.046a1 1 0 0 0 1.352-1.1l-1.091-6.355l4.624-4.5l.078-.085a1 1 0 0 0-.633-1.62l-6.38-.926l-2.852-5.78a1 1 0 0 0-1.794 0z&apos;/%3E%3C/svg%3E`;&#10;&#10;const emptyStarSVG = `data:image/svg+xml,%3Csvg xmlns=&apos;http://www.w3.org/2000/svg&apos; viewBox=&apos;0 0 24 24&apos;%3E%3Cpath fill=&apos;rgb(${r},${g},${b})&apos; d=&apos;m8.243 7.34l-6.38.925l-.113.023a1 1 0 0 0-.44 1.684l4.622 4.499l-1.09 6.355l-.013.11a1 1 0 0 0 1.464.944l5.706-3l5.693 3l.1.046a1 1 0 0 0 1.352-1.1l-1.091-6.355l4.624-4.5l.078-.085a1 1 0 0 0-.633-1.62l-6.38-.926l-2.852-5.78a1 1 0 0 0-1.794 0z&apos;/%3E%3C/svg%3E`;</code></pre>
+          </div>
+        </div>
+        <p class="mt-6">To use CSS variables for colors in your SVG elements, you can utilize the <code>getCssVar()</code> function. please, Ensure the colors are specified in rgba format for optimal compatibility within SVG.</p>
+        <div class="doc-example">
+          <div class="doc-example-content" data-label="Code">
+            <div class="doc-clipboard">
+              <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">
+                Copy
+              </button>
+            </div>
+            <pre class="docs-code"><code class="js">rgba(window.Helpers.getCssVar('primary-rgb', true), 1)
+            or
+rgba(119, 92, 220, 1)</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Usage -->
+
+    <h4 class="anchor-heading fw-bold mt-6" id="example">Examples</h4>
+
+    <!-- Basic -->
+    <div class="row">
+      <div class="col-12">
+        <p id="basic" class="anchor-heading fw-bold mt-6">Basic</p>
+        <p>To create ratings just create a <code>&lt;div&gt;</code>, initialize and thats it!</p>
+        <div class="doc-example mt-4">
+          <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="ratings-basic-preview-tab" data-bs-toggle="tab" data-bs-target="#ratings-basic-preview" role="tab" aria-controls="ratings-basic-preview" aria-selected="true">
+                Preview
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="ratings-basic-html-tab" data-bs-toggle="tab" data-bs-target="#ratings-basic-html" role="tab" aria-controls="ratings-basic-html" aria-selected="false">
+                HTML
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="ratings-basic-js-tab" data-bs-toggle="tab" data-bs-target="#ratings-basic-js" role="tab" aria-controls="ratings-basic-js" aria-selected="false">
+                JS
+              </a>
+            </li>
+          </ul>
+          <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+            <div class="tab-pane fade show active" id="ratings-basic-preview" role="tabpanel" aria-labelledby="ratings-basic-preview-tab">
+              <div class="basic-ratings raty" data-score="3" data-number="5"></div>
+            </div>
+            <div class="tab-pane fade" id="ratings-basic-html" role="tabpanel" aria-labelledby="ratings-basic-html-tab">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">
+                  Copy
+                </button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;div class=&quot;basic-ratings raty&quot; data-score=&quot;3&quot; data-number=&quot;5&quot;&gt;&lt;/div&gt;</code></pre>
+            </div>
+            <div class="tab-pane fade" id="ratings-basic-js" role="tabpanel" aria-labelledby="ratings-basic-js-tab">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">
+                  Copy
+                </button>
+              </div>
+              <pre class="docs-code"><code class="js">const basicRatings = document.querySelector(&apos;.basic-ratings&apos;);&#10;if (basicRatings) {&#10;  let ratings = new Raty(basicRatings, {&#10;    starOn: fullStarSVG,&#10;    starHalf: halfStarSVG,&#10;    starOff: emptyStarSVG&#10;  });&#10;  ratings.init();&#10;}</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Basic -->
+
+    <hr class="my-12" />
+
+    <!-- Read Only -->
+    <div class="row">
+      <div class="col-12">
+        <p id="read-only" class="anchor-heading fw-bold">Read Only</p>
+        <p>
+          Use <code>data-read-only="true"</code> attribute with HTML element or use
+          <code>readOnly</code> property in JS to create a read only ratings
+        </p>
+        <div class="doc-example mt-4">
+          <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="ratings-read-only-preview-tab" data-bs-toggle="tab" data-bs-target="#ratings-read-only-preview" role="tab" aria-controls="ratings-read-only-preview" aria-selected="true">
+                Preview
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="ratings-read-only-html-tab" data-bs-toggle="tab" data-bs-target="#ratings-read-only-html" role="tab" aria-controls="ratings-read-only-html" aria-selected="false">
+                HTML
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="ratings-read-only-js-tab" data-bs-toggle="tab" data-bs-target="#ratings-read-only-js" role="tab" aria-controls="ratings-read-only-js" aria-selected="false">
+                JS
+              </a>
+            </li>
+          </ul>
+          <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+            <div class="tab-pane fade show active" id="ratings-read-only-preview" role="tabpanel" aria-labelledby="ratings-read-only-preview-tab">
+              <div class="read-only-ratings raty" data-read-only="true" data-score="3" data-number="5"></div>
+            </div>
+            <div class="tab-pane fade" id="ratings-read-only-html" role="tabpanel" aria-labelledby="ratings-read-only-html-tab">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">
+                  Copy
+                </button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;div class=&quot;read-only-ratings raty&quot; data-read-only=&quot;true&quot; data-score=&quot;3&quot; data-number=&quot;5&quot;&gt;&lt;/div&gt;</code></pre>
+            </div>
+            <div class="tab-pane fade" id="ratings-read-only-js" role="tabpanel" aria-labelledby="ratings-read-only-js-tab">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">
+                  Copy
+                </button>
+              </div>
+              <pre class="docs-code"><code class="js">const readOnlyRatings = document.querySelector(&apos;.read-only-ratings&apos;);&#10;if (readOnlyRatings) {&#10;  let ratings = new Raty(readOnlyRatings, {&#10;    number: 5,&#10;    starOn: fullStarSVG,&#10;    starHalf: halfStarSVG,&#10;    starOff: emptyStarSVG&#10;  });&#10;  ratings.init();&#10;}</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Read Only -->
+
+    <hr class="my-12" />
+
+    <!-- Custom SVG -->
+    <div class="row">
+      <div class="col-12">
+        <p id="custom-svg" class="anchor-heading fw-bold">Custom SVG</p>
+        <p>You can also use different SVGs for various star ratings to customize the appearance of each rating level uniquely.</p>
+        <div class="doc-example mt-4">
+          <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="ratings-custom-svg-preview-tab" data-bs-toggle="tab" data-bs-target="#ratings-custom-svg-preview" role="tab" aria-controls="ratings-custom-svg-preview" aria-selected="true">
+                Preview
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="ratings-custom-svg-html-tab" data-bs-toggle="tab" data-bs-target="#ratings-custom-svg-html" role="tab" aria-controls="ratings-custom-svg-html" aria-selected="false">
+                HTML
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="ratings-custom-svg-js-tab" data-bs-toggle="tab" data-bs-target="#ratings-custom-svg-js" role="tab" aria-controls="ratings-custom-svg-js" aria-selected="false">
+                JS
+              </a>
+            </li>
+          </ul>
+          <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+            <div class="tab-pane fade show active" id="ratings-custom-svg-preview" role="tabpanel" aria-labelledby="ratings-custom-svg-preview-tab">
+              <div class="custom-svg-ratings raty" data-score="2" data-number="5"></div>
+            </div>
+            <div class="tab-pane fade" id="ratings-custom-svg-html" role="tabpanel" aria-labelledby="ratings-custom-svg-html-tab">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">
+                  Copy
+                </button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;div class=&quot;custom-svg-ratings raty&quot; data-score=&quot;2&quot; data-number=&quot;5&quot;&gt;&lt;/div&gt;</code></pre>
+            </div>
+            <div class="tab-pane fade" id="ratings-custom-svg-js" role="tabpanel" aria-labelledby="ratings-custom-svg-js-tab">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">
+                  Copy
+                </button>
+              </div>
+              <pre class="docs-code"><code class="js">const customSvg = document.querySelector(&apos;.custom-svg-ratings&apos;);&#10;const customFullStarSVG = `data:image/svg+xml,%3Csvg xmlns=&apos;http://www.w3.org/2000/svg&apos; viewBox=&apos;0 0 24 24&apos;%3E%3Cpath fill=&apos;%23FFD700&apos; d=&apos;m6.516 14.323l-1.49 6.452a.998.998 0 0 0 1.529 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4l4.536-4.082a1 1 0 0 0-.59-1.74l-5.701-.454l-2.467-5.461a.998.998 0 0 0-1.822 0L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713zm2.853-4.326a1 1 0 0 0 .832-.586L12 5.43l1.799 3.981a1 1 0 0 0 .832.586l3.972.315l-3.271 2.944c-.284.256-.397.65-.293 1.018l1.253 4.385l-3.736-2.491a.995.995 0 0 0-1.109 0l-3.904 2.603l1.05-4.546a1 1 0 0 0-.276-.94l-3.038-2.962z&apos;/%3E%3C/svg%3E`;&#10;const customEmptyStarSVG = `data:image/svg+xml,%3Csvg xmlns=&apos;http://www.w3.org/2000/svg&apos; viewBox=&apos;0 0 24 24&apos;%3E%3Cpath fill=&apos;rgb(${r},${g},${b})&apos; d=&apos;m6.516 14.323l-1.49 6.452a.998.998 0 0 0 1.529 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4l4.536-4.082a1 1 0 0 0-.59-1.74l-5.701-.454l-2.467-5.461a.998.998 0 0 0-1.822 0L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713zm2.853-4.326a1 1 0 0 0 .832-.586L12 5.43l1.799 3.981a1 1 0 0 0 .832.586l3.972.315l-3.271 2.944c-.284.256-.397.65-.293 1.018l1.253 4.385l-3.736-2.491a.995.995 0 0 0-1.109 0l-3.904 2.603l1.05-4.546a1 1 0 0 0-.276-.94l-3.038-2.962z&apos;/%3E%3C/svg%3E`;&#10;if (customSvg) {&#10;  let ratings = new Raty(customSvg, {&#10;    starOn: customFullStarSVG,&#10;    starHalf: customHalfStarSVG,&#10;    starOff: customEmptyStarSVG&#10;  });&#10;  ratings.init();&#10;}</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Custom SVG -->
+
+    <hr class="my-12" />
+
+    <!-- Half Star -->
+    <div class="row">
+      <div class="col-12">
+        <p id="half-star" class="anchor-heading fw-bold">Half Star</p>
+        <p>
+          Use <code>data-half="true"</code> attribute with HTML element or use
+          <code>halfShow</code> property.
+        </p>
+        <div class="doc-example mt-4">
+          <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="ratings-half-star-preview-tab" data-bs-toggle="tab" data-bs-target="#ratings-half-star-preview" role="tab" aria-controls="ratings-half-star-preview" aria-selected="true">
+                Preview
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="ratings-half-star-html-tab" data-bs-toggle="tab" data-bs-target="#ratings-half-star-html" role="tab" aria-controls="ratings-half-star-html" aria-selected="false">
+                HTML
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="ratings-half-star-js-tab" data-bs-toggle="tab" data-bs-target="#ratings-half-star-js" role="tab" aria-controls="ratings-half-star-js" aria-selected="false">
+                JS
+              </a>
+            </li>
+          </ul>
+          <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+            <div class="tab-pane fade show active" id="ratings-half-star-preview" role="tabpanel" aria-labelledby="ratings-half-star-preview-tab">
+              <div class="half-star-ratings raty" data-half="true" data-score="3.5" data-number="5"></div>
+            </div>
+            <div class="tab-pane fade" id="ratings-half-star-html" role="tabpanel" aria-labelledby="ratings-half-star-html-tab">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">
+                  Copy
+                </button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;div class=&quot;half-star-ratings raty&quot; data-half=&quot;true&quot; data-score=&quot;3.5&quot; data-number=&quot;5&quot;&gt;&lt;/div&gt;</code></pre>
+            </div>
+            <div class="tab-pane fade" id="ratings-half-star-js" role="tabpanel" aria-labelledby="ratings-half-star-js-tab">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">
+                  Copy
+                </button>
+              </div>
+              <pre class="docs-code"><code class="js">const halfStar = document.querySelector(&apos;.half-star-ratings&apos;);&#10;if (halfStar) {&#10;  let ratings = new Raty(halfStar, {&#10;    starOn: fullStarSVG,&#10;    starHalf: halfStarSVG,&#10;    starOff: emptyStarSVG&#10;  });&#10;  ratings.init();&#10;}</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Half Star -->
+
+    <hr class="my-12" />
+
+    <!-- Events -->
+    <div class="row">
+      <div class="col-12">
+        <p id="events" class="anchor-heading fw-bold">Events</p>
+        <p>Refer below example to use ratings events.</p>
+        <div class="doc-example mt-4">
+          <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="ratings-events-preview-tab" data-bs-toggle="tab" data-bs-target="#ratings-events-preview" role="tab" aria-controls="ratings-events-preview" aria-selected="true">
+                Preview
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="ratings-events-html-tab" data-bs-toggle="tab" data-bs-target="#ratings-events-html" role="tab" aria-controls="ratings-events-html" aria-selected="false">
+                HTML
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="ratings-events-js-tab" data-bs-toggle="tab" data-bs-target="#ratings-events-js" role="tab" aria-controls="ratings-events-js" aria-selected="false">
+                JS
+              </a>
+            </li>
+          </ul>
+          <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+            <div class="tab-pane fade show active" id="ratings-events-preview" role="tabpanel" aria-labelledby="ratings-events-preview-tab">
+              <div class="row">
+                <div class="col-md d-flex flex-column align-items-start mb-sm-0 mb-4">
+                  <small class="fw-medium">onSet Event</small>
+                  <div class="onset-event-ratings raty" data-score="3" data-number="5" data-half="true"></div>
+                </div>
+                <div class="col-md d-flex flex-column align-items-start">
+                  <small class="fw-medium">onChange Event</small>
+                  <div class="onChange-event-ratings raty mb-4" data-score="0" data-number="5" data-half="true"></div>
+                  <div class=" counter-wrapper">
+                    <span class="fw-medium">Ratings:</span>
+                    <span class="counter"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="ratings-events-html" role="tabpanel" aria-labelledby="ratings-events-html-tab">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">
+                  Copy
+                </button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;div class=&quot;col-md d-flex flex-column align-items-start mb-sm-0 mb-4&quot;&gt;&#10;  &lt;small class=&quot;fw-medium&quot;&gt;onSet Event&lt;/small&gt;&#10;  &lt;div class=&quot;onset-event-ratings raty&quot; data-score=&quot;3&quot; data-number=&quot;5&quot; data-half=&quot;true&quot;&gt;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;col-md d-flex flex-column align-items-start&quot;&gt;&#10;  &lt;small class=&quot;fw-medium&quot;&gt;onChange Event&lt;/small&gt;&#10;  &lt;div class=&quot;onChange-event-ratings raty mb-4&quot; data-score=&quot;0&quot; data-number=&quot;5&quot; data-half=&quot;true&quot;&gt;&lt;/div&gt;&#10;  &lt;div class=&quot; counter-wrapper&quot;&gt;&#10;    &lt;span class=&quot;fw-medium&quot;&gt;Ratings:&lt;/span&gt;&#10;    &lt;span class=&quot;counter&quot;&gt;&lt;/span&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;</code></pre>
+            </div>
+            <div class="tab-pane fade" id="ratings-events-js" role="tabpanel" aria-labelledby="ratings-events-js-tab">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">
+                  Copy
+                </button>
+              </div>
+              <pre class="docs-code"><code class="js">// onSet Event&#10;if (onSetEvents) {&#10;  let ratings = new Raty(onSetEvents, {&#10;    starOn: fullStarSVG,&#10;    starHalf: halfStarSVG,&#10;    starOff: emptyStarSVG,&#10;    click: function (score) {&#10;      alert(&apos;The rating is set to &apos; + score + &apos; !&apos;);&#10;    }&#10;  });&#10;  ratings.init();&#10;}&#10;&#10;// onChange Event&#10;if (onChangeEvents) {&#10;  let ratings = new Raty(onChangeEvents, {&#10;    starOn: fullStarSVG,&#10;    starHalf: halfStarSVG,&#10;    starOff: emptyStarSVG,&#10;    mouseover: function (score) {&#10;      const counterElement = onChangeEvents.parentElement.querySelector(&apos;.counter&apos;);&#10;      if (counterElement) {&#10;        counterElement.textContent = score.toFixed(1);&#10;      }&#10;    },&#10;    mouseout: function () {&#10;      const counterElement = onChangeEvents.parentElement.querySelector(&apos;.counter&apos;);&#10;      if (counterElement) {&#10;        counterElement.textContent = ratings.score();&#10;      }&#10;    }&#10;  });&#10;  ratings.init();&#10;}</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Events -->
+
+    <hr class="my-12" />
+
+    <!-- Methods -->
+    <div class="row">
+      <div class="col-12">
+        <p id="methods" class="anchor-heading fw-bold">Methods</p>
+        <p>Refer below example to use ratings methods.</p>
+        <div class="doc-example mt-4">
+          <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="ratings-methods-preview-tab" data-bs-toggle="tab" data-bs-target="#ratings-methods-preview" role="tab" aria-controls="ratings-methods-preview" aria-selected="true">
+                Preview
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="ratings-methods-html-tab" data-bs-toggle="tab" data-bs-target="#ratings-methods-html" role="tab" aria-controls="ratings-methods-html" aria-selected="false">
+                HTML
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="ratings-methods-js-tab" data-bs-toggle="tab" data-bs-target="#ratings-methods-js" role="tab" aria-controls="ratings-methods-js" aria-selected="false">
+                JS
+              </a>
+            </li>
+          </ul>
+          <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+            <div class="tab-pane fade show active" id="ratings-methods-preview" role="tabpanel" aria-labelledby="ratings-methods-preview-tab">
+              <div class="methods-ratings raty" data-number="5"></div>
+              <div class="demo-inline-spacing">
+                <button class="btn btn-primary btn-initialize">Initialize</button>
+                <button class="btn btn-danger btn-destroy">Destroy</button>
+                <button class="btn btn-success btn-get-rating">Get Ratings</button>
+                <button class="btn btn-info btn-set-rating">Set Ratings to 1</button>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="ratings-methods-html" role="tabpanel" aria-labelledby="ratings-methods-html-tab">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">
+                  Copy
+                </button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;div class=&quot;methods-ratings raty&quot; data-score=&quot;1&quot; data-number=&quot;5&quot;&gt;&lt;/div&gt;&#10;&lt;div class=&quot;demo-inline-spacing&quot;&gt;&#10;  &lt;button class=&quot;btn btn-primary btn-initialize&quot;&gt;Initialize&lt;/button&gt;&#10;  &lt;button class=&quot;btn btn-danger btn-destroy&quot;&gt;Destroy&lt;/button&gt;&#10;  &lt;button class=&quot;btn btn-success btn-get-rating&quot;&gt;Get Ratings&lt;/button&gt;&#10;  &lt;button class=&quot;btn btn-info btn-set-rating&quot;&gt;Set Ratings to 1&lt;/button&gt;&#10;&lt;/div&gt;</code></pre>
+            </div>
+            <div class="tab-pane fade" id="ratings-methods-js" role="tabpanel" aria-labelledby="ratings-methods-js-tab">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">
+                  Copy
+                </button>
+              </div>
+              <pre class="docs-code"><code class="js">const ratingMethods = document.querySelector(&apos;.methods-ratings&apos;),&#10;  initializeRatings = document.querySelector(&apos;.btn-initialize&apos;),&#10;  destroyRatings = document.querySelector(&apos;.btn-destroy&apos;),&#10;  getRatings = document.querySelector(&apos;.btn-get-rating&apos;),&#10;  setRatings = document.querySelector(&apos;.btn-set-rating&apos;);&#10;let currentScore = 1;&#10;let ratingInstance = null;&#10;&#10;// initialize rating&#10;function initializeRating(score = currentScore) {&#10;  if (!ratingInstance) {&#10;    ratingInstance = new Raty(ratingMethods, {&#10;      starOn: fullStarSVG,&#10;      starHalf: halfStarSVG,&#10;      starOff: emptyStarSVG,&#10;      click: function (newScore) {&#10;        currentScore = newScore;&#10;      },&#10;      readOnly: false,&#10;      rtl: isRtl&#10;    });&#10;    ratingInstance.init();&#10;  }&#10;}&#10;&#10;initializeRating(currentScore);&#10;&#10;// destroy rating&#10;function destroyRating() {&#10;  if (ratingInstance) {&#10;    ratingMethods.innerHTML = &apos;&apos;;&#10;    ratingInstance = null;&#10;  } else {&#10;    alert(&apos;Please Initialize Ratings First&apos;);&#10;  }&#10;}&#10;&#10;// Get Current Rating&#10;function getRating() {&#10;  if (ratingInstance) {&#10;    alert(&apos;Current Ratings are &apos; + currentScore);&#10;  } else {&#10;    alert(&apos;Please Initialize Ratings First&apos;);&#10;  }&#10;}&#10;&#10;// set rating&#10;function setRating(score) {&#10;  if (ratingInstance) {&#10;    destroyRating();&#10;    initializeRating(score);&#10;  } else {&#10;    alert(&apos;Please Initialize Ratings First&apos;);&#10;  }&#10;}&#10;&#10;if (initializeRatings) {&#10;  initializeRatings.addEventListener(&apos;click&apos;, () =&gt; initializeRating(currentScore));&#10;}&#10;&#10;if (destroyRatings) {&#10;  destroyRatings.addEventListener(&apos;click&apos;, destroyRating);&#10;}&#10;&#10;if (getRatings) {&#10;  getRatings.addEventListener(&apos;click&apos;, getRating);&#10;}&#10;&#10;if (setRatings) {&#10;  setRatings.addEventListener(&apos;click&apos;, () =&gt; setRating(1));&#10;}</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Methods -->
+
+    <hr class="my-12" />
+
+    <h4 class="anchor-heading fw-bold mt-6" id="rating-with-icons">Rating with icons</h4>
+
+    <!-- rating with icons -->
+    <div class="row">
+      <div class="col-12">
+        <p id="icons-basic" class="anchor-heading fw-bold mt-6">Basic</p>
+        <p>You can also use desired icons as a stars in ratings.</p>
+        <div class="doc-example mt-4">
+          <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="icons-ratings-basic-preview-tab" data-bs-toggle="tab" data-bs-target="#icons-ratings-basic-preview" role="tab" aria-controls="icons-ratings-basic-preview" aria-selected="true">
+                Preview
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="icons-ratings-basic-html-tab" data-bs-toggle="tab" data-bs-target="#icons-ratings-basic-html" role="tab" aria-controls="icons-ratings-basic-html" aria-selected="false">
+                HTML
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="icons-ratings-basic-js-tab" data-bs-toggle="tab" data-bs-target="#icons-ratings-basic-js" role="tab" aria-controls="icons-ratings-basic-js" aria-selected="false">
+                JS
+              </a>
+            </li>
+          </ul>
+          <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+            <div class="tab-pane fade show active" id="icons-ratings-basic-preview" role="tabpanel" aria-labelledby="icons-ratings-basic-preview-tab">
+              <div class="icon-star-ratings" data-score="3" data-number="5"></div>
+            </div>
+            <div class="tab-pane fade" id="icons-ratings-basic-html" role="tabpanel" aria-labelledby="icons-ratings-basic-html-tab">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">
+                  Copy
+                </button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;div class=&quot;icon-star-ratings&quot; data-score=&quot;3&quot; data-number=&quot;5&quot;&gt;&lt;/div&gt;</code></pre>
+            </div>
+            <div class="tab-pane fade" id="icons-ratings-basic-js" role="tabpanel" aria-labelledby="icons-ratings-basic-js-tab">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">
+                  Copy
+                </button>
+              </div>
+              <pre class="docs-code"><code class="js">const iconStar = document.querySelector(&apos;.icon-star-ratings&apos;);&#10;if (iconStar) {&#10;  let ratings = new Raty(iconStar, {&#10;    starType: &apos;i&apos;,&#10;    starOff: &apos;icon-base icon-xl ti tabler-heart-filled bg-danger-subtle&apos;,&#10;    starOn: &apos;icon-base icon-xl ti tabler-heart-filled text-danger&apos;&#10;  });&#10;  ratings.init();&#10;}</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /rating with icons -->
+
+    <hr class="my-12" />
+
+    <!-- rating with icons size variant -->
+    <div class="row">
+      <div class="col-12">
+        <p id="icons-size" class="anchor-heading fw-bold mt-6">Size variants</p>
+        <p>You can use <code>icon-{size}</code> class to change the size of stars.</p>
+        <div class="doc-example mt-4">
+          <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="icons-size-ratings-basic-preview-tab" data-bs-toggle="tab" data-bs-target="#icons-size-ratings-basic-preview" role="tab" aria-controls="icons-size-ratings-basic-preview" aria-selected="true">
+                Preview
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="icons-size-ratings-basic-html-tab" data-bs-toggle="tab" data-bs-target="#icons-size-ratings-basic-html" role="tab" aria-controls="icons-size-ratings-basic-html" aria-selected="false">
+                HTML
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="icons-size-ratings-basic-js-tab" data-bs-toggle="tab" data-bs-target="#icons-size-ratings-basic-js" role="tab" aria-controls="icons-size-ratings-basic-js" aria-selected="false">
+                JS
+              </a>
+            </li>
+          </ul>
+          <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+            <div class="tab-pane fade show active" id="icons-size-ratings-basic-preview" role="tabpanel" aria-labelledby="icons-size-ratings-basic-preview-tab">
+              <div class="icon-star-sm-ratings" data-score="1" data-number="5"></div>
+              <div class="icon-star-md-ratings" data-score="2" data-number="5"></div>
+              <div class="icon-star-lg-ratings" data-score="3" data-number="5"></div>
+            </div>
+            <div class="tab-pane fade" id="icons-size-ratings-basic-html" role="tabpanel" aria-labelledby="icons-size-ratings-basic-html-tab">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">
+                  Copy
+                </button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;div class=&quot;icon-star-sm-ratings&quot; data-score=&quot;1&quot; data-number=&quot;5&quot;&gt;&lt;/div&gt;&#10;&lt;div class=&quot;icon-star-md-ratings&quot; data-score=&quot;2&quot; data-number=&quot;5&quot;&gt;&lt;/div&gt;&#10;&lt;div class=&quot;icon-star-lg-ratings&quot; data-score=&quot;3&quot; data-number=&quot;5&quot;&gt;&lt;/div&gt;</code></pre>
+            </div>
+            <div class="tab-pane fade" id="icons-size-ratings-basic-js" role="tabpanel" aria-labelledby="icons-size-ratings-basic-js-tab">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">
+                  Copy
+                </button>
+              </div>
+              <pre class="docs-code"><code class="js">const iconStarSm = document.querySelector(&apos;.icon-star-sm-ratings&apos;),&#10;iconStarMd = document.querySelector(&apos;.icon-star-md-ratings&apos;),&#10;iconStarLg = document.querySelector(&apos;.icon-star-lg-ratings&apos;);&#10;if (iconStarSm) {&#10;  let ratings = new Raty(iconStarSm, {&#10;    starType: &apos;i&apos;,&#10;    starOff: &apos;icon-base ti tabler-star-filled bg-secondary-subtle&apos;,&#10;    starOn: &apos;icon-base ti tabler-star-filled text-secondary&apos;&#10;  });&#10;  ratings.init();&#10;}&#10;&#10;if (iconStarMd) {&#10;  let ratings = new Raty(iconStarMd, {&#10;    starType: &apos;i&apos;,&#10;    starOff: &apos;icon-base icon-xl ti tabler-star-filled bg-secondary-subtle&apos;,&#10;    starOn: &apos;icon-base icon-xl ti tabler-star-filled text-secondary&apos;&#10;  });&#10;  ratings.init();&#10;}&#10;&#10;if (iconStarLg) {&#10;  let ratings = new Raty(iconStarLg, {&#10;    starType: &apos;i&apos;,&#10;    starOff: &apos;icon-base icon-42px ti tabler-star-filled bg-secondary-subtle&apos;,&#10;    starOn: &apos;icon-base icon-42px ti tabler-star-filled text-secondary&apos;&#10;  });&#10;  ratings.init();&#10;}</code></pre>
+            </div>
+          </div>
+        </div>
+        <table class="table table-bordered doc-table mt-4">
+          <thead>
+            <tr>
+              <th scope="col">Class</th>
+              <th scope="col">Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">
+                <code>class="icon-{size}"</code>
+              </td>
+              <td>xs | sm | md | lg | xl</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- /rating with icons size variant -->
+
+    <hr class="my-12" />
+
+    <!-- rating with icons color variants-->
+    <div class="row">
+      <div class="col-12">
+        <p id="icons-color" class="anchor-heading fw-bold mt-6">Colour variants</p>
+        <p>You can use <code>bg-{color}-subtle</code> class for <b>star-off</b> and <code>text-{color}</code> class for <b>star-on</b> to change the colors.</p>
+        <div class="doc-example mt-4">
+          <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="icons-color-ratings-basic-preview-tab" data-bs-toggle="tab" data-bs-target="#icons-color-ratings-basic-preview" role="tab" aria-controls="icons-color-ratings-basic-preview" aria-selected="true">
+                Preview
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="icons-color-ratings-basic-html-tab" data-bs-toggle="tab" data-bs-target="#icons-color-ratings-basic-html" role="tab" aria-controls="icons-color-ratings-basic-html" aria-selected="false">
+                HTML
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="icons-color-ratings-basic-js-tab" data-bs-toggle="tab" data-bs-target="#icons-color-ratings-basic-js" role="tab" aria-controls="icons-color-ratings-basic-js" aria-selected="false">
+                JS
+              </a>
+            </li>
+          </ul>
+          <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+            <div class="tab-pane fade show active" id="icons-color-ratings-basic-preview" role="tabpanel" aria-labelledby="icons-color-ratings-basic-preview-tab">
+              <div class="icon-star-primary-ratings" data-score="1" data-number="5"></div>
+              <div class="icon-star-warning-ratings" data-score="2" data-number="5"></div>
+              <div class="icon-star-success-ratings" data-score="3" data-number="5"></div>
+              <div class="icon-star-danger-ratings" data-score="4" data-number="5"></div>
+            </div>
+            <div class="tab-pane fade" id="icons-color-ratings-basic-html" role="tabpanel" aria-labelledby="icons-color-ratings-basic-html-tab">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">
+                  Copy
+                </button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;div class=&quot;icon-star-primary-ratings&quot; data-score=&quot;1&quot; data-number=&quot;5&quot;&gt;&lt;/div&gt;&#10;&lt;div class=&quot;icon-star-warning-ratings&quot; data-score=&quot;2&quot; data-number=&quot;5&quot;&gt;&lt;/div&gt;&#10;&lt;div class=&quot;icon-star-success-ratings&quot; data-score=&quot;3&quot; data-number=&quot;5&quot;&gt;&lt;/div&gt;&#10;&lt;div class=&quot;icon-star-danger-ratings&quot; data-score=&quot;4&quot; data-number=&quot;5&quot;&gt;&lt;/div&gt;</code></pre>
+            </div>
+            <div class="tab-pane fade" id="icons-color-ratings-basic-js" role="tabpanel" aria-labelledby="icons-color-ratings-basic-js-tab">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">
+                  Copy
+                </button>
+              </div>
+              <pre class="docs-code"><code class="js">const iconStarPrimary = document.querySelector(&apos;.icon-star-primary-ratings&apos;),&#10;iconStarWarning = document.querySelector(&apos;.icon-star-warning-ratings&apos;),&#10;iconStarSuccess = document.querySelector(&apos;.icon-star-success-ratings&apos;),&#10;iconStarDanger = document.querySelector(&apos;.icon-star-danger-ratings&apos;);&#10;if (iconStarPrimary) {&#10;  let ratings = new Raty(iconStarPrimary, {&#10;    starType: &apos;i&apos;,&#10;    starOff: &apos;icon-base icon-xl ti tabler-star-filled bg-primary-subtle&apos;,&#10;    starOn: &apos;icon-base icon-xl ti tabler-star-filled text-primary&apos;&#10;  });&#10;  ratings.init();&#10;}&#10;&#10;if (iconStarWarning) {&#10;  let ratings = new Raty(iconStarWarning, {&#10;    starType: &apos;i&apos;,&#10;    starOff: &apos;icon-base icon-xl ti tabler-star-filled bg-warning-subtle&apos;,&#10;    starOn: &apos;icon-base icon-xl ti tabler-star-filled text-warning&apos;&#10;  });&#10;  ratings.init();&#10;}&#10;&#10;if (iconStarSuccess) {&#10;  let ratings = new Raty(iconStarSuccess, {&#10;    starType: &apos;i&apos;,&#10;    starOff: &apos;icon-base icon-xl ti tabler-star-filled bg-success-subtle&apos;,&#10;    starOn: &apos;icon-base icon-xl ti tabler-star-filled text-success&apos;&#10;  });&#10;  ratings.init();&#10;}&#10;&#10;if (iconStarDanger) {&#10;  let ratings = new Raty(iconStarDanger, {&#10;    starType: &apos;i&apos;,&#10;    starOff: &apos;icon-base icon-xl ti tabler-star-filled bg-danger-subtle&apos;,&#10;    starOn: &apos;icon-base icon-xl ti tabler-star-filled text-danger&apos;&#10;  });&#10;  ratings.init();&#10;}</code></pre>
+            </div>
+          </div>
+        </div>
+        <table class="table table-bordered doc-table mt-4">
+          <thead>
+            <tr>
+              <th scope="col">Class</th>
+              <th scope="col">Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">
+                <code>bg-{color}-subtle or text-{color}</code>
+              </td>
+              <td>primary | secondary | success | danger | warning | info | dark</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- /rating with icons color variants-->
+  </div>
+  <div class="d-none d-xl-block col-xl-2 doc-sidebar container-p-y">
+    <nav id="vertical-nav" class="navbar p-0">
+      <ul class="doc-sidebar-nav">
+        <li class="doc-entry doc-h2">
+          <a class="nav-link" href="#usage">Usage</a>
+        </li>
+        <li class="doc-entry doc-h2">
+          <a class="nav-link" href="#example">Examples</a>
+          <ul>
+            <li class="doc-entry doc-h3">
+              <a class="nav-link" href="#basic">Basic</a>
+            </li>
+            <li class="doc-entry doc-h3">
+              <a class="nav-link" href="#read-only">Read Only</a>
+            </li>
+            <li class="doc-entry doc-h3">
+              <a class="nav-link" href="#custom-svg">Custom Svg</a>
+            </li>
+            <li class="doc-entry doc-h3">
+              <a class="nav-link" href="#half-star">Half Star</a>
+            </li>
+            <li class="doc-entry doc-h3">
+              <a class="nav-link" href="#events">Events</a>
+            </li>
+            <li class="doc-entry doc-h3">
+              <a class="nav-link" href="#methods">Methods</a>
+            </li>
+          </ul>
+        </li>
+        <li class="doc-entry doc-h2">
+          <a class="nav-link" href="#rating-with-icons">Rating with icons</a>
+          <ul>
+            <li class="doc-entry doc-h3">
+              <a class="nav-link" href="#icons-basic">Basic</a>
+            </li>
+            <li class="doc-entry doc-h3">
+              <a class="nav-link" href="#icons-size">size variant</a>
+            </li>
+            <li class="doc-entry doc-h3">
+              <a class="nav-link" href="#icons-color">colour variants</a>
+            </li>
+        </li>
+      </ul>
+      </li>
+      </ul>
+    </nav>
+  </div>
+</div></div>
+          <!-- / Content -->
+
+          
+            <footer class="content-footer footer">
+  <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center text-center py-4">
+    <div>
+      &#169; 2017-
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      
+        <a href="https://pixinvent.com" class="footer-text fw-medium" target="_blank">Pixinvent</a>, Hand-crafted & Made with â¤ï¸
+      
+    </div>
+    <div>
+      
+        <a href="https://www.facebook.com/pixinvents/" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-facebook"></i></a>
+      
+      
+        <a href="https://x.com/pixinvents" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-twitter"></i></a>
+      
+      
+        <a href="https://github.com/pixinvent" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-github"></i></a>
+      
+      
+        <a href="https://dribbble.com/pixinvent" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-dribbble"></i></a>
+      
+      
+        <a href="https://www.instagram.com/pixinvents/" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-instagram"></i></a>
+      
+    </div>
+  </div>
+</footer>
+
+          
+        </div>
+        <!-- Content wrapper -->
+      </div>
+      <!-- / Layout page -->
+    </div>
+
+    
+      
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    
+    <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+    <div class="drag-target"></div>
+  </div>
+  <!-- / Layout wrapper -->
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="assets/vendor/libs/highlight/highlight.js"></script>
+    <script src="assets/vendor/libs/clipboard/clipboard.js"></script>
+    
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/vendor/libs/node-waves/node-waves.js"></script>
+    <script src="assets/vendor/libs/@algolia/autocomplete-js.js"></script>
+    <script src="assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="assets/vendor/js/menu.js"></script>
+    <!-- Vendors JS -->
+    <script src="assets/vendor/libs/raty-js/raty-js.js"></script>
+
+    <!-- Page JS -->
+    <script src="assets/js/docs.js"></script>
+    <script src="assets/js/extended-ui-star-ratings.js"></script>
+  </body>
+</html>
+
+  <!-- beautify ignore:end -->
+

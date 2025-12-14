@@ -1,0 +1,1975 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- =========================================================
+* Vuexy - Bootstrap Dashboard PRO | v3.0.0
+==============================================================
+
+* Product Page: https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599
+* Created by: Pixinvent
+
+    * License: You must have a valid license purchased in order to legally use the theme for your project.
+  
+* Copyright Pixinvent (https://pixinvent.com)
+
+=========================================================
+ -->
+  <!-- beautify ignore:start -->
+
+<html lang="en" class="docs-page  layout-menu-fixed-offcanvas " data-assets-path="assets/" data-skin="bordered">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Docs: Toasts - UI elements | Vuexy - Bootstrap Dashboard PRO</title>
+
+    <meta name="description" content="Vuexy is the best bootstrap 5 dashboard for responsive web apps. Streamline your app development process with ease." />
+    <meta name="keywords" content="Vuexy bootstrap dashboard, vuexy bootstrap 5 dashboard, themeselection, html dashboard, web dashboard, frontend dashboard, responsive bootstrap theme" />
+    <meta property="og:title" content="Vuexy bootstrap Dashboard by Pixinvent" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" />
+    <meta property="og:image" content="https://pixinvent.com/wp-content/uploads/2023/06/vuexy-hero-image.png" />
+    <meta property="og:description" content="Vuexy is the best bootstrap 5 dashboard for responsive web apps. Streamline your app development process with ease." />
+    <meta property="og:site_name" content="Pixinvent" />
+
+    <!-- Canonical SEO -->
+    <link rel="canonical" href="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" />
+
+    
+      
+      <script>
+        (function (w, d, s, l, i) {
+          w[l] = w[l] || [];
+          w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+          });
+          var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+          j.async = true;
+          j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+          f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5J3LMKC');
+      </script>
+      
+    
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="48x48" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="16x16" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="32x32" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="180x180" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="192x192" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="512x512" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendor/fonts/iconify-icons.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/node-waves/node-waves.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/highlight/highlight.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/notyf/notyf.css" />
+  <link rel="stylesheet" href="assets/vendor/libs/animate-css/animate.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="assets/vendor/css/core.css" />
+    <link rel="stylesheet" href="assets/css/demo.css" />
+    <link rel="stylesheet" href="assets/css/docs.css" />
+
+    <!-- Page CSS -->
+    
+
+    <!-- Core JS -->
+    <script src="assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: Don't remove unless you are aware of it, To hide customizer set displayCustomizer value false in config.js.  -->
+    <!-- <script src="assets/vendor/js/template-customizer.js"></script> -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="assets/js/config.js"></script>
+  </head>
+
+  <body>
+    
+      
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5J3LMKC" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+      
+    
+
+    <!-- Layout wrapper -->
+  <div class="layout-wrapper layout-navbar-full ">
+    <div class="layout-container">
+      
+        
+
+
+<!-- Navbar main -->
+
+<nav class="layout-navbar navbar navbar-expand-lg align-items-lg-center bg-white border-bottom" id="layout-navbar">
+  <div class="container-fluid">
+    
+      <!-- Menu toggle (see assets/css/demo/demo.css) -->
+      <div class="layout-menu-toggle navbar-nav d-lg-none align-items-lg-center">
+        <a class="nav-item nav-link px-0 me-lg-4" href="javascript:void(0)">
+          <i class="icon-base ti tabler-menu-2 icon-md align-middle"></i>
+        </a>
+      </div>
+    
+
+    <!-- Brand demo (see assets/css/demo/demo.css) -->
+    <div class="navbar-brand app-brand demo py-0 me-md-auto me-12 ms-lg-0 ms-0">
+      <a href="index.html" class="app-brand-link">
+        <span class="app-brand-logo demo">
+  <span class="text-primary">
+    <svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.00172773 0V6.85398C0.00172773 6.85398 -0.133178 9.01207 1.98092 10.8388L13.6912 21.9964L19.7809 21.9181L18.8042 9.88248L16.4951 7.17289L9.23799 0H0.00172773Z" fill="currentColor" />
+      <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd" d="M7.69824 16.4364L12.5199 3.23696L16.5541 7.25596L7.69824 16.4364Z" fill="#161616" />
+      <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd" d="M8.07751 15.9175L13.9419 4.63989L16.5849 7.28475L8.07751 15.9175Z" fill="#161616" />
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z" fill="currentColor" />
+    </svg>
+  </span>
+</span>
+        <span class="app-brand-text demo menu-text fw-bold">Vuexy</span>
+      </a>
+    </div>
+
+    <div class="d-flex ms-md-6 gap-3">
+      
+      <div class="navbar-nav align-items-lg-center justify-content-center">
+        <!-- Search -->
+        <div class="navbar-nav align-items-center">
+          <div class="nav-item navbar-search-wrapper mb-0">
+            <a class="nav-item nav-link search-toggler border rounded-3 py-2 px-md-4 px-2 d-flex align-items-center" href="javascript:void(0);">
+              <span class="d-inline-block text-body-secondary fw-normal" id="autocomplete"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbar-collapse">
+        <hr class="d-lg-none w-100 my-2" />
+        <!-- Divider -->
+
+        <div class="navbar-nav align-items-lg-center">
+          
+          <ul class="navbar-nav">
+            <!-- Technology dropdown -->
+            
+            
+              
+                <li class="nav-item dropdown me-2">
+                  <button class="btn dropdown-toggle py-2 btn-primary" type="button" id="livePreview" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-base ti tabler-current-location me-2"></i> Live preview</button>
+                  <ul class="dropdown-menu" aria-labelledby="livePreview">
+                    <li>
+                      <a href="https://pixinvent.com/vuexy-bootstrap-html-admin-template/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>HTML preview</a>
+                    </li>
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-laravel-admin-template/demo-1/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>Laravel preview</a>
+                      </li>
+                    
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-admin-template/html/vertical-menu-template/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>.Net Core preview</a>
+                      </li>
+                    
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-django-admin-template/demo-1/" target="_blank" class="nav-link text-nowrap"><i class="icon-base ti tabler-current-location me-2"></i>Django preview</a>
+                      </li>
+                    
+                  </ul>
+                </li>
+              
+            
+            
+              <li class="nav-item me-2">
+                <a href="https://pixinvent.ticksy.com/" target="_blank" class="nav-link d-flex align-items-center">
+                  <i class="icon-base ti tabler-lifebuoy me-2"></i>
+                  <span>Support</span>
+                </a>
+              </li>
+            
+            
+              <li class="nav-item">
+                <a href="https://themeforest.net/user/pixinvent/portfolio" target="_blank" class="nav-link d-flex align-items-center">
+                  <i class="icon-base ti tabler-gift me-2"></i>
+                  <span> More Themes</span>
+                </a>
+              </li>
+            
+            
+              <li class="nav-item">
+                <a href="https://themeselection.com/hire-us/" target="_blank" class="nav-link"><i class="icon-base ti tabler-briefcase"></i> Hire Us</a>
+              </li>
+            
+          </ul>
+
+          <!-- Divider -->
+          <div class="nav-item d-none d-lg-block text-big fw-light lh-1 me-4 ms-1">|</div>
+
+          
+            <div class="buy-now-btn">
+              <a href="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" target="_blank" class="btn btn-danger d-flex align-items-center gap-2">
+                <i class="icon-base ti tabler-shopping-cart"></i>
+                <span>Buy Now</span>
+              </a>
+            </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</nav>
+<!-- / Navbar main -->
+
+      
+
+      <!-- Layout page -->
+      <div class="layout-page">
+        
+          
+
+
+
+
+<!-- Menu -->
+<aside id="layout-menu" class="layout-menu menu-doc menu menu-vertical bg-menu-theme">
+  
+  <div class="menu-divider mt-0   d-xl-none "></div>
+
+  <!-- Links -->
+  <ul class="menu-inner py-1">
+    <li class="menu-header text-uppercase small fw-medium">Getting Started</li>
+    <li class="menu-item">
+      <a href="index.html" class="menu-link">
+        <div>Introduction</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="licenses.html" class="menu-link">
+        <div>Licenses</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="folder-structure.html" class="menu-link">
+        <div>Folder Structure</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="quick-start.html" class="menu-link">
+        <div>Quick Start</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="config.html" class="menu-link">
+        <div>Config ð¤©</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="installation-build.html" class="menu-link">
+        <div>Installation & Build</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="template-customizer.html" class="menu-link">
+        <div>Template Customizer</div>
+        
+      </a>
+    </li>
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Customization</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="customization-sass.html" class="menu-link">
+            <div>SASS</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="customization-js.html" class="menu-link">
+            <div>JavaScript</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="customization-third-party-plugins.html" class="menu-link">
+            <div>Third Party Plugins</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="layouts.html" class="menu-link">
+        <div>Layouts</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="dependencies.html" class="menu-link">
+        <div>Dependencies</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="faq.html" class="menu-link">
+        <div>FAQs</div>
+      </a>
+    </li>
+    
+      <!-- Laravel Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row">
+        <span class="me-1">Laravel</span>
+        <span class="badge badge-demo bg-label-danger ms-auto">HTML + Laravel Only</span>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="laravel-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-starter-kit-vs-full-version.html" class="menu-link">
+              <div>Starter-kit Vs Full-version</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-demo-config.html" class="menu-link">
+              <div>Demo Configs</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Auth & ACL</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-auth-jetstream.html" class="menu-link">
+              <div>JetStream</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-passport.html" class="menu-link">
+              <div>Passport</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-sanctum.html" class="menu-link">
+              <div>Sanctum</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-acl.html" class="menu-link">
+              <div>ACL</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-articles-database-connections.html" class="menu-link">
+              <div>Database Connections</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-existing-project.html" class="menu-link">
+              <div>Exiting Project Migration</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-form-validation-integration.html" class="menu-link">
+              <div>Form Validation Package Integration</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-localization.html" class="menu-link">
+          <div>Localization</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-search.html" class="menu-link">
+          <div>Search</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-sail-docker.html" class="menu-link">
+          <div>Sail & Docker</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-deployment.html" class="menu-link">
+          <div>Deployment</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Dotnet Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>ASP.NET CORE</span> <span class="badge badge-demo bg-label-danger ms-auto">Razor Pages</span></li>
+
+      <li class="menu-item">
+        <a href="net-core-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-assets-compilation.html" class="menu-link">
+              <div>Assets Compilation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-start-with-doker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-starter-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="net-core-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Dotnet Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>ASP.NET CORE MVC</span> <span class="badge badge-demo bg-label-danger ms-auto">MVC</span></li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-mvc-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-assets-compilation.html" class="menu-link">
+              <div>Assets Compilation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-start-with-docker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-starter-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="net-core-mvc-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-mvc-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Django Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>Django</span> <span class="badge badge-demo bg-label-danger ms-auto">Django Only</span></li>
+
+      <li class="menu-item">
+        <a href="django-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="django-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-start-with-doker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-demo-config.html" class="menu-link">
+              <div>Demo Config</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-starter-kit-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="django-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="django-articles-create-new-page.html" class="menu-link">
+              <div>Create New Apps & Pages</div>
+            </a>
+          </li>
+          <!-- <li class="menu-item">
+          <a href="django-articles-existing-project.html" class="menu-link">
+            <div>Exiting Project Migration</div>
+          </a>
+        </li> -->
+          <li class="menu-item">
+            <a href="django-articles-admin-superuser.html" class="menu-link">
+              <div>Admin and Create User</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-authentication.html" class="menu-link">
+              <div>Authentication</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="django-articles-permissions-authorization.html" class="menu-link">
+              <div>Permissions & Authorization</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-crud.html" class="menu-link">
+              <div>CRUD Example</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-admin-db.html" class="menu-link">
+              <div>Admin and Database</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-localization.html" class="menu-link">
+          <div>Localization</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-search.html" class="menu-link">
+          <div>Search</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-theme-api.html" class="menu-link">
+          <div>Theme API</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-deployment.html" class="menu-link">
+          <div>Deployment</div>
+        </a>
+      </li>
+    
+    <!-- Apps & Pages -->
+    <li class="menu-divider mb-1"></li>
+    <li class="menu-header text-uppercase small fw-medium">Design System</li>
+
+    <li class="menu-item">
+      <a href="typography.html" class="menu-link">
+        <div>Typography</div>
+      </a>
+    </li>
+
+    <li class="menu-item">
+      <a href="colors.html" class="menu-link">
+        <div>Colors</div>
+      </a>
+    </li>
+
+    <li class="menu-item">
+      <a href="Icons.html" class="menu-link">
+        <div>Icons</div>
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+    <!-- Components -->
+    <li class="menu-header text-uppercase small fw-medium">Components</li>
+
+    <!-- UI Elements -->
+    <li class="menu-item
+   active open">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>UI Elements</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="ui-accordion.html" class="menu-link">
+            <div>Accordion</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-alerts.html" class="menu-link">
+            <div>Alerts</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-app-brand.html" class="menu-link">
+            <div>App Brand</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-badges.html" class="menu-link">
+            <div>Badges</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-buttons.html" class="menu-link">
+            <div>Buttons</div>
+          </a>
+        </li>
+        <li class="menu-item
+  ">
+          <a href="javascript:void(0);" class="menu-link menu-toggle">
+            <div>Cards</div>
+          </a>
+          <ul class="menu-sub">
+            <li class="menu-item">
+              <a href="ui-cards-basic.html" class="menu-link">
+                <div>Basic</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="ui-cards-actions.html" class="menu-link">
+                <div>Actions</div>
+                
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="ui-carousel.html" class="menu-link">
+            <div>Carousel</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-collapse.html" class="menu-link">
+            <div>Collapse</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-dropdowns.html" class="menu-link">
+            <div>Dropdowns</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-footer.html" class="menu-link">
+            <div>Footer</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-list-groups.html" class="menu-link">
+            <div>List groups</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-modals.html" class="menu-link">
+            <div>Modals</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-menu.html" class="menu-link">
+            <div>Menu</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-navbar.html" class="menu-link">
+            <div>Navbar</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-offcanvas.html" class="menu-link">
+            <div>Offcanvas</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-pagination-breadcrumbs.html" class="menu-link">
+            <div>Pagination &amp; Breadcrumbs</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-popovers.html" class="menu-link">
+            <div>Popovers</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-progress.html" class="menu-link">
+            <div>Progress</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-spinners.html" class="menu-link">
+            <div>Spinners</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-navs.html" class="menu-link">
+            <div>Navs</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-tabs-pills.html" class="menu-link">
+            <div>Tabs &amp; Pills</div>
+          </a>
+        </li>
+        <li class="menu-item active">
+          <a href="ui-toasts.html" class="menu-link">
+            <div>Toasts</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-tooltips.html" class="menu-link">
+            <div>Tooltips</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+
+    <!-- Extended components -->
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Extended UI</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="extended-ui-avatar.html" class="menu-link">
+            <div>Avatar</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-blockui.html" class="menu-link">
+            <div>BlockUI</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-drag-and-drop.html" class="menu-link">
+            <div>Drag &amp; Drop</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-media-player.html" class="menu-link">
+            <div>Media Player</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-perfect-scrollbar.html" class="menu-link">
+            <div>Perfect scrollbar</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-star-ratings.html" class="menu-link">
+            <div>Star Ratings</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-sweetalert2.html" class="menu-link">
+            <div>SweetAlert2</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-text-divider.html" class="menu-link">
+            <div>Text Divider</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-timeline.html" class="menu-link">
+            <div>Timeline</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-tour.html" class="menu-link">
+            <div>Tour</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-treeview.html" class="menu-link">
+            <div>Treeview</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-misc.html" class="menu-link">
+            <div>Miscellaneous</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Forms -->
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Forms</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="forms-basic-inputs.html" class="menu-link">
+            <div>Basic Inputs</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-input-groups.html" class="menu-link">
+            <div>Input groups</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-custom-options.html" class="menu-link">
+            <div>Custom Options</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-editors.html" class="menu-link">
+            <div>Editors</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-file-upload.html" class="menu-link">
+            <div>File Upload</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-pickers.html" class="menu-link">
+            <div>Pickers</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-selects.html" class="menu-link">
+            <div>Select &amp; Tags</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-sliders.html" class="menu-link">
+            <div>Sliders</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-switches.html" class="menu-link">
+            <div>Switches</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-extras.html" class="menu-link">
+            <div>Extras</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-validation.html" class="menu-link">
+            <div>Validation</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-wizard.html" class="menu-link">
+            <div>Wizard</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-layouts-sticky.html" class="menu-link">
+            <div>Sticky Actions</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <!-- Tables -->
+    <li class="menu-item">
+      <a href="tables-basic.html" class="menu-link">
+        <div>Tables</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="tables-datatables.html" class="menu-link">
+        <div>Datatables</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="utilities.html" class="menu-link">
+        <div>Utilities</div>
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+    <!-- Charts & Maps -->
+    <li class="menu-header text-uppercase small fw-medium">Charts &amp; Maps</li>
+
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <div data-i18n="Charts">Charts</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="charts-apex.html" class="menu-link">
+            <div>Apex Charts</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="charts-chartjs.html" class="menu-link">
+            <div>ChartJS</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="maps-leaflet.html" class="menu-link">
+        <div>Leaflet</div>
+        
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+
+    <!-- Charts & Maps -->
+    <li class="menu-header text-uppercase small fw-medium">Others</li>
+    <li class="menu-item">
+      <a href="credits.html" class="menu-link">
+        <div>Credits</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="https://pixinvent.ticksy.com/" target="_blank" class="menu-link">
+        <div>Support</div>
+      </a>
+    </li>
+  </ul>
+</aside>
+<!-- / Menu -->
+
+        
+
+        <!-- Content wrapper -->
+        <div class="content-wrapper">
+          <!-- Content -->
+          <div class="container-xxl flex-grow-1 container-p-y">
+  <div class="row flex-xl-nowrap">
+    <div class="DocSearch-content col-12 col-xl-10 container-p-y">
+      <h2 class="mb-6 doc-page-title">Toasts</h2>
+      <p>
+        Deliver push notifications to your visitors using toasts, lightweight and highly customizable alert messages. For complete instructions and customization options, refer to the official
+        <a href="https://getbootstrap.com/docs/5.3/components/toasts/" target="_blank">Bootstrap Documentation</a>
+      </p>
+
+      <hr class="my-12" />
+
+      <!-- Example -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="toasts-examples" class="anchor-heading mb-6 fw-bold">Example</h4>
+          <p>Toasts are simple, flexible notifications designed to resemble the push notifications commonly used on mobile and desktop platforms. Built with flexbox, they are easy to position and align as needed.</p>
+          <!-- Basic Toast -->
+          <p id="toasts-basic" class="anchor-heading fw-bold">Basic</p>
+          <p>Toasts require minimal markup and are highly adaptable. At the very least, youâll need a container for your "toasted" content, and itâs strongly recommended to include a dismiss button for user interaction.</p>
+
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="toast-basic-preview-tab" data-bs-toggle="tab" data-bs-target="#toast-basic-preview" role="tab" aria-controls="toast-basic-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="toast-basic-html-tab" data-bs-toggle="tab" data-bs-target="#toast-basic-html" role="tab" aria-controls="toast-basic-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="toast-basic-preview" role="tabpanel" aria-labelledby="toast-basic-preview-tab">
+                <div class="bs-toast toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                    <i class="icon-base ti tabler-bell icon-xs me-2"></i>
+                    <div class="me-auto fw-medium">Bootstrap</div>
+                    <small>11 mins ago</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                  </div>
+                  <div class="toast-body">Hello, world! This is a toast message.</div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="toast-basic-html" role="tabpanel" aria-labelledby="toast-basic-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;bs-toast toast fade show&quot; role=&quot;alert&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;&#10;  &lt;div class=&quot;toast-header&quot;&gt;&#10;    &lt;i class=&quot;icon-base ti tabler-bell icon-xs me-2&quot;&gt;&lt;/i&gt;&#10;    &lt;div class=&quot;me-auto fw-medium&quot;&gt;Bootstrap&lt;/div&gt;&#10;    &lt;small&gt;11 mins ago&lt;/small&gt;&#10;    &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;toast&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;toast-body&quot;&gt;Hello, world! This is a toast message.&lt;/div&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+          <!--/ Basic Toast -->
+
+          <hr class="my-12" />
+
+          <!-- Translucent Toast -->
+          <p id="toasts-translucent" class="anchor-heading fw-bold">Translucent</p>
+          <p>Toasts come with a slight translucency, allowing them to blend seamlessly over the content they overlay. For browsers that support the <code>backdrop-filter</code> CSS property, we also apply a blur effect to the elements beneath the toast, enhancing the visual experience.</p>
+
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="toast-translucent-preview-tab" data-bs-toggle="tab" data-bs-target="#toast-translucent-preview" role="tab" aria-controls="toast-translucent-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="toast-translucent-html-tab" data-bs-toggle="tab" data-bs-target="#toast-translucent-html" role="tab" aria-controls="toast-translucent-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active bg-dark p-6" id="toast-translucent-preview" role="tabpanel" aria-labelledby="toast-translucent-preview-tab">
+                <div class="bs-toast toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                    <i class="icon-base ti tabler-bell icon-xs me-2"></i>
+                    <div class="me-auto fw-medium">Bootstrap</div>
+                    <small>11 mins ago</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                  </div>
+                  <div class="toast-body">Hello, world! This is a toast message.</div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="toast-translucent-html" role="tabpanel" aria-labelledby="toast-translucent-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;bs-toast toast fade show&quot; role=&quot;alert&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;&#10;  &lt;div class=&quot;toast-header&quot;&gt;&#10;    &lt;i class=&quot;icon-base ti tabler-bell icon-xs me-2&quot;&gt;&lt;/i&gt;&#10;    &lt;div class=&quot;me-auto fw-medium&quot;&gt;Bootstrap&lt;/div&gt;&#10;    &lt;small&gt;11 mins ago&lt;/small&gt;&#10;    &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;toast&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;toast-body&quot;&gt;Hello, world! This is a toast message.&lt;/div&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+          <!--/ Translucent Toast -->
+
+          <hr class="my-12" />
+
+          <!-- Custom content Toast -->
+          <p id="toasts-custom-content" class="anchor-heading fw-bold">Custom content</p>
+          <p>
+            You can easily customize your toasts by removing sub-components, adjusting them with utility classes, or incorporating your own markup. In this example, weâve simplified the toast by omitting the default
+            <code>.toast-header</code> for a cleaner look.
+          </p>
+
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="toast-custom-content-preview-tab" data-bs-toggle="tab" data-bs-target="#toast-custom-content-preview" role="tab" aria-controls="toast-custom-content-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="toast-custom-content-html-tab" data-bs-toggle="tab" data-bs-target="#toast-custom-content-html" role="tab" aria-controls="toast-custom-content-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="toast-custom-content-preview" role="tabpanel" aria-labelledby="toast-custom-content-preview-tab">
+                <div class="toast fade show bs-toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="d-flex">
+                    <div class="toast-body">Hello, world! This is a toast message.</div>
+                    <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="toast-custom-content-html" role="tabpanel" aria-labelledby="toast-custom-content-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;toast fade show bs-toast align-items-center&quot; role=&quot;alert&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;&#10;  &lt;div class=&quot;d-flex&quot;&gt;&#10;    &lt;div class=&quot;toast-body&quot;&gt;&#10;      Hello, world! This is a toast message.&#10;    &lt;/div&gt;&#10;    &lt;button type=&quot;button&quot; class=&quot;btn-close me-2 m-auto&quot; data-bs-dismiss=&quot;toast&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+          <!--/ Custom content Toast -->
+
+          <hr class="my-12" />
+
+          <!-- Stacking Toast -->
+          <p id="toasts-stacking" class="anchor-heading fw-bold">Stacking</p>
+          <p>When you have multiple toasts, we default to vertically stacking them in a readable manner.</p>
+
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="toast-stack-preview-tab" data-bs-toggle="tab" data-bs-target="#toast-stack-preview" role="tab" aria-controls="toast-stack-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="toast-stack-html-tab" data-bs-toggle="tab" data-bs-target="#toast-stack-html" role="tab" aria-controls="toast-stack-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="toast-stack-preview" role="tabpanel" aria-labelledby="toast-stack-preview-tab">
+                <div class="toast-container position-relative">
+                  <div class="bs-toast toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                      <i class="icon-base ti tabler-bell icon-xs me-2"></i>
+                      <span class="fw-medium me-auto">Bootstrap</span>
+                      <small class="text-body-secondary">just now</small>
+                      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">See? Just like this.</div>
+                  </div>
+
+                  <div class="bs-toast toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                      <i class="icon-base ti tabler-bell icon-xs me-2"></i>
+                      <span class="fw-medium me-auto">Bootstrap</span>
+                      <small class="text-body-secondary">2 seconds ago</small>
+                      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">Heads up, toasts will stack automatically</div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="toast-stack-html" role="tabpanel" aria-labelledby="toast-stack-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;toast-container position-relative&quot;&gt;&#10;  &lt;div class=&quot;bs-toast toast fade show&quot; role=&quot;alert&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;&#10;    &lt;div class=&quot;toast-header&quot;&gt;&#10;      &lt;i class=&quot;icon-base ti tabler-bell icon-xs me-2&quot;&gt;&lt;/i&gt;&#10;      &lt;span class=&quot;fw-medium me-auto&quot;&gt;Bootstrap&lt;/span&gt;&#10;      &lt;small class=&quot;text-body-secondary&quot;&gt;just now&lt;/small&gt;&#10;      &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;toast&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;toast-body&quot;&gt;See? Just like this.&lt;/div&gt;&#10;  &lt;/div&gt;&#10;&#10;  &lt;div class=&quot;bs-toast toast fade show&quot; role=&quot;alert&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;&#10;    &lt;div class=&quot;toast-header&quot;&gt;&#10;      &lt;i class=&quot;icon-base ti tabler-bell icon-xs me-2&quot;&gt;&lt;/i&gt;&#10;      &lt;span class=&quot;fw-medium me-auto&quot;&gt;Bootstrap&lt;/span&gt;&#10;      &lt;small class=&quot;text-body-secondary&quot;&gt;2 seconds ago&lt;/small&gt;&#10;      &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;toast&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;toast-body&quot;&gt;Heads up, toasts will stack automatically&lt;/div&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+          <!--/ Stacking Toast -->
+
+          <hr class="my-12" />
+
+          <!-- Toast with Animation -->
+          <p id="toasts-animation" class="anchor-heading fw-bold">
+            Animation
+            
+          </p>
+          <p>Use <a href="https://github.com/animate-css/animate.css" target="_blank">animate.css</a> to use animation in Bootstrap Toasts.</p>
+          <p class="fw-bold mt-2">Usage</p>
+          <p>In order to use animate.css on your page, It is required to include the following vendors css in the "Vendors CSS" area from the page's header:</p>
+          <div class="doc-example">
+            <div class="doc-example-content" data-label="Code">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;link rel=&quot;stylesheet&quot; href=&quot;../../assets/vendor/libs/animate-css/animate.css&quot; /&gt;</code></pre>
+            </div>
+          </div>
+
+          <div class="alert alert-info mt-6" role="alert"><strong>Tip:</strong> Read the official <a href="https://github.com/animate-css/animate.css" class="alert-link" target="_blank">animate.css</a> plugin documentation for a full list of animations and options.</div>
+
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="toast-animation-preview-tab" data-bs-toggle="tab" data-bs-target="#toast-animation-preview" role="tab" aria-controls="toast-animation-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="toast-animation-html-tab" data-bs-toggle="tab" data-bs-target="#toast-animation-html" role="tab" aria-controls="toast-animation-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="toast-animation-preview" role="tabpanel" aria-labelledby="toast-animation-preview-tab">
+                <div class="bs-toast toast fade show animate__animated animate__flipInX" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                    <i class="icon-base ti tabler-bell icon-xs me-2"></i>
+                    <div class="me-auto fw-medium">Bootstrap</div>
+                    <small>11 mins ago</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                  </div>
+                  <div class="toast-body">Hello, world! This is a toast message.</div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="toast-animation-html" role="tabpanel" aria-labelledby="toast-animation-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;bs-toast toast fade show animate__animated animate__flipInX&quot; role=&quot;alert&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;&#10;  &lt;div class=&quot;toast-header&quot;&gt;&#10;    &lt;img src=&quot;...&quot; class=&quot;d-block w-px-20 h-auto rounded me-2&quot; alt=&quot;&quot; /&gt;&#10;    &lt;div class=&quot;me-auto fw-medium&quot;&gt;Bootstrap&lt;/div&gt;&#10;    &lt;small&gt;11 mins ago&lt;/small&gt;&#10;    &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;toast&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;toast-body&quot;&gt;&#10;    Hello, world! This is a toast message.&#10;  &lt;/div&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+          <!-- Toast with Animation -->
+        </div>
+      </div>
+
+      <hr class="my-12" />
+
+      <!-- Placement -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="toasts-placement" class="anchor-heading mb-6 fw-bold">Placement</h4>
+          <p>
+            Place toasts with custom CSS as you need them. The top right is often used for notifications, as is the top middle. If youâre only ever going to show one toast at a time, put the positioning styles right on the
+            <code>.toast</code>.
+          </p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="toasts-placement-preview-tab" data-bs-toggle="tab" data-bs-target="#toasts-placement-preview" role="tab" aria-controls="toasts-placement-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="toasts-placement-html-tab" data-bs-toggle="tab" data-bs-target="#toasts-placement-html" role="tab" aria-controls="toasts-placement-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active bg-dark p-6" id="toasts-placement-preview" role="tabpanel" aria-labelledby="toasts-placement-preview-tab">
+                <div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px;">
+                  <div class="bs-toast toast fade show position-absolute top-0 end-0" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                      <i class="icon-base ti tabler-bell icon-xs me-2"></i>
+                      <div class="me-auto fw-medium">Bootstrap</div>
+                      <small>11 mins ago</small>
+                      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">Hello, world! This is a toast message.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="toasts-placement-html" role="tabpanel" aria-labelledby="toasts-placement-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;bs-toast toast fade show position-absolute top-0 end-0&quot;&#10;  role=&quot;alert&quot;&#10;  aria-live=&quot;assertive&quot;&#10;  aria-atomic=&quot;true&quot;&gt;&#10;  &lt;div class=&quot;toast-header&quot;&gt;&#10;    &lt;i class=&quot;icon-base ti tabler-bell icon-xs me-2&quot;&gt;&lt;/i&gt;&#10;    &lt;div class=&quot;me-auto fw-medium&quot;&gt;Bootstrap&lt;/div&gt;&#10;    &lt;small&gt;11 mins ago&lt;/small&gt;&#10;    &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;toast&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;toast-body&quot;&gt;Hello, world! This is a toast message.&lt;/div&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/ Placement -->
+
+      <hr class="my-12" />
+
+      <!-- Styles / Color Options -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="toasts-styles" class="anchor-heading mb-6 fw-bold">Styles</h4>
+          <p>Bootstrap offers several predefined toast styles, each designed for a specific semantic purpose. Additionally, extra styles are available to give you more control over the appearance and behavior of your toasts.</p>
+
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="toast-style-preview-tab" data-bs-toggle="tab" data-bs-target="#toast-style-preview" role="tab" aria-controls="toast-style-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="toast-style-html-tab" data-bs-toggle="tab" data-bs-target="#toast-style-html" role="tab" aria-controls="toast-style-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="toast-style-preview" role="tabpanel" aria-labelledby="toast-style-preview-tab">
+                <div class="toast-container position-relative">
+                  <!-- Default Toast -->
+                  <div class="bs-toast toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                      <i class="icon-base ti tabler-bell icon-xs me-2"></i>
+                      <div class="me-auto fw-medium">Bootstrap</div>
+                      <small>11 mins ago</small>
+                      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">Hello, world! This is a toast message.</div>
+                  </div>
+
+                  <!-- Primary Toast -->
+                  <div class="bs-toast toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                      <i class="icon-base ti tabler-bell icon-xs text-primary me-2"></i>
+                      <div class="me-auto fw-medium">Bootstrap</div>
+                      <small class="text-body-secondary">11 mins ago</small>
+                      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">Hello, world! This is a toast message.</div>
+                  </div>
+
+                  <!-- Secondary Toast -->
+                  <div class="bs-toast toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                      <i class="icon-base ti tabler-bell icon-xs text-secondary me-2"></i>
+                      <div class="me-auto fw-medium">Bootstrap</div>
+                      <small class="text-body-secondary">11 mins ago</small>
+                      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">Hello, world! This is a toast message.</div>
+                  </div>
+
+                  <!-- Success Toast -->
+                  <div class="bs-toast toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                      <i class="icon-base ti tabler-bell icon-xs text-success me-2"></i>
+                      <div class="me-auto fw-medium">Bootstrap</div>
+                      <small class="text-body-secondary">11 mins ago</small>
+                      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">Hello, world! This is a toast message.</div>
+                  </div>
+
+                  <!-- Danger Toast -->
+                  <div class="bs-toast toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                      <i class="icon-base ti tabler-bell icon-xs text-danger me-2"></i>
+                      <div class="me-auto fw-medium">Bootstrap</div>
+                      <small class="text-body-secondary">11 mins ago</small>
+                      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">Hello, world! This is a toast message.</div>
+                  </div>
+
+                  <!-- Warning Toast -->
+                  <div class="bs-toast toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                      <i class="icon-base ti tabler-bell icon-xs text-warning me-2"></i>
+                      <div class="me-auto fw-medium">Bootstrap</div>
+                      <small class="text-body-secondary">11 mins ago</small>
+                      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">Hello, world! This is a toast message.</div>
+                  </div>
+
+                  <!-- Info Toast -->
+                  <div class="bs-toast toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                      <i class="icon-base ti tabler-bell icon-xs text-info me-2"></i>
+                      <div class="me-auto fw-medium">Bootstrap</div>
+                      <small class="text-body-secondary">11 mins ago</small>
+                      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">Hello, world! This is a toast message.</div>
+                  </div>
+
+                  <!-- Dark Toast -->
+                  <div class="bs-toast toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                      <i class="icon-base ti tabler-bell icon-xs text-dark me-2"></i>
+                      <div class="me-auto fw-medium">Bootstrap</div>
+                      <small class="text-body-secondary">11 mins ago</small>
+                      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">Hello, world! This is a toast message.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="toast-style-html" role="tabpanel" aria-labelledby="toast-style-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;toast-container position-relative&quot;&gt;&#13;&#10;  &lt;!-- Default Toast --&gt;&#13;&#10;  &lt;div class=&quot;bs-toast toast fade show&quot; role=&quot;alert&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;&#13;&#10;    &lt;div class=&quot;toast-header&quot;&gt;&#13;&#10;      &lt;i class=&quot;ti tabler-bell icon-xs me-2&quot;&gt;&lt;/i&gt;&#13;&#10;      &lt;div class=&quot;me-auto fw-medium&quot;&gt;Bootstrap&lt;/div&gt;&#13;&#10;      &lt;small class=&quot;text-body-secondary&quot;&gt;11 mins ago&lt;/small&gt;&#13;&#10;      &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;toast&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;&#13;&#10;    &lt;/div&gt;&#13;&#10;    &lt;div class=&quot;toast-body&quot;&gt;&#13;&#10;      Hello, world! This is a toast message.&#13;&#10;    &lt;/div&gt;&#13;&#10;  &lt;/div&gt;&#10;&#10;&#13;&#10;  &lt;!-- Primary Toast --&gt;&#13;&#10;  &lt;div class=&quot;bs-toast toast fade show&quot; role=&quot;alert&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;&#13;&#10;    &lt;div class=&quot;toast-header&quot;&gt;&#13;&#10;      &lt;i class=&quot;ti tabler-bell icon-xs me-2 text-primary&quot;&gt;&lt;/i&gt;&#13;&#10;      &lt;div class=&quot;me-auto fw-medium&quot;&gt;Bootstrap&lt;/div&gt;&#13;&#10;      &lt;small class=&quot;text-body-secondary&quot;&gt;11 mins ago&lt;/small&gt;&#13;&#10;      &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;toast&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;&#13;&#10;    &lt;/div&gt;&#13;&#10;    &lt;div class=&quot;toast-body&quot;&gt;&#13;&#10;      Hello, world! This is a toast message.&#13;&#10;    &lt;/div&gt;&#13;&#10;  &lt;/div&gt;&#10;&#10;&#13;&#10;  &lt;!-- Secondary Toast --&gt;&#13;&#10;  &lt;div class=&quot;bs-toast toast fade show&quot; role=&quot;alert&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;&#13;&#10;    &lt;div class=&quot;toast-header&quot;&gt;&#13;&#10;      &lt;i class=&quot;ti tabler-bell icon-xs me-2 text-secondary&quot;&gt;&lt;/i&gt;&#13;&#10;      &lt;div class=&quot;me-auto fw-medium&quot;&gt;Bootstrap&lt;/div&gt;&#13;&#10;      &lt;small class=&quot;text-body-secondary&quot;&gt;11 mins ago&lt;/small&gt;&#13;&#10;      &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;toast&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;&#13;&#10;    &lt;/div&gt;&#13;&#10;    &lt;div class=&quot;toast-body&quot;&gt;&#13;&#10;      Hello, world! This is a toast message.&#13;&#10;    &lt;/div&gt;&#13;&#10;  &lt;/div&gt;&#10;&#10;&#13;&#10;  &lt;!-- Success Toast --&gt;&#13;&#10;  &lt;div class=&quot;bs-toast toast fade show&quot; role=&quot;alert&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;&#13;&#10;    &lt;div class=&quot;toast-header&quot;&gt;&#13;&#10;      &lt;i class=&quot;ti tabler-bell icon-xs me-2 text-success&quot;&gt;&lt;/i&gt;&#13;&#10;      &lt;div class=&quot;me-auto fw-medium&quot;&gt;Bootstrap&lt;/div&gt;&#13;&#10;      &lt;small class=&quot;text-body-secondary&quot;&gt;11 mins ago&lt;/small&gt;&#13;&#10;      &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;toast&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;&#13;&#10;    &lt;/div&gt;&#13;&#10;    &lt;div class=&quot;toast-body&quot;&gt;&#13;&#10;      Hello, world! This is a toast message.&#13;&#10;    &lt;/div&gt;&#13;&#10;  &lt;/div&gt;&#10;&#10;&#13;&#10;  &lt;!-- Warning Toast --&gt;&#13;&#10;  &lt;div class=&quot;bs-toast toast fade show&quot; role=&quot;alert&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;&#13;&#10;    &lt;div class=&quot;toast-header&quot;&gt;&#13;&#10;      &lt;i class=&quot;ti tabler-bell icon-xs me-2 text-warning&quot;&gt;&lt;/i&gt;&#13;&#10;      &lt;div class=&quot;me-auto fw-medium&quot;&gt;Bootstrap&lt;/div&gt;&#13;&#10;      &lt;small class=&quot;text-body-secondary&quot;&gt;11 mins ago&lt;/small&gt;&#13;&#10;      &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;toast&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;&#13;&#10;    &lt;/div&gt;&#13;&#10;    &lt;div class=&quot;toast-body&quot;&gt;&#13;&#10;      Hello, world! This is a toast message.&#13;&#10;    &lt;/div&gt;&#13;&#10;  &lt;/div&gt;&#10;&#10;&#13;&#10;  &lt;!-- Info Toast --&gt;&#13;&#10;  &lt;div class=&quot;bs-toast toast fade show&quot; role=&quot;alert&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;&#13;&#10;    &lt;div class=&quot;toast-header&quot;&gt;&#13;&#10;      &lt;i class=&quot;ti tabler-bell icon-xs me-2 text-info&quot;&gt;&lt;/i&gt;&#13;&#10;      &lt;div class=&quot;me-auto fw-medium&quot;&gt;Bootstrap&lt;/div&gt;&#13;&#10;      &lt;small class=&quot;text-body-secondary&quot;&gt;11 mins ago&lt;/small&gt;&#13;&#10;      &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;toast&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;&#13;&#10;    &lt;/div&gt;&#13;&#10;    &lt;div class=&quot;toast-body&quot;&gt;&#13;&#10;      Hello, world! This is a toast message.&#13;&#10;    &lt;/div&gt;&#13;&#10;  &lt;/div&gt;&#10;&#10;&#13;&#10;  &lt;!-- Danger Toast --&gt;&#13;&#10;  &lt;div class=&quot;bs-toast toast fade show&quot; role=&quot;alert&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;&#13;&#10;    &lt;div class=&quot;toast-header&quot;&gt;&#13;&#10;      &lt;i class=&quot;ti tabler-bell icon-xs me-2 text-danger&quot;&gt;&lt;/i&gt;&#13;&#10;      &lt;div class=&quot;me-auto fw-medium&quot;&gt;Bootstrap&lt;/div&gt;&#13;&#10;      &lt;small class=&quot;text-body-secondary&quot;&gt;11 mins ago&lt;/small&gt;&#13;&#10;      &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;toast&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;&#13;&#10;    &lt;/div&gt;&#13;&#10;    &lt;div class=&quot;toast-body&quot;&gt;&#13;&#10;      Hello, world! This is a toast message.&#13;&#10;    &lt;/div&gt;&#13;&#10;  &lt;/div&gt;&#10;&#10;&#13;&#10;  &lt;!-- Dark Toast --&gt;&#13;&#10;  &lt;div class=&quot;bs-toast toast fade show&quot; role=&quot;alert&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;&#13;&#10;    &lt;div class=&quot;toast-header&quot;&gt;&#13;&#10;      &lt;i class=&quot;ti tabler-bell icon-xs me-2 text-dark&quot;&gt;&lt;/i&gt;&#13;&#10;      &lt;div class=&quot;me-auto fw-medium&quot;&gt;Bootstrap&lt;/div&gt;&#13;&#10;      &lt;small class=&quot;text-body-secondary&quot;&gt;11 mins ago&lt;/small&gt;&#13;&#10;      &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;toast&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;&#13;&#10;    &lt;/div&gt;&#13;&#10;    &lt;div class=&quot;toast-body&quot;&gt;&#13;&#10;      Hello, world! This is a toast message.&#13;&#10;    &lt;/div&gt;&#13;&#10;  &lt;/div&gt;&#10;&#10;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            <table class="table table-bordered doc-table mt-4">
+              <thead>
+                <tr>
+                  <th scope="col">Class</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope="row">
+                    <code>class="text-{value}"</code>
+                  </td>
+                  <td>primary | secondary | success | danger | warning | info | light | dark</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!--/ Styles / Color Options -->
+
+      <hr class="my-12" />
+
+      <!-- Notyf -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="toasts-notyf" class="anchor-heading mb-6 fw-bold">
+            Notyf
+            
+          </h4>
+          <p><a href="https://carlosroso.com/notyf/" target="_blank">Notyf</a> is a JavaScript library designed for non-blocking notifications. It requires jQuery and aims to provide a simple, customizable core library that can be easily extended to suit your needs.</p>
+          <p class="fw-bold mt-2">Usage</p>
+          <p>In order to use Notyf on your page, It is required to include the following vendors css in the "Vendors CSS" area from the page's header:</p>
+          <div class="doc-example">
+            <div class="doc-example-content" data-label="Code">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;link rel=&quot;stylesheet&quot; href=&quot;../../assets/vendor/libs/notyf/notyf.css&quot; /&gt;</code></pre>
+            </div>
+          </div>
+          <p class="mt-6">Include the following vendors script in the "Vendors JS" area from the page's footer:</p>
+          <div class="alert alert-info mt-6" role="alert"><strong>Tip:</strong> Read the official <a href="https://github.com/caroso1222/notyf" class="alert-link" target="_blank">Notyf</a> plugin documentation for a full list of options and <a href="https://carlosroso.com/notyf/" class="alert-link" target="_blank">demo</a>.</div>
+          <div class="doc-example">
+            <div class="doc-example-content" data-label="Code">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;link rel=&quot;stylesheet&quot; href=&quot;../../assets/vendor/libs/notyf/notyf.js&quot; /&gt;</code></pre>
+            </div>
+          </div>
+          <div class="doc-example mt-6">
+            <div class="doc-example-content" data-label="Example">
+              <div class="row">
+                <!-- Message Input -->
+                <div class="col-lg-6 col-xl-3">
+                  <div class="mb-4">
+                    <label class="form-label" for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Enter a message..."></textarea>
+                  </div>
+                  <!-- Options -->
+                  <div class="mb-4">
+                    <div class="form-check">
+                      <input id="dismissible" class="form-check-input" type="checkbox" />
+                      <label class="form-check-label" for="dismissible">Dismissible</label>
+                    </div>
+                    <div class="form-check">
+                      <input id="ripple" class="form-check-input" type="checkbox" checked />
+                      <label class="form-check-label" for="ripple">Ripple Effect</label>
+                    </div>
+                  </div>
+                </div>
+                <!-- Type Selection -->
+                <div class="col-lg-6 col-xl-3">
+                  <div class="mb-4" id="notificationTypeGroup">
+                    <label class="form-label">Notification Type</label>
+                    <div class="form-check">
+                      <input type="radio" id="successRadio" name="notificationType" class="form-check-input" value="success" checked />
+                      <label class="form-check-label" for="successRadio">Success</label>
+                    </div>
+                    <div class="form-check">
+                      <input type="radio" id="errorRadio" name="notificationType" class="form-check-input" value="error" />
+                      <label class="form-check-label" for="errorRadio">Error</label>
+                    </div>
+                    <div class="form-check">
+                      <input type="radio" id="infoRadio" name="notificationType" class="form-check-input" value="info" />
+                      <label class="form-check-label" for="infoRadio">Info</label>
+                    </div>
+                    <div class="form-check">
+                      <input type="radio" id="warningRadio" name="notificationType" class="form-check-input" value="warning" />
+                      <label class="form-check-label" for="warningRadio">Warning</label>
+                    </div>
+                    <div class="mb-4">
+                      <label class="form-label" for="duration">Duration (ms)</label>
+                      <input id="duration" type="number" class="form-control" placeholder="Enter duration in milliseconds" value="3000" />
+                    </div>
+                  </div>
+                </div>
+                <!-- Duration Input -->
+                <div class="col">
+                  <label class="form-label">Position Type</label>
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="form-check">
+                        <input id="positionleft" class="form-check-input" type="radio" name="positionx" value="left" />
+                        <label class="form-check-label" for="positionleft">left Position</label>
+                      </div>
+                      <div class="form-check">
+                        <input id="positioncenter" class="form-check-input" type="radio" name="positionx" value="center" />
+                        <label class="form-check-label" for="positioncenter">center Position</label>
+                      </div>
+                      <div class="form-check">
+                        <input id="positionright" class="form-check-input" type="radio" name="positionx" value="right" checked />
+                        <label class="form-check-label" for="positionright">right Position</label>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="form-check">
+                        <input id="positionTop" class="form-check-input" type="radio" name="positiony" value="top" checked />
+                        <label class="form-check-label" for="positionTop">Top Position</label>
+                      </div>
+                      <div class="form-check">
+                        <input id="positionBottom" class="form-check-input" type="radio" name="positiony" value="bottom" />
+                        <label class="form-check-label" for="positionBottom">Bottom Position</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+
+              <a href="javascript:;" class="btn btn-primary" id="showNotification">Show Toast</a>
+              <a href="javascript:;" class="btn btn-danger" id="clearNotifications">Clear Toasts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/ Notyf -->
+    </div>
+
+    <div class="d-none d-xl-block col-xl-2 doc-sidebar container-p-y">
+      <nav id="vertical-nav" class="navbar p-0">
+        <ul class="doc-sidebar-nav">
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#toasts-examples">Examples</a>
+            <ul>
+              <li class="doc-entry doc-h3"><a class="nav-link" href="#toasts-basic">Basic</a></li>
+              <li class="doc-entry doc-h3"><a class="nav-link" href="#toasts-translucent">Translucent</a></li>
+              <li class="doc-entry doc-h3"><a class="nav-link" href="#toasts-custom-content">Custom Content</a></li>
+              <li class="doc-entry doc-h3"><a class="nav-link" href="#toasts-stacking">Stacking</a></li>
+              <li class="doc-entry doc-h3">
+                <a class="nav-link" href="#toasts-animation">Animation <span class="badge badge-center badge-sm rounded-pill bg-label-danger">C</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="doc-entry doc-h2"><a class="nav-link" href="#toasts-placement">Placement</a></li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#toasts-styles">Styles <span class="badge badge-center badge-sm rounded-pill bg-label-danger">C</span></a>
+          </li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#toasts-notyf">Notyf <span class="badge badge-center badge-sm rounded-pill bg-label-danger">C</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+          <!-- / Content -->
+
+          
+            <footer class="content-footer footer">
+  <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center text-center py-4">
+    <div>
+      &#169; 2017-
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      
+        <a href="https://pixinvent.com" class="footer-text fw-medium" target="_blank">Pixinvent</a>, Hand-crafted & Made with â¤ï¸
+      
+    </div>
+    <div>
+      
+        <a href="https://www.facebook.com/pixinvents/" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-facebook"></i></a>
+      
+      
+        <a href="https://x.com/pixinvents" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-twitter"></i></a>
+      
+      
+        <a href="https://github.com/pixinvent" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-github"></i></a>
+      
+      
+        <a href="https://dribbble.com/pixinvent" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-dribbble"></i></a>
+      
+      
+        <a href="https://www.instagram.com/pixinvents/" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-instagram"></i></a>
+      
+    </div>
+  </div>
+</footer>
+
+          
+        </div>
+        <!-- Content wrapper -->
+      </div>
+      <!-- / Layout page -->
+    </div>
+
+    
+      
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    
+    <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+    <div class="drag-target"></div>
+  </div>
+  <!-- / Layout wrapper -->
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="assets/vendor/libs/highlight/highlight.js"></script>
+    <script src="assets/vendor/libs/clipboard/clipboard.js"></script>
+    
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/vendor/libs/node-waves/node-waves.js"></script>
+    <script src="assets/vendor/libs/@algolia/autocomplete-js.js"></script>
+    <script src="assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="assets/vendor/js/menu.js"></script>
+    <!-- Vendors JS -->
+    <script src="assets/vendor/libs/notyf/notyf.js"></script>
+
+    <!-- Page JS -->
+    <script src="assets/js/docs.js"></script>
+    <script src="assets/js/ui-toasts.js"></script>
+  </body>
+</html>
+
+  <!-- beautify ignore:end -->
+

@@ -1,0 +1,1641 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- =========================================================
+* Vuexy - Bootstrap Dashboard PRO | v3.0.0
+==============================================================
+
+* Product Page: https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599
+* Created by: Pixinvent
+
+    * License: You must have a valid license purchased in order to legally use the theme for your project.
+  
+* Copyright Pixinvent (https://pixinvent.com)
+
+=========================================================
+ -->
+  <!-- beautify ignore:start -->
+
+<html lang="en" class="docs-page  layout-menu-fixed-offcanvas " data-assets-path="assets/" data-skin="bordered">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Docs: Table - DataTables | Vuexy - Bootstrap Dashboard PRO</title>
+
+    <meta name="description" content="Vuexy is the best bootstrap 5 dashboard for responsive web apps. Streamline your app development process with ease." />
+    <meta name="keywords" content="Vuexy bootstrap dashboard, vuexy bootstrap 5 dashboard, themeselection, html dashboard, web dashboard, frontend dashboard, responsive bootstrap theme" />
+    <meta property="og:title" content="Vuexy bootstrap Dashboard by Pixinvent" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" />
+    <meta property="og:image" content="https://pixinvent.com/wp-content/uploads/2023/06/vuexy-hero-image.png" />
+    <meta property="og:description" content="Vuexy is the best bootstrap 5 dashboard for responsive web apps. Streamline your app development process with ease." />
+    <meta property="og:site_name" content="Pixinvent" />
+
+    <!-- Canonical SEO -->
+    <link rel="canonical" href="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" />
+
+    
+      
+      <script>
+        (function (w, d, s, l, i) {
+          w[l] = w[l] || [];
+          w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+          });
+          var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+          j.async = true;
+          j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+          f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5J3LMKC');
+      </script>
+      
+    
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="48x48" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="16x16" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="32x32" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="180x180" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="192x192" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="512x512" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendor/fonts/iconify-icons.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/node-waves/node-waves.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/highlight/highlight.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+    <!-- Datatable css -->
+  <link rel="stylesheet" href="assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css" />
+  <link rel="stylesheet" href="assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css" />
+  <link rel="stylesheet" href="assets/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.css" />
+  <link rel="stylesheet" href="assets/vendor/libs/flatpickr/flatpickr.css" />
+  <link rel="stylesheet" href="assets/vendor/libs/datatables-rowgroup-bs5/rowgroup.bootstrap5.css" />
+  <link rel="stylesheet" href="assets/vendor/libs/@form-validation/form-validation.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="assets/vendor/css/core.css" />
+    <link rel="stylesheet" href="assets/css/demo.css" />
+    <link rel="stylesheet" href="assets/css/docs.css" />
+
+    <!-- Page CSS -->
+    
+
+    <!-- Core JS -->
+    <script src="assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: Don't remove unless you are aware of it, To hide customizer set displayCustomizer value false in config.js.  -->
+    <!-- <script src="assets/vendor/js/template-customizer.js"></script> -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="assets/js/config.js"></script>
+  </head>
+
+  <body>
+    
+      
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5J3LMKC" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+      
+    
+
+    <!-- Layout wrapper -->
+  <div class="layout-wrapper layout-navbar-full ">
+    <div class="layout-container">
+      
+        
+
+
+<!-- Navbar main -->
+
+<nav class="layout-navbar navbar navbar-expand-lg align-items-lg-center bg-white border-bottom" id="layout-navbar">
+  <div class="container-fluid">
+    
+      <!-- Menu toggle (see assets/css/demo/demo.css) -->
+      <div class="layout-menu-toggle navbar-nav d-lg-none align-items-lg-center">
+        <a class="nav-item nav-link px-0 me-lg-4" href="javascript:void(0)">
+          <i class="icon-base ti tabler-menu-2 icon-md align-middle"></i>
+        </a>
+      </div>
+    
+
+    <!-- Brand demo (see assets/css/demo/demo.css) -->
+    <div class="navbar-brand app-brand demo py-0 me-md-auto me-12 ms-lg-0 ms-0">
+      <a href="index.html" class="app-brand-link">
+        <span class="app-brand-logo demo">
+  <span class="text-primary">
+    <svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.00172773 0V6.85398C0.00172773 6.85398 -0.133178 9.01207 1.98092 10.8388L13.6912 21.9964L19.7809 21.9181L18.8042 9.88248L16.4951 7.17289L9.23799 0H0.00172773Z" fill="currentColor" />
+      <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd" d="M7.69824 16.4364L12.5199 3.23696L16.5541 7.25596L7.69824 16.4364Z" fill="#161616" />
+      <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd" d="M8.07751 15.9175L13.9419 4.63989L16.5849 7.28475L8.07751 15.9175Z" fill="#161616" />
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z" fill="currentColor" />
+    </svg>
+  </span>
+</span>
+        <span class="app-brand-text demo menu-text fw-bold">Vuexy</span>
+      </a>
+    </div>
+
+    <div class="d-flex ms-md-6 gap-3">
+      
+      <div class="navbar-nav align-items-lg-center justify-content-center">
+        <!-- Search -->
+        <div class="navbar-nav align-items-center">
+          <div class="nav-item navbar-search-wrapper mb-0">
+            <a class="nav-item nav-link search-toggler border rounded-3 py-2 px-md-4 px-2 d-flex align-items-center" href="javascript:void(0);">
+              <span class="d-inline-block text-body-secondary fw-normal" id="autocomplete"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbar-collapse">
+        <hr class="d-lg-none w-100 my-2" />
+        <!-- Divider -->
+
+        <div class="navbar-nav align-items-lg-center">
+          
+          <ul class="navbar-nav">
+            <!-- Technology dropdown -->
+            
+            
+              
+                <li class="nav-item dropdown me-2">
+                  <button class="btn dropdown-toggle py-2 btn-primary" type="button" id="livePreview" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-base ti tabler-current-location me-2"></i> Live preview</button>
+                  <ul class="dropdown-menu" aria-labelledby="livePreview">
+                    <li>
+                      <a href="https://pixinvent.com/vuexy-bootstrap-html-admin-template/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>HTML preview</a>
+                    </li>
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-laravel-admin-template/demo-1/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>Laravel preview</a>
+                      </li>
+                    
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-admin-template/html/vertical-menu-template/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>.Net Core preview</a>
+                      </li>
+                    
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-django-admin-template/demo-1/" target="_blank" class="nav-link text-nowrap"><i class="icon-base ti tabler-current-location me-2"></i>Django preview</a>
+                      </li>
+                    
+                  </ul>
+                </li>
+              
+            
+            
+              <li class="nav-item me-2">
+                <a href="https://pixinvent.ticksy.com/" target="_blank" class="nav-link d-flex align-items-center">
+                  <i class="icon-base ti tabler-lifebuoy me-2"></i>
+                  <span>Support</span>
+                </a>
+              </li>
+            
+            
+              <li class="nav-item">
+                <a href="https://themeforest.net/user/pixinvent/portfolio" target="_blank" class="nav-link d-flex align-items-center">
+                  <i class="icon-base ti tabler-gift me-2"></i>
+                  <span> More Themes</span>
+                </a>
+              </li>
+            
+            
+              <li class="nav-item">
+                <a href="https://themeselection.com/hire-us/" target="_blank" class="nav-link"><i class="icon-base ti tabler-briefcase"></i> Hire Us</a>
+              </li>
+            
+          </ul>
+
+          <!-- Divider -->
+          <div class="nav-item d-none d-lg-block text-big fw-light lh-1 me-4 ms-1">|</div>
+
+          
+            <div class="buy-now-btn">
+              <a href="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" target="_blank" class="btn btn-danger d-flex align-items-center gap-2">
+                <i class="icon-base ti tabler-shopping-cart"></i>
+                <span>Buy Now</span>
+              </a>
+            </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</nav>
+<!-- / Navbar main -->
+
+      
+
+      <!-- Layout page -->
+      <div class="layout-page">
+        
+          
+
+
+
+
+<!-- Menu -->
+<aside id="layout-menu" class="layout-menu menu-doc menu menu-vertical bg-menu-theme">
+  
+  <div class="menu-divider mt-0   d-xl-none "></div>
+
+  <!-- Links -->
+  <ul class="menu-inner py-1">
+    <li class="menu-header text-uppercase small fw-medium">Getting Started</li>
+    <li class="menu-item">
+      <a href="index.html" class="menu-link">
+        <div>Introduction</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="licenses.html" class="menu-link">
+        <div>Licenses</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="folder-structure.html" class="menu-link">
+        <div>Folder Structure</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="quick-start.html" class="menu-link">
+        <div>Quick Start</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="config.html" class="menu-link">
+        <div>Config ð¤©</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="installation-build.html" class="menu-link">
+        <div>Installation & Build</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="template-customizer.html" class="menu-link">
+        <div>Template Customizer</div>
+        
+      </a>
+    </li>
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Customization</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="customization-sass.html" class="menu-link">
+            <div>SASS</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="customization-js.html" class="menu-link">
+            <div>JavaScript</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="customization-third-party-plugins.html" class="menu-link">
+            <div>Third Party Plugins</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="layouts.html" class="menu-link">
+        <div>Layouts</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="dependencies.html" class="menu-link">
+        <div>Dependencies</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="faq.html" class="menu-link">
+        <div>FAQs</div>
+      </a>
+    </li>
+    
+      <!-- Laravel Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row">
+        <span class="me-1">Laravel</span>
+        <span class="badge badge-demo bg-label-danger ms-auto">HTML + Laravel Only</span>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="laravel-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-starter-kit-vs-full-version.html" class="menu-link">
+              <div>Starter-kit Vs Full-version</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-demo-config.html" class="menu-link">
+              <div>Demo Configs</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Auth & ACL</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-auth-jetstream.html" class="menu-link">
+              <div>JetStream</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-passport.html" class="menu-link">
+              <div>Passport</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-sanctum.html" class="menu-link">
+              <div>Sanctum</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-acl.html" class="menu-link">
+              <div>ACL</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-articles-database-connections.html" class="menu-link">
+              <div>Database Connections</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-existing-project.html" class="menu-link">
+              <div>Exiting Project Migration</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-form-validation-integration.html" class="menu-link">
+              <div>Form Validation Package Integration</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-localization.html" class="menu-link">
+          <div>Localization</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-search.html" class="menu-link">
+          <div>Search</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-sail-docker.html" class="menu-link">
+          <div>Sail & Docker</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-deployment.html" class="menu-link">
+          <div>Deployment</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Dotnet Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>ASP.NET CORE</span> <span class="badge badge-demo bg-label-danger ms-auto">Razor Pages</span></li>
+
+      <li class="menu-item">
+        <a href="net-core-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-assets-compilation.html" class="menu-link">
+              <div>Assets Compilation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-start-with-doker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-starter-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="net-core-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Dotnet Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>ASP.NET CORE MVC</span> <span class="badge badge-demo bg-label-danger ms-auto">MVC</span></li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-mvc-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-assets-compilation.html" class="menu-link">
+              <div>Assets Compilation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-start-with-docker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-starter-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="net-core-mvc-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-mvc-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Django Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>Django</span> <span class="badge badge-demo bg-label-danger ms-auto">Django Only</span></li>
+
+      <li class="menu-item">
+        <a href="django-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="django-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-start-with-doker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-demo-config.html" class="menu-link">
+              <div>Demo Config</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-starter-kit-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="django-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="django-articles-create-new-page.html" class="menu-link">
+              <div>Create New Apps & Pages</div>
+            </a>
+          </li>
+          <!-- <li class="menu-item">
+          <a href="django-articles-existing-project.html" class="menu-link">
+            <div>Exiting Project Migration</div>
+          </a>
+        </li> -->
+          <li class="menu-item">
+            <a href="django-articles-admin-superuser.html" class="menu-link">
+              <div>Admin and Create User</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-authentication.html" class="menu-link">
+              <div>Authentication</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="django-articles-permissions-authorization.html" class="menu-link">
+              <div>Permissions & Authorization</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-crud.html" class="menu-link">
+              <div>CRUD Example</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-admin-db.html" class="menu-link">
+              <div>Admin and Database</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-localization.html" class="menu-link">
+          <div>Localization</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-search.html" class="menu-link">
+          <div>Search</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-theme-api.html" class="menu-link">
+          <div>Theme API</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-deployment.html" class="menu-link">
+          <div>Deployment</div>
+        </a>
+      </li>
+    
+    <!-- Apps & Pages -->
+    <li class="menu-divider mb-1"></li>
+    <li class="menu-header text-uppercase small fw-medium">Design System</li>
+
+    <li class="menu-item">
+      <a href="typography.html" class="menu-link">
+        <div>Typography</div>
+      </a>
+    </li>
+
+    <li class="menu-item">
+      <a href="colors.html" class="menu-link">
+        <div>Colors</div>
+      </a>
+    </li>
+
+    <li class="menu-item">
+      <a href="Icons.html" class="menu-link">
+        <div>Icons</div>
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+    <!-- Components -->
+    <li class="menu-header text-uppercase small fw-medium">Components</li>
+
+    <!-- UI Elements -->
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>UI Elements</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="ui-accordion.html" class="menu-link">
+            <div>Accordion</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-alerts.html" class="menu-link">
+            <div>Alerts</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-app-brand.html" class="menu-link">
+            <div>App Brand</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-badges.html" class="menu-link">
+            <div>Badges</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-buttons.html" class="menu-link">
+            <div>Buttons</div>
+          </a>
+        </li>
+        <li class="menu-item
+  ">
+          <a href="javascript:void(0);" class="menu-link menu-toggle">
+            <div>Cards</div>
+          </a>
+          <ul class="menu-sub">
+            <li class="menu-item">
+              <a href="ui-cards-basic.html" class="menu-link">
+                <div>Basic</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="ui-cards-actions.html" class="menu-link">
+                <div>Actions</div>
+                
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="ui-carousel.html" class="menu-link">
+            <div>Carousel</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-collapse.html" class="menu-link">
+            <div>Collapse</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-dropdowns.html" class="menu-link">
+            <div>Dropdowns</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-footer.html" class="menu-link">
+            <div>Footer</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-list-groups.html" class="menu-link">
+            <div>List groups</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-modals.html" class="menu-link">
+            <div>Modals</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-menu.html" class="menu-link">
+            <div>Menu</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-navbar.html" class="menu-link">
+            <div>Navbar</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-offcanvas.html" class="menu-link">
+            <div>Offcanvas</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-pagination-breadcrumbs.html" class="menu-link">
+            <div>Pagination &amp; Breadcrumbs</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-popovers.html" class="menu-link">
+            <div>Popovers</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-progress.html" class="menu-link">
+            <div>Progress</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-spinners.html" class="menu-link">
+            <div>Spinners</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-navs.html" class="menu-link">
+            <div>Navs</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-tabs-pills.html" class="menu-link">
+            <div>Tabs &amp; Pills</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-toasts.html" class="menu-link">
+            <div>Toasts</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-tooltips.html" class="menu-link">
+            <div>Tooltips</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+
+    <!-- Extended components -->
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Extended UI</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="extended-ui-avatar.html" class="menu-link">
+            <div>Avatar</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-blockui.html" class="menu-link">
+            <div>BlockUI</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-drag-and-drop.html" class="menu-link">
+            <div>Drag &amp; Drop</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-media-player.html" class="menu-link">
+            <div>Media Player</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-perfect-scrollbar.html" class="menu-link">
+            <div>Perfect scrollbar</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-star-ratings.html" class="menu-link">
+            <div>Star Ratings</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-sweetalert2.html" class="menu-link">
+            <div>SweetAlert2</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-text-divider.html" class="menu-link">
+            <div>Text Divider</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-timeline.html" class="menu-link">
+            <div>Timeline</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-tour.html" class="menu-link">
+            <div>Tour</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-treeview.html" class="menu-link">
+            <div>Treeview</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-misc.html" class="menu-link">
+            <div>Miscellaneous</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Forms -->
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Forms</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="forms-basic-inputs.html" class="menu-link">
+            <div>Basic Inputs</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-input-groups.html" class="menu-link">
+            <div>Input groups</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-custom-options.html" class="menu-link">
+            <div>Custom Options</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-editors.html" class="menu-link">
+            <div>Editors</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-file-upload.html" class="menu-link">
+            <div>File Upload</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-pickers.html" class="menu-link">
+            <div>Pickers</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-selects.html" class="menu-link">
+            <div>Select &amp; Tags</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-sliders.html" class="menu-link">
+            <div>Sliders</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-switches.html" class="menu-link">
+            <div>Switches</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-extras.html" class="menu-link">
+            <div>Extras</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-validation.html" class="menu-link">
+            <div>Validation</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-wizard.html" class="menu-link">
+            <div>Wizard</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-layouts-sticky.html" class="menu-link">
+            <div>Sticky Actions</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <!-- Tables -->
+    <li class="menu-item">
+      <a href="tables-basic.html" class="menu-link">
+        <div>Tables</div>
+      </a>
+    </li>
+    <li class="menu-item active">
+      <a href="tables-datatables.html" class="menu-link">
+        <div>Datatables</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="utilities.html" class="menu-link">
+        <div>Utilities</div>
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+    <!-- Charts & Maps -->
+    <li class="menu-header text-uppercase small fw-medium">Charts &amp; Maps</li>
+
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <div data-i18n="Charts">Charts</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="charts-apex.html" class="menu-link">
+            <div>Apex Charts</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="charts-chartjs.html" class="menu-link">
+            <div>ChartJS</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="maps-leaflet.html" class="menu-link">
+        <div>Leaflet</div>
+        
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+
+    <!-- Charts & Maps -->
+    <li class="menu-header text-uppercase small fw-medium">Others</li>
+    <li class="menu-item">
+      <a href="credits.html" class="menu-link">
+        <div>Credits</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="https://pixinvent.ticksy.com/" target="_blank" class="menu-link">
+        <div>Support</div>
+      </a>
+    </li>
+  </ul>
+</aside>
+<!-- / Menu -->
+
+        
+
+        <!-- Content wrapper -->
+        <div class="content-wrapper">
+          <!-- Content -->
+          <div class="container-xxl flex-grow-1 container-p-y">
+  <div class="row flex-xl-nowrap">
+    <div class="DocSearch-content col-12 col-xl-10 container-p-y">
+      <h2 class="mb-6 doc-page-title">DataTables</h2>
+      <p>DataTables is a plug-in for the jQuery Javascript library. It is a highly flexible tool, built upon the foundations of progressive enhancement, that adds all of these advanced features to any HTML table.<br />Read the official <a href="https://datatables.net/" target="_blank">DataTables</a> for a full list of instructions and other options.</p>
+
+      <hr class="my-12" />
+
+      <!-- Basic DataTable -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="basic-datatable" class="anchor-heading mb-6 fw-bold">Basic DataTable</h4>
+          <p>Here you can find basic dataTable with filter, pagination, Length Changing, information, etc.. We have added a button to Add new record in the table. You can find details in the example below :</p>
+          <p>You need to install buttons and other export extensions to use the buttons as we have displayed in this table.</p>
+          <div class="alert alert-info">We are providing <strong>Add new record</strong> functionality but this won't be useful to add record into the database, API, etc. We are fetching the data and drawing the record with fetched data. So you have to integrate add new record things as per your requirements. To remove this functionality of this template, you need to remove JS code from <strong>tables-datatables-basic.js</strong> file.</div>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="basic-datatable-preview-tab" data-bs-toggle="tab" data-bs-target="#basic-datatable-preview" role="tab" aria-controls="basic-datatable-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="basic-datatable-html-tab" data-bs-toggle="tab" data-bs-target="#basic-datatable-html" role="tab" aria-controls="basic-datatable-html" aria-selected="false">HTML</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" id="basic-datatable-js-tab" data-bs-toggle="tab" data-bs-target="#basic-datatable-js" role="tab" aria-controls="basic-datatable-js" aria-selected="false">JS</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="basic-datatable-preview" role="tabpanel" aria-labelledby="basic-datatable-preview-tab">
+                <div class="card">
+                  <div class="card-datatable pt-0">
+                    <table class="datatables-basic table table-bordered">
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th></th>
+                          <th>id</th>
+                          <th>Name</th>
+                          <th>Email</th>
+                          <th>Date</th>
+                          <th>Salary</th>
+                          <th>Status</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="basic-datatable-html" role="tabpanel" aria-labelledby="basic-datatable-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;card-datatable pt-0&quot;&gt;&#13;&#10;  &lt;table class=&quot;datatables-basic table table-bordered&quot;&gt;&#13;&#10;    &lt;thead&gt;&#13;&#10;      &lt;tr&gt;&#13;&#10;        &lt;th&gt;&lt;/th&gt;&#13;&#10;        &lt;th&gt;&lt;/th&gt;&#13;&#10;        &lt;th&gt;id&lt;/th&gt;&#13;&#10;        &lt;th&gt;Name&lt;/th&gt;&#13;&#10;        &lt;th&gt;Email&lt;/th&gt;&#13;&#10;        &lt;th&gt;Date&lt;/th&gt;&#13;&#10;        &lt;th&gt;Salary&lt;/th&gt;&#13;&#10;        &lt;th&gt;Status&lt;/th&gt;&#13;&#10;        &lt;th&gt;Action&lt;/th&gt;&#13;&#10;      &lt;/tr&gt;&#13;&#10;    &lt;/thead&gt;&#13;&#10;  &lt;/table&gt;&#13;&#10;&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="basic-datatable-js" role="tabpanel" aria-labelledby="basic-datatable-js-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="js">$(function() {&#13;&#10;  &apos;use strict&apos;;&#13;&#10;&#13;&#10;  var dt_basic_table = $(&apos;.datatables-basic&apos;);&#13;&#10;&#13;&#10;  // DataTable with buttons&#13;&#10;  // --------------------------------------------------------------------&#13;&#10;&#13;&#10;  if (dt_basic_table.length) {&#13;&#10;    var dt_basic = dt_basic_table.DataTable({&#13;&#10;      ajax: assetsPath + &apos;/json/table-datatable.json&apos;,&#13;&#10;      columns: [&#13;&#10;        { data: &apos;&apos; },&#13;&#10;        { data: &apos;id&apos; },&#13;&#10;        { data: &apos;id&apos; },&#13;&#10;        { data: &apos;full_name&apos; },&#13;&#10;        { data: &apos;email&apos; },&#13;&#10;        { data: &apos;start_date&apos; },&#13;&#10;        { data: &apos;salary&apos; },&#13;&#10;        { data: &apos;status&apos; },&#13;&#10;        { data: &apos;&apos; }&#13;&#10;      ],&#13;&#10;      columnDefs: [&#13;&#10;        {&#13;&#10;          // For Responsive&#13;&#10;          className: &apos;control&apos;,&#13;&#10;          orderable: false,&#13;&#10;          responsivePriority: 2,&#13;&#10;          searchable: false,&#13;&#10;          targets: 0,&#13;&#10;          render: function(data, type, full, meta) {&#13;&#10;            return &apos;&apos;;&#13;&#10;          }&#13;&#10;        },&#13;&#10;        {&#13;&#10;          // For Checkboxes&#13;&#10;          targets: 1,&#13;&#10;          orderable: false,&#13;&#10;          responsivePriority: 3,&#13;&#10;          searchable: false,&#13;&#10;          checkboxes: true,&#13;&#10;          render: function() {&#13;&#10;            return &apos;&lt;input type=&quot;checkbox&quot; class=&quot;dt-checkboxes form-check-input&quot;&gt;&apos;;&#13;&#10;          },&#13;&#10;          checkboxes: {&#13;&#10;            selectAllRender: &apos;&lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot;&gt;&apos;&#13;&#10;          }&#13;&#10;        },&#13;&#10;        {&#13;&#10;          targets: 2,&#13;&#10;          searchable: false,&#13;&#10;          visible: false&#13;&#10;        },&#13;&#10;        {&#13;&#10;          // Avatar image/badge, Name and post&#13;&#10;          targets: 3,&#13;&#10;          responsivePriority: 4,&#13;&#10;          render: function(data, type, full, meta) {&#13;&#10;            var $user_img = full[&apos;avatar&apos;],&#13;&#10;              $name = full[&apos;full_name&apos;],&#13;&#10;              $post = full[&apos;post&apos;];&#13;&#10;            if ($user_img) {&#13;&#10;              // For Avatar image&#13;&#10;              var $output =&#13;&#10;                &apos;&lt;img src=&quot;&apos; + assetsPath + &apos;/img/avatars/&apos; + $user_img + &apos;&quot; alt=&quot;Avatar&quot; class=&quot;rounded-circle&quot;&gt;&apos;;&#13;&#10;            } else {&#13;&#10;              // For Avatar badge&#13;&#10;              var stateNum = Math.floor(Math.random() * 6);&#13;&#10;              var states = [&apos;success&apos;, &apos;danger&apos;, &apos;warning&apos;, &apos;info&apos;, &apos;dark&apos;, &apos;primary&apos;, &apos;secondary&apos;];&#13;&#10;              var $state = states[stateNum],&#13;&#10;                $name = full[&apos;full_name&apos;],&#13;&#10;                $initials = $name.match(/\b\w/g) || [];&#13;&#10;              $initials = (($initials.shift() || &apos;&apos;) + ($initials.pop() || &apos;&apos;)).toUpperCase();&#13;&#10;              $output = &apos;&lt;span class=&quot;avatar-initial rounded-circle bg-label-&apos; + $state + &apos;&quot;&gt;&apos; + $initials + &apos;&lt;/span&gt;&apos;;&#13;&#10;            }&#13;&#10;            // Creates full output for row&#13;&#10;            var $row_output =&#13;&#10;              &apos;&lt;div class=&quot;d-flex justify-content-start align-items-center&quot;&gt;&apos; +&#13;&#10;              &apos;&lt;div class=&quot;avatar-wrapper&quot;&gt;&apos; +&#13;&#10;              &apos;&lt;div class=&quot;avatar me-2&quot;&gt;&apos; +&#13;&#10;              $output +&#13;&#10;              &apos;&lt;/div&gt;&apos; +&#13;&#10;              &apos;&lt;/div&gt;&apos; +&#13;&#10;              &apos;&lt;div class=&quot;d-flex flex-column&quot;&gt;&apos; +&#13;&#10;              &apos;&lt;span class=&quot;emp_name text-truncate&quot;&gt;&apos; +&#13;&#10;              $name +&#13;&#10;              &apos;&lt;/span&gt;&apos; +&#13;&#10;              &apos;&lt;small class=&quot;emp_post text-truncate text-body-secondary&quot;&gt;&apos; +&#13;&#10;              $post +&#13;&#10;              &apos;&lt;/small&gt;&apos; +&#13;&#10;              &apos;&lt;/div&gt;&apos; +&#13;&#10;              &apos;&lt;/div&gt;&apos;;&#13;&#10;            return $row_output;&#13;&#10;          }&#13;&#10;        },&#13;&#10;        {&#13;&#10;          responsivePriority: 1,&#13;&#10;          targets: 4&#13;&#10;        },&#13;&#10;        {&#13;&#10;          // Label&#13;&#10;          targets: -2,&#13;&#10;          render: function(data, type, full, meta) {&#13;&#10;            var $status_number = full[&apos;status&apos;];&#13;&#10;            var $status = {&#13;&#10;              1: { title: &apos;Current&apos;, class: &apos;bg-label-primary&apos; },&#13;&#10;              2: { title: &apos;Professional&apos;, class: &apos; bg-label-success&apos; },&#13;&#10;              3: { title: &apos;Rejected&apos;, class: &apos; bg-label-danger&apos; },&#13;&#10;              4: { title: &apos;Resigned&apos;, class: &apos; bg-label-warning&apos; },&#13;&#10;              5: { title: &apos;Applied&apos;, class: &apos; bg-label-info&apos; }&#13;&#10;            };&#13;&#10;            if (typeof $status[$status_number] === &apos;undefined&apos;) {&#13;&#10;              return data;&#13;&#10;            }&#13;&#10;            return (&#13;&#10;              &apos;&lt;span class=&quot;badge rounded-pill &apos; +&#13;&#10;              $status[$status_number].class +&#13;&#10;              &apos;&quot;&gt;&apos; +&#13;&#10;              $status[$status_number].title +&#13;&#10;              &apos;&lt;/span&gt;&apos;&#13;&#10;            );&#13;&#10;          }&#13;&#10;        },&#13;&#10;        {&#13;&#10;          // Actions&#13;&#10;          targets: -1,&#13;&#10;          title: &apos;Actions&apos;,&#13;&#10;          orderable: false,&#13;&#10;          searchable: false,&#13;&#10;          render: function(data, type, full, meta) {&#13;&#10;            return (&#13;&#10;              &apos;&lt;div class=&quot;d-inline-block&quot;&gt;&apos; +&#13;&#10;              &apos;&lt;a href=&quot;javascript:;&quot; class=&quot;btn btn-sm text-primary btn-icon dropdown-toggle hide-arrow&quot; data-bs-toggle=&quot;dropdown&quot;&gt;&lt;i class=&quot;icon-base ti tabler-dots-vertical-rounded&quot;&gt;&lt;/i&gt;&lt;/a&gt;&apos; +&#13;&#10;              &apos;&lt;ul class=&quot;dropdown-menu dropdown-menu-end&quot;&gt;&apos; +&#13;&#10;              &apos;&lt;li&gt;&lt;a href=&quot;javascript:;&quot; class=&quot;dropdown-item&quot;&gt;Details&lt;/a&gt;&lt;/li&gt;&apos; +&#13;&#10;              &apos;&lt;li&gt;&lt;a href=&quot;javascript:;&quot; class=&quot;dropdown-item&quot;&gt;Archive&lt;/a&gt;&lt;/li&gt;&apos; +&#13;&#10;              &apos;&lt;div class=&quot;dropdown-divider&quot;&gt;&lt;/div&gt;&apos; +&#13;&#10;              &apos;&lt;li&gt;&lt;a href=&quot;javascript:;&quot; class=&quot;dropdown-item text-danger delete-record&quot;&gt;Delete&lt;/a&gt;&lt;/li&gt;&apos; +&#13;&#10;              &apos;&lt;/ul&gt;&apos; +&#13;&#10;              &apos;&lt;/div&gt;&apos; +&#13;&#10;              &apos;&lt;a href=&quot;javascript:;&quot; class=&quot;btn btn-sm text-primary btn-icon item-edit&quot;&gt;&lt;i class=&quot;icon-base ti tabler-pencil&quot;&gt;&lt;/i&gt;&lt;/a&gt;&apos;&#13;&#10;            );&#13;&#10;          }&#13;&#10;        }&#13;&#10;      ],&#13;&#10;      order: [[2, &apos;desc&apos;]],&#13;&#10;      dom:&#13;&#10;        &apos;&lt;&quot;card-header&quot;&lt;&quot;head-label text-center&quot;&gt;&lt;&quot;dt-action-buttons text-end&quot;B&gt;&gt;&lt;&quot;d-flex justify-content-between align-items-center row&quot;&lt;&quot;col-sm-12 col-md-6&quot;l&gt;&lt;&quot;col-sm-12 col-md-6&quot;f&gt;&gt;t&lt;&quot;d-flex justify-content-between row&quot;&lt;&quot;col-sm-12 col-md-6&quot;i&gt;&lt;&quot;col-sm-12 col-md-6&quot;p&gt;&gt;&apos;,&#13;&#10;      displayLength: 7,&#13;&#10;      lengthMenu: [7, 10, 25, 50, 75, 100],&#13;&#10;      buttons: [&#13;&#10;        {&#13;&#10;          extend: &apos;collection&apos;,&#13;&#10;          className: &apos;btn btn-label-primary dropdown-toggle me-2&apos;,&#13;&#10;          text: &apos;&lt;i class=&quot;icon-base ti tabler-show me-1&quot;&gt;&lt;/i&gt;Export&apos;,&#13;&#10;          buttons: [&#13;&#10;            {&#13;&#10;              extend: &apos;print&apos;,&#13;&#10;              text: &apos;&lt;i class=&quot;icon-base ti tabler-printer me-1&quot; &gt;&lt;/i&gt;Print&apos;,&#13;&#10;              className: &apos;dropdown-item&apos;,&#13;&#10;              exportOptions: { columns: [3, 4, 5, 6, 7] }&#13;&#10;            },&#13;&#10;            {&#13;&#10;              extend: &apos;csv&apos;,&#13;&#10;              text: &apos;&lt;i class=&quot;icon-base ti tabler-file me-1&quot; &gt;&lt;/i&gt;Csv&apos;,&#13;&#10;              className: &apos;dropdown-item&apos;,&#13;&#10;              exportOptions: { columns: [3, 4, 5, 6, 7] }&#13;&#10;            },&#13;&#10;            {&#13;&#10;              extend: &apos;excel&apos;,&#13;&#10;              text: &apos;Excel&apos;,&#13;&#10;              className: &apos;dropdown-item&apos;,&#13;&#10;              exportOptions: { columns: [3, 4, 5, 6, 7] }&#13;&#10;            },&#13;&#10;            {&#13;&#10;              extend: &apos;pdf&apos;,&#13;&#10;              text: &apos;&lt;i class=&quot;icon-base ti tabler-file-text me-1&quot;&gt;&lt;/i&gt;Pdf&apos;,&#13;&#10;              className: &apos;dropdown-item&apos;,&#13;&#10;              exportOptions: { columns: [3, 4, 5, 6, 7] }&#13;&#10;            },&#13;&#10;            {&#13;&#10;              extend: &apos;copy&apos;,&#13;&#10;              text: &apos;&lt;i class=&quot;icon-base ti tabler-copy me-1&quot; &gt;&lt;/i&gt;Copy&apos;,&#13;&#10;              className: &apos;dropdown-item&apos;,&#13;&#10;              exportOptions: { columns: [3, 4, 5, 6, 7] }&#13;&#10;            }&#13;&#10;          ]&#13;&#10;        },&#13;&#10;        {&#13;&#10;          text: &apos;&lt;i class=&quot;icon-base ti tabler-plus me-1&quot;&gt;&lt;/i&gt; &lt;span class=&quot;d-none d-lg-inline-block&quot;&gt;Add New Record&lt;/span&gt;&apos;,&#13;&#10;          className: &apos;create-new btn btn-primary&apos;&#13;&#10;        }&#13;&#10;      ],&#13;&#10;      responsive: {&#13;&#10;        details: {&#13;&#10;          display: $.fn.dataTable.Responsive.display.modal({&#13;&#10;            header: function(row) {&#13;&#10;              var data = row.data();&#13;&#10;              return &apos;Details of &apos; + data[&apos;full_name&apos;];&#13;&#10;            }&#13;&#10;          }),&#13;&#10;          type: &apos;column&apos;,&#13;&#10;          renderer: function(api, rowIdx, columns) {&#13;&#10;            var data = $.map(columns, function(col, i) {&#13;&#10;              return col.title !== &apos;&apos; // ? Do not show row in modal popup if title is blank (for check box)&#13;&#10;                ? &apos;&lt;tr data-dt-row=&quot;&apos; +&#13;&#10;                    col.rowIndex +&#13;&#10;                    &apos;&quot; data-dt-column=&quot;&apos; +&#13;&#10;                    col.columnIndex +&#13;&#10;                    &apos;&quot;&gt;&apos; +&#13;&#10;                    &apos;&lt;td&gt;&apos; +&#13;&#10;                    col.title +&#13;&#10;                    &apos;:&apos; +&#13;&#10;                    &apos;&lt;/td&gt; &apos; +&#13;&#10;                    &apos;&lt;td&gt;&apos; +&#13;&#10;                    col.data +&#13;&#10;                    &apos;&lt;/td&gt;&apos; +&#13;&#10;                    &apos;&lt;/tr&gt;&apos;&#13;&#10;                : &apos;&apos;;&#13;&#10;            }).join(&apos;&apos;);&#13;&#10;&#13;&#10;            return data ? $(&apos;&lt;table class=&quot;table&quot;/&gt;&lt;tbody /&gt;&apos;).append(data) : false;&#13;&#10;          }&#13;&#10;        }&#13;&#10;      }&#13;&#10;    });&#13;&#10;    $(&apos;div.head-label&apos;).html(&apos;&lt;h5 class=&quot;card-title mb-0&quot;&gt;DataTable with Buttons&lt;/h5&gt;&apos;);&#13;&#10;  }&#13;&#10;});</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal to add new record -->
+      <div class="offcanvas offcanvas-end" id="add-new-record">
+        <div class="offcanvas-header border-bottom">
+          <h5 class="offcanvas-title" id="exampleModalLabel">New Record</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body flex-grow-1">
+          <form class="add-new-record pt-0 row g-2" id="form-add-new-record" onsubmit="return false">
+            <div class="col-sm-12 form-control-validation">
+              <label class="form-label" for="basicFullname">Full Name</label>
+              <div class="input-group input-group-merge">
+                <span id="basicFullname2" class="input-group-text"><i class="icon-base ti tabler-user"></i></span>
+                <input type="text" id="basicFullname" class="form-control dt-full-name" name="basicFullname" placeholder="John Doe" aria-label="John Doe" aria-describedby="basicFullname2" />
+              </div>
+            </div>
+            <div class="col-sm-12 form-control-validation">
+              <label class="form-label" for="basicPost">Post</label>
+              <div class="input-group input-group-merge">
+                <span id="basicPost2" class="input-group-text"><i class="icon-base ti tabler-briefcase"></i></span>
+                <input type="text" id="basicPost" name="basicPost" class="form-control dt-post" placeholder="Web Developer" aria-label="Web Developer" aria-describedby="basicPost2" />
+              </div>
+            </div>
+            <div class="col-sm-12 form-control-validation">
+              <label class="form-label" for="basicEmail">Email</label>
+              <div class="input-group input-group-merge">
+                <span class="input-group-text"><i class="icon-base ti tabler-mail"></i></span>
+                <input type="text" id="basicEmail" name="basicEmail" class="form-control dt-email" placeholder="john.doe@example.com" aria-label="john.doe@example.com" />
+              </div>
+              <div class="form-text">You can use letters, numbers & periods</div>
+            </div>
+            <div class="col-sm-12 form-control-validation">
+              <label class="form-label" for="basicDate">Joining Date</label>
+              <div class="input-group input-group-merge">
+                <span id="basicDate2" class="input-group-text"><i class="icon-base ti tabler-calendar"></i></span>
+                <input type="text" class="form-control dt-date" id="basicDate" name="basicDate" aria-describedby="basicDate2" placeholder="MM/DD/YYYY" aria-label="MM/DD/YYYY" />
+              </div>
+            </div>
+            <div class="col-sm-12 form-control-validation">
+              <label class="form-label" for="basicSalary">Salary</label>
+              <div class="input-group input-group-merge">
+                <span id="basicSalary2" class="input-group-text"><i class="icon-base ti tabler-currency-dollar"></i></span>
+                <input type="number" id="basicSalary" name="basicSalary" class="form-control dt-salary" placeholder="12000" aria-label="12000" aria-describedby="basicSalary2" />
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <button type="submit" class="btn btn-primary data-submit me-sm-4 me-1">Submit</button>
+              <button type="reset" class="btn btn-outline-secondary" data-bs-dismiss="offcanvas">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!--/ Basic DataTable -->
+
+      <hr class="my-12" />
+
+      <!-- Datatable Links -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="dt-links" class="anchor-heading mb-6 fw-bold">Important Links of DataTables</h4>
+          <table class="table table-bordered">
+            <tr>
+              <th>Title</th>
+              <th>Link</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td class="text-truncate">NPM Packages</td>
+              <td>
+                <a href="https://datatables.net/download/npm" target="_blank">https://datatables.net/download/npm</a>
+              </td>
+              <td>
+                DataTables and its extensions are available as
+                <a href="https://www.npmjs.com/" target="_blank">NPM</a> packages.
+              </td>
+            </tr>
+            <tr>
+              <td class="text-truncate">DataTables Extensions</td>
+              <td>
+                <a href="https://datatables.net/extensions/index" target="_blank">https://datatables.net/extensions/index</a>
+              </td>
+              <td>The features that DataTables provides can be greatly enhanced by the use of the plug-ins available on this page, which give many new user interaction and configuration options.</td>
+            </tr>
+            <tr>
+              <td class="text-truncate">DataTables DOM</td>
+              <td>
+                <a href="https://datatables.net/reference/option/dom" target="_blank">https://datatables.net/reference/option/dom</a>
+              </td>
+              <td>Define the table control elements to appear on the page and in what order.</td>
+            </tr>
+            <tr>
+              <td class="text-truncate">DataTables Plugins</td>
+              <td>
+                <a href="https://datatables.net/plug-ins/index" target="_blank">https://datatables.net/plug-ins/index</a>
+              </td>
+              <td>DataTables provide plug-ins of various types, which has a lot of flexibility built-in by default.</td>
+            </tr>
+            <tr>
+              <td class="text-truncate">DataTables Manual</td>
+              <td>
+                <a href="https://datatables.net/manual/index" target="_blank">https://datatables.net/manual/index</a>
+              </td>
+              <td>DataTable manual is made to guide developer or end users to make it easy and more powerful.</td>
+            </tr>
+            <tr>
+              <td class="text-truncate">DataTables Examples</td>
+              <td>
+                <a href="https://datatables.net/examples/index" target="_blank">https://datatables.net/examples/index</a>
+              </td>
+              <td>DataTable examples will show you how to perform tasks ranging from something as simple as applying DataTables to an HTML table, right the way through to doing server-side processing with pipelining and custom plug-in functions.</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <!--/ Datatable Links -->
+
+      <hr class="my-12" />
+
+      <!-- Installation guide -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="installation-guide" class="anchor-heading mb-6 fw-bold">Installation Guide</h4>
+          <p>As you have already used, <code> npm install </code> or <code>yarn install</code> command when you have started this package, that will include dataTables package with few extensions that we are using in this template. If you have not executed any of these commands, then you can do it now :)</p>
+        </div>
+      </div>
+      <!--/ Installation guide -->
+
+      <hr class="my-12" />
+
+      <!-- To fix dropdown hide issue -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="datatables-dropdown-hide" class="anchor-heading mb-6 fw-bold">To fix datatables dropdown hide issue</h4>
+          <p>If your table contains a limited number of records and you're facing a vertical scrollbar issue upon dropdown opening, consider removing the <code>table-responsive</code> class with <code>card-datatables</code> class instead to present the dropdown without a scrollbar.</p>
+          <p>Please keep in mind that this solution might not be compatible with the responsive modal script of datatables.</p>
+        </div>
+      </div>
+      <!--/ To fix dropdown hide issue -->
+    </div>
+
+    <div class="d-none d-xl-block col-xl-2 doc-sidebar container-p-y">
+      <nav id="vertical-nav" class="navbar p-0">
+        <ul class="doc-sidebar-nav">
+          <li class="doc-entry doc-h2"><a class="nav-link" href="#basic-datatable">Basic DataTable</a></li>
+          <li class="doc-entry doc-h2"><a class="nav-link" href="#dt-links">Important Links of DataTables</a></li>
+          <li class="doc-entry doc-h2"><a class="nav-link" href="#installation-guide">Installation Guide</a></li>
+          <li class="doc-entry doc-h2"><a class="nav-link" href="#datatables-dropdown-hide">Dropdown Hide Fix</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+          <!-- / Content -->
+
+          
+            <footer class="content-footer footer">
+  <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center text-center py-4">
+    <div>
+      &#169; 2017-
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      
+        <a href="https://pixinvent.com" class="footer-text fw-medium" target="_blank">Pixinvent</a>, Hand-crafted & Made with â¤ï¸
+      
+    </div>
+    <div>
+      
+        <a href="https://www.facebook.com/pixinvents/" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-facebook"></i></a>
+      
+      
+        <a href="https://x.com/pixinvents" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-twitter"></i></a>
+      
+      
+        <a href="https://github.com/pixinvent" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-github"></i></a>
+      
+      
+        <a href="https://dribbble.com/pixinvent" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-dribbble"></i></a>
+      
+      
+        <a href="https://www.instagram.com/pixinvents/" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-instagram"></i></a>
+      
+    </div>
+  </div>
+</footer>
+
+          
+        </div>
+        <!-- Content wrapper -->
+      </div>
+      <!-- / Layout page -->
+    </div>
+
+    
+      
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    
+    <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+    <div class="drag-target"></div>
+  </div>
+  <!-- / Layout wrapper -->
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="assets/vendor/libs/highlight/highlight.js"></script>
+    <script src="assets/vendor/libs/clipboard/clipboard.js"></script>
+    
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/vendor/libs/node-waves/node-waves.js"></script>
+    <script src="assets/vendor/libs/@algolia/autocomplete-js.js"></script>
+    <script src="assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="assets/vendor/js/menu.js"></script>
+    <!-- Vendors JS -->
+    <!-- BS table js -->
+  <script src="assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+  <script src="assets/vendor/libs/moment/moment.js"></script>
+  <script src="assets/vendor/libs/flatpickr/flatpickr.js"></script>
+  <script src="assets/vendor/libs/@form-validation/popular.js"></script>
+  <script src="assets/vendor/libs/@form-validation/bootstrap5.js"></script>
+  <script src="assets/vendor/libs/@form-validation/auto-focus.js"></script>
+
+    <!-- Page JS -->
+    <script src="assets/js/docs.js"></script>
+    <script src="assets/js/docs-tables-datatables.js"></script>
+  </body>
+</html>
+
+  <!-- beautify ignore:end -->
+

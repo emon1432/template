@@ -1,0 +1,1900 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- =========================================================
+* Vuexy - Bootstrap Dashboard PRO | v3.0.0
+==============================================================
+
+* Product Page: https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599
+* Created by: Pixinvent
+
+    * License: You must have a valid license purchased in order to legally use the theme for your project.
+  
+* Copyright Pixinvent (https://pixinvent.com)
+
+=========================================================
+ -->
+  <!-- beautify ignore:start -->
+
+<html lang="en" class="docs-page  layout-menu-fixed-offcanvas " data-assets-path="assets/" data-skin="bordered">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Docs: Charts - Apex Charts | Vuexy - Bootstrap Dashboard PRO</title>
+
+    <meta name="description" content="Vuexy is the best bootstrap 5 dashboard for responsive web apps. Streamline your app development process with ease." />
+    <meta name="keywords" content="Vuexy bootstrap dashboard, vuexy bootstrap 5 dashboard, themeselection, html dashboard, web dashboard, frontend dashboard, responsive bootstrap theme" />
+    <meta property="og:title" content="Vuexy bootstrap Dashboard by Pixinvent" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" />
+    <meta property="og:image" content="https://pixinvent.com/wp-content/uploads/2023/06/vuexy-hero-image.png" />
+    <meta property="og:description" content="Vuexy is the best bootstrap 5 dashboard for responsive web apps. Streamline your app development process with ease." />
+    <meta property="og:site_name" content="Pixinvent" />
+
+    <!-- Canonical SEO -->
+    <link rel="canonical" href="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" />
+
+    
+      
+      <script>
+        (function (w, d, s, l, i) {
+          w[l] = w[l] || [];
+          w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+          });
+          var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+          j.async = true;
+          j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+          f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5J3LMKC');
+      </script>
+      
+    
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="48x48" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="16x16" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="32x32" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="180x180" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="192x192" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="512x512" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendor/fonts/iconify-icons.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/node-waves/node-waves.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/highlight/highlight.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/apex-charts/apex-charts.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="assets/vendor/css/core.css" />
+    <link rel="stylesheet" href="assets/css/demo.css" />
+    <link rel="stylesheet" href="assets/css/docs.css" />
+
+    <!-- Page CSS -->
+    
+
+    <!-- Core JS -->
+    <script src="assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: Don't remove unless you are aware of it, To hide customizer set displayCustomizer value false in config.js.  -->
+    <!-- <script src="assets/vendor/js/template-customizer.js"></script> -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="assets/js/config.js"></script>
+  </head>
+
+  <body>
+    
+      
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5J3LMKC" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+      
+    
+
+    <!-- Layout wrapper -->
+  <div class="layout-wrapper layout-navbar-full ">
+    <div class="layout-container">
+      
+        
+
+
+<!-- Navbar main -->
+
+<nav class="layout-navbar navbar navbar-expand-lg align-items-lg-center bg-white border-bottom" id="layout-navbar">
+  <div class="container-fluid">
+    
+      <!-- Menu toggle (see assets/css/demo/demo.css) -->
+      <div class="layout-menu-toggle navbar-nav d-lg-none align-items-lg-center">
+        <a class="nav-item nav-link px-0 me-lg-4" href="javascript:void(0)">
+          <i class="icon-base ti tabler-menu-2 icon-md align-middle"></i>
+        </a>
+      </div>
+    
+
+    <!-- Brand demo (see assets/css/demo/demo.css) -->
+    <div class="navbar-brand app-brand demo py-0 me-md-auto me-12 ms-lg-0 ms-0">
+      <a href="index.html" class="app-brand-link">
+        <span class="app-brand-logo demo">
+  <span class="text-primary">
+    <svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.00172773 0V6.85398C0.00172773 6.85398 -0.133178 9.01207 1.98092 10.8388L13.6912 21.9964L19.7809 21.9181L18.8042 9.88248L16.4951 7.17289L9.23799 0H0.00172773Z" fill="currentColor" />
+      <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd" d="M7.69824 16.4364L12.5199 3.23696L16.5541 7.25596L7.69824 16.4364Z" fill="#161616" />
+      <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd" d="M8.07751 15.9175L13.9419 4.63989L16.5849 7.28475L8.07751 15.9175Z" fill="#161616" />
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z" fill="currentColor" />
+    </svg>
+  </span>
+</span>
+        <span class="app-brand-text demo menu-text fw-bold">Vuexy</span>
+      </a>
+    </div>
+
+    <div class="d-flex ms-md-6 gap-3">
+      
+      <div class="navbar-nav align-items-lg-center justify-content-center">
+        <!-- Search -->
+        <div class="navbar-nav align-items-center">
+          <div class="nav-item navbar-search-wrapper mb-0">
+            <a class="nav-item nav-link search-toggler border rounded-3 py-2 px-md-4 px-2 d-flex align-items-center" href="javascript:void(0);">
+              <span class="d-inline-block text-body-secondary fw-normal" id="autocomplete"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbar-collapse">
+        <hr class="d-lg-none w-100 my-2" />
+        <!-- Divider -->
+
+        <div class="navbar-nav align-items-lg-center">
+          
+          <ul class="navbar-nav">
+            <!-- Technology dropdown -->
+            
+            
+              
+                <li class="nav-item dropdown me-2">
+                  <button class="btn dropdown-toggle py-2 btn-primary" type="button" id="livePreview" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-base ti tabler-current-location me-2"></i> Live preview</button>
+                  <ul class="dropdown-menu" aria-labelledby="livePreview">
+                    <li>
+                      <a href="https://pixinvent.com/vuexy-bootstrap-html-admin-template/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>HTML preview</a>
+                    </li>
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-laravel-admin-template/demo-1/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>Laravel preview</a>
+                      </li>
+                    
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-admin-template/html/vertical-menu-template/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>.Net Core preview</a>
+                      </li>
+                    
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-django-admin-template/demo-1/" target="_blank" class="nav-link text-nowrap"><i class="icon-base ti tabler-current-location me-2"></i>Django preview</a>
+                      </li>
+                    
+                  </ul>
+                </li>
+              
+            
+            
+              <li class="nav-item me-2">
+                <a href="https://pixinvent.ticksy.com/" target="_blank" class="nav-link d-flex align-items-center">
+                  <i class="icon-base ti tabler-lifebuoy me-2"></i>
+                  <span>Support</span>
+                </a>
+              </li>
+            
+            
+              <li class="nav-item">
+                <a href="https://themeforest.net/user/pixinvent/portfolio" target="_blank" class="nav-link d-flex align-items-center">
+                  <i class="icon-base ti tabler-gift me-2"></i>
+                  <span> More Themes</span>
+                </a>
+              </li>
+            
+            
+              <li class="nav-item">
+                <a href="https://themeselection.com/hire-us/" target="_blank" class="nav-link"><i class="icon-base ti tabler-briefcase"></i> Hire Us</a>
+              </li>
+            
+          </ul>
+
+          <!-- Divider -->
+          <div class="nav-item d-none d-lg-block text-big fw-light lh-1 me-4 ms-1">|</div>
+
+          
+            <div class="buy-now-btn">
+              <a href="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" target="_blank" class="btn btn-danger d-flex align-items-center gap-2">
+                <i class="icon-base ti tabler-shopping-cart"></i>
+                <span>Buy Now</span>
+              </a>
+            </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</nav>
+<!-- / Navbar main -->
+
+      
+
+      <!-- Layout page -->
+      <div class="layout-page">
+        
+          
+
+
+
+
+<!-- Menu -->
+<aside id="layout-menu" class="layout-menu menu-doc menu menu-vertical bg-menu-theme">
+  
+  <div class="menu-divider mt-0   d-xl-none "></div>
+
+  <!-- Links -->
+  <ul class="menu-inner py-1">
+    <li class="menu-header text-uppercase small fw-medium">Getting Started</li>
+    <li class="menu-item">
+      <a href="index.html" class="menu-link">
+        <div>Introduction</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="licenses.html" class="menu-link">
+        <div>Licenses</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="folder-structure.html" class="menu-link">
+        <div>Folder Structure</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="quick-start.html" class="menu-link">
+        <div>Quick Start</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="config.html" class="menu-link">
+        <div>Config ð¤©</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="installation-build.html" class="menu-link">
+        <div>Installation & Build</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="template-customizer.html" class="menu-link">
+        <div>Template Customizer</div>
+        
+      </a>
+    </li>
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Customization</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="customization-sass.html" class="menu-link">
+            <div>SASS</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="customization-js.html" class="menu-link">
+            <div>JavaScript</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="customization-third-party-plugins.html" class="menu-link">
+            <div>Third Party Plugins</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="layouts.html" class="menu-link">
+        <div>Layouts</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="dependencies.html" class="menu-link">
+        <div>Dependencies</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="faq.html" class="menu-link">
+        <div>FAQs</div>
+      </a>
+    </li>
+    
+      <!-- Laravel Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row">
+        <span class="me-1">Laravel</span>
+        <span class="badge badge-demo bg-label-danger ms-auto">HTML + Laravel Only</span>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="laravel-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-starter-kit-vs-full-version.html" class="menu-link">
+              <div>Starter-kit Vs Full-version</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-demo-config.html" class="menu-link">
+              <div>Demo Configs</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Auth & ACL</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-auth-jetstream.html" class="menu-link">
+              <div>JetStream</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-passport.html" class="menu-link">
+              <div>Passport</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-sanctum.html" class="menu-link">
+              <div>Sanctum</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-acl.html" class="menu-link">
+              <div>ACL</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-articles-database-connections.html" class="menu-link">
+              <div>Database Connections</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-existing-project.html" class="menu-link">
+              <div>Exiting Project Migration</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-form-validation-integration.html" class="menu-link">
+              <div>Form Validation Package Integration</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-localization.html" class="menu-link">
+          <div>Localization</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-search.html" class="menu-link">
+          <div>Search</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-sail-docker.html" class="menu-link">
+          <div>Sail & Docker</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-deployment.html" class="menu-link">
+          <div>Deployment</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Dotnet Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>ASP.NET CORE</span> <span class="badge badge-demo bg-label-danger ms-auto">Razor Pages</span></li>
+
+      <li class="menu-item">
+        <a href="net-core-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-assets-compilation.html" class="menu-link">
+              <div>Assets Compilation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-start-with-doker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-starter-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="net-core-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Dotnet Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>ASP.NET CORE MVC</span> <span class="badge badge-demo bg-label-danger ms-auto">MVC</span></li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-mvc-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-assets-compilation.html" class="menu-link">
+              <div>Assets Compilation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-start-with-docker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-starter-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="net-core-mvc-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-mvc-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Django Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>Django</span> <span class="badge badge-demo bg-label-danger ms-auto">Django Only</span></li>
+
+      <li class="menu-item">
+        <a href="django-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="django-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-start-with-doker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-demo-config.html" class="menu-link">
+              <div>Demo Config</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-starter-kit-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="django-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="django-articles-create-new-page.html" class="menu-link">
+              <div>Create New Apps & Pages</div>
+            </a>
+          </li>
+          <!-- <li class="menu-item">
+          <a href="django-articles-existing-project.html" class="menu-link">
+            <div>Exiting Project Migration</div>
+          </a>
+        </li> -->
+          <li class="menu-item">
+            <a href="django-articles-admin-superuser.html" class="menu-link">
+              <div>Admin and Create User</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-authentication.html" class="menu-link">
+              <div>Authentication</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="django-articles-permissions-authorization.html" class="menu-link">
+              <div>Permissions & Authorization</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-crud.html" class="menu-link">
+              <div>CRUD Example</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-admin-db.html" class="menu-link">
+              <div>Admin and Database</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-localization.html" class="menu-link">
+          <div>Localization</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-search.html" class="menu-link">
+          <div>Search</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-theme-api.html" class="menu-link">
+          <div>Theme API</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-deployment.html" class="menu-link">
+          <div>Deployment</div>
+        </a>
+      </li>
+    
+    <!-- Apps & Pages -->
+    <li class="menu-divider mb-1"></li>
+    <li class="menu-header text-uppercase small fw-medium">Design System</li>
+
+    <li class="menu-item">
+      <a href="typography.html" class="menu-link">
+        <div>Typography</div>
+      </a>
+    </li>
+
+    <li class="menu-item">
+      <a href="colors.html" class="menu-link">
+        <div>Colors</div>
+      </a>
+    </li>
+
+    <li class="menu-item">
+      <a href="Icons.html" class="menu-link">
+        <div>Icons</div>
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+    <!-- Components -->
+    <li class="menu-header text-uppercase small fw-medium">Components</li>
+
+    <!-- UI Elements -->
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>UI Elements</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="ui-accordion.html" class="menu-link">
+            <div>Accordion</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-alerts.html" class="menu-link">
+            <div>Alerts</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-app-brand.html" class="menu-link">
+            <div>App Brand</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-badges.html" class="menu-link">
+            <div>Badges</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-buttons.html" class="menu-link">
+            <div>Buttons</div>
+          </a>
+        </li>
+        <li class="menu-item
+  ">
+          <a href="javascript:void(0);" class="menu-link menu-toggle">
+            <div>Cards</div>
+          </a>
+          <ul class="menu-sub">
+            <li class="menu-item">
+              <a href="ui-cards-basic.html" class="menu-link">
+                <div>Basic</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="ui-cards-actions.html" class="menu-link">
+                <div>Actions</div>
+                
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="ui-carousel.html" class="menu-link">
+            <div>Carousel</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-collapse.html" class="menu-link">
+            <div>Collapse</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-dropdowns.html" class="menu-link">
+            <div>Dropdowns</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-footer.html" class="menu-link">
+            <div>Footer</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-list-groups.html" class="menu-link">
+            <div>List groups</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-modals.html" class="menu-link">
+            <div>Modals</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-menu.html" class="menu-link">
+            <div>Menu</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-navbar.html" class="menu-link">
+            <div>Navbar</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-offcanvas.html" class="menu-link">
+            <div>Offcanvas</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-pagination-breadcrumbs.html" class="menu-link">
+            <div>Pagination &amp; Breadcrumbs</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-popovers.html" class="menu-link">
+            <div>Popovers</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-progress.html" class="menu-link">
+            <div>Progress</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-spinners.html" class="menu-link">
+            <div>Spinners</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-navs.html" class="menu-link">
+            <div>Navs</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-tabs-pills.html" class="menu-link">
+            <div>Tabs &amp; Pills</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-toasts.html" class="menu-link">
+            <div>Toasts</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-tooltips.html" class="menu-link">
+            <div>Tooltips</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+
+    <!-- Extended components -->
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Extended UI</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="extended-ui-avatar.html" class="menu-link">
+            <div>Avatar</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-blockui.html" class="menu-link">
+            <div>BlockUI</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-drag-and-drop.html" class="menu-link">
+            <div>Drag &amp; Drop</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-media-player.html" class="menu-link">
+            <div>Media Player</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-perfect-scrollbar.html" class="menu-link">
+            <div>Perfect scrollbar</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-star-ratings.html" class="menu-link">
+            <div>Star Ratings</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-sweetalert2.html" class="menu-link">
+            <div>SweetAlert2</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-text-divider.html" class="menu-link">
+            <div>Text Divider</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-timeline.html" class="menu-link">
+            <div>Timeline</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-tour.html" class="menu-link">
+            <div>Tour</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-treeview.html" class="menu-link">
+            <div>Treeview</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-misc.html" class="menu-link">
+            <div>Miscellaneous</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Forms -->
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Forms</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="forms-basic-inputs.html" class="menu-link">
+            <div>Basic Inputs</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-input-groups.html" class="menu-link">
+            <div>Input groups</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-custom-options.html" class="menu-link">
+            <div>Custom Options</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-editors.html" class="menu-link">
+            <div>Editors</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-file-upload.html" class="menu-link">
+            <div>File Upload</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-pickers.html" class="menu-link">
+            <div>Pickers</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-selects.html" class="menu-link">
+            <div>Select &amp; Tags</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-sliders.html" class="menu-link">
+            <div>Sliders</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-switches.html" class="menu-link">
+            <div>Switches</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-extras.html" class="menu-link">
+            <div>Extras</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-validation.html" class="menu-link">
+            <div>Validation</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-wizard.html" class="menu-link">
+            <div>Wizard</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-layouts-sticky.html" class="menu-link">
+            <div>Sticky Actions</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <!-- Tables -->
+    <li class="menu-item">
+      <a href="tables-basic.html" class="menu-link">
+        <div>Tables</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="tables-datatables.html" class="menu-link">
+        <div>Datatables</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="utilities.html" class="menu-link">
+        <div>Utilities</div>
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+    <!-- Charts & Maps -->
+    <li class="menu-header text-uppercase small fw-medium">Charts &amp; Maps</li>
+
+    <li class="menu-item
+   active open">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <div data-i18n="Charts">Charts</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item active">
+          <a href="charts-apex.html" class="menu-link">
+            <div>Apex Charts</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="charts-chartjs.html" class="menu-link">
+            <div>ChartJS</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="maps-leaflet.html" class="menu-link">
+        <div>Leaflet</div>
+        
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+
+    <!-- Charts & Maps -->
+    <li class="menu-header text-uppercase small fw-medium">Others</li>
+    <li class="menu-item">
+      <a href="credits.html" class="menu-link">
+        <div>Credits</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="https://pixinvent.ticksy.com/" target="_blank" class="menu-link">
+        <div>Support</div>
+      </a>
+    </li>
+  </ul>
+</aside>
+<!-- / Menu -->
+
+        
+
+        <!-- Content wrapper -->
+        <div class="content-wrapper">
+          <!-- Content -->
+          <div class="container-xxl flex-grow-1 container-p-y">
+  <div class="row flex-xl-nowrap">
+    <div class="DocSearch-content col-12 col-xl-10 container-p-y">
+      <h2 class="mb-6 doc-page-title">Apex Charts</h2>
+      <p>Apex charts is modern JavaScript charting library to build interactive charts and visualizations with simple API.<br />Please refer <a href="https://apexcharts.com/docs/installation/" target="_blank">ApexCharts Documentation</a> for a full list of instructions and other options.</p>
+
+      <div class="alert alert-primary mt-6" role="alert">
+        <strong>Tip:</strong> To change chart colors according to your theme, Use <code>config.js</code> file to set JavaScript global variables (colors) which are used in charts.
+        <a href="config.html#global-variables" target="_blank">Read more</a>
+      </div>
+      <hr class="my-12" />
+
+      <!-- Usage -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="usage" class="anchor-heading fw-bold mb-6">Usage</h4>
+          <p>In order to use Apex charts on your page, It is required to include the following vendors css in the "Vendors CSS" area from the page's header:</p>
+          <div class="doc-example">
+            <div class="doc-example-content" data-label="Code">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;link rel=&quot;stylesheet&quot; href=&quot;../../assets/vendor/libs/apex-charts/apex-charts.css&quot; /&gt;</code></pre>
+            </div>
+          </div>
+          <p class="mt-6">Include the following vendors script in the "Vendors JS" area from the page's footer:</p>
+          <div class="doc-example">
+            <div class="doc-example-content" data-label="Code">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;script src=&quot;../../assets/vendor/libs/apex-charts/apexcharts.js&quot;&gt;&lt;script&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Usage -->
+
+      <!-- Advance Charts -->
+      <div class="row">
+        <!-- Line Chart -->
+        <div class="col-12">
+          <h4 id="line-chart-ex" class="anchor-heading mt-12 mb-6 fw-bold">Line Chart</h4>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="line-chart-preview-tab" data-bs-toggle="tab" data-bs-target="#line-chart-preview" role="tab" aria-controls="line-chart-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="line-chart-html-tab" data-bs-toggle="tab" data-bs-target="#line-chart-html" role="tab" aria-controls="line-chart-html" aria-selected="false">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="line-chart-js-tab" data-bs-toggle="tab" data-bs-target="#line-chart-js" role="tab" aria-controls="line-chart-js" aria-selected="false">JS</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="line-chart-preview" role="tabpanel" aria-labelledby="line-chart-preview-tab">
+                <div id="lineChart"></div>
+              </div>
+              <div class="tab-pane fade" id="line-chart-html" role="tabpanel" aria-labelledby="line-chart-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre class="docs-code"><code class="html">&lt;div id=&quot;lineChart&quot;&gt;&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="line-chart-js" role="tabpanel" aria-labelledby="line-chart-js-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="JS">const lineChartEl = document.querySelector(&apos;#lineChart&apos;),&#10;  lineChartConfig = {&#10;    chart: {&#10;      height: 400,&#10;      type: &apos;line&apos;,&#10;      parentHeightOffset: 0,&#10;      zoom: {&#10;        enabled: false&#10;      },&#10;      toolbar: {&#10;        show: false&#10;      }&#10;    },&#10;    series: [&#10;      {&#10;        data: [280, 200, 220, 180, 270, 250, 70, 90, 200, 150, 160, 100, 150, 100, 50]&#10;      }&#10;    ],&#10;    markers: {&#10;      strokeWidth: 7,&#10;      strokeOpacity: 1,&#10;      strokeColors: [cardColor],&#10;      colors: [config.colors.warning]&#10;    },&#10;    dataLabels: {&#10;      enabled: false&#10;    },&#10;    stroke: {&#10;      curve: &apos;straight&apos;&#10;    },&#10;    colors: [config.colors.warning],&#10;    grid: {&#10;      borderColor: borderColor,&#10;      xaxis: {&#10;        lines: {&#10;          show: true&#10;        }&#10;      },&#10;      padding: {&#10;        top: -20&#10;      }&#10;    },&#10;    tooltip: {&#10;      custom: function ({ series, seriesIndex, dataPointIndex, w }) {&#10;        return &apos;&lt;div class=&quot;px-3 py-2&quot;&gt;&apos; + &apos;&lt;span&gt;&apos; + series[seriesIndex][dataPointIndex] + &apos;%&lt;/span&gt;&apos; + &apos;&lt;/div&gt;&apos;;&#10;      }&#10;    },&#10;    xaxis: {&#10;      categories: [&#10;        &apos;7/12&apos;,&#10;        &apos;8/12&apos;,&#10;        &apos;9/12&apos;,&#10;        &apos;10/12&apos;,&#10;        &apos;11/12&apos;,&#10;        &apos;12/12&apos;,&#10;        &apos;13/12&apos;,&#10;        &apos;14/12&apos;,&#10;        &apos;15/12&apos;,&#10;        &apos;16/12&apos;,&#10;        &apos;17/12&apos;,&#10;        &apos;18/12&apos;,&#10;        &apos;19/12&apos;,&#10;        &apos;20/12&apos;,&#10;        &apos;21/12&apos;&#10;      ],&#10;      axisBorder: {&#10;        show: false&#10;      },&#10;      axisTicks: {&#10;        show: false&#10;      },&#10;      labels: {&#10;        style: {&#10;          colors: labelColor,&#10;          fontSize: &apos;13px&apos;&#10;        }&#10;      }&#10;    },&#10;    yaxis: {&#10;      min: 0,&#10;      max: 300,&#10;      tickAmount: 5,&#10;      labels: {&#10;        style: {&#10;          colors: labelColor,&#10;          fontSize: &apos;13px&apos;&#10;        }&#10;      }&#10;    }&#10;  };&#10;if (typeof lineChartEl !== undefined &amp;&amp; lineChartEl !== null) {&#10;  const lineChart = new ApexCharts(lineChartEl, lineChartConfig);&#10;  lineChart.render();&#10;}</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Line Chart -->
+
+        <div class="col-12">
+          <hr class="my-12" />
+        </div>
+
+        <!-- Line Area Chart-->
+        <div class="col-12">
+          <h4 id="line-area-chart-ex" class="anchor-heading mb-6 fw-bold">Line Area Chart</h4>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="line-area-preview-tab" data-bs-toggle="tab" data-bs-target="#line-area-preview" role="tab" aria-controls="line-area-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="line-area-html-tab" data-bs-toggle="tab" data-bs-target="#line-area-html" role="tab" aria-controls="line-area-html" aria-selected="false">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="line-area-js-tab" data-bs-toggle="tab" data-bs-target="#line-area-js" role="tab" aria-controls="line-area-js" aria-selected="false">JS</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="line-area-preview" role="tabpanel" aria-labelledby="line-area-preview-tab">
+                <div id="lineAreaChart"></div>
+              </div>
+              <div class="tab-pane fade" id="line-area-html" role="tabpanel" aria-labelledby="line-area-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre class="docs-code"><code class="html">&lt;div id=&quot;lineAreaChart&quot;&gt;&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="line-area-js" role="tabpanel" aria-labelledby="line-area-js-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="js">const areaChartEl = document.querySelector(&apos;#lineAreaChart&apos;),&#10;  areaChartConfig = {&#10;    chart: {&#10;      height: 400,&#10;      type: &apos;area&apos;,&#10;      parentHeightOffset: 0,&#10;      toolbar: {&#10;        show: false&#10;      }&#10;    },&#10;    dataLabels: {&#10;      enabled: false&#10;    },&#10;    stroke: {&#10;      show: false,&#10;      curve: &apos;straight&apos;&#10;    },&#10;    legend: {&#10;      show: true,&#10;      position: &apos;top&apos;,&#10;      horizontalAlign: &apos;start&apos;,&#10;      labels: {&#10;        colors: legendColor,&#10;        useSeriesColors: false&#10;      }&#10;    },&#10;    grid: {&#10;      borderColor: borderColor,&#10;      xaxis: {&#10;        lines: {&#10;          show: true&#10;        }&#10;      }&#10;    },&#10;    colors: [chartColors.area.series3, chartColors.area.series2, chartColors.area.series1],&#10;    series: [&#10;      {&#10;        name: &apos;Visits&apos;,&#10;        data: [100, 120, 90, 170, 130, 160, 140, 240, 220, 180, 270, 280, 375]&#10;      },&#10;      {&#10;        name: &apos;Clicks&apos;,&#10;        data: [60, 80, 70, 110, 80, 100, 90, 180, 160, 140, 200, 220, 275]&#10;      },&#10;      {&#10;        name: &apos;Sales&apos;,&#10;        data: [20, 40, 30, 70, 40, 60, 50, 140, 120, 100, 140, 180, 220]&#10;      }&#10;    ],&#10;    xaxis: {&#10;      categories: [&#10;        &apos;7/12&apos;,&#10;        &apos;8/12&apos;,&#10;        &apos;9/12&apos;,&#10;        &apos;10/12&apos;,&#10;        &apos;11/12&apos;,&#10;        &apos;12/12&apos;,&#10;        &apos;13/12&apos;,&#10;        &apos;14/12&apos;,&#10;        &apos;15/12&apos;,&#10;        &apos;16/12&apos;,&#10;        &apos;17/12&apos;,&#10;        &apos;18/12&apos;,&#10;        &apos;19/12&apos;,&#10;        &apos;20/12&apos;&#10;      ],&#10;      axisBorder: {&#10;        show: false&#10;      },&#10;      axisTicks: {&#10;        show: false&#10;      },&#10;      labels: {&#10;        style: {&#10;          colors: labelColor,&#10;          fontSize: &apos;13px&apos;&#10;        }&#10;      }&#10;    },&#10;    yaxis: {&#10;      tickAmount: 4,&#10;      labels: {&#10;        style: {&#10;          colors: labelColor,&#10;          fontSize: &apos;13px&apos;&#10;        }&#10;      }&#10;    },&#10;    fill: {&#10;      opacity: 1,&#10;      type: &apos;solid&apos;&#10;    },&#10;    tooltip: {&#10;      shared: false&#10;    }&#10;  };&#10;if (typeof areaChartEl !== undefined &amp;&amp; areaChartEl !== null) {&#10;  const areaChart = new ApexCharts(areaChartEl, areaChartConfig);&#10;  areaChart.render();&#10;}</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Line Area Chart-->
+
+        <div class="col-12">
+          <hr class="my-12" />
+        </div>
+
+        <!-- Bar Chart-->
+        <div class="col-12">
+          <h4 id="bar-chart-ex" class="anchor-heading mb-6 fw-bold">Bar Chart</h4>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="bar-chart-preview-tab" data-bs-toggle="tab" data-bs-target="#bar-chart-preview" role="tab" aria-controls="bar-chart-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="bar-chart-html-tab" data-bs-toggle="tab" data-bs-target="#bar-chart-html" role="tab" aria-controls="bar-chart-html" aria-selected="false">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="bar-chart-js-tab" data-bs-toggle="tab" data-bs-target="#bar-chart-js" role="tab" aria-controls="bar-chart-js" aria-selected="false">JS</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="bar-chart-preview" role="tabpanel" aria-labelledby="bar-chart-preview-tab">
+                <div id="barChart"></div>
+              </div>
+              <div class="tab-pane fade" id="bar-chart-html" role="tabpanel" aria-labelledby="bar-chart-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre class="docs-code"><code class="html">&lt;div id=&quot;barChart&quot;&gt;&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="bar-chart-js" role="tabpanel" aria-labelledby="bar-chart-js-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="js">const barChartEl = document.querySelector(&apos;#barChart&apos;),&#10;  barChartConfig = {&#10;    chart: {&#10;      height: 400,&#10;      type: &apos;bar&apos;,&#10;      stacked: true,&#10;      parentHeightOffset: 0,&#10;      toolbar: {&#10;        show: false&#10;      }&#10;    },&#10;    plotOptions: {&#10;      bar: {&#10;        columnWidth: &apos;15%&apos;,&#10;        colors: {&#10;          backgroundBarColors: [&#10;            chartColors.column.bg,&#10;            chartColors.column.bg,&#10;            chartColors.column.bg,&#10;            chartColors.column.bg,&#10;            chartColors.column.bg&#10;          ],&#10;          backgroundBarRadius: 10&#10;        }&#10;      }&#10;    },&#10;    dataLabels: {&#10;      enabled: false&#10;    },&#10;    legend: {&#10;      show: true,&#10;      position: &apos;top&apos;,&#10;      horizontalAlign: &apos;start&apos;,&#10;      labels: {&#10;        colors: legendColor,&#10;        useSeriesColors: false&#10;      }&#10;    },&#10;    colors: [chartColors.column.series1, chartColors.column.series2],&#10;    stroke: {&#10;      show: true,&#10;      colors: [&apos;transparent&apos;]&#10;    },&#10;    grid: {&#10;      borderColor: borderColor,&#10;      xaxis: {&#10;        lines: {&#10;          show: true&#10;        }&#10;      }&#10;    },&#10;    series: [&#10;      {&#10;        name: &apos;Apple&apos;,&#10;        data: [90, 120, 55, 100, 80, 125, 175, 70, 88, 180]&#10;      },&#10;      {&#10;        name: &apos;Samsung&apos;,&#10;        data: [85, 100, 30, 40, 95, 90, 30, 110, 62, 20]&#10;      }&#10;    ],&#10;    xaxis: {&#10;      categories: [&apos;7/12&apos;, &apos;8/12&apos;, &apos;9/12&apos;, &apos;10/12&apos;, &apos;11/12&apos;, &apos;12/12&apos;, &apos;13/12&apos;, &apos;14/12&apos;, &apos;15/12&apos;, &apos;16/12&apos;],&#10;      axisBorder: {&#10;        show: false&#10;      },&#10;      axisTicks: {&#10;        show: false&#10;      },&#10;      labels: {&#10;        style: {&#10;          colors: labelColor,&#10;          fontSize: &apos;13px&apos;&#10;        }&#10;      }&#10;    },&#10;    yaxis: {&#10;      min: 0,&#10;      max: 240,&#10;      tickAmount: 4,&#10;      labels: {&#10;        style: {&#10;          colors: labelColor,&#10;          fontSize: &apos;13px&apos;&#10;        }&#10;      }&#10;    },&#10;    fill: {&#10;      opacity: 1&#10;    }&#10;  };&#10;if (typeof barChartEl !== undefined &amp;&amp; barChartEl !== null) {&#10;  const barChart = new ApexCharts(barChartEl, barChartConfig);&#10;  barChart.render();&#10;}</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Bar Chart-->
+
+        <div class="col-12">
+          <hr class="my-12" />
+        </div>
+
+        <!-- Horizontal Bar Chart-->
+        <div class="col-12">
+          <h4 id="horizontal-bar-chart-ex" class="anchor-heading mb-6 fw-bold">Horizontal Bar Chart</h4>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="horizontal-bar-chart-preview-tab" data-bs-toggle="tab" data-bs-target="#horizontal-bar-chart-preview" role="tab" aria-controls="horizontal-bar-chart-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="horizontal-bar-chart-html-tab" data-bs-toggle="tab" data-bs-target="#horizontal-bar-chart-html" role="tab" aria-controls="horizontal-bar-chart-html" aria-selected="false">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="horizontal-bar-chart-js-tab" data-bs-toggle="tab" data-bs-target="#horizontal-bar-chart-js" role="tab" aria-controls="horizontal-bar-chart-js" aria-selected="false">JS</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="horizontal-bar-chart-preview" role="tabpanel" aria-labelledby="horizontal-bar-chart-preview-tab">
+                <div id="horizontalBarChart"></div>
+              </div>
+              <div class="tab-pane fade" id="horizontal-bar-chart-html" role="tabpanel" aria-labelledby="horizontal-bar-chart-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre class="docs-code"><code class="html">&lt;div id=&quot;horizontalBarChart&quot;&gt;&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="horizontal-bar-chart-js" role="tabpanel" aria-labelledby="horizontal-bar-chart-js-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="js">const horizontalBarChartEl = document.querySelector(&apos;#horizontalBarChart&apos;),&#10;  horizontalBarChartConfig = {&#10;    chart: {&#10;      height: 400,&#10;      type: &apos;bar&apos;,&#10;      toolbar: {&#10;        show: false&#10;      }&#10;    },&#10;    plotOptions: {&#10;      bar: {&#10;        horizontal: true,&#10;        barHeight: &apos;30%&apos;,&#10;        borderRadius: 8,&#10;        borderRadiusApplication: &apos;end&apos;,&#10;        borderRadiusWhenStacked: &apos;last&apos;&#10;      }&#10;    },&#10;    grid: {&#10;      borderColor: borderColor,&#10;      xaxis: {&#10;        lines: {&#10;          show: false&#10;        }&#10;      },&#10;      padding: {&#10;        top: -20,&#10;        bottom: -12&#10;      }&#10;    },&#10;    colors: [config.colors.info],&#10;    dataLabels: {&#10;      enabled: false&#10;    },&#10;    series: [&#10;      {&#10;        data: [700, 350, 480, 600, 210, 550, 150]&#10;      }&#10;    ],&#10;    xaxis: {&#10;      min: 0,&#10;      max: 800,&#10;      tickAmount: 4,&#10;      categories: [&apos;MON, 11&apos;, &apos;THU, 14&apos;, &apos;FRI, 15&apos;, &apos;MON, 18&apos;, &apos;WED, 20&apos;, &apos;FRI, 21&apos;, &apos;MON, 23&apos;],&#10;      axisBorder: {&#10;        show: false&#10;      },&#10;      axisTicks: {&#10;        show: false&#10;      },&#10;      labels: {&#10;        style: {&#10;          colors: labelColor,&#10;          fontSize: &apos;13px&apos;&#10;        }&#10;      }&#10;    },&#10;    yaxis: {&#10;      labels: {&#10;        style: {&#10;          colors: labelColor,&#10;          fontSize: &apos;13px&apos;&#10;        }&#10;      }&#10;    }&#10;  };&#10;if (typeof horizontalBarChartEl !== undefined &amp;&amp; horizontalBarChartEl !== null) {&#10;  const horizontalBarChart = new ApexCharts(horizontalBarChartEl, horizontalBarChartConfig);&#10;  horizontalBarChart.render();&#10;}</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Horizontal Bar Chart-->
+
+        <div class="col-12">
+          <hr class="my-12" />
+        </div>
+
+        <!-- Candlestick Chart-->
+        <div class="col-12">
+          <h4 id="candlestick-chart-ex" class="anchor-heading mb-6 fw-bold">Candlestick Chart</h4>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="candlestick-preview-tab" data-bs-toggle="tab" data-bs-target="#candlestick-preview" role="tab" aria-controls="candlestick-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="candlestick-html-tab" data-bs-toggle="tab" data-bs-target="#candlestick-html" role="tab" aria-controls="candlestick-html" aria-selected="false">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="candlestick-js-tab" data-bs-toggle="tab" data-bs-target="#candlestick-js" role="tab" aria-controls="candlestick-js" aria-selected="false">JS</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="candlestick-preview" role="tabpanel" aria-labelledby="candlestick-preview-tab">
+                <div id="candleStickChart"></div>
+              </div>
+              <div class="tab-pane fade" id="candlestick-html" role="tabpanel" aria-labelledby="candlestick-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre class="docs-code"><code class="html">&lt;div id=&quot;candleStickChart&quot;&gt;&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="candlestick-js" role="tabpanel" aria-labelledby="candlestick-js-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="js">const candlestickEl = document.querySelector(&apos;#candleStickChart&apos;),&#10;  candlestickChartConfig = {&#10;    chart: {&#10;      height: 410,&#10;      type: &apos;candlestick&apos;,&#10;      parentHeightOffset: 0,&#10;      toolbar: {&#10;        show: false&#10;      }&#10;    },&#10;    series: [&#10;      {&#10;        data: [&#10;          {&#10;            x: new Date(1538778600000),&#10;            y: [150, 170, 50, 100]&#10;          },&#10;          {&#10;            x: new Date(1538780400000),&#10;            y: [200, 400, 170, 330]&#10;          },&#10;          {&#10;            x: new Date(1538782200000),&#10;            y: [330, 340, 250, 280]&#10;          },&#10;          {&#10;            x: new Date(1538784000000),&#10;            y: [300, 330, 200, 320]&#10;          },&#10;          {&#10;            x: new Date(1538785800000),&#10;            y: [320, 450, 280, 350]&#10;          },&#10;          {&#10;            x: new Date(1538787600000),&#10;            y: [300, 350, 80, 250]&#10;          },&#10;          {&#10;            x: new Date(1538789400000),&#10;            y: [200, 330, 170, 300]&#10;          },&#10;          {&#10;            x: new Date(1538791200000),&#10;            y: [200, 220, 70, 130]&#10;          },&#10;          {&#10;            x: new Date(1538793000000),&#10;            y: [220, 270, 180, 250]&#10;          },&#10;          {&#10;            x: new Date(1538794800000),&#10;            y: [200, 250, 80, 100]&#10;          },&#10;          {&#10;            x: new Date(1538796600000),&#10;            y: [150, 170, 50, 120]&#10;          },&#10;          {&#10;            x: new Date(1538798400000),&#10;            y: [110, 450, 10, 420]&#10;          },&#10;          {&#10;            x: new Date(1538800200000),&#10;            y: [400, 480, 300, 320]&#10;          },&#10;          {&#10;            x: new Date(1538802000000),&#10;            y: [380, 480, 350, 450]&#10;          }&#10;        ]&#10;      }&#10;    ],&#10;    xaxis: {&#10;      type: &apos;datetime&apos;,&#10;      axisBorder: {&#10;        show: false&#10;      },&#10;      axisTicks: {&#10;        show: false&#10;      },&#10;      labels: {&#10;        style: {&#10;          colors: labelColor,&#10;          fontSize: &apos;13px&apos;&#10;        }&#10;      }&#10;    },&#10;    yaxis: {&#10;      tickAmount: 5,&#10;      tooltip: {&#10;        enabled: true&#10;      },&#10;      labels: {&#10;        style: {&#10;          colors: labelColor,&#10;          fontSize: &apos;13px&apos;&#10;        }&#10;      }&#10;    },&#10;    grid: {&#10;      borderColor: borderColor,&#10;      xaxis: {&#10;        lines: {&#10;          show: true&#10;        }&#10;      },&#10;      padding: {&#10;        top: -20&#10;      }&#10;    },&#10;    plotOptions: {&#10;      candlestick: {&#10;        colors: {&#10;          upward: config.colors.success,&#10;          downward: config.colors.danger&#10;        }&#10;      },&#10;      bar: {&#10;        columnWidth: &apos;40%&apos;&#10;      }&#10;    }&#10;  };&#10;if (typeof candlestickEl !== undefined &amp;&amp; candlestickEl !== null) {&#10;  const candlestickChart = new ApexCharts(candlestickEl, candlestickChartConfig);&#10;  candlestickChart.render();&#10;}</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Candlestick Chart-->
+
+        <div class="col-12">
+          <hr class="my-12" />
+        </div>
+
+        <!-- Scatter Chart-->
+        <div class="col-12">
+          <h4 id="scatter-chart-ex" class="anchor-heading mb-6 fw-bold">Scatter Chart</h4>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="scatter-preview-tab" data-bs-toggle="tab" data-bs-target="#scatter-preview" role="tab" aria-controls="scatter-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="scatter-html-tab" data-bs-toggle="tab" data-bs-target="#scatter-html" role="tab" aria-controls="scatter-html" aria-selected="false">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="scatter-js-tab" data-bs-toggle="tab" data-bs-target="#scatter-js" role="tab" aria-controls="scatter-js" aria-selected="false">JS</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="scatter-preview" role="tabpanel" aria-labelledby="scatter-preview-tab">
+                <div id="scatterChart"></div>
+              </div>
+              <div class="tab-pane fade" id="scatter-html" role="tabpanel" aria-labelledby="scatter-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre class="docs-code"><code class="html">&lt;div id=&quot;scatterChart&quot;&gt;&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="scatter-js" role="tabpanel" aria-labelledby="scatter-js-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="js">const scatterChartEl = document.querySelector(&apos;#scatterChart&apos;),&#10;  scatterChartConfig = {&#10;    chart: {&#10;      height: 400,&#10;      type: &apos;scatter&apos;,&#10;      zoom: {&#10;        enabled: true,&#10;        type: &apos;xy&apos;&#10;      },&#10;      parentHeightOffset: 0,&#10;      toolbar: {&#10;        show: false&#10;      }&#10;    },&#10;    grid: {&#10;      borderColor: borderColor,&#10;      xaxis: {&#10;        lines: {&#10;          show: true&#10;        }&#10;      }&#10;    },&#10;    legend: {&#10;      show: true,&#10;      position: &apos;top&apos;,&#10;      horizontalAlign: &apos;start&apos;,&#10;      labels: {&#10;        colors: legendColor,&#10;        useSeriesColors: false&#10;      }&#10;    },&#10;    colors: [config.colors.warning, config.colors.primary, config.colors.success],&#10;    series: [&#10;      {&#10;        name: &apos;Angular&apos;,&#10;        data: [&#10;          [5.4, 170],&#10;          [5.4, 100],&#10;          [5.7, 110],&#10;          [5.9, 150],&#10;          [6.0, 200],&#10;          [6.3, 170],&#10;          [5.7, 140],&#10;          [5.9, 130],&#10;          [7.0, 150],&#10;          [8.0, 120],&#10;          [9.0, 170],&#10;          [10.0, 190],&#10;          [11.0, 220],&#10;          [12.0, 170],&#10;          [13.0, 230]&#10;        ]&#10;      },&#10;      {&#10;        name: &apos;Vue&apos;,&#10;        data: [&#10;          [14.0, 220],&#10;          [15.0, 280],&#10;          [16.0, 230],&#10;          [18.0, 320],&#10;          [17.5, 280],&#10;          [19.0, 250],&#10;          [20.0, 350],&#10;          [20.5, 320],&#10;          [20.0, 320],&#10;          [19.0, 280],&#10;          [17.0, 280],&#10;          [22.0, 300],&#10;          [18.0, 120]&#10;        ]&#10;      },&#10;      {&#10;        name: &apos;React&apos;,&#10;        data: [&#10;          [14.0, 290],&#10;          [13.0, 190],&#10;          [20.0, 220],&#10;          [21.0, 350],&#10;          [21.5, 290],&#10;          [22.0, 220],&#10;          [23.0, 140],&#10;          [19.0, 400],&#10;          [20.0, 200],&#10;          [22.0, 90],&#10;          [20.0, 120]&#10;        ]&#10;      }&#10;    ],&#10;    xaxis: {&#10;      tickAmount: 10,&#10;      axisBorder: {&#10;        show: false&#10;      },&#10;      axisTicks: {&#10;        show: false&#10;      },&#10;      labels: {&#10;        formatter: function (val) {&#10;          return parseFloat(val).toFixed(1);&#10;        },&#10;        style: {&#10;          colors: labelColor,&#10;          fontSize: &apos;13px&apos;&#10;        }&#10;      }&#10;    },&#10;    yaxis: {&#10;      tickAmount: 4,&#10;      labels: {&#10;        style: {&#10;          colors: labelColor,&#10;          fontSize: &apos;13px&apos;&#10;        }&#10;      }&#10;    }&#10;  };&#10;if (typeof scatterChartEl !== undefined &amp;&amp; scatterChartEl !== null) {&#10;  const scatterChart = new ApexCharts(scatterChartEl, scatterChartConfig);&#10;  scatterChart.render();&#10;}</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Scatter Chart-->
+
+        <div class="col-12">
+          <hr class="my-12" />
+        </div>
+
+        <!-- Heatmap Chart-->
+        <div class="col-12">
+          <h4 id="heatmap-chart-ex" class="anchor-heading mb-6 fw-bold">Heatmap Chart</h4>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="heatmap-preview-tab" data-bs-toggle="tab" data-bs-target="#heatmap-preview" role="tab" aria-controls="heatmap-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="heatmap-html-tab" data-bs-toggle="tab" data-bs-target="#heatmap-html" role="tab" aria-controls="heatmap-html" aria-selected="false">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="heatmap-js-tab" data-bs-toggle="tab" data-bs-target="#heatmap-js" role="tab" aria-controls="heatmap-js" aria-selected="false">JS</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="heatmap-preview" role="tabpanel" aria-labelledby="heatmap-preview-tab">
+                <div id="heatMapChart"></div>
+              </div>
+              <div class="tab-pane fade" id="heatmap-html" role="tabpanel" aria-labelledby="heatmap-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre class="docs-code"><code class="html">&lt;div id=&quot;heatMapChart&quot;&gt;&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="heatmap-js" role="tabpanel" aria-labelledby="heatmap-js-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="js">// Heat chart data generator&#10;function generateDataHeat(count, yrange) {&#10;  let i = 0;&#10;  let series = [];&#10;  while (i &lt; count) {&#10;    let x = &apos;w&apos; + (i + 1).toString();&#10;    let y = Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min;&#10;&#10;    series.push({&#10;      x: x,&#10;      y: y&#10;    });&#10;    i++;&#10;  }&#10;  return series;&#10;}&#10;&#10;const heatMapEl = document.querySelector(&apos;#heatMapChart&apos;),&#10;  heatMapChartConfig = {&#10;    chart: {&#10;      height: 350,&#10;      type: &apos;heatmap&apos;,&#10;      parentHeightOffset: 0,&#10;      toolbar: {&#10;        show: false&#10;      }&#10;    },&#10;    plotOptions: {&#10;      heatmap: {&#10;        enableShades: false,&#10;&#10;        colorScale: {&#10;          ranges: [&#10;            {&#10;              from: 0,&#10;              to: 10,&#10;              name: &apos;0-10&apos;,&#10;              color: &apos;#90B3F3&apos;&#10;            },&#10;            {&#10;              from: 11,&#10;              to: 20,&#10;              name: &apos;10-20&apos;,&#10;              color: &apos;#7EA6F1&apos;&#10;            },&#10;            {&#10;              from: 21,&#10;              to: 30,&#10;              name: &apos;20-30&apos;,&#10;              color: &apos;#6B9AEF&apos;&#10;            },&#10;            {&#10;              from: 31,&#10;              to: 40,&#10;              name: &apos;30-40&apos;,&#10;              color: &apos;#598DEE&apos;&#10;            },&#10;            {&#10;              from: 41,&#10;              to: 50,&#10;              name: &apos;40-50&apos;,&#10;              color: &apos;#4680EC&apos;&#10;            },&#10;            {&#10;              from: 51,&#10;              to: 60,&#10;              name: &apos;50-60&apos;,&#10;              color: &apos;#3474EA&apos;&#10;            }&#10;          ]&#10;        }&#10;      }&#10;    },&#10;    dataLabels: {&#10;      enabled: false&#10;    },&#10;    grid: {&#10;      show: false&#10;    },&#10;    legend: {&#10;      show: true,&#10;      position: &apos;top&apos;,&#10;      horizontalAlign: &apos;start&apos;,&#10;      labels: {&#10;        colors: legendColor,&#10;        useSeriesColors: false&#10;      },&#10;      markers: {&#10;        offsetY: 0,&#10;        offsetX: -3,&#10;        shape: &apos;circle&apos;&#10;      },&#10;      itemMargin: {&#10;        vertical: 3,&#10;        horizontal: 10&#10;      }&#10;    },&#10;    stroke: {&#10;      curve: &apos;smooth&apos;,&#10;      width: 4,&#10;      lineCap: &apos;round&apos;,&#10;      colors: [cardColor]&#10;    },&#10;    series: [&#10;      {&#10;        name: &apos;SUN&apos;,&#10;        data: generateDataHeat(24, {&#10;          min: 0,&#10;          max: 60&#10;        })&#10;      },&#10;      {&#10;        name: &apos;MON&apos;,&#10;        data: generateDataHeat(24, {&#10;          min: 0,&#10;          max: 60&#10;        })&#10;      },&#10;      {&#10;        name: &apos;TUE&apos;,&#10;        data: generateDataHeat(24, {&#10;          min: 0,&#10;          max: 60&#10;        })&#10;      },&#10;      {&#10;        name: &apos;WED&apos;,&#10;        data: generateDataHeat(24, {&#10;          min: 0,&#10;          max: 60&#10;        })&#10;      },&#10;      {&#10;        name: &apos;THU&apos;,&#10;        data: generateDataHeat(24, {&#10;          min: 0,&#10;          max: 60&#10;        })&#10;      },&#10;      {&#10;        name: &apos;FRI&apos;,&#10;        data: generateDataHeat(24, {&#10;          min: 0,&#10;          max: 60&#10;        })&#10;      },&#10;      {&#10;        name: &apos;SAT&apos;,&#10;        data: generateDataHeat(24, {&#10;          min: 0,&#10;          max: 60&#10;        })&#10;      }&#10;    ],&#10;    xaxis: {&#10;      labels: {&#10;        show: false,&#10;        style: {&#10;          colors: labelColor,&#10;          fontSize: &apos;13px&apos;&#10;        }&#10;      },&#10;      axisBorder: {&#10;        show: false&#10;      },&#10;      axisTicks: {&#10;        show: false&#10;      }&#10;    },&#10;    yaxis: {&#10;      tickAmount: 5,&#10;      labels: {&#10;        style: {&#10;          colors: labelColor,&#10;          fontSize: &apos;13px&apos;&#10;        }&#10;      }&#10;    }&#10;  };&#10;if (typeof heatMapEl !== undefined &amp;&amp; heatMapEl !== null) {&#10;  const heatMapChart = new ApexCharts(heatMapEl, heatMapChartConfig);&#10;  heatMapChart.render();&#10;}</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Heatmap Chart-->
+
+        <div class="col-12">
+          <hr class="my-12" />
+        </div>
+
+        <!-- Donut Chart-->
+        <div class="col-12">
+          <h4 id="donut-chart-ex" class="anchor-heading mb-6 fw-bold">Donut Chart</h4>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="donut-preview-tab" data-bs-toggle="tab" data-bs-target="#donut-preview" role="tab" aria-controls="donut-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="donut-html-tab" data-bs-toggle="tab" data-bs-target="#donut-html" role="tab" aria-controls="donut-html" aria-selected="false">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="donut-js-tab" data-bs-toggle="tab" data-bs-target="#donut-js" role="tab" aria-controls="donut-js" aria-selected="false">JS</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="donut-preview" role="tabpanel" aria-labelledby="donut-preview-tab">
+                <div id="donutChart"></div>
+              </div>
+              <div class="tab-pane fade" id="donut-html" role="tabpanel" aria-labelledby="donut-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre class="docs-code"><code class="html">&lt;div id=&quot;donutChart&quot;&gt;&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="donut-js" role="tabpanel" aria-labelledby="donut-js-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="js">const donutChartEl = document.querySelector(&apos;#donutChart&apos;),&#10;  donutChartConfig = {&#10;    chart: {&#10;      height: 390,&#10;      type: &apos;donut&apos;&#10;    },&#10;    labels: [&apos;Operational&apos;, &apos;Networking&apos;, &apos;Hiring&apos;, &apos;R&amp;D&apos;],&#10;    series: [42, 7, 25, 25],&#10;    colors: [&#10;      chartColors.donut.series1,&#10;      chartColors.donut.series4,&#10;      chartColors.donut.series3,&#10;      chartColors.donut.series2&#10;    ],&#10;    stroke: {&#10;      show: false,&#10;      curve: &apos;straight&apos;&#10;    },&#10;    dataLabels: {&#10;      enabled: true,&#10;      formatter: function (val, opt) {&#10;        return parseInt(val, 10) + &apos;%&apos;;&#10;      }&#10;    },&#10;    legend: {&#10;      show: true,&#10;      position: &apos;bottom&apos;,&#10;      markers: { offsetX: -3 },&#10;      itemMargin: {&#10;        vertical: 3,&#10;        horizontal: 10&#10;      },&#10;      labels: {&#10;        colors: legendColor,&#10;        useSeriesColors: false&#10;      }&#10;    },&#10;    plotOptions: {&#10;      pie: {&#10;        donut: {&#10;          labels: {&#10;            show: true,&#10;            name: {&#10;              fontSize: &apos;2rem&apos;,&#10;              fontFamily: &apos;Open Sans&apos;&#10;            },&#10;            value: {&#10;              fontSize: &apos;1.2rem&apos;,&#10;              color: legendColor,&#10;              fontFamily: &apos;Open Sans&apos;,&#10;              formatter: function (val) {&#10;                return parseInt(val, 10) + &apos;%&apos;;&#10;              }&#10;            },&#10;            total: {&#10;              show: true,&#10;              fontSize: &apos;1.5rem&apos;,&#10;              color: headingColor,&#10;              label: &apos;Operational&apos;,&#10;              formatter: function (w) {&#10;                return &apos;42%&apos;;&#10;              }&#10;            }&#10;          }&#10;        }&#10;      }&#10;    },&#10;    responsive: [&#10;      {&#10;        breakpoint: 992,&#10;        options: {&#10;          chart: {&#10;            height: 380&#10;          },&#10;          legend: {&#10;            position: &apos;bottom&apos;,&#10;            labels: {&#10;              colors: legendColor,&#10;              useSeriesColors: false&#10;            }&#10;          }&#10;        }&#10;      },&#10;      {&#10;        breakpoint: 576,&#10;        options: {&#10;          chart: {&#10;            height: 320&#10;          },&#10;          plotOptions: {&#10;            pie: {&#10;              donut: {&#10;                labels: {&#10;                  show: true,&#10;                  name: {&#10;                    fontSize: &apos;1.5rem&apos;&#10;                  },&#10;                  value: {&#10;                    fontSize: &apos;1rem&apos;&#10;                  },&#10;                  total: {&#10;                    fontSize: &apos;1.5rem&apos;&#10;                  }&#10;                }&#10;              }&#10;            }&#10;          },&#10;          legend: {&#10;            position: &apos;bottom&apos;,&#10;            labels: {&#10;              colors: legendColor,&#10;              useSeriesColors: false&#10;            }&#10;          }&#10;        }&#10;      },&#10;      {&#10;        breakpoint: 420,&#10;        options: {&#10;          chart: {&#10;            height: 280&#10;          },&#10;          legend: {&#10;            show: false&#10;          }&#10;        }&#10;      },&#10;      {&#10;        breakpoint: 360,&#10;        options: {&#10;          chart: {&#10;            height: 250&#10;          },&#10;          legend: {&#10;            show: false&#10;          }&#10;        }&#10;      }&#10;    ]&#10;  };&#10;if (typeof donutChartEl !== undefined &amp;&amp; donutChartEl !== null) {&#10;  const donutChart = new ApexCharts(donutChartEl, donutChartConfig);&#10;  donutChart.render();&#10;}</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Donut Chart-->
+
+        <div class="col-12">
+          <hr class="my-12" />
+        </div>
+
+        <!-- RadialBar Chart-->
+        <div class="col-12">
+          <h4 id="radial-chart-ex" class="anchor-heading mb-6 fw-bold">Radialbar Chart</h4>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="radial-preview-tab" data-bs-toggle="tab" data-bs-target="#radial-preview" role="tab" aria-controls="radial-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="radial-html-tab" data-bs-toggle="tab" data-bs-target="#radial-html" role="tab" aria-controls="radial-html" aria-selected="false">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="radial-js-tab" data-bs-toggle="tab" data-bs-target="#radial-js" role="tab" aria-controls="radial-js" aria-selected="false">JS</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="radial-preview" role="tabpanel" aria-labelledby="radial-preview-tab">
+                <div id="radialBarChart"></div>
+              </div>
+              <div class="tab-pane fade" id="radial-html" role="tabpanel" aria-labelledby="radial-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre class="docs-code"><code class="html">&lt;div id=&quot;radialBarChart&quot;&gt;&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="radial-js" role="tabpanel" aria-labelledby="radial-js-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="js">const radialBarChartEl = document.querySelector(&apos;#radialBarChart&apos;),&#10;  radialBarChartConfig = {&#10;    chart: {&#10;      height: 380,&#10;      type: &apos;radialBar&apos;&#10;    },&#10;    colors: [chartColors.donut.series1, chartColors.donut.series2, chartColors.donut.series4],&#10;    plotOptions: {&#10;      radialBar: {&#10;        size: 185,&#10;        hollow: {&#10;          size: &apos;40%&apos;&#10;        },&#10;        track: {&#10;          margin: 10,&#10;          background: config.colors_label.secondary&#10;        },&#10;        dataLabels: {&#10;          name: {&#10;            fontSize: &apos;2rem&apos;,&#10;            fontFamily: &apos;Open Sans&apos;&#10;          },&#10;          value: {&#10;            fontSize: &apos;1.2rem&apos;,&#10;            color: legendColor,&#10;            fontFamily: &apos;Open Sans&apos;&#10;          },&#10;          total: {&#10;            show: true,&#10;            fontWeight: 400,&#10;            fontSize: &apos;1.3rem&apos;,&#10;            color: headingColor,&#10;            label: &apos;Comments&apos;,&#10;            formatter: function (w) {&#10;              return &apos;80%&apos;;&#10;            }&#10;          }&#10;        }&#10;      }&#10;    },&#10;    grid: {&#10;      borderColor: borderColor,&#10;      padding: {&#10;        top: -25,&#10;        bottom: -20&#10;      }&#10;    },&#10;    legend: {&#10;      show: true,&#10;      position: &apos;bottom&apos;,&#10;      labels: {&#10;        colors: legendColor,&#10;        useSeriesColors: false&#10;      }&#10;    },&#10;    stroke: {&#10;      lineCap: &apos;round&apos;&#10;    },&#10;    series: [80, 50, 35],&#10;    labels: [&apos;Comments&apos;, &apos;Replies&apos;, &apos;Shares&apos;]&#10;  };&#10;if (typeof radialBarChartEl !== undefined &amp;&amp; radialBarChartEl !== null) {&#10;  const radialChart = new ApexCharts(radialBarChartEl, radialBarChartConfig);&#10;  radialChart.render();&#10;}</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /RadialBar Chart-->
+
+        <div class="col-12">
+          <hr class="my-12" />
+        </div>
+
+        <!-- Radar Chart-->
+        <div class="col-12">
+          <h4 id="radar-chart-ex" class="anchor-heading mb-6 fw-bold">Radar Chart</h4>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="radar-preview-tab" data-bs-toggle="tab" data-bs-target="#radar-preview" role="tab" aria-controls="radar-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="radar-html-tab" data-bs-toggle="tab" data-bs-target="#radar-html" role="tab" aria-controls="radar-html" aria-selected="false">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="radar-js-tab" data-bs-toggle="tab" data-bs-target="#radar-js" role="tab" aria-controls="radar-js" aria-selected="false">JS</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="radar-preview" role="tabpanel" aria-labelledby="radar-preview-tab">
+                <div id="radarChart"></div>
+              </div>
+              <div class="tab-pane fade" id="radar-html" role="tabpanel" aria-labelledby="radar-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre class="docs-code"><code class="html">&lt;div id=&quot;radarChart&quot;&gt;&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="radar-js" role="tabpanel" aria-labelledby="radar-js-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="js">const radarChartEl = document.querySelector(&apos;#radarChart&apos;),&#10;  radarChartConfig = {&#10;    chart: {&#10;      height: 350,&#10;      type: &apos;radar&apos;,&#10;      toolbar: {&#10;        show: false&#10;      },&#10;      dropShadow: {&#10;        enabled: false,&#10;        blur: 8,&#10;        left: 1,&#10;        top: 1,&#10;        opacity: 0.2&#10;      }&#10;    },&#10;    legend: {&#10;      show: true,&#10;      position: &apos;bottom&apos;,&#10;      labels: {&#10;        colors: legendColor,&#10;        useSeriesColors: false&#10;      }&#10;    },&#10;    plotOptions: {&#10;      radar: {&#10;        polygons: {&#10;          strokeColors: borderColor,&#10;          connectorColors: borderColor&#10;        }&#10;      }&#10;    },&#10;    yaxis: {&#10;      tickAmount: 5,&#10;      show: false&#10;    },&#10;    series: [&#10;      {&#10;        name: &apos;iPhone 12&apos;,&#10;        data: [41, 64, 81, 60, 42, 42, 33, 23]&#10;      },&#10;      {&#10;        name: &apos;Samsung s20&apos;,&#10;        data: [65, 46, 42, 25, 58, 63, 76, 43]&#10;      }&#10;    ],&#10;    colors: [chartColors.donut.series1, chartColors.donut.series3],&#10;    xaxis: {&#10;      categories: [&apos;Battery&apos;, &apos;Brand&apos;, &apos;Camera&apos;, &apos;Memory&apos;, &apos;Storage&apos;, &apos;Display&apos;, &apos;OS&apos;, &apos;Price&apos;],&#10;      labels: {&#10;        show: true,&#10;        style: {&#10;          colors: [labelColor, labelColor, labelColor, labelColor, labelColor, labelColor, labelColor, labelColor],&#10;          fontSize: &apos;13px&apos;,&#10;          fontFamily: &apos;Open Sans&apos;&#10;        }&#10;      }&#10;    },&#10;    fill: {&#10;      opacity: [1, 0.8]&#10;    },&#10;    stroke: {&#10;      show: false,&#10;      width: 0&#10;    },&#10;    markers: {&#10;      size: 0&#10;    },&#10;    grid: {&#10;      show: false,&#10;      padding: {&#10;        top: -20,&#10;        bottom: -20&#10;      }&#10;    }&#10;  };&#10;if (typeof radarChartEl !== undefined &amp;&amp; radarChartEl !== null) {&#10;  const radarChart = new ApexCharts(radarChartEl, radarChartConfig);&#10;  radarChart.render();&#10;}</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Radar Chart-->
+      </div>
+      <!-- /Advance Charts -->
+    </div>
+
+    <div class="d-none d-xl-block col-xl-2 doc-sidebar container-p-y">
+      <nav id="vertical-nav" class="navbar p-0">
+        <ul class="doc-sidebar-nav">
+          <li class="doc-entry doc-h3">
+            <a class="nav-link" href="#usage">Usage</a>
+          </li>
+          <li class="doc-entry doc-h3">
+            <a class="nav-link" href="#line-chart-ex">Line Chart</a>
+          </li>
+          <li class="doc-entry doc-h3">
+            <a class="nav-link" href="#line-area-chart-ex">Line Area Chart</a>
+          </li>
+          <li class="doc-entry doc-h3">
+            <a class="nav-link" href="#bar-chart-ex">Bar Chart</a>
+          </li>
+          <li class="doc-entry doc-h3">
+            <a class="nav-link" href="#horizontal-bar-chart-ex">Horizontal Bar Chart</a>
+          </li>
+          <li class="doc-entry doc-h3">
+            <a class="nav-link" href="#candlestick-chart-ex">Candlestick Chart</a>
+          </li>
+          <li class="doc-entry doc-h3">
+            <a class="nav-link" href="#scatter-chart-ex">Scatter Chart</a>
+          </li>
+          <li class="doc-entry doc-h3">
+            <a class="nav-link" href="#heatmap-chart-ex">Heatmap Chart</a>
+          </li>
+          <li class="doc-entry doc-h3">
+            <a class="nav-link" href="#donut-chart-ex">Donut Chart</a>
+          </li>
+          <li class="doc-entry doc-h3">
+            <a class="nav-link" href="#radial-chart-ex">Radialbar Chart</a>
+          </li>
+          <li class="doc-entry doc-h3">
+            <a class="nav-link" href="#radar-chart-ex">Radar Chart</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+          <!-- / Content -->
+
+          
+            <footer class="content-footer footer">
+  <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center text-center py-4">
+    <div>
+      &#169; 2017-
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      
+        <a href="https://pixinvent.com" class="footer-text fw-medium" target="_blank">Pixinvent</a>, Hand-crafted & Made with â¤ï¸
+      
+    </div>
+    <div>
+      
+        <a href="https://www.facebook.com/pixinvents/" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-facebook"></i></a>
+      
+      
+        <a href="https://x.com/pixinvents" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-twitter"></i></a>
+      
+      
+        <a href="https://github.com/pixinvent" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-github"></i></a>
+      
+      
+        <a href="https://dribbble.com/pixinvent" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-dribbble"></i></a>
+      
+      
+        <a href="https://www.instagram.com/pixinvents/" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-instagram"></i></a>
+      
+    </div>
+  </div>
+</footer>
+
+          
+        </div>
+        <!-- Content wrapper -->
+      </div>
+      <!-- / Layout page -->
+    </div>
+
+    
+      
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    
+    <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+    <div class="drag-target"></div>
+  </div>
+  <!-- / Layout wrapper -->
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="assets/vendor/libs/highlight/highlight.js"></script>
+    <script src="assets/vendor/libs/clipboard/clipboard.js"></script>
+    
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/vendor/libs/node-waves/node-waves.js"></script>
+    <script src="assets/vendor/libs/@algolia/autocomplete-js.js"></script>
+    <script src="assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="assets/vendor/js/menu.js"></script>
+    <!-- Vendors JS -->
+    <script src="assets/vendor/libs/apex-charts/apexcharts.js"></script>
+
+    <!-- Page JS -->
+    <script src="assets/js/docs.js"></script>
+    <script src="assets/js/charts-apex.js"></script>
+  </body>
+</html>
+
+  <!-- beautify ignore:end -->
+

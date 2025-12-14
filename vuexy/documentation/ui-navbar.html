@@ -1,0 +1,2389 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- =========================================================
+* Vuexy - Bootstrap Dashboard PRO | v3.0.0
+==============================================================
+
+* Product Page: https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599
+* Created by: Pixinvent
+
+    * License: You must have a valid license purchased in order to legally use the theme for your project.
+  
+* Copyright Pixinvent (https://pixinvent.com)
+
+=========================================================
+ -->
+  <!-- beautify ignore:start -->
+
+<html lang="en" class="docs-page  layout-menu-fixed-offcanvas " data-assets-path="assets/" data-skin="bordered">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Docs: Navbar - UI elements | Vuexy - Bootstrap Dashboard PRO</title>
+
+    <meta name="description" content="Vuexy is the best bootstrap 5 dashboard for responsive web apps. Streamline your app development process with ease." />
+    <meta name="keywords" content="Vuexy bootstrap dashboard, vuexy bootstrap 5 dashboard, themeselection, html dashboard, web dashboard, frontend dashboard, responsive bootstrap theme" />
+    <meta property="og:title" content="Vuexy bootstrap Dashboard by Pixinvent" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" />
+    <meta property="og:image" content="https://pixinvent.com/wp-content/uploads/2023/06/vuexy-hero-image.png" />
+    <meta property="og:description" content="Vuexy is the best bootstrap 5 dashboard for responsive web apps. Streamline your app development process with ease." />
+    <meta property="og:site_name" content="Pixinvent" />
+
+    <!-- Canonical SEO -->
+    <link rel="canonical" href="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" />
+
+    
+      
+      <script>
+        (function (w, d, s, l, i) {
+          w[l] = w[l] || [];
+          w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+          });
+          var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+          j.async = true;
+          j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+          f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5J3LMKC');
+      </script>
+      
+    
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="48x48" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="16x16" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="32x32" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="180x180" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="192x192" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="512x512" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendor/fonts/iconify-icons.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/node-waves/node-waves.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/highlight/highlight.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+    
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="assets/vendor/css/core.css" />
+    <link rel="stylesheet" href="assets/css/demo.css" />
+    <link rel="stylesheet" href="assets/css/docs.css" />
+
+    <!-- Page CSS -->
+    
+
+    <!-- Core JS -->
+    <script src="assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: Don't remove unless you are aware of it, To hide customizer set displayCustomizer value false in config.js.  -->
+    <!-- <script src="assets/vendor/js/template-customizer.js"></script> -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="assets/js/config.js"></script>
+  </head>
+
+  <body>
+    
+      
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5J3LMKC" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+      
+    
+
+    <!-- Layout wrapper -->
+  <div class="layout-wrapper layout-navbar-full ">
+    <div class="layout-container">
+      
+        
+
+
+<!-- Navbar main -->
+
+<nav class="layout-navbar navbar navbar-expand-lg align-items-lg-center bg-white border-bottom" id="layout-navbar">
+  <div class="container-fluid">
+    
+      <!-- Menu toggle (see assets/css/demo/demo.css) -->
+      <div class="layout-menu-toggle navbar-nav d-lg-none align-items-lg-center">
+        <a class="nav-item nav-link px-0 me-lg-4" href="javascript:void(0)">
+          <i class="icon-base ti tabler-menu-2 icon-md align-middle"></i>
+        </a>
+      </div>
+    
+
+    <!-- Brand demo (see assets/css/demo/demo.css) -->
+    <div class="navbar-brand app-brand demo py-0 me-md-auto me-12 ms-lg-0 ms-0">
+      <a href="index.html" class="app-brand-link">
+        <span class="app-brand-logo demo">
+  <span class="text-primary">
+    <svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.00172773 0V6.85398C0.00172773 6.85398 -0.133178 9.01207 1.98092 10.8388L13.6912 21.9964L19.7809 21.9181L18.8042 9.88248L16.4951 7.17289L9.23799 0H0.00172773Z" fill="currentColor" />
+      <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd" d="M7.69824 16.4364L12.5199 3.23696L16.5541 7.25596L7.69824 16.4364Z" fill="#161616" />
+      <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd" d="M8.07751 15.9175L13.9419 4.63989L16.5849 7.28475L8.07751 15.9175Z" fill="#161616" />
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z" fill="currentColor" />
+    </svg>
+  </span>
+</span>
+        <span class="app-brand-text demo menu-text fw-bold">Vuexy</span>
+      </a>
+    </div>
+
+    <div class="d-flex ms-md-6 gap-3">
+      
+      <div class="navbar-nav align-items-lg-center justify-content-center">
+        <!-- Search -->
+        <div class="navbar-nav align-items-center">
+          <div class="nav-item navbar-search-wrapper mb-0">
+            <a class="nav-item nav-link search-toggler border rounded-3 py-2 px-md-4 px-2 d-flex align-items-center" href="javascript:void(0);">
+              <span class="d-inline-block text-body-secondary fw-normal" id="autocomplete"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbar-collapse">
+        <hr class="d-lg-none w-100 my-2" />
+        <!-- Divider -->
+
+        <div class="navbar-nav align-items-lg-center">
+          
+          <ul class="navbar-nav">
+            <!-- Technology dropdown -->
+            
+            
+              
+                <li class="nav-item dropdown me-2">
+                  <button class="btn dropdown-toggle py-2 btn-primary" type="button" id="livePreview" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-base ti tabler-current-location me-2"></i> Live preview</button>
+                  <ul class="dropdown-menu" aria-labelledby="livePreview">
+                    <li>
+                      <a href="https://pixinvent.com/vuexy-bootstrap-html-admin-template/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>HTML preview</a>
+                    </li>
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-laravel-admin-template/demo-1/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>Laravel preview</a>
+                      </li>
+                    
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-admin-template/html/vertical-menu-template/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>.Net Core preview</a>
+                      </li>
+                    
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-django-admin-template/demo-1/" target="_blank" class="nav-link text-nowrap"><i class="icon-base ti tabler-current-location me-2"></i>Django preview</a>
+                      </li>
+                    
+                  </ul>
+                </li>
+              
+            
+            
+              <li class="nav-item me-2">
+                <a href="https://pixinvent.ticksy.com/" target="_blank" class="nav-link d-flex align-items-center">
+                  <i class="icon-base ti tabler-lifebuoy me-2"></i>
+                  <span>Support</span>
+                </a>
+              </li>
+            
+            
+              <li class="nav-item">
+                <a href="https://themeforest.net/user/pixinvent/portfolio" target="_blank" class="nav-link d-flex align-items-center">
+                  <i class="icon-base ti tabler-gift me-2"></i>
+                  <span> More Themes</span>
+                </a>
+              </li>
+            
+            
+              <li class="nav-item">
+                <a href="https://themeselection.com/hire-us/" target="_blank" class="nav-link"><i class="icon-base ti tabler-briefcase"></i> Hire Us</a>
+              </li>
+            
+          </ul>
+
+          <!-- Divider -->
+          <div class="nav-item d-none d-lg-block text-big fw-light lh-1 me-4 ms-1">|</div>
+
+          
+            <div class="buy-now-btn">
+              <a href="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" target="_blank" class="btn btn-danger d-flex align-items-center gap-2">
+                <i class="icon-base ti tabler-shopping-cart"></i>
+                <span>Buy Now</span>
+              </a>
+            </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</nav>
+<!-- / Navbar main -->
+
+      
+
+      <!-- Layout page -->
+      <div class="layout-page">
+        
+          
+
+
+
+
+<!-- Menu -->
+<aside id="layout-menu" class="layout-menu menu-doc menu menu-vertical bg-menu-theme">
+  
+  <div class="menu-divider mt-0   d-xl-none "></div>
+
+  <!-- Links -->
+  <ul class="menu-inner py-1">
+    <li class="menu-header text-uppercase small fw-medium">Getting Started</li>
+    <li class="menu-item">
+      <a href="index.html" class="menu-link">
+        <div>Introduction</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="licenses.html" class="menu-link">
+        <div>Licenses</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="folder-structure.html" class="menu-link">
+        <div>Folder Structure</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="quick-start.html" class="menu-link">
+        <div>Quick Start</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="config.html" class="menu-link">
+        <div>Config ð¤©</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="installation-build.html" class="menu-link">
+        <div>Installation & Build</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="template-customizer.html" class="menu-link">
+        <div>Template Customizer</div>
+        
+      </a>
+    </li>
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Customization</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="customization-sass.html" class="menu-link">
+            <div>SASS</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="customization-js.html" class="menu-link">
+            <div>JavaScript</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="customization-third-party-plugins.html" class="menu-link">
+            <div>Third Party Plugins</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="layouts.html" class="menu-link">
+        <div>Layouts</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="dependencies.html" class="menu-link">
+        <div>Dependencies</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="faq.html" class="menu-link">
+        <div>FAQs</div>
+      </a>
+    </li>
+    
+      <!-- Laravel Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row">
+        <span class="me-1">Laravel</span>
+        <span class="badge badge-demo bg-label-danger ms-auto">HTML + Laravel Only</span>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="laravel-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-starter-kit-vs-full-version.html" class="menu-link">
+              <div>Starter-kit Vs Full-version</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-demo-config.html" class="menu-link">
+              <div>Demo Configs</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Auth & ACL</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-auth-jetstream.html" class="menu-link">
+              <div>JetStream</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-passport.html" class="menu-link">
+              <div>Passport</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-sanctum.html" class="menu-link">
+              <div>Sanctum</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-acl.html" class="menu-link">
+              <div>ACL</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-articles-database-connections.html" class="menu-link">
+              <div>Database Connections</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-existing-project.html" class="menu-link">
+              <div>Exiting Project Migration</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-form-validation-integration.html" class="menu-link">
+              <div>Form Validation Package Integration</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-localization.html" class="menu-link">
+          <div>Localization</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-search.html" class="menu-link">
+          <div>Search</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-sail-docker.html" class="menu-link">
+          <div>Sail & Docker</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-deployment.html" class="menu-link">
+          <div>Deployment</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Dotnet Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>ASP.NET CORE</span> <span class="badge badge-demo bg-label-danger ms-auto">Razor Pages</span></li>
+
+      <li class="menu-item">
+        <a href="net-core-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-assets-compilation.html" class="menu-link">
+              <div>Assets Compilation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-start-with-doker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-starter-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="net-core-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Dotnet Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>ASP.NET CORE MVC</span> <span class="badge badge-demo bg-label-danger ms-auto">MVC</span></li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-mvc-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-assets-compilation.html" class="menu-link">
+              <div>Assets Compilation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-start-with-docker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-starter-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="net-core-mvc-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-mvc-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Django Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>Django</span> <span class="badge badge-demo bg-label-danger ms-auto">Django Only</span></li>
+
+      <li class="menu-item">
+        <a href="django-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="django-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-start-with-doker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-demo-config.html" class="menu-link">
+              <div>Demo Config</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-starter-kit-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="django-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="django-articles-create-new-page.html" class="menu-link">
+              <div>Create New Apps & Pages</div>
+            </a>
+          </li>
+          <!-- <li class="menu-item">
+          <a href="django-articles-existing-project.html" class="menu-link">
+            <div>Exiting Project Migration</div>
+          </a>
+        </li> -->
+          <li class="menu-item">
+            <a href="django-articles-admin-superuser.html" class="menu-link">
+              <div>Admin and Create User</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-authentication.html" class="menu-link">
+              <div>Authentication</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="django-articles-permissions-authorization.html" class="menu-link">
+              <div>Permissions & Authorization</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-crud.html" class="menu-link">
+              <div>CRUD Example</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-admin-db.html" class="menu-link">
+              <div>Admin and Database</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-localization.html" class="menu-link">
+          <div>Localization</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-search.html" class="menu-link">
+          <div>Search</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-theme-api.html" class="menu-link">
+          <div>Theme API</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-deployment.html" class="menu-link">
+          <div>Deployment</div>
+        </a>
+      </li>
+    
+    <!-- Apps & Pages -->
+    <li class="menu-divider mb-1"></li>
+    <li class="menu-header text-uppercase small fw-medium">Design System</li>
+
+    <li class="menu-item">
+      <a href="typography.html" class="menu-link">
+        <div>Typography</div>
+      </a>
+    </li>
+
+    <li class="menu-item">
+      <a href="colors.html" class="menu-link">
+        <div>Colors</div>
+      </a>
+    </li>
+
+    <li class="menu-item">
+      <a href="Icons.html" class="menu-link">
+        <div>Icons</div>
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+    <!-- Components -->
+    <li class="menu-header text-uppercase small fw-medium">Components</li>
+
+    <!-- UI Elements -->
+    <li class="menu-item
+   active open">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>UI Elements</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="ui-accordion.html" class="menu-link">
+            <div>Accordion</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-alerts.html" class="menu-link">
+            <div>Alerts</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-app-brand.html" class="menu-link">
+            <div>App Brand</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-badges.html" class="menu-link">
+            <div>Badges</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-buttons.html" class="menu-link">
+            <div>Buttons</div>
+          </a>
+        </li>
+        <li class="menu-item
+  ">
+          <a href="javascript:void(0);" class="menu-link menu-toggle">
+            <div>Cards</div>
+          </a>
+          <ul class="menu-sub">
+            <li class="menu-item">
+              <a href="ui-cards-basic.html" class="menu-link">
+                <div>Basic</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="ui-cards-actions.html" class="menu-link">
+                <div>Actions</div>
+                
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="ui-carousel.html" class="menu-link">
+            <div>Carousel</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-collapse.html" class="menu-link">
+            <div>Collapse</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-dropdowns.html" class="menu-link">
+            <div>Dropdowns</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-footer.html" class="menu-link">
+            <div>Footer</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-list-groups.html" class="menu-link">
+            <div>List groups</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-modals.html" class="menu-link">
+            <div>Modals</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-menu.html" class="menu-link">
+            <div>Menu</div>
+            
+          </a>
+        </li>
+        <li class="menu-item active">
+          <a href="ui-navbar.html" class="menu-link">
+            <div>Navbar</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-offcanvas.html" class="menu-link">
+            <div>Offcanvas</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-pagination-breadcrumbs.html" class="menu-link">
+            <div>Pagination &amp; Breadcrumbs</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-popovers.html" class="menu-link">
+            <div>Popovers</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-progress.html" class="menu-link">
+            <div>Progress</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-spinners.html" class="menu-link">
+            <div>Spinners</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-navs.html" class="menu-link">
+            <div>Navs</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-tabs-pills.html" class="menu-link">
+            <div>Tabs &amp; Pills</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-toasts.html" class="menu-link">
+            <div>Toasts</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-tooltips.html" class="menu-link">
+            <div>Tooltips</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+
+    <!-- Extended components -->
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Extended UI</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="extended-ui-avatar.html" class="menu-link">
+            <div>Avatar</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-blockui.html" class="menu-link">
+            <div>BlockUI</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-drag-and-drop.html" class="menu-link">
+            <div>Drag &amp; Drop</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-media-player.html" class="menu-link">
+            <div>Media Player</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-perfect-scrollbar.html" class="menu-link">
+            <div>Perfect scrollbar</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-star-ratings.html" class="menu-link">
+            <div>Star Ratings</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-sweetalert2.html" class="menu-link">
+            <div>SweetAlert2</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-text-divider.html" class="menu-link">
+            <div>Text Divider</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-timeline.html" class="menu-link">
+            <div>Timeline</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-tour.html" class="menu-link">
+            <div>Tour</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-treeview.html" class="menu-link">
+            <div>Treeview</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-misc.html" class="menu-link">
+            <div>Miscellaneous</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Forms -->
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Forms</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="forms-basic-inputs.html" class="menu-link">
+            <div>Basic Inputs</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-input-groups.html" class="menu-link">
+            <div>Input groups</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-custom-options.html" class="menu-link">
+            <div>Custom Options</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-editors.html" class="menu-link">
+            <div>Editors</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-file-upload.html" class="menu-link">
+            <div>File Upload</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-pickers.html" class="menu-link">
+            <div>Pickers</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-selects.html" class="menu-link">
+            <div>Select &amp; Tags</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-sliders.html" class="menu-link">
+            <div>Sliders</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-switches.html" class="menu-link">
+            <div>Switches</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-extras.html" class="menu-link">
+            <div>Extras</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-validation.html" class="menu-link">
+            <div>Validation</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-wizard.html" class="menu-link">
+            <div>Wizard</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-layouts-sticky.html" class="menu-link">
+            <div>Sticky Actions</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <!-- Tables -->
+    <li class="menu-item">
+      <a href="tables-basic.html" class="menu-link">
+        <div>Tables</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="tables-datatables.html" class="menu-link">
+        <div>Datatables</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="utilities.html" class="menu-link">
+        <div>Utilities</div>
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+    <!-- Charts & Maps -->
+    <li class="menu-header text-uppercase small fw-medium">Charts &amp; Maps</li>
+
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <div data-i18n="Charts">Charts</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="charts-apex.html" class="menu-link">
+            <div>Apex Charts</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="charts-chartjs.html" class="menu-link">
+            <div>ChartJS</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="maps-leaflet.html" class="menu-link">
+        <div>Leaflet</div>
+        
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+
+    <!-- Charts & Maps -->
+    <li class="menu-header text-uppercase small fw-medium">Others</li>
+    <li class="menu-item">
+      <a href="credits.html" class="menu-link">
+        <div>Credits</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="https://pixinvent.ticksy.com/" target="_blank" class="menu-link">
+        <div>Support</div>
+      </a>
+    </li>
+  </ul>
+</aside>
+<!-- / Menu -->
+
+        
+
+        <!-- Content wrapper -->
+        <div class="content-wrapper">
+          <!-- Content -->
+          <div class="container-xxl flex-grow-1 container-p-y">
+  <div class="row flex-xl-nowrap">
+    <div class="DocSearch-content col-12 col-xl-10 container-p-y">
+      <h2 class="mb-6 doc-page-title">Navbar</h2>
+      <p>Responsive navigation header, the navbar. Includes support for branding, navigation, and more, including support for our collapse plugin.<br />Read the official <a href="https://getbootstrap.com/docs/5.3/components/navbar/" target="_blank">Bootstrap Documentation</a> for a full list of instructions and other options.</p>
+
+      <div class="alert alert-info" role="alert"><strong>Info:</strong> Find SCSS & CSS variables provided by bootstrap for Navbar in the <a href="https://getbootstrap.com/docs/5.3/components/navbar/#css" class="alert-link fw-semibold" target="_blank">official Bootstrap documentation</a>.</div>
+
+      <hr class="my-12" />
+
+      <!-- Basic Navbar -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="basic-navbar" class="anchor-heading mb-6 fw-bold">Basic Navbar</h4>
+          <p>Hereâs an example of all the sub-components included in a responsive light-themed navbar that automatically collapses at the <code>lg</code> (large) breakpoint.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="navbar-basic-tab" data-bs-toggle="tab" data-bs-target="#navbar-basic" role="tab" aria-controls="navbar-basic" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="navbar-basic-html-tab" data-bs-toggle="tab" data-bs-target="#navbar-basic-html" role="tab" aria-controls="navbar-basic-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="navbar-basic" role="tabpanel" aria-labelledby="navbar-basic-tab">
+                <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="javascript:void(0)">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="javascript:void(0)">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="javascript:void(0)">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Dropdown </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+                            <li><a class="dropdown-item" href="javascript:void(0)">Another action</a></li>
+                            <li>
+                              <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link disabled" href="javascript:void(0)" tabindex="-1">Disabled</a>
+                        </li>
+                      </ul>
+                      <form class="d-flex" action="javascript:void(0)">
+                        <input class="form-control me-2 w-auto" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-primary" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              <div class="tab-pane fade" id="navbar-basic-html" role="tabpanel" aria-labelledby="navbar-basic-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;nav class=&quot;navbar navbar-expand-lg navbar-light bg-navbar-theme&quot;&gt;&#10;  &lt;div class=&quot;container-fluid&quot;&gt;&#10;    &lt;a class=&quot;navbar-brand&quot; href=&quot;javascript:void(0)&quot;&gt;Navbar&lt;/a&gt;&#10;    &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#navbarSupportedContent&quot; aria-controls=&quot;navbarSupportedContent&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;&#10;      &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;&#10;    &lt;/button&gt;&#10;    &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarSupportedContent&quot;&gt;&#10;      &lt;ul class=&quot;navbar-nav me-auto mb-2 mb-lg-0&quot;&gt;&#10;        &lt;li class=&quot;nav-item&quot;&gt;&#10;          &lt;a class=&quot;nav-link active&quot; aria-current=&quot;page&quot; href=&quot;javascript:void(0)&quot;&gt;Home&lt;/a&gt;&#10;        &lt;/li&gt;&#10;        &lt;li class=&quot;nav-item&quot;&gt;&#10;          &lt;a class=&quot;nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;Link&lt;/a&gt;&#10;        &lt;/li&gt;&#10;        &lt;li class=&quot;nav-item dropdown&quot;&gt;&#10;          &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;javascript:void(0)&quot; id=&quot;navbarDropdown&quot; role=&quot;button&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;&#10;            Dropdown&#10;          &lt;/a&gt;&#10;          &lt;ul class=&quot;dropdown-menu&quot; aria-labelledby=&quot;navbarDropdown&quot;&gt;&#10;            &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;javascript:void(0)&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;&#10;            &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;javascript:void(0)&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;&#10;            &lt;li&gt;&#10;              &lt;hr class=&quot;dropdown-divider&quot;&gt;&#10;            &lt;/li&gt;&#10;            &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;javascript:void(0)&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;&#10;          &lt;/ul&gt;&#10;        &lt;/li&gt;&#10;        &lt;li class=&quot;nav-item&quot;&gt;&#10;          &lt;a class=&quot;nav-link disabled&quot; href=&quot;javascript:void(0)&quot; tabindex=&quot;-1&quot; &gt;Disabled&lt;/a&gt;&#10;        &lt;/li&gt;&#10;      &lt;/ul&gt;&#10;      &lt;form class=&quot;d-flex&quot; action=&quot;javascript:void(0)&quot;&gt;&#10;        &lt;input class=&quot;form-control me-2 w-auto&quot; type=&quot;search&quot; placeholder=&quot;Search&quot; aria-label=&quot;Search&quot;&gt;&#10;        &lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt;Search&lt;/button&gt;&#10;      &lt;/form&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;&lt;/nav&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+          <div class="alert alert-info mt-4" role="alert"><strong>Tip:</strong> Add <code>.layout-navbar-fixed</code> class to <code>&lt;html&gt;</code> tag for <strong>Fixed navbar</strong>.</div>
+        </div>
+      </div>
+
+      <hr class="my-12" />
+
+      <!-- Supported Content -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="supported-content" class="anchor-heading mb-6 fw-bold">Supported content</h4>
+          <p>Navbar come with built-in support for a handful of sub-components as below.</p>
+          <p id="navbar-brand" class="anchor-heading mt-12 fw-bold">Brand</p>
+          <p>The <code>.navbar-brand</code> can be applied to most elements, but an anchor works best as some elements might require utility classes or custom styles.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="navbar-brand-preview-tab" data-bs-toggle="tab" data-bs-target="#navbar-brand-preview" role="tab" aria-controls="navbar-brand-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="navbar-brand-html-tab" data-bs-toggle="tab" data-bs-target="#navbar-brand-html" role="tab" aria-controls="navbar-brand-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="navbar-brand-preview" role="tabpanel" aria-labelledby="navbar-brand-preview-tab">
+                <nav class="navbar navbar-light bg-white">
+                  <div class="container-fluid">
+                    <a class="navbar-brand fw-bold" href="javascript:void(0);">Navbar</a>
+                  </div>
+                </nav>
+              </div>
+              <div class="tab-pane fade" id="navbar-brand-html" role="tabpanel" aria-labelledby="navbar-brand-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre class="docs-code"><code class="html">&lt;nav class=&quot;navbar navbar-light bg-white&quot;&gt;&#10;  &lt;div class=&quot;container-fluid&quot;&gt;&#10;    &lt;a class=&quot;navbar-brand fw-bold&quot; href=&quot;javascript:void(0);&quot;&gt;Navbar&lt;/a&gt;&#10;  &lt;/div&gt;&#10;&lt;/nav&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-12" />
+          <p id="navbar-nav" class="anchor-heading mt-12 fw-bold">Nav</p>
+          <p>Navbar navigation links build on our <code>.nav</code> options with their own modifier class and require the use of toggler classes for proper responsive styling.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="navbar-nav-preview-tab" data-bs-toggle="tab" data-bs-target="#navbar-nav-preview" role="tab" aria-controls="navbar-nav-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="navbar-nav-html-tab" data-bs-toggle="tab" data-bs-target="#navbar-nav-html" role="tab" aria-controls="navbar-nav-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="navbar-nav-preview" role="tabpanel" aria-labelledby="navbar-nav-preview-tab">
+                <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="javascript:void(0);">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="javascript:void(0);">Home <span class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="javascript:void(0);">Features</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="javascript:void(0);">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link disabled" href="javascript:void(0);" tabindex="-1">Disabled</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              <div class="tab-pane fade" id="navbar-nav-html" role="tabpanel" aria-labelledby="navbar-nav-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;nav class=&quot;navbar navbar-expand-lg navbar-light bg-white&quot;&gt;&#10;  &lt;div class=&quot;container-fluid&quot;&gt;&#10;    &lt;a class=&quot;navbar-brand&quot; href=&quot;javascript:void(0);&quot;&gt;Navbar&lt;/a&gt;&#10;    &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#navbarNav&quot; aria-controls=&quot;navbarNav&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;&#10;      &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;&#10;    &lt;/button&gt;&#10;    &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarNav&quot;&gt;&#10;      &lt;ul class=&quot;navbar-nav&quot;&gt;&#10;        &lt;li class=&quot;nav-item active&quot;&gt;&#10;          &lt;a class=&quot;nav-link&quot; href=&quot;javascript:void(0);&quot;&gt;Home &lt;span class=&quot;visually-hidden&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;&#10;        &lt;/li&gt;&#10;        &lt;li class=&quot;nav-item&quot;&gt;&#10;          &lt;a class=&quot;nav-link&quot; href=&quot;javascript:void(0);&quot;&gt;Features&lt;/a&gt;&#10;        &lt;/li&gt;&#10;        &lt;li class=&quot;nav-item&quot;&gt;&#10;          &lt;a class=&quot;nav-link&quot; href=&quot;javascript:void(0);&quot;&gt;Pricing&lt;/a&gt;&#10;        &lt;/li&gt;&#10;        &lt;li class=&quot;nav-item&quot;&gt;&#10;          &lt;a class=&quot;nav-link disabled&quot; href=&quot;javascript:void(0);&quot; tabindex=&quot;-1&quot; &gt;Disabled&lt;/a&gt;&#10;        &lt;/li&gt;&#10;      &lt;/ul&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;&lt;/nav&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+          <hr class="my-12" />
+          <p id="navbar-form" class="anchor-heading mt-12 fw-bold">Form</p>
+          <p>Place various form controls and components within a navbar with <code>.d-flex</code>.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="navbar-form-preview-tab" data-bs-toggle="tab" data-bs-target="#navbar-form-preview" role="tab" aria-controls="navbar-form-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="navbar-form-html-tab" data-bs-toggle="tab" data-bs-target="#navbar-form-html" role="tab" aria-controls="navbar-form-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="navbar-form-preview" role="tabpanel" aria-labelledby="navbar-form-preview-tab">
+                <nav class="navbar navbar-expand-xl navbar-light bg-white">
+                  <div class="container-fluid">
+                    <a class="navbar-brand">Navbar</a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-form-ex">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbar-form-ex">
+                      <form class="d-flex" action="javascript:void(0)">
+                        <input class="form-control me-sm-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              <div class="tab-pane fade" id="navbar-form-html" role="tabpanel" aria-labelledby="navbar-form-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;nav class=&quot;navbar navbar-light bg-white&quot;&gt;&#10;  &lt;div class=&quot;container-fluid&quot;&gt;&#10;    &lt;a class=&quot;navbar-brand&quot;&gt;Navbar&lt;/a&gt;&#10;    &lt;form class=&quot;d-flex&quot; action=&quot;javascript:void(0)&quot;&gt;&#10;      &lt;input class=&quot;form-control me-sm-2&quot; type=&quot;search&quot; placeholder=&quot;Search&quot; aria-label=&quot;Search&quot; /&gt;&#10;      &lt;button class=&quot;btn btn-primary my-2 my-sm-0&quot; type=&quot;submit&quot;&gt;Search&lt;/button&gt;&#10;    &lt;/form&gt;&#10;  &lt;/div&gt;&#10;&lt;/nav&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-12" />
+          <p id="navbar-text" class="anchor-heading mt-12 fw-bold">Text</p>
+          <p>Navbar may contain bits of text with the help of <code>.navbar-text</code>. This class adjusts vertical alignment and horizontal spacing for strings of text.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="navbar-text-preview-tab" data-bs-toggle="tab" data-bs-target="#navbar-text-preview" role="tab" aria-controls="navbar-text-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="navbar-text-html-tab" data-bs-toggle="tab" data-bs-target="#navbar-text-html" role="tab" aria-controls="navbar-text-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="navbar-text-preview" role="tabpanel" aria-labelledby="navbar-text-preview-tab">
+                <nav class="navbar navbar-expand-xl bg-navbar-theme">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="javascript:void(0)">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-ex-2">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbar-ex-2">
+                      <div class="navbar-nav me-auto">
+                        <a class="nav-item nav-link active" href="javascript:void(0)">Home</a>
+                        <a class="nav-item nav-link" href="javascript:void(0)">About</a>
+                        <a class="nav-item nav-link" href="javascript:void(0)">Contact</a>
+                      </div>
+
+                      <span class="navbar-text"> Navbar text with an inline element </span>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              <div class="tab-pane fade" id="navbar-text-html" role="tabpanel" aria-labelledby="navbar-text-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;nav class=&quot;navbar navbar-expand-xl bg-navbar-theme&quot;&gt;&#10;  &lt;div class=&quot;container-fluid&quot;&gt;&#10;    &lt;a class=&quot;navbar-brand&quot; href=&quot;javascript:void(0)&quot;&gt;Navbar&lt;/a&gt;&#10;    &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#navbar-ex-2&quot;&gt;&#10;      &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;&#10;    &lt;/button&gt;&#10;&#10;    &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbar-ex-2&quot;&gt;&#10;      &lt;div class=&quot;navbar-nav me-auto&quot;&gt;&#10;        &lt;a class=&quot;nav-item nav-link active&quot; href=&quot;javascript:void(0)&quot;&gt;Home&lt;/a&gt;&#10;        &lt;a class=&quot;nav-item nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;About&lt;/a&gt;&#10;        &lt;a class=&quot;nav-item nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;Contact&lt;/a&gt;&#10;      &lt;/div&gt;&#10;&#10;      &lt;span class=&quot;navbar-text&quot;&gt;&#10;        Navbar text with an inline element&#10;      &lt;/span&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;&lt;/nav&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-12" />
+
+      <!-- Open on Hover -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="open-hover" class="anchor-heading mb-6 fw-bold">
+            Open on Hover
+            
+          </h4>
+          <p>Default bootstrap dropdown open on click. Use <code>dropdown-hover.js</code> and with the help of <code>data-trigger="hover"</code> attribute dropdown will open on hover.</p>
+
+          <div class="doc-example mb-6">
+            <div class="doc-example-content" data-label="Code">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;script src=&quot;../../assets/vendor/js/dropdown-hover.js&quot;&gt;&lt;/script&gt;</code></pre>
+            </div>
+          </div>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="btn-icon-preview-tab" data-bs-toggle="tab" data-bs-target="#btn-icon-preview" role="tab" aria-controls="btn-icon-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="btn-icon-html-tab" data-bs-toggle="tab" data-bs-target="#btn-icon-html" role="tab" aria-controls="btn-icon-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="btn-icon-preview" role="tabpanel" aria-labelledby="btn-icon-preview-tab">
+                <nav class="navbar navbar-expand-lg bg-navbar-theme" style="z-index: 20">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="javascript:void(0)">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-ex-15">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbar-ex-15">
+                      <ul class="navbar-nav me-auto">
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="javascript:void(0);" data-bs-toggle="dropdown" data-trigger="hover">Dropdown</a>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="javascript:void(0)">Action</a>
+                            <a class="dropdown-item" href="javascript:void(0)">Another action</a>
+                            <a class="dropdown-item" href="javascript:void(0)">Something else here</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              <div class="tab-pane fade" id="btn-icon-html" role="tabpanel" aria-labelledby="btn-icon-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;nav class=&quot;navbar navbar-expand-lg bg-navbar-theme&quot;&gt;&#10;  &lt;div class=&quot;container-fluid&quot;&gt;&#10;    &lt;a class=&quot;navbar-brand&quot; href=&quot;javascript:void(0)&quot;&gt;Navbar&lt;/a&gt;&#10;    &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#navbar-ex-15&quot;&gt;&#10;      &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;&#10;    &lt;/button&gt;&#10;    &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbar-ex-15&quot;&gt;&#10;      &lt;ul class=&quot;navbar-nav me-auto&quot;&gt;&#10;        &lt;li class=&quot;nav-item dropdown&quot;&gt;&#10;          &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;javascript:void(0)&quot; data-bs-toggle=&quot;dropdown&quot; data-trigger=&quot;hover&quot;&gt;Dropdown&lt;/a&gt;&#10;          &lt;div class=&quot;dropdown-menu&quot;&gt;&#10;            &lt;a class=&quot;dropdown-item&quot; href=&quot;javascript:void(0)&quot;&gt;Action&lt;/a&gt;&#10;            &lt;a class=&quot;dropdown-item&quot; href=&quot;javascript:void(0)&quot;&gt;Another action&lt;/a&gt;&#10;            &lt;a class=&quot;dropdown-item&quot; href=&quot;javascript:void(0)&quot;&gt;Something else here&lt;/a&gt;&#10;          &lt;/div&gt;&#10;        &lt;/li&gt;        &#10;      &lt;/ul&gt;&#10;    &lt;/div&gt;&#10;  &lt;/nav&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-12" />
+
+      <!-- Mega Dropdown -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="mega-dropdown" class="anchor-heading mb-6 fw-bold">
+            Mega Dropdown
+            
+          </h4>
+          <p>Mega menu is a drop-down menu lets you pack your web app entire navigation into a single menu. In order to create Mega Dropdown you need to include <code>mega-dropdown.js</code>.</p>
+
+          <div class="doc-example">
+            <div class="doc-example-content" data-label="Code">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;script src=&quot;../../assets/vendor/js/mega-dropdown.js&quot;&gt;&lt;/script&gt;</code></pre>
+            </div>
+          </div>
+          <p class="pt-6">Use <code>.mega-dropdown</code> to create mega dropdown, Add <code>.mega-link</code> class to the element to close menu on click. Check below example for usage.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="btn-toggle-states-preview-tab" data-bs-toggle="tab" data-bs-target="#btn-toggle-states-preview" role="tab" aria-controls="btn-toggle-states-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" states="btn-size-html-tab" data-bs-toggle="tab" data-bs-target="#btn-toggle-states-html" role="tab" aria-controls="btn-toggle-states-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="btn-toggle-states-preview" role="tabpanel" aria-labelledby="btn-toggle-states-preview-tab">
+                <nav class="navbar navbar-expand-lg bg-navbar-theme" style="z-index: 21">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="javascript:void(0)">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-ex-14">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbar-ex-14">
+                      <ul class="navbar-nav me-auto">
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="javascript:void(0);" data-bs-toggle="dropdown">Dropdown</a>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="javascript:void(0)">Action</a>
+                            <a class="dropdown-item" href="javascript:void(0)">Another action</a>
+                            <a class="dropdown-item" href="javascript:void(0)">Something else here</a>
+                          </div>
+                        </li>
+                        <li class="nav-item mega-dropdown">
+                          <a class="nav-link dropdown-toggle navbar-ex-14-mega-dropdown mega-dropdown" href="javascript:void(0);" data-bs-toggle="mega-dropdown">Mega</a>
+                          <div class="dropdown-menu px-4 py-0">
+                            <div class="row row-bordered">
+                              <div class="col-sm-6 col-lg p-4">
+                                <h6 class="m-2">Applications</h6>
+                                <ul class="nav flex-column">
+                                  <li class="nav-item">
+                                    <a class="nav-link mega-dropdown-link" href="javascript:void(0)"><i class="icon-base ti tabler-mail ti-sm me-1"></i> Email</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link mega-dropdown-link" href="javascript:void(0)"><i class="icon-base ti tabler-messages ti-sm me-1"></i> Chat</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link mega-dropdown-link" href="javascript:void(0)"><i class="icon-base ti tabler-checklist ti-sm me-1"></i> ToDos</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link mega-dropdown-link" href="javascript:void(0)"><i class="icon-base ti tabler-calendar ti-sm me-1"></i> Calender</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link mega-dropdown-link disabled" href="javascript:void(0)" tabindex="-1"><i class="icon-base ti tabler-ban ti-sm me-1"></i> Disabled</a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="col-sm-6 col-lg p-4">
+                                <h6 class="m-2">Useful Links</h6>
+                                <ul class="nav flex-column">
+                                  <li class="nav-item">
+                                    <a class="nav-link mega-dropdown-link" href="javascript:void(0)">Profit Margins</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link mega-dropdown-link" href="javascript:void(0)">Overall Profits</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link mega-dropdown-link" href="javascript:void(0)">Gross Profits</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link mega-dropdown-link" href="javascript:void(0)">Net Profits</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link mega-dropdown-link" href="javascript:void(0)">Quarterly Profits</a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="col-sm-6 col-lg p-4">
+                                <h6 class="my-2">List Group</h6>
+                                <div class="list-group">
+                                  <a href="javascript:void(0)" class="list-group-item list-group-item-action mega-dropdown-link">Analytical Reports</a>
+                                  <a href="javascript:void(0)" class="list-group-item list-group-item-action mega-dropdown-link">Operational Growth</a>
+                                  <a href="javascript:void(0)" class="list-group-item list-group-item-action mega-dropdown-link">Files and Directories</a>
+                                  <a href="javascript:void(0)" class="list-group-item list-group-item-action mega-dropdown-link">Audit & Logs</a>
+                                  <a href="javascript:void(0)" class="list-group-item list-group-item-action mega-dropdown-link">Customer CRM</a>
+                                </div>
+                              </div>
+                              <div class="col-sm-6 col-lg p-4">
+                                <form action="javascript:void(0)">
+                                  <div class="mb-4">
+                                    <label class="form-label" for="exampleDropdownFormEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com" />
+                                  </div>
+                                  <div class="mb-4">
+                                    <label class="form-label" for="exampleDropdownFormPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password" />
+                                  </div>
+                                  <div class="mb-4">
+                                    <div class="form-check">
+                                      <input type="checkbox" class="form-check-input" id="dropdownCheck" />
+                                      <label class="form-check-label" for="dropdownCheck"> Remember me </label>
+                                    </div>
+                                  </div>
+                                  <button type="submit" class="btn btn-primary">Sign in</button>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              <div class="tab-pane fade" id="btn-toggle-states-html" role="tabpanel" aria-labelledby="btn-toggle-states-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;nav class=&quot;navbar navbar-expand-lg bg-navbar-theme&quot; style=&quot;z-index: 21&quot;&gt;&#10;  &lt;div class=&quot;container-fluid&quot;&gt;&#10;    &lt;a class=&quot;navbar-brand&quot; href=&quot;javascript:void(0)&quot;&gt;Navbar&lt;/a&gt;&#10;    &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#navbar-ex-14&quot;&gt;&#10;      &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;&#10;    &lt;/button&gt;&#10;&#10;    &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbar-ex-14&quot;&gt;&#10;      &lt;ul class=&quot;navbar-nav me-auto&quot;&gt;&#10;        &lt;li class=&quot;nav-item dropdown&quot;&gt;&#10;          &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;javascript:void(0);&quot; data-bs-toggle=&quot;dropdown&quot;&gt;Dropdown&lt;/a&gt;&#10;          &lt;div class=&quot;dropdown-menu&quot;&gt;&#10;            &lt;a class=&quot;dropdown-item&quot; href=&quot;javascript:void(0)&quot;&gt;Action&lt;/a&gt;&#10;            &lt;a class=&quot;dropdown-item&quot; href=&quot;javascript:void(0)&quot;&gt;Another action&lt;/a&gt;&#10;            &lt;a class=&quot;dropdown-item&quot; href=&quot;javascript:void(0)&quot;&gt;Something else here&lt;/a&gt;&#10;          &lt;/div&gt;&#10;        &lt;/li&gt;&#10;        &lt;li class=&quot;nav-item mega-dropdown&quot;&gt;&#10;          &lt;a class=&quot;nav-link dropdown-toggle navbar-ex-14-mega-dropdown mega-dropdown&quot; href=&quot;javascript:void(0);&quot; data-bs-toggle=&quot;mega-dropdown&quot;&gt;Mega&lt;/a&gt;&#10;          &lt;div class=&quot;dropdown-menu px-4 py-0&quot;&gt;&#10;            &lt;div class=&quot;row row-bordered&quot;&gt;&#10;              &lt;div class=&quot;col-sm-6 col-lg p-4&quot;&gt;&#10;                &lt;h6 class=&quot;m-2&quot;&gt;Applications&lt;/h6&gt;&#10;                &lt;ul class=&quot;nav flex-column&quot;&gt;&#10;                  &lt;li class=&quot;nav-item&quot;&gt;&#10;                    &lt;a class=&quot;nav-link mega-dropdown-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;icon-base ti tabler-mail ti-sm me-1&quot;&gt;&lt;/i&gt; Email&lt;/a&gt;&#10;                  &lt;/li&gt;&#10;                  &lt;li class=&quot;nav-item&quot;&gt;&#10;                    &lt;a class=&quot;nav-link mega-dropdown-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;icon-base ti tabler-messages ti-sm me-1&quot;&gt;&lt;/i&gt; Chat&lt;/a&gt;&#10;                  &lt;/li&gt;&#10;                  &lt;li class=&quot;nav-item&quot;&gt;&#10;                    &lt;a class=&quot;nav-link mega-dropdown-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;icon-base ti tabler-checklist ti-sm me-1&quot;&gt;&lt;/i&gt; ToDos&lt;/a&gt;&#10;                  &lt;/li&gt;&#10;                  &lt;li class=&quot;nav-item&quot;&gt;&#10;                    &lt;a class=&quot;nav-link mega-dropdown-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;icon-base ti tabler-calendar ti-sm me-1&quot;&gt;&lt;/i&gt; Calender&lt;/a&gt;&#10;                  &lt;/li&gt;&#10;                  &lt;li class=&quot;nav-item&quot;&gt;&#10;                    &lt;a class=&quot;nav-link mega-dropdown-link disabled&quot; href=&quot;javascript:void(0)&quot; tabindex=&quot;-1&quot;&gt;&lt;i class=&quot;icon-base ti tabler-ban ti-sm me-1&quot;&gt;&lt;/i&gt; Disabled&lt;/a&gt;&#10;                  &lt;/li&gt;&#10;                &lt;/ul&gt;&#10;              &lt;/div&gt;&#10;              &lt;div class=&quot;col-sm-6 col-lg p-4&quot;&gt;&#10;                &lt;h6 class=&quot;m-2&quot;&gt;Useful Links&lt;/h6&gt;&#10;                &lt;ul class=&quot;nav flex-column&quot;&gt;&#10;                  &lt;li class=&quot;nav-item&quot;&gt;&#10;                    &lt;a class=&quot;nav-link mega-dropdown-link&quot; href=&quot;javascript:void(0)&quot;&gt;Profit Margins&lt;/a&gt;&#10;                  &lt;/li&gt;&#10;                  &lt;li class=&quot;nav-item&quot;&gt;&#10;                    &lt;a class=&quot;nav-link mega-dropdown-link&quot; href=&quot;javascript:void(0)&quot;&gt;Overall Profits&lt;/a&gt;&#10;                  &lt;/li&gt;&#10;                  &lt;li class=&quot;nav-item&quot;&gt;&#10;                    &lt;a class=&quot;nav-link mega-dropdown-link&quot; href=&quot;javascript:void(0)&quot;&gt;Gross Profits&lt;/a&gt;&#10;                  &lt;/li&gt;&#10;                  &lt;li class=&quot;nav-item&quot;&gt;&#10;                    &lt;a class=&quot;nav-link mega-dropdown-link&quot; href=&quot;javascript:void(0)&quot;&gt;Net Profits&lt;/a&gt;&#10;                  &lt;/li&gt;&#10;                  &lt;li class=&quot;nav-item&quot;&gt;&#10;                    &lt;a class=&quot;nav-link mega-dropdown-link&quot; href=&quot;javascript:void(0)&quot;&gt;Quarterly Profits&lt;/a&gt;&#10;                  &lt;/li&gt;&#10;                &lt;/ul&gt;&#10;              &lt;/div&gt;&#10;              &lt;div class=&quot;col-sm-6 col-lg p-4&quot;&gt;&#10;                &lt;h6 class=&quot;my-2&quot;&gt;List Group&lt;/h6&gt;&#10;                &lt;div class=&quot;list-group&quot;&gt;&#10;                  &lt;a href=&quot;javascript:void(0)&quot; class=&quot;list-group-item list-group-item-action mega-dropdown-link&quot;&gt;Analytical Reports&lt;/a&gt;&#10;                  &lt;a href=&quot;javascript:void(0)&quot; class=&quot;list-group-item list-group-item-action mega-dropdown-link&quot;&gt;Operational Growth&lt;/a&gt;&#10;                  &lt;a href=&quot;javascript:void(0)&quot; class=&quot;list-group-item list-group-item-action mega-dropdown-link&quot;&gt;Files and Directories&lt;/a&gt;&#10;                  &lt;a href=&quot;javascript:void(0)&quot; class=&quot;list-group-item list-group-item-action mega-dropdown-link&quot;&gt;Audit &amp; Logs&lt;/a&gt;&#10;                  &lt;a href=&quot;javascript:void(0)&quot; class=&quot;list-group-item list-group-item-action mega-dropdown-link&quot;&gt;Customer CRM&lt;/a&gt;&#10;                &lt;/div&gt;&#10;              &lt;/div&gt;&#10;              &lt;div class=&quot;col-sm-6 col-lg p-4&quot;&gt;&#10;                &lt;form action=&quot;javascript:void(0)&quot;&gt;&#10;                  &lt;div class=&quot;mb-4&quot;&gt;&#10;                    &lt;label class=&quot;form-label&quot; for=&quot;exampleDropdownFormEmail1&quot;&gt;Email address&lt;/label&gt;&#10;                    &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;exampleDropdownFormEmail1&quot; placeholder=&quot;email@example.com&quot; /&gt;&#10;                  &lt;/div&gt;&#10;                  &lt;div class=&quot;mb-4&quot;&gt;&#10;                    &lt;label class=&quot;form-label&quot; for=&quot;exampleDropdownFormPassword1&quot;&gt;Password&lt;/label&gt;&#10;                    &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;exampleDropdownFormPassword1&quot; placeholder=&quot;Password&quot; /&gt;&#10;                  &lt;/div&gt;&#10;                  &lt;div class=&quot;mb-4&quot;&gt;&#10;                    &lt;div class=&quot;form-check&quot;&gt;&#10;                      &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;dropdownCheck&quot; /&gt;&#10;                      &lt;label class=&quot;form-check-label&quot; for=&quot;dropdownCheck&quot;&gt;&#10;                        Remember me&#10;                      &lt;/label&gt;&#10;                    &lt;/div&gt;&#10;                  &lt;/div&gt;&#10;                  &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Sign in&lt;/button&gt;&#10;                &lt;/form&gt;&#10;              &lt;/div&gt;&#10;            &lt;/div&gt;&#10;          &lt;/div&gt;&#10;        &lt;/li&gt;&#10;      &lt;/ul&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;&lt;/nav&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-12" />
+
+      <!-- Color Schemes -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="color-schemes" class="anchor-heading mb-6 fw-bold">
+            Color Schemes
+            
+          </h4>
+          <p>
+            Theming the navbar has never been easier thanks to the combination of theming classes and
+            <code>background-color</code> utilities. Choose from <code>.navbar-light</code> for use with light background colors, or <code>.navbar-dark</code> for dark background colors. Then, customize with <code>.bg-*</code>
+            utilities.
+          </p>
+
+          <!-- Primary -->
+          <p>Create navbar with Primary Color scheme by using <code>.navbar-dark</code> & <code>.bg-primary</code> classes along with <code>.navbar</code>.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="navbar-primary-preview-tab" data-bs-toggle="tab" data-bs-target="#navbar-primary-preview" role="tab" aria-controls="navbar-primary-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" states="btn-size-html-tab" data-bs-toggle="tab" data-bs-target="#navbar-primary-html" role="tab" aria-controls="navbar-primary-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="navbar-primary-preview" role="tabpanel" aria-labelledby="navbar-primary-preview-tab">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="javascript:void(0)">Primary</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-ex-7">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbar-ex-7">
+                      <div class="navbar-nav me-auto">
+                        <a class="nav-item nav-link active" href="javascript:void(0)">Home</a>
+                        <a class="nav-item nav-link" href="javascript:void(0)">About</a>
+                        <a class="nav-item nav-link" href="javascript:void(0)">Contact</a>
+                        <a class="nav-item nav-link disabled" href="javascript:void(0)">Disabled</a>
+                      </div>
+                      <ul class="navbar-nav ms-lg-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="javascript:void(0);"><i class="icon-base navbar-icon ti tabler-user icon-xs mb-1 me-1"></i> Profile</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="javascript:void(0);"><i class="icon-base navbar-icon ti tabler-settings icon-xs mb-1 me-1"></i> Settings</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="javascript:void(0);"><i class="icon-base navbar-icon ti tabler-lock-open icon-xs mb-1 me-1"></i> Logout</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              <div class="tab-pane fade" id="navbar-primary-html" role="tabpanel" aria-labelledby="navbar-primary-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;nav class=&quot;navbar navbar-expand-lg navbar-dark bg-primary&quot;&gt;&#13;&#10;  &lt;div class=&quot;container-fluid&quot;&gt;&#13;&#10;   &lt;a class=&quot;navbar-brand&quot; href=&quot;javascript:void(0)&quot;&gt;Primary&lt;/a&gt;&#13;&#10;   &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#navbar-ex-7&quot;&gt;&#13;&#10;   &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;&#13;&#10;   &lt;/button&gt;&#13;&#10;&#13;&#10;   &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbar-ex-7&quot;&gt;&#13;&#10;   &lt;div class=&quot;navbar-nav me-auto&quot;&gt;&#13;&#10;      &lt;a class=&quot;nav-item nav-link active&quot; href=&quot;javascript:void(0)&quot;&gt;Home&lt;/a&gt;&#13;&#10;      &lt;a class=&quot;nav-item nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;About&lt;/a&gt;&#13;&#10;      &lt;a class=&quot;nav-item nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;Contact&lt;/a&gt;&#13;&#10;      &lt;a class=&quot;nav-item nav-link disabled&quot; href=&quot;javascript:void(0)&quot;&gt;Disabled&lt;/a&gt;&#13;&#10;   &lt;/div&gt;&#13;&#10;   &lt;ul class=&quot;navbar-nav ms-lg-auto&quot;&gt;&#13;&#10;      &lt;li class=&quot;nav-item&quot;&gt;&#13;&#10;         &lt;a class=&quot;nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;icon-base navbar-icon ti tabler-user icon-xs mb-1 me-1&quot;&gt;&lt;/i&gt; Profile&lt;/a&gt;&#13;&#10;      &lt;/li&gt;&#13;&#10;      &lt;li class=&quot;nav-item&quot;&gt;&#13;&#10;         &lt;a class=&quot;nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;icon-base navbar-icon ti tabler-settings icon-xs mb-1 me-1&quot;&gt;&lt;/i&gt; Settings&lt;/a&gt;&#13;&#10;      &lt;/li&gt;&#13;&#10;      &lt;li class=&quot;nav-item&quot;&gt;&#13;&#10;         &lt;a class=&quot;nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;icon-base navbar-icon ti tabler-lock-open icon-xs mb-1 me-1&quot;&gt;&lt;/i&gt; Logout&lt;/a&gt;&#13;&#10;      &lt;/li&gt;&#13;&#10;   &lt;/ul&gt;&#13;&#10;   &lt;/div&gt;&#13;&#10;  &lt;/div&gt;&#13;&#10;&lt;/nav&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <!-- Secondary -->
+          <p class="mt-6 mb-0">Create navbar with Secondary Color scheme by using <code>.navbar-dark</code> & <code>.bg-secondary</code> classes along with <code>.navbar</code>.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="navbar-secondary-preview-tab" data-bs-toggle="tab" data-bs-target="#navbar-secondary-preview" role="tab" aria-controls="navbar-secondary-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" states="btn-size-html-tab" data-bs-toggle="tab" data-bs-target="#navbar-secondary-html" role="tab" aria-controls="navbar-secondary-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="navbar-secondary-preview" role="tabpanel" aria-labelledby="navbar-secondary-preview-tab">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="javascript:void(0)">Secondary</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-ex-7">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbar-ex-7">
+                      <div class="navbar-nav me-auto">
+                        <a class="nav-item nav-link active" href="javascript:void(0)">Home</a>
+                        <a class="nav-item nav-link" href="javascript:void(0)">About</a>
+                        <a class="nav-item nav-link" href="javascript:void(0)">Contact</a>
+                        <a class="nav-item nav-link disabled" href="javascript:void(0)">Disabled</a>
+                      </div>
+                      <ul class="navbar-nav ms-lg-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="javascript:void(0);"><i class="icon-base navbar-icon ti tabler-user icon-xs mb-1 me-1"></i> Profile</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="javascript:void(0);"><i class="icon-base navbar-icon ti tabler-settings icon-xs mb-1 me-1"></i> Settings</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="javascript:void(0);"><i class="icon-base navbar-icon ti tabler-lock-open icon-xs mb-1 me-1"></i> Logout</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              <div class="tab-pane fade" id="navbar-secondary-html" role="tabpanel" aria-labelledby="navbar-secondary-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;nav class=&quot;navbar navbar-expand-lg navbar-dark bg-secondary&quot;&gt;&#13;&#10;  &lt;div class=&quot;container-fluid&quot;&gt;&#13;&#10;   &lt;a class=&quot;navbar-brand&quot; href=&quot;javascript:void(0)&quot;&gt;Primary&lt;/a&gt;&#13;&#10;   &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#navbar-ex-7&quot;&gt;&#13;&#10;   &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;&#13;&#10;   &lt;/button&gt;&#13;&#10;&#13;&#10;   &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbar-ex-7&quot;&gt;&#13;&#10;   &lt;div class=&quot;navbar-nav me-auto&quot;&gt;&#13;&#10;      &lt;a class=&quot;nav-item nav-link active&quot; href=&quot;javascript:void(0)&quot;&gt;Home&lt;/a&gt;&#13;&#10;      &lt;a class=&quot;nav-item nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;About&lt;/a&gt;&#13;&#10;      &lt;a class=&quot;nav-item nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;Contact&lt;/a&gt;&#13;&#10;      &lt;a class=&quot;nav-item nav-link disabled&quot; href=&quot;javascript:void(0)&quot;&gt;Disabled&lt;/a&gt;&#13;&#10;   &lt;/div&gt;&#13;&#10;   &lt;ul class=&quot;navbar-nav ms-lg-auto&quot;&gt;&#13;&#10;      &lt;li class=&quot;nav-item&quot;&gt;&#13;&#10;         &lt;a class=&quot;nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;icon-base navbar-icon ti tabler-user icon-xs mb-1 me-1&quot;&gt;&lt;/i&gt; Profile&lt;/a&gt;&#13;&#10;      &lt;/li&gt;&#13;&#10;      &lt;li class=&quot;nav-item&quot;&gt;&#13;&#10;         &lt;a class=&quot;nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;icon-base navbar-icon ti tabler-settings icon-xs mb-1 me-1&quot;&gt;&lt;/i&gt; Settings&lt;/a&gt;&#13;&#10;      &lt;/li&gt;&#13;&#10;      &lt;li class=&quot;nav-item&quot;&gt;&#13;&#10;         &lt;a class=&quot;nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;icon-base navbar-icon ti tabler-lock-open icon-xs mb-1 me-1&quot;&gt;&lt;/i&gt; Logout&lt;/a&gt;&#13;&#10;      &lt;/li&gt;&#13;&#10;   &lt;/ul&gt;&#13;&#10;   &lt;/div&gt;&#13;&#10;  &lt;/div&gt;&#13;&#10;&lt;/nav&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <!-- Success -->
+          <p class="mt-6 mb-0">Create navbar with Success Color scheme by using <code>.navbar-dark</code> & <code>.bg-success</code> classes along with <code>.navbar</code>.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="navbar-success-preview-tab" data-bs-toggle="tab" data-bs-target="#navbar-success-preview" role="tab" aria-controls="navbar-success-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" states="btn-size-html-tab" data-bs-toggle="tab" data-bs-target="#navbar-success-html" role="tab" aria-controls="navbar-success-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="navbar-success-preview" role="tabpanel" aria-labelledby="navbar-success-preview-tab">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="javascript:void(0)">Success</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-ex-7">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbar-ex-7">
+                      <div class="navbar-nav me-auto">
+                        <a class="nav-item nav-link active" href="javascript:void(0)">Home</a>
+                        <a class="nav-item nav-link" href="javascript:void(0)">About</a>
+                        <a class="nav-item nav-link" href="javascript:void(0)">Contact</a>
+                        <a class="nav-item nav-link disabled" href="javascript:void(0)">Disabled</a>
+                      </div>
+                      <ul class="navbar-nav ms-lg-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="javascript:void(0);"><i class="icon-base navbar-icon ti tabler-user icon-xs mb-1 me-1"></i> Profile</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="javascript:void(0);"><i class="icon-base navbar-icon ti tabler-settings icon-xs mb-1 me-1"></i> Settings</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="javascript:void(0);"><i class="icon-base navbar-icon ti tabler-lock-open icon-xs mb-1 me-1"></i> Logout</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              <div class="tab-pane fade" id="navbar-success-html" role="tabpanel" aria-labelledby="navbar-success-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;nav class=&quot;navbar navbar-expand-lg navbar-dark bg-succes&quot;&gt;&#13;&#10;  &lt;div class=&quot;container-fluid&quot;&gt;&#13;&#10;   &lt;a class=&quot;navbar-brand&quot; href=&quot;javascript:void(0)&quot;&gt;Primary&lt;/a&gt;&#13;&#10;   &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#navbar-ex-7&quot;&gt;&#13;&#10;   &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;&#13;&#10;   &lt;/button&gt;&#13;&#10;&#13;&#10;   &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbar-ex-7&quot;&gt;&#13;&#10;   &lt;div class=&quot;navbar-nav me-auto&quot;&gt;&#13;&#10;      &lt;a class=&quot;nav-item nav-link active&quot; href=&quot;javascript:void(0)&quot;&gt;Home&lt;/a&gt;&#13;&#10;      &lt;a class=&quot;nav-item nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;About&lt;/a&gt;&#13;&#10;      &lt;a class=&quot;nav-item nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;Contact&lt;/a&gt;&#13;&#10;      &lt;a class=&quot;nav-item nav-link disabled&quot; href=&quot;javascript:void(0)&quot;&gt;Disabled&lt;/a&gt;&#13;&#10;   &lt;/div&gt;&#13;&#10;   &lt;ul class=&quot;navbar-nav ms-lg-auto&quot;&gt;&#13;&#10;      &lt;li class=&quot;nav-item&quot;&gt;&#13;&#10;         &lt;a class=&quot;nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;icon-base navbar-icon ti tabler-user icon-xs mb-1 me-1&quot;&gt;&lt;/i&gt; Profile&lt;/a&gt;&#13;&#10;      &lt;/li&gt;&#13;&#10;      &lt;li class=&quot;nav-item&quot;&gt;&#13;&#10;         &lt;a class=&quot;nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;icon-base navbar-icon ti tabler-settings icon-xs mb-1 me-1&quot;&gt;&lt;/i&gt; Settings&lt;/a&gt;&#13;&#10;      &lt;/li&gt;&#13;&#10;      &lt;li class=&quot;nav-item&quot;&gt;&#13;&#10;         &lt;a class=&quot;nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;icon-base navbar-icon ti tabler-lock-open icon-xs mb-1 me-1&quot;&gt;&lt;/i&gt; Logout&lt;/a&gt;&#13;&#10;      &lt;/li&gt;&#13;&#10;   &lt;/ul&gt;&#13;&#10;   &lt;/div&gt;&#13;&#10;  &lt;/div&gt;&#13;&#10;&lt;/nav&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <!-- Danger -->
+          <p class="mt-6 mb-0">Create navbar with Danger Color scheme by using <code>.navbar-dark</code> & <code>.bg-danger</code> classes along with <code>.navbar</code>.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="navbar-danger-preview-tab" data-bs-toggle="tab" data-bs-target="#navbar-danger-preview" role="tab" aria-controls="navbar-danger-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" states="btn-size-html-tab" data-bs-toggle="tab" data-bs-target="#navbar-danger-html" role="tab" aria-controls="navbar-danger-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="navbar-danger-preview" role="tabpanel" aria-labelledby="navbar-danger-preview-tab">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="javascript:void(0)">Danger</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-ex-7">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbar-ex-7">
+                      <div class="navbar-nav me-auto">
+                        <a class="nav-item nav-link active" href="javascript:void(0)">Home</a>
+                        <a class="nav-item nav-link" href="javascript:void(0)">About</a>
+                        <a class="nav-item nav-link" href="javascript:void(0)">Contact</a>
+                        <a class="nav-item nav-link disabled" href="javascript:void(0)">Disabled</a>
+                      </div>
+                      <ul class="navbar-nav ms-lg-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="javascript:void(0);"><i class="icon-base navbar-icon ti tabler-user icon-xs mb-1 me-1"></i> Profile</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="javascript:void(0);"><i class="icon-base navbar-icon ti tabler-settings icon-xs mb-1 me-1"></i> Settings</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="javascript:void(0);"><i class="icon-base navbar-icon ti tabler-lock-open icon-xs mb-1 me-1"></i> Logout</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              <div class="tab-pane fade" id="navbar-danger-html" role="tabpanel" aria-labelledby="navbar-danger-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;nav class=&quot;navbar navbar-expand-lg navbar-dark bg-danger&quot;&gt;&#13;&#10;  &lt;div class=&quot;container-fluid&quot;&gt;&#13;&#10;   &lt;a class=&quot;navbar-brand&quot; href=&quot;javascript:void(0)&quot;&gt;Primary&lt;/a&gt;&#13;&#10;   &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#navbar-ex-7&quot;&gt;&#13;&#10;   &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;&#13;&#10;   &lt;/button&gt;&#13;&#10;&#13;&#10;   &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbar-ex-7&quot;&gt;&#13;&#10;   &lt;div class=&quot;navbar-nav me-auto&quot;&gt;&#13;&#10;      &lt;a class=&quot;nav-item nav-link active&quot; href=&quot;javascript:void(0)&quot;&gt;Home&lt;/a&gt;&#13;&#10;      &lt;a class=&quot;nav-item nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;About&lt;/a&gt;&#13;&#10;      &lt;a class=&quot;nav-item nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;Contact&lt;/a&gt;&#13;&#10;      &lt;a class=&quot;nav-item nav-link disabled&quot; href=&quot;javascript:void(0)&quot;&gt;Disabled&lt;/a&gt;&#13;&#10;   &lt;/div&gt;&#13;&#10;   &lt;ul class=&quot;navbar-nav ms-lg-auto&quot;&gt;&#13;&#10;      &lt;li class=&quot;nav-item&quot;&gt;&#13;&#10;         &lt;a class=&quot;nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;icon-base navbar-icon ti tabler-user icon-xs mb-1 me-1&quot;&gt;&lt;/i&gt; Profile&lt;/a&gt;&#13;&#10;      &lt;/li&gt;&#13;&#10;      &lt;li class=&quot;nav-item&quot;&gt;&#13;&#10;         &lt;a class=&quot;nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;icon-base navbar-icon ti tabler-settings icon-xs mb-1 me-1&quot;&gt;&lt;/i&gt; Settings&lt;/a&gt;&#13;&#10;      &lt;/li&gt;&#13;&#10;      &lt;li class=&quot;nav-item&quot;&gt;&#13;&#10;         &lt;a class=&quot;nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;icon-base navbar-icon ti tabler-lock-open icon-xs mb-1 me-1&quot;&gt;&lt;/i&gt; Logout&lt;/a&gt;&#13;&#10;      &lt;/li&gt;&#13;&#10;   &lt;/ul&gt;&#13;&#10;   &lt;/div&gt;  &lt;/div&gt;&#13;&#10;&#13;&#10;&lt;/nav&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <!-- Warning -->
+          <p class="mt-6 mb-0">Create navbar with Warning Color scheme by using <code>.navbar-dark</code> & <code>.bg-warning</code> classes along with <code>.navbar</code>.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="navbar-warning-preview-tab" data-bs-toggle="tab" data-bs-target="#navbar-warning-preview" role="tab" aria-controls="navbar-warning-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" states="btn-size-html-tab" data-bs-toggle="tab" data-bs-target="#navbar-warning-html" role="tab" aria-controls="navbar-warning-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="navbar-warning-preview" role="tabpanel" aria-labelledby="navbar-warning-preview-tab">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="javascript:void(0)">Warning</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-ex-7">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbar-ex-7">
+                      <div class="navbar-nav me-auto">
+                        <a class="nav-item nav-link active" href="javascript:void(0)">Home</a>
+                        <a class="nav-item nav-link" href="javascript:void(0)">About</a>
+                        <a class="nav-item nav-link" href="javascript:void(0)">Contact</a>
+                        <a class="nav-item nav-link disabled" href="javascript:void(0)">Disabled</a>
+                      </div>
+                      <ul class="navbar-nav ms-lg-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="javascript:void(0);"><i class="icon-base navbar-icon ti tabler-user icon-xs mb-1 me-1"></i> Profile</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="javascript:void(0);"><i class="icon-base navbar-icon ti tabler-settings icon-xs mb-1 me-1"></i> Settings</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="javascript:void(0);"><i class="icon-base navbar-icon ti tabler-lock-open icon-xs mb-1 me-1"></i> Logout</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              <div class="tab-pane fade" id="navbar-warning-html" role="tabpanel" aria-labelledby="navbar-warning-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;nav class=&quot;navbar navbar-expand-lg navbar-dark bg-warning&quot;&gt;&#13;&#10;  &lt;div class=&quot;container-fluid&quot;&gt;&#13;&#10;   &lt;a class=&quot;navbar-brand&quot; href=&quot;javascript:void(0)&quot;&gt;Primary&lt;/a&gt;&#13;&#10;   &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#navbar-ex-7&quot;&gt;&#13;&#10;   &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;&#13;&#10;   &lt;/button&gt;&#13;&#10;&#13;&#10;   &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbar-ex-7&quot;&gt;&#13;&#10;   &lt;div class=&quot;navbar-nav me-auto&quot;&gt;&#13;&#10;      &lt;a class=&quot;nav-item nav-link active&quot; href=&quot;javascript:void(0)&quot;&gt;Home&lt;/a&gt;&#13;&#10;      &lt;a class=&quot;nav-item nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;About&lt;/a&gt;&#13;&#10;      &lt;a class=&quot;nav-item nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;Contact&lt;/a&gt;&#13;&#10;      &lt;a class=&quot;nav-item nav-link disabled&quot; href=&quot;javascript:void(0)&quot;&gt;Disabled&lt;/a&gt;&#13;&#10;   &lt;/div&gt;&#13;&#10;   &lt;ul class=&quot;navbar-nav ms-lg-auto&quot;&gt;&#13;&#10;      &lt;li class=&quot;nav-item&quot;&gt;&#13;&#10;         &lt;a class=&quot;nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;icon-base navbar-icon ti tabler-user icon-xs mb-1 me-1&quot;&gt;&lt;/i&gt; Profile&lt;/a&gt;&#13;&#10;      &lt;/li&gt;&#13;&#10;      &lt;li class=&quot;nav-item&quot;&gt;&#13;&#10;         &lt;a class=&quot;nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;icon-base navbar-icon ti tabler-settings icon-xs mb-1 me-1&quot;&gt;&lt;/i&gt; Settings&lt;/a&gt;&#13;&#10;      &lt;/li&gt;&#13;&#10;      &lt;li class=&quot;nav-item&quot;&gt;&#13;&#10;         &lt;a class=&quot;nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;icon-base navbar-icon ti tabler-lock-open icon-xs mb-1 me-1&quot;&gt;&lt;/i&gt; Logout&lt;/a&gt;&#13;&#10;      &lt;/li&gt;&#13;&#10;   &lt;/ul&gt;&#13;&#10;   &lt;/div&gt;&#13;&#10;  &lt;/div&gt;&#13;&#10;&lt;/nav&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <!-- Info -->
+          <p class="mt-6 mb-0">Create navbar with Info Color scheme by using <code>.navbar-dark</code> & <code>.bg-info</code> classes along with <code>.navbar</code>.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="navbar-info-preview-tab" data-bs-toggle="tab" data-bs-target="#navbar-info-preview" role="tab" aria-controls="navbar-info-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" states="btn-size-html-tab" data-bs-toggle="tab" data-bs-target="#navbar-info-html" role="tab" aria-controls="navbar-info-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="navbar-info-preview" role="tabpanel" aria-labelledby="navbar-info-preview-tab">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="javascript:void(0)">Info</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-ex-7">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbar-ex-7">
+                      <div class="navbar-nav me-auto">
+                        <a class="nav-item nav-link active" href="javascript:void(0)">Home</a>
+                        <a class="nav-item nav-link" href="javascript:void(0)">About</a>
+                        <a class="nav-item nav-link" href="javascript:void(0)">Contact</a>
+                        <a class="nav-item nav-link disabled" href="javascript:void(0)">Disabled</a>
+                      </div>
+                      <ul class="navbar-nav ms-lg-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="javascript:void(0);"><i class="icon-base navbar-icon ti tabler-user icon-xs mb-1 me-1"></i> Profile</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="javascript:void(0);"><i class="icon-base navbar-icon ti tabler-settings icon-xs mb-1 me-1"></i> Settings</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="javascript:void(0);"><i class="icon-base navbar-icon ti tabler-lock-open icon-xs mb-1 me-1"></i> Logout</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              <div class="tab-pane fade" id="navbar-info-html" role="tabpanel" aria-labelledby="navbar-info-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;nav class=&quot;navbar navbar-expand-lg navbar-dark bg-info&quot;&gt;&#13;&#10;  &lt;div class=&quot;container-fluid&quot;&gt;&#13;&#10;   &lt;a class=&quot;navbar-brand&quot; href=&quot;javascript:void(0)&quot;&gt;Primary&lt;/a&gt;&#13;&#10;   &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#navbar-ex-7&quot;&gt;&#13;&#10;   &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;&#13;&#10;   &lt;/button&gt;&#13;&#10;&#13;&#10;   &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbar-ex-7&quot;&gt;&#13;&#10;   &lt;div class=&quot;navbar-nav me-auto&quot;&gt;&#13;&#10;      &lt;a class=&quot;nav-item nav-link active&quot; href=&quot;javascript:void(0)&quot;&gt;Home&lt;/a&gt;&#13;&#10;      &lt;a class=&quot;nav-item nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;About&lt;/a&gt;&#13;&#10;      &lt;a class=&quot;nav-item nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;Contact&lt;/a&gt;&#13;&#10;      &lt;a class=&quot;nav-item nav-link disabled&quot; href=&quot;javascript:void(0)&quot;&gt;Disabled&lt;/a&gt;&#13;&#10;   &lt;/div&gt;&#13;&#10;   &lt;ul class=&quot;navbar-nav ms-lg-auto&quot;&gt;&#13;&#10;      &lt;li class=&quot;nav-item&quot;&gt;&#13;&#10;         &lt;a class=&quot;nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;icon-base navbar-icon ti tabler-user icon-xs mb-1 me-1&quot;&gt;&lt;/i&gt; Profile&lt;/a&gt;&#13;&#10;      &lt;/li&gt;&#13;&#10;      &lt;li class=&quot;nav-item&quot;&gt;&#13;&#10;         &lt;a class=&quot;nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;icon-base navbar-icon ti tabler-settings icon-xs mb-1 me-1&quot;&gt;&lt;/i&gt; Settings&lt;/a&gt;&#13;&#10;      &lt;/li&gt;&#13;&#10;      &lt;li class=&quot;nav-item&quot;&gt;&#13;&#10;         &lt;a class=&quot;nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;icon-base navbar-icon ti tabler-lock-open icon-xs mb-1 me-1&quot;&gt;&lt;/i&gt; Logout&lt;/a&gt;&#13;&#10;      &lt;/li&gt;&#13;&#10;   &lt;/ul&gt;&#13;&#10;   &lt;/div&gt;&#13;&#10;  &lt;/div&gt;&#13;&#10;&lt;/nav&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dark -->
+          <p class="mt-6 mb-0">Create navbar with Dark Color scheme by using <code>.navbar-dark</code> & <code>.bg-dark</code> classes along with <code>.navbar</code>.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="navbar-dark-preview-tab" data-bs-toggle="tab" data-bs-target="#navbar-dark-preview" role="tab" aria-controls="navbar-dark-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" states="btn-size-html-tab" data-bs-toggle="tab" data-bs-target="#navbar-dark-html" role="tab" aria-controls="navbar-dark-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="navbar-dark-preview" role="tabpanel" aria-labelledby="navbar-dark-preview-tab">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="javascript:void(0)">Dark</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-ex-7">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbar-ex-7">
+                      <div class="navbar-nav me-auto">
+                        <a class="nav-item nav-link active" href="javascript:void(0)">Home</a>
+                        <a class="nav-item nav-link" href="javascript:void(0)">About</a>
+                        <a class="nav-item nav-link" href="javascript:void(0)">Contact</a>
+                        <a class="nav-item nav-link disabled" href="javascript:void(0)">Disabled</a>
+                      </div>
+                      <ul class="navbar-nav ms-lg-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="javascript:void(0);"><i class="icon-base navbar-icon ti tabler-user icon-xs mb-1 me-1"></i> Profile</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="javascript:void(0);"><i class="icon-base navbar-icon ti tabler-settings icon-xs mb-1 me-1"></i> Settings</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="javascript:void(0);"><i class="icon-base navbar-icon ti tabler-lock-open icon-xs mb-1 me-1"></i> Logout</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              <div class="tab-pane fade" id="navbar-dark-html" role="tabpanel" aria-labelledby="navbar-dark-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;nav class=&quot;navbar navbar-expand-lg navbar-dark bg-dark&quot;&gt;&#13;&#10;  &lt;div class=&quot;container-fluid&quot;&gt;&#13;&#10;   &lt;a class=&quot;navbar-brand&quot; href=&quot;javascript:void(0)&quot;&gt;Primary&lt;/a&gt;&#13;&#10;   &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#navbar-ex-7&quot;&gt;&#13;&#10;   &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;&#13;&#10;   &lt;/button&gt;&#13;&#10;&#13;&#10;   &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbar-ex-7&quot;&gt;&#13;&#10;   &lt;div class=&quot;navbar-nav me-auto&quot;&gt;&#13;&#10;      &lt;a class=&quot;nav-item nav-link active&quot; href=&quot;javascript:void(0)&quot;&gt;Home&lt;/a&gt;&#13;&#10;      &lt;a class=&quot;nav-item nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;About&lt;/a&gt;&#13;&#10;      &lt;a class=&quot;nav-item nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;Contact&lt;/a&gt;&#13;&#10;      &lt;a class=&quot;nav-item nav-link disabled&quot; href=&quot;javascript:void(0)&quot;&gt;Disabled&lt;/a&gt;&#13;&#10;   &lt;/div&gt;&#13;&#10;   &lt;ul class=&quot;navbar-nav ms-lg-auto&quot;&gt;&#13;&#10;      &lt;li class=&quot;nav-item&quot;&gt;&#13;&#10;         &lt;a class=&quot;nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;icon-base navbar-icon ti tabler-user icon-xs mb-1 me-1&quot;&gt;&lt;/i&gt; Profile&lt;/a&gt;&#13;&#10;      &lt;/li&gt;&#13;&#10;      &lt;li class=&quot;nav-item&quot;&gt;&#13;&#10;         &lt;a class=&quot;nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;icon-base navbar-icon ti tabler-settings icon-xs mb-1 me-1&quot;&gt;&lt;/i&gt; Settings&lt;/a&gt;&#13;&#10;      &lt;/li&gt;&#13;&#10;      &lt;li class=&quot;nav-item&quot;&gt;&#13;&#10;         &lt;a class=&quot;nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;icon-base navbar-icon ti tabler-lock-open icon-xs mb-1 me-1&quot;&gt;&lt;/i&gt; Logout&lt;/a&gt;&#13;&#10;      &lt;/li&gt;&#13;&#10;   &lt;/ul&gt;&#13;&#10;   &lt;/div&gt;&#13;&#10;  &lt;/div&gt;&#13;&#10;&lt;/nav&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <!-- White -->
+          <p class="mt-6 mb-0">Create navbar with White Color scheme by using <code>.navbar-light</code> & <code>.bg-white</code> classes along with <code>.navbar</code>.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="navbar-light-preview-tab" data-bs-toggle="tab" data-bs-target="#navbar-light-preview" role="tab" aria-controls="navbar-light-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" states="btn-size-html-tab" data-bs-toggle="tab" data-bs-target="#navbar-light-html" role="tab" aria-controls="navbar-light-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="navbar-light-preview" role="tabpanel" aria-labelledby="navbar-light-preview-tab">
+                <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="javascript:void(0)">White</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-ex-7">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbar-ex-7">
+                      <div class="navbar-nav me-auto">
+                        <a class="nav-item nav-link active" href="javascript:void(0)">Home</a>
+                        <a class="nav-item nav-link" href="javascript:void(0)">About</a>
+                        <a class="nav-item nav-link" href="javascript:void(0)">Contact</a>
+                        <a class="nav-item nav-link disabled" href="javascript:void(0)">Disabled</a>
+                      </div>
+                      <ul class="navbar-nav ms-lg-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="javascript:void(0);"><i class="icon-base navbar-icon ti tabler-user icon-xs mb-1 me-1"></i> Profile</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="javascript:void(0);"><i class="icon-base navbar-icon ti tabler-settings icon-xs mb-1 me-1"></i> Settings</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="javascript:void(0);"><i class="icon-base navbar-icon ti tabler-lock-open icon-xs mb-1 me-1"></i> Logout</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              <div class="tab-pane fade" id="navbar-light-html" role="tabpanel" aria-labelledby="navbar-light-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;nav class=&quot;navbar navbar-expand-lg navbar-light bg-white&quot;&gt;&#13;&#10;  &lt;div class=&quot;container-fluid&quot;&gt;&#13;&#10;   &lt;a class=&quot;navbar-brand&quot; href=&quot;javascript:void(0)&quot;&gt;Primary&lt;/a&gt;&#13;&#10;   &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#navbar-ex-7&quot;&gt;&#13;&#10;   &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;&#13;&#10;   &lt;/button&gt;&#13;&#10;&#13;&#10;   &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbar-ex-7&quot;&gt;&#13;&#10;   &lt;div class=&quot;navbar-nav me-auto&quot;&gt;&#13;&#10;      &lt;a class=&quot;nav-item nav-link active&quot; href=&quot;javascript:void(0)&quot;&gt;Home&lt;/a&gt;&#13;&#10;      &lt;a class=&quot;nav-item nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;About&lt;/a&gt;&#13;&#10;      &lt;a class=&quot;nav-item nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;Contact&lt;/a&gt;&#13;&#10;      &lt;a class=&quot;nav-item nav-link disabled&quot; href=&quot;javascript:void(0)&quot;&gt;Disabled&lt;/a&gt;&#13;&#10;   &lt;/div&gt;&#13;&#10;   &lt;ul class=&quot;navbar-nav ms-lg-auto&quot;&gt;&#13;&#10;      &lt;li class=&quot;nav-item&quot;&gt;&#13;&#10;         &lt;a class=&quot;nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;icon-base navbar-icon ti tabler-user icon-xs mb-1 me-1&quot;&gt;&lt;/i&gt; Profile&lt;/a&gt;&#13;&#10;      &lt;/li&gt;&#13;&#10;      &lt;li class=&quot;nav-item&quot;&gt;&#13;&#10;         &lt;a class=&quot;nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;icon-base navbar-icon ti tabler-settings icon-xs mb-1 me-1&quot;&gt;&lt;/i&gt; Settings&lt;/a&gt;&#13;&#10;      &lt;/li&gt;&#13;&#10;      &lt;li class=&quot;nav-item&quot;&gt;&#13;&#10;         &lt;a class=&quot;nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;icon-base navbar-icon ti tabler-lock-open icon-xs mb-1 me-1&quot;&gt;&lt;/i&gt; Logout&lt;/a&gt;&#13;&#10;      &lt;/li&gt;&#13;&#10;   &lt;/ul&gt;&#13;&#10;   &lt;/div&gt;&#13;&#10;  &lt;/div&gt;&#13;&#10;&lt;/nav&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-12" />
+
+      <!-- Navbar Theme -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="navbar-theme" class="anchor-heading mb-6 fw-bold">Navbar</h4>
+          <p>Here's an example of basic responsive navbar theme <code>.bg-navbar-theme</code> that have theme navbar bg color and automatically collapses at the large breakpoint.</p>
+
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="navbar-themes-tab" data-bs-toggle="tab" data-bs-target="#navbar-themes" role="tab" aria-controls="navbar-themes" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="navbar-themes-html-tab" data-bs-toggle="tab" data-bs-target="#navbar-themes-html" role="tab" aria-controls="navbar-themes-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="navbar-themes" role="tabpanel" aria-labelledby="navbar-themes-tab">
+                <nav class="navbar navbar-expand-xl bg-navbar-theme" style="z-index: 20">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="javascript:void(0)">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-ex-1">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbar-ex-1">
+                      <ul class="navbar-nav me-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="javascript:void(0)">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="javascript:void(0)">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="javascript:void(0);" data-bs-toggle="dropdown">Dropdown link</a>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="javascript:void(0)">Action</a>
+                            <a class="dropdown-item" href="javascript:void(0)">Another action</a>
+                            <a class="dropdown-item" href="javascript:void(0)">Something else here</a>
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link disabled" href="javascript:void(0)">Disabled</a>
+                        </li>
+                      </ul>
+
+                      <form class="d-flex my-2 my-lg-0" action="javascript:void(0)">
+                        <input class="form-control me-sm-2" type="text" placeholder="Search" />
+                        <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              <div class="tab-pane fade" id="navbar-themes-html" role="tabpanel" aria-labelledby="navbar-themes-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;nav class=&quot;navbar navbar-expand-xl bg-navbar-theme&quot;&gt;&#10;  &lt;div class=&quot;container-fluid&quot;&gt;&#10;  &lt;a class=&quot;navbar-brand&quot; href=&quot;javascript:void(0)&quot;&gt;Navbar&lt;/a&gt;&#10;  &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#navbar-ex-1&quot;&gt;&#10;    &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;&#10;  &lt;/button&gt;&#10;&#10;  &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbar-ex-1&quot;&gt;&#10;    &lt;ul class=&quot;navbar-nav me-auto&quot;&gt;&#10;      &lt;li class=&quot;nav-item active&quot;&gt;&#10;        &lt;a class=&quot;nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;Home&lt;/a&gt;&#10;      &lt;/li&gt;&#10;      &lt;li class=&quot;nav-item&quot;&gt;&#10;        &lt;a class=&quot;nav-link&quot; href=&quot;javascript:void(0)&quot;&gt;Link&lt;/a&gt;&#10;      &lt;/li&gt;&#10;      &lt;li class=&quot;nav-item dropdown&quot;&gt;&#10;        &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;javascript:void(0)&quot; data-bs-toggle=&quot;dropdown&quot;&gt;Dropdown link&lt;/a&gt;&#10;        &lt;div class=&quot;dropdown-menu&quot;&gt;&#10;          &lt;a class=&quot;dropdown-item&quot; href=&quot;javascript:void(0)&quot;&gt;Action&lt;/a&gt;&#10;          &lt;a class=&quot;dropdown-item&quot; href=&quot;javascript:void(0)&quot;&gt;Another action&lt;/a&gt;&#10;          &lt;a class=&quot;dropdown-item&quot; href=&quot;javascript:void(0)&quot;&gt;Something else here&lt;/a&gt;&#10;        &lt;/div&gt;&#10;      &lt;/li&gt;&#10;      &lt;li class=&quot;nav-item&quot;&gt;&#10;        &lt;a class=&quot;nav-link disabled&quot; href=&quot;javascript:void(0)&quot;&gt;Disabled&lt;/a&gt;&#10;      &lt;/li&gt;&#10;    &lt;/ul&gt;&#10;&#10;    &lt;form class=&quot;d-flex my-2 my-lg-0&quot; action=&quot;javascript:void(0)&quot;&gt;&#10;      &lt;input class=&quot;form-control me-sm-2&quot; type=&quot;text&quot; placeholder=&quot;Search&quot; /&gt;&#10;      &lt;button class=&quot;btn btn-primary my-2 my-sm-0&quot; type=&quot;submit&quot;&gt;Search&lt;/button&gt;&#10;    &lt;/form&gt;&#10;  &lt;/div&gt;&#10;  &lt;/div&gt;&#10;&lt;/nav&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-none d-xl-block col-xl-2 doc-sidebar container-p-y">
+      <nav id="vertical-nav" class="navbar p-0">
+        <ul class="doc-sidebar-nav">
+          <li class="doc-entry doc-h2"><a class="nav-link" href="#basic-navbar">Basic Navbar</a></li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#supported-content">Content</a>
+            <ul>
+              <li class="doc-entry doc-h3"><a class="nav-link" href="#navbar-brand">Brand</a></li>
+              <li class="doc-entry doc-h3"><a class="nav-link" href="#navbar-nav">Nav</a></li>
+              <li class="doc-entry doc-h3"><a class="nav-link" href="#navbar-form">Form</a></li>
+              <li class="doc-entry doc-h3"><a class="nav-link" href="#navbar-text">Text</a></li>
+            </ul>
+          </li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#open-hover">Open on Hover <span class="badge badge-center badge-sm  rounded-pill bg-label-danger">C</span></a>
+          </li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#mega-dropdown">Mega Dropdown <span class="badge badge-center badge-sm  rounded-pill bg-label-danger">C</span></a>
+          </li>
+          <li class="doc-entry doc-h2"><a class="nav-link" href="#color-schemes">Color Schemes</a></li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#navbar-theme">Navbar Theme <span class="badge badge-center badge-sm  rounded-pill bg-label-danger">C</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+          <!-- / Content -->
+
+          
+            <footer class="content-footer footer">
+  <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center text-center py-4">
+    <div>
+      &#169; 2017-
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      
+        <a href="https://pixinvent.com" class="footer-text fw-medium" target="_blank">Pixinvent</a>, Hand-crafted & Made with â¤ï¸
+      
+    </div>
+    <div>
+      
+        <a href="https://www.facebook.com/pixinvents/" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-facebook"></i></a>
+      
+      
+        <a href="https://x.com/pixinvents" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-twitter"></i></a>
+      
+      
+        <a href="https://github.com/pixinvent" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-github"></i></a>
+      
+      
+        <a href="https://dribbble.com/pixinvent" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-dribbble"></i></a>
+      
+      
+        <a href="https://www.instagram.com/pixinvents/" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-instagram"></i></a>
+      
+    </div>
+  </div>
+</footer>
+
+          
+        </div>
+        <!-- Content wrapper -->
+      </div>
+      <!-- / Layout page -->
+    </div>
+
+    
+      
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    
+    <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+    <div class="drag-target"></div>
+  </div>
+  <!-- / Layout wrapper -->
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="assets/vendor/libs/highlight/highlight.js"></script>
+    <script src="assets/vendor/libs/clipboard/clipboard.js"></script>
+    
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/vendor/libs/node-waves/node-waves.js"></script>
+    <script src="assets/vendor/libs/@algolia/autocomplete-js.js"></script>
+    <script src="assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="assets/vendor/js/menu.js"></script>
+    <!-- Vendors JS -->
+    <script src="assets/vendor/js/dropdown-hover.js"></script>
+  <script src="assets/vendor/js/mega-dropdown.js"></script>
+
+    <!-- Page JS -->
+    <script src="assets/js/docs.js"></script>
+    <script src="assets/js/ui-navbar.js"></script>
+  </body>
+</html>
+
+  <!-- beautify ignore:end -->
+

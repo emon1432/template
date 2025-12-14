@@ -1,0 +1,2184 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- =========================================================
+* Vuexy - Bootstrap Dashboard PRO | v3.0.0
+==============================================================
+
+* Product Page: https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599
+* Created by: Pixinvent
+
+    * License: You must have a valid license purchased in order to legally use the theme for your project.
+  
+* Copyright Pixinvent (https://pixinvent.com)
+
+=========================================================
+ -->
+  <!-- beautify ignore:start -->
+
+<html lang="en" class="docs-page  layout-menu-fixed-offcanvas " data-assets-path="assets/" data-skin="bordered">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Docs: Forms - Validation | Vuexy - Bootstrap Dashboard PRO</title>
+
+    <meta name="description" content="Vuexy is the best bootstrap 5 dashboard for responsive web apps. Streamline your app development process with ease." />
+    <meta name="keywords" content="Vuexy bootstrap dashboard, vuexy bootstrap 5 dashboard, themeselection, html dashboard, web dashboard, frontend dashboard, responsive bootstrap theme" />
+    <meta property="og:title" content="Vuexy bootstrap Dashboard by Pixinvent" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" />
+    <meta property="og:image" content="https://pixinvent.com/wp-content/uploads/2023/06/vuexy-hero-image.png" />
+    <meta property="og:description" content="Vuexy is the best bootstrap 5 dashboard for responsive web apps. Streamline your app development process with ease." />
+    <meta property="og:site_name" content="Pixinvent" />
+
+    <!-- Canonical SEO -->
+    <link rel="canonical" href="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" />
+
+    
+      
+      <script>
+        (function (w, d, s, l, i) {
+          w[l] = w[l] || [];
+          w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+          });
+          var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+          j.async = true;
+          j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+          f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5J3LMKC');
+      </script>
+      
+    
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="48x48" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="16x16" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="32x32" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="180x180" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="192x192" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="512x512" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendor/fonts/iconify-icons.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/node-waves/node-waves.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/highlight/highlight.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/bootstrap-select/bootstrap-select.css" />
+  <link rel="stylesheet" href="assets/vendor/libs/select2/select2.css" />
+  <link rel="stylesheet" href="assets/vendor/libs/flatpickr/flatpickr.css" />
+  <link rel="stylesheet" href="assets/vendor/libs/typeahead-js/typeahead.css" />
+  <link rel="stylesheet" href="assets/vendor/libs/tagify/tagify.css" />
+  <link rel="stylesheet" href="assets/vendor/libs/@form-validation/form-validation.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="assets/vendor/css/core.css" />
+    <link rel="stylesheet" href="assets/css/demo.css" />
+    <link rel="stylesheet" href="assets/css/docs.css" />
+
+    <!-- Page CSS -->
+    
+
+    <!-- Core JS -->
+    <script src="assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: Don't remove unless you are aware of it, To hide customizer set displayCustomizer value false in config.js.  -->
+    <!-- <script src="assets/vendor/js/template-customizer.js"></script> -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="assets/js/config.js"></script>
+  </head>
+
+  <body>
+    
+      
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5J3LMKC" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+      
+    
+
+    <!-- Layout wrapper -->
+  <div class="layout-wrapper layout-navbar-full ">
+    <div class="layout-container">
+      
+        
+
+
+<!-- Navbar main -->
+
+<nav class="layout-navbar navbar navbar-expand-lg align-items-lg-center bg-white border-bottom" id="layout-navbar">
+  <div class="container-fluid">
+    
+      <!-- Menu toggle (see assets/css/demo/demo.css) -->
+      <div class="layout-menu-toggle navbar-nav d-lg-none align-items-lg-center">
+        <a class="nav-item nav-link px-0 me-lg-4" href="javascript:void(0)">
+          <i class="icon-base ti tabler-menu-2 icon-md align-middle"></i>
+        </a>
+      </div>
+    
+
+    <!-- Brand demo (see assets/css/demo/demo.css) -->
+    <div class="navbar-brand app-brand demo py-0 me-md-auto me-12 ms-lg-0 ms-0">
+      <a href="index.html" class="app-brand-link">
+        <span class="app-brand-logo demo">
+  <span class="text-primary">
+    <svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.00172773 0V6.85398C0.00172773 6.85398 -0.133178 9.01207 1.98092 10.8388L13.6912 21.9964L19.7809 21.9181L18.8042 9.88248L16.4951 7.17289L9.23799 0H0.00172773Z" fill="currentColor" />
+      <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd" d="M7.69824 16.4364L12.5199 3.23696L16.5541 7.25596L7.69824 16.4364Z" fill="#161616" />
+      <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd" d="M8.07751 15.9175L13.9419 4.63989L16.5849 7.28475L8.07751 15.9175Z" fill="#161616" />
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z" fill="currentColor" />
+    </svg>
+  </span>
+</span>
+        <span class="app-brand-text demo menu-text fw-bold">Vuexy</span>
+      </a>
+    </div>
+
+    <div class="d-flex ms-md-6 gap-3">
+      
+      <div class="navbar-nav align-items-lg-center justify-content-center">
+        <!-- Search -->
+        <div class="navbar-nav align-items-center">
+          <div class="nav-item navbar-search-wrapper mb-0">
+            <a class="nav-item nav-link search-toggler border rounded-3 py-2 px-md-4 px-2 d-flex align-items-center" href="javascript:void(0);">
+              <span class="d-inline-block text-body-secondary fw-normal" id="autocomplete"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbar-collapse">
+        <hr class="d-lg-none w-100 my-2" />
+        <!-- Divider -->
+
+        <div class="navbar-nav align-items-lg-center">
+          
+          <ul class="navbar-nav">
+            <!-- Technology dropdown -->
+            
+            
+              
+                <li class="nav-item dropdown me-2">
+                  <button class="btn dropdown-toggle py-2 btn-primary" type="button" id="livePreview" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-base ti tabler-current-location me-2"></i> Live preview</button>
+                  <ul class="dropdown-menu" aria-labelledby="livePreview">
+                    <li>
+                      <a href="https://pixinvent.com/vuexy-bootstrap-html-admin-template/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>HTML preview</a>
+                    </li>
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-laravel-admin-template/demo-1/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>Laravel preview</a>
+                      </li>
+                    
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-admin-template/html/vertical-menu-template/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>.Net Core preview</a>
+                      </li>
+                    
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-django-admin-template/demo-1/" target="_blank" class="nav-link text-nowrap"><i class="icon-base ti tabler-current-location me-2"></i>Django preview</a>
+                      </li>
+                    
+                  </ul>
+                </li>
+              
+            
+            
+              <li class="nav-item me-2">
+                <a href="https://pixinvent.ticksy.com/" target="_blank" class="nav-link d-flex align-items-center">
+                  <i class="icon-base ti tabler-lifebuoy me-2"></i>
+                  <span>Support</span>
+                </a>
+              </li>
+            
+            
+              <li class="nav-item">
+                <a href="https://themeforest.net/user/pixinvent/portfolio" target="_blank" class="nav-link d-flex align-items-center">
+                  <i class="icon-base ti tabler-gift me-2"></i>
+                  <span> More Themes</span>
+                </a>
+              </li>
+            
+            
+              <li class="nav-item">
+                <a href="https://themeselection.com/hire-us/" target="_blank" class="nav-link"><i class="icon-base ti tabler-briefcase"></i> Hire Us</a>
+              </li>
+            
+          </ul>
+
+          <!-- Divider -->
+          <div class="nav-item d-none d-lg-block text-big fw-light lh-1 me-4 ms-1">|</div>
+
+          
+            <div class="buy-now-btn">
+              <a href="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" target="_blank" class="btn btn-danger d-flex align-items-center gap-2">
+                <i class="icon-base ti tabler-shopping-cart"></i>
+                <span>Buy Now</span>
+              </a>
+            </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</nav>
+<!-- / Navbar main -->
+
+      
+
+      <!-- Layout page -->
+      <div class="layout-page">
+        
+          
+
+
+
+
+<!-- Menu -->
+<aside id="layout-menu" class="layout-menu menu-doc menu menu-vertical bg-menu-theme">
+  
+  <div class="menu-divider mt-0   d-xl-none "></div>
+
+  <!-- Links -->
+  <ul class="menu-inner py-1">
+    <li class="menu-header text-uppercase small fw-medium">Getting Started</li>
+    <li class="menu-item">
+      <a href="index.html" class="menu-link">
+        <div>Introduction</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="licenses.html" class="menu-link">
+        <div>Licenses</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="folder-structure.html" class="menu-link">
+        <div>Folder Structure</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="quick-start.html" class="menu-link">
+        <div>Quick Start</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="config.html" class="menu-link">
+        <div>Config ð¤©</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="installation-build.html" class="menu-link">
+        <div>Installation & Build</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="template-customizer.html" class="menu-link">
+        <div>Template Customizer</div>
+        
+      </a>
+    </li>
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Customization</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="customization-sass.html" class="menu-link">
+            <div>SASS</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="customization-js.html" class="menu-link">
+            <div>JavaScript</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="customization-third-party-plugins.html" class="menu-link">
+            <div>Third Party Plugins</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="layouts.html" class="menu-link">
+        <div>Layouts</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="dependencies.html" class="menu-link">
+        <div>Dependencies</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="faq.html" class="menu-link">
+        <div>FAQs</div>
+      </a>
+    </li>
+    
+      <!-- Laravel Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row">
+        <span class="me-1">Laravel</span>
+        <span class="badge badge-demo bg-label-danger ms-auto">HTML + Laravel Only</span>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="laravel-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-starter-kit-vs-full-version.html" class="menu-link">
+              <div>Starter-kit Vs Full-version</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-demo-config.html" class="menu-link">
+              <div>Demo Configs</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Auth & ACL</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-auth-jetstream.html" class="menu-link">
+              <div>JetStream</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-passport.html" class="menu-link">
+              <div>Passport</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-sanctum.html" class="menu-link">
+              <div>Sanctum</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-acl.html" class="menu-link">
+              <div>ACL</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-articles-database-connections.html" class="menu-link">
+              <div>Database Connections</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-existing-project.html" class="menu-link">
+              <div>Exiting Project Migration</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-form-validation-integration.html" class="menu-link">
+              <div>Form Validation Package Integration</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-localization.html" class="menu-link">
+          <div>Localization</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-search.html" class="menu-link">
+          <div>Search</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-sail-docker.html" class="menu-link">
+          <div>Sail & Docker</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-deployment.html" class="menu-link">
+          <div>Deployment</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Dotnet Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>ASP.NET CORE</span> <span class="badge badge-demo bg-label-danger ms-auto">Razor Pages</span></li>
+
+      <li class="menu-item">
+        <a href="net-core-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-assets-compilation.html" class="menu-link">
+              <div>Assets Compilation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-start-with-doker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-starter-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="net-core-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Dotnet Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>ASP.NET CORE MVC</span> <span class="badge badge-demo bg-label-danger ms-auto">MVC</span></li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-mvc-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-assets-compilation.html" class="menu-link">
+              <div>Assets Compilation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-start-with-docker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-starter-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="net-core-mvc-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-mvc-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Django Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>Django</span> <span class="badge badge-demo bg-label-danger ms-auto">Django Only</span></li>
+
+      <li class="menu-item">
+        <a href="django-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="django-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-start-with-doker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-demo-config.html" class="menu-link">
+              <div>Demo Config</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-starter-kit-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="django-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="django-articles-create-new-page.html" class="menu-link">
+              <div>Create New Apps & Pages</div>
+            </a>
+          </li>
+          <!-- <li class="menu-item">
+          <a href="django-articles-existing-project.html" class="menu-link">
+            <div>Exiting Project Migration</div>
+          </a>
+        </li> -->
+          <li class="menu-item">
+            <a href="django-articles-admin-superuser.html" class="menu-link">
+              <div>Admin and Create User</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-authentication.html" class="menu-link">
+              <div>Authentication</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="django-articles-permissions-authorization.html" class="menu-link">
+              <div>Permissions & Authorization</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-crud.html" class="menu-link">
+              <div>CRUD Example</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-admin-db.html" class="menu-link">
+              <div>Admin and Database</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-localization.html" class="menu-link">
+          <div>Localization</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-search.html" class="menu-link">
+          <div>Search</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-theme-api.html" class="menu-link">
+          <div>Theme API</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-deployment.html" class="menu-link">
+          <div>Deployment</div>
+        </a>
+      </li>
+    
+    <!-- Apps & Pages -->
+    <li class="menu-divider mb-1"></li>
+    <li class="menu-header text-uppercase small fw-medium">Design System</li>
+
+    <li class="menu-item">
+      <a href="typography.html" class="menu-link">
+        <div>Typography</div>
+      </a>
+    </li>
+
+    <li class="menu-item">
+      <a href="colors.html" class="menu-link">
+        <div>Colors</div>
+      </a>
+    </li>
+
+    <li class="menu-item">
+      <a href="Icons.html" class="menu-link">
+        <div>Icons</div>
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+    <!-- Components -->
+    <li class="menu-header text-uppercase small fw-medium">Components</li>
+
+    <!-- UI Elements -->
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>UI Elements</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="ui-accordion.html" class="menu-link">
+            <div>Accordion</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-alerts.html" class="menu-link">
+            <div>Alerts</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-app-brand.html" class="menu-link">
+            <div>App Brand</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-badges.html" class="menu-link">
+            <div>Badges</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-buttons.html" class="menu-link">
+            <div>Buttons</div>
+          </a>
+        </li>
+        <li class="menu-item
+  ">
+          <a href="javascript:void(0);" class="menu-link menu-toggle">
+            <div>Cards</div>
+          </a>
+          <ul class="menu-sub">
+            <li class="menu-item">
+              <a href="ui-cards-basic.html" class="menu-link">
+                <div>Basic</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="ui-cards-actions.html" class="menu-link">
+                <div>Actions</div>
+                
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="ui-carousel.html" class="menu-link">
+            <div>Carousel</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-collapse.html" class="menu-link">
+            <div>Collapse</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-dropdowns.html" class="menu-link">
+            <div>Dropdowns</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-footer.html" class="menu-link">
+            <div>Footer</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-list-groups.html" class="menu-link">
+            <div>List groups</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-modals.html" class="menu-link">
+            <div>Modals</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-menu.html" class="menu-link">
+            <div>Menu</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-navbar.html" class="menu-link">
+            <div>Navbar</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-offcanvas.html" class="menu-link">
+            <div>Offcanvas</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-pagination-breadcrumbs.html" class="menu-link">
+            <div>Pagination &amp; Breadcrumbs</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-popovers.html" class="menu-link">
+            <div>Popovers</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-progress.html" class="menu-link">
+            <div>Progress</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-spinners.html" class="menu-link">
+            <div>Spinners</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-navs.html" class="menu-link">
+            <div>Navs</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-tabs-pills.html" class="menu-link">
+            <div>Tabs &amp; Pills</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-toasts.html" class="menu-link">
+            <div>Toasts</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-tooltips.html" class="menu-link">
+            <div>Tooltips</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+
+    <!-- Extended components -->
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Extended UI</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="extended-ui-avatar.html" class="menu-link">
+            <div>Avatar</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-blockui.html" class="menu-link">
+            <div>BlockUI</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-drag-and-drop.html" class="menu-link">
+            <div>Drag &amp; Drop</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-media-player.html" class="menu-link">
+            <div>Media Player</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-perfect-scrollbar.html" class="menu-link">
+            <div>Perfect scrollbar</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-star-ratings.html" class="menu-link">
+            <div>Star Ratings</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-sweetalert2.html" class="menu-link">
+            <div>SweetAlert2</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-text-divider.html" class="menu-link">
+            <div>Text Divider</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-timeline.html" class="menu-link">
+            <div>Timeline</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-tour.html" class="menu-link">
+            <div>Tour</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-treeview.html" class="menu-link">
+            <div>Treeview</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-misc.html" class="menu-link">
+            <div>Miscellaneous</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Forms -->
+    <li class="menu-item
+   active open">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Forms</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="forms-basic-inputs.html" class="menu-link">
+            <div>Basic Inputs</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-input-groups.html" class="menu-link">
+            <div>Input groups</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-custom-options.html" class="menu-link">
+            <div>Custom Options</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-editors.html" class="menu-link">
+            <div>Editors</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-file-upload.html" class="menu-link">
+            <div>File Upload</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-pickers.html" class="menu-link">
+            <div>Pickers</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-selects.html" class="menu-link">
+            <div>Select &amp; Tags</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-sliders.html" class="menu-link">
+            <div>Sliders</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-switches.html" class="menu-link">
+            <div>Switches</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-extras.html" class="menu-link">
+            <div>Extras</div>
+            
+          </a>
+        </li>
+        <li class="menu-item active">
+          <a href="forms-validation.html" class="menu-link">
+            <div>Validation</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-wizard.html" class="menu-link">
+            <div>Wizard</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-layouts-sticky.html" class="menu-link">
+            <div>Sticky Actions</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <!-- Tables -->
+    <li class="menu-item">
+      <a href="tables-basic.html" class="menu-link">
+        <div>Tables</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="tables-datatables.html" class="menu-link">
+        <div>Datatables</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="utilities.html" class="menu-link">
+        <div>Utilities</div>
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+    <!-- Charts & Maps -->
+    <li class="menu-header text-uppercase small fw-medium">Charts &amp; Maps</li>
+
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <div data-i18n="Charts">Charts</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="charts-apex.html" class="menu-link">
+            <div>Apex Charts</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="charts-chartjs.html" class="menu-link">
+            <div>ChartJS</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="maps-leaflet.html" class="menu-link">
+        <div>Leaflet</div>
+        
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+
+    <!-- Charts & Maps -->
+    <li class="menu-header text-uppercase small fw-medium">Others</li>
+    <li class="menu-item">
+      <a href="credits.html" class="menu-link">
+        <div>Credits</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="https://pixinvent.ticksy.com/" target="_blank" class="menu-link">
+        <div>Support</div>
+      </a>
+    </li>
+  </ul>
+</aside>
+<!-- / Menu -->
+
+        
+
+        <!-- Content wrapper -->
+        <div class="content-wrapper">
+          <!-- Content -->
+          <div class="container-xxl flex-grow-1 container-p-y">
+  <div class="row flex-xl-nowrap">
+    <div class="DocSearch-content col-12 col-xl-10 container-p-y">
+      <h2 class="mb-6 doc-page-title">Validation</h2>
+      <p>Vuexy uses default bootstrap validation and FormValidation to validate forms.<br />Read the official <a href="https://getbootstrap.com/docs/5.3/forms/validation/" target="_blank" rel="noopener noreferrer">Bootstrap validation</a> and <a href="https://formvalidation.io/" target="_blank" rel="noopener noreferrer">FormValidation</a> Documentations for a full list of instructions and other options.</p>
+
+      <hr class="my-12" />
+
+      <!-- Browser Default -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="browser-default" class="anchor-heading fw-bold mt-6">Browser Default</h4>
+          <p>You can use browser's inbuilt validation by using <code>required</code> attribute with your form fields.</p>
+          <div class="doc-example tour-example mt-4">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="br-default-val-preview-tab" data-bs-toggle="tab" data-bs-target="#br-default-val-preview" role="tab" aria-controls="br-default-val-preview" aria-selected="true"> Preview </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="br-default-val-html-tab" data-bs-toggle="tab" data-bs-target="#br-default-val-html" role="tab" aria-controls="br-default-val-html" aria-selected="false"> HTML </a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+              <div class="tab-pane fade show active" id="br-default-val-preview" role="tabpanel" aria-labelledby="br-default-val-preview-tab">
+                <div class="row">
+                  <form class="browser-default-validation col-md-6">
+                    <div class="mb-4">
+                      <label class="form-label" for="basic-default-name">Name</label>
+                      <input type="text" class="form-control" id="basic-default-name" placeholder="John Doe" required />
+                    </div>
+                    <div class="mb-4">
+                      <label class="form-label" for="basic-default-email">Email</label>
+                      <input type="email" id="basic-default-email" class="form-control" placeholder="john.doe" required />
+                    </div>
+                    <div class="mb-4 form-password-toggle">
+                      <label class="form-label" for="basic-default-password">Password</label>
+                      <div class="input-group input-group-merge">
+                        <input type="password" id="basic-default-password" class="form-control" placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" aria-describedby="basic-default-password3" required />
+                        <span class="input-group-text cursor-pointer" id="basic-default-password3"><i class="icon-base ti tabler-eye-off"></i></span>
+                      </div>
+                    </div>
+                    <div class="mb-4">
+                      <label class="form-label" for="basic-default-country">Country</label>
+                      <select class="form-select" id="basic-default-country" required>
+                        <option value="">Select Country</option>
+                        <option value="usa">USA</option>
+                        <option value="uk">UK</option>
+                        <option value="france">France</option>
+                        <option value="australia">Australia</option>
+                        <option value="spain">Spain</option>
+                      </select>
+                    </div>
+                    <div class="mb-4">
+                      <label class="form-label" for="basic-default-dob">DOB</label>
+                      <input type="text" class="form-control flatpickr-validation" id="basic-default-dob" required />
+                    </div>
+                    <div class="mb-4">
+                      <label class="form-label" for="basic-default-upload-file">Profile pic</label>
+                      <input type="file" class="form-control" id="basic-default-upload-file" required />
+                    </div>
+                    <div class="mb-4">
+                      <label class="d-block form-label">Gender</label>
+                      <div class="form-check mb-2">
+                        <input type="radio" id="basic-default-radio-male" name="basic-default-radio" class="form-check-input" required checked />
+                        <label class="form-check-label" for="basic-default-radio-male">Male</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="radio" id="basic-default-radio-female" name="basic-default-radio" class="form-check-input" required />
+                        <label class="form-check-label" for="basic-default-radio-female">Female</label>
+                      </div>
+                    </div>
+                    <div class="mb-4">
+                      <label class="form-label" for="basic-default-bio">Bio</label>
+                      <textarea class="form-control" id="basic-default-bio" name="basic-default-bio" rows="3" required></textarea>
+                    </div>
+                    <div class="mb-4">
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="basic-default-checkbox" required />
+                        <label class="form-check-label" for="basic-default-checkbox">Agree to our terms and conditions</label>
+                      </div>
+                    </div>
+                    <div class="mb-4">
+                      <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="browserDefaultSwitch" required />
+                        <label class="form-check-label" for="browserDefaultSwitch">Send me related emails</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="br-default-val-html" role="tabpanel" aria-labelledby="br-default-val-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;form class=&quot;browser-default-validation col-md-6&quot;&gt;&#10;  &lt;div class=&quot;mb-4&quot;&gt;&#10;    &lt;label class=&quot;form-label&quot; for=&quot;basic-default-name&quot;&gt;Name&lt;/label&gt;&#10;    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;basic-default-name&quot; placeholder=&quot;John Doe&quot; required /&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;mb-4&quot;&gt;&#10;    &lt;label class=&quot;form-label&quot; for=&quot;basic-default-email&quot;&gt;Email&lt;/label&gt;&#10;    &lt;input type=&quot;email&quot; id=&quot;basic-default-email&quot; class=&quot;form-control&quot; placeholder=&quot;john.doe&quot; required /&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;mb-4 form-password-toggle&quot;&gt;&#10;    &lt;label class=&quot;form-label&quot; for=&quot;basic-default-password&quot;&gt;Password&lt;/label&gt;&#10;    &lt;div class=&quot;input-group input-group-merge&quot;&gt;&#10;      &lt;input type=&quot;password&quot; id=&quot;basic-default-password&quot; class=&quot;form-control&quot;&#10;        placeholder=&quot;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&quot;&#10;        aria-describedby=&quot;basic-default-password3&quot; required /&gt;&#10;      &lt;span class=&quot;input-group-text cursor-pointer&quot; id=&quot;basic-default-password3&quot;&gt;&lt;i&#10;          class=&quot;icon-base ti tabler-eye-off&quot;&gt;&lt;/i&gt;&lt;/span&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;mb-4&quot;&gt;&#10;    &lt;label class=&quot;form-label&quot; for=&quot;basic-default-country&quot;&gt;Country&lt;/label&gt;&#10;    &lt;select class=&quot;form-select&quot; id=&quot;basic-default-country&quot; required&gt;&#10;      &lt;option value=&quot;&quot;&gt;Select Country&lt;/option&gt;&#10;      &lt;option value=&quot;usa&quot;&gt;USA&lt;/option&gt;&#10;      &lt;option value=&quot;uk&quot;&gt;UK&lt;/option&gt;&#10;      &lt;option value=&quot;france&quot;&gt;France&lt;/option&gt;&#10;      &lt;option value=&quot;australia&quot;&gt;Australia&lt;/option&gt;&#10;      &lt;option value=&quot;spain&quot;&gt;Spain&lt;/option&gt;&#10;    &lt;/select&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;mb-4&quot;&gt;&#10;    &lt;label class=&quot;form-label&quot; for=&quot;basic-default-dob&quot;&gt;DOB&lt;/label&gt;&#10;    &lt;input type=&quot;text&quot; class=&quot;form-control flatpickr-validation&quot; id=&quot;basic-default-dob&quot; required /&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;mb-4&quot;&gt;&#10;    &lt;label class=&quot;form-label&quot; for=&quot;basic-default-upload-file&quot;&gt;Profile pic&lt;/label&gt;&#10;    &lt;input type=&quot;file&quot; class=&quot;form-control&quot; id=&quot;basic-default-upload-file&quot; required /&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;mb-4&quot;&gt;&#10;    &lt;label class=&quot;d-block form-label&quot;&gt;Gender&lt;/label&gt;&#10;    &lt;div class=&quot;form-check mb-2&quot;&gt;&#10;      &lt;input type=&quot;radio&quot; id=&quot;basic-default-radio-male&quot; name=&quot;basic-default-radio&quot;&#10;        class=&quot;form-check-input&quot; required checked /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;basic-default-radio-male&quot;&gt;Male&lt;/label&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;form-check&quot;&gt;&#10;      &lt;input type=&quot;radio&quot; id=&quot;basic-default-radio-female&quot; name=&quot;basic-default-radio&quot;&#10;        class=&quot;form-check-input&quot; required /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;basic-default-radio-female&quot;&gt;Female&lt;/label&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;mb-4&quot;&gt;&#10;    &lt;label class=&quot;form-label&quot; for=&quot;basic-default-bio&quot;&gt;Bio&lt;/label&gt;&#10;    &lt;textarea class=&quot;form-control&quot; id=&quot;basic-default-bio&quot; name=&quot;basic-default-bio&quot; rows=&quot;3&quot;&#10;      required&gt;&lt;/textarea&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;mb-4&quot;&gt;&#10;    &lt;div class=&quot;form-check&quot;&gt;&#10;      &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;basic-default-checkbox&quot; required /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;basic-default-checkbox&quot;&gt;Agree to our terms and&#10;        conditions&lt;/label&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;mb-4&quot;&gt;&#10;    &lt;div class=&quot;form-check form-switch&quot;&gt;&#10;      &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;browserDefaultSwitch&quot; required /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;browserDefaultSwitch&quot;&gt;Send me related emails&lt;/label&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;row&quot;&gt;&#10;    &lt;div class=&quot;col-12&quot;&gt;&#10;      &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Submit&lt;/button&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;&lt;/form&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Browser Default -->
+
+      <hr class="my-12" />
+
+      <!-- Bootstrap Validation -->
+      <div class="row">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12">
+              <h4 id="bootstrap-validation" class="anchor-heading fw-bold mt-6">Bootstrap Validation</h4>
+            </div>
+            <!-- States -->
+            <div class="col-12">
+              <p class="anchor-heading fw-bold mt-2" id="bs-val-states">Bootstrap States</p>
+              <p>For custom Bootstrap form validation messages, youâll need to add the <code>novalidate</code> boolean attribute to your <code>&lt;form&gt;</code>. This disables the browser default feedback tooltips, but still provides access to the form validation APIs in JavaScript. In the form below, we've used all of the form related component of bootstrap. Try to submit the form, our JavaScript will intercept the submit button and show you the current state of input fields.</p>
+              <p>You don't have to include any extra vendor files to validate your form using Bootstrap.</p>
+              <div class="doc-example tour-example mt-4">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="bs-val-preview-tab" data-bs-toggle="tab" data-bs-target="#bs-val-preview" role="tab" aria-controls="bs-val-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-val-html-tab" data-bs-toggle="tab" data-bs-target="#bs-val-html" role="tab" aria-controls="bs-val-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-val-js-tab" data-bs-toggle="tab" data-bs-target="#bs-val-js" role="tab" aria-controls="bs-val-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="bs-val-preview" role="tabpanel" aria-labelledby="bs-val-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <form class="needs-validation" novalidate>
+                          <div class="mb-4">
+                            <label class="form-label" for="bs-validation-name">Name</label>
+                            <input type="text" class="form-control" id="bs-validation-name" placeholder="John Doe" required />
+                            <div class="valid-feedback">Looks good!</div>
+                            <div class="invalid-feedback">Please enter your name.</div>
+                          </div>
+                          <div class="mb-4">
+                            <label class="form-label" for="bs-validation-email">Email</label>
+                            <input type="email" id="bs-validation-email" class="form-control" placeholder="john.doe" aria-label="john.doe" required />
+                            <div class="valid-feedback">Looks good!</div>
+                            <div class="invalid-feedback">Please enter a valid email</div>
+                          </div>
+                          <div class="mb-4 form-password-toggle">
+                            <label class="form-label" for="bs-validation-password">Password</label>
+                            <div class="input-group input-group-merge">
+                              <input type="password" id="bs-validation-password" class="form-control" placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" required />
+                              <span class="input-group-text cursor-pointer" id="basic-default-password4"><i class="icon-base ti tabler-eye-off"></i></span>
+                            </div>
+                            <div class="valid-feedback">Looks good!</div>
+                            <div class="invalid-feedback">Please enter your password.</div>
+                          </div>
+                          <div class="mb-4">
+                            <label class="form-label" for="bs-validation-country">Country</label>
+                            <select class="form-select" id="bs-validation-country" required>
+                              <option value="">Select Country</option>
+                              <option value="usa">USA</option>
+                              <option value="uk">UK</option>
+                              <option value="france">France</option>
+                              <option value="australia">Australia</option>
+                              <option value="spain">Spain</option>
+                            </select>
+                            <div class="valid-feedback">Looks good!</div>
+                            <div class="invalid-feedback">Please select your country</div>
+                          </div>
+                          <div class="mb-4">
+                            <label class="form-label" for="bs-validation-dob">DOB</label>
+                            <input type="text" class="form-control flatpickr-validation" id="bs-validation-dob" required />
+                            <div class="valid-feedback">Looks good!</div>
+                            <div class="invalid-feedback">Please Enter Your DOB</div>
+                          </div>
+                          <div class="mb-4">
+                            <label class="form-label" for="bs-validation-upload-file">Profile pic</label>
+                            <input type="file" class="form-control" id="bs-validation-upload-file" required />
+                          </div>
+                          <div class="mb-4">
+                            <label class="d-block form-label">Gender</label>
+                            <div class="form-check mb-2">
+                              <input type="radio" id="bs-validation-radio-male" name="bs-validation-radio" class="form-check-input" required checked />
+                              <label class="form-check-label" for="bs-validation-radio-male">Male</label>
+                            </div>
+                            <div class="form-check">
+                              <input type="radio" id="bs-validation-radio-female" name="bs-validation-radio" class="form-check-input" required />
+                              <label class="form-check-label" for="bs-validation-radio-female">Female</label>
+                            </div>
+                          </div>
+                          <div class="mb-4">
+                            <label class="form-label" for="bs-validation-bio">Bio</label>
+                            <textarea class="form-control" id="bs-validation-bio" name="bs-validation-bio" rows="3" required></textarea>
+                          </div>
+                          <div class="mb-4">
+                            <div class="form-check">
+                              <input type="checkbox" class="form-check-input" id="bs-validation-checkbox" required />
+                              <label class="form-check-label" for="bs-validation-checkbox">Agree to our terms and conditions</label>
+                              <div class="invalid-feedback">You must agree before submitting.</div>
+                            </div>
+                          </div>
+                          <div class="mb-4">
+                            <div class="form-check form-switch">
+                              <input class="form-check-input" type="checkbox" id="bootstrapValidationSwitch" required />
+                              <label class="form-check-label" for="bootstrapValidationSwitch">Send me related emails</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12">
+                              <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="bs-val-html" role="tabpanel" aria-labelledby="bs-val-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre
+                      class="docs-code"><code class="html">&lt;form class=&quot;needs-validation&quot; novalidate&gt;&#10;  &lt;div class=&quot;mb-4&quot;&gt;&#10;    &lt;label class=&quot;form-label&quot; for=&quot;bs-validation-name&quot;&gt;Name&lt;/label&gt;&#10;    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;bs-validation-name&quot; placeholder=&quot;John Doe&quot;&#10;      required /&gt;&#10;    &lt;div class=&quot;valid-feedback&quot;&gt;Looks good!&lt;/div&gt;&#10;    &lt;div class=&quot;invalid-feedback&quot;&gt;Please enter your name.&lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;mb-4&quot;&gt;&#10;    &lt;label class=&quot;form-label&quot; for=&quot;bs-validation-email&quot;&gt;Email&lt;/label&gt;&#10;    &lt;input type=&quot;email&quot; id=&quot;bs-validation-email&quot; class=&quot;form-control&quot; placeholder=&quot;john.doe&quot;&#10;      aria-label=&quot;john.doe&quot; required /&gt;&#10;    &lt;div class=&quot;valid-feedback&quot;&gt;Looks good!&lt;/div&gt;&#10;    &lt;div class=&quot;invalid-feedback&quot;&gt;Please enter a valid email&lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;mb-4 form-password-toggle&quot;&gt;&#10;    &lt;label class=&quot;form-label&quot; for=&quot;bs-validation-password&quot;&gt;Password&lt;/label&gt;&#10;    &lt;div class=&quot;input-group input-group-merge&quot;&gt;&#10;      &lt;input type=&quot;password&quot; id=&quot;bs-validation-password&quot; class=&quot;form-control&quot;&#10;        placeholder=&quot;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&quot;&#10;        required /&gt;&#10;      &lt;span class=&quot;input-group-text cursor-pointer&quot; id=&quot;basic-default-password4&quot;&gt;&lt;i&#10;          class=&quot;icon-base ti tabler-eye-off&quot;&gt;&lt;/i&gt;&lt;/span&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;valid-feedback&quot;&gt;Looks good!&lt;/div&gt;&#10;    &lt;div class=&quot;invalid-feedback&quot;&gt;Please enter your password.&lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;mb-4&quot;&gt;&#10;    &lt;label class=&quot;form-label&quot; for=&quot;bs-validation-country&quot;&gt;Country&lt;/label&gt;&#10;    &lt;select class=&quot;form-select&quot; id=&quot;bs-validation-country&quot; required&gt;&#10;      &lt;option value=&quot;&quot;&gt;Select Country&lt;/option&gt;&#10;      &lt;option value=&quot;usa&quot;&gt;USA&lt;/option&gt;&#10;      &lt;option value=&quot;uk&quot;&gt;UK&lt;/option&gt;&#10;      &lt;option value=&quot;france&quot;&gt;France&lt;/option&gt;&#10;      &lt;option value=&quot;australia&quot;&gt;Australia&lt;/option&gt;&#10;      &lt;option value=&quot;spain&quot;&gt;Spain&lt;/option&gt;&#10;    &lt;/select&gt;&#10;    &lt;div class=&quot;valid-feedback&quot;&gt;Looks good!&lt;/div&gt;&#10;    &lt;div class=&quot;invalid-feedback&quot;&gt;Please select your country&lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;mb-4&quot;&gt;&#10;    &lt;label class=&quot;form-label&quot; for=&quot;bs-validation-dob&quot;&gt;DOB&lt;/label&gt;&#10;    &lt;input type=&quot;text&quot; class=&quot;form-control flatpickr-validation&quot; id=&quot;bs-validation-dob&quot;&#10;      required /&gt;&#10;    &lt;div class=&quot;valid-feedback&quot;&gt;Looks good!&lt;/div&gt;&#10;    &lt;div class=&quot;invalid-feedback&quot;&gt;Please Enter Your DOB&lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;mb-4&quot;&gt;&#10;    &lt;label class=&quot;form-label&quot; for=&quot;bs-validation-upload-file&quot;&gt;Profile pic&lt;/label&gt;&#10;    &lt;input type=&quot;file&quot; class=&quot;form-control&quot; id=&quot;bs-validation-upload-file&quot; required /&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;mb-4&quot;&gt;&#10;    &lt;label class=&quot;d-block form-label&quot;&gt;Gender&lt;/label&gt;&#10;    &lt;div class=&quot;form-check mb-2&quot;&gt;&#10;      &lt;input type=&quot;radio&quot; id=&quot;bs-validation-radio-male&quot; name=&quot;bs-validation-radio&quot;&#10;        class=&quot;form-check-input&quot; required checked /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;bs-validation-radio-male&quot;&gt;Male&lt;/label&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;form-check&quot;&gt;&#10;      &lt;input type=&quot;radio&quot; id=&quot;bs-validation-radio-female&quot; name=&quot;bs-validation-radio&quot;&#10;        class=&quot;form-check-input&quot; required /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;bs-validation-radio-female&quot;&gt;Female&lt;/label&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;mb-4&quot;&gt;&#10;    &lt;label class=&quot;form-label&quot; for=&quot;bs-validation-bio&quot;&gt;Bio&lt;/label&gt;&#10;    &lt;textarea class=&quot;form-control&quot; id=&quot;bs-validation-bio&quot; name=&quot;bs-validation-bio&quot; rows=&quot;3&quot;&#10;      required&gt;&lt;/textarea&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;mb-4&quot;&gt;&#10;    &lt;div class=&quot;form-check&quot;&gt;&#10;      &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;bs-validation-checkbox&quot; required /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;bs-validation-checkbox&quot;&gt;Agree to our terms and&#10;        conditions&lt;/label&gt;&#10;      &lt;div class=&quot;invalid-feedback&quot;&gt;You must agree before submitting.&lt;/div&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;mb-4&quot;&gt;&#10;    &lt;div class=&quot;form-check form-switch&quot;&gt;&#10;      &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;bootstrapValidationSwitch&quot; required /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;bootstrapValidationSwitch&quot;&gt;Send me related&#10;        emails&lt;/label&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;row&quot;&gt;&#10;    &lt;div class=&quot;col-12&quot;&gt;&#10;      &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Submit&lt;/button&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;&lt;/form&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="bs-val-js" role="tabpanel" aria-labelledby="bs-val-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre
+                      class="docs-code"><code class="js">// Flat pickr&#10;const flatPickrList = [].slice.call(document.querySelectorAll(&apos;.flatpickr-validation&apos;));&#10;if (flatPickrList) {&#10;  flatPickrList.forEach(flatPickr =&gt; {&#10;      flatPickr.flatpickr({&#10;          allowInput: true,&#10;          monthSelectorType: &apos;static&apos;&#10;      });&#10;  });&#10;}&#10;&#10;// Fetch all the forms we want to apply custom Bootstrap validation styles to&#10;const bsValidationForms = document.querySelectorAll(&apos;.needs-validation&apos;);&#10;&#10;// Loop over them and prevent submission&#10;Array.prototype.slice.call(bsValidationForms).forEach(function (form) {&#10;    form.addEventListener(&#10;    &apos;submit&apos;,&#10;        function (event) {&#10;            if (!form.checkValidity()) {&#10;                event.preventDefault();&#10;                event.stopPropagation();&#10;            } else {&#10;                // Submit your form&#10;                alert(&apos;Submitted!!!&apos;);&#10;      }&#10;&#10;            form.classList.add(&apos;was-validated&apos;);&#10;    },&#10;        false&#10;  );&#10;});</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /States -->
+
+            <hr class="my-12" />
+
+            <!-- Bootstrap Server Side -->
+            <div class="col-12">
+              <p class="anchor-heading fw-bold mt-12" id="bs-val-server-side">Server Side</p>
+              <p>We recommend using client-side validation, but in case you require server-side validation, you can indicate invalid and valid form fields with <code>.is-invalid</code> and <code>.is-valid</code> respectively. Note that <code>.invalid-feedback</code> is also supported with these classes.</p>
+              <div class="doc-example tour-example mt-4">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="bs-ss-preview-tab" data-bs-toggle="tab" data-bs-target="#bs-ss-preview" role="tab" aria-controls="bs-ss-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-ss-html-tab" data-bs-toggle="tab" data-bs-target="#bs-ss-html" role="tab" aria-controls="bs-ss-html" aria-selected="false"> HTML </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="bs-ss-preview" role="tabpanel" aria-labelledby="bs-ss-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <form class="needs-validation" novalidate>
+                          <div class="mb-4">
+                            <label class="form-label" for="bs-validation-server-name">Name</label>
+                            <input type="text" class="form-control is-valid" id="bs-validation-server-name" placeholder="John Doe" value="John Doe" required />
+                            <div class="valid-feedback">Looks good!</div>
+                          </div>
+                          <div class="mb-4">
+                            <label class="form-label" for="bs-validation-server-email">Email</label>
+                            <input type="email" id="bs-validation-server-email" class="form-control is-invalid" placeholder="john.doe" aria-label="john.doe" required />
+                            <div class="invalid-feedback">Please enter a valid email</div>
+                          </div>
+                          <div class="mb-4 form-password-toggle">
+                            <label class="form-label" for="bs-validation-server-password">Password</label>
+                            <input type="password" id="bs-validation-server-password" class="form-control is-invalid" placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" required />
+                            <div class="invalid-feedback">Please enter your password.</div>
+                          </div>
+                          <div class="mb-4">
+                            <label class="form-label" for="bs-validation-server-country">Country</label>
+                            <select class="form-select is-valid" id="bs-validation-server-country" required>
+                              <option value="">Select Country</option>
+                              <option value="usa">USA</option>
+                              <option value="uk" selected>UK</option>
+                              <option value="france">France</option>
+                              <option value="australia">Australia</option>
+                              <option value="spain">Spain</option>
+                            </select>
+                            <div class="valid-feedback">Looks good!</div>
+                          </div>
+                          <div class="mb-4">
+                            <label class="form-label" for="bs-validation-server-dob">DOB</label>
+                            <input type="text" class="form-control flatpickr-validation is-invalid" id="bs-validation-server-dob" required />
+                            <div class="invalid-feedback">Please Enter Your DOB</div>
+                          </div>
+                          <div class="mb-4">
+                            <label class="form-label" class="d-block form-label">Gender</label>
+                            <div class="form-check mb-2">
+                              <input type="radio" id="bs-validation-server-radio-male" name="bs-validation-server-radio" class="form-check-input is-invalid" required />
+                              <label class="form-check-label" for="bs-validation-server-radio-male">Male</label>
+                            </div>
+                            <div class="form-check">
+                              <input type="radio" id="bs-validation-server-radio-female" name="bs-validation-server-radio" class="form-check-input is-invalid" required />
+                              <label class="form-check-label" for="bs-validation-server-radio-female">Female</label>
+                            </div>
+                          </div>
+                          <div class="mb-4">
+                            <label class="form-label" class="form-label" for="bs-validation-server-bio">Bio</label>
+                            <textarea class="form-control is-valid" id="bs-validation-server-bio" name="validationBioBootstrap" rows="3" required>Something about me..</textarea>
+                          </div>
+                          <div class="mb-4">
+                            <div class="form-check">
+                              <input type="checkbox" class="form-check-input is-invalid" id="bs-validation-server-checkbox" required />
+                              <label class="form-check-label" for="bs-validation-server-checkbox">Agree to our terms and conditions</label>
+                              <div class="invalid-feedback">You must agree before submitting.</div>
+                            </div>
+                          </div>
+                          <div class="mb-4">
+                            <div class="form-check form-switch">
+                              <input type="checkbox" class="form-check-input is-valid" id="relatedEmailsSwitch" checked required />
+                              <label class="form-check-label" for="relatedEmailsSwitch">Send me related emails</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12">
+                              <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="bs-ss-html" role="tabpanel" aria-labelledby="bs-ss-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre
+                      class="docs-code"><code class="html">&#60;form class=&#34;needs-validation&#34; novalidate&#62;&#10;  &#60;div class=&#34;mb-3&#34;&#62;&#10;    &#60;label class=&#34;form-label&#34; for=&#34;bs-validation-server-name&#34;&#62;Name&#60;/label&#62;&#10;    &#60;input type=&#34;text&#34; class=&#34;form-control is-valid&#34; id=&#34;bs-validation-server-name&#34; placeholder=&#34;John Doe&#34; value=&#34;John Doe&#34; required /&#62;&#10;    &#60;div class=&#34;valid-feedback&#34;&#62;&#10;      Looks good!&#10;    &#60;/div&#62;&#10;  &#60;/div&#62;&#10;  &#60;div class=&#34;mb-3&#34;&#62;&#10;    &#60;label class=&#34;form-label&#34; for=&#34;bs-validation-server-email&#34;&#62;Email&#60;/label&#62;&#10;    &#60;input type=&#34;text&#34; id=&#34;bs-validation-server-email&#34; class=&#34;form-control is-invalid&#34; placeholder=&#34;john.doe&#34; aria-label=&#34;john.doe&#34; required /&#62;&#10;    &#60;div class=&#34;invalid-feedback&#34;&#62;&#10;      Please enter a valid email&#10;    &#60;/div&#62;&#10;  &#60;/div&#62;&#10;  &#60;div class=&#34;mb-3 form-password-toggle&#34;&#62;&#10;    &#60;label class=&#34;form-label&#34; for=&#34;bs-validation-server-password&#34;&#62;Password&#60;/label&#62;&#10;    &#60;input type=&#34;password&#34; id=&#34;bs-validation-server-password&#34; class=&#34;form-control is-invalid&#34; placeholder=&#34;&#38;#xb7;&#38;#xb7;&#38;#xb7;&#38;#xb7;&#38;#xb7;&#38;#xb7;&#38;#xb7;&#38;#xb7;&#38;#xb7;&#38;#xb7;&#38;#xb7;&#38;#xb7;&#34; required /&#62;&#10;    &#60;div class=&#34;invalid-feedback&#34;&#62;&#10;      Please enter your password.&#10;    &#60;/div&#62;&#10;  &#60;/div&#62;&#10;  &#60;div class=&#34;mb-3&#34;&#62;&#10;    &#60;label class=&#34;form-label&#34; for=&#34;bs-validation-server-country&#34;&#62;Country&#60;/label&#62;&#10;    &#60;select class=&#34;form-select is-valid&#34; id=&#34;bs-validation-server-country&#34; required&#62;&#10;      &#60;option value=&#34;&#34;&#62;Select Country&#60;/option&#62;&#10;      &#60;option value=&#34;usa&#34;&#62;USA&#60;/option&#62;&#10;      &#60;option value=&#34;uk&#34; selected&#62;UK&#60;/option&#62;&#10;      &#60;option value=&#34;france&#34;&#62;France&#60;/option&#62;&#10;      &#60;option value=&#34;australia&#34;&#62;Australia&#60;/option&#62;&#10;      &#60;option value=&#34;spain&#34;&#62;Spain&#60;/option&#62;&#10;    &#60;/select&#62;&#10;    &#60;div class=&#34;valid-feedback&#34;&#62;&#10;      Looks good!&#10;    &#60;/div&#62;&#10;  &#60;/div&#62;&#10;  &#60;div class=&#34;mb-3&#34;&#62;&#10;    &#60;label class=&#34;form-label&#34; for=&#34;bs-validation-server-dob&#34;&#62;DOB&#60;/label&#62;&#10;    &#60;input type=&#34;text&#34; class=&#34;form-control flatpickr-validation is-invalid&#34; id=&#34;bs-validation-server-dob&#34; required /&#62;&#10;    &#60;div class=&#34;invalid-feedback&#34;&#62;&#10;      Please Enter Your DOB&#10;    &#60;/div&#62;&#10;  &#60;/div&#62;&#10;  &#60;div class=&#34;mb-3&#34;&#62;&#10;    &#60;label class=&#34;form-label&#34; class=&#34;d-block form-label&#34;&#62;Gender&#60;/label&#62;&#10;    &#60;div class=&#34;form-check mb-2&#34;&#62;&#10;      &#60;input type=&#34;radio&#34; id=&#34;bs-validation-server-radio-male&#34; name=&#34;bs-validation-server-radio&#34; class=&#34;form-check-input is-invalid&#34; required /&#62;&#10;      &#60;label class=&#34;form-check-label&#34; for=&#34;bs-validation-server-radio-male&#34;&#62;Male&#60;/label&#62;&#10;    &#60;/div&#62;&#10;    &#60;div class=&#34;form-check&#34;&#62;&#10;      &#60;input type=&#34;radio&#34; id=&#34;bs-validation-server-radio-female&#34; name=&#34;bs-validation-server-radio&#34; class=&#34;form-check-input is-invalid&#34; required /&#62;&#10;      &#60;label class=&#34;form-check-label&#34; for=&#34;bs-validation-server-radio-female&#34;&#62;Female&#60;/label&#62;&#10;    &#60;/div&#62;&#10;  &#60;/div&#62;&#10;  &#60;div class=&#34;mb-3&#34;&#62;&#10;    &#60;label class=&#34;form-label&#34; class=&#34;form-label&#34; for=&#34;bs-validation-server-bio&#34;&#62;Bio&#60;/label&#62;&#10;    &#60;textarea class=&#34;form-control is-valid&#34; id=&#34;bs-validation-server-bio&#34; name=&#34;validationBioBootstrap&#34; rows=&#34;3&#34; required&#62;Something about me..&#60;/textarea&#62;&#10;  &#60;/div&#62;&#10;  &#60;div class=&#34;mb-3&#34;&#62;&#10;    &#60;div class=&#34;form-check&#34;&#62;&#10;      &#60;input type=&#34;checkbox&#34; class=&#34;form-check-input is-invalid&#34; id=&#34;bs-validation-server-checkbox&#34; required /&#62;&#10;      &#60;label class=&#34;form-check-label&#34; for=&#34;bs-validation-server-checkbox&#34;&#62;Agree to our terms and conditions&#60;/label&#62;&#10;      &#60;div class=&#34;invalid-feedback&#34;&#62;&#10;        You must agree before submitting.&#10;      &#60;/div&#62;&#10;    &#60;/div&#62;&#10;  &#60;/div&#62;&#10;  &#60;div class=&#34;mb-3&#34;&#62;&#10;    &#60;div class=&#34;form-check form-switch&#34;&#62;&#10;      &#60;input type=&#34;checkbox&#34; class=&#34;form-check-input is-valid&#34; id=&#34;relatedEmailsSwitch&#34; checked required /&#62;&#10;      &#60;label class=&#34;form-check-label&#34; for=&#34;relatedEmailsSwitch&#34;&#62;Send me related emails&#60;/label&#62;&#10;    &#60;/div&#62;&#10;  &#60;/div&#62;&#10;  &#60;div class=&#34;row&#34;&#62;&#10;    &#60;div class=&#34;col-12&#34;&#62;&#10;      &#60;button type=&#34;submit&#34; class=&#34;btn btn-primary&#34;&#62;Submit&#60;/button&#62;&#10;    &#60;/div&#62;&#10;  &#60;/div&#62;&#10;&#60;/form&#62;</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Bootstrap Server Side -->
+
+            <hr class="my-12" />
+
+            <!-- Bootstrap Tooltip -->
+            <div class="col-12">
+              <p class="anchor-heading fw-bold mt-12" id="bs-val-tooltip">Tooltip</p>
+              <p>If your form layout allows it, you can swap the <code>.{valid|invalid}-feedback</code> classes for <code>.{valid|invalid}-tooltip</code> classes to display validation feedback in a styled tooltip. Be sure to have a parent with <code>position: relative</code> on it for tooltip positioning.</p>
+              <div class="doc-example tour-example mt-4">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="bs-tooltip-preview-tab" data-bs-toggle="tab" data-bs-target="#bs-tooltip-preview" role="tab" aria-controls="bs-tooltip-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-tooltip-html-tab" data-bs-toggle="tab" data-bs-target="#bs-tooltip-html" role="tab" aria-controls="bs-tooltip-html" aria-selected="false"> HTML </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="bs-tooltip-preview" role="tabpanel" aria-labelledby="bs-tooltip-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <form class="needs-validation" novalidate>
+                          <div class="position-relative mb-12">
+                            <label class="form-label" for="bs-validation-tooltip-name">Name</label>
+                            <input type="text" class="form-control is-valid" id="bs-validation-tooltip-name" placeholder="John Doe" value="John Doe" required />
+                            <div class="valid-tooltip">Looks good!</div>
+                          </div>
+                          <div class="position-relative mb-12">
+                            <label class="form-label" for="bs-validation-tooltip-email">Email</label>
+                            <input type="email" id="bs-validation-tooltip-email" class="form-control is-invalid" placeholder="john.doe" aria-label="john.doe" required />
+                            <div class="invalid-tooltip">Please enter a valid email</div>
+                          </div>
+                          <div class="position-relative mb-12 form-password-toggle">
+                            <label class="form-label" for="bs-validation-tooltip-password">Password</label>
+                            <input type="password" id="bs-validation-tooltip-password" class="form-control is-invalid" placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" required />
+                            <div class="invalid-tooltip">Please enter your password.</div>
+                          </div>
+                          <div class="position-relative mb-12">
+                            <label class="form-label" for="bs-validation-tooltip-country">Country</label>
+                            <select class="form-select is-valid" id="bs-validation-tooltip-country" required>
+                              <option value="">Select Country</option>
+                              <option value="usa">USA</option>
+                              <option value="uk" selected>UK</option>
+                              <option value="france">France</option>
+                              <option value="australia">Australia</option>
+                              <option value="spain">Spain</option>
+                            </select>
+                            <div class="valid-tooltip">Looks good!</div>
+                          </div>
+                          <div class="position-relative mb-12">
+                            <label class="form-label" for="bs-validation-tooltip-dob">DOB</label>
+                            <input type="text" class="form-control flatpickr-validation is-invalid" id="bs-validation-tooltip-dob" required />
+                            <div class="invalid-tooltip">Please Enter Your DOB</div>
+                          </div>
+                          <div class="position-relative mb-12">
+                            <label class="form-label" for="bs-validation-tooltip-bio">Bio</label>
+                            <textarea class="form-control is-valid" id="bs-validation-tooltip-bio" name="bs-validation-tooltip-bio" rows="3" required>Something about me..</textarea>
+                            <div class="valid-tooltip">Looks Good</div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12">
+                              <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="bs-tooltip-html" role="tabpanel" aria-labelledby="bs-tooltip-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre
+                      class="docs-code"><code class="html">&lt;form class=&quot;needs-validation&quot; novalidate&gt;&#10;  &lt;div class=&quot;position-relative mb-12&quot;&gt;&#10;    &lt;label class=&quot;form-label&quot; for=&quot;bs-validation-tooltip-name&quot;&gt;Name&lt;/label&gt;&#10;    &lt;input type=&quot;text&quot; class=&quot;form-control is-valid&quot; id=&quot;bs-validation-tooltip-name&quot; placeholder=&quot;John Doe&quot; value=&quot;John Doe&quot; required /&gt;&#10;    &lt;div class=&quot;valid-tooltip&quot;&gt;&#10;      Looks good!&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;position-relative mb-12&quot;&gt;&#10;    &lt;label class=&quot;form-label&quot; for=&quot;bs-validation-tooltip-email&quot;&gt;Email&lt;/label&gt;&#10;    &lt;input type=&quot;text&quot; id=&quot;bs-validation-tooltip-email&quot; class=&quot;form-control is-invalid&quot; placeholder=&quot;john.doe&quot; aria-label=&quot;john.doe&quot; required /&gt;&#10;    &lt;div class=&quot;invalid-tooltip&quot;&gt;&#10;      Please enter a valid email&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;position-relative mb-12 form-password-toggle&quot;&gt;&#10;    &lt;label class=&quot;form-label&quot; for=&quot;bs-validation-tooltip-password&quot;&gt;Password&lt;/label&gt;&#10;    &lt;input type=&quot;password&quot; id=&quot;bs-validation-tooltip-password&quot; class=&quot;form-control is-invalid&quot; placeholder=&quot;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&quot; required /&gt;&#10;    &lt;div class=&quot;invalid-tooltip&quot;&gt;&#10;      Please enter your password.&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;position-relative mb-12&quot;&gt;&#10;    &lt;label class=&quot;form-label&quot; for=&quot;bs-validation-tooltip-country&quot;&gt;Country&lt;/label&gt;&#10;    &lt;select class=&quot;form-select is-valid&quot; id=&quot;bs-validation-tooltip-country&quot; required&gt;&#10;      &lt;option value=&quot;&quot;&gt;Select Country&lt;/option&gt;&#10;      &lt;option value=&quot;usa&quot;&gt;USA&lt;/option&gt;&#10;      &lt;option value=&quot;uk&quot; selected&gt;UK&lt;/option&gt;&#10;      &lt;option value=&quot;france&quot;&gt;France&lt;/option&gt;&#10;      &lt;option value=&quot;australia&quot;&gt;Australia&lt;/option&gt;&#10;      &lt;option value=&quot;spain&quot;&gt;Spain&lt;/option&gt;&#10;    &lt;/select&gt;&#10;    &lt;div class=&quot;valid-tooltip&quot;&gt;&#10;      Looks good!&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;position-relative mb-12&quot;&gt;&#10;    &lt;label class=&quot;form-label&quot; for=&quot;bs-validation-tooltip-dob&quot;&gt;DOB&lt;/label&gt;&#10;    &lt;input type=&quot;text&quot; class=&quot;form-control flatpickr-validation is-invalid&quot; id=&quot;bs-validation-tooltip-dob&quot; required /&gt;&#10;    &lt;div class=&quot;invalid-tooltip&quot;&gt;&#10;      Please Enter Your DOB&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;position-relative mb-12&quot;&gt;&#10;    &lt;label class=&quot;form-label&quot; for=&quot;bs-validation-tooltip-bio&quot;&gt;Bio&lt;/label&gt;&#10;    &lt;textarea class=&quot;form-control is-valid&quot; id=&quot;bs-validation-tooltip-bio&quot; name=&quot;bs-validation-tooltip-bio&quot; rows=&quot;3&quot; required&gt;Something about me..&lt;/textarea&gt;&#10;    &lt;div class=&quot;valid-tooltip&quot;&gt;&#10;      Looks Good&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;row&quot;&gt;&#10;    &lt;div class=&quot;col-12&quot;&gt;&#10;      &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Submit&lt;/button&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;&lt;/form&gt;</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /Bootstrap Tooltip -->
+          </div>
+        </div>
+      </div>
+      <!-- /Bootstrap Validation -->
+
+      <hr class="my-12" />
+
+      <!-- Form Validation Basic-->
+      <div class="row">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12">
+              <h4 id="form-validation" class="anchor-heading fw-bold">FormValidation</h4>
+            </div>
+            <!-- Usage -->
+            <div class="col-12">
+              <p>
+                The all new<a href="https://formvalidation.io/" target="_blank" rel="noopener noreferrer"> FormValidation</a>
+                a validation library for JavaScript with zero dependencies. FormValidation is the primary validation library for this template, used in pages, apps & other forms.
+              </p>
+              <div class="alert alert-primary" role="alert"><strong>Info:</strong> This is is premium package worth ~$50. We have purchased Organization license, so that you don't need to purchase it again</div>
+
+              <p class="anchor-heading fw-bold mt-6" id="form-val-features">Features</p>
+              <ul>
+                <li><a href="https://formvalidation.io/guide/validators/" target="_blank" rel="nofollow noopener noreferrer">Rich set of validators</a>: Provides build in a rich set of validators to cover most various types of form field.</li>
+                <li><a href="https://formvalidation.io/guide/plugins" target="_blank" rel="nofollow noopener noreferrer">Plugin architecture</a>: Plugin based architecture, the library has really small core. Everything else is built around as a plugin.</li>
+                <li><a href="https://formvalidation.io/guide/examples" target="_blank" rel="nofollow noopener noreferrer">Compatible with JavaScript frameworks</a>: FormValidation can be used with popular JavaScript frameworks such as React, Preact, Vue, Svelte, etc.</li>
+                <li><a href="https://formvalidation.io/guide/examples" target="_blank" rel="nofollow noopener noreferrer">Integrate with UI libraries</a>: FormValidation plays nicely with other libraries. It has useful APIs to integrate with another libraries.</li>
+              </ul>
+
+              <p class="anchor-heading fw-bold mt-6" id="form-val-usage">Usage</p>
+
+              <p>In order to use FormValidation on your page, It is required to include the following vendors css in the "Vendors CSS" area from the page's header:</p>
+              <p>
+                For more details on usage please refer formValidation's
+                <a href="https://formvalidation.io/guide/getting-started/usage" target="_blank" rel="nofollow noopener noreferrer">getting started guide</a>.
+              </p>
+              <div class="alert alert-primary" role="alert">
+                <p><strong>Tips:</strong> Following are the helpful articles in order to use this plugin</p>
+
+                <ul>
+                  <li>
+                    <a href="https://formvalidation.io/guide/plugins/bootstrap5/" target="_blank" rel="nofollow noopener noreferrer">Integrate with Bootstrap 5 framework.</a>
+                  </li>
+                  <li>
+                    <a href="https://formvalidation.io/guide/examples/can-not-submit-form-after-validation/" target="_blank" rel="nofollow noopener noreferrer">Can not submit form after validation? </a>
+                  </li>
+                  <li>
+                    <a href="https://formvalidation.io/guide/examples/using-ajax-to-submit-the-form/" target="_blank" rel="nofollow noopener noreferrer">Using Ajax to submit the form</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="alert alert-primary" role="alert">
+                <p><strong>FAQ:</strong> Uncaught TypeError: Cannot read property 'classList' of null</p>
+                <p>
+                  Make sure you structure form accordingly or define <code>rowSelector</code>. The rowSelector option will be used to help the plugin determine the field containers. Default <code>rowSelector</code> for this plugin is <code>.row</code>. Refer
+                  <a href="https://formvalidation.io/guide/plugins/bootstrap5/" target="_blank" rel="nofollow noopener noreferrer">Integrate with Bootstrap 5 framework.</a>
+                  for more details.
+                </p>
+              </div>
+
+              <div class="doc-example css-code">
+                <div class="doc-example-content" data-label="Code">
+                  <div class="doc-clipboard">
+                    <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                  </div>
+                  <pre class="docs-code"><code class="html">&lt;link rel=&quot;stylesheet&quot; href=&quot;../../assets//vendor/libs/@form-validation/form-validation.css&quot; /&gt;</code></pre>
+                </div>
+              </div>
+              <p class="mt-6">Include the following vendors script in the "Vendors JS" area from the page's footer:</p>
+              <div class="doc-example js-code">
+                <div class="doc-example-content" data-label="Code">
+                  <div class="doc-clipboard">
+                    <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                  </div>
+                  <pre class="docs-code"><code class="html">&lt;script src=&quot;../../assets//vendor/libs/@form-validation/popular.js&quot;&gt;&lt;/script&gt;&#10;&lt;script src=&quot;../../assets//vendor/libs/@form-validation/bootstrap5.js&quot;&gt;&lt;/script&gt;&#10;&lt;!-- AutoFocus plugin, automatically focus on the first invalid input  --&gt;&#10;&lt;script src=&quot;../../assets//vendor/libs/@form-validation/auto-focus.js&quot;&gt;&lt;/script&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+            <!-- /Usage -->
+
+            <hr class="my-12" />
+
+            <!-- FormValidation Example-->
+            <div class="col-12">
+              <p class="anchor-heading fw-bold mt-12" id="form-val-ex">Example</p>
+              <p>
+                In this example, we've tried to cover as many form inputs as we can. Though If we've miss any third party libraries, then refer
+                <a href="https://formvalidation.io/guide/examples/integrating-with-3rd-party-libraries/" target="_blank" rel="noopener noreferrer"><strong>Integrating with 3rd party libraries</strong></a
+                >.
+              </p>
+              <div class="doc-example tour-example mt-4">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="form-val-preview-tab" data-bs-toggle="tab" data-bs-target="#form-val-preview" role="tab" aria-controls="form-val-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="form-val-html-tab" data-bs-toggle="tab" data-bs-target="#form-val-html" role="tab" aria-controls="form-val-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="form-val-js-tab" data-bs-toggle="tab" data-bs-target="#form-val-js" role="tab" aria-controls="form-val-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="form-val-preview" role="tabpanel" aria-labelledby="form-val-preview-tab">
+                    <form id="formValidationExamples" class="row g-3">
+                      <!-- Account Details -->
+
+                      <div class="col-12">
+                        <h6>1. Account Details</h6>
+                        <hr class="mt-0" />
+                      </div>
+
+                      <div class="col-md-6 form-control-validation">
+                        <label class="form-label" for="formValidationName">Full Name</label>
+                        <input type="text" id="formValidationName" class="form-control" placeholder="John Doe" name="formValidationName" />
+                      </div>
+                      <div class="col-md-6 form-control-validation">
+                        <label class="form-label" for="formValidationEmail">Email</label>
+                        <input class="form-control" type="email" id="formValidationEmail" name="formValidationEmail" placeholder="john.doe" />
+                      </div>
+
+                      <div class="col-md-6 form-control-validation">
+                        <div class="form-password-toggle">
+                          <label class="form-label" for="formValidationPass">Password</label>
+                          <div class="input-group input-group-merge">
+                            <input class="form-control" type="password" id="formValidationPass" name="formValidationPass" placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" aria-describedby="multicol-password2" />
+                            <span class="input-group-text cursor-pointer" id="multicol-password2"><i class="icon-base ti tabler-eye-off"></i></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 form-control-validation">
+                        <div class="form-password-toggle">
+                          <label class="form-label" for="formValidationConfirmPass">Confirm Password</label>
+                          <div class="input-group input-group-merge">
+                            <input class="form-control" type="password" id="formValidationConfirmPass" name="formValidationConfirmPass" placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" aria-describedby="multicol-confirm-password2" />
+                            <span class="input-group-text cursor-pointer" id="multicol-confirm-password2"><i class="icon-base ti tabler-eye-off"></i></span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Personal Info -->
+
+                      <div class="col-12">
+                        <h6 class="mt-2">2. Personal Info</h6>
+                        <hr class="mt-0" />
+                      </div>
+
+                      <div class="col-md-6 form-control-validation">
+                        <label for="formValidationFile" class="form-label">Profile Pic</label>
+                        <input class="form-control" type="file" id="formValidationFile" name="formValidationFile" />
+                      </div>
+                      <div class="col-md-6 form-control-validation">
+                        <label class="form-label" for="formValidationDob">DOB</label>
+                        <input type="text" class="form-control flatpickr-validation" name="formValidationDob" id="formValidationDob" required />
+                      </div>
+
+                      <div class="col-md-6 form-control-validation">
+                        <label class="form-label" for="formValidationSelect2">Country</label>
+                        <select id="formValidationSelect2" name="formValidationSelect2" class="form-select select2" data-allow-clear="true">
+                          <option value="">Select</option>
+                          <option value="Australia">Australia</option>
+                          <option value="Bangladesh">Bangladesh</option>
+                          <option value="Belarus">Belarus</option>
+                          <option value="Brazil">Brazil</option>
+                          <option value="Canada">Canada</option>
+                          <option value="China">China</option>
+                          <option value="France">France</option>
+                          <option value="Germany">Germany</option>
+                          <option value="India">India</option>
+                          <option value="Indonesia">Indonesia</option>
+                          <option value="Israel">Israel</option>
+                          <option value="Italy">Italy</option>
+                          <option value="Japan">Japan</option>
+                          <option value="Korea">Korea, Republic of</option>
+                          <option value="Mexico">Mexico</option>
+                          <option value="Philippines">Philippines</option>
+                          <option value="Russia">Russian Federation</option>
+                          <option value="South Africa">South Africa</option>
+                          <option value="Thailand">Thailand</option>
+                          <option value="Turkey">Turkey</option>
+                          <option value="Ukraine">Ukraine</option>
+                          <option value="United Arab Emirates">United Arab Emirates</option>
+                          <option value="United Kingdom">United Kingdom</option>
+                          <option value="United States">United States</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6 form-control-validation">
+                        <label class="form-label" for="formValidationLang">Languages</label>
+                        <input type="text" value="" class="form-control" name="formValidationLang" id="formValidationLang" />
+                      </div>
+
+                      <div class="col-md-6 form-control-validation">
+                        <label class="form-label" for="formValidationTech">Tech</label>
+                        <input class="form-control typeahead" type="text" id="formValidationTech" name="formValidationTech" autocomplete="off" />
+                      </div>
+                      <div class="col-md-6 form-control-validation">
+                        <label class="form-label" for="formValidationHobbies">Hobbies</label>
+                        <select class="selectpicker hobbies-select w-100" id="formValidationHobbies" data-style="btn-default" data-icon-base="icon-base bx" data-tick-icon="bx-check text-primary" name="formValidationHobbies" multiple>
+                          <option>Sports</option>
+                          <option>Movies</option>
+                          <option>Books</option>
+                        </select>
+                      </div>
+
+                      <div class="col-md-6 form-control-validation">
+                        <label class="form-label" for="formValidationBio">Bio</label>
+                        <textarea class="form-control" id="formValidationBio" name="formValidationBio" rows="3"></textarea>
+                      </div>
+                      <div class="col-md-6 form-control-validation">
+                        <label class="form-label">Gender</label>
+                        <div class="form-check custom mb-2">
+                          <input type="radio" id="formValidationGender" name="formValidationGender" class="form-check-input" checked />
+                          <label class="form-check-label" for="formValidationGender">Male</label>
+                        </div>
+
+                        <div class="form-check custom">
+                          <input type="radio" id="formValidationGender2" name="formValidationGender" class="form-check-input" />
+                          <label class="form-check-label" for="formValidationGender2">Female</label>
+                        </div>
+                      </div>
+
+                      <!-- Choose Your Plan -->
+
+                      <div class="col-12">
+                        <h6 class="mt-2">3. Choose Your Plan</h6>
+                        <hr class="mt-0" />
+                      </div>
+                      <div class="row gy-3 mt-0">
+                        <div class="col-xl-3 col-md-5 col-sm-6 col-12 form-control-validation">
+                          <div class="form-check custom-option custom-option-icon">
+                            <label class="form-check-label custom-option-content" for="basicPlanMain1">
+                              <span class="custom-option-body">
+                                <i class="icon-base ti tabler-rocket"></i>
+                                <span class="custom-option-title"> Starter </span>
+                                <small> Get 5gb of space and 1 team member. </small>
+                              </span>
+                              <input name="formValidationPlan" class="form-check-input" type="radio" value="" id="basicPlanMain1" checked />
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-xl-3 col-md-5 col-sm-6 col-12 form-control-validation">
+                          <div class="form-check custom-option custom-option-icon">
+                            <label class="form-check-label custom-option-content" for="basicPlanMain2">
+                              <span class="custom-option-body">
+                                <i class="icon-base ti tabler-user"></i>
+                                <span class="custom-option-title"> Personal </span>
+                                <small> Get 15gb of space and 5 team member. </small>
+                              </span>
+                              <input name="formValidationPlan" class="form-check-input" type="radio" value="" id="basicPlanMain2" />
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-xl-3 col-md-5 col-sm-6 col-12 form-control-validation">
+                          <div class="form-check custom-option custom-option-icon">
+                            <label class="form-check-label custom-option-content" for="basicPlanMain3">
+                              <span class="custom-option-body">
+                                <i class="icon-base ti tabler-crown"></i>
+                                <span class="custom-option-title"> Premium </span>
+                                <small> Get 25gb of space and 15 members. </small>
+                              </span>
+                              <input name="formValidationPlan" class="form-check-input" type="radio" value="" id="basicPlanMain3" />
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-12 form-control-validation">
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" id="formValidationSwitch" name="formValidationSwitch" required />
+                          <label class="form-check-label" for="formValidationSwitch">Send me related emails</label>
+                        </div>
+                      </div>
+                      <div class="col-12 form-control-validation">
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="formValidationCheckbox" name="formValidationCheckbox" />
+                          <label class="form-check-label" for="formValidationCheckbox">Agree to our terms and conditions</label>
+                        </div>
+                      </div>
+                      <div class="col-12 form-control-validation">
+                        <button type="submit" name="submitButton" class="btn btn-primary">Submit</button>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="tab-pane fade" id="form-val-html" role="tabpanel" aria-labelledby="form-val-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre
+                      class="docs-code"><code class="html">&lt;form id=&quot;formValidationExamples&quot; class=&quot;row g-3&quot;&gt;&#10;  &lt;!-- Account Details --&gt;&#10;&#10;  &lt;div class=&quot;col-12&quot;&gt;&#10;    &lt;h6&gt;1. Account Details&lt;/h6&gt;&#10;    &lt;hr class=&quot;mt-0&quot; /&gt;&#10;  &lt;/div&gt;&#10;&#10;  &lt;div class=&quot;col-md-6 form-control-validation&quot;&gt;&#10;    &lt;label class=&quot;form-label&quot; for=&quot;formValidationName&quot;&gt;Full Name&lt;/label&gt;&#10;    &lt;input type=&quot;text&quot; id=&quot;formValidationName&quot; class=&quot;form-control&quot; placeholder=&quot;John Doe&quot; name=&quot;formValidationName&quot; /&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;col-md-6 form-control-validation&quot;&gt;&#10;    &lt;label class=&quot;form-label&quot; for=&quot;formValidationEmail&quot;&gt;Email&lt;/label&gt;&#10;    &lt;input class=&quot;form-control&quot; type=&quot;email&quot; id=&quot;formValidationEmail&quot; name=&quot;formValidationEmail&quot; placeholder=&quot;john.doe&quot; /&gt;&#10;  &lt;/div&gt;&#10;&#10;  &lt;div class=&quot;col-md-6 form-control-validation&quot;&gt;&#10;    &lt;div class=&quot;form-password-toggle&quot;&gt;&#10;      &lt;label class=&quot;form-label&quot; for=&quot;formValidationPass&quot;&gt;Password&lt;/label&gt;&#10;      &lt;div class=&quot;input-group input-group-merge&quot;&gt;&#10;        &lt;input class=&quot;form-control&quot; type=&quot;password&quot; id=&quot;formValidationPass&quot; name=&quot;formValidationPass&quot; placeholder=&quot;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&quot; aria-describedby=&quot;multicol-password2&quot; /&gt;&#10;        &lt;span class=&quot;input-group-text cursor-pointer&quot; id=&quot;multicol-password2&quot;&gt;&lt;i class=&quot;icon-base ti tabler-eye-off&quot;&gt;&lt;/i&gt;&lt;/span&gt;&#10;      &lt;/div&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;col-md-6 form-control-validation&quot;&gt;&#10;    &lt;div class=&quot;form-password-toggle&quot;&gt;&#10;      &lt;label class=&quot;form-label&quot; for=&quot;formValidationConfirmPass&quot;&gt;Confirm Password&lt;/label&gt;&#10;      &lt;div class=&quot;input-group input-group-merge&quot;&gt;&#10;        &lt;input class=&quot;form-control&quot; type=&quot;password&quot; id=&quot;formValidationConfirmPass&quot; name=&quot;formValidationConfirmPass&quot; placeholder=&quot;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&quot; aria-describedby=&quot;multicol-confirm-password2&quot; /&gt;&#10;        &lt;span class=&quot;input-group-text cursor-pointer&quot; id=&quot;multicol-confirm-password2&quot;&gt;&lt;i class=&quot;icon-base ti tabler-eye-off&quot;&gt;&lt;/i&gt;&lt;/span&gt;&#10;      &lt;/div&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;&#10;  &lt;!-- Personal Info --&gt;&#10;&#10;  &lt;div class=&quot;col-12&quot;&gt;&#10;    &lt;h6 class=&quot;mt-2&quot;&gt;2. Personal Info&lt;/h6&gt;&#10;    &lt;hr class=&quot;mt-0&quot; /&gt;&#10;  &lt;/div&gt;&#10;&#10;  &lt;div class=&quot;col-md-6 form-control-validation&quot;&gt;&#10;    &lt;label for=&quot;formValidationFile&quot; class=&quot;form-label&quot;&gt;Profile Pic&lt;/label&gt;&#10;    &lt;input class=&quot;form-control&quot; type=&quot;file&quot; id=&quot;formValidationFile&quot; name=&quot;formValidationFile&quot; /&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;col-md-6 form-control-validation&quot;&gt;&#10;    &lt;label class=&quot;form-label&quot; for=&quot;formValidationDob&quot;&gt;DOB&lt;/label&gt;&#10;    &lt;input type=&quot;text&quot; class=&quot;form-control flatpickr-validation&quot; name=&quot;formValidationDob&quot; id=&quot;formValidationDob&quot; required /&gt;&#10;  &lt;/div&gt;&#10;&#10;  &lt;div class=&quot;col-md-6 form-control-validation&quot;&gt;&#10;    &lt;label class=&quot;form-label&quot; for=&quot;formValidationSelect2&quot;&gt;Country&lt;/label&gt;&#10;    &lt;select id=&quot;formValidationSelect2&quot; name=&quot;formValidationSelect2&quot; class=&quot;form-select select2&quot; data-allow-clear=&quot;true&quot;&gt;&#10;      &lt;option value=&quot;&quot;&gt;Select&lt;/option&gt;&#10;      &lt;option value=&quot;Australia&quot;&gt;Australia&lt;/option&gt;&#10;      &lt;option value=&quot;Bangladesh&quot;&gt;Bangladesh&lt;/option&gt;&#10;      &lt;option value=&quot;Belarus&quot;&gt;Belarus&lt;/option&gt;&#10;      &lt;option value=&quot;Brazil&quot;&gt;Brazil&lt;/option&gt;&#10;      &lt;option value=&quot;Canada&quot;&gt;Canada&lt;/option&gt;&#10;      &lt;option value=&quot;China&quot;&gt;China&lt;/option&gt;&#10;      &lt;option value=&quot;France&quot;&gt;France&lt;/option&gt;&#10;      &lt;option value=&quot;Germany&quot;&gt;Germany&lt;/option&gt;&#10;      &lt;option value=&quot;India&quot;&gt;India&lt;/option&gt;&#10;      &lt;option value=&quot;Indonesia&quot;&gt;Indonesia&lt;/option&gt;&#10;      &lt;option value=&quot;Israel&quot;&gt;Israel&lt;/option&gt;&#10;      &lt;option value=&quot;Italy&quot;&gt;Italy&lt;/option&gt;&#10;      &lt;option value=&quot;Japan&quot;&gt;Japan&lt;/option&gt;&#10;      &lt;option value=&quot;Korea&quot;&gt;Korea, Republic of&lt;/option&gt;&#10;      &lt;option value=&quot;Mexico&quot;&gt;Mexico&lt;/option&gt;&#10;      &lt;option value=&quot;Philippines&quot;&gt;Philippines&lt;/option&gt;&#10;      &lt;option value=&quot;Russia&quot;&gt;Russian Federation&lt;/option&gt;&#10;      &lt;option value=&quot;South Africa&quot;&gt;South Africa&lt;/option&gt;&#10;      &lt;option value=&quot;Thailand&quot;&gt;Thailand&lt;/option&gt;&#10;      &lt;option value=&quot;Turkey&quot;&gt;Turkey&lt;/option&gt;&#10;      &lt;option value=&quot;Ukraine&quot;&gt;Ukraine&lt;/option&gt;&#10;      &lt;option value=&quot;United Arab Emirates&quot;&gt;United Arab Emirates&lt;/option&gt;&#10;      &lt;option value=&quot;United Kingdom&quot;&gt;United Kingdom&lt;/option&gt;&#10;      &lt;option value=&quot;United States&quot;&gt;United States&lt;/option&gt;&#10;    &lt;/select&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;col-md-6 form-control-validation&quot;&gt;&#10;    &lt;label class=&quot;form-label&quot; for=&quot;formValidationLang&quot;&gt;Languages&lt;/label&gt;&#10;    &lt;input type=&quot;text&quot; value=&quot;&quot; class=&quot;form-control&quot; name=&quot;formValidationLang&quot; id=&quot;formValidationLang&quot; /&gt;&#10;  &lt;/div&gt;&#10;&#10;  &lt;div class=&quot;col-md-6 form-control-validation&quot;&gt;&#10;    &lt;label class=&quot;form-label&quot; for=&quot;formValidationTech&quot;&gt;Tech&lt;/label&gt;&#10;    &lt;input class=&quot;form-control typeahead&quot; type=&quot;text&quot; id=&quot;formValidationTech&quot; name=&quot;formValidationTech&quot; autocomplete=&quot;off&quot; /&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;col-md-6 form-control-validation&quot;&gt;&#10;    &lt;label class=&quot;form-label&quot; for=&quot;formValidationHobbies&quot;&gt;Hobbies&lt;/label&gt;&#10;    &lt;select class=&quot;selectpicker hobbies-select w-100&quot; id=&quot;formValidationHobbies&quot; data-style=&quot;btn-default&quot; data-icon-base=&quot;icon-base bx&quot; data-tick-icon=&quot;bx-check text-primary&quot; name=&quot;formValidationHobbies&quot; multiple&gt;&#10;      &lt;option&gt;Sports&lt;/option&gt;&#10;      &lt;option&gt;Movies&lt;/option&gt;&#10;      &lt;option&gt;Books&lt;/option&gt;&#10;    &lt;/select&gt;&#10;  &lt;/div&gt;&#10;&#10;  &lt;div class=&quot;col-md-6 form-control-validation&quot;&gt;&#10;    &lt;label class=&quot;form-label&quot; for=&quot;formValidationBio&quot;&gt;Bio&lt;/label&gt;&#10;    &lt;textarea class=&quot;form-control&quot; id=&quot;formValidationBio&quot; name=&quot;formValidationBio&quot; rows=&quot;3&quot;&gt;&lt;/textarea&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;col-md-6 form-control-validation&quot;&gt;&#10;    &lt;label class=&quot;form-label&quot;&gt;Gender&lt;/label&gt;&#10;    &lt;div class=&quot;form-check custom mb-2&quot;&gt;&#10;      &lt;input type=&quot;radio&quot; id=&quot;formValidationGender&quot; name=&quot;formValidationGender&quot; class=&quot;form-check-input&quot; checked /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;formValidationGender&quot;&gt;Male&lt;/label&gt;&#10;    &lt;/div&gt;&#10;&#10;    &lt;div class=&quot;form-check custom&quot;&gt;&#10;      &lt;input type=&quot;radio&quot; id=&quot;formValidationGender2&quot; name=&quot;formValidationGender&quot; class=&quot;form-check-input&quot; /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;formValidationGender2&quot;&gt;Female&lt;/label&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;&#10;  &lt;!-- Choose Your Plan --&gt;&#10;&#10;  &lt;div class=&quot;col-12&quot;&gt;&#10;    &lt;h6 class=&quot;mt-2&quot;&gt;3. Choose Your Plan&lt;/h6&gt;&#10;    &lt;hr class=&quot;mt-0&quot; /&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;row gy-3 mt-0&quot;&gt;&#10;    &lt;div class=&quot;col-xl-3 col-md-5 col-sm-6 col-12 form-control-validation&quot;&gt;&#10;      &lt;div class=&quot;form-check custom-option custom-option-icon&quot;&gt;&#10;        &lt;label class=&quot;form-check-label custom-option-content&quot; for=&quot;basicPlanMain1&quot;&gt;&#10;          &lt;span class=&quot;custom-option-body&quot;&gt;&#10;            &lt;i class=&quot;icon-base ti tabler-rocket&quot;&gt;&lt;/i&gt;&#10;            &lt;span class=&quot;custom-option-title&quot;&gt; Starter &lt;/span&gt;&#10;            &lt;small&gt; Get 5gb of space and 1 team member. &lt;/small&gt;&#10;          &lt;/span&gt;&#10;          &lt;input name=&quot;formValidationPlan&quot; class=&quot;form-check-input&quot; type=&quot;radio&quot; value=&quot;&quot; id=&quot;basicPlanMain1&quot; checked /&gt;&#10;        &lt;/label&gt;&#10;      &lt;/div&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;col-xl-3 col-md-5 col-sm-6 col-12 form-control-validation&quot;&gt;&#10;      &lt;div class=&quot;form-check custom-option custom-option-icon&quot;&gt;&#10;        &lt;label class=&quot;form-check-label custom-option-content&quot; for=&quot;basicPlanMain2&quot;&gt;&#10;          &lt;span class=&quot;custom-option-body&quot;&gt;&#10;            &lt;i class=&quot;icon-base ti tabler-user&quot;&gt;&lt;/i&gt;&#10;            &lt;span class=&quot;custom-option-title&quot;&gt; Personal &lt;/span&gt;&#10;            &lt;small&gt; Get 15gb of space and 5 team member. &lt;/small&gt;&#10;          &lt;/span&gt;&#10;          &lt;input name=&quot;formValidationPlan&quot; class=&quot;form-check-input&quot; type=&quot;radio&quot; value=&quot;&quot; id=&quot;basicPlanMain2&quot; /&gt;&#10;        &lt;/label&gt;&#10;      &lt;/div&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;col-xl-3 col-md-5 col-sm-6 col-12 form-control-validation&quot;&gt;&#10;      &lt;div class=&quot;form-check custom-option custom-option-icon&quot;&gt;&#10;        &lt;label class=&quot;form-check-label custom-option-content&quot; for=&quot;basicPlanMain3&quot;&gt;&#10;          &lt;span class=&quot;custom-option-body&quot;&gt;&#10;            &lt;i class=&quot;icon-base ti tabler-crown&quot;&gt;&lt;/i&gt;&#10;            &lt;span class=&quot;custom-option-title&quot;&gt; Premium &lt;/span&gt;&#10;            &lt;small&gt; Get 25gb of space and 15 members. &lt;/small&gt;&#10;          &lt;/span&gt;&#10;          &lt;input name=&quot;formValidationPlan&quot; class=&quot;form-check-input&quot; type=&quot;radio&quot; value=&quot;&quot; id=&quot;basicPlanMain3&quot; /&gt;&#10;        &lt;/label&gt;&#10;      &lt;/div&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;&#10;  &lt;div class=&quot;col-12 form-control-validation&quot;&gt;&#10;    &lt;div class=&quot;form-check form-switch&quot;&gt;&#10;      &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;formValidationSwitch&quot; name=&quot;formValidationSwitch&quot; required /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;formValidationSwitch&quot;&gt;Send me related emails&lt;/label&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;col-12 form-control-validation&quot;&gt;&#10;    &lt;div class=&quot;form-check&quot;&gt;&#10;      &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;formValidationCheckbox&quot; name=&quot;formValidationCheckbox&quot; /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;formValidationCheckbox&quot;&gt;Agree to our terms and conditions&lt;/label&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;col-12 form-control-validation&quot;&gt;&#10;    &lt;button type=&quot;submit&quot; name=&quot;submitButton&quot; class=&quot;btn btn-primary&quot;&gt;Submit&lt;/button&gt;&#10;  &lt;/div&gt;&#10;&lt;/form&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="form-val-js" role="tabpanel" aria-labelledby="form-val-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre
+                      class="docs-code"><code class="js">document.addEventListener(&apos;DOMContentLoaded&apos;, function (e) {&#10;  (function () {&#10;      const formValidationExamples = document.getElementById(&apos;formValidationExamples&apos;),&#10;          formValidationSelect2Ele = jQuery(formValidationExamples.querySelector(&apos;[name=&quot;formValidationSelect2&quot;]&apos;)),&#10;          formValidationTechEle = jQuery(formValidationExamples.querySelector(&apos;[name=&quot;formValidationTech&quot;]&apos;)),&#10;          formValidationLangEle = formValidationExamples.querySelector(&apos;[name=&quot;formValidationLang&quot;]&apos;),&#10;          formValidationHobbiesEle = jQuery(formValidationExamples.querySelector(&apos;.selectpicker&apos;)),&#10;          tech = [&#10;        &apos;ReactJS&apos;,&#10;        &apos;Angular&apos;,&#10;        &apos;VueJS&apos;,&#10;        &apos;Html&apos;,&#10;        &apos;Css&apos;,&#10;        &apos;Sass&apos;,&#10;        &apos;Pug&apos;,&#10;        &apos;Gulp&apos;,&#10;        &apos;Php&apos;,&#10;        &apos;Laravel&apos;,&#10;        &apos;Python&apos;,&#10;        &apos;Bootstrap&apos;,&#10;        &apos;Material Design&apos;,&#10;        &apos;NodeJS&apos;&#10;      ];&#10;&#10;      const fv = FormValidation.formValidation(formValidationExamples, {&#10;          fields: {&#10;              formValidationName: {&#10;                  validators: {&#10;                      notEmpty: {&#10;                          message: &apos;Please enter your name&apos;&#10;            },&#10;                      stringLength: {&#10;                          min: 6,&#10;                          max: 30,&#10;                          message: &apos;The name must be more than 6 and less than 30 characters long&apos;&#10;            },&#10;                      regexp: {&#10;                          regexp: /^[a-zA-Z0-9 ]+$/,&#10;                          message: &apos;The name can only consist of alphabetical, number and space&apos;&#10;            }&#10;          }&#10;        },&#10;              formValidationEmail: {&#10;                  validators: {&#10;                      notEmpty: {&#10;                          message: &apos;Please enter your email&apos;&#10;            },&#10;                      emailAddress: {&#10;                          message: &apos;The value is not a valid email address&apos;&#10;            }&#10;          }&#10;        },&#10;              formValidationPass: {&#10;                  validators: {&#10;                      notEmpty: {&#10;                          message: &apos;Please enter your password&apos;&#10;            }&#10;          }&#10;        },&#10;              formValidationConfirmPass: {&#10;                  validators: {&#10;                      notEmpty: {&#10;                          message: &apos;Please confirm password&apos;&#10;            },&#10;                      identical: {&#10;                          compare: function () {&#10;                              return formValidationExamples.querySelector(&apos;[name=&quot;formValidationPass&quot;]&apos;).value;&#10;              },&#10;                          message: &apos;The password and its confirm are not the same&apos;&#10;            }&#10;          }&#10;        },&#10;              formValidationFile: {&#10;                  validators: {&#10;                      notEmpty: {&#10;                          message: &apos;Please select the file&apos;&#10;            }&#10;          }&#10;        },&#10;        formValidationDob: {&#10;          validators: {&#10;            notEmpty: {&#10;              message: &apos;Please select your DOB&apos;&#10;            },&#10;                      date: {&#10;                          format: &apos;YYYY/MM/DD&apos;,&#10;                          message: &apos;The value is not a valid date&apos;&#10;            }&#10;          }&#10;        },&#10;              formValidationSelect2: {&#10;                  validators: {&#10;                      notEmpty: {&#10;                          message: &apos;Please select your country&apos;&#10;            }&#10;          }&#10;        },&#10;              formValidationLang: {&#10;          validators: {&#10;            notEmpty: {&#10;              message: &apos;Please add your language&apos;&#10;            }&#10;          }&#10;        },&#10;              formValidationTech: {&#10;                  validators: {&#10;                      notEmpty: {&#10;                          message: &apos;Please select technology&apos;&#10;            }&#10;          }&#10;        },&#10;              formValidationHobbies: {&#10;                  validators: {&#10;                      notEmpty: {&#10;                          message: &apos;Please select your hobbies&apos;&#10;            }&#10;          }&#10;        },&#10;        formValidationBio: {&#10;          validators: {&#10;            notEmpty: {&#10;              message: &apos;Please enter your bio&apos;&#10;            },&#10;                      stringLength: {&#10;                          min: 100,&#10;                          max: 500,&#10;                          message: &apos;The bio must be more than 100 and less than 500 characters long&apos;&#10;            }&#10;          }&#10;        },&#10;              formValidationGender: {&#10;                  validators: {&#10;                      notEmpty: {&#10;                          message: &apos;Please select your gender&apos;&#10;            }&#10;          }&#10;        },&#10;              formValidationPlan: {&#10;                  validators: {&#10;                      notEmpty: {&#10;                          message: &apos;Please select your preferred plan&apos;&#10;            }&#10;          }&#10;        },&#10;              formValidationSwitch: {&#10;                  validators: {&#10;                      notEmpty: {&#10;                          message: &apos;Please select your preference&apos;&#10;            }&#10;          }&#10;        },&#10;              formValidationCheckbox: {&#10;                  validators: {&#10;                      notEmpty: {&#10;                          message: &apos;Please confirm our T&amp;C&apos;&#10;            }&#10;          }&#10;        }&#10;      },&#10;      plugins: {&#10;              trigger: new FormValidation.plugins.Trigger(),&#10;              bootstrap5: new FormValidation.plugins.Bootstrap5({&#10;                  // Use this for enabling/changing valid/invalid class&#10;                  // eleInvalidClass: &apos;&apos;,&#10;                  eleValidClass: &apos;&apos;,&#10;                  rowSelector: function (field, ele) {&#10;                      // field is the field name &amp; ele is the field element&#10;                      switch (field) {&#10;                          case &apos;formValidationName&apos;:&#10;                          case &apos;formValidationEmail&apos;:&#10;                          case &apos;formValidationPass&apos;:&#10;                          case &apos;formValidationConfirmPass&apos;:&#10;                          case &apos;formValidationFile&apos;:&#10;                          case &apos;formValidationDob&apos;:&#10;                          case &apos;formValidationSelect2&apos;:&#10;                          case &apos;formValidationLang&apos;:&#10;                          case &apos;formValidationTech&apos;:&#10;                          case &apos;formValidationHobbies&apos;:&#10;                          case &apos;formValidationBio&apos;:&#10;                          case &apos;formValidationGender&apos;:&#10;                          case &apos;formValidationPlan&apos;:&#10;                          case &apos;formValidationSwitch&apos;:&#10;                          case &apos;formValidationCheckbox&apos;:&#10;                return &apos;.form-control-validation&apos;;&#10;              default:&#10;                return &apos;.row&apos;;&#10;            }&#10;          }&#10;        }),&#10;              submitButton: new FormValidation.plugins.SubmitButton(),&#10;              // Submit the form when all fields are valid&#10;              defaultSubmit: new FormValidation.plugins.DefaultSubmit(),&#10;              autoFocus: new FormValidation.plugins.AutoFocus()&#10;      },&#10;          init: instance =&gt; {&#10;              instance.on(&apos;plugins.message.placed&apos;, function (e) {&#10;                  //* Move the error message out of the `input-group` element&#10;                  if (e.element.parentElement.classList.contains(&apos;input-group&apos;)) {&#10;                      // `e.field`: The field name&#10;                      // `e.messageElement`: The message element&#10;                      // `e.element`: The field element&#10;                      e.element.parentElement.insertAdjacentElement(&apos;afterend&apos;, e.messageElement);&#10;          }&#10;                  //* Move the error message out of the `row` element for custom-options&#10;                  if (e.element.parentElement.parentElement.classList.contains(&apos;custom-option&apos;)) {&#10;                      e.element.closest(&apos;.row&apos;).insertAdjacentElement(&apos;afterend&apos;, e.messageElement);&#10;          }&#10;              });&#10;      }&#10;      });&#10;&#10;      //? Revalidation third-party libs inputs on change trigger&#10;&#10;      // Flatpickr&#10;    const flatpickrDate = document.querySelector(&apos;[name=&quot;formValidationDob&quot;]&apos;);&#10;&#10;    if (flatpickrDate) {&#10;      flatpickrDate.flatpickr({&#10;            enableTime: false,&#10;            // See https://flatpickr.js.org/formatting/&#10;            dateFormat: &apos;Y/m/d&apos;,&#10;            // After selecting a date, we need to revalidate the field&#10;            onChange: function () {&#10;                fv.revalidateField(&apos;formValidationDob&apos;);&#10;        }&#10;        });&#10;    }&#10;&#10;      // Select2 (Country)&#10;      if (formValidationSelect2Ele.length) {&#10;          formValidationSelect2Ele.wrap(&apos;&lt;div class=&quot;position-relative&quot;&gt;&lt;/div&gt;&apos;);&#10;          formValidationSelect2Ele&#10;              .select2({&#10;                  placeholder: &apos;Select country&apos;,&#10;                  dropdownParent: formValidationSelect2Ele.parent()&#10;        })&#10;              .on(&apos;change&apos;, function () {&#10;                  // Revalidate the color field when an option is chosen&#10;                  fv.revalidateField(&apos;formValidationSelect2&apos;);&#10;        });&#10;    }&#10;&#10;    // Typeahead&#10;&#10;      // String Matcher function for typeahead&#10;      const substringMatcher = function (strs) {&#10;          return function findMatches(q, cb) {&#10;              var matches, substrRegex;&#10;              matches = [];&#10;              substrRegex = new RegExp(q, &apos;i&apos;);&#10;              $.each(strs, function (i, str) {&#10;                  if (substrRegex.test(str)) {&#10;            matches.push(str);&#10;          }&#10;        });&#10;&#10;        cb(matches);&#10;      };&#10;    };&#10;&#10;    // Check if rtl&#10;    if (isRtl) {&#10;      const typeaheadList = [].slice.call(document.querySelectorAll(&apos;.typeahead&apos;));&#10;&#10;      // Flat pickr&#10;      if (typeaheadList) {&#10;        typeaheadList.forEach(typeahead =&gt; {&#10;          typeahead.setAttribute(&apos;dir&apos;, &apos;rtl&apos;);&#10;        });&#10;      }&#10;    }&#10;      formValidationTechEle.typeahead(&#10;      {&#10;              hint: !isRtl,&#10;              highlight: true,&#10;              minLength: 1&#10;      },&#10;      {&#10;              name: &apos;tech&apos;,&#10;              source: substringMatcher(tech)&#10;      }&#10;    );&#10;&#10;    // Tagify&#10;      let formValidationLangTagify = new Tagify(formValidationLangEle);&#10;      formValidationLangEle.addEventListener(&apos;change&apos;, onChange);&#10;      function onChange() {&#10;          fv.revalidateField(&apos;formValidationLang&apos;);&#10;    }&#10;&#10;      //Bootstrap select&#10;      formValidationHobbiesEle.on(&apos;changed.bs.select&apos;, function (e, clickedIndex, isSelected, previousValue) {&#10;          fv.revalidateField(&apos;formValidationHobbies&apos;);&#10;    });&#10;  })();&#10;});                  </code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /FormValidation Example-->
+          </div>
+        </div>
+      </div>
+      <!-- /Form Validation Basic-->
+    </div>
+
+    <div class="d-none d-xl-block col-xl-2 doc-sidebar container-p-y">
+      <nav id="vertical-nav" class="navbar p-0">
+        <ul class="doc-sidebar-nav">
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#browser-default">Browser Default</a>
+          </li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#bootstrap-validation">Bootstrap Validation</a>
+            <ul>
+              <li class="doc-entry doc-h3">
+                <a class="nav-link" href="#bs-val-states">States</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a class="nav-link" href="#bs-val-server-side">Server Side</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a class="nav-link" href="#bs-val-tooltip">Tooltip</a>
+              </li>
+            </ul>
+          </li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#form-validation">FormValidation</a>
+            <ul>
+              <li class="doc-entry doc-h3">
+                <a class="nav-link" href="#form-val-usage">Usage</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a class="nav-link" href="#form-val-ex">Example</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div></div>
+          <!-- / Content -->
+
+          
+            <footer class="content-footer footer">
+  <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center text-center py-4">
+    <div>
+      &#169; 2017-
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      
+        <a href="https://pixinvent.com" class="footer-text fw-medium" target="_blank">Pixinvent</a>, Hand-crafted & Made with â¤ï¸
+      
+    </div>
+    <div>
+      
+        <a href="https://www.facebook.com/pixinvents/" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-facebook"></i></a>
+      
+      
+        <a href="https://x.com/pixinvents" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-twitter"></i></a>
+      
+      
+        <a href="https://github.com/pixinvent" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-github"></i></a>
+      
+      
+        <a href="https://dribbble.com/pixinvent" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-dribbble"></i></a>
+      
+      
+        <a href="https://www.instagram.com/pixinvents/" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-instagram"></i></a>
+      
+    </div>
+  </div>
+</footer>
+
+          
+        </div>
+        <!-- Content wrapper -->
+      </div>
+      <!-- / Layout page -->
+    </div>
+
+    
+      
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    
+    <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+    <div class="drag-target"></div>
+  </div>
+  <!-- / Layout wrapper -->
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="assets/vendor/libs/highlight/highlight.js"></script>
+    <script src="assets/vendor/libs/clipboard/clipboard.js"></script>
+    
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/vendor/libs/node-waves/node-waves.js"></script>
+    <script src="assets/vendor/libs/@algolia/autocomplete-js.js"></script>
+    <script src="assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="assets/vendor/js/menu.js"></script>
+    <!-- Vendors JS -->
+    <script src="assets/vendor/libs/bootstrap-select/bootstrap-select.js"></script>
+  <script src="assets/vendor/libs/select2/select2.js"></script>
+  <script src="assets/vendor/libs/moment/moment.js"></script>
+  <script src="assets/vendor/libs/flatpickr/flatpickr.js"></script>
+  <script src="assets/vendor/libs/typeahead-js/typeahead.js"></script>
+  <script src="assets/vendor/libs/tagify/tagify.js"></script>
+  <script src="assets/vendor/libs/@form-validation/popular.js"></script>
+  <script src="assets/vendor/libs/@form-validation/bootstrap5.js"></script>
+  <script src="assets/vendor/libs/@form-validation/auto-focus.js"></script>
+
+    <!-- Page JS -->
+    <script src="assets/js/docs.js"></script>
+    <script src="assets/js/form-validation.js"></script>
+  </body>
+</html>
+
+  <!-- beautify ignore:end -->
+

@@ -1,0 +1,2125 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- =========================================================
+* Vuexy - Bootstrap Dashboard PRO | v3.0.0
+==============================================================
+
+* Product Page: https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599
+* Created by: Pixinvent
+
+    * License: You must have a valid license purchased in order to legally use the theme for your project.
+  
+* Copyright Pixinvent (https://pixinvent.com)
+
+=========================================================
+ -->
+  <!-- beautify ignore:start -->
+
+<html lang="en" class="docs-page  layout-menu-fixed-offcanvas " data-assets-path="assets/" data-skin="bordered">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Docs: Badges - UI elements | Vuexy - Bootstrap Dashboard PRO</title>
+
+    <meta name="description" content="Vuexy is the best bootstrap 5 dashboard for responsive web apps. Streamline your app development process with ease." />
+    <meta name="keywords" content="Vuexy bootstrap dashboard, vuexy bootstrap 5 dashboard, themeselection, html dashboard, web dashboard, frontend dashboard, responsive bootstrap theme" />
+    <meta property="og:title" content="Vuexy bootstrap Dashboard by Pixinvent" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" />
+    <meta property="og:image" content="https://pixinvent.com/wp-content/uploads/2023/06/vuexy-hero-image.png" />
+    <meta property="og:description" content="Vuexy is the best bootstrap 5 dashboard for responsive web apps. Streamline your app development process with ease." />
+    <meta property="og:site_name" content="Pixinvent" />
+
+    <!-- Canonical SEO -->
+    <link rel="canonical" href="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" />
+
+    
+      
+      <script>
+        (function (w, d, s, l, i) {
+          w[l] = w[l] || [];
+          w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+          });
+          var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+          j.async = true;
+          j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+          f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5J3LMKC');
+      </script>
+      
+    
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="48x48" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="16x16" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="32x32" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="180x180" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="192x192" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="512x512" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendor/fonts/iconify-icons.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/node-waves/node-waves.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/highlight/highlight.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+    
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="assets/vendor/css/core.css" />
+    <link rel="stylesheet" href="assets/css/demo.css" />
+    <link rel="stylesheet" href="assets/css/docs.css" />
+
+    <!-- Page CSS -->
+    
+
+    <!-- Core JS -->
+    <script src="assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: Don't remove unless you are aware of it, To hide customizer set displayCustomizer value false in config.js.  -->
+    <!-- <script src="assets/vendor/js/template-customizer.js"></script> -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="assets/js/config.js"></script>
+  </head>
+
+  <body>
+    
+      
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5J3LMKC" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+      
+    
+
+    <!-- Layout wrapper -->
+  <div class="layout-wrapper layout-navbar-full ">
+    <div class="layout-container">
+      
+        
+
+
+<!-- Navbar main -->
+
+<nav class="layout-navbar navbar navbar-expand-lg align-items-lg-center bg-white border-bottom" id="layout-navbar">
+  <div class="container-fluid">
+    
+      <!-- Menu toggle (see assets/css/demo/demo.css) -->
+      <div class="layout-menu-toggle navbar-nav d-lg-none align-items-lg-center">
+        <a class="nav-item nav-link px-0 me-lg-4" href="javascript:void(0)">
+          <i class="icon-base ti tabler-menu-2 icon-md align-middle"></i>
+        </a>
+      </div>
+    
+
+    <!-- Brand demo (see assets/css/demo/demo.css) -->
+    <div class="navbar-brand app-brand demo py-0 me-md-auto me-12 ms-lg-0 ms-0">
+      <a href="index.html" class="app-brand-link">
+        <span class="app-brand-logo demo">
+  <span class="text-primary">
+    <svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.00172773 0V6.85398C0.00172773 6.85398 -0.133178 9.01207 1.98092 10.8388L13.6912 21.9964L19.7809 21.9181L18.8042 9.88248L16.4951 7.17289L9.23799 0H0.00172773Z" fill="currentColor" />
+      <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd" d="M7.69824 16.4364L12.5199 3.23696L16.5541 7.25596L7.69824 16.4364Z" fill="#161616" />
+      <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd" d="M8.07751 15.9175L13.9419 4.63989L16.5849 7.28475L8.07751 15.9175Z" fill="#161616" />
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z" fill="currentColor" />
+    </svg>
+  </span>
+</span>
+        <span class="app-brand-text demo menu-text fw-bold">Vuexy</span>
+      </a>
+    </div>
+
+    <div class="d-flex ms-md-6 gap-3">
+      
+      <div class="navbar-nav align-items-lg-center justify-content-center">
+        <!-- Search -->
+        <div class="navbar-nav align-items-center">
+          <div class="nav-item navbar-search-wrapper mb-0">
+            <a class="nav-item nav-link search-toggler border rounded-3 py-2 px-md-4 px-2 d-flex align-items-center" href="javascript:void(0);">
+              <span class="d-inline-block text-body-secondary fw-normal" id="autocomplete"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbar-collapse">
+        <hr class="d-lg-none w-100 my-2" />
+        <!-- Divider -->
+
+        <div class="navbar-nav align-items-lg-center">
+          
+          <ul class="navbar-nav">
+            <!-- Technology dropdown -->
+            
+            
+              
+                <li class="nav-item dropdown me-2">
+                  <button class="btn dropdown-toggle py-2 btn-primary" type="button" id="livePreview" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-base ti tabler-current-location me-2"></i> Live preview</button>
+                  <ul class="dropdown-menu" aria-labelledby="livePreview">
+                    <li>
+                      <a href="https://pixinvent.com/vuexy-bootstrap-html-admin-template/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>HTML preview</a>
+                    </li>
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-laravel-admin-template/demo-1/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>Laravel preview</a>
+                      </li>
+                    
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-admin-template/html/vertical-menu-template/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>.Net Core preview</a>
+                      </li>
+                    
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-django-admin-template/demo-1/" target="_blank" class="nav-link text-nowrap"><i class="icon-base ti tabler-current-location me-2"></i>Django preview</a>
+                      </li>
+                    
+                  </ul>
+                </li>
+              
+            
+            
+              <li class="nav-item me-2">
+                <a href="https://pixinvent.ticksy.com/" target="_blank" class="nav-link d-flex align-items-center">
+                  <i class="icon-base ti tabler-lifebuoy me-2"></i>
+                  <span>Support</span>
+                </a>
+              </li>
+            
+            
+              <li class="nav-item">
+                <a href="https://themeforest.net/user/pixinvent/portfolio" target="_blank" class="nav-link d-flex align-items-center">
+                  <i class="icon-base ti tabler-gift me-2"></i>
+                  <span> More Themes</span>
+                </a>
+              </li>
+            
+            
+              <li class="nav-item">
+                <a href="https://themeselection.com/hire-us/" target="_blank" class="nav-link"><i class="icon-base ti tabler-briefcase"></i> Hire Us</a>
+              </li>
+            
+          </ul>
+
+          <!-- Divider -->
+          <div class="nav-item d-none d-lg-block text-big fw-light lh-1 me-4 ms-1">|</div>
+
+          
+            <div class="buy-now-btn">
+              <a href="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" target="_blank" class="btn btn-danger d-flex align-items-center gap-2">
+                <i class="icon-base ti tabler-shopping-cart"></i>
+                <span>Buy Now</span>
+              </a>
+            </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</nav>
+<!-- / Navbar main -->
+
+      
+
+      <!-- Layout page -->
+      <div class="layout-page">
+        
+          
+
+
+
+
+<!-- Menu -->
+<aside id="layout-menu" class="layout-menu menu-doc menu menu-vertical bg-menu-theme">
+  
+  <div class="menu-divider mt-0   d-xl-none "></div>
+
+  <!-- Links -->
+  <ul class="menu-inner py-1">
+    <li class="menu-header text-uppercase small fw-medium">Getting Started</li>
+    <li class="menu-item">
+      <a href="index.html" class="menu-link">
+        <div>Introduction</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="licenses.html" class="menu-link">
+        <div>Licenses</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="folder-structure.html" class="menu-link">
+        <div>Folder Structure</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="quick-start.html" class="menu-link">
+        <div>Quick Start</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="config.html" class="menu-link">
+        <div>Config ð¤©</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="installation-build.html" class="menu-link">
+        <div>Installation & Build</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="template-customizer.html" class="menu-link">
+        <div>Template Customizer</div>
+        
+      </a>
+    </li>
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Customization</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="customization-sass.html" class="menu-link">
+            <div>SASS</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="customization-js.html" class="menu-link">
+            <div>JavaScript</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="customization-third-party-plugins.html" class="menu-link">
+            <div>Third Party Plugins</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="layouts.html" class="menu-link">
+        <div>Layouts</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="dependencies.html" class="menu-link">
+        <div>Dependencies</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="faq.html" class="menu-link">
+        <div>FAQs</div>
+      </a>
+    </li>
+    
+      <!-- Laravel Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row">
+        <span class="me-1">Laravel</span>
+        <span class="badge badge-demo bg-label-danger ms-auto">HTML + Laravel Only</span>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="laravel-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-starter-kit-vs-full-version.html" class="menu-link">
+              <div>Starter-kit Vs Full-version</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-demo-config.html" class="menu-link">
+              <div>Demo Configs</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Auth & ACL</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-auth-jetstream.html" class="menu-link">
+              <div>JetStream</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-passport.html" class="menu-link">
+              <div>Passport</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-sanctum.html" class="menu-link">
+              <div>Sanctum</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-acl.html" class="menu-link">
+              <div>ACL</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-articles-database-connections.html" class="menu-link">
+              <div>Database Connections</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-existing-project.html" class="menu-link">
+              <div>Exiting Project Migration</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-form-validation-integration.html" class="menu-link">
+              <div>Form Validation Package Integration</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-localization.html" class="menu-link">
+          <div>Localization</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-search.html" class="menu-link">
+          <div>Search</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-sail-docker.html" class="menu-link">
+          <div>Sail & Docker</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-deployment.html" class="menu-link">
+          <div>Deployment</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Dotnet Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>ASP.NET CORE</span> <span class="badge badge-demo bg-label-danger ms-auto">Razor Pages</span></li>
+
+      <li class="menu-item">
+        <a href="net-core-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-assets-compilation.html" class="menu-link">
+              <div>Assets Compilation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-start-with-doker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-starter-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="net-core-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Dotnet Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>ASP.NET CORE MVC</span> <span class="badge badge-demo bg-label-danger ms-auto">MVC</span></li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-mvc-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-assets-compilation.html" class="menu-link">
+              <div>Assets Compilation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-start-with-docker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-starter-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="net-core-mvc-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-mvc-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Django Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>Django</span> <span class="badge badge-demo bg-label-danger ms-auto">Django Only</span></li>
+
+      <li class="menu-item">
+        <a href="django-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="django-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-start-with-doker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-demo-config.html" class="menu-link">
+              <div>Demo Config</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-starter-kit-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="django-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="django-articles-create-new-page.html" class="menu-link">
+              <div>Create New Apps & Pages</div>
+            </a>
+          </li>
+          <!-- <li class="menu-item">
+          <a href="django-articles-existing-project.html" class="menu-link">
+            <div>Exiting Project Migration</div>
+          </a>
+        </li> -->
+          <li class="menu-item">
+            <a href="django-articles-admin-superuser.html" class="menu-link">
+              <div>Admin and Create User</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-authentication.html" class="menu-link">
+              <div>Authentication</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="django-articles-permissions-authorization.html" class="menu-link">
+              <div>Permissions & Authorization</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-crud.html" class="menu-link">
+              <div>CRUD Example</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-admin-db.html" class="menu-link">
+              <div>Admin and Database</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-localization.html" class="menu-link">
+          <div>Localization</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-search.html" class="menu-link">
+          <div>Search</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-theme-api.html" class="menu-link">
+          <div>Theme API</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-deployment.html" class="menu-link">
+          <div>Deployment</div>
+        </a>
+      </li>
+    
+    <!-- Apps & Pages -->
+    <li class="menu-divider mb-1"></li>
+    <li class="menu-header text-uppercase small fw-medium">Design System</li>
+
+    <li class="menu-item">
+      <a href="typography.html" class="menu-link">
+        <div>Typography</div>
+      </a>
+    </li>
+
+    <li class="menu-item">
+      <a href="colors.html" class="menu-link">
+        <div>Colors</div>
+      </a>
+    </li>
+
+    <li class="menu-item">
+      <a href="Icons.html" class="menu-link">
+        <div>Icons</div>
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+    <!-- Components -->
+    <li class="menu-header text-uppercase small fw-medium">Components</li>
+
+    <!-- UI Elements -->
+    <li class="menu-item
+   active open">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>UI Elements</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="ui-accordion.html" class="menu-link">
+            <div>Accordion</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-alerts.html" class="menu-link">
+            <div>Alerts</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-app-brand.html" class="menu-link">
+            <div>App Brand</div>
+            
+          </a>
+        </li>
+        <li class="menu-item active">
+          <a href="ui-badges.html" class="menu-link">
+            <div>Badges</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-buttons.html" class="menu-link">
+            <div>Buttons</div>
+          </a>
+        </li>
+        <li class="menu-item
+  ">
+          <a href="javascript:void(0);" class="menu-link menu-toggle">
+            <div>Cards</div>
+          </a>
+          <ul class="menu-sub">
+            <li class="menu-item">
+              <a href="ui-cards-basic.html" class="menu-link">
+                <div>Basic</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="ui-cards-actions.html" class="menu-link">
+                <div>Actions</div>
+                
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="ui-carousel.html" class="menu-link">
+            <div>Carousel</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-collapse.html" class="menu-link">
+            <div>Collapse</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-dropdowns.html" class="menu-link">
+            <div>Dropdowns</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-footer.html" class="menu-link">
+            <div>Footer</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-list-groups.html" class="menu-link">
+            <div>List groups</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-modals.html" class="menu-link">
+            <div>Modals</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-menu.html" class="menu-link">
+            <div>Menu</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-navbar.html" class="menu-link">
+            <div>Navbar</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-offcanvas.html" class="menu-link">
+            <div>Offcanvas</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-pagination-breadcrumbs.html" class="menu-link">
+            <div>Pagination &amp; Breadcrumbs</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-popovers.html" class="menu-link">
+            <div>Popovers</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-progress.html" class="menu-link">
+            <div>Progress</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-spinners.html" class="menu-link">
+            <div>Spinners</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-navs.html" class="menu-link">
+            <div>Navs</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-tabs-pills.html" class="menu-link">
+            <div>Tabs &amp; Pills</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-toasts.html" class="menu-link">
+            <div>Toasts</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-tooltips.html" class="menu-link">
+            <div>Tooltips</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+
+    <!-- Extended components -->
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Extended UI</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="extended-ui-avatar.html" class="menu-link">
+            <div>Avatar</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-blockui.html" class="menu-link">
+            <div>BlockUI</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-drag-and-drop.html" class="menu-link">
+            <div>Drag &amp; Drop</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-media-player.html" class="menu-link">
+            <div>Media Player</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-perfect-scrollbar.html" class="menu-link">
+            <div>Perfect scrollbar</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-star-ratings.html" class="menu-link">
+            <div>Star Ratings</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-sweetalert2.html" class="menu-link">
+            <div>SweetAlert2</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-text-divider.html" class="menu-link">
+            <div>Text Divider</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-timeline.html" class="menu-link">
+            <div>Timeline</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-tour.html" class="menu-link">
+            <div>Tour</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-treeview.html" class="menu-link">
+            <div>Treeview</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-misc.html" class="menu-link">
+            <div>Miscellaneous</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Forms -->
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Forms</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="forms-basic-inputs.html" class="menu-link">
+            <div>Basic Inputs</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-input-groups.html" class="menu-link">
+            <div>Input groups</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-custom-options.html" class="menu-link">
+            <div>Custom Options</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-editors.html" class="menu-link">
+            <div>Editors</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-file-upload.html" class="menu-link">
+            <div>File Upload</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-pickers.html" class="menu-link">
+            <div>Pickers</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-selects.html" class="menu-link">
+            <div>Select &amp; Tags</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-sliders.html" class="menu-link">
+            <div>Sliders</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-switches.html" class="menu-link">
+            <div>Switches</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-extras.html" class="menu-link">
+            <div>Extras</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-validation.html" class="menu-link">
+            <div>Validation</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-wizard.html" class="menu-link">
+            <div>Wizard</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-layouts-sticky.html" class="menu-link">
+            <div>Sticky Actions</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <!-- Tables -->
+    <li class="menu-item">
+      <a href="tables-basic.html" class="menu-link">
+        <div>Tables</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="tables-datatables.html" class="menu-link">
+        <div>Datatables</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="utilities.html" class="menu-link">
+        <div>Utilities</div>
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+    <!-- Charts & Maps -->
+    <li class="menu-header text-uppercase small fw-medium">Charts &amp; Maps</li>
+
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <div data-i18n="Charts">Charts</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="charts-apex.html" class="menu-link">
+            <div>Apex Charts</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="charts-chartjs.html" class="menu-link">
+            <div>ChartJS</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="maps-leaflet.html" class="menu-link">
+        <div>Leaflet</div>
+        
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+
+    <!-- Charts & Maps -->
+    <li class="menu-header text-uppercase small fw-medium">Others</li>
+    <li class="menu-item">
+      <a href="credits.html" class="menu-link">
+        <div>Credits</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="https://pixinvent.ticksy.com/" target="_blank" class="menu-link">
+        <div>Support</div>
+      </a>
+    </li>
+  </ul>
+</aside>
+<!-- / Menu -->
+
+        
+
+        <!-- Content wrapper -->
+        <div class="content-wrapper">
+          <!-- Content -->
+          <div class="container-xxl flex-grow-1 container-p-y">
+  <div class="row flex-xl-nowrap">
+    <div class="DocSearch-content col-12 col-xl-10 container-p-y">
+      <h2 class="mb-6 doc-page-title">Badges</h2>
+      <p>Documentation and examples for badges, our small count and labeling component. <br />Read the official <a href="https://getbootstrap.com/docs/5.3/components/badge/" target="_blank">Bootstrap Documentation</a> for a full list of instructions and other options.</p>
+
+      <hr class="my-12" />
+
+      <!-- Example -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="badge-example" class="anchor-heading mb-6 fw-bold">Example</h4>
+          <p>
+            Badges scale to match the size of the immediate parent element by using relative font sizing and
+            <code>em</code> units.
+          </p>
+
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="badges-example-preview-tab" data-bs-toggle="tab" data-bs-target="#badges-example-preview" role="tab" aria-controls="badges-example-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="badges-example-html-tab" data-bs-toggle="tab" data-bs-target="#badges-example-html" role="tab" aria-controls="badges-example-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="badges-example-preview" role="tabpanel" aria-labelledby="badges-example-preview-tab">
+                <h1>Example heading <span class="badge text-bg-secondary">New</span></h1>
+                <h2>Example heading <span class="badge text-bg-secondary">New</span></h2>
+                <h3>Example heading <span class="badge text-bg-secondary">New</span></h3>
+                <h4>Example heading <span class="badge text-bg-secondary">New</span></h4>
+                <h5>Example heading <span class="badge text-bg-secondary">New</span></h5>
+                <h6>Example heading <span class="badge text-bg-secondary">New</span></h6>
+              </div>
+              <div class="tab-pane fade" id="badges-example-html" role="tabpanel" aria-labelledby="badges-example-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;h1&gt;Example heading &lt;span class=&quot;badge text-bg-secondary&quot;&gt;New&lt;/span&gt;&lt;/h1&gt;&#10;&lt;h2&gt;Example heading &lt;span class=&quot;badge text-bg-secondary&quot;&gt;New&lt;/span&gt;&lt;/h2&gt;&#10;&lt;h3&gt;Example heading &lt;span class=&quot;badge text-bg-secondary&quot;&gt;New&lt;/span&gt;&lt;/h3&gt;&#10;&lt;h4&gt;Example heading &lt;span class=&quot;badge text-bg-secondary&quot;&gt;New&lt;/span&gt;&lt;/h4&gt;&#10;&lt;h5&gt;Example heading &lt;span class=&quot;badge text-bg-secondary&quot;&gt;New&lt;/span&gt;&lt;/h5&gt;&#10;&lt;h6&gt;Example heading &lt;span class=&quot;badge text-bg-secondary&quot;&gt;New&lt;/span&gt;&lt;/h6&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <p class="mt-6">Badges can be used as part of links or buttons to provide a counter & notifications.</p>
+
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="badges-mn-preview-tab" data-bs-toggle="tab" data-bs-target="#badges-mn-preview" role="tab" aria-controls="badges-mn-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="badges-mn-html-tab" data-bs-toggle="tab" data-bs-target="#badges-mn-html" role="tab" aria-controls="badges-mn-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="badges-mn-preview" role="tabpanel" aria-labelledby="badges-mn-preview-tab">
+                <div class="demo-inline-spacing">
+                  <button type="button" class="btn btn-primary">
+                    Message
+                    <span class="badge bg-white text-primary ms-1">4</span>
+                    <span class="visually-hidden">unread messages</span>
+                  </button>
+                  <button type="button" class="btn btn-secondary text-nowrap d-inline-flex position-relative">
+                    Badge
+                    <span class="position-absolute top-0 start-100 badge text-bg-primary badge-notifications">12</span>
+                    <span class="visually-hidden">unread notifications</span>
+                  </button>
+                  <button type="button" class="btn text-nowrap d-inline-block">
+                    <span class="icon-base ti tabler-bell"></span>
+                    <span class="badge rounded-pill text-bg-danger badge-notifications">10</span>
+                    <span class="visually-hidden">unread notifications</span>
+                  </button>
+                  <button type="button" class="btn text-nowrap d-inline-block">
+                    <span class="icon-base ti tabler-brand-facebook"></span>
+                    <span class="badge rounded-pill bg-danger badge-dot badge-notifications"></span>
+                    <span class="visually-hidden">notifications</span>
+                  </button>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="badges-mn-html" role="tabpanel" aria-labelledby="badges-mn-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;&#10;  Message&#10;  &lt;span class=&quot;badge bg-white text-primary ms-1&quot;&gt;4&lt;/span&gt;&#10;  &lt;span class=&quot;visually-hidden&quot;&gt;unread messages&lt;/span&gt;&#10;&lt;/button&gt;&#10;&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary text-nowrap d-inline-flex position-relative&quot;&gt;&#10;  Badge&#10;  &lt;span&#10;    class=&quot;position-absolute top-0 start-100 badge text-bg-primary badge-notifications&quot;&#10;    &gt;12&lt;/span&#10;  &gt;&#10;  &lt;span class=&quot;visually-hidden&quot;&gt;unread notifications&lt;/span&gt;&#10;&lt;/button&gt;&#10;&lt;button type=&quot;button&quot; class=&quot;btn text-nowrap d-inline-block&quot;&gt;&#10;  &lt;span class=&quot;icon-base ti tabler-bell&quot;&gt;&lt;/span&gt;&#10;  &lt;span class=&quot;badge rounded-pill text-bg-danger badge-notifications&quot;&gt;10&lt;/span&gt;&#10;  &lt;span class=&quot;visually-hidden&quot;&gt;unread notifications&lt;/span&gt;&#10;&lt;/button&gt;&#10;&lt;button type=&quot;button&quot; class=&quot;btn text-nowrap d-inline-block&quot;&gt;&#10;  &lt;span class=&quot;icon-base ti tabler-brand-facebook&quot;&gt;&lt;/span&gt;&#10;  &lt;span class=&quot;badge rounded-pill bg-danger badge-dot badge-notifications&quot;&gt;&lt;/span&gt;&#10;  &lt;span class=&quot;visually-hidden&quot;&gt;notifications&lt;/span&gt;&#10;&lt;/button&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-12" />
+
+      <!-- Basic Badge -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="basic-badge" class="anchor-heading mb-6 fw-bold">Basic Badge</h4>
+          <p>Add any of the below mentioned modifier classes to change the appearance of a badge.</p>
+
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="badge-basic-preview-tab" data-bs-toggle="tab" data-bs-target="#badge-basic-preview" role="tab" aria-controls="badge-basic-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="badge-basic-html-tab" data-bs-toggle="tab" data-bs-target="#badge-basic-html" role="tab" aria-controls="badge-basic-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="badge-basic-preview" role="tabpanel" aria-labelledby="badge-basic-preview-tab">
+                <div class="demo-inline-spacing">
+                  <span class="badge text-bg-primary">Primary</span>
+                  <span class="badge text-bg-secondary">Secondary</span>
+                  <span class="badge text-bg-success">Success</span>
+                  <span class="badge text-bg-danger">Danger</span>
+                  <span class="badge text-bg-warning">Warning</span>
+                  <span class="badge text-bg-info">Info</span>
+                  <span class="badge text-bg-dark">Dark</span>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="badge-basic-html" role="tabpanel" aria-labelledby="badge-basic-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;span class=&quot;badge text-bg-primary&quot;&gt;Primary&lt;/span&gt;&#10;&lt;span class=&quot;badge text-bg-secondary&quot;&gt;Secondary&lt;/span&gt;&#10;&lt;span class=&quot;badge text-bg-success&quot;&gt;Success&lt;/span&gt;&#10;&lt;span class=&quot;badge text-bg-danger&quot;&gt;Danger&lt;/span&gt;&#10;&lt;span class=&quot;badge text-bg-warning&quot;&gt;Warning&lt;/span&gt;&#10;&lt;span class=&quot;badge text-bg-info&quot;&gt;Info&lt;/span&gt;&#10;&lt;span class=&quot;badge text-bg-dark&quot;&gt;Dark&lt;/span&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+          <table class="table table-bordered doc-table mt-4">
+            <thead>
+              <tr>
+                <th scope="col">Class</th>
+                <th scope="col">Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">
+                  <code>class="badge text-bg-{value}"</code>
+                </td>
+                <td>primary | secondary | success | danger | warning | info | dark</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <hr class="my-12" />
+
+      <!-- Label Badge -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="label-badge" class="anchor-heading mb-6 fw-bold">Label Badge</h4>
+          <p>
+            Badges with light background color. Replace the default modifier classes with the
+            <code>.bg-label-{value}</code>.
+          </p>
+
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="badge-label-preview-tab" data-bs-toggle="tab" data-bs-target="#badge-label-preview" role="tab" aria-controls="badge-label-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="badge-label-html-tab" data-bs-toggle="tab" data-bs-target="#badge-label-html" role="tab" aria-controls="badge-label-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="badge-label-preview" role="tabpanel" aria-labelledby="badge-label-preview-tab">
+                <div class="demo-inline-spacing">
+                  <span class="badge bg-label-primary">Primary</span>
+                  <span class="badge bg-label-secondary">Secondary</span>
+                  <span class="badge bg-label-success">Success</span>
+                  <span class="badge bg-label-danger">Danger</span>
+                  <span class="badge bg-label-warning">Warning</span>
+                  <span class="badge bg-label-info">Info</span>
+                  <span class="badge bg-label-dark">Dark</span>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="badge-label-html" role="tabpanel" aria-labelledby="badge-label-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;span class=&quot;badge bg-label-primary&quot;&gt;Primary&lt;/span&gt;&#13;&#10;&lt;span class=&quot;badge bg-label-secondary&quot;&gt;Secondary&lt;/span&gt;&#13;&#10;&lt;span class=&quot;badge bg-label-success&quot;&gt;Success&lt;/span&gt;&#13;&#10;&lt;span class=&quot;badge bg-label-danger&quot;&gt;Danger&lt;/span&gt;&#13;&#10;&lt;span class=&quot;badge bg-label-warning&quot;&gt;Warning&lt;/span&gt;&#13;&#10;&lt;span class=&quot;badge bg-label-info&quot;&gt;Info&lt;/span&gt;&#13;&#10;&lt;span class=&quot;badge bg-label-dark&quot;&gt;Dark&lt;/span&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+          <table class="table table-bordered doc-table mt-4">
+            <thead>
+              <tr>
+                <th scope="col">Class</th>
+                <th scope="col">Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">
+                  <code>class="badge bg-label-{value}"</code>
+                </td>
+                <td>primary | secondary | success | danger | warning | info | dark</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <hr class="my-12" />
+
+      <!-- outline Badge -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="outline-badge" class="anchor-heading mb-6 fw-bold">Outline Badge <span class="badge badge-demo bg-label-primary ms-1">PRO</span></h4>
+          <p>
+            Badges with outline border color. Replace the default modifier classes with the
+            <code>.badge-outline-{value}</code>.
+          </p>
+
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="badge-outline-preview-tab" data-bs-toggle="tab" data-bs-target="#badge-outline-preview" role="tab" aria-controls="badge-outline-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="badge-outline-html-tab" data-bs-toggle="tab" data-bs-target="#badge-outline-html" role="tab" aria-controls="badge-outline-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="badge-outline-preview" role="tabpanel" aria-labelledby="badge-outline-preview-tab">
+                <div class="demo-inline-spacing">
+                  <span class="badge badge-outline-primary">Primary</span>
+                  <span class="badge badge-outline-secondary">Secondary</span>
+                  <span class="badge badge-outline-success">Success</span>
+                  <span class="badge badge-outline-danger">Danger</span>
+                  <span class="badge badge-outline-warning">Warning</span>
+                  <span class="badge badge-outline-info">Info</span>
+                  <span class="badge badge-outline-dark">Dark</span>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="badge-outline-html" role="tabpanel" aria-labelledby="badge-outline-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;span class=&quot;badge badge-outline-primary&quot;&gt;Primary&lt;/span&gt;&#13;&#10;&lt;span class=&quot;badge badge-outline-secondary&quot;&gt;Secondary&lt;/span&gt;&#13;&#10;&lt;span class=&quot;badge badge-outline-success&quot;&gt;Success&lt;/span&gt;&#13;&#10;&lt;span class=&quot;badge badge-outline-danger&quot;&gt;Danger&lt;/span&gt;&#13;&#10;&lt;span class=&quot;badge badge-outline-warning&quot;&gt;Warning&lt;/span&gt;&#13;&#10;&lt;span class=&quot;badge badge-outline-info&quot;&gt;Info&lt;/span&gt;&#13;&#10;&lt;span class=&quot;badge badge-outline-dark&quot;&gt;Dark&lt;/span&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+          <table class="table table-bordered doc-table mt-4">
+            <thead>
+              <tr>
+                <th scope="col">Class</th>
+                <th scope="col">Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">
+                  <code>class="badge badge-outline-{value}"</code>
+                </td>
+                <td>primary | secondary | success | danger | warning | info | dark</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <hr class="my-12" />
+
+      <!-- Glow Badge -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="glow-badge" class="anchor-heading mb-6 fw-bold">Glow Badge <span class="badge badge-demo bg-label-primary ms-1">PRO</span></h4>
+          <p>
+            Badges with glow. Replace the default modifier classes with the
+            <code>.bg-{value}.bg-glow</code>.
+          </p>
+
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="badge-glow-preview-tab" data-bs-toggle="tab" data-bs-target="#badge-glow-preview" role="tab" aria-controls="badge-glow-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="badge-glow-html-tab" data-bs-toggle="tab" data-bs-target="#badge-glow-html" role="tab" aria-controls="badge-glow-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="badge-glow-preview" role="tabpanel" aria-labelledby="badge-glow-preview-tab">
+                <div class="demo-inline-spacing">
+                  <span class="badge bg-primary bg-glow">Primary</span>
+                  <span class="badge bg-secondary bg-glow">Secondary</span>
+                  <span class="badge bg-success bg-glow">Success</span>
+                  <span class="badge bg-danger bg-glow">Danger</span>
+                  <span class="badge bg-warning bg-glow">Warning</span>
+                  <span class="badge bg-info bg-glow">Info</span>
+                  <span class="badge bg-dark bg-glow">Dark</span>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="badge-glow-html" role="tabpanel" aria-labelledby="badge-glow-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;span class=&quot;badge badge-outline-primary&quot;&gt;Primary&lt;/span&gt;&#13;&#10;&lt;span class=&quot;badge badge-outline-secondary&quot;&gt;Secondary&lt;/span&gt;&#13;&#10;&lt;span class=&quot;badge badge-outline-success&quot;&gt;Success&lt;/span&gt;&#13;&#10;&lt;span class=&quot;badge badge-outline-danger&quot;&gt;Danger&lt;/span&gt;&#13;&#10;&lt;span class=&quot;badge badge-outline-warning&quot;&gt;Warning&lt;/span&gt;&#13;&#10;&lt;span class=&quot;badge badge-outline-info&quot;&gt;Info&lt;/span&gt;&#13;&#10;&lt;span class=&quot;badge badge-outline-dark&quot;&gt;Dark&lt;/span&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+          <table class="table table-bordered doc-table mt-4">
+            <thead>
+              <tr>
+                <th scope="col">Class</th>
+                <th scope="col">Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">
+                  <code>class="badge bg-{value} bg-glow"</code>
+                </td>
+                <td>primary | secondary | success | danger | warning | info | dark</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <hr class="my-12" />
+
+      <!-- Pill Badges -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="badges-pill" class="anchor-heading mb-6 fw-bold">Pill Badges</h4>
+          <p>Use the <code>.rounded-pill</code> modifier class to make badges more rounded (with a larger <code>border-radius</code> and additional horizontal <code>padding</code>).</p>
+          <p>You can also use <code>.rounded-pill</code> class with <code>.bg-label-{value}</code> or <code>.badge-outline-{value}</code>.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="btn-default-rounded-preview-tab" data-bs-toggle="tab" data-bs-target="#btn-default-rounded-preview" role="tab" aria-controls="btn-default-rounded-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="btn-default-rounded-html-tab" data-bs-toggle="tab" data-bs-target="#btn-default-rounded-html" role="tab" aria-controls="btn-default-rounded-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="btn-default-rounded-preview" role="tabpanel" aria-labelledby="btn-default-rounded-preview-tab">
+                <div class="demo-inline-spacing">
+                  <span class="badge rounded-pill text-bg-primary">Primary</span>
+                  <span class="badge rounded-pill text-bg-secondary">Secondary</span>
+                  <span class="badge rounded-pill text-bg-success">Success</span>
+                  <span class="badge rounded-pill text-bg-danger">Danger</span>
+                  <span class="badge rounded-pill text-bg-warning">Warning</span>
+                  <span class="badge rounded-pill text-bg-info">Info</span>
+                  <span class="badge rounded-pill text-bg-dark">Dark</span>
+                </div>
+                <div class="demo-inline-spacing">
+                  <span class="badge rounded-pill bg-label-primary">Primary</span>
+                  <span class="badge rounded-pill bg-label-secondary">Secondary</span>
+                  <span class="badge rounded-pill bg-label-success">Success</span>
+                  <span class="badge rounded-pill bg-label-danger">Danger</span>
+                  <span class="badge rounded-pill bg-label-warning">Warning</span>
+                  <span class="badge rounded-pill bg-label-info">Info</span>
+                  <span class="badge rounded-pill bg-label-dark">Dark</span>
+                </div>
+                <div class="demo-inline-spacing mb-0">
+                  <span class="badge rounded-pill badge-outline-primary">Primary</span>
+                  <span class="badge rounded-pill badge-outline-secondary">Secondary</span>
+                  <span class="badge rounded-pill badge-outline-success">Success</span>
+                  <span class="badge rounded-pill badge-outline-danger">Danger</span>
+                  <span class="badge rounded-pill badge-outline-warning">Warning</span>
+                  <span class="badge rounded-pill badge-outline-info">Info</span>
+                  <span class="badge rounded-pill badge-outline-dark">Dark</span>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="btn-default-rounded-html" role="tabpanel" aria-labelledby="btn-default-rounded-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;p&gt;&#10;  &lt;span class=&quot;badge rounded-pill text-bg-primary&quot;&gt;Primary&lt;/span&gt;&#10;  &lt;span class=&quot;badge rounded-pill text-bg-secondary&quot;&gt;Secondary&lt;/span&gt;&#10;  &lt;span class=&quot;badge rounded-pill text-bg-success&quot;&gt;Success&lt;/span&gt;&#10;  &lt;span class=&quot;badge rounded-pill text-bg-danger&quot;&gt;Danger&lt;/span&gt;&#10;  &lt;span class=&quot;badge rounded-pill text-bg-warning&quot;&gt;Warning&lt;/span&gt;&#10;  &lt;span class=&quot;badge rounded-pill text-bg-info&quot;&gt;Info&lt;/span&gt;&#10;  &lt;span class=&quot;badge rounded-pill text-bg-dark&quot;&gt;Dark&lt;/span&gt;&#10;&lt;/p&gt;&#10;&lt;p&gt;&#10;  &lt;span class=&quot;badge rounded-pill bg-label-primary&quot;&gt;Primary&lt;/span&gt;&#10;  &lt;span class=&quot;badge rounded-pill bg-label-secondary&quot;&gt;Secondary&lt;/span&gt;&#10;  &lt;span class=&quot;badge rounded-pill bg-label-success&quot;&gt;Success&lt;/span&gt;&#10;  &lt;span class=&quot;badge rounded-pill bg-label-danger&quot;&gt;Danger&lt;/span&gt;&#10;  &lt;span class=&quot;badge rounded-pill bg-label-warning&quot;&gt;Warning&lt;/span&gt;&#10;  &lt;span class=&quot;badge rounded-pill bg-label-info&quot;&gt;Info&lt;/span&gt;&#10;  &lt;span class=&quot;badge rounded-pill bg-label-dark&quot;&gt;Dark&lt;/span&gt;&#10;&lt;/p&gt;&#10;&lt;p&gt;&#10;  &lt;span class=&quot;badge rounded-pill badge-outline-primary&quot;&gt;Primary&lt;/span&gt;&#10;  &lt;span class=&quot;badge rounded-pill badge-outline-secondary&quot;&gt;Secondary&lt;/span&gt;&#10;  &lt;span class=&quot;badge rounded-pill badge-outline-success&quot;&gt;Success&lt;/span&gt;&#10;  &lt;span class=&quot;badge rounded-pill badge-outline-danger&quot;&gt;Danger&lt;/span&gt;&#10;  &lt;span class=&quot;badge rounded-pill badge-outline-warning&quot;&gt;Warning&lt;/span&gt;&#10;  &lt;span class=&quot;badge rounded-pill badge-outline-info&quot;&gt;Info&lt;/span&gt;&#10;  &lt;span class=&quot;badge rounded-pill badge-outline-dark&quot;&gt;Dark&lt;/span&gt;&#10;&lt;/p&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-12" />
+
+      <!-- Links -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="badge-links" class="anchor-heading mb-6 fw-bold">Links</h4>
+          <p>Using the contextual <code>.text-bg-{value}</code> classes inside an <code>&lt;a&gt;</code> element quickly provide <em>actionable</em> badges.</p>
+
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="badge-links-preview-tab" data-bs-toggle="tab" data-bs-target="#badge-links-preview" role="tab" aria-controls="badge-links-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="badge-links-html-tab" data-bs-toggle="tab" data-bs-target="#badge-links-html" role="tab" aria-controls="badge-links-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="badge-links-preview" role="tabpanel" aria-labelledby="badge-links-preview-tab">
+                <div class="demo-inline-spacing">
+                  <a href="javascript:void(0)"><span class="badge text-bg-primary mt-4">Primary</span></a>
+                  <a href="javascript:void(0)"><span class="badge text-bg-secondary mt-4">Secondary</span></a>
+                  <a href="javascript:void(0)"><span class="badge text-bg-success mt-4">Success</span></a>
+                  <a href="javascript:void(0)"><span class="badge text-bg-danger mt-4">Danger</span></a>
+                  <a href="javascript:void(0)"><span class="badge text-bg-warning mt-4">Warning</span></a>
+                  <a href="javascript:void(0)"><span class="badge text-bg-info mt-4">Info</span></a>
+                  <a href="javascript:void(0)"><span class="badge text-bg-dark mt-4">Dark</span></a>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="badge-links-html" role="tabpanel" aria-labelledby="badge-links-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;a href=&quot;javascript:void(0)&quot;&gt;&lt;span class=&quot;badge text-bg-primary&quot;&gt;Primary&lt;/span&gt;&lt;/a&gt;&#10;&lt;a href=&quot;javascript:void(0)&quot;&gt;&lt;span class=&quot;badge text-bg-secondary&quot;&gt;Secondary&lt;/span&gt;&lt;/a&gt;&#10;&lt;a href=&quot;javascript:void(0)&quot;&gt;&lt;span class=&quot;badge text-bg-success&quot;&gt;Success&lt;/span&gt;&lt;/a&gt;&#10;&lt;a href=&quot;javascript:void(0)&quot;&gt;&lt;span class=&quot;badge text-bg-danger&quot;&gt;Danger&lt;/span&gt;&lt;/a&gt;&#10;&lt;a href=&quot;javascript:void(0)&quot;&gt;&lt;span class=&quot;badge text-bg-warning&quot;&gt;Warning&lt;/span&gt;&lt;/a&gt;&#10;&lt;a href=&quot;javascript:void(0)&quot;&gt;&lt;span class=&quot;badge text-bg-info&quot;&gt;Info&lt;/span&gt;&lt;/a&gt;&#10;&lt;a href=&quot;javascript:void(0)&quot;&gt;&lt;span class=&quot;badge text-bg-dark&quot;&gt;Dark&lt;/span&gt;&lt;/a&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-12" />
+
+      <!-- Button with Badges -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="buttons-badge" class="anchor-heading mb-6 fw-bold">Button with Badges</h4>
+          <p>
+            Badges can be used as part of links or buttons to provide a counter. Style button with badges with
+            <code>.bg-label-{value}.badge-center</code>
+          </p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="badges-button-badge-preview-tab" data-bs-toggle="tab" data-bs-target="#badges-button-badge-preview" role="tab" aria-controls="badges-button-badge-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="badges-button-badge-html-tab" data-bs-toggle="tab" data-bs-target="#badges-button-badge-html" role="tab" aria-controls="badges-button-badge-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="badges-button-badge-preview" role="tabpanel" aria-labelledby="badges-button-badge-preview-tab">
+                <div class="d-flex gap-4 flex-wrap mt-4">
+                  <button type="button" class="btn btn-primary">
+                    Text
+                    <span class="badge bg-white text-primary badge-center ms-1">4</span>
+                  </button>
+                  <button type="button" class="btn btn-secondary">
+                    Text
+                    <span class="badge text-bg-secondary rounded-pill ms-1">4</span>
+                  </button>
+                </div>
+                <div class="d-flex gap-4 flex-wrap mt-4">
+                  <button type="button" class="btn btn-label-primary">
+                    Text
+                    <span class="badge bg-primary text-white badge-center ms-1">4</span>
+                  </button>
+                  <button type="button" class="btn btn-label-secondary">
+                    Text
+                    <span class="badge text-bg-secondary rounded-pill ms-1">4</span>
+                  </button>
+                </div>
+                <div class="d-flex gap-4 flex-wrap mt-4">
+                  <button type="button" class="btn btn-outline-primary">
+                    Text
+                    <span class="badge bg-primary text-white badge-center ms-1">4</span>
+                  </button>
+                  <button type="button" class="btn btn-outline-secondary me-4">
+                    Text
+                    <span class="badge bg-secondary text-white rounded-pill badge-center ms-1">4</span>
+                  </button>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="badges-button-badge-html" role="tabpanel" aria-labelledby="badges-button-badge-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;p&gt;&#10;  &lt;button type=&quot;button&quot; class=&quot;btn btn-primary me-4&quot;&gt;&#10;    Text&#10;    &lt;span class=&quot;badge bg-white text-primary ms-1&quot;&gt;4&lt;/span&gt;&#10;  &lt;/button&gt;&#10;  &lt;button type=&quot;button&quot; class=&quot;btn btn-primary me-4&quot;&gt;&#10;    Text&#10;    &lt;span class=&quot;badge text-bg-secondary rounded-pill ms-1&quot;&gt;4&lt;/span&gt;&#10;  &lt;/button&gt;&#10;&lt;/p&gt;&#10;&lt;p&gt;&#10;  &lt;button type=&quot;button&quot; class=&quot;btn btn-label-primary me-4&quot;&gt;&#10;    Text&#10;    &lt;span class=&quot;badge bg-white text-primary ms-1&quot;&gt;4&lt;/span&gt;&#10;  &lt;/button&gt;&#10;  &lt;button type=&quot;button&quot; class=&quot;btn btn-label-primary me-4&quot;&gt;&#10;    Text&#10;    &lt;span class=&quot;badge text-bg-secondary rounded-pill ms-1&quot;&gt;4&lt;/span&gt;&#10;  &lt;/button&gt;&#10;&lt;/p&gt;&#10;&lt;p&gt;&#10;  &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-primary me-4&quot;&gt;&#10;    Text&#10;    &lt;span class=&quot;badge ms-1&quot;&gt;4&lt;/span&gt;&#10;  &lt;/button&gt;&#10;  &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-primary me-4&quot;&gt;&#10;    Text&#10;    &lt;span class=&quot;badge rounded-pill ms-1&quot;&gt;4&lt;/span&gt;&#10;  &lt;/button&gt;&#10;&lt;/p&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-12" />
+
+      <!-- Badge Circle & Square -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="badge-circle-square" class="anchor-heading mb-6 fw-bold">Badge Circle & Square</h4>
+          <p>Make circle & square badge by using <code>.badge-center</code> class, use <code>.rounded-pills</code> class for circle badge.</p>
+          <p>You can also use <code>.bg-label-{value}</code> and <code>.badge-outline-{value}</code> style with this.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="badges-center-preview-tab" data-bs-toggle="tab" data-bs-target="#badges-center-preview" role="tab" aria-controls="badges-center-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="badges-center-html-tab" data-bs-toggle="tab" data-bs-target="#badges-center-html" role="tab" aria-controls="badges-center-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="badges-center-preview" role="tabpanel" aria-labelledby="badges-center-preview-tab">
+                <div class="row row-bordered g-0">
+                  <div class="col-xl-3 p-6">
+                    <h6>Basic</h6>
+                    <div class="demo-inline-spacing">
+                      <p class="d-flex gap-2">
+                        <span class="badge badge-center rounded-pill text-bg-primary">1</span>
+                        <span class="badge badge-center rounded-pill text-bg-secondary"><i class="icon-base ti tabler-star"></i></span>
+                      </p>
+                      <p class="d-flex gap-2">
+                        <span class="badge badge-center text-bg-primary">1</span>
+                        <span class="badge badge-center text-bg-secondary"><i class="icon-base ti tabler-star"></i></span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 p-6">
+                    <h6>Label</h6>
+                    <div class="demo-inline-spacing">
+                      <p class="d-flex gap-2">
+                        <span class="badge badge-center rounded-pill bg-label-primary">1</span>
+                        <span class="badge badge-center rounded-pill bg-label-secondary"><i class="icon-base ti tabler-star"></i></span>
+                      </p>
+                      <p class="d-flex gap-2">
+                        <span class="badge badge-center bg-label-primary">1</span>
+                        <span class="badge badge-center bg-label-secondary"><i class="icon-base ti tabler-star"></i></span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 p-6">
+                    <h6>Outline</h6>
+                    <div class="demo-inline-spacing">
+                      <p class="d-flex gap-2">
+                        <span class="badge badge-center rounded-pill badge-outline-primary">1</span>
+                        <span class="badge badge-center rounded-pill badge-outline-secondary"><i class="icon-base ti tabler-star"></i></span>
+                      </p>
+                      <p class="d-flex gap-2">
+                        <span class="badge badge-center badge-outline-primary">1</span>
+                        <span class="badge badge-center badge-outline-secondary"><i class="icon-base ti tabler-star"></i></span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 p-6">
+                    <h6>Glow</h6>
+                    <div class="demo-inline-spacing">
+                      <p class="d-flex gap-2">
+                        <span class="badge badge-center rounded-pill bg-primary bg-glow">1</span>
+                        <span class="badge badge-center rounded-pill bg-secondary bg-glow"><i class="icon-base ti tabler-star"></i></span>
+                      </p>
+                      <p class="d-flex gap-2">
+                        <span class="badge badge-center bg-primary bg-glow">1</span>
+                        <span class="badge badge-center bg-secondary bg-glow"><i class="icon-base ti tabler-star"></i></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="badges-center-html" role="tabpanel" aria-labelledby="badges-center-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;row row-bordered g-0&quot;&gt;&#10;  &lt;div class=&quot;col-xl-3 p-6&quot;&gt;&#10;    &lt;h6&gt;Basic&lt;/h6&gt;&#10;    &lt;div class=&quot;demo-inline-spacing&quot;&gt;&#10;      &lt;p class=&quot;d-flex gap-2&quot;&gt;&#10;        &lt;span class=&quot;badge badge-center rounded-pill text-bg-primary&quot;&gt;1&lt;/span&gt;&#10;        &lt;span class=&quot;badge badge-center rounded-pill text-bg-secondary&quot;&gt;&lt;i class=&quot;icon-base ti tabler-star&quot;&gt;&lt;/i&gt;&lt;/span&gt;&#10;      &lt;/p&gt;&#10;      &lt;p class=&quot;d-flex gap-2&quot;&gt;&#10;        &lt;span class=&quot;badge badge-center text-bg-primary&quot;&gt;1&lt;/span&gt;&#10;        &lt;span class=&quot;badge badge-center text-bg-secondary&quot;&gt;&lt;i class=&quot;icon-base ti tabler-star&quot;&gt;&lt;/i&gt;&lt;/span&gt;&#10;      &lt;/p&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;col-xl-3 p-6&quot;&gt;&#10;    &lt;h6&gt;Label&lt;/h6&gt;&#10;    &lt;div class=&quot;demo-inline-spacing&quot;&gt;&#10;      &lt;p class=&quot;d-flex gap-2&quot;&gt;&#10;        &lt;span class=&quot;badge badge-center rounded-pill bg-label-primary&quot;&gt;1&lt;/span&gt;&#10;        &lt;span class=&quot;badge badge-center rounded-pill bg-label-secondary&quot;&gt;&lt;i class=&quot;icon-base ti tabler-star&quot;&gt;&lt;/i&gt;&lt;/span&gt;&#10;      &lt;/p&gt;&#10;      &lt;p class=&quot;d-flex gap-2&quot;&gt;&#10;        &lt;span class=&quot;badge badge-center bg-label-primary&quot;&gt;1&lt;/span&gt;&#10;        &lt;span class=&quot;badge badge-center bg-label-secondary&quot;&gt;&lt;i class=&quot;icon-base ti tabler-star&quot;&gt;&lt;/i&gt;&lt;/span&gt;&#10;      &lt;/p&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;col-xl-3 p-6&quot;&gt;&#10;    &lt;h6&gt;Outline&lt;/h6&gt;&#10;    &lt;div class=&quot;demo-inline-spacing&quot;&gt;&#10;      &lt;p class=&quot;d-flex gap-2&quot;&gt;&#10;        &lt;span class=&quot;badge badge-center rounded-pill badge-outline-primary&quot;&gt;1&lt;/span&gt;&#10;        &lt;span class=&quot;badge badge-center rounded-pill badge-outline-secondary&quot;&gt;&lt;i class=&quot;icon-base ti tabler-star&quot;&gt;&lt;/i&gt;&lt;/span&gt;&#10;      &lt;/p&gt;&#10;      &lt;p class=&quot;d-flex gap-2&quot;&gt;&#10;        &lt;span class=&quot;badge badge-center badge-outline-primary&quot;&gt;1&lt;/span&gt;&#10;        &lt;span class=&quot;badge badge-center badge-outline-secondary&quot;&gt;&lt;i class=&quot;icon-base ti tabler-star&quot;&gt;&lt;/i&gt;&lt;/span&gt;&#10;      &lt;/p&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;col-xl-3 p-6&quot;&gt;&#10;    &lt;h6&gt;Glow&lt;/h6&gt;&#10;    &lt;div class=&quot;demo-inline-spacing&quot;&gt;&#10;      &lt;p class=&quot;d-flex gap-2&quot;&gt;&#10;        &lt;span class=&quot;badge badge-center rounded-pill bg-primary bg-glow&quot;&gt;1&lt;/span&gt;&#10;        &lt;span class=&quot;badge badge-center rounded-pill bg-secondary bg-glow&quot;&gt;&lt;i class=&quot;icon-base ti tabler-star&quot;&gt;&lt;/i&gt;&lt;/span&gt;&#10;      &lt;/p&gt;&#10;      &lt;p class=&quot;d-flex gap-2&quot;&gt;&#10;        &lt;span class=&quot;badge badge-center bg-primary bg-glow&quot;&gt;1&lt;/span&gt;&#10;        &lt;span class=&quot;badge badge-center bg-secondary bg-glow&quot;&gt;&lt;i class=&quot;icon-base ti tabler-star&quot;&gt;&lt;/i&gt;&lt;/span&gt;&#10;      &lt;/p&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-12" />
+
+      <!-- Notifications -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="badge-notifications" class="anchor-heading mb-6 fw-bold">Notifications</h4>
+          <p>Use class <code>.badge-notifications</code> for notifications badges. You can also create dot style notifications by using <code>.badge-dot</code>.</p>
+          <p>Style notifications badges with <code>.bg-label-{value}</code> and <code>.badge-outline-{value}</code>.</p>
+
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="btn-toggle-states-preview-tab" data-bs-toggle="tab" data-bs-target="#btn-toggle-states-preview" role="tab" aria-controls="btn-toggle-states-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" states="btn-size-html-tab" data-bs-toggle="tab" data-bs-target="#btn-toggle-states-html" role="tab" aria-controls="btn-toggle-states-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="btn-toggle-states-preview" role="tabpanel" aria-labelledby="btn-toggle-states-preview-tab">
+                <div class="card-body d-flex flex-wrap gap-2">
+                  <button type="button" class="btn btn-label-primary text-nowrap d-inline-flex position-relative me-4">
+                    Badge
+                    <span class="position-absolute top-0 start-100 translate-middle badge badge-center rounded-pill bg-primary text-white">12</span>
+                  </button>
+                  <button type="button" class="btn btn-label-warning text-nowrap d-inline-flex position-relative me-4">
+                    Label Badge
+                    <span class="position-absolute top-0 start-100 translate-middle badge badge-center rounded-pill bg-warning text-white">12</span>
+                  </button>
+                  <button type="button" class="btn btn-label-info text-nowrap d-inline-flex position-relative me-4">
+                    Pill
+                    <span class="position-absolute top-0 start-100 translate-middle badge badge-center rounded-pill bg-info text-white">12</span>
+                  </button>
+                  <button type="button" class="btn btn-label-danger text-nowrap d-inline-flex position-relative">
+                    Dot
+                    <span class="position-absolute top-0 start-100 translate-middle badge badge-dot border border-2 p-2 bg-danger"></span>
+                  </button>
+                  <button type="button" class="btn text-nowrap d-inline-block">
+                    <span class="icon-base ti tabler-mail icon-sm"></span>
+                    <span class="badge text-bg-primary badge-notifications">6</span>
+                  </button>
+                  <button type="button" class="btn text-nowrap d-inline-block">
+                    <span class="icon-base ti tabler-clock icon-sm"></span>
+                    <span class="badge rounded-pill bg-label-danger badge-notifications">5</span>
+                  </button>
+                  <button type="button" class="btn text-nowrap d-inline-block">
+                    <span class="icon-base ti tabler-bell icon-sm"></span>
+                    <span class="badge rounded-pill text-bg-danger badge-notifications">10</span>
+                  </button>
+                  <button type="button" class="btn text-nowrap d-inline-block">
+                    <span class="icon-base ti tabler-brand-facebook icon-sm"></span>
+                    <span class="badge rounded-pill bg-danger badge-dot badge-notifications"></span>
+                  </button>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="btn-toggle-states-html" role="tabpanel" aria-labelledby="btn-toggle-states-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;card-body d-flex flex-wrap gap-2&quot;&gt;&#10;  &lt;button type=&quot;button&quot; class=&quot;btn btn-label-primary text-nowrap d-inline-flex position-relative me-4&quot;&gt;&#10;    Badge&#10;    &lt;span class=&quot;position-absolute top-0 start-100 translate-middle badge badge-center rounded-pill bg-primary text-white&quot;&gt;12&lt;/span&gt;&#10;  &lt;/button&gt;&#10;  &lt;button type=&quot;button&quot; class=&quot;btn btn-label-warning text-nowrap d-inline-flex position-relative me-4&quot;&gt;&#10;    Label Badge&#10;    &lt;span class=&quot;position-absolute top-0 start-100 translate-middle badge badge-center rounded-pill bg-warning text-white&quot;&gt;12&lt;/span&gt;&#10;  &lt;/button&gt;&#10;  &lt;button type=&quot;button&quot; class=&quot;btn btn-label-info text-nowrap d-inline-flex position-relative me-4&quot;&gt;&#10;    Pill&#10;    &lt;span class=&quot;position-absolute top-0 start-100 translate-middle badge badge-center rounded-pill bg-info text-white&quot;&gt;12&lt;/span&gt;&#10;  &lt;/button&gt;&#10;  &lt;button type=&quot;button&quot; class=&quot;btn btn-label-danger text-nowrap d-inline-flex position-relative&quot;&gt;&#10;    Dot&#10;    &lt;span class=&quot;position-absolute top-0 start-100 translate-middle badge badge-dot border border-2 p-2 bg-danger&quot;&gt;&lt;/span&gt;&#10;  &lt;/button&gt;&#10;  &lt;button type=&quot;button&quot; class=&quot;btn text-nowrap d-inline-block&quot;&gt;&#10;    &lt;span class=&quot;icon-base ti tabler-mail icon-sm&quot;&gt;&lt;/span&gt;&#10;    &lt;span class=&quot;badge text-bg-primary badge-notifications&quot;&gt;6&lt;/span&gt;&#10;  &lt;/button&gt;&#10;  &lt;button type=&quot;button&quot; class=&quot;btn text-nowrap d-inline-block&quot;&gt;&#10;    &lt;span class=&quot;icon-base ti tabler-clock icon-sm&quot;&gt;&lt;/span&gt;&#10;    &lt;span class=&quot;badge rounded-pill bg-label-danger badge-notifications&quot;&gt;5&lt;/span&gt;&#10;  &lt;/button&gt;&#10;  &lt;button type=&quot;button&quot; class=&quot;btn text-nowrap d-inline-block&quot;&gt;&#10;    &lt;span class=&quot;icon-base ti tabler-bell icon-sm&quot;&gt;&lt;/span&gt;&#10;    &lt;span class=&quot;badge rounded-pill text-bg-danger badge-notifications&quot;&gt;10&lt;/span&gt;&#10;  &lt;/button&gt;&#10;  &lt;button type=&quot;button&quot; class=&quot;btn text-nowrap d-inline-block&quot;&gt;&#10;    &lt;span class=&quot;icon-base ti tabler-brand-facebook icon-sm&quot;&gt;&lt;/span&gt;&#10;    &lt;span class=&quot;badge rounded-pill bg-danger badge-dot badge-notifications&quot;&gt;&lt;/span&gt;&#10;  &lt;/button&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-12" />
+
+      <!-- Dots Style -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="badge-dots" class="anchor-heading mb-6 fw-bold">Dots Style</h4>
+          <p>Use class <code>.badge-dot</code> to create dot style badge.</p>
+
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="badge-dot-preview-tab" data-bs-toggle="tab" data-bs-target="#badge-dot-preview" role="tab" aria-controls="badge-dot-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="badge-dot-html-tab" data-bs-toggle="tab" data-bs-target="#badge-dot-html" role="tab" aria-controls="badge-dot-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="badge-dot-preview" role="tabpanel" aria-labelledby="badge-dot-preview-tab">
+                <div class="d-sm-flex d-block demo-inline-spacing">
+                  <div class="d-flex align-items-center lh-1"><span class="badge badge-dot bg-primary me-1"></span> Primary</div>
+                  <div class="d-flex align-items-center lh-1"><span class="badge badge-dot bg-secondary me-1"></span> Secondary</div>
+                  <div class="d-flex align-items-center lh-1"><span class="badge badge-dot bg-success me-1"></span> Success</div>
+                  <div class="d-flex align-items-center lh-1"><span class="badge badge-dot bg-danger me-1"></span> Danger</div>
+                  <div class="d-flex align-items-center lh-1"><span class="badge badge-dot bg-warning me-1"></span> Warning</div>
+                  <div class="d-flex align-items-center lh-1"><span class="badge badge-dot bg-info me-1"></span> Info</div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="badge-dot-html" role="tabpanel" aria-labelledby="badge-dot-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;d-flex align-items-center lh-1 me-4&quot;&gt;&#13;&#10;  &lt;span class=&quot;badge badge-dot bg-primary me-1&quot;&gt;&lt;/span&gt; Primary&#13;&#10;&lt;/div&gt;&#13;&#10;&lt;div class=&quot;d-flex align-items-center lh-1 me-4&quot;&gt;&#13;&#10;  &lt;span class=&quot;badge badge-dot bg-secondary me-1&quot;&gt;&lt;/span&gt; Secondary&#13;&#10;&lt;/div&gt;&#13;&#10;&lt;div class=&quot;d-flex align-items-center lh-1 me-4&quot;&gt;&#13;&#10;  &lt;span class=&quot;badge badge-dot bg-success me-1&quot;&gt;&lt;/span&gt; Success&#13;&#10;&lt;/div&gt;&#13;&#10;&lt;div class=&quot;d-flex align-items-center lh-1 me-4&quot;&gt;&#13;&#10;  &lt;span class=&quot;badge badge-dot bg-danger me-1&quot;&gt;&lt;/span&gt; Danger&#13;&#10;&lt;/div&gt;&#13;&#10;&lt;div class=&quot;d-flex align-items-center lh-1 me-4&quot;&gt;&#13;&#10;  &lt;span class=&quot;badge badge-dot bg-warning me-1&quot;&gt;&lt;/span&gt; Warning&#13;&#10;&lt;/div&gt;&#13;&#10;&lt;div class=&quot;d-flex align-items-center lh-1 me-4&quot;&gt;&#13;&#10;  &lt;span class=&quot;badge badge-dot bg-info me-1&quot;&gt;&lt;/span&gt; Info&#13;&#10;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-none d-xl-block col-xl-2 doc-sidebar container-p-y">
+      <nav id="vertical-nav" class="navbar p-0">
+        <ul class="doc-sidebar-nav">
+          <li class="doc-entry doc-h2"><a class="nav-link" href="#badge-example">Example</a></li>
+          <li class="doc-entry doc-h2"><a class="nav-link" href="#basic-badge">Basic Badges</a></li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#label-badge">Label Badges <span class="badge badge-center badge-sm rounded-pill bg-label-danger">C</span></a>
+          </li>
+          <li class="doc-entry doc-h2"><a class="nav-link" href="#outline-badge">Outline Badges</a></li>
+          <li class="doc-entry doc-h2"><a class="nav-link" href="#glow-badge">Glow Badges</a></li>
+          <li class="doc-entry doc-h2"><a class="nav-link" href="#badges-pill">Pill Badges</a></li>
+          <li class="doc-entry doc-h2"><a class="nav-link" href="#badge-links">Links</a></li>
+          <li class="doc-entry doc-h2"><a class="nav-link" href="#buttons-badge">Button with Badges</a></li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#badge-circle-square">Badge Circle & Square <span class="badge badge-center badge-sm rounded-pill bg-label-danger">C</span></a>
+          </li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#badge-notifications">Notifications <span class="badge badge-center badge-sm rounded-pill bg-label-danger">C</span></a>
+          </li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#badge-dots">Dots Style <span class="badge badge-center badge-sm rounded-pill bg-label-danger">C</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+          <!-- / Content -->
+
+          
+            <footer class="content-footer footer">
+  <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center text-center py-4">
+    <div>
+      &#169; 2017-
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      
+        <a href="https://pixinvent.com" class="footer-text fw-medium" target="_blank">Pixinvent</a>, Hand-crafted & Made with â¤ï¸
+      
+    </div>
+    <div>
+      
+        <a href="https://www.facebook.com/pixinvents/" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-facebook"></i></a>
+      
+      
+        <a href="https://x.com/pixinvents" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-twitter"></i></a>
+      
+      
+        <a href="https://github.com/pixinvent" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-github"></i></a>
+      
+      
+        <a href="https://dribbble.com/pixinvent" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-dribbble"></i></a>
+      
+      
+        <a href="https://www.instagram.com/pixinvents/" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-instagram"></i></a>
+      
+    </div>
+  </div>
+</footer>
+
+          
+        </div>
+        <!-- Content wrapper -->
+      </div>
+      <!-- / Layout page -->
+    </div>
+
+    
+      
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    
+    <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+    <div class="drag-target"></div>
+  </div>
+  <!-- / Layout wrapper -->
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="assets/vendor/libs/highlight/highlight.js"></script>
+    <script src="assets/vendor/libs/clipboard/clipboard.js"></script>
+    
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/vendor/libs/node-waves/node-waves.js"></script>
+    <script src="assets/vendor/libs/@algolia/autocomplete-js.js"></script>
+    <script src="assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="assets/vendor/js/menu.js"></script>
+    <!-- Vendors JS -->
+    
+
+    <!-- Page JS -->
+    <script src="assets/js/docs.js"></script>
+    
+  </body>
+</html>
+
+  <!-- beautify ignore:end -->
+

@@ -1,0 +1,2293 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- =========================================================
+* Vuexy - Bootstrap Dashboard PRO | v3.0.0
+==============================================================
+
+* Product Page: https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599
+* Created by: Pixinvent
+
+    * License: You must have a valid license purchased in order to legally use the theme for your project.
+  
+* Copyright Pixinvent (https://pixinvent.com)
+
+=========================================================
+ -->
+  <!-- beautify ignore:start -->
+
+<html lang="en" class="docs-page  layout-menu-fixed-offcanvas " data-assets-path="assets/" data-skin="bordered">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Docs: Forms - Basic inputs  | Vuexy - Bootstrap Dashboard PRO</title>
+
+    <meta name="description" content="Vuexy is the best bootstrap 5 dashboard for responsive web apps. Streamline your app development process with ease." />
+    <meta name="keywords" content="Vuexy bootstrap dashboard, vuexy bootstrap 5 dashboard, themeselection, html dashboard, web dashboard, frontend dashboard, responsive bootstrap theme" />
+    <meta property="og:title" content="Vuexy bootstrap Dashboard by Pixinvent" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" />
+    <meta property="og:image" content="https://pixinvent.com/wp-content/uploads/2023/06/vuexy-hero-image.png" />
+    <meta property="og:description" content="Vuexy is the best bootstrap 5 dashboard for responsive web apps. Streamline your app development process with ease." />
+    <meta property="og:site_name" content="Pixinvent" />
+
+    <!-- Canonical SEO -->
+    <link rel="canonical" href="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" />
+
+    
+      
+      <script>
+        (function (w, d, s, l, i) {
+          w[l] = w[l] || [];
+          w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+          });
+          var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+          j.async = true;
+          j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+          f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5J3LMKC');
+      </script>
+      
+    
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="48x48" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="16x16" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="32x32" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="180x180" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="192x192" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="512x512" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendor/fonts/iconify-icons.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/node-waves/node-waves.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/highlight/highlight.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+    
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="assets/vendor/css/core.css" />
+    <link rel="stylesheet" href="assets/css/demo.css" />
+    <link rel="stylesheet" href="assets/css/docs.css" />
+
+    <!-- Page CSS -->
+    
+
+    <!-- Core JS -->
+    <script src="assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: Don't remove unless you are aware of it, To hide customizer set displayCustomizer value false in config.js.  -->
+    <!-- <script src="assets/vendor/js/template-customizer.js"></script> -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="assets/js/config.js"></script>
+  </head>
+
+  <body>
+    
+      
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5J3LMKC" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+      
+    
+
+    <!-- Layout wrapper -->
+  <div class="layout-wrapper layout-navbar-full ">
+    <div class="layout-container">
+      
+        
+
+
+<!-- Navbar main -->
+
+<nav class="layout-navbar navbar navbar-expand-lg align-items-lg-center bg-white border-bottom" id="layout-navbar">
+  <div class="container-fluid">
+    
+      <!-- Menu toggle (see assets/css/demo/demo.css) -->
+      <div class="layout-menu-toggle navbar-nav d-lg-none align-items-lg-center">
+        <a class="nav-item nav-link px-0 me-lg-4" href="javascript:void(0)">
+          <i class="icon-base ti tabler-menu-2 icon-md align-middle"></i>
+        </a>
+      </div>
+    
+
+    <!-- Brand demo (see assets/css/demo/demo.css) -->
+    <div class="navbar-brand app-brand demo py-0 me-md-auto me-12 ms-lg-0 ms-0">
+      <a href="index.html" class="app-brand-link">
+        <span class="app-brand-logo demo">
+  <span class="text-primary">
+    <svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.00172773 0V6.85398C0.00172773 6.85398 -0.133178 9.01207 1.98092 10.8388L13.6912 21.9964L19.7809 21.9181L18.8042 9.88248L16.4951 7.17289L9.23799 0H0.00172773Z" fill="currentColor" />
+      <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd" d="M7.69824 16.4364L12.5199 3.23696L16.5541 7.25596L7.69824 16.4364Z" fill="#161616" />
+      <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd" d="M8.07751 15.9175L13.9419 4.63989L16.5849 7.28475L8.07751 15.9175Z" fill="#161616" />
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z" fill="currentColor" />
+    </svg>
+  </span>
+</span>
+        <span class="app-brand-text demo menu-text fw-bold">Vuexy</span>
+      </a>
+    </div>
+
+    <div class="d-flex ms-md-6 gap-3">
+      
+      <div class="navbar-nav align-items-lg-center justify-content-center">
+        <!-- Search -->
+        <div class="navbar-nav align-items-center">
+          <div class="nav-item navbar-search-wrapper mb-0">
+            <a class="nav-item nav-link search-toggler border rounded-3 py-2 px-md-4 px-2 d-flex align-items-center" href="javascript:void(0);">
+              <span class="d-inline-block text-body-secondary fw-normal" id="autocomplete"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbar-collapse">
+        <hr class="d-lg-none w-100 my-2" />
+        <!-- Divider -->
+
+        <div class="navbar-nav align-items-lg-center">
+          
+          <ul class="navbar-nav">
+            <!-- Technology dropdown -->
+            
+            
+              
+                <li class="nav-item dropdown me-2">
+                  <button class="btn dropdown-toggle py-2 btn-primary" type="button" id="livePreview" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-base ti tabler-current-location me-2"></i> Live preview</button>
+                  <ul class="dropdown-menu" aria-labelledby="livePreview">
+                    <li>
+                      <a href="https://pixinvent.com/vuexy-bootstrap-html-admin-template/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>HTML preview</a>
+                    </li>
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-laravel-admin-template/demo-1/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>Laravel preview</a>
+                      </li>
+                    
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-admin-template/html/vertical-menu-template/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>.Net Core preview</a>
+                      </li>
+                    
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-django-admin-template/demo-1/" target="_blank" class="nav-link text-nowrap"><i class="icon-base ti tabler-current-location me-2"></i>Django preview</a>
+                      </li>
+                    
+                  </ul>
+                </li>
+              
+            
+            
+              <li class="nav-item me-2">
+                <a href="https://pixinvent.ticksy.com/" target="_blank" class="nav-link d-flex align-items-center">
+                  <i class="icon-base ti tabler-lifebuoy me-2"></i>
+                  <span>Support</span>
+                </a>
+              </li>
+            
+            
+              <li class="nav-item">
+                <a href="https://themeforest.net/user/pixinvent/portfolio" target="_blank" class="nav-link d-flex align-items-center">
+                  <i class="icon-base ti tabler-gift me-2"></i>
+                  <span> More Themes</span>
+                </a>
+              </li>
+            
+            
+              <li class="nav-item">
+                <a href="https://themeselection.com/hire-us/" target="_blank" class="nav-link"><i class="icon-base ti tabler-briefcase"></i> Hire Us</a>
+              </li>
+            
+          </ul>
+
+          <!-- Divider -->
+          <div class="nav-item d-none d-lg-block text-big fw-light lh-1 me-4 ms-1">|</div>
+
+          
+            <div class="buy-now-btn">
+              <a href="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" target="_blank" class="btn btn-danger d-flex align-items-center gap-2">
+                <i class="icon-base ti tabler-shopping-cart"></i>
+                <span>Buy Now</span>
+              </a>
+            </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</nav>
+<!-- / Navbar main -->
+
+      
+
+      <!-- Layout page -->
+      <div class="layout-page">
+        
+          
+
+
+
+
+<!-- Menu -->
+<aside id="layout-menu" class="layout-menu menu-doc menu menu-vertical bg-menu-theme">
+  
+  <div class="menu-divider mt-0   d-xl-none "></div>
+
+  <!-- Links -->
+  <ul class="menu-inner py-1">
+    <li class="menu-header text-uppercase small fw-medium">Getting Started</li>
+    <li class="menu-item">
+      <a href="index.html" class="menu-link">
+        <div>Introduction</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="licenses.html" class="menu-link">
+        <div>Licenses</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="folder-structure.html" class="menu-link">
+        <div>Folder Structure</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="quick-start.html" class="menu-link">
+        <div>Quick Start</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="config.html" class="menu-link">
+        <div>Config ð¤©</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="installation-build.html" class="menu-link">
+        <div>Installation & Build</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="template-customizer.html" class="menu-link">
+        <div>Template Customizer</div>
+        
+      </a>
+    </li>
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Customization</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="customization-sass.html" class="menu-link">
+            <div>SASS</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="customization-js.html" class="menu-link">
+            <div>JavaScript</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="customization-third-party-plugins.html" class="menu-link">
+            <div>Third Party Plugins</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="layouts.html" class="menu-link">
+        <div>Layouts</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="dependencies.html" class="menu-link">
+        <div>Dependencies</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="faq.html" class="menu-link">
+        <div>FAQs</div>
+      </a>
+    </li>
+    
+      <!-- Laravel Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row">
+        <span class="me-1">Laravel</span>
+        <span class="badge badge-demo bg-label-danger ms-auto">HTML + Laravel Only</span>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="laravel-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-starter-kit-vs-full-version.html" class="menu-link">
+              <div>Starter-kit Vs Full-version</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-demo-config.html" class="menu-link">
+              <div>Demo Configs</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Auth & ACL</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-auth-jetstream.html" class="menu-link">
+              <div>JetStream</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-passport.html" class="menu-link">
+              <div>Passport</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-sanctum.html" class="menu-link">
+              <div>Sanctum</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-acl.html" class="menu-link">
+              <div>ACL</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-articles-database-connections.html" class="menu-link">
+              <div>Database Connections</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-existing-project.html" class="menu-link">
+              <div>Exiting Project Migration</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-form-validation-integration.html" class="menu-link">
+              <div>Form Validation Package Integration</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-localization.html" class="menu-link">
+          <div>Localization</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-search.html" class="menu-link">
+          <div>Search</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-sail-docker.html" class="menu-link">
+          <div>Sail & Docker</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-deployment.html" class="menu-link">
+          <div>Deployment</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Dotnet Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>ASP.NET CORE</span> <span class="badge badge-demo bg-label-danger ms-auto">Razor Pages</span></li>
+
+      <li class="menu-item">
+        <a href="net-core-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-assets-compilation.html" class="menu-link">
+              <div>Assets Compilation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-start-with-doker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-starter-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="net-core-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Dotnet Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>ASP.NET CORE MVC</span> <span class="badge badge-demo bg-label-danger ms-auto">MVC</span></li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-mvc-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-assets-compilation.html" class="menu-link">
+              <div>Assets Compilation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-start-with-docker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-starter-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="net-core-mvc-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-mvc-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Django Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>Django</span> <span class="badge badge-demo bg-label-danger ms-auto">Django Only</span></li>
+
+      <li class="menu-item">
+        <a href="django-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="django-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-start-with-doker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-demo-config.html" class="menu-link">
+              <div>Demo Config</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-starter-kit-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="django-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="django-articles-create-new-page.html" class="menu-link">
+              <div>Create New Apps & Pages</div>
+            </a>
+          </li>
+          <!-- <li class="menu-item">
+          <a href="django-articles-existing-project.html" class="menu-link">
+            <div>Exiting Project Migration</div>
+          </a>
+        </li> -->
+          <li class="menu-item">
+            <a href="django-articles-admin-superuser.html" class="menu-link">
+              <div>Admin and Create User</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-authentication.html" class="menu-link">
+              <div>Authentication</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="django-articles-permissions-authorization.html" class="menu-link">
+              <div>Permissions & Authorization</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-crud.html" class="menu-link">
+              <div>CRUD Example</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-admin-db.html" class="menu-link">
+              <div>Admin and Database</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-localization.html" class="menu-link">
+          <div>Localization</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-search.html" class="menu-link">
+          <div>Search</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-theme-api.html" class="menu-link">
+          <div>Theme API</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-deployment.html" class="menu-link">
+          <div>Deployment</div>
+        </a>
+      </li>
+    
+    <!-- Apps & Pages -->
+    <li class="menu-divider mb-1"></li>
+    <li class="menu-header text-uppercase small fw-medium">Design System</li>
+
+    <li class="menu-item">
+      <a href="typography.html" class="menu-link">
+        <div>Typography</div>
+      </a>
+    </li>
+
+    <li class="menu-item">
+      <a href="colors.html" class="menu-link">
+        <div>Colors</div>
+      </a>
+    </li>
+
+    <li class="menu-item">
+      <a href="Icons.html" class="menu-link">
+        <div>Icons</div>
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+    <!-- Components -->
+    <li class="menu-header text-uppercase small fw-medium">Components</li>
+
+    <!-- UI Elements -->
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>UI Elements</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="ui-accordion.html" class="menu-link">
+            <div>Accordion</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-alerts.html" class="menu-link">
+            <div>Alerts</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-app-brand.html" class="menu-link">
+            <div>App Brand</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-badges.html" class="menu-link">
+            <div>Badges</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-buttons.html" class="menu-link">
+            <div>Buttons</div>
+          </a>
+        </li>
+        <li class="menu-item
+  ">
+          <a href="javascript:void(0);" class="menu-link menu-toggle">
+            <div>Cards</div>
+          </a>
+          <ul class="menu-sub">
+            <li class="menu-item">
+              <a href="ui-cards-basic.html" class="menu-link">
+                <div>Basic</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="ui-cards-actions.html" class="menu-link">
+                <div>Actions</div>
+                
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="ui-carousel.html" class="menu-link">
+            <div>Carousel</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-collapse.html" class="menu-link">
+            <div>Collapse</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-dropdowns.html" class="menu-link">
+            <div>Dropdowns</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-footer.html" class="menu-link">
+            <div>Footer</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-list-groups.html" class="menu-link">
+            <div>List groups</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-modals.html" class="menu-link">
+            <div>Modals</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-menu.html" class="menu-link">
+            <div>Menu</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-navbar.html" class="menu-link">
+            <div>Navbar</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-offcanvas.html" class="menu-link">
+            <div>Offcanvas</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-pagination-breadcrumbs.html" class="menu-link">
+            <div>Pagination &amp; Breadcrumbs</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-popovers.html" class="menu-link">
+            <div>Popovers</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-progress.html" class="menu-link">
+            <div>Progress</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-spinners.html" class="menu-link">
+            <div>Spinners</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-navs.html" class="menu-link">
+            <div>Navs</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-tabs-pills.html" class="menu-link">
+            <div>Tabs &amp; Pills</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-toasts.html" class="menu-link">
+            <div>Toasts</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-tooltips.html" class="menu-link">
+            <div>Tooltips</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+
+    <!-- Extended components -->
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Extended UI</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="extended-ui-avatar.html" class="menu-link">
+            <div>Avatar</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-blockui.html" class="menu-link">
+            <div>BlockUI</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-drag-and-drop.html" class="menu-link">
+            <div>Drag &amp; Drop</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-media-player.html" class="menu-link">
+            <div>Media Player</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-perfect-scrollbar.html" class="menu-link">
+            <div>Perfect scrollbar</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-star-ratings.html" class="menu-link">
+            <div>Star Ratings</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-sweetalert2.html" class="menu-link">
+            <div>SweetAlert2</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-text-divider.html" class="menu-link">
+            <div>Text Divider</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-timeline.html" class="menu-link">
+            <div>Timeline</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-tour.html" class="menu-link">
+            <div>Tour</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-treeview.html" class="menu-link">
+            <div>Treeview</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-misc.html" class="menu-link">
+            <div>Miscellaneous</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Forms -->
+    <li class="menu-item
+   active open">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Forms</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item active">
+          <a href="forms-basic-inputs.html" class="menu-link">
+            <div>Basic Inputs</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-input-groups.html" class="menu-link">
+            <div>Input groups</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-custom-options.html" class="menu-link">
+            <div>Custom Options</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-editors.html" class="menu-link">
+            <div>Editors</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-file-upload.html" class="menu-link">
+            <div>File Upload</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-pickers.html" class="menu-link">
+            <div>Pickers</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-selects.html" class="menu-link">
+            <div>Select &amp; Tags</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-sliders.html" class="menu-link">
+            <div>Sliders</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-switches.html" class="menu-link">
+            <div>Switches</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-extras.html" class="menu-link">
+            <div>Extras</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-validation.html" class="menu-link">
+            <div>Validation</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-wizard.html" class="menu-link">
+            <div>Wizard</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-layouts-sticky.html" class="menu-link">
+            <div>Sticky Actions</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <!-- Tables -->
+    <li class="menu-item">
+      <a href="tables-basic.html" class="menu-link">
+        <div>Tables</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="tables-datatables.html" class="menu-link">
+        <div>Datatables</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="utilities.html" class="menu-link">
+        <div>Utilities</div>
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+    <!-- Charts & Maps -->
+    <li class="menu-header text-uppercase small fw-medium">Charts &amp; Maps</li>
+
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <div data-i18n="Charts">Charts</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="charts-apex.html" class="menu-link">
+            <div>Apex Charts</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="charts-chartjs.html" class="menu-link">
+            <div>ChartJS</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="maps-leaflet.html" class="menu-link">
+        <div>Leaflet</div>
+        
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+
+    <!-- Charts & Maps -->
+    <li class="menu-header text-uppercase small fw-medium">Others</li>
+    <li class="menu-item">
+      <a href="credits.html" class="menu-link">
+        <div>Credits</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="https://pixinvent.ticksy.com/" target="_blank" class="menu-link">
+        <div>Support</div>
+      </a>
+    </li>
+  </ul>
+</aside>
+<!-- / Menu -->
+
+        
+
+        <!-- Content wrapper -->
+        <div class="content-wrapper">
+          <!-- Content -->
+          <div class="container-xxl flex-grow-1 container-p-y">
+  <div class="row flex-xl-nowrap">
+    <div class="DocSearch-content col-12 col-xl-10 container-p-y">
+      <h2 class="mb-6 doc-page-title">Basic inputs</h2>
+      <p>Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide variety of forms.<br />Read the official <a href="https://getbootstrap.com/docs/5.3/forms/overview/" target="_blank">Bootstrap Documentation</a> for a full list of instructions and other options.</p>
+
+      <hr class="my-12" />
+
+      <!-- Form Inputs -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="form-inputs" class="anchor-heading mb-6 fw-bold">Inputs</h4>
+
+          <!-- Default -->
+
+          <p id="form-default" class="anchor-heading mt-12 fw-bold">Default</p>
+          <p>Default input style with <code>.form-text</code>. For more details, read <a href="https://getbootstrap.com/docs/5.3/forms/overview/" target="_blank">Form overview</a>.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="form-inputs-preview-tab" data-bs-toggle="tab" data-bs-target="#form-inputs-preview" role="tab" aria-controls="form-inputs-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="form-inputs-html-tab" data-bs-toggle="tab" data-bs-target="#form-inputs-html" role="tab" aria-controls="form-inputs-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="form-inputs-preview" role="tabpanel" aria-labelledby="form-inputs-preview-tab">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div>
+                      <label for="defaultFormControlInput" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe" aria-describedby="defaultFormControlHelp" />
+                      <div id="defaultFormControlHelp" class="form-text">We'll never share your details with anyone else.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="form-inputs-html" role="tabpanel" aria-labelledby="form-inputs-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div&gt;&#10;  &lt;label for=&quot;defaultFormControlInput&quot; class=&quot;form-label&quot;&gt;Name&lt;/label&gt;&#10;  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;defaultFormControlInput&quot; placeholder=&quot;John Doe&quot;&#10;    aria-describedby=&quot;defaultFormControlHelp&quot; /&gt;&#10;  &lt;div id=&quot;defaultFormControlHelp&quot; class=&quot;form-text&quot;&gt;We&apos;ll never share your details with anyone else.&#10;  &lt;/div&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <!-- Float Label -->
+
+          <p id="form-float" class="anchor-heading mt-12 fw-bold">Float</p>
+          <p>Wrap a pair of <code>&lt;input class="form-control"&gt;</code> and <code>&lt;label&gt;</code> elements in <code>.form-floating</code> to enable floating labels with Bootstrapâs textual form fields. For more details, read <a href="https://getbootstrap.com/docs/5.3/forms/floating-labels/" target="_blank">Floating labels</a> Documentation.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="form-float-preview-tab" data-bs-toggle="tab" data-bs-target="#form-float-preview" role="tab" aria-controls="form-float-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="form-float-html-tab" data-bs-toggle="tab" data-bs-target="#form-float-html" role="tab" aria-controls="form-float-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="form-float-preview" role="tabpanel" aria-labelledby="form-float-preview-tab">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="floatingInput" placeholder="John Doe" aria-describedby="floatingInputHelp" />
+                      <label for="floatingInput">Name</label>
+                      <div id="floatingInputHelp" class="form-text">We'll never share your details with anyone else.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="form-float-html" role="tabpanel" aria-labelledby="form-float-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;form-floating&quot;&gt;&#10;  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;floatingInput&quot; placeholder=&quot;John Doe&quot; aria-describedby=&quot;floatingInputHelp&quot; /&gt;&#10;  &lt;label for=&quot;floatingInput&quot;&gt;Name&lt;/label&gt;&#10;  &lt;div id=&quot;floatingInputHelp&quot; class=&quot;form-text&quot;&gt;We&apos;ll never share your details with anyone else.&lt;/div&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-12" />
+
+      <!-- Form Controls -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="form-controls" class="anchor-heading mb-6 fw-bold">Form Controls</h4>
+          <p>Textual form controlsâlike <code>&lt;input&gt;</code>s, <code>&lt;select&gt;</code>s, and <code>&lt;textarea&gt;</code>sâare styled with the <code>.form-control</code> class. Included are styles for general appearance, focus state, sizing, and more.</p>
+
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="form-control-tab" data-bs-toggle="tab" data-bs-target="#form-control" role="tab" aria-controls="form-control" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="form-control-html-tab" data-bs-toggle="tab" data-bs-target="#form-control-html" role="tab" aria-controls="form-control-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="form-control" role="tabpanel" aria-labelledby="form-control-tab">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="mb-4">
+                      <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
+                    </div>
+                    <div class="mb-4">
+                      <label for="exampleFormControlReadOnlyInput1" class="form-label">Read only</label>
+                      <input class="form-control" type="text" id="exampleFormControlReadOnlyInput1" placeholder="Readonly input here..." readonly />
+                    </div>
+                    <div class="mb-4">
+                      <label for="exampleFormControlReadOnlyInputPlain1" class="form-label">Read plain</label>
+                      <input type="text" readonly class="form-control-plaintext" id="exampleFormControlReadOnlyInputPlain1" value="email@example.com" />
+                    </div>
+                    <div class="mb-4">
+                      <label for="exampleFormControlSelect1" class="form-label">Example select</label>
+                      <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <div class="mb-4">
+                      <label for="exampleDataList" class="form-label">Datalist example</label>
+                      <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search..." />
+                      <datalist id="datalistOptions">
+                        <option value="San Francisco"></option>
+                        <option value="New York"></option>
+                        <option value="Seattle"></option>
+                        <option value="Los Angeles"></option>
+                        <option value="Chicago"></option>
+                      </datalist>
+                    </div>
+                    <div class="mb-4">
+                      <label for="exampleFormControlSelect2" class="form-label">Example multiple select</label>
+                      <select multiple class="form-select" id="exampleFormControlSelect2" aria-label="Multiple select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="form-control-html" role="tabpanel" aria-labelledby="form-control-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;mb-4&quot;&gt;&#10;  &lt;label for=&quot;exampleFormControlInput1&quot; class=&quot;form-label&quot;&gt;Email address&lt;/label&gt;&#10;  &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;exampleFormControlInput1&quot; placeholder=&quot;name@example.com&quot; /&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;mb-4&quot;&gt;&#10;  &lt;label for=&quot;exampleFormControlReadOnlyInput1&quot; class=&quot;form-label&quot;&gt;Read only&lt;/label&gt;&#10;  &lt;input class=&quot;form-control&quot; type=&quot;text&quot; id=&quot;exampleFormControlReadOnlyInput1&quot; placeholder=&quot;Readonly input here...&quot; readonly /&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;mb-4&quot;&gt;&#10;  &lt;label for=&quot;exampleFormControlReadOnlyInputPlain1&quot; class=&quot;form-label&quot;&gt;Read plain&lt;/label&gt;&#10;  &lt;input type=&quot;text&quot; readonly class=&quot;form-control-plaintext&quot; id=&quot;exampleFormControlReadOnlyInputPlain1&quot; value=&quot;email@example.com&quot; /&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;mb-4&quot;&gt;&#10;  &lt;label for=&quot;exampleFormControlSelect1&quot; class=&quot;form-label&quot;&gt;Example select&lt;/label&gt;&#10;  &lt;select class=&quot;form-select&quot; id=&quot;exampleFormControlSelect1&quot; aria-label=&quot;Default select example&quot;&gt;&#10;    &lt;option selected&gt;Open this select menu&lt;/option&gt;&#10;    &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;&#10;    &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;&#10;    &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;&#10;  &lt;/select&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;mb-4&quot;&gt;&#10;  &lt;label for=&quot;exampleDataList&quot; class=&quot;form-label&quot;&gt;Datalist example&lt;/label&gt;&#10;  &lt;input class=&quot;form-control&quot; list=&quot;datalistOptions&quot; id=&quot;exampleDataList&quot; placeholder=&quot;Type to search...&quot;&gt;&#10;  &lt;datalist id=&quot;datalistOptions&quot;&gt;&#10;    &lt;option value=&quot;San Francisco&quot;&gt;&lt;/option&gt;&#10;    &lt;option value=&quot;New York&quot;&gt;&lt;/option&gt;&#10;    &lt;option value=&quot;Seattle&quot;&gt;&lt;/option&gt;&#10;    &lt;option value=&quot;Los Angeles&quot;&gt;&lt;/option&gt;&#10;    &lt;option value=&quot;Chicago&quot;&gt;&lt;/option&gt;&#10;  &lt;/datalist&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;mb-4&quot;&gt;&#10;  &lt;label for=&quot;exampleFormControlSelect2&quot; class=&quot;form-label&quot;&gt;Example multiple select&lt;/label&gt;&#10;  &lt;select multiple class=&quot;form-select&quot; id=&quot;exampleFormControlSelect2&quot; aria-label=&quot;Multiple select example&quot;&gt;&#10;    &lt;option selected&gt;Open this select menu&lt;/option&gt;&#10;    &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;&#10;    &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;&#10;    &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;&#10;  &lt;/select&gt;&#10;&lt;/div&gt;&#10;&lt;div&gt;&#10;  &lt;label for=&quot;exampleFormControlTextarea1&quot; class=&quot;form-label&quot;&gt;Example textarea&lt;/label&gt;&#10;  &lt;textarea class=&quot;form-control&quot; id=&quot;exampleFormControlTextarea1&quot; rows=&quot;3&quot;&gt;&lt;/textarea&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sizing Text Input -->
+
+          <p id="form-sizing-text" class="anchor-heading mt-12 fw-bold">Sizing Text Input</p>
+
+          <p>Set heights using classes like <code>.form-control-lg</code> and <code>.form-control-sm</code>.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="form-sizing-text-preview-tab" data-bs-toggle="tab" data-bs-target="#form-sizing-text-preview" role="tab" aria-controls="form-sizing-text-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="form-sizing-text-html-tab" data-bs-toggle="tab" data-bs-target="#form-sizing-text-html" role="tab" aria-controls="form-sizing-text-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="form-sizing-text-preview" role="tabpanel" aria-labelledby="form-sizing-text-preview-tab">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="mb-4">
+                      <label for="largeInput" class="form-label">Large input</label>
+                      <input id="largeInput" class="form-control form-control-lg" type="text" placeholder=".form-control-lg" />
+                    </div>
+                    <div class="mb-4">
+                      <label for="defaultInput" class="form-label">Default input</label>
+                      <input id="defaultInput" class="form-control" type="text" placeholder="Default input" />
+                    </div>
+                    <div class="mb-4">
+                      <label for="smallInput" class="form-label">Small input</label>
+                      <input id="smallInput" class="form-control form-control-sm" type="text" placeholder=".form-control-sm" />
+                    </div>
+                    <div>
+                      <label for="roundedInput" class="form-label">Rounded input</label>
+                      <input id="roundedInput" class="form-control rounded-pill" type="text" placeholder="Default input" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="form-sizing-text-html" role="tabpanel" aria-labelledby="form-sizing-text-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;mb-4&quot;&gt;&#10;  &lt;label for=&quot;largeInput&quot; class=&quot;form-label&quot;&gt;Large input&lt;/label&gt;&#10;  &lt;input id=&quot;largeInput&quot; class=&quot;form-control form-control-lg&quot; type=&quot;text&quot; placeholder=&quot;.form-control-lg&quot; /&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;mb-4&quot;&gt;&#10;  &lt;label for=&quot;defaultInput&quot; class=&quot;form-label&quot;&gt;Default input&lt;/label&gt;&#10;  &lt;input id=&quot;defaultInput&quot; class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;Default input&quot; /&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;mb-4&quot;&gt;&#10;  &lt;label for=&quot;smallInput&quot; class=&quot;form-label&quot;&gt;Small input&lt;/label&gt;&#10;  &lt;input id=&quot;smallInput&quot; class=&quot;form-control form-control-sm&quot; type=&quot;text&quot; placeholder=&quot;.form-control-sm&quot; /&gt;&#10;&lt;/div&gt;&#10;&lt;div&gt;&#10;  &lt;label for=&quot;roundedInput&quot; class=&quot;form-label&quot;&gt;Rounded input&lt;/label&gt;&#10;  &lt;input id=&quot;roundedInput&quot; class=&quot;form-control rounded-pill&quot; type=&quot;text&quot; placeholder=&quot;Default input&quot; /&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+          <table class="table table-bordered doc-table mt-4">
+            <thead>
+              <tr>
+                <th scope="col">Class</th>
+                <th scope="col">Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">
+                  <code>class="form-control-{value}"</code>
+                </td>
+                <td>lg | sm</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- Sizing Select Input -->
+
+          <p id="form-sizing-select" class="anchor-heading mt-12 fw-bold">Sizing Select Input</p>
+
+          <p>Set heights using classes like <code>.form-select-lg</code> and <code>.form-select-sm</code>.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="form-sizing-select-preview-tab" data-bs-toggle="tab" data-bs-target="#form-sizing-select-preview" role="tab" aria-controls="form-sizing-select-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="form-sizing-select-html-tab" data-bs-toggle="tab" data-bs-target="#form-sizing-select-html" role="tab" aria-controls="form-sizing-select-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="form-sizing-select-preview" role="tabpanel" aria-labelledby="form-sizing-select-preview-tab">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="mb-4">
+                      <label for="largeSelect" class="form-label">Large select</label>
+                      <select id="largeSelect" class="form-select form-select-lg">
+                        <option>Large select</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <div class="mb-4">
+                      <label for="defaultSelect" class="form-label">Default select</label>
+                      <select id="defaultSelect" class="form-select">
+                        <option>Default select</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label for="smallSelect" class="form-label">Small select</label>
+                      <select id="smallSelect" class="form-select form-select-sm">
+                        <option>Small select</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="form-sizing-select-html" role="tabpanel" aria-labelledby="form-sizing-select-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;mb-4&quot;&gt;&#10;  &lt;label for=&quot;largeSelect&quot; class=&quot;form-label&quot;&gt;Large select&lt;/label&gt;&#10;  &lt;select id=&quot;largeSelect&quot; class=&quot;form-select form-select-lg&quot;&gt;&#10;    &lt;option&gt;Large select&lt;/option&gt;&#10;    &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;&#10;    &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;&#10;    &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;&#10;  &lt;/select&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;mb-4&quot;&gt;&#10;  &lt;label for=&quot;defaultSelect&quot; class=&quot;form-label&quot;&gt;Default select&lt;/label&gt;&#10;  &lt;select id=&quot;defaultSelect&quot; class=&quot;form-select&quot;&gt;&#10;    &lt;option&gt;Default select&lt;/option&gt;&#10;    &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;&#10;    &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;&#10;    &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;&#10;  &lt;/select&gt;&#10;&lt;/div&gt;&#10;&lt;div&gt;&#10;  &lt;label for=&quot;smallSelect&quot; class=&quot;form-label&quot;&gt;Small select&lt;/label&gt;&#10;  &lt;select id=&quot;smallSelect&quot; class=&quot;form-select form-select-sm&quot;&gt;&#10;    &lt;option&gt;Small select&lt;/option&gt;&#10;    &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;&#10;    &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;&#10;    &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;&#10;  &lt;/select&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+          <table class="table table-bordered doc-table mt-4">
+            <thead>
+              <tr>
+                <th scope="col">Class</th>
+                <th scope="col">Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">
+                  <code>class="form-select-{value}"</code>
+                </td>
+                <td>lg | sm</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- File input-->
+          <p id="form-file-input" class="anchor-heading mt-12 fw-bold">File input</p>
+          <p>File input to upload single, multiple files with sizing options.</p>
+
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="form-file-input-preview-tab" data-bs-toggle="tab" data-bs-target="#form-file-input-preview" role="tab" aria-controls="form-file-input-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="form-file-input-html-tab" data-bs-toggle="tab" data-bs-target="#form-file-input-html" role="tab" aria-controls="form-file-input-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="form-file-input-preview" role="tabpanel" aria-labelledby="form-file-input-preview-tab">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="mb-4">
+                      <label for="formFile" class="form-label">Default file input example</label>
+                      <input class="form-control" type="file" id="formFile" />
+                    </div>
+                    <div class="mb-4">
+                      <label for="formFileMultiple" class="form-label">Multiple files input example</label>
+                      <input class="form-control" type="file" id="formFileMultiple" multiple />
+                    </div>
+                    <div class="mb-4">
+                      <label for="formFileDisabled" class="form-label">Disabled file input example</label>
+                      <input class="form-control" type="file" id="formFileDisabled" disabled />
+                    </div>
+                    <div class="mb-4">
+                      <label for="formFileSm" class="form-label">Small file input example</label>
+                      <input class="form-control form-control-sm" id="formFileSm" type="file" />
+                    </div>
+                    <div>
+                      <label for="formFileLg" class="form-label">Large file input example</label>
+                      <input class="form-control form-control-lg" id="formFileLg" type="file" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="form-file-input-html" role="tabpanel" aria-labelledby="form-file-input-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;formFile&quot; class=&quot;form-label&quot;&gt;Default file input example&lt;/label&gt;&#10;  &lt;input class=&quot;form-control&quot; type=&quot;file&quot; id=&quot;formFile&quot;&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;formFileMultiple&quot; class=&quot;form-label&quot;&gt;Multiple files input example&lt;/label&gt;&#10;  &lt;input class=&quot;form-control&quot; type=&quot;file&quot; id=&quot;formFileMultiple&quot; multiple&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;formFileDisabled&quot; class=&quot;form-label&quot;&gt;Disabled file input example&lt;/label&gt;&#10;  &lt;input class=&quot;form-control&quot; type=&quot;file&quot; id=&quot;formFileDisabled&quot; disabled&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;formFileSm&quot; class=&quot;form-label&quot;&gt;Small file input example&lt;/label&gt;&#10;  &lt;input class=&quot;form-control form-control-sm&quot; id=&quot;formFileSm&quot; type=&quot;file&quot;&gt;&#10;&lt;/div&gt;&#10;&lt;div&gt;&#10;  &lt;label for=&quot;formFileLg&quot; class=&quot;form-label&quot;&gt;Large file input example&lt;/label&gt;&#10;  &lt;input class=&quot;form-control form-control-lg&quot; id=&quot;formFileLg&quot; type=&quot;file&quot;&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-12" />
+
+      <!-- Checkboxes and Radios -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="form-checkboxes-radios" class="anchor-heading mb-6 fw-bold">Checkboxes and Radios</h4>
+          <p>Create consistent cross-browser and cross-device checkboxes and radios with our checks component.</p>
+
+          <p id="form-checkboxes-radios-default" class="anchor-heading fw-bold mt-6">Default (stacked)</p>
+          <p>By default, any number of checkboxes and radios that are immediate sibling will be vertically stacked and appropriately spaced with <code>.form-check</code>.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="cr-default-stacked-preview-tab" data-bs-toggle="tab" data-bs-target="#cr-default-stacked-preview" role="tab" aria-controls="cr-default-stacked-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="cr-default-stacked-html-tab" data-bs-toggle="tab" data-bs-target="#cr-default-stacked-html" role="tab" aria-controls="cr-default-stacked-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="cr-default-stacked-preview" role="tabpanel" aria-labelledby="cr-default-stacked-preview-tab">
+                <div class="row gy-4">
+                  <div class="col-sm">
+                    <small class="fw-medium">Checkboxes</small>
+                    <div class="form-check mt-4">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                      <label class="form-check-label" for="defaultCheck1"> Unchecked </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" checked />
+                      <label class="form-check-label" for="defaultCheck2"> Indeterminate </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" checked />
+                      <label class="form-check-label" for="defaultCheck3"> Checked </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="disabledCheck1" disabled />
+                      <label class="form-check-label" for="disabledCheck1"> Disabled Unchecked </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="disabledCheck2" disabled checked />
+                      <label class="form-check-label" for="disabledCheck2"> Disabled Checked </label>
+                    </div>
+                  </div>
+                  <div class="col-sm">
+                    <small class="fw-medium">Radio</small>
+                    <div class="form-check mt-4">
+                      <input name="default-radio-1" class="form-check-input" type="radio" value="" id="defaultRadio1" />
+                      <label class="form-check-label" for="defaultRadio1"> Unchecked </label>
+                    </div>
+                    <div class="form-check">
+                      <input name="default-radio-1" class="form-check-input" type="radio" value="" id="defaultRadio2" checked />
+                      <label class="form-check-label" for="defaultRadio2"> Checked </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" value="" id="disabledRadio1" disabled />
+                      <label class="form-check-label" for="disabledRadio1"> Disabled unchecked </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" value="" id="disabledRadio2" disabled checked />
+                      <label class="form-check-label" for="disabledRadio2"> Disabled checkbox </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="cr-default-stacked-html" role="tabpanel" aria-labelledby="cr-default-stacked-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;row&quot;&gt;&#10;  &lt;div class=&quot;col-sm&quot;&gt;&#10;    &lt;small class=&quot;fw-medium&quot;&gt;Checkboxes&lt;/small&gt;&#10;    &lt;div class=&quot;form-check mt-4&quot;&gt;&#10;      &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;defaultCheck1&quot; /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;defaultCheck1&quot;&gt;&#10;        Unchecked&#10;      &lt;/label&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;form-check&quot;&gt;&#10;      &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;defaultCheck2&quot; checked /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;defaultCheck2&quot;&gt;&#10;        Indeterminate&#10;      &lt;/label&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;form-check&quot;&gt;&#10;      &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;defaultCheck3&quot; checked /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;defaultCheck3&quot;&gt;&#10;        Checked&#10;      &lt;/label&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;form-check&quot;&gt;&#10;      &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;disabledCheck1&quot; disabled /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;disabledCheck1&quot;&gt;&#10;        Disabled Unchecked&#10;      &lt;/label&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;form-check&quot;&gt;&#10;      &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;disabledCheck2&quot; disabled checked /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;disabledCheck2&quot;&gt;&#10;        Disabled Checked&#10;      &lt;/label&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;&#10;  &lt;div class=&quot;col-sm&quot;&gt;&#10;    &lt;small class=&quot;fw-medium&quot;&gt;Radio&lt;/small&gt;&#10;    &lt;div class=&quot;form-check mt-4&quot;&gt;&#10;      &lt;input name=&quot;default-radio-1&quot; class=&quot;form-check-input&quot; type=&quot;radio&quot; value=&quot;&quot; id=&quot;defaultRadio1&quot; /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;defaultRadio1&quot;&gt;&#10;        Unchecked&#10;      &lt;/label&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;form-check&quot;&gt;&#10;      &lt;input name=&quot;default-radio-1&quot; class=&quot;form-check-input&quot; type=&quot;radio&quot; value=&quot;&quot; id=&quot;defaultRadio2&quot; checked /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;defaultRadio2&quot;&gt;&#10;        Checked&#10;      &lt;/label&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;form-check&quot;&gt;&#10;      &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; value=&quot;&quot; id=&quot;disabledRadio1&quot; disabled /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;disabledRadio1&quot;&gt;&#10;        Disabled unchecked&#10;      &lt;/label&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;form-check&quot;&gt;&#10;      &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; value=&quot;&quot; id=&quot;disabledRadio2&quot; disabled checked /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;disabledRadio2&quot;&gt;&#10;        Disabled checkbox&#10;      &lt;/label&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <p id="form-checkboxes-radios-inline" class="anchor-heading fw-bold mt-6">Inline</p>
+          <p>Group checkboxes or radios on the same horizontal row by adding <code>.form-check-inline</code> to any <code>.form-check</code>.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="cr-inline-preview-tab" data-bs-toggle="tab" data-bs-target="#cr-inline-preview" role="tab" aria-controls="cr-inline-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="cr-inline-html-tab" data-bs-toggle="tab" data-bs-target="#cr-inline-html" role="tab" aria-controls="cr-inline-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="cr-inline-preview" role="tabpanel" aria-labelledby="cr-inline-preview-tab">
+                <div class="row gy-6">
+                  <div class="col-md">
+                    <small class="fw-medium d-block">Inline Checkboxes</small>
+                    <div class="form-check form-check-inline mt-4">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
+                      <label class="form-check-label" for="inlineCheckbox1">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
+                      <label class="form-check-label" for="inlineCheckbox2">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled />
+                      <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+                    </div>
+                  </div>
+                  <div class="col-md">
+                    <small class="fw-medium d-block">Inline Radio</small>
+                    <div class="form-check form-check-inline mt-4">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
+                      <label class="form-check-label" for="inlineRadio1">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+                      <label class="form-check-label" for="inlineRadio2">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled />
+                      <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="cr-inline-html" role="tabpanel" aria-labelledby="cr-inline-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;row&quot;&gt;&#10;  &lt;div class=&quot;col-md&quot;&gt;&#10;    &lt;small class=&quot;fw-medium d-block&quot;&gt;Inline Checkboxes&lt;/small&gt;&#10;    &lt;div class=&quot;form-check form-check-inline mt-4&quot;&gt;&#10;      &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;inlineCheckbox1&quot; value=&quot;option1&quot; /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;inlineCheckbox1&quot;&gt;1&lt;/label&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;form-check form-check-inline&quot;&gt;&#10;      &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;inlineCheckbox2&quot; value=&quot;option2&quot; /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;inlineCheckbox2&quot;&gt;2&lt;/label&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;form-check form-check-inline&quot;&gt;&#10;      &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;inlineCheckbox3&quot; value=&quot;option3&quot; disabled /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;inlineCheckbox3&quot;&gt;3 (disabled)&lt;/label&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;&#10;  &lt;div class=&quot;col-md&quot;&gt;&#10;    &lt;small class=&quot;fw-medium d-block&quot;&gt;Inline Radio&lt;/small&gt;&#10;    &lt;div class=&quot;form-check form-check-inline mt-4&quot;&gt;&#10;      &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;inlineRadioOptions&quot; id=&quot;inlineRadio1&quot; value=&quot;option1&quot; /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;inlineRadio1&quot;&gt;1&lt;/label&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;form-check form-check-inline&quot;&gt;&#10;      &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;inlineRadioOptions&quot; id=&quot;inlineRadio2&quot; value=&quot;option2&quot; /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;inlineRadio2&quot;&gt;2&lt;/label&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;form-check form-check-inline&quot;&gt;&#10;      &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;inlineRadioOptions&quot; id=&quot;inlineRadio3&quot; value=&quot;option3&quot; disabled /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;inlineRadio3&quot;&gt;3 (disabled)&lt;/label&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <p id="form-checkboxes-radios-variations" class="anchor-heading fw-bold mt-6">
+            Variations
+            
+          </p>
+          <p>Vuexy support several predefined checkbox & radio styles variations.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="cr-variations-preview-tab" data-bs-toggle="tab" data-bs-target="#cr-variations-preview" role="tab" aria-controls="cr-variations-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="cr-variations-html-tab" data-bs-toggle="tab" data-bs-target="#cr-variations-html" role="tab" aria-controls="cr-variations-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="cr-variations-preview" role="tabpanel" aria-labelledby="cr-variations-preview-tab">
+                <div class="row gy-4">
+                  <div class="col-md">
+                    <small class="fw-medium d-block">Checkboxes Colors</small>
+                    <div class="form-check form-check-primary mt-4">
+                      <input class="form-check-input" type="checkbox" value="" id="customCheckPrimary" checked />
+                      <label class="form-check-label" for="customCheckPrimary">Primary</label>
+                    </div>
+                    <div class="form-check form-check-secondary">
+                      <input class="form-check-input" type="checkbox" value="" id="customCheckSecondary" checked />
+                      <label class="form-check-label" for="customCheckSecondary">Secondary</label>
+                    </div>
+                    <div class="form-check form-check-success">
+                      <input class="form-check-input" type="checkbox" value="" id="customCheckSuccess" checked />
+                      <label class="form-check-label" for="customCheckSuccess">Success</label>
+                    </div>
+                    <div class="form-check form-check-danger">
+                      <input class="form-check-input" type="checkbox" value="" id="customCheckDanger" checked />
+                      <label class="form-check-label" for="customCheckDanger">Danger</label>
+                    </div>
+                    <div class="form-check form-check-warning">
+                      <input class="form-check-input" type="checkbox" value="" id="customCheckWarning" checked />
+                      <label class="form-check-label" for="customCheckWarning"> Warning </label>
+                    </div>
+                    <div class="form-check form-check-info">
+                      <input class="form-check-input" type="checkbox" value="" id="customCheckInfo" checked />
+                      <label class="form-check-label" for="customCheckInfo"> Info </label>
+                    </div>
+                    <div class="form-check form-check-dark">
+                      <input class="form-check-input" type="checkbox" value="" id="customCheckDark" checked />
+                      <label class="form-check-label" for="customCheckDark"> Dark </label>
+                    </div>
+                  </div>
+
+                  <div class="col-md">
+                    <small class="fw-medium d-block">Radio Color</small>
+                    <div class="form-check form-check-primary mt-4">
+                      <input name="customRadioPrimary" class="form-check-input" type="radio" value="" id="customRadioPrimary" checked />
+                      <label class="form-check-label" for="customRadioPrimary"> Primary </label>
+                    </div>
+                    <div class="form-check form-check-secondary">
+                      <input name="customRadioSecondary" class="form-check-input" type="radio" value="" id="customRadioSecondary" checked />
+                      <label class="form-check-label" for="customRadioSecondary"> Secondary </label>
+                    </div>
+                    <div class="form-check form-check-success">
+                      <input name="customRadioSuccess" class="form-check-input" type="radio" value="" id="customRadioSuccess" checked />
+                      <label class="form-check-label" for="customRadioSuccess"> Success </label>
+                    </div>
+                    <div class="form-check form-check-danger">
+                      <input name="customRadioDanger" class="form-check-input" type="radio" value="" id="customRadioDanger" checked />
+                      <label class="form-check-label" for="customRadioDanger"> Danger </label>
+                    </div>
+                    <div class="form-check form-check-warning">
+                      <input name="customRadioWarning" class="form-check-input" type="radio" value="" id="customRadioWarning" checked />
+                      <label class="form-check-label" for="customRadioWarning"> Warning </label>
+                    </div>
+                    <div class="form-check form-check-info">
+                      <input name="customRadioInfo" class="form-check-input" type="radio" value="" id="customRadioInfo" checked />
+                      <label class="form-check-label" for="customRadioInfo"> Info </label>
+                    </div>
+                    <div class="form-check form-check-dark">
+                      <input name="customRadioDark" class="form-check-input" type="radio" value="" id="customRadioDark" checked />
+                      <label class="form-check-label" for="customRadioDark"> Dark </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="cr-variations-html" role="tabpanel" aria-labelledby="cr-variations-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;row&quot;&gt;&#10;  &lt;div class=&quot;col-md&quot;&gt;&#10;    &lt;small class=&quot;fw-medium d-block&quot;&gt;Checkboxes Colors&lt;/small&gt;&#10;    &lt;div class=&quot;form-check form-check-primary mt-4&quot;&gt;&#10;      &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;customCheckPrimary&quot; checked /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;customCheckPrimary&quot;&gt;Primary&lt;/label&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;form-check form-check-secondary&quot;&gt;&#10;      &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;customCheckSecondary&quot; checked /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;customCheckSecondary&quot;&gt;Secondary&lt;/label&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;form-check form-check-success&quot;&gt;&#10;      &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;customCheckSuccess&quot; checked /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;customCheckSuccess&quot;&gt;Success&lt;/label&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;form-check form-check-danger&quot;&gt;&#10;      &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;customCheckDanger&quot; checked /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;customCheckDanger&quot;&gt;Danger&lt;/label&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;form-check form-check-warning&quot;&gt;&#10;      &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;customCheckWarning&quot; checked /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;customCheckWarning&quot;&gt; Warning &lt;/label&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;form-check form-check-info&quot;&gt;&#10;      &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;customCheckInfo&quot; checked /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;customCheckInfo&quot;&gt; Info &lt;/label&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;form-check form-check-dark&quot;&gt;&#10;      &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;customCheckDark&quot; checked /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;customCheckDark&quot;&gt; Dark &lt;/label&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;&#10;  &lt;div class=&quot;col-md&quot;&gt;&#10;    &lt;small class=&quot;fw-medium d-block&quot;&gt;Radio Color&lt;/small&gt;&#10;    &lt;div class=&quot;form-check form-check-primary mt-4&quot;&gt;&#10;      &lt;input name=&quot;customRadioPrimary&quot; class=&quot;form-check-input&quot; type=&quot;radio&quot; value=&quot;&quot; id=&quot;customRadioPrimary&quot; checked /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;customRadioPrimary&quot;&gt; Primary &lt;/label&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;form-check form-check-secondary&quot;&gt;&#10;      &lt;input name=&quot;customRadioSecondary&quot; class=&quot;form-check-input&quot; type=&quot;radio&quot; value=&quot;&quot; id=&quot;customRadioSecondary&quot; checked /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;customRadioSecondary&quot;&gt; Secondary &lt;/label&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;form-check form-check-success&quot;&gt;&#10;      &lt;input name=&quot;customRadioSuccess&quot; class=&quot;form-check-input&quot; type=&quot;radio&quot; value=&quot;&quot; id=&quot;customRadioSuccess&quot; checked /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;customRadioSuccess&quot;&gt; Success &lt;/label&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;form-check form-check-danger&quot;&gt;&#10;      &lt;input name=&quot;customRadioDanger&quot; class=&quot;form-check-input&quot; type=&quot;radio&quot; value=&quot;&quot; id=&quot;customRadioDanger&quot; checked /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;customRadioDanger&quot;&gt; Danger &lt;/label&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;form-check form-check-warning&quot;&gt;&#10;      &lt;input name=&quot;customRadioWarning&quot; class=&quot;form-check-input&quot; type=&quot;radio&quot; value=&quot;&quot; id=&quot;customRadioWarning&quot; checked /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;customRadioWarning&quot;&gt; Warning &lt;/label&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;form-check form-check-info&quot;&gt;&#10;      &lt;input name=&quot;customRadioInfo&quot; class=&quot;form-check-input&quot; type=&quot;radio&quot; value=&quot;&quot; id=&quot;customRadioInfo&quot; checked /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;customRadioInfo&quot;&gt; Info &lt;/label&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;form-check form-check-dark&quot;&gt;&#10;      &lt;input name=&quot;customRadioDark&quot; class=&quot;form-check-input&quot; type=&quot;radio&quot; value=&quot;&quot; id=&quot;customRadioDark&quot; checked /&gt;&#10;      &lt;label class=&quot;form-check-label&quot; for=&quot;customRadioDark&quot;&gt; Dark &lt;/label&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+          <table class="table table-bordered doc-table mt-4">
+            <thead>
+              <tr>
+                <th scope="col">Class</th>
+                <th scope="col">Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">
+                  <code>class="form-check form-check-{value}"</code>
+                </td>
+                <td>primary | secondary | success | danger | warning | info | dark</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- Form Switches -->
+          <p id="form-switch" class="anchor-heading fw-bold mt-6">Switches</p>
+          <p>A switch has the markup of a custom checkbox but uses the <code>.form-switch</code> class to render a toggle switch. Consider using <code>role="switch"</code> to more accurately convey the nature of the control to assistive technologies that support this role.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="form-switch-preview-tab" data-bs-toggle="tab" data-bs-target="#form-switch-preview" role="tab" aria-controls="form-switch-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="form-switch-html-tab" data-bs-toggle="tab" data-bs-target="#form-switch-html" role="tab" aria-controls="form-switch-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="form-switch-preview" role="tabpanel" aria-labelledby="form-switch-preview-tab">
+                <div class="form-check form-switch mb-2">
+                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
+                  <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+                </div>
+                <div class="form-check form-switch mb-2">
+                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
+                  <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+                </div>
+                <div class="form-check form-switch mb-2">
+                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled />
+                  <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+                </div>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked disabled />
+                  <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="form-switch-html" role="tabpanel" aria-labelledby="form-switch-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;form-check form-switch mb-2&quot;&gt;&#10;  &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;flexSwitchCheckDefault&quot; /&gt;&#10;  &lt;label class=&quot;form-check-label&quot; for=&quot;flexSwitchCheckDefault&quot;&gt;Default switch checkbox input&lt;/label&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;form-check form-switch mb-2&quot;&gt;&#10;  &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;flexSwitchCheckChecked&quot; checked /&gt;&#10;  &lt;label class=&quot;form-check-label&quot; for=&quot;flexSwitchCheckChecked&quot;&gt;Checked switch checkbox input&lt;/label&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;form-check form-switch mb-2&quot;&gt;&#10;  &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;flexSwitchCheckDisabled&quot; disabled /&gt;&#10;  &lt;label class=&quot;form-check-label&quot; for=&quot;flexSwitchCheckDisabled&quot;&gt;Disabled switch checkbox input&lt;/label&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;form-check form-switch&quot;&gt;&#10;  &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;flexSwitchCheckCheckedDisabled&quot; checked disabled /&gt;&#10;  &lt;label class=&quot;form-check-label&quot; for=&quot;flexSwitchCheckCheckedDisabled&quot;&gt;Disabled checked switch checkbox&#10;    input&lt;/label&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form Reverse -->
+          <p id="form-reverse" class="anchor-heading fw-bold mt-6">Reverse</p>
+          <p>Put your checkboxes, radios, and switches on the opposite side with the <code>.form-check-reverse</code> modifier class.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="form-reverse-preview-tab" data-bs-toggle="tab" data-bs-target="#form-reverse-preview" role="tab" aria-controls="form-reverse-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="form-reverse-html-tab" data-bs-toggle="tab" data-bs-target="#form-reverse-html" role="tab" aria-controls="form-reverse-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="form-reverse-preview" role="tabpanel" aria-labelledby="form-reverse-preview-tab">
+                <div class="form-check form-check-reverse">
+                  <input class="form-check-input" type="checkbox" value="" id="reverseCheck1" />
+                  <label class="form-check-label" for="reverseCheck1"> Reverse checkbox </label>
+                </div>
+                <div class="form-check form-check-reverse">
+                  <input class="form-check-input" type="checkbox" value="" id="reverseCheck2" disabled />
+                  <label class="form-check-label" for="reverseCheck2"> Disabled reverse checkbox </label>
+                </div>
+                <div class="form-check form-check-reverse">
+                  <input name="reverse-radio-1" class="form-check-input" type="radio" value="" id="reverseRadio1" />
+                  <label class="form-check-label" for="reverseRadio1"> Unchecked </label>
+                </div>
+                <div class="form-check form-check-reverse">
+                  <input name="reverse-radio-1" class="form-check-input" type="radio" value="" id="reverseRadio2" checked />
+                  <label class="form-check-label" for="reverseRadio2"> Checked </label>
+                </div>
+                <div class="form-check form-switch form-check-reverse mb-0">
+                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckReverse" />
+                  <label class="form-check-label" for="flexSwitchCheckReverse">Reverse switch checkbox input</label>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="form-reverse-html" role="tabpanel" aria-labelledby="form-reverse-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;form-check form-check-reverse&quot;&gt;&#10;  &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;reverseCheck1&quot; /&gt;&#10;  &lt;label class=&quot;form-check-label&quot; for=&quot;reverseCheck1&quot;&gt; Reverse checkbox &lt;/label&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;form-check form-check-reverse&quot;&gt;&#10;  &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;reverseCheck2&quot; disabled /&gt;&#10;  &lt;label class=&quot;form-check-label&quot; for=&quot;reverseCheck2&quot;&gt; Disabled reverse checkbox &lt;/label&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;form-check form-check-reverse&quot;&gt;&#10;  &lt;input name=&quot;reverse-radio-1&quot; class=&quot;form-check-input&quot; type=&quot;radio&quot; value=&quot;&quot; id=&quot;reverseRadio1&quot; /&gt;&#10;  &lt;label class=&quot;form-check-label&quot; for=&quot;reverseRadio1&quot;&gt; Unchecked &lt;/label&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;form-check form-check-reverse&quot;&gt;&#10;  &lt;input&#10;    name=&quot;reverse-radio-1&quot;&#10;    class=&quot;form-check-input&quot;&#10;    type=&quot;radio&quot;&#10;    value=&quot;&quot;&#10;    id=&quot;reverseRadio2&quot;&#10;    checked /&gt;&#10;  &lt;label class=&quot;form-check-label&quot; for=&quot;reverseRadio2&quot;&gt; Checked &lt;/label&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;form-check form-switch form-check-reverse mb-0&quot;&gt;&#10;  &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;flexSwitchCheckReverse&quot; /&gt;&#10;  &lt;label class=&quot;form-check-label&quot; for=&quot;flexSwitchCheckReverse&quot;&gt;Reverse switch checkbox input&lt;/label&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-12" />
+
+      <!-- Form Range -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="form-range" class="anchor-heading mb-6 fw-bold">Form range</h4>
+          <p>Create custom <code>&lt;input type="range"&gt;</code> controls with <code>.form-range</code>. The track (the background) and thumb (the value) are both styled to appear the same across browsers. As only Firefox supports âfillingâ their track from the left or right of the thumb as a means to visually indicate progress, we do not currently support it.</p>
+
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="form-range-preview-tab" data-bs-toggle="tab" data-bs-target="#form-range-preview" role="tab" aria-controls="form-range-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="form-range-html-tab" data-bs-toggle="tab" data-bs-target="#form-range-html" role="tab" aria-controls="form-range-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="form-range-preview" role="tabpanel" aria-labelledby="form-range-preview-tab">
+                <div class="mb-4">
+                  <label for="formRange1" class="form-label">Example range</label>
+                  <input type="range" class="form-range" id="formRange1" />
+                </div>
+                <div class="mb-4">
+                  <label for="disabledRange" class="form-label">Disabled range</label>
+                  <input type="range" class="form-range" id="disabledRange" disabled />
+                </div>
+                <div class="mb-4">
+                  <label for="formRange2" class="form-label">Min and max</label>
+                  <input type="range" class="form-range" min="0" max="5" id="formRange2" />
+                </div>
+                <div>
+                  <label for="formRange3" class="form-label">Steps</label>
+                  <input type="range" class="form-range" min="0" max="5" step="0.5" id="formRange3" />
+                </div>
+              </div>
+              <div class="tab-pane fade" id="form-range-html" role="tabpanel" aria-labelledby="form-range-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;mb-4&quot;&gt;&#10;  &lt;label for=&quot;formRange1&quot; class=&quot;form-label&quot;&gt;Example range&lt;/label&gt;&#10;  &lt;input type=&quot;range&quot; class=&quot;form-range&quot; id=&quot;formRange1&quot;&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;mb-4&quot;&gt;&#10;  &lt;label for=&quot;disabledRange&quot; class=&quot;form-label&quot;&gt;Disabled range&lt;/label&gt;&#10;  &lt;input type=&quot;range&quot; class=&quot;form-range&quot; id=&quot;disabledRange&quot; disabled&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;mb-4&quot;&gt;&#10;  &lt;label for=&quot;formRange2&quot; class=&quot;form-label&quot;&gt;Min and max&lt;/label&gt;&#10;  &lt;input type=&quot;range&quot; class=&quot;form-range&quot; min=&quot;0&quot; max=&quot;5&quot; id=&quot;formRange2&quot;&gt;&#10;&lt;/div&gt;&#10;&lt;div&gt;&#10;  &lt;label for=&quot;formRange3&quot; class=&quot;form-label&quot;&gt;Steps&lt;/label&gt;&#10;  &lt;input type=&quot;range&quot; class=&quot;form-range&quot; min=&quot;0&quot; max=&quot;5&quot; step=&quot;0.5&quot; id=&quot;formRange3&quot;&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-12" />
+
+      <!-- HTML5 Inputs -->
+      <div id="form-html5-inputs" class="row">
+        <div class="col-12">
+          <h4 id="html5-inputs" class="anchor-heading mb-6 fw-bold">HTML5 Inputs</h4>
+          <p>Examples and usage HTML5 inputs.</p>
+
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="html5-inputs-preview-tab" data-bs-toggle="tab" data-bs-target="#html5-inputs-preview" role="tab" aria-controls="html5-inputs-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="html5-inputs-html-tab" data-bs-toggle="tab" data-bs-target="#html5-inputs-html" role="tab" aria-controls="html5-inputs-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="html5-inputs-preview" role="tabpanel" aria-labelledby="html5-inputs-preview-tab">
+                <form>
+                  <div class="mb-4 row">
+                    <label for="html5-text-input" class="col-md-2 col-form-label">Text</label>
+                    <div class="col-md-10">
+                      <input class="form-control" type="text" value="Vuexy" id="html5-text-input" />
+                    </div>
+                  </div>
+                  <div class="mb-4 row">
+                    <label for="html5-search-input" class="col-md-2 col-form-label">Search</label>
+                    <div class="col-md-10">
+                      <input class="form-control" type="search" value="Search ..." id="html5-search-input" />
+                    </div>
+                  </div>
+                  <div class="mb-4 row">
+                    <label for="html5-email-input" class="col-md-2 col-form-label">Email</label>
+                    <div class="col-md-10">
+                      <input class="form-control" type="email" value="john@example.com" id="html5-email-input" />
+                    </div>
+                  </div>
+                  <div class="mb-4 row">
+                    <label for="html5-url-input" class="col-md-2 col-form-label">URL</label>
+                    <div class="col-md-10">
+                      <input class="form-control" type="url" value="https://pixinvent.com" id="html5-url-input" />
+                    </div>
+                  </div>
+                  <div class="mb-4 row">
+                    <label for="html5-tel-input" class="col-md-2 col-form-label">Phone</label>
+                    <div class="col-md-10">
+                      <input class="form-control" type="tel" value="90-(164)-188-556" id="html5-tel-input" />
+                    </div>
+                  </div>
+                  <div class="mb-4 row">
+                    <label for="html5-password-input" class="col-md-2 col-form-label">Password</label>
+                    <div class="col-md-10">
+                      <input class="form-control" type="password" value="password" id="html5-password-input" />
+                    </div>
+                  </div>
+                  <div class="mb-4 row">
+                    <label for="html5-number-input" class="col-md-2 col-form-label">Number</label>
+                    <div class="col-md-10">
+                      <input class="form-control" type="number" value="18" id="html5-number-input" />
+                    </div>
+                  </div>
+                  <div class="mb-4 row">
+                    <label for="html5-datetime-local-input" class="col-md-2 col-form-label">Datetime</label>
+                    <div class="col-md-10">
+                      <input class="form-control" type="datetime-local" value="2021-06-18T12:30:00" id="html5-datetime-local-input" />
+                    </div>
+                  </div>
+                  <div class="mb-4 row">
+                    <label for="html5-date-input" class="col-md-2 col-form-label">Date</label>
+                    <div class="col-md-10">
+                      <input class="form-control" type="date" value="2021-06-18" id="html5-date-input" />
+                    </div>
+                  </div>
+                  <div class="mb-4 row">
+                    <label for="html5-month-input" class="col-md-2 col-form-label">Month</label>
+                    <div class="col-md-10">
+                      <input class="form-control" type="month" value="2021-06" id="html5-month-input" />
+                    </div>
+                  </div>
+                  <div class="mb-4 row">
+                    <label for="html5-week-input" class="col-md-2 col-form-label">Week</label>
+                    <div class="col-md-10">
+                      <input class="form-control" type="week" value="2021-W25" id="html5-week-input" />
+                    </div>
+                  </div>
+                  <div class="mb-4 row">
+                    <label for="html5-time-input" class="col-md-2 col-form-label">Time</label>
+                    <div class="col-md-10">
+                      <input class="form-control" type="time" value="12:30:00" id="html5-time-input" />
+                    </div>
+                  </div>
+                  <div class="mb-4 row">
+                    <label for="html5-color-input" class="col-md-2 col-form-label">Color</label>
+                    <div class="col-md-10">
+                      <input class="form-control" type="color" value="#666EE8" id="html5-color-input" />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <label for="html5-range" class="col-md-2 col-form-label">Range</label>
+                    <div class="col-md-10">
+                      <input type="range" class="form-range mt-4" id="html5-range" />
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane fade" id="html5-inputs-html" role="tabpanel" aria-labelledby="html5-inputs-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;form&gt;&#10;  &lt;div class=&quot;mb-4 row&quot;&gt;&#10;    &lt;label for=&quot;html5-text-input&quot; class=&quot;col-md-2 col-form-label&quot;&gt;Text&lt;/label&gt;&#10;    &lt;div class=&quot;col-md-10&quot;&gt;&#10;      &lt;input class=&quot;form-control&quot; type=&quot;text&quot; value=&quot;Vuexy&quot; id=&quot;html5-text-input&quot; /&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;mb-4 row&quot;&gt;&#10;    &lt;label for=&quot;html5-search-input&quot; class=&quot;col-md-2 col-form-label&quot;&gt;Search&lt;/label&gt;&#10;    &lt;div class=&quot;col-md-10&quot;&gt;&#10;      &lt;input class=&quot;form-control&quot; type=&quot;search&quot; value=&quot;Search ...&quot; id=&quot;html5-search-input&quot; /&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;mb-4 row&quot;&gt;&#10;    &lt;label for=&quot;html5-email-input&quot; class=&quot;col-md-2 col-form-label&quot;&gt;Email&lt;/label&gt;&#10;    &lt;div class=&quot;col-md-10&quot;&gt;&#10;      &lt;input class=&quot;form-control&quot; type=&quot;email&quot; value=&quot;john@example.com&quot; id=&quot;html5-email-input&quot; /&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;mb-4 row&quot;&gt;&#10;    &lt;label for=&quot;html5-url-input&quot; class=&quot;col-md-2 col-form-label&quot;&gt;URL&lt;/label&gt;&#10;    &lt;div class=&quot;col-md-10&quot;&gt;&#10;      &lt;input class=&quot;form-control&quot; type=&quot;url&quot; value=&quot;https://pixinvent.com&quot; id=&quot;html5-url-input&quot; /&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;mb-4 row&quot;&gt;&#10;    &lt;label for=&quot;html5-tel-input&quot; class=&quot;col-md-2 col-form-label&quot;&gt;Phone&lt;/label&gt;&#10;    &lt;div class=&quot;col-md-10&quot;&gt;&#10;      &lt;input class=&quot;form-control&quot; type=&quot;tel&quot; value=&quot;90-(164)-188-556&quot; id=&quot;html5-tel-input&quot; /&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;mb-4 row&quot;&gt;&#10;    &lt;label for=&quot;html5-password-input&quot; class=&quot;col-md-2 col-form-label&quot;&gt;Password&lt;/label&gt;&#10;    &lt;div class=&quot;col-md-10&quot;&gt;&#10;      &lt;input class=&quot;form-control&quot; type=&quot;password&quot; value=&quot;password&quot; id=&quot;html5-password-input&quot; /&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;mb-4 row&quot;&gt;&#10;    &lt;label for=&quot;html5-number-input&quot; class=&quot;col-md-2 col-form-label&quot;&gt;Number&lt;/label&gt;&#10;    &lt;div class=&quot;col-md-10&quot;&gt;&#10;      &lt;input class=&quot;form-control&quot; type=&quot;number&quot; value=&quot;18&quot; id=&quot;html5-number-input&quot; /&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;mb-4 row&quot;&gt;&#10;    &lt;label for=&quot;html5-datetime-local-input&quot; class=&quot;col-md-2 col-form-label&quot;&gt;Datetime&lt;/label&gt;&#10;    &lt;div class=&quot;col-md-10&quot;&gt;&#10;      &lt;input class=&quot;form-control&quot; type=&quot;datetime-local&quot; value=&quot;2021-06-18T12:30:00&quot; id=&quot;html5-datetime-local-input&quot; /&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;mb-4 row&quot;&gt;&#10;    &lt;label for=&quot;html5-date-input&quot; class=&quot;col-md-2 col-form-label&quot;&gt;Date&lt;/label&gt;&#10;    &lt;div class=&quot;col-md-10&quot;&gt;&#10;      &lt;input class=&quot;form-control&quot; type=&quot;date&quot; value=&quot;2021-06-18&quot; id=&quot;html5-date-input&quot; /&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;mb-4 row&quot;&gt;&#10;    &lt;label for=&quot;html5-month-input&quot; class=&quot;col-md-2 col-form-label&quot;&gt;Month&lt;/label&gt;&#10;    &lt;div class=&quot;col-md-10&quot;&gt;&#10;      &lt;input class=&quot;form-control&quot; type=&quot;month&quot; value=&quot;2021-06&quot; id=&quot;html5-month-input&quot; /&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;mb-4 row&quot;&gt;&#10;    &lt;label for=&quot;html5-week-input&quot; class=&quot;col-md-2 col-form-label&quot;&gt;Week&lt;/label&gt;&#10;    &lt;div class=&quot;col-md-10&quot;&gt;&#10;      &lt;input class=&quot;form-control&quot; type=&quot;week&quot; value=&quot;2021-W25&quot; id=&quot;html5-week-input&quot; /&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;mb-4 row&quot;&gt;&#10;    &lt;label for=&quot;html5-time-input&quot; class=&quot;col-md-2 col-form-label&quot;&gt;Time&lt;/label&gt;&#10;    &lt;div class=&quot;col-md-10&quot;&gt;&#10;      &lt;input class=&quot;form-control&quot; type=&quot;time&quot; value=&quot;12:30:00&quot; id=&quot;html5-time-input&quot; /&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;mb-4 row&quot;&gt;&#10;    &lt;label for=&quot;html5-color-input&quot; class=&quot;col-md-2 col-form-label&quot;&gt;Color&lt;/label&gt;&#10;    &lt;div class=&quot;col-md-10&quot;&gt;&#10;      &lt;input class=&quot;form-control&quot; type=&quot;color&quot; value=&quot;#666EE8&quot; id=&quot;html5-color-input&quot; /&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;row&quot;&gt;&#10;    &lt;label for=&quot;html5-range&quot; class=&quot;col-md-2 col-form-label&quot;&gt;Range&lt;/label&gt;&#10;    &lt;div class=&quot;col-md-10&quot;&gt;&#10;      &lt;input type=&quot;range&quot; class=&quot;form-range mt-4&quot; id=&quot;html5-range&quot; /&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;&lt;/form&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-none d-xl-block col-xl-2 doc-sidebar container-p-y">
+      <nav id="vertical-nav" class="navbar p-0">
+        <ul class="doc-sidebar-nav">
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#form-inputs">Inputs</a>
+            <ul>
+              <li class="doc-entry doc-h3"><a class="nav-link" href="#form-default">Default</a></li>
+              <li class="doc-entry doc-h3"><a class="nav-link" href="#form-float">Float</a></li>
+            </ul>
+          </li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#form-controls">Form Controls</a>
+            <ul>
+              <li class="doc-entry doc-h3"><a class="nav-link" href="#form-sizing-text">Sizing & Shape</a></li>
+              <li class="doc-entry doc-h3"><a class="nav-link" href="#form-sizing-select">Sizing (Select)</a></li>
+              <li class="doc-entry doc-h3"><a class="nav-link" href="#form-file-input">File input</a></li>
+            </ul>
+          </li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#form-checkboxes-radios">Checkboxes & Radios</a>
+            <ul>
+              <li class="doc-entry doc-h3"><a class="nav-link" href="#form-checkboxes-radios">Default</a></li>
+              <li class="doc-entry doc-h3"><a class="nav-link" href="#form-checkboxes-radios-inline">Inline</a></li>
+              <li class="doc-entry doc-h3"><a class="nav-link" href="#form-checkboxes-radios-variations">Variations</a></li>
+              <li class="doc-entry doc-h3"><a class="nav-link" href="#form-switch">Switches</a></li>
+              <li class="doc-entry doc-h3"><a class="nav-link" href="#form-reverse">Reverse</a></li>
+            </ul>
+          </li>
+          <li class="doc-entry doc-h2"><a class="nav-link" href="#form-range">Form Range</a></li>
+          <li class="doc-entry doc-h2"><a class="nav-link" href="#form-html5-inputs">HTML5 Inputs</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+          <!-- / Content -->
+
+          
+            <footer class="content-footer footer">
+  <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center text-center py-4">
+    <div>
+      &#169; 2017-
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      
+        <a href="https://pixinvent.com" class="footer-text fw-medium" target="_blank">Pixinvent</a>, Hand-crafted & Made with â¤ï¸
+      
+    </div>
+    <div>
+      
+        <a href="https://www.facebook.com/pixinvents/" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-facebook"></i></a>
+      
+      
+        <a href="https://x.com/pixinvents" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-twitter"></i></a>
+      
+      
+        <a href="https://github.com/pixinvent" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-github"></i></a>
+      
+      
+        <a href="https://dribbble.com/pixinvent" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-dribbble"></i></a>
+      
+      
+        <a href="https://www.instagram.com/pixinvents/" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-instagram"></i></a>
+      
+    </div>
+  </div>
+</footer>
+
+          
+        </div>
+        <!-- Content wrapper -->
+      </div>
+      <!-- / Layout page -->
+    </div>
+
+    
+      
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    
+    <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+    <div class="drag-target"></div>
+  </div>
+  <!-- / Layout wrapper -->
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="assets/vendor/libs/highlight/highlight.js"></script>
+    <script src="assets/vendor/libs/clipboard/clipboard.js"></script>
+    
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/vendor/libs/node-waves/node-waves.js"></script>
+    <script src="assets/vendor/libs/@algolia/autocomplete-js.js"></script>
+    <script src="assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="assets/vendor/js/menu.js"></script>
+    <!-- Vendors JS -->
+    
+
+    <!-- Page JS -->
+    <script src="assets/js/docs.js"></script>
+    <script src="assets/js/form-basic-inputs.js"></script>
+  </body>
+</html>
+
+  <!-- beautify ignore:end -->
+

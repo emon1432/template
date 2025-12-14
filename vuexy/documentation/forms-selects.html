@@ -1,0 +1,3570 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- =========================================================
+* Vuexy - Bootstrap Dashboard PRO | v3.0.0
+==============================================================
+
+* Product Page: https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599
+* Created by: Pixinvent
+
+    * License: You must have a valid license purchased in order to legally use the theme for your project.
+  
+* Copyright Pixinvent (https://pixinvent.com)
+
+=========================================================
+ -->
+  <!-- beautify ignore:start -->
+
+<html lang="en" class="docs-page  layout-menu-fixed-offcanvas " data-assets-path="assets/" data-skin="bordered">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Docs: Forms - Select &amp; Tags | Vuexy - Bootstrap Dashboard PRO</title>
+
+    <meta name="description" content="Vuexy is the best bootstrap 5 dashboard for responsive web apps. Streamline your app development process with ease." />
+    <meta name="keywords" content="Vuexy bootstrap dashboard, vuexy bootstrap 5 dashboard, themeselection, html dashboard, web dashboard, frontend dashboard, responsive bootstrap theme" />
+    <meta property="og:title" content="Vuexy bootstrap Dashboard by Pixinvent" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" />
+    <meta property="og:image" content="https://pixinvent.com/wp-content/uploads/2023/06/vuexy-hero-image.png" />
+    <meta property="og:description" content="Vuexy is the best bootstrap 5 dashboard for responsive web apps. Streamline your app development process with ease." />
+    <meta property="og:site_name" content="Pixinvent" />
+
+    <!-- Canonical SEO -->
+    <link rel="canonical" href="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" />
+
+    
+      
+      <script>
+        (function (w, d, s, l, i) {
+          w[l] = w[l] || [];
+          w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+          });
+          var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+          j.async = true;
+          j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+          f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5J3LMKC');
+      </script>
+      
+    
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="48x48" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="16x16" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="32x32" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="180x180" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="192x192" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="512x512" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendor/fonts/iconify-icons.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/node-waves/node-waves.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/highlight/highlight.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/select2/select2.css" />
+  <link rel="stylesheet" href="assets/vendor/libs/tagify/tagify.css" />
+  <link rel="stylesheet" href="assets/vendor/libs/bootstrap-select/bootstrap-select.css" />
+  <link rel="stylesheet" href="assets/vendor/libs/typeahead-js/typeahead.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="assets/vendor/css/core.css" />
+    <link rel="stylesheet" href="assets/css/demo.css" />
+    <link rel="stylesheet" href="assets/css/docs.css" />
+
+    <!-- Page CSS -->
+    
+
+    <!-- Core JS -->
+    <script src="assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: Don't remove unless you are aware of it, To hide customizer set displayCustomizer value false in config.js.  -->
+    <!-- <script src="assets/vendor/js/template-customizer.js"></script> -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="assets/js/config.js"></script>
+  </head>
+
+  <body>
+    
+      
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5J3LMKC" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+      
+    
+
+    <!-- Layout wrapper -->
+  <div class="layout-wrapper layout-navbar-full ">
+    <div class="layout-container">
+      
+        
+
+
+<!-- Navbar main -->
+
+<nav class="layout-navbar navbar navbar-expand-lg align-items-lg-center bg-white border-bottom" id="layout-navbar">
+  <div class="container-fluid">
+    
+      <!-- Menu toggle (see assets/css/demo/demo.css) -->
+      <div class="layout-menu-toggle navbar-nav d-lg-none align-items-lg-center">
+        <a class="nav-item nav-link px-0 me-lg-4" href="javascript:void(0)">
+          <i class="icon-base ti tabler-menu-2 icon-md align-middle"></i>
+        </a>
+      </div>
+    
+
+    <!-- Brand demo (see assets/css/demo/demo.css) -->
+    <div class="navbar-brand app-brand demo py-0 me-md-auto me-12 ms-lg-0 ms-0">
+      <a href="index.html" class="app-brand-link">
+        <span class="app-brand-logo demo">
+  <span class="text-primary">
+    <svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.00172773 0V6.85398C0.00172773 6.85398 -0.133178 9.01207 1.98092 10.8388L13.6912 21.9964L19.7809 21.9181L18.8042 9.88248L16.4951 7.17289L9.23799 0H0.00172773Z" fill="currentColor" />
+      <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd" d="M7.69824 16.4364L12.5199 3.23696L16.5541 7.25596L7.69824 16.4364Z" fill="#161616" />
+      <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd" d="M8.07751 15.9175L13.9419 4.63989L16.5849 7.28475L8.07751 15.9175Z" fill="#161616" />
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z" fill="currentColor" />
+    </svg>
+  </span>
+</span>
+        <span class="app-brand-text demo menu-text fw-bold">Vuexy</span>
+      </a>
+    </div>
+
+    <div class="d-flex ms-md-6 gap-3">
+      
+      <div class="navbar-nav align-items-lg-center justify-content-center">
+        <!-- Search -->
+        <div class="navbar-nav align-items-center">
+          <div class="nav-item navbar-search-wrapper mb-0">
+            <a class="nav-item nav-link search-toggler border rounded-3 py-2 px-md-4 px-2 d-flex align-items-center" href="javascript:void(0);">
+              <span class="d-inline-block text-body-secondary fw-normal" id="autocomplete"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbar-collapse">
+        <hr class="d-lg-none w-100 my-2" />
+        <!-- Divider -->
+
+        <div class="navbar-nav align-items-lg-center">
+          
+          <ul class="navbar-nav">
+            <!-- Technology dropdown -->
+            
+            
+              
+                <li class="nav-item dropdown me-2">
+                  <button class="btn dropdown-toggle py-2 btn-primary" type="button" id="livePreview" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-base ti tabler-current-location me-2"></i> Live preview</button>
+                  <ul class="dropdown-menu" aria-labelledby="livePreview">
+                    <li>
+                      <a href="https://pixinvent.com/vuexy-bootstrap-html-admin-template/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>HTML preview</a>
+                    </li>
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-laravel-admin-template/demo-1/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>Laravel preview</a>
+                      </li>
+                    
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-admin-template/html/vertical-menu-template/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>.Net Core preview</a>
+                      </li>
+                    
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-django-admin-template/demo-1/" target="_blank" class="nav-link text-nowrap"><i class="icon-base ti tabler-current-location me-2"></i>Django preview</a>
+                      </li>
+                    
+                  </ul>
+                </li>
+              
+            
+            
+              <li class="nav-item me-2">
+                <a href="https://pixinvent.ticksy.com/" target="_blank" class="nav-link d-flex align-items-center">
+                  <i class="icon-base ti tabler-lifebuoy me-2"></i>
+                  <span>Support</span>
+                </a>
+              </li>
+            
+            
+              <li class="nav-item">
+                <a href="https://themeforest.net/user/pixinvent/portfolio" target="_blank" class="nav-link d-flex align-items-center">
+                  <i class="icon-base ti tabler-gift me-2"></i>
+                  <span> More Themes</span>
+                </a>
+              </li>
+            
+            
+              <li class="nav-item">
+                <a href="https://themeselection.com/hire-us/" target="_blank" class="nav-link"><i class="icon-base ti tabler-briefcase"></i> Hire Us</a>
+              </li>
+            
+          </ul>
+
+          <!-- Divider -->
+          <div class="nav-item d-none d-lg-block text-big fw-light lh-1 me-4 ms-1">|</div>
+
+          
+            <div class="buy-now-btn">
+              <a href="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" target="_blank" class="btn btn-danger d-flex align-items-center gap-2">
+                <i class="icon-base ti tabler-shopping-cart"></i>
+                <span>Buy Now</span>
+              </a>
+            </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</nav>
+<!-- / Navbar main -->
+
+      
+
+      <!-- Layout page -->
+      <div class="layout-page">
+        
+          
+
+
+
+
+<!-- Menu -->
+<aside id="layout-menu" class="layout-menu menu-doc menu menu-vertical bg-menu-theme">
+  
+  <div class="menu-divider mt-0   d-xl-none "></div>
+
+  <!-- Links -->
+  <ul class="menu-inner py-1">
+    <li class="menu-header text-uppercase small fw-medium">Getting Started</li>
+    <li class="menu-item">
+      <a href="index.html" class="menu-link">
+        <div>Introduction</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="licenses.html" class="menu-link">
+        <div>Licenses</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="folder-structure.html" class="menu-link">
+        <div>Folder Structure</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="quick-start.html" class="menu-link">
+        <div>Quick Start</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="config.html" class="menu-link">
+        <div>Config ð¤©</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="installation-build.html" class="menu-link">
+        <div>Installation & Build</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="template-customizer.html" class="menu-link">
+        <div>Template Customizer</div>
+        
+      </a>
+    </li>
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Customization</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="customization-sass.html" class="menu-link">
+            <div>SASS</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="customization-js.html" class="menu-link">
+            <div>JavaScript</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="customization-third-party-plugins.html" class="menu-link">
+            <div>Third Party Plugins</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="layouts.html" class="menu-link">
+        <div>Layouts</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="dependencies.html" class="menu-link">
+        <div>Dependencies</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="faq.html" class="menu-link">
+        <div>FAQs</div>
+      </a>
+    </li>
+    
+      <!-- Laravel Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row">
+        <span class="me-1">Laravel</span>
+        <span class="badge badge-demo bg-label-danger ms-auto">HTML + Laravel Only</span>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="laravel-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-starter-kit-vs-full-version.html" class="menu-link">
+              <div>Starter-kit Vs Full-version</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-demo-config.html" class="menu-link">
+              <div>Demo Configs</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Auth & ACL</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-auth-jetstream.html" class="menu-link">
+              <div>JetStream</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-passport.html" class="menu-link">
+              <div>Passport</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-sanctum.html" class="menu-link">
+              <div>Sanctum</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-acl.html" class="menu-link">
+              <div>ACL</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-articles-database-connections.html" class="menu-link">
+              <div>Database Connections</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-existing-project.html" class="menu-link">
+              <div>Exiting Project Migration</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-form-validation-integration.html" class="menu-link">
+              <div>Form Validation Package Integration</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-localization.html" class="menu-link">
+          <div>Localization</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-search.html" class="menu-link">
+          <div>Search</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-sail-docker.html" class="menu-link">
+          <div>Sail & Docker</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-deployment.html" class="menu-link">
+          <div>Deployment</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Dotnet Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>ASP.NET CORE</span> <span class="badge badge-demo bg-label-danger ms-auto">Razor Pages</span></li>
+
+      <li class="menu-item">
+        <a href="net-core-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-assets-compilation.html" class="menu-link">
+              <div>Assets Compilation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-start-with-doker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-starter-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="net-core-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Dotnet Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>ASP.NET CORE MVC</span> <span class="badge badge-demo bg-label-danger ms-auto">MVC</span></li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-mvc-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-assets-compilation.html" class="menu-link">
+              <div>Assets Compilation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-start-with-docker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-starter-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="net-core-mvc-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-mvc-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Django Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>Django</span> <span class="badge badge-demo bg-label-danger ms-auto">Django Only</span></li>
+
+      <li class="menu-item">
+        <a href="django-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="django-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-start-with-doker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-demo-config.html" class="menu-link">
+              <div>Demo Config</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-starter-kit-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="django-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="django-articles-create-new-page.html" class="menu-link">
+              <div>Create New Apps & Pages</div>
+            </a>
+          </li>
+          <!-- <li class="menu-item">
+          <a href="django-articles-existing-project.html" class="menu-link">
+            <div>Exiting Project Migration</div>
+          </a>
+        </li> -->
+          <li class="menu-item">
+            <a href="django-articles-admin-superuser.html" class="menu-link">
+              <div>Admin and Create User</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-authentication.html" class="menu-link">
+              <div>Authentication</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="django-articles-permissions-authorization.html" class="menu-link">
+              <div>Permissions & Authorization</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-crud.html" class="menu-link">
+              <div>CRUD Example</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-admin-db.html" class="menu-link">
+              <div>Admin and Database</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-localization.html" class="menu-link">
+          <div>Localization</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-search.html" class="menu-link">
+          <div>Search</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-theme-api.html" class="menu-link">
+          <div>Theme API</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-deployment.html" class="menu-link">
+          <div>Deployment</div>
+        </a>
+      </li>
+    
+    <!-- Apps & Pages -->
+    <li class="menu-divider mb-1"></li>
+    <li class="menu-header text-uppercase small fw-medium">Design System</li>
+
+    <li class="menu-item">
+      <a href="typography.html" class="menu-link">
+        <div>Typography</div>
+      </a>
+    </li>
+
+    <li class="menu-item">
+      <a href="colors.html" class="menu-link">
+        <div>Colors</div>
+      </a>
+    </li>
+
+    <li class="menu-item">
+      <a href="Icons.html" class="menu-link">
+        <div>Icons</div>
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+    <!-- Components -->
+    <li class="menu-header text-uppercase small fw-medium">Components</li>
+
+    <!-- UI Elements -->
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>UI Elements</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="ui-accordion.html" class="menu-link">
+            <div>Accordion</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-alerts.html" class="menu-link">
+            <div>Alerts</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-app-brand.html" class="menu-link">
+            <div>App Brand</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-badges.html" class="menu-link">
+            <div>Badges</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-buttons.html" class="menu-link">
+            <div>Buttons</div>
+          </a>
+        </li>
+        <li class="menu-item
+  ">
+          <a href="javascript:void(0);" class="menu-link menu-toggle">
+            <div>Cards</div>
+          </a>
+          <ul class="menu-sub">
+            <li class="menu-item">
+              <a href="ui-cards-basic.html" class="menu-link">
+                <div>Basic</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="ui-cards-actions.html" class="menu-link">
+                <div>Actions</div>
+                
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="ui-carousel.html" class="menu-link">
+            <div>Carousel</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-collapse.html" class="menu-link">
+            <div>Collapse</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-dropdowns.html" class="menu-link">
+            <div>Dropdowns</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-footer.html" class="menu-link">
+            <div>Footer</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-list-groups.html" class="menu-link">
+            <div>List groups</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-modals.html" class="menu-link">
+            <div>Modals</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-menu.html" class="menu-link">
+            <div>Menu</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-navbar.html" class="menu-link">
+            <div>Navbar</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-offcanvas.html" class="menu-link">
+            <div>Offcanvas</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-pagination-breadcrumbs.html" class="menu-link">
+            <div>Pagination &amp; Breadcrumbs</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-popovers.html" class="menu-link">
+            <div>Popovers</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-progress.html" class="menu-link">
+            <div>Progress</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-spinners.html" class="menu-link">
+            <div>Spinners</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-navs.html" class="menu-link">
+            <div>Navs</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-tabs-pills.html" class="menu-link">
+            <div>Tabs &amp; Pills</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-toasts.html" class="menu-link">
+            <div>Toasts</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-tooltips.html" class="menu-link">
+            <div>Tooltips</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+
+    <!-- Extended components -->
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Extended UI</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="extended-ui-avatar.html" class="menu-link">
+            <div>Avatar</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-blockui.html" class="menu-link">
+            <div>BlockUI</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-drag-and-drop.html" class="menu-link">
+            <div>Drag &amp; Drop</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-media-player.html" class="menu-link">
+            <div>Media Player</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-perfect-scrollbar.html" class="menu-link">
+            <div>Perfect scrollbar</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-star-ratings.html" class="menu-link">
+            <div>Star Ratings</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-sweetalert2.html" class="menu-link">
+            <div>SweetAlert2</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-text-divider.html" class="menu-link">
+            <div>Text Divider</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-timeline.html" class="menu-link">
+            <div>Timeline</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-tour.html" class="menu-link">
+            <div>Tour</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-treeview.html" class="menu-link">
+            <div>Treeview</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-misc.html" class="menu-link">
+            <div>Miscellaneous</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Forms -->
+    <li class="menu-item
+   active open">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Forms</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="forms-basic-inputs.html" class="menu-link">
+            <div>Basic Inputs</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-input-groups.html" class="menu-link">
+            <div>Input groups</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-custom-options.html" class="menu-link">
+            <div>Custom Options</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-editors.html" class="menu-link">
+            <div>Editors</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-file-upload.html" class="menu-link">
+            <div>File Upload</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-pickers.html" class="menu-link">
+            <div>Pickers</div>
+            
+          </a>
+        </li>
+        <li class="menu-item active">
+          <a href="forms-selects.html" class="menu-link">
+            <div>Select &amp; Tags</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-sliders.html" class="menu-link">
+            <div>Sliders</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-switches.html" class="menu-link">
+            <div>Switches</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-extras.html" class="menu-link">
+            <div>Extras</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-validation.html" class="menu-link">
+            <div>Validation</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-wizard.html" class="menu-link">
+            <div>Wizard</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-layouts-sticky.html" class="menu-link">
+            <div>Sticky Actions</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <!-- Tables -->
+    <li class="menu-item">
+      <a href="tables-basic.html" class="menu-link">
+        <div>Tables</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="tables-datatables.html" class="menu-link">
+        <div>Datatables</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="utilities.html" class="menu-link">
+        <div>Utilities</div>
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+    <!-- Charts & Maps -->
+    <li class="menu-header text-uppercase small fw-medium">Charts &amp; Maps</li>
+
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <div data-i18n="Charts">Charts</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="charts-apex.html" class="menu-link">
+            <div>Apex Charts</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="charts-chartjs.html" class="menu-link">
+            <div>ChartJS</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="maps-leaflet.html" class="menu-link">
+        <div>Leaflet</div>
+        
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+
+    <!-- Charts & Maps -->
+    <li class="menu-header text-uppercase small fw-medium">Others</li>
+    <li class="menu-item">
+      <a href="credits.html" class="menu-link">
+        <div>Credits</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="https://pixinvent.ticksy.com/" target="_blank" class="menu-link">
+        <div>Support</div>
+      </a>
+    </li>
+  </ul>
+</aside>
+<!-- / Menu -->
+
+        
+
+        <!-- Content wrapper -->
+        <div class="content-wrapper">
+          <!-- Content -->
+          <div class="container-xxl flex-grow-1 container-p-y">
+  <div class="row flex-xl-nowrap">
+    <div class="DocSearch-content col-12 col-xl-10 container-p-y">
+      <h2 class="mb-6 doc-page-title">Select & Tags</h2>
+      <p>We have used different plugins like Bootstrap Select, Select2, Tagify for Select & Tags and we have also added Typeahead plugin for easy suggestions.</p>
+      <p>
+        Read the official <a href="https://select2.org" target="_blank" rel="noopener noreferrer">Select2</a>, <a href="https://github.com/yairEO/tagify" target="_blank" rel="noopener noreferrer">Tagify</a>,
+        <a href="https://github.com/snapappointments/bootstrap-select" target="_blank" rel="noopener noreferrer">Bootstrap Select</a>
+        and
+        <a href="https://twitter.github.io/typeahead.js/" target="_blank" rel="noopener noreferrer">Typeahead</a>
+        Documentations for a full list of instructions and other options.
+      </p>
+      <hr class="my-12" />
+
+      <!-- Select2 Example -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="select2" class="anchor-heading fw-bold mt-6">Select2</h4>
+          <p class="my-4">Select2 gives you a customizable select box with support for searching, tagging, remote data sets, infinite scrolling, and many other highly used options.</p>
+          <p class="anchor-heading fw-bold" id="select2-usage">Usage</p>
+          <p>In order to use Select2 on your page, It is required to include the following vendors css in the "Vendors CSS" area from the page's header:</p>
+          <div class="doc-example css-code">
+            <div class="doc-example-content" data-label="Code">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;link rel=&quot;stylesheet&quot; href=&quot;../../assets/vendor/libs/select2/select2.css &quot; /&gt;</code></pre>
+            </div>
+          </div>
+          <p class="my-4">Include the following vendors script in the "Vendors JS" area from the page's footer:</p>
+          <div class="doc-example">
+            <div class="doc-example-content" data-label="Code">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;script src=&quot;../../assets/vendor/libs/select2/select2.js&quot;&gt;&lt;/script&gt;</code></pre>
+            </div>
+          </div>
+
+          <!-- Basic -->
+          <div class="row">
+            <div class="col-12">
+              <p id="select2-basic" class="anchor-heading fw-bold mt-4">Basic</p>
+              <p>
+                To create a basic select2 initialize your select component with select2 like this:
+                <code>YOUR_ELEMENT.select2()</code>.
+              </p>
+              <div class="doc-example">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="select2-basic-preview-tab" data-bs-toggle="tab" data-bs-target="#select2-basic-preview" role="tab" aria-controls="select2-basic-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="select2-basic-html-tab" data-bs-toggle="tab" data-bs-target="#select2-basic-html" role="tab" aria-controls="select2-basic-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="select2-basic-js-tab" data-bs-toggle="tab" data-bs-target="#select2-basic-js" role="tab" aria-controls="select2-basic-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="select2-basic-preview" role="tabpanel" aria-labelledby="select2-basic-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="select2Basic" class="form-label">Basic</label>
+                        <select id="select2Basic" class="select2 form-select" data-allow-clear="true">
+                          <option value="AK">Alaska</option>
+                          <option value="HI">Hawaii</option>
+                          <option value="CA">California</option>
+                          <option value="NV">Nevada</option>
+                          <option value="OR">Oregon</option>
+                          <option value="WA">Washington</option>
+                          <option value="AZ">Arizona</option>
+                          <option value="CO">Colorado</option>
+                          <option value="ID">Idaho</option>
+                          <option value="MT">Montana</option>
+                          <option value="NE">Nebraska</option>
+                          <option value="NM">New Mexico</option>
+                          <option value="ND">North Dakota</option>
+                          <option value="UT">Utah</option>
+                          <option value="WY">Wyoming</option>
+                          <option value="AL">Alabama</option>
+                          <option value="AR">Arkansas</option>
+                          <option value="IL">Illinois</option>
+                          <option value="IA">Iowa</option>
+                          <option value="KS">Kansas</option>
+                          <option value="KY">Kentucky</option>
+                          <option value="LA">Louisiana</option>
+                          <option value="MN">Minnesota</option>
+                          <option value="MS">Mississippi</option>
+                          <option value="MO">Missouri</option>
+                          <option value="OK">Oklahoma</option>
+                          <option value="SD">South Dakota</option>
+                          <option value="TX">Texas</option>
+                          <option value="TN">Tennessee</option>
+                          <option value="WI">Wisconsin</option>
+                          <option value="CT">Connecticut</option>
+                          <option value="DE">Delaware</option>
+                          <option value="FL">Florida</option>
+                          <option value="GA">Georgia</option>
+                          <option value="IN">Indiana</option>
+                          <option value="ME">Maine</option>
+                          <option value="MD">Maryland</option>
+                          <option value="MA">Massachusetts</option>
+                          <option value="MI">Michigan</option>
+                          <option value="NH">New Hampshire</option>
+                          <option value="NJ">New Jersey</option>
+                          <option value="NY">New York</option>
+                          <option value="NC">North Carolina</option>
+                          <option value="OH">Ohio</option>
+                          <option value="PA">Pennsylvania</option>
+                          <option value="RI">Rhode Island</option>
+                          <option value="SC">South Carolina</option>
+                          <option value="VT">Vermont</option>
+                          <option value="VA">Virginia</option>
+                          <option value="WV">West Virginia</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="select2-basic-html" role="tabpanel" aria-labelledby="select2-basic-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre
+                      class="docs-code"><code class="html">&lt;label for=&quot;select2Basic&quot; class=&quot;form-label&quot;&gt;Basic&lt;/label&gt;&#10;&lt;select id=&quot;select2Basic&quot; class=&quot;select2 form-select&quot; data-allow-clear=&quot;true&quot;&gt;&#10;  &lt;option value=&quot;AK&quot;&gt;Alaska&lt;/option&gt;&#10;  &lt;option value=&quot;HI&quot;&gt;Hawaii&lt;/option&gt;&#10;  &lt;option value=&quot;CA&quot;&gt;California&lt;/option&gt;&#10;  &lt;option value=&quot;NV&quot;&gt;Nevada&lt;/option&gt;&#10;  &lt;option value=&quot;OR&quot;&gt;Oregon&lt;/option&gt;&#10;  &lt;option value=&quot;WA&quot;&gt;Washington&lt;/option&gt;&#10;  &lt;option value=&quot;AZ&quot;&gt;Arizona&lt;/option&gt;&#10;  &lt;option value=&quot;CO&quot;&gt;Colorado&lt;/option&gt;&#10;  &lt;option value=&quot;ID&quot;&gt;Idaho&lt;/option&gt;&#10;  &lt;option value=&quot;MT&quot;&gt;Montana&lt;/option&gt;&#10;  &lt;option value=&quot;NE&quot;&gt;Nebraska&lt;/option&gt;&#10;  &lt;option value=&quot;NM&quot;&gt;New Mexico&lt;/option&gt;&#10;  &lt;option value=&quot;ND&quot;&gt;North Dakota&lt;/option&gt;&#10;  &lt;option value=&quot;UT&quot;&gt;Utah&lt;/option&gt;&#10;  &lt;option value=&quot;WY&quot;&gt;Wyoming&lt;/option&gt;&#10;  &lt;option value=&quot;AL&quot;&gt;Alabama&lt;/option&gt;&#10;  &lt;option value=&quot;AR&quot;&gt;Arkansas&lt;/option&gt;&#10;  &lt;option value=&quot;IL&quot;&gt;Illinois&lt;/option&gt;&#10;  &lt;option value=&quot;IA&quot;&gt;Iowa&lt;/option&gt;&#10;  &lt;option value=&quot;KS&quot;&gt;Kansas&lt;/option&gt;&#10;  &lt;option value=&quot;KY&quot;&gt;Kentucky&lt;/option&gt;&#10;  &lt;option value=&quot;LA&quot;&gt;Louisiana&lt;/option&gt;&#10;  &lt;option value=&quot;MN&quot;&gt;Minnesota&lt;/option&gt;&#10;  &lt;option value=&quot;MS&quot;&gt;Mississippi&lt;/option&gt;&#10;  &lt;option value=&quot;MO&quot;&gt;Missouri&lt;/option&gt;&#10;  &lt;option value=&quot;OK&quot;&gt;Oklahoma&lt;/option&gt;&#10;  &lt;option value=&quot;SD&quot;&gt;South Dakota&lt;/option&gt;&#10;  &lt;option value=&quot;TX&quot;&gt;Texas&lt;/option&gt;&#10;  &lt;option value=&quot;TN&quot;&gt;Tennessee&lt;/option&gt;&#10;  &lt;option value=&quot;WI&quot;&gt;Wisconsin&lt;/option&gt;&#10;  &lt;option value=&quot;CT&quot;&gt;Connecticut&lt;/option&gt;&#10;  &lt;option value=&quot;DE&quot;&gt;Delaware&lt;/option&gt;&#10;  &lt;option value=&quot;FL&quot;&gt;Florida&lt;/option&gt;&#10;  &lt;option value=&quot;GA&quot;&gt;Georgia&lt;/option&gt;&#10;  &lt;option value=&quot;IN&quot;&gt;Indiana&lt;/option&gt;&#10;  &lt;option value=&quot;ME&quot;&gt;Maine&lt;/option&gt;&#10;  &lt;option value=&quot;MD&quot;&gt;Maryland&lt;/option&gt;&#10;  &lt;option value=&quot;MA&quot;&gt;Massachusetts&lt;/option&gt;&#10;  &lt;option value=&quot;MI&quot;&gt;Michigan&lt;/option&gt;&#10;  &lt;option value=&quot;NH&quot;&gt;New Hampshire&lt;/option&gt;&#10;  &lt;option value=&quot;NJ&quot;&gt;New Jersey&lt;/option&gt;&#10;  &lt;option value=&quot;NY&quot;&gt;New York&lt;/option&gt;&#10;  &lt;option value=&quot;NC&quot;&gt;North Carolina&lt;/option&gt;&#10;  &lt;option value=&quot;OH&quot;&gt;Ohio&lt;/option&gt;&#10;  &lt;option value=&quot;PA&quot;&gt;Pennsylvania&lt;/option&gt;&#10;  &lt;option value=&quot;RI&quot;&gt;Rhode Island&lt;/option&gt;&#10;  &lt;option value=&quot;SC&quot;&gt;South Carolina&lt;/option&gt;&#10;  &lt;option value=&quot;VT&quot;&gt;Vermont&lt;/option&gt;&#10;  &lt;option value=&quot;VA&quot;&gt;Virginia&lt;/option&gt;&#10;  &lt;option value=&quot;WV&quot;&gt;West Virginia&lt;/option&gt;&#10;&lt;/select&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="select2-basic-js" role="tabpanel" aria-labelledby="select2-basic-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">$(".select2").select2();</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-12" />
+
+          <!-- Multiple -->
+          <div class="row">
+            <div class="col-12">
+              <p id="select2-multiple" class="anchor-heading fw-bold mt-4">Multiple</p>
+              <p>Use <code>multiple</code> attribute with select tag to create a select2 with multiple values.</p>
+              <div class="doc-example">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="select2-multi-preview-tab" data-bs-toggle="tab" data-bs-target="#select2-multi-preview" role="tab" aria-controls="select2-multi-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="select2-multi-html-tab" data-bs-toggle="tab" data-bs-target="#select2-multi-html" role="tab" aria-controls="select2-multi-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="select2-multi-js-tab" data-bs-toggle="tab" data-bs-target="#select2-multi-js" role="tab" aria-controls="select2-multi-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="select2-multi-preview" role="tabpanel" aria-labelledby="select2-multi-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="select2Multiple" class="form-label">Multiple</label>
+                        <select id="select2Multiple" class="select2 form-select" multiple>
+                          <optgroup label="Alaskan/Hawaiian Time Zone">
+                            <option value="AK">Alaska</option>
+                            <option value="HI">Hawaii</option>
+                          </optgroup>
+                          <optgroup label="Pacific Time Zone">
+                            <option value="CA">California</option>
+                            <option value="NV">Nevada</option>
+                            <option value="OR">Oregon</option>
+                            <option value="WA">Washington</option>
+                          </optgroup>
+                          <optgroup label="Mountain Time Zone">
+                            <option value="AZ">Arizona</option>
+                            <option value="CO" selected>Colorado</option>
+                            <option value="ID">Idaho</option>
+                            <option value="MT">Montana</option>
+                            <option value="NE">Nebraska</option>
+                            <option value="NM">New Mexico</option>
+                            <option value="ND">North Dakota</option>
+                            <option value="UT">Utah</option>
+                            <option value="WY">Wyoming</option>
+                          </optgroup>
+                          <optgroup label="Central Time Zone">
+                            <option value="AL">Alabama</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="IL">Illinois</option>
+                            <option value="IA">Iowa</option>
+                            <option value="KS">Kansas</option>
+                            <option value="KY">Kentucky</option>
+                            <option value="LA">Louisiana</option>
+                            <option value="MN">Minnesota</option>
+                            <option value="MS">Mississippi</option>
+                            <option value="MO">Missouri</option>
+                            <option value="OK">Oklahoma</option>
+                            <option value="SD">South Dakota</option>
+                            <option value="TX">Texas</option>
+                            <option value="TN">Tennessee</option>
+                            <option value="WI">Wisconsin</option>
+                          </optgroup>
+                          <optgroup label="Eastern Time Zone">
+                            <option value="CT">Connecticut</option>
+                            <option value="DE">Delaware</option>
+                            <option value="FL" selected>Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="IN">Indiana</option>
+                            <option value="ME">Maine</option>
+                            <option value="MD">Maryland</option>
+                            <option value="MA">Massachusetts</option>
+                            <option value="MI">Michigan</option>
+                            <option value="NH">New Hampshire</option>
+                            <option value="NJ">New Jersey</option>
+                            <option value="NY">New York</option>
+                            <option value="NC">North Carolina</option>
+                            <option value="OH">Ohio</option>
+                            <option value="PA">Pennsylvania</option>
+                            <option value="RI">Rhode Island</option>
+                            <option value="SC">South Carolina</option>
+                            <option value="VT">Vermont</option>
+                            <option value="VA">Virginia</option>
+                            <option value="WV">West Virginia</option>
+                          </optgroup>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="select2-multi-html" role="tabpanel" aria-labelledby="select2-multi-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre
+                      class="docs-code"><code class="html">&lt;label for=&quot;select2Multiple&quot; class=&quot;form-label&quot;&gt;Multiple&lt;/label&gt;&#10;&lt;select id=&quot;select2Multiple&quot; class=&quot;select2 form-select&quot; multiple&gt;&#10;  &lt;optgroup label=&quot;Alaskan/Hawaiian Time Zone&quot;&gt;&#10;    &lt;option value=&quot;AK&quot;&gt;Alaska&lt;/option&gt;&#10;    &lt;option value=&quot;HI&quot;&gt;Hawaii&lt;/option&gt;&#10;  &lt;/optgroup&gt;&#10;  &lt;optgroup label=&quot;Pacific Time Zone&quot;&gt;&#10;    &lt;option value=&quot;CA&quot;&gt;California&lt;/option&gt;&#10;    &lt;option value=&quot;NV&quot;&gt;Nevada&lt;/option&gt;&#10;    &lt;option value=&quot;OR&quot;&gt;Oregon&lt;/option&gt;&#10;    &lt;option value=&quot;WA&quot;&gt;Washington&lt;/option&gt;&#10;  &lt;/optgroup&gt;&#10;  &lt;optgroup label=&quot;Mountain Time Zone&quot;&gt;&#10;    &lt;option value=&quot;AZ&quot;&gt;Arizona&lt;/option&gt;&#10;    &lt;option value=&quot;CO&quot; selected&gt;Colorado&lt;/option&gt;&#10;    &lt;option value=&quot;ID&quot;&gt;Idaho&lt;/option&gt;&#10;    &lt;option value=&quot;MT&quot;&gt;Montana&lt;/option&gt;&#10;    &lt;option value=&quot;NE&quot;&gt;Nebraska&lt;/option&gt;&#10;    &lt;option value=&quot;NM&quot;&gt;New Mexico&lt;/option&gt;&#10;    &lt;option value=&quot;ND&quot;&gt;North Dakota&lt;/option&gt;&#10;    &lt;option value=&quot;UT&quot;&gt;Utah&lt;/option&gt;&#10;    &lt;option value=&quot;WY&quot;&gt;Wyoming&lt;/option&gt;&#10;  &lt;/optgroup&gt;&#10;  &lt;optgroup label=&quot;Central Time Zone&quot;&gt;&#10;    &lt;option value=&quot;AL&quot;&gt;Alabama&lt;/option&gt;&#10;    &lt;option value=&quot;AR&quot;&gt;Arkansas&lt;/option&gt;&#10;    &lt;option value=&quot;IL&quot;&gt;Illinois&lt;/option&gt;&#10;    &lt;option value=&quot;IA&quot;&gt;Iowa&lt;/option&gt;&#10;    &lt;option value=&quot;KS&quot;&gt;Kansas&lt;/option&gt;&#10;    &lt;option value=&quot;KY&quot;&gt;Kentucky&lt;/option&gt;&#10;    &lt;option value=&quot;LA&quot;&gt;Louisiana&lt;/option&gt;&#10;    &lt;option value=&quot;MN&quot;&gt;Minnesota&lt;/option&gt;&#10;    &lt;option value=&quot;MS&quot;&gt;Mississippi&lt;/option&gt;&#10;    &lt;option value=&quot;MO&quot;&gt;Missouri&lt;/option&gt;&#10;    &lt;option value=&quot;OK&quot;&gt;Oklahoma&lt;/option&gt;&#10;    &lt;option value=&quot;SD&quot;&gt;South Dakota&lt;/option&gt;&#10;    &lt;option value=&quot;TX&quot;&gt;Texas&lt;/option&gt;&#10;    &lt;option value=&quot;TN&quot;&gt;Tennessee&lt;/option&gt;&#10;    &lt;option value=&quot;WI&quot;&gt;Wisconsin&lt;/option&gt;&#10;  &lt;/optgroup&gt;&#10;  &lt;optgroup label=&quot;Eastern Time Zone&quot;&gt;&#10;    &lt;option value=&quot;CT&quot;&gt;Connecticut&lt;/option&gt;&#10;    &lt;option value=&quot;DE&quot;&gt;Delaware&lt;/option&gt;&#10;    &lt;option value=&quot;FL&quot; selected&gt;Florida&lt;/option&gt;&#10;    &lt;option value=&quot;GA&quot;&gt;Georgia&lt;/option&gt;&#10;    &lt;option value=&quot;IN&quot;&gt;Indiana&lt;/option&gt;&#10;    &lt;option value=&quot;ME&quot;&gt;Maine&lt;/option&gt;&#10;    &lt;option value=&quot;MD&quot;&gt;Maryland&lt;/option&gt;&#10;    &lt;option value=&quot;MA&quot;&gt;Massachusetts&lt;/option&gt;&#10;    &lt;option value=&quot;MI&quot;&gt;Michigan&lt;/option&gt;&#10;    &lt;option value=&quot;NH&quot;&gt;New Hampshire&lt;/option&gt;&#10;    &lt;option value=&quot;NJ&quot;&gt;New Jersey&lt;/option&gt;&#10;    &lt;option value=&quot;NY&quot;&gt;New York&lt;/option&gt;&#10;    &lt;option value=&quot;NC&quot;&gt;North Carolina&lt;/option&gt;&#10;    &lt;option value=&quot;OH&quot;&gt;Ohio&lt;/option&gt;&#10;    &lt;option value=&quot;PA&quot;&gt;Pennsylvania&lt;/option&gt;&#10;    &lt;option value=&quot;RI&quot;&gt;Rhode Island&lt;/option&gt;&#10;    &lt;option value=&quot;SC&quot;&gt;South Carolina&lt;/option&gt;&#10;    &lt;option value=&quot;VT&quot;&gt;Vermont&lt;/option&gt;&#10;    &lt;option value=&quot;VA&quot;&gt;Virginia&lt;/option&gt;&#10;    &lt;option value=&quot;WV&quot;&gt;West Virginia&lt;/option&gt;&#10;  &lt;/optgroup&gt;&#10;&lt;/select&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="select2-multi-js" role="tabpanel" aria-labelledby="select2-multi-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">$(".select2").select2();</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-12" />
+
+          <!-- Disabled -->
+          <div class="row">
+            <div class="col-12">
+              <p id="select2-disabled" class="anchor-heading fw-bold mt-4">Disabled</p>
+              <p>Use <code>disabled</code> attribute with select tag to create a disabled select2.</p>
+              <div class="doc-example">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="select2-disabled-preview-tab" data-bs-toggle="tab" data-bs-target="#select2-disabled-preview" role="tab" aria-controls="select2-disabled-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="select2-disabled-html-tab" data-bs-toggle="tab" data-bs-target="#select2-disabled-html" role="tab" aria-controls="select2-disabled-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="select2-disabled-js-tab" data-bs-toggle="tab" data-bs-target="#select2-disabled-js" role="tab" aria-controls="select2-disabled-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="select2-disabled-preview" role="tabpanel" aria-labelledby="select2-disabled-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="select2Disabled" class="form-label">Disabled</label>
+                        <select id="select2Disabled" class="select2 form-select" disabled>
+                          <option value="1">Option1</option>
+                          <option value="2" selected>Option2</option>
+                          <option value="3">Option3</option>
+                          <option value="4">Option4</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="select2-disabled-html" role="tabpanel" aria-labelledby="select2-disabled-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre
+                      class="docs-code"><code class="html">&lt;label for=&quot;select2Disabled&quot; class=&quot;form-label&quot;&gt;Disabled&lt;/label&gt;&#10;&lt;select id=&quot;select2Disabled&quot; class=&quot;select2 form-select&quot; disabled&gt;&#10;  &lt;option value=&quot;1&quot;&gt;Option1&lt;/option&gt;&#10;  &lt;option value=&quot;2&quot; selected&gt;Option2&lt;/option&gt;&#10;  &lt;option value=&quot;3&quot;&gt;Option3&lt;/option&gt;&#10;  &lt;option value=&quot;4&quot;&gt;Option4&lt;/option&gt;&#10;&lt;/select&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="select2-disabled-js" role="tabpanel" aria-labelledby="select2-disabled-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">$(".select2").select2();</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-12" />
+
+          <!-- Icons -->
+          <div class="row">
+            <div class="col-12">
+              <p id="select2-icons" class="anchor-heading fw-bold mt-4">Icons</p>
+              <p>You can use selet2's templating options to create a select2 with iconsârefer below mentioned example.</p>
+              <div class="doc-example">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="select2-icons-preview-tab" data-bs-toggle="tab" data-bs-target="#select2-icons-preview" role="tab" aria-controls="select2-icons-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="select2-icons-html-tab" data-bs-toggle="tab" data-bs-target="#select2-icons-html" role="tab" aria-controls="select2-icons-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="select2-icons-js-tab" data-bs-toggle="tab" data-bs-target="#select2-icons-js" role="tab" aria-controls="select2-icons-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="select2-icons-preview" role="tabpanel" aria-labelledby="select2-icons-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="select2Icons" class="form-label">Icons</label>
+                        <select id="select2Icons" class="select2-icons form-select">
+                          <optgroup label="Services">
+                            <option value="bootstrap5" data-icon="icon-base ti tabler-brand-bootstrap" selected>Bootstrap 5</option>
+                            <option value="codepen" data-icon="icon-base ti tabler-brand-codepen">Codepen</option>
+                            <option value="php" data-icon="icon-base ti tabler-brand-php">PHP</option>
+                            <option value="pinterest2" data-icon="icon-base ti tabler-brand-css3">CSS3</option>
+                            <option value="html5" data-icon="icon-base ti tabler-brand-html5">HTML5</option>
+                          </optgroup>
+                          <optgroup label="File types">
+                            <option value="pdf" data-icon="icon-base ti tabler-file-description">PDF</option>
+                            <option value="word" data-icon="icon-base ti tabler-file-description">Word</option>
+                            <option value="js" data-icon="icon-base ti tabler-brand-javascript">JavaScript</option>
+                            <option value="facebook" data-icon="icon-base ti tabler-brand-facebook">Facebook</option>
+                          </optgroup>
+                          <optgroup label="Browsers">
+                            <option value="chrome" data-icon="icon-base ti tabler-brand-chrome">Chrome</option>
+                            <option value="firefox" data-icon="icon-base ti tabler-brand-firefox">Firefox</option>
+                            <option value="safari" data-icon="icon-base ti tabler-brand-edge">Edge</option>
+                            <option value="opera" data-icon="icon-base ti tabler-brand-opera">Opera</option>
+                            <option value="Ubuntu" data-icon="icon-base ti tabler-brand-ubuntu">Ubuntu</option>
+                          </optgroup>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="select2-icons-html" role="tabpanel" aria-labelledby="select2-icons-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre
+                      class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;select2Icons&quot; class=&quot;form-label&quot;&gt;Icons&lt;/label&gt;&#10;  &lt;select id=&quot;select2Icons&quot; class=&quot;select2-icons form-select&quot;&gt;&#10;    &lt;optgroup label=&quot;Services&quot;&gt;&#10;      &lt;option value=&quot;bootstrap5&quot; data-icon=&quot;icon-base ti tabler-brand-bootstrap&quot; selected&gt;Bootstrap 5&lt;/option&gt;&#10;      &lt;option value=&quot;codepen&quot; data-icon=&quot;icon-base ti tabler-brand-codepen&quot;&gt;Codepen&lt;/option&gt;&#10;      &lt;option value=&quot;php&quot; data-icon=&quot;icon-base ti tabler-brand-php&quot;&gt;PHP&lt;/option&gt;&#10;      &lt;option value=&quot;pinterest2&quot; data-icon=&quot;icon-base ti tabler-brand-css3&quot;&gt;CSS3&lt;/option&gt;&#10;      &lt;option value=&quot;html5&quot; data-icon=&quot;icon-base ti tabler-brand-html5&quot;&gt;HTML5&lt;/option&gt;&#10;    &lt;/optgroup&gt;&#10;    &lt;optgroup label=&quot;File types&quot;&gt;&#10;      &lt;option value=&quot;pdf&quot; data-icon=&quot;icon-base ti tabler-file-description&quot;&gt;PDF&lt;/option&gt;&#10;      &lt;option value=&quot;word&quot; data-icon=&quot;icon-base ti tabler-file-description&quot;&gt;Word&lt;/option&gt;&#10;      &lt;option value=&quot;js&quot; data-icon=&quot;icon-base ti tabler-brand-javascript&quot;&gt;JavaScript&lt;/option&gt;&#10;      &lt;option value=&quot;facebook&quot; data-icon=&quot;icon-base ti tabler-brand-facebook&quot;&gt;Facebook&lt;/option&gt;&#10;    &lt;/optgroup&gt;&#10;    &lt;optgroup label=&quot;Browsers&quot;&gt;&#10;      &lt;option value=&quot;chrome&quot; data-icon=&quot;icon-base ti tabler-brand-chrome&quot;&gt;Chrome&lt;/option&gt;&#10;      &lt;option value=&quot;firefox&quot; data-icon=&quot;icon-base ti tabler-brand-firefox&quot;&gt;Firefox&lt;/option&gt;&#10;      &lt;option value=&quot;safari&quot; data-icon=&quot;icon-base ti tabler-brand-edge&quot;&gt;Edge&lt;/option&gt;&#10;      &lt;option value=&quot;opera&quot; data-icon=&quot;icon-base ti tabler-brand-opera&quot;&gt;Opera&lt;/option&gt;&#10;      &lt;option value=&quot;Ubuntu&quot; data-icon=&quot;icon-base ti tabler-brand-ubuntu&quot;&gt;Ubuntu&lt;/option&gt;&#10;    &lt;/optgroup&gt;&#10;  &lt;/select&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="select2-icons-js" role="tabpanel" aria-labelledby="select2-icons-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre
+                      class="docs-code"><code class="js">// custom template to render icons&#10;function renderIcons(option) {&#10;  if (!option.id) {&#10;    return option.text;&#10;  }&#10;  var $icon = &quot;&lt;i class=&apos;&quot; + $(option.element).data(&apos;icon&apos;) + &quot; me-2&apos;&gt;&lt;/i&gt;&quot; + option.text;&#10;&#10;  return $icon;&#10;}&#10;select2Icons.wrap(&apos;&lt;div class=&quot;position-relative&quot;&gt;&lt;/div&gt;&apos;).select2({&#10;  dropdownParent: select2Icons.parent(),&#10;  templateResult: renderIcons,&#10;  templateSelection: renderIcons,&#10;  escapeMarkup: function (es) {&#10;    return es;&#10;  }&#10;});</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-12" />
+
+          <!-- Colors -->
+          <div class="row">
+            <div class="col-12">
+              <p id="select2-colors" class="anchor-heading fw-bold mt-4">Colors</p>
+              <p>Wrap your select with class <code>select2-{color}</code> to create a colored select2. Refer below mentioned table for color options.</p>
+              <div class="doc-example">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="select2-colored-preview-tab" data-bs-toggle="tab" data-bs-target="#select2-colored-preview" role="tab" aria-controls="select2-colored-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="select2-colored-html-tab" data-bs-toggle="tab" data-bs-target="#select2-colored-html" role="tab" aria-controls="select2-colored-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="select2-colored-js-tab" data-bs-toggle="tab" data-bs-target="#select2-colored-js" role="tab" aria-controls="select2-colored-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="select2-colored-preview" role="tabpanel" aria-labelledby="select2-colored-preview-tab">
+                    <div class="select2-primary">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label for="select2Primary" class="form-label">Primary</label>
+                          <div class="select2-primary">
+                            <select id="select2Primary" class="select2 form-select" multiple>
+                              <option value="1" selected>Option1</option>
+                              <option value="2" selected>Option2</option>
+                              <option value="3">Option3</option>
+                              <option value="4">Option4</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="select2-colored-html" role="tabpanel" aria-labelledby="select2-colored-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre
+                      class="docs-code"><code class="html">&lt;label for=&quot;select2Primary&quot; class=&quot;form-label&quot;&gt;Primary&lt;/label&gt;&#10;&lt;div class=&quot;select2-primary&quot;&gt;&#10;  &lt;select id=&quot;select2Primary&quot; class=&quot;select2 form-select&quot; multiple&gt;&#10;    &lt;option value=&quot;1&quot; selected&gt;Option1&lt;/option&gt;&#10;    &lt;option value=&quot;2&quot; selected&gt;Option2&lt;/option&gt;&#10;    &lt;option value=&quot;3&quot;&gt;Option3&lt;/option&gt;&#10;    &lt;option value=&quot;4&quot;&gt;Option4&lt;/option&gt;&#10;  &lt;/select&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="select2-colored-js" role="tabpanel" aria-labelledby="select2-colored-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">$(".select2").select2();</code></pre>
+                  </div>
+                </div>
+              </div>
+              <table class="table table-bordered doc-table mt-4">
+                <thead>
+                  <tr>
+                    <th scope="col">Class</th>
+                    <th scope="col">Value</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td scope="row">
+                      <code>class="select2-{value}"</code>
+                    </td>
+                    <td>primary | secondary | success | danger | warning | info | light | dark</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Select2 Example -->
+
+      <hr class="my-12" />
+
+      <!-- Tagify Example -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="tagify" class="anchor-heading fw-bold mt-6">Tagify</h4>
+          <p class="my-4">
+            Lightweight, efficient Tags input component in Vanilla JS. Refer the offical library demo page for more options:
+            <a href="https://yaireo.github.io/tagify/" target="_blank" rel="noopener noreferrer">https://yaireo.github.io/tagify/</a>
+          </p>
+
+          <p class="anchor-heading fw-bold" id="tagify-usage">Usage</p>
+          <p>In order to use Tagify on your page, It is required to include the following vendors css in the "Vendors CSS" area from the page's header:</p>
+          <div class="doc-example css-code">
+            <div class="doc-example-content" data-label="Code">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;link rel=&quot;stylesheet&quot; href=&quot;../../assets/vendor/libs/tagify/tagify.css &quot; /&gt;</code></pre>
+            </div>
+          </div>
+          <p class="my-4">Include the following vendors script in the "Vendors JS" area from the page's footer:</p>
+          <div class="doc-example">
+            <div class="doc-example-content" data-label="Code">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;script src=&quot;../../assets/vendor/libs/tagify/tagify.js&quot;&gt;&lt;/script&gt;</code></pre>
+            </div>
+          </div>
+
+          <!-- Basic -->
+          <div class="row">
+            <div class="col-12">
+              <p id="tagify-basic" class="anchor-heading fw-bold mt-4">Basic</p>
+              <p>To create a basic tagify input by initialize tagify like this: <code>new Tagify(YOUR_ELEment);</code>.</p>
+              <div class="doc-example">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="tagify-basic-preview-tab" data-bs-toggle="tab" data-bs-target="#tagify-basic-preview" role="tab" aria-controls="tagify-basic-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="tagify-basic-html-tab" data-bs-toggle="tab" data-bs-target="#tagify-basic-html" role="tab" aria-controls="tagify-basic-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="tagify-basic-js-tab" data-bs-toggle="tab" data-bs-target="#tagify-basic-js" role="tab" aria-controls="tagify-basic-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="tagify-basic-preview" role="tabpanel" aria-labelledby="tagify-basic-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="TagifyBasic" class="form-label">Basic</label>
+                        <input id="TagifyBasic" class="form-control" name="TagifyBasic" value="Tag1, Tag2, Tag3" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tagify-basic-html" role="tabpanel" aria-labelledby="tagify-basic-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;TagifyBasic&quot; class=&quot;form-label&quot;&gt;Basic&lt;/label&gt;&#10;  &lt;input id=&quot;TagifyBasic&quot; class=&quot;form-control&quot; name=&quot;TagifyBasic&quot; value=&quot;Tag1, Tag2, Tag3&quot; /&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="tagify-basic-js" role="tabpanel" aria-labelledby="tagify-basic-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">const tagifyBasicEl = document.querySelector("#TagifyBasic");
+const TagifyBasic = new Tagify(tagifyBasicEl);</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-12" />
+
+          <!-- Readonly -->
+          <div class="row">
+            <div class="col-12">
+              <p id="tagify-readonly" class="anchor-heading fw-bold mt-4">Readonly</p>
+              <p>Use <code>readonly</code> attribute with input and initialize it to create a readonly tagify.</p>
+              <div class="doc-example">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="tagify-readonly-preview-tab" data-bs-toggle="tab" data-bs-target="#tagify-readonly-preview" role="tab" aria-controls="tagify-readonly-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="tagify-readonly-html-tab" data-bs-toggle="tab" data-bs-target="#tagify-readonly-html" role="tab" aria-controls="tagify-readonly-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="tagify-readonly-js-tab" data-bs-toggle="tab" data-bs-target="#tagify-readonly-js" role="tab" aria-controls="tagify-readonly-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="tagify-readonly-preview" role="tabpanel" aria-labelledby="tagify-readonly-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="TagifyReadonly" class="form-label">Readonly</label>
+                        <input id="TagifyReadonly" class="form-control" readonly value="Tag1, Tag2, Tag3" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tagify-readonly-html" role="tabpanel" aria-labelledby="tagify-readonly-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;TagifyReadonly&quot; class=&quot;form-label&quot;&gt;Readonly&lt;/label&gt;&#10;  &lt;input id=&quot;TagifyReadonly&quot; class=&quot;form-control&quot; readonly value=&quot;Tag1, Tag2, Tag3&quot; /&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="tagify-readonly-js" role="tabpanel" aria-labelledby="tagify-readonly-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">const tagifyReadonlyEl = document.querySelector("#TagifyReadonly");
+const TagifyReadonly = new Tagify(tagifyReadonlyEl);</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-12" />
+
+          <!-- Custom Suggestions: Inline -->
+          <div class="row">
+            <div class="col-12">
+              <p id="tagify-cs-inline" class="anchor-heading fw-bold mt-4">Custom Suggestions: Inline</p>
+              <p>Create inline tags input with multiple selection.</p>
+              <div class="doc-example">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="tagify-cs-inline-preview-tab" data-bs-toggle="tab" data-bs-target="#tagify-cs-inline-preview" role="tab" aria-controls="tagify-cs-inline-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="tagify-cs-inline-html-tab" data-bs-toggle="tab" data-bs-target="#tagify-cs-inline-html" role="tab" aria-controls="tagify-cs-inline-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="tagify-cs-inline-js-tab" data-bs-toggle="tab" data-bs-target="#tagify-cs-inline-js" role="tab" aria-controls="tagify-cs-inline-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="tagify-cs-inline-preview" role="tabpanel" aria-labelledby="tagify-cs-inline-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="TagifyCustomInlineSuggestion" class="form-label">Custom Inline Suggestions</label>
+                        <input id="TagifyCustomInlineSuggestion" name="TagifyCustomInlineSuggestion" class="form-control" placeholder="select technologies" value="css, html, javascript" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tagify-cs-inline-html" role="tabpanel" aria-labelledby="tagify-cs-inline-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;TagifyCustomInlineSuggestion&quot; class=&quot;form-label&quot;&gt;Custom Inline Suggestions&lt;/label&gt;&#10;  &lt;input id=&quot;TagifyCustomInlineSuggestion&quot; name=&quot;TagifyCustomInlineSuggestion&quot; class=&quot;form-control&quot; placeholder=&quot;select technologies&quot; value=&quot;css, html, javascript&quot;&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="tagify-cs-inline-js" role="tabpanel" aria-labelledby="tagify-cs-inline-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">const TagifyCustomInlineSuggestionEl = document.querySelector("#TagifyCustomInlineSuggestion");
+
+const whitelist = [
+  "A# .NET",
+  "A# (Axiom)",
+  "A-0 System",
+  "A+",
+  "A++",
+  "ABAP",
+  "ABC",
+  "ABC ALGOL",
+  "ABSET",
+  "ABSYS",
+  "ACC",
+  "Accent",
+  "Ace DASL",
+  "ACL2",
+  "Avicsoft",
+  "ACT-III",
+  "Action!",
+  "ActionScript",
+  "Ada",
+  "Adenine",
+  "Agda",
+  "Agilent VEE",
+  "Agora",
+  "AIMMS",
+  "Alef",
+  "ALF",
+  "ALGOL 58",
+  "ALGOL 60",
+  "ALGOL 68",
+  "ALGOL W",
+  "Alice",
+  "Alma-0",
+  "AmbientTalk",
+  "Amiga E",
+  "AMOS",
+  "AMPL",
+  "Apex (Salesforce.com)",
+  "APL",
+  "AppleScript",
+  "Arc",
+  "ARexx",
+  "Argus",
+  "AspectJ",
+  "Assembly language",
+  "ATS",
+  "Ateji PX",
+  "AutoHotkey",
+  "Autocoder",
+  "AutoIt",
+  "AutoLISP / Visual LISP",
+  "Averest",
+  "AWK",
+  "Axum",
+  "Active Server Pages",
+  "ASP.NET"
+];
+// Inline
+let TagifyCustomInlineSuggestion = new Tagify(TagifyCustomInlineSuggestionEl, {
+  whitelist: whitelist,
+  maxTags: 10, // allows to select max items
+  dropdown: {
+    maxItems: 20, // display max items
+    classname: "tags-inline", // Custom inline class
+    enabled: 0,
+    closeOnSelect: false
+  }
+});
+</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-12" />
+
+          <!-- Custom Suggestions: List -->
+          <div class="row">
+            <div class="col-12">
+              <p id="tagify-cs-list" class="anchor-heading fw-bold mt-4">Custom Suggestions: List</p>
+              <p>Create list tags input with multiple selection.</p>
+              <div class="doc-example">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="tagify-cs-list-preview-tab" data-bs-toggle="tab" data-bs-target="#tagify-cs-list-preview" role="tab" aria-controls="tagify-cs-list-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="tagify-cs-list-html-tab" data-bs-toggle="tab" data-bs-target="#tagify-cs-list-html" role="tab" aria-controls="tagify-cs-list-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="tagify-cs-list-js-tab" data-bs-toggle="tab" data-bs-target="#tagify-cs-list-js" role="tab" aria-controls="tagify-cs-list-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="tagify-cs-list-preview" role="tabpanel" aria-labelledby="tagify-cs-list-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="TagifyCustomListSuggestion" class="form-label">Custom List Suggestions</label>
+                        <input id="TagifyCustomListSuggestion" name="TagifyCustomListSuggestion" class="form-control" placeholder="select technologies" value="css, html, php" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tagify-cs-list-html" role="tabpanel" aria-labelledby="tagify-cs-list-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;TagifyCustomListSuggestion&quot; class=&quot;form-label&quot;&gt;Custom List Suggestions&lt;/label&gt;&#10;  &lt;input id=&quot;TagifyCustomListSuggestion&quot; name=&quot;TagifyCustomListSuggestion&quot; class=&quot;form-control&quot; placeholder=&quot;select technologies&quot; value=&quot;css, html, php&quot;&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="tagify-cs-list-js" role="tabpanel" aria-labelledby="tagify-cs-list-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">const TagifyCustomListSuggestionEl = document.querySelector("#TagifyCustomListSuggestion");
+
+const whitelist = [
+  "A# .NET",
+  "A# (Axiom)",
+  "A-0 System",
+  "A+",
+  "A++",
+  "ABAP",
+  "ABC",
+  "ABC ALGOL",
+  "ABSET",
+  "ABSYS",
+  "ACC",
+  "Accent",
+  "Ace DASL",
+  "ACL2",
+  "Avicsoft",
+  "ACT-III",
+  "Action!",
+  "ActionScript",
+  "Ada",
+  "Adenine",
+  "Agda",
+  "Agilent VEE",
+  "Agora",
+  "AIMMS",
+  "Alef",
+  "ALF",
+  "ALGOL 58",
+  "ALGOL 60",
+  "ALGOL 68",
+  "ALGOL W",
+  "Alice",
+  "Alma-0",
+  "AmbientTalk",
+  "Amiga E",
+  "AMOS",
+  "AMPL",
+  "Apex (Salesforce.com)",
+  "APL",
+  "AppleScript",
+  "Arc",
+  "ARexx",
+  "Argus",
+  "AspectJ",
+  "Assembly language",
+  "ATS",
+  "Ateji PX",
+  "AutoHotkey",
+  "Autocoder",
+  "AutoIt",
+  "AutoLISP / Visual LISP",
+  "Averest",
+  "AWK",
+  "Axum",
+  "Active Server Pages",
+  "ASP.NET"
+];
+// List
+let TagifyCustomListSuggestion = new Tagify(TagifyCustomListSuggestionEl, {
+  whitelist: whitelist,
+  maxTags: 10, // allows to select max items
+  dropdown: {
+    maxItems: 20, // display max items
+    classname: "", // Custom inline class
+    enabled: 0,
+    closeOnSelect: false
+  }
+});
+</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-12" />
+
+          <!-- Users List -->
+          <div class="row">
+            <div class="col-12">
+              <p id="tagify-user-list" class="anchor-heading fw-bold mt-4">Users List</p>
+              <p>This example shows how to customize Tagify further. It also includes an 'Add all' option as the first item in the suggestions dropdown list.</p>
+              <div class="doc-example">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="tagify-user-list-preview-tab" data-bs-toggle="tab" data-bs-target="#tagify-user-list-preview" role="tab" aria-controls="tagify-user-list-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="tagify-user-list-html-tab" data-bs-toggle="tab" data-bs-target="#tagify-user-list-html" role="tab" aria-controls="tagify-user-list-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="tagify-user-list-js-tab" data-bs-toggle="tab" data-bs-target="#tagify-user-list-js" role="tab" aria-controls="tagify-user-list-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="tagify-user-list-preview" role="tabpanel" aria-labelledby="tagify-user-list-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="TagifyUserList" class="form-label">Users List</label>
+                        <input id="TagifyUserList" name="TagifyUserList" class="form-control" value="abatisse2@nih.gov, Justinian Hattersley" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tagify-user-list-html" role="tabpanel" aria-labelledby="tagify-user-list-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;TagifyUserList&quot; class=&quot;form-label&quot;&gt;Users List&lt;/label&gt;&#10;  &lt;input id=&quot;TagifyUserList&quot; name=&quot;TagifyUserList&quot; class=&quot;form-control&quot; value=&quot;abatisse2@nih.gov, Justinian Hattersley&quot; /&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="tagify-user-list-js" role="tabpanel" aria-labelledby="tagify-user-list-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">const TagifyUserListEl = document.querySelector("#TagifyUserList");
+const usersList = [
+  {
+    value: 1,
+    name: "Justinian Hattersley",
+    avatar: "https://i.pravatar.cc/80?img=1",
+    email: "jhattersley0@ucsd.edu"
+  },
+  {
+    value: 2,
+    name: "Antons Esson",
+    avatar: "https://i.pravatar.cc/80?img=2",
+    email: "aesson1@ning.com"
+  },
+  {
+    value: 3,
+    name: "Ardeen Batisse",
+    avatar: "https://i.pravatar.cc/80?img=3",
+    email: "abatisse2@nih.gov"
+  },
+  {
+    value: 4,
+    name: "Graeme Yellowley",
+    avatar: "https://i.pravatar.cc/80?img=4",
+    email: "gyellowley3@behance.net"
+  },
+  {
+    value: 5,
+    name: "Dido Wilford",
+    avatar: "https://i.pravatar.cc/80?img=5",
+    email: "dwilford4@jugem.jp"
+  },
+  {
+    value: 6,
+    name: "Celesta Orwin",
+    avatar: "https://i.pravatar.cc/80?img=6",
+    email: "corwin5@meetup.com"
+  },
+  {
+    value: 7,
+    name: "Sally Main",
+    avatar: "https://i.pravatar.cc/80?img=7",
+    email: "smain6@techcrunch.com"
+  },
+  {
+    value: 8,
+    name: "Grethel Haysman",
+    avatar: "https://i.pravatar.cc/80?img=8",
+    email: "ghaysman7@mashable.com"
+  },
+  {
+    value: 9,
+    name: "Marvin Mandrake",
+    avatar: "https://i.pravatar.cc/80?img=9",
+    email: "mmandrake8@sourceforge.net"
+  },
+  {
+    value: 10,
+    name: "Corrie Tidey",
+    avatar: "https://i.pravatar.cc/80?img=10",
+    email: "ctidey9@youtube.com"
+  }
+];
+
+function tagTemplate(tagData) {
+  return `
+    &lt;tag title=&quot;${tagData.title || tagData.email}&quot;&#10;      contenteditable=&apos;false&apos;&#10;      spellcheck=&apos;false&apos;&#10;      tabIndex=&quot;-1&quot;&#10;      class=&quot;${this.settings.classNames.tag} ${tagData.class ? tagData.class : &apos;&apos;}&quot;&#10;      ${this.getAttributes(tagData)}&#10;    &gt;&#10;      &lt;x title=&apos;&apos; class=&apos;tagify__tag__removeBtn&apos; role=&apos;button&apos; aria-label=&apos;remove tag&apos;&gt;&lt;/x&gt;&#10;      &lt;div&gt;&#10;        &lt;div class=&apos;tagify__tag__avatar-wrap&apos;&gt;&#10;          &lt;img onerror=&quot;this.style.visibility=&apos;hidden&apos;&quot; src=&quot;${tagData.avatar}&quot;&gt;&#10;        &lt;/div&gt;&#10;        &lt;span class=&apos;tagify__tag-text&apos;&gt;${tagData.name}&lt;/span&gt;&#10;      &lt;/div&gt;&#10;    &lt;/tag&gt;
+  `;
+}
+
+function suggestionItemTemplate(tagData) {
+  return `
+    &lt;div ${this.getAttributes(tagData)}&#10;      class=&apos;tagify__dropdown__item align-items-center ${tagData.class ? tagData.class : &apos;&apos;}&apos;&#10;      tabindex=&quot;0&quot;&#10;      role=&quot;option&quot;&#10;    &gt;&#10;      ${tagData.avatar ?&#10;        `&lt;div class=&apos;tagify__dropdown__item__avatar-wrap&apos;&gt;&#10;          &lt;img onerror=&quot;this.style.visibility=&apos;hidden&apos;&quot; src=&quot;${tagData.avatar}&quot;&gt;&#10;        &lt;/div&gt;`&#10;        : &apos;&apos;&#10;      }&#10;      &lt;span class=&quot;fw-medium&quot;&gt;${tagData.name}&lt;/span&gt;&#10;      &lt;span&gt;${tagData.email}&lt;/span&gt;&#10;    &lt;/div&gt;
+  `;
+}
+
+// initialize Tagify on the above input node reference
+let TagifyUserList = new Tagify(TagifyUserListEl, {
+  tagTextProp: "name", // very important since a custom template is used with this property as text. allows typing a "value" or a "name" to match input with whitelist
+  enforceWhitelist: true,
+  skipInvalid: true, // do not remporarily add invalid tags
+  dropdown: {
+    closeOnSelect: false,
+    enabled: 0,
+    classname: "users-list",
+    searchKeys: ["name", "email"] // very important to set by which keys to search for suggesttions when typing
+  },
+  templates: {
+    tag: tagTemplate,
+    dropdownItem: suggestionItemTemplate
+  },
+  whitelist: usersList
+});
+
+TagifyUserList.on("dropdown:show dropdown:updated", onDropdownShow);
+TagifyUserList.on("dropdown:select", onSelectSuggestion);
+
+let addAllSuggestionsEl;
+
+function onDropdownShow(e) {
+  let dropdownContentEl = e.detail.tagify.DOM.dropdown.content;
+
+  if (TagifyUserList.suggestedListItems.length > 1) {
+    addAllSuggestionsEl = getAddAllSuggestionsEl();
+
+    // insert "addAllSuggestionsEl" as the first element in the suggestions list
+    dropdownContentEl.insertBefore(addAllSuggestionsEl, dropdownContentEl.firstChild);
+  }
+}
+
+function onSelectSuggestion(e) {
+  if (e.detail.elm == addAllSuggestionsEl) TagifyUserList.dropdown.selectAll.call(TagifyUserList);
+}
+
+// create an "add all" custom suggestion element every time the dropdown changes
+function getAddAllSuggestionsEl() {
+  // suggestions items should be based on "dropdownItem" template
+  return TagifyUserList.parseTemplate("dropdownItem", [
+    {
+      class: "addAll",
+      name: "Add all",
+      email:
+        TagifyUserList.settings.whitelist.reduce(function(remainingSuggestions, item) {
+          return TagifyUserList.isTagDuplicate(item.value) ? remainingSuggestions : remainingSuggestions + 1;
+        }, 0) + " Members"
+    }
+  ]);
+}</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-12" />
+
+          <!-- Email list -->
+          <div class="row">
+            <div class="col-12">
+              <p id="tagify-email-list" class="anchor-heading fw-bold mt-4">Email list</p>
+              <p>No placeholder, and no way of adding tags from within the component, but only by clicking the (+) button, which is not related to Tagify in anyway, but in this example it is shown how combining a few simple things make customization easy.</p>
+              <div class="doc-example">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="tagify-email-list-preview-tab" data-bs-toggle="tab" data-bs-target="#tagify-email-list-preview" role="tab" aria-controls="tagify-email-list-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="tagify-email-list-html-tab" data-bs-toggle="tab" data-bs-target="#tagify-email-list-html" role="tab" aria-controls="tagify-email-list-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="tagify-email-list-js-tab" data-bs-toggle="tab" data-bs-target="#tagify-email-list-js" role="tab" aria-controls="tagify-email-list-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="tagify-email-list-preview" role="tabpanel" aria-labelledby="tagify-email-list-preview-tab">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <label for="TagifyEmailList" class="form-label d-block">Email List</label>
+                        <input id="TagifyEmailList" class="tagify-email-list" value="some56.name@website.com" />
+                        <button type="button" class="btn btn-sm btn-outline-primary btn-icon rounded-pill mb-1"><span class="icon-base ti tabler-plus"></span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tagify-email-list-html" role="tabpanel" aria-labelledby="tagify-email-list-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre
+                      class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;TagifyEmailList&quot; class=&quot;form-label d-block&quot;&gt;Email List&lt;/label&gt;&#10;  &lt;input id=&quot;TagifyEmailList&quot; class=&quot;tagify-email-list&quot; value=&quot;some56.name@website.com&quot;&gt;&#10;  &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-outline-primary btn-icon rounded-pill mb-1&quot;&gt;&lt;span class=&quot;icon-base ti tabler-plus&quot;&gt;&lt;/span&gt;&lt;/button&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="tagify-email-list-js" role="tabpanel" aria-labelledby="tagify-email-list-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">// generate random whitelist items (for the demo)
+let randomStringsArr = Array.apply(null, Array(100)).map(function() {
+  return (
+    Array.apply(null, Array(~~(Math.random() * 10 + 3)))
+      .map(function() {
+        return String.fromCharCode(Math.random() * (123 - 97) + 97);
+      })
+      .join("") + "@gmail.com"
+  );
+});
+
+const TagifyEmailListEl = document.querySelector("#TagifyEmailList");
+const TagifyEmailList = new Tagify(TagifyEmailListEl, {
+  // email address validation (https://stackoverflow.com/a/46181/104380)
+  pattern: /^(([^&lt;&gt;()\[\]\\.,;:\s@"]+(\.[^&lt;&gt;()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+  whitelist: randomStringsArr,
+  callbacks: {
+    invalid: onInvalidTag
+  },
+  dropdown: {
+    position: "text",
+    enabled: 1 // show suggestions dropdown after 1 typed character
+  }
+});
+const button = TagifyEmailListEl.nextElementSibling; // "add new tag" action-button
+
+button.addEventListener("click", onAddButtonClick);
+
+function onAddButtonClick() {
+  TagifyEmailList.addEmptyTag();
+}
+
+function onInvalidTag(e) {
+  console.log("invalid", e.detail);
+}</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/ Tagify Example -->
+
+      <hr class="my-12" />
+
+      <!-- Bootstrap Select Example -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="bs-select" class="anchor-heading fw-bold mt-6">Bootstrap Select</h4>
+          <p>Bootstrap Select is the jQuery plugin that brings select elements into the 21st century with intuitive multiselection, searching, and much more.</p>
+          <p class="anchor-heading fw-bold" id="bs-select-usage">Usage</p>
+          <p>In order to use Bootstrap Select on your page, It is required to include the following vendors css in the "Vendors CSS" area from the page's header:</p>
+          <div class="doc-example css-code">
+            <div class="doc-example-content" data-label="Code">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;link rel=&quot;stylesheet&quot; href=&quot;../../assets/vendor/libs/bootstrap-select/bootstrap-select.css&quot; /&gt;</code></pre>
+            </div>
+          </div>
+          <p class="my-4">Include the following vendors script in the "Vendors JS" area from the page's footer:</p>
+          <div class="doc-example">
+            <div class="doc-example-content" data-label="Code">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;script src=&quot;../../assets/vendor/libs/bootstrap-select/bootstrap-select.js&quot;&gt;&lt;/script&gt; </code></pre>
+            </div>
+          </div>
+          <!-- Basic -->
+          <div class="row">
+            <div class="col-12">
+              <p id="bs-select-basic" class="anchor-heading fw-bold mt-6">Basic</p>
+              <p>
+                To create a basic bootstrap select, initialize your select element like this:
+                <code>YOUR_ELEMENT.selectpicker();</code>
+              </p>
+              <div class="doc-example">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="bs-select-basic-preview-tab" data-bs-toggle="tab" data-bs-target="#bs-select-basic-preview" role="tab" aria-controls="bs-select-basic-preview" aria="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-select-basic-html-tab" data-bs-toggle="tab" data-bs-target="#bs-select-basic-html" role="tab" aria-controls="bs-select-basic-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-select-basic-js-tab" data-bs-toggle="tab" data-bs-target="#bs-select-basic-js" role="tab" aria-controls="bs-select-basic-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="bs-select-basic-preview" role="tabpanel" aria-labelledby="bs-select-basic-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="selectpickerBasic" class="form-label">Basic</label>
+                        <select id="selectpickerBasic" class="selectpicker w-100" data-style="btn-default">
+                          <option>Rocky</option>
+                          <option>Pulp Fiction</option>
+                          <option>The Godfather</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="bs-select-basic-html" role="tabpanel" aria-labelledby="bs-select-basic-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre
+                      class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;selectpickerBasic&quot; class=&quot;form-label&quot;&gt;Basic&lt;/label&gt;&#10;  &lt;select id=&quot;selectpickerBasic&quot; class=&quot;selectpicker w-100&quot; data-style=&quot;btn-default&quot;&gt;&#10;    &lt;option&gt;Rocky&lt;/option&gt;&#10;    &lt;option&gt;Pulp Fiction&lt;/option&gt;&#10;    &lt;option&gt;The Godfather&lt;/option&gt;&#10;  &lt;/select&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="bs-select-basic-js" role="tabpanel" aria-labelledby="bs-select-basic-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">$(".selectpicker").selectpicker();</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-12" />
+
+          <!-- Groups -->
+          <div class="row">
+            <div class="col-12">
+              <p id="bs-select-groups" class="anchor-heading fw-bold mt-6">Groups</p>
+              <p>
+                To create a grouped bootstrap select, use
+                <code>&lt;optgroup label=&quot;Movies&quot;&gt;...&lt;/optgroup&gt;</code>.
+              </p>
+              <div class="doc-example">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="bs-select-group-preview-tab" data-bs-toggle="tab" data-bs-target="#bs-select-group-preview" role="tab" aria-controls="bs-select-group-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-select-group-html-tab" data-bs-toggle="tab" data-bs-target="#bs-select-group-html" role="tab" aria-controls="bs-select-group-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-select-group-js-tab" data-bs-toggle="tab" data-bs-target="#bs-select-group-js" role="tab" aria-controls="bs-select-group-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="bs-select-group-preview" role="tabpanel" aria-labelledby="bs-select-group-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="selectpickerGroups" class="form-label">Groups</label>
+                        <select id="selectpickerGroups" class="selectpicker w-100" data-style="btn-default">
+                          <optgroup label="Movies">
+                            <option>Rocky</option>
+                            <option>Pulp Fiction</option>
+                            <option>The Godfather</option>
+                          </optgroup>
+                          <optgroup label="Series">
+                            <option>Breaking Bad</option>
+                            <option>Black Mirror</option>
+                            <option>Money Heist</option>
+                          </optgroup>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="bs-select-group-html" role="tabpanel" aria-labelledby="bs-select-group-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre
+                      class="docs-code"><code class="html">&lt;label for=&quot;selectpickerGroups&quot; class=&quot;form-label&quot;&gt;Groups&lt;/label&gt;&#10;&lt;select id=&quot;selectpickerGroups&quot; class=&quot;selectpicker w-100&quot; data-style=&quot;btn-default&quot;&gt;&#10;  &lt;optgroup label=&quot;Movies&quot;&gt;&#10;    &lt;option&gt;Rocky&lt;/option&gt;&#10;    &lt;option&gt;Pulp Fiction&lt;/option&gt;&#10;    &lt;option&gt;The Godfather&lt;/option&gt;&#10;  &lt;/optgroup&gt;&#10;  &lt;optgroup label=&quot;Series&quot;&gt;&#10;    &lt;option&gt;Breaking Bad&lt;/option&gt;&#10;    &lt;option&gt;Black Mirror&lt;/option&gt;&#10;    &lt;option&gt;Money Heist&lt;/option&gt;&#10;  &lt;/optgroup&gt;&#10;&lt;/select&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="bs-select-group-js" role="tabpanel" aria-labelledby="bs-select-group-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">$(".selectpicker").selectpicker();</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-12" />
+
+          <!-- Multiple -->
+          <div class="row">
+            <div class="col-12">
+              <p id="bs-select-multiple" class="anchor-heading fw-bold mt-6">Multiple</p>
+              <p>To create a multiple bootstrap select, use <code>multiple</code> attribute with <code>&lt;select&gt;</code>.</p>
+              <div class="doc-example">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="bs-select-multi-preview-tab" data-bs-toggle="tab" data-bs-target="#bs-select-multi-preview" role="tab" aria-controls="bs-select-multi-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-select-multi-html-tab" data-bs-toggle="tab" data-bs-target="#bs-select-multi-html" role="tab" aria-controls="bs-select-multi-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-select-multi-js-tab" data-bs-toggle="tab" data-bs-target="#bs-select-multi-js" role="tab" aria-controls="bs-select-multi-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="bs-select-multi-preview" role="tabpanel" aria-labelledby="bs-select-multi-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="selectpickerMultiple" class="form-label">Multiple</label>
+                        <select id="selectpickerMultiple" class="selectpicker w-100" data-style="btn-default" multiple data-icon-base="icon-base ti" data-tick-icon="tabler-check text-white">
+                          <option>Rocky</option>
+                          <option>Pulp Fiction</option>
+                          <option>The Godfather</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="bs-select-multi-html" role="tabpanel" aria-labelledby="bs-select-multi-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre
+                      class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;selectpickerMultiple&quot; class=&quot;form-label&quot;&gt;Multiple&lt;/label&gt;&#10;  &lt;select id=&quot;selectpickerMultiple&quot; class=&quot;selectpicker w-100&quot; data-style=&quot;btn-default&quot; multiple data-icon-base=&quot;icon-base ti&quot; data-tick-icon=&quot;tabler-check text-white&quot;&gt;&#10;    &lt;option&gt;Rocky&lt;/option&gt;&#10;    &lt;option&gt;Pulp Fiction&lt;/option&gt;&#10;    &lt;option&gt;The Godfather&lt;/option&gt;&#10;  &lt;/select&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="bs-select-multi-js" role="tabpanel" aria-labelledby="bs-select-multi-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">$(".selectpicker").selectpicker();</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-12" />
+
+          <!-- Live Search -->
+          <div class="row">
+            <div class="col-12">
+              <p id="bs-select-live-search" class="anchor-heading fw-bold mt-6">Live Search</p>
+              <p>To create a bootstrap select with a live search, use <code>data-live-search="true"</code> attribute with <code>&lt;select&gt;</code> and <code>data-tokens="YOUR_TOKEN"</code> attribute with <code>&lt;option&gt;</code>.</p>
+              <div class="doc-example">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="bs-select-search-preview-tab" data-bs-toggle="tab" data-bs-target="#bs-select-search-preview" role="tab" aria-controls="bs-select-search-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-select-search-html-tab" data-bs-toggle="tab" data-bs-target="#bs-select-search-html" role="tab" aria-controls="bs-select-search-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-select-search-js-tab" data-bs-toggle="tab" data-bs-target="#bs-select-search-js" role="tab" aria-controls="bs-select-search-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="bs-select-search-preview" role="tabpanel" aria-labelledby="bs-select-search-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="selectpickerLiveSearch" class="form-label">Live Search</label>
+                        <select id="selectpickerLiveSearch" class="selectpicker w-100" data-style="btn-default" data-live-search="true">
+                          <option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
+                          <option data-tokens="mustard">Burger, Shake and a Smile</option>
+                          <option data-tokens="frosting">Sugar, Spice and all things nice</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="bs-select-search-html" role="tabpanel" aria-labelledby="bs-select-search-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre
+                      class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;selectpickerLiveSearch&quot; class=&quot;form-label&quot;&gt;Live Search&lt;/label&gt;&#10;  &lt;select id=&quot;selectpickerLiveSearch&quot; class=&quot;selectpicker w-100&quot; data-style=&quot;btn-default&quot; data-live-search=&quot;true&quot;&gt;&#10;    &lt;option data-tokens=&quot;ketchup mustard&quot;&gt;Hot Dog, Fries and a Soda&lt;/option&gt;&#10;    &lt;option data-tokens=&quot;mustard&quot;&gt;Burger, Shake and a Smile&lt;/option&gt;&#10;    &lt;option data-tokens=&quot;frosting&quot;&gt;Sugar, Spice and all things nice&lt;/option&gt;&#10;  &lt;/select&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="bs-select-search-js" role="tabpanel" aria-labelledby="bs-select-search-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">$(".selectpicker").selectpicker();</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-12" />
+
+          <!-- Icons -->
+          <div class="row">
+            <div class="col-12">
+              <p id="bs-select-icons" class="anchor-heading fw-bold mt-6">Icons</p>
+              <p>Use <code>data-icon</code> attribute with <code>&lt;option&gt;</code> to create a select with icons.</p>
+              <div class="doc-example">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="bs-select-icons-preview-tab" data-bs-toggle="tab" data-bs-target="#bs-select-icons-preview" role="tab" aria-controls="bs-select-icons-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-select-icons-html-tab" data-bs-toggle="tab" data-bs-target="#bs-select-icons-html" role="tab" aria-controls="bs-select-icons-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-select-icons-js-tab" data-bs-toggle="tab" data-bs-target="#bs-select-icons-js" role="tab" aria-controls="bs-select-icons-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="bs-select-icons-preview" role="tabpanel" aria-labelledby="bs-select-icons-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="selectpickerIcons" class="form-label">Icons</label>
+                        <select id="selectpickerIcons" class="selectpicker w-100 show-tick" data-icon-base="icon-base ti" data-tick-icon="tabler-check" data-style="btn-default">
+                          <option data-icon="icon-base ti tabler-brand-instagram">Instagram</option>
+                          <option data-icon="icon-base ti tabler-brand-pinterest">Pinterest</option>
+                          <option data-icon="icon-base ti tabler-brand-twitch">Twitch</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="bs-select-icons-html" role="tabpanel" aria-labelledby="bs-select-icons-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre
+                      class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#13;&#10;&lt;label for=&quot;selectpickerIcons&quot; class=&quot;form-label&quot;&gt;Icons&lt;/label&gt;&#13;&#10;&lt;select id=&quot;selectpickerIcons&quot; class=&quot;selectpicker w-100 show-tick&quot; data-icon-base=&quot;icon-base ti&quot; data-tick-icon=&quot;tabler-check&quot; data-style=&quot;btn-default&quot;&gt;&#13;&#10;  &lt;option data-icon=&quot;icon-base ti tabler-brand-instagram&quot;&gt;Instagram&lt;/option&gt;&#13;&#10;  &lt;option data-icon=&quot;icon-base ti tabler-brand-pinterest&quot;&gt;Pinterest&lt;/option&gt;&#13;&#10;  &lt;option data-icon=&quot;icon-base ti tabler-brand-twitch&quot;&gt;Twitch&lt;/option&gt;&#13;&#10;&lt;/select&gt;&#13;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="bs-select-icons-js" role="tabpanel" aria-labelledby="bs-select-icons-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">$(".selectpicker").selectpicker();</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-12" />
+
+          <!-- Subtext -->
+          <div class="row">
+            <div class="col-12">
+              <p id="bs-select-subtext" class="anchor-heading fw-bold mt-6">Sub Text</p>
+              <p>Use <code>data-show-subtext="true"</code> attribute with <code>&lt;select&gt;</code> and use <code>data-subtext</code> attribute with <code>&lt;option&gt;</code> to create a select with subtext.</p>
+              <div class="doc-example">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="bs-select-subtext-preview-tab" data-bs-toggle="tab" data-bs-target="#bs-select-subtext-preview" role="tab" aria-controls="bs-select-subtext-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-select-subtext-html-tab" data-bs-toggle="tab" data-bs-target="#bs-select-subtext-html" role="tab" aria-controls="bs-select-subtext-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-select-subtext-js-tab" data-bs-toggle="tab" data-bs-target="#bs-select-subtext-js" role="tab" aria-controls="bs-select-subtext-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="bs-select-subtext-preview" role="tabpanel" aria-labelledby="bs-select-subtext-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="selectpickerSubtext" class="form-label">Subtext</label>
+                        <select id="selectpickerSubtext" class="selectpicker w-100" data-style="btn-default" data-show-subtext="true">
+                          <option data-subtext="Framework">React</option>
+                          <option data-subtext="Styles">Sass</option>
+                          <option data-subtext="Markup">HTML</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="bs-select-subtext-html" role="tabpanel" aria-labelledby="bs-select-subtext-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre
+                      class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;selectpickerSubtext&quot; class=&quot;form-label&quot;&gt;Subtext&lt;/label&gt;&#10;  &lt;select id=&quot;selectpickerSubtext&quot; class=&quot;selectpicker w-100&quot; data-style=&quot;btn-default&quot; data-show-subtext=&quot;true&quot;&gt;&#10;    &lt;option data-subtext=&quot;Framework&quot;&gt;React&lt;/option&gt;&#10;    &lt;option data-subtext=&quot;Styles&quot;&gt;Sass&lt;/option&gt;&#10;    &lt;option data-subtext=&quot;Markup&quot;&gt;HTML&lt;/option&gt;&#10;  &lt;/select&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="bs-select-subtext-js" role="tabpanel" aria-labelledby="bs-select-subtext-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">$(".selectpicker").selectpicker();</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-12" />
+
+          <!-- Selection Limit -->
+          <div class="row">
+            <div class="col-12">
+              <p class="anchor-heading fw-bold mt-6" id="bs-select-selection-limit">Selection Limit</p>
+              <p>Use <code>data-max-options="NUMBER"</code> and <code>multiple</code> attributes with <code>&lt;select&gt;</code> to create a select with limited selection.</p>
+              <div class="doc-example">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="bs-select-limit-preview-tab" data-bs-toggle="tab" data-bs-target="#bs-select-limit-preview" role="tab" aria-controls="bs-select-limit-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-select-limit-html-tab" data-bs-toggle="tab" data-bs-target="#bs-select-limit-html" role="tab" aria-controls="bs-select-limit-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-select-limit-js-tab" data-bs-toggle="tab" data-bs-target="#bs-select-limit-js" role="tab" aria-controls="bs-select-limit-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="bs-select-limit-preview" role="tabpanel" aria-labelledby="bs-select-limit-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="selectpickerSelection" class="form-label">Selection Limit</label>
+                        <select id="selectpickerSelection" class="selectpicker w-100" data-style="btn-default" multiple data-max-options="2">
+                          <option>Rocky</option>
+                          <option>Pulp Fiction</option>
+                          <option>The Godfather</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="bs-select-limit-html" role="tabpanel" aria-labelledby="bs-select-limit-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre
+                      class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;selectpickerSelection&quot; class=&quot;form-label&quot;&gt;Selection Limit&lt;/label&gt;&#10;  &lt;select id=&quot;selectpickerSelection&quot; class=&quot;selectpicker w-100&quot; data-style=&quot;btn-default&quot; multiple data-max-options=&quot;2&quot;&gt;&#10;    &lt;option&gt;Rocky&lt;/option&gt;&#10;    &lt;option&gt;Pulp Fiction&lt;/option&gt;&#10;    &lt;option&gt;The Godfather&lt;/option&gt;&#10;  &lt;/select&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="bs-select-limit-js" role="tabpanel" aria-labelledby="bs-select-limit-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">$(".selectpicker").selectpicker();</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-12" />
+
+          <!-- Select/Deselect -->
+          <div class="row">
+            <div class="col-12">
+              <p class="anchor-heading fw-bold mt-6" id="bs-select-select-all">Select / Deselect all</p>
+              <p>Use <code>data-actions-box="true"</code> and <code>multiple</code> attributes with <code>&lt;select&gt;</code> to create a select with select and deselect options.</p>
+              <div class="doc-example">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="bs-select-options-preview-tab" data-bs-toggle="tab" data-bs-target="#bs-select-options-preview" role="tab" aria-controls="bs-select-options-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-select-options-html-tab" data-bs-toggle="tab" data-bs-target="#bs-select-options-html" role="tab" aria-controls="bs-select-options-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-select-options-js-tab" data-bs-toggle="tab" data-bs-target="#bs-select-options-js" role="tab" aria-controls="bs-select-options-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="bs-select-options-preview" role="tabpanel" aria-labelledby="bs-select-options-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="selectpickerSelectDeselect" class="form-label">Select / Deselect All</label>
+                        <select id="selectpickerSelectDeselect" class="selectpicker w-100" data-style="btn-default" multiple data-actions-box="true">
+                          <option>Rocky</option>
+                          <option>Pulp Fiction</option>
+                          <option>The Godfather</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="bs-select-options-html" role="tabpanel" aria-labelledby="bs-select-options-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre
+                      class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;selectpickerSelectDeselect&quot; class=&quot;form-label&quot;&gt;Select / Deselect All&lt;/label&gt;&#10;  &lt;select id=&quot;selectpickerSelectDeselect&quot; class=&quot;selectpicker w-100&quot; data-style=&quot;btn-default&quot; multiple data-actions-box=&quot;true&quot;&gt;&#10;    &lt;option&gt;Rocky&lt;/option&gt;&#10;    &lt;option&gt;Pulp Fiction&lt;/option&gt;&#10;    &lt;option&gt;The Godfather&lt;/option&gt;&#10;  &lt;/select&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="bs-select-options-js" role="tabpanel" aria-labelledby="bs-select-options-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">$(".selectpicker").selectpicker();</code></pre>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="my-12" />
+
+              <!-- Divider -->
+              <p class="anchor-heading fw-bold mt-6" id="bs-select-divider">Divider</p>
+              <p>Use <code>data-divider="true"</code> attribute with <code>&lt;option&gt;</code> to add divider between options.</p>
+              <div class="doc-example">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="bs-select-divider-preview-tab" data-bs-toggle="tab" data-bs-target="#bs-select-divider-preview" role="tab" aria-controls="bs-select-divider-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-select-divider-html-tab" data-bs-toggle="tab" data-bs-target="#bs-select-divider-html" role="tab" aria-controls="bs-select-divider-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-select-divider-js-tab" data-bs-toggle="tab" data-bs-target="#bs-select-divider-js" role="tab" aria-controls="bs-select-divider-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="bs-select-divider-preview" role="tabpanel" aria-labelledby="bs-select-divider-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="selectpickerDivider" class="form-label">Divider</label>
+                        <select id="selectpickerDivider" class="selectpicker w-100" data-style="btn-default">
+                          <option>Rocky</option>
+                          <option data-divider="true">Divider</option>
+                          <option>Pulp Fiction</option>
+                          <option>The Godfather</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="bs-select-divider-html" role="tabpanel" aria-labelledby="bs-select-divider-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre
+                      class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;selectpickerDivider&quot; class=&quot;form-label&quot;&gt;Divider&lt;/label&gt;&#10;  &lt;select id=&quot;selectpickerDivider&quot; class=&quot;selectpicker w-100&quot; data-style=&quot;btn-default&quot;&gt;&#10;    &lt;option&gt;Rocky&lt;/option&gt;&#10;    &lt;option data-divider=&quot;true&quot;&gt;Divider&lt;/option&gt;&#10;    &lt;option&gt;Pulp Fiction&lt;/option&gt;&#10;    &lt;option&gt;The Godfather&lt;/option&gt;&#10;  &lt;/select&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="bs-select-divider-js" role="tabpanel" aria-labelledby="bs-select-divider-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">$(".selectpicker").selectpicker();</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-12" />
+
+          <!-- Header -->
+          <div class="row">
+            <div class="col-12">
+              <p class="anchor-heading fw-bold mt-6" id="bs-select-header">Header</p>
+              <p>Use <code> data-header</code> attribute with <code>&lt;select&gt;</code> to add header to your select.</p>
+              <div class="doc-example">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="bs-select-header-preview-tab" data-bs-toggle="tab" data-bs-target="#bs-select-header-preview" role="tab" aria-controls="bs-select-header-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-select-header-html-tab" data-bs-toggle="tab" data-bs-target="#bs-select-header-html" role="tab" aria-controls="bs-select-header-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-select-header-js-tab" data-bs-toggle="tab" data-bs-target="#bs-select-header-js" role="tab" aria-controls="bs-select-header-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="bs-select-header-preview" role="tabpanel" aria-labelledby="bs-select-header-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="selectpickerHeader" class="form-label">Header</label>
+                        <select id="selectpickerHeader" class="selectpicker w-100" data-style="btn-default" data-header="Select a Movie">
+                          <option>Rocky</option>
+                          <option>Pulp Fiction</option>
+                          <option>The Godfather</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="bs-select-header-html" role="tabpanel" aria-labelledby="bs-select-header-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre
+                      class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;selectpickerHeader&quot; class=&quot;form-label&quot;&gt;Header&lt;/label&gt;&#10;  &lt;select id=&quot;selectpickerHeader&quot; class=&quot;selectpicker w-100&quot; data-style=&quot;btn-default&quot; data-header=&quot;Select a Movie&quot;&gt;&#10;    &lt;option&gt;Rocky&lt;/option&gt;&#10;    &lt;option&gt;Pulp Fiction&lt;/option&gt;&#10;    &lt;option&gt;The Godfather&lt;/option&gt;&#10;  &lt;/select&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="bs-select-header-js" role="tabpanel" aria-labelledby="bs-select-header-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">$(".selectpicker").selectpicker();</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-12" />
+
+          <!-- Disabled -->
+          <div class="row">
+            <div class="col-12">
+              <p class="anchor-heading fw-bold mt-6" id="bs-select-disabled">Disabled</p>
+              <p>Use <code>disabled</code> attribute with <code>&lt;select&gt;</code> to disable your select.</p>
+              <div class="doc-example">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="bs-select-disabled-preview-tab" data-bs-toggle="tab" data-bs-target="#bs-select-disabled-preview" role="tab" aria-controls="bs-select-disabled-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-select-disabled-html-tab" data-bs-toggle="tab" data-bs-target="#bs-select-disabled-html" role="tab" aria-controls="bs-select-disabled-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-select-disabled-js-tab" data-bs-toggle="tab" data-bs-target="#bs-select-disabled-js" role="tab" aria-controls="bs-select-disabled-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="bs-select-disabled-preview" role="tabpanel" aria-labelledby="bs-select-disabled-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="selectpickerDisabled" class="form-label">Disabled</label>
+                        <select id="selectpickerDisabled" class="selectpicker w-100" data-style="btn-default" disabled>
+                          <option>Rocky</option>
+                          <option>Pulp Fiction</option>
+                          <option>The Godfather</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="bs-select-disabled-html" role="tabpanel" aria-labelledby="bs-select-disabled-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre
+                      class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;selectpickerDisabled&quot; class=&quot;form-label&quot;&gt;Disabled&lt;/label&gt;&#10;  &lt;select id=&quot;selectpickerDisabled&quot; class=&quot;selectpicker w-100&quot; data-style=&quot;btn-default&quot; disabled&gt;&#10;    &lt;option&gt;Rocky&lt;/option&gt;&#10;    &lt;option&gt;Pulp Fiction&lt;/option&gt;&#10;    &lt;option&gt;The Godfather&lt;/option&gt;&#10;  &lt;/select&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="bs-select-disabled-js" role="tabpanel" aria-labelledby="bs-select-disabled-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">$(".selectpicker").selectpicker();</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-12" />
+
+          <!-- Disabled Options -->
+          <div class="row">
+            <div class="col-12">
+              <p class="anchor-heading fw-bold mt-6" id="bs-select-disabled-options">Disabled Option</p>
+              <p>Use <code>disabled</code> attribute with <code>&lt;option&gt;</code> to disable your option.</p>
+              <div class="doc-example">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="bs-select-disabled-option-preview-tab" data-bs-toggle="tab" data-bs-target="#bs-select-disabled-option-preview" role="tab" aria-controls="bs-select-disabled-option-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-select-disabled-option-html-tab" data-bs-toggle="tab" data-bs-target="#bs-select-disabled-option-html" role="tab" aria-controls="bs-select-disabled-option-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bs-select-disabled-option-js-tab" data-bs-toggle="tab" data-bs-target="#bs-select-disabled-option-js" role="tab" aria-controls="bs-select-disabled-option-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="bs-select-disabled-option-preview" role="tabpanel" aria-labelledby="bs-select-disabled-option-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="selectpickerDisabledOptions" class="form-label">Disabled Options</label>
+                        <select id="selectpickerDisabledOptions" class="selectpicker w-100" data-style="btn-default">
+                          <option>Rocky</option>
+                          <option disabled>Pulp Fiction</option>
+                          <option>The Godfather</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="bs-select-disabled-option-html" role="tabpanel" aria-labelledby="bs-select-disabled-option-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre
+                      class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;selectpickerDisabledOptions&quot; class=&quot;form-label&quot;&gt;Disabled Options&lt;/label&gt;&#10;  &lt;select id=&quot;selectpickerDisabledOptions&quot; class=&quot;selectpicker w-100&quot; data-style=&quot;btn-default&quot;&gt;&#10;    &lt;option&gt;Rocky&lt;/option&gt;&#10;    &lt;option disabled&gt;Pulp Fiction&lt;/option&gt;&#10;    &lt;option&gt;The Godfather&lt;/option&gt;&#10;  &lt;/select&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="bs-select-disabled-option-js" role="tabpanel" aria-labelledby="bs-select-disabled-option-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">$(".selectpicker").selectpicker();</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Bootstrap Select Example -->
+
+      <hr class="my-12" />
+
+      <!-- Typeahead -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="typeahead" class="anchor-heading fw-bold mt-4">Typeahead</h4>
+          <p>Typeahead is a flexible JavaScript library that provides a strong foundation for building robust typeaheads.</p>
+          <p class="anchor-heading fw-bold" id="ta-usage">Usage</p>
+          <p>In order to use Typeahead on your page, It is required to include the following vendors css in the "Vendors CSS" area from the page's header:</p>
+          <div class="doc-example css-code">
+            <div class="doc-example-content" data-label="Code">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;link rel=&quot;stylesheet&quot; href=&quot;../../assets/vendor/libs/typeahead-js/typeahead.css&quot; /&gt;</code></pre>
+            </div>
+          </div>
+          <p class="my-4">Include the following vendors script in the "Vendors JS" area from the page's footer:</p>
+          <div class="doc-example">
+            <div class="doc-example-content" data-label="Code">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;script src=&quot;../../assets/vendor/libs/typeahead-js/typeahead.js&quot;&gt;&lt;/script&gt; </code></pre>
+            </div>
+          </div>
+
+          <p class="my-4">First, create string matcher function to match the state from states array. We will use this in below example.</p>
+          <div class="doc-example">
+            <div class="doc-example-content" data-label="Code">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+              </div>
+              <pre
+                class="docs-code"><code class="js">// String Matcher function&#10;const substringMatcher = strs =&gt; {&#10;  return (q, cb) =&gt; {&#10;    const matches = [];&#10;    const substrRegex = new RegExp(q, &apos;i&apos;);&#10;&#10;    strs.forEach(str =&gt; {&#10;      if (substrRegex.test(str)) {&#10;        matches.push(str);&#10;      }&#10;    });&#10;&#10;    cb(matches);&#10;  };&#10;};&#10;&#10;// Data&#10;const states = [ &quot;Alabama&quot;, &quot;Alaska&quot;, ... ];</code></pre>
+            </div>
+          </div>
+          <!-- Basic -->
+          <div class="row">
+            <div class="col-12">
+              <p id="ta-basic" class="anchor-heading mt-12 fw-bold">Basic</p>
+              <div class="doc-example">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="ta-basic-preview-tab" data-bs-toggle="tab" data-bs-target="#ta-basic-preview" role="tab" aria-controls="ta-basic-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="ta-basic-html-tab" data-bs-toggle="tab" data-bs-target="#ta-basic-html" role="tab" aria-controls="ta-basic-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="ta-basic-js-tab" data-bs-toggle="tab" data-bs-target="#ta-basic-js" role="tab" aria-controls="ta-basic-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="ta-basic-preview" role="tabpanel" aria-labelledby="ta-basic-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="TypeaheadBasic" class="form-label">Basic</label>
+                        <input id="TypeaheadBasic" class="form-control typeahead" type="text" autocomplete="off" placeholder="Enter states from USA" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="ta-basic-html" role="tabpanel" aria-labelledby="ta-basic-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#13;&#10;  &lt;label for=&quot;TypeaheadBasic&quot; class=&quot;form-label&quot;&gt;Basic&lt;/label&gt;&#13;&#10;  &lt;input id=&quot;TypeaheadBasic&quot; class=&quot;form-control typeahead&quot; type=&quot;text&quot; autocomplete=&quot;off&quot; placeholder=&quot;Enter states from USA&quot; /&gt;&#13;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="ta-basic-js" role="tabpanel" aria-labelledby="ta-basic-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">$(".typeahead").typeahead(
+  {
+    highlight: true,
+    minLength: 1
+  },
+  {
+    name: "states",
+    source: substringMatcher(states)
+  }
+);</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-12" />
+
+          <!-- Bloodhound -->
+          <div class="row">
+            <div class="col-12">
+              <p id="ta-bloodhound" class="anchor-heading mt-4 fw-bold">BloodHound</p>
+              <div class="doc-example">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="ta-bh-preview-tab" data-bs-toggle="tab" data-bs-target="#ta-bh-preview" role="tab" aria-controls="ta-bh-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="ta-bh-html-tab" data-bs-toggle="tab" data-bs-target="#ta-bh-html" role="tab" aria-controls="ta-bh-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="ta-bh-js-tab" data-bs-toggle="tab" data-bs-target="#ta-bh-js" role="tab" aria-controls="ta-bh-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="ta-bh-preview" role="tabpanel" aria-labelledby="ta-bh-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="TypeaheadBloodHound" class="form-label">BloodHound (Suggestion Engine)</label>
+                        <input id="TypeaheadBloodHound" class="form-control typeahead-bloodhound" type="text" autocomplete="off" placeholder="Enter states from USA" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="ta-bh-html" role="tabpanel" aria-labelledby="ta-bh-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;TypeaheadBloodHound&quot; class=&quot;form-label&quot;&gt;BloodHound (Suggestion Engine)&lt;/label&gt;&#10;  &lt;input id=&quot;TypeaheadBloodHound&quot; class=&quot;form-control typeahead-bloodhound&quot; type=&quot;text&quot; autocomplete=&quot;off&quot; placeholder=&quot;Enter states from USA&quot; /&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="ta-bh-js" role="tabpanel" aria-labelledby="ta-bh-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">var bloodhoundBasicExample = new Bloodhound({
+  datumTokenizer: Bloodhound.tokenizers.whitespace,
+  queryTokenizer: Bloodhound.tokenizers.whitespace,
+  local: states
+});
+
+$(".typeahead-bloodhound").typeahead(
+  {
+    highlight: true,
+    minLength: 1
+  },
+  {
+    name: "states",
+    source: bloodhoundBasicExample
+  }
+);</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-12" />
+
+          <!-- Prefetch -->
+          <div class="row">
+            <div class="col-12">
+              <p id="ta-prefetch" class="anchor-heading mt-4 fw-bold">Prefetch</p>
+              <div class="doc-example">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="ta-pre-preview-tab" data-bs-toggle="tab" data-bs-target="#ta-pre-preview" role="tab" aria-controls="ta-pre-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="ta-pre-html-tab" data-bs-toggle="tab" data-bs-target="#ta-pre-html" role="tab" aria-controls="ta-pre-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="ta-pre-js-tab" data-bs-toggle="tab" data-bs-target="#ta-pre-js" role="tab" aria-controls="ta-pre-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="ta-pre-preview" role="tabpanel" aria-labelledby="ta-pre-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="TypeaheadPrefetch" class="form-label">Prefetch</label>
+                        <input id="TypeaheadPrefetch" class="form-control typeahead-prefetch" type="text" autocomplete="off" placeholder="Enter states from USA" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="ta-pre-html" role="tabpanel" aria-labelledby="ta-pre-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;TypeaheadPrefetch&quot; class=&quot;form-label&quot;&gt;Prefetch&lt;/label&gt;&#10;  &lt;input id=&quot;TypeaheadPrefetch&quot; class=&quot;form-control typeahead-prefetch&quot; type=&quot;text&quot; autocomplete=&quot;off&quot; placeholder=&quot;Enter states from USA&quot; /&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="ta-pre-js" role="tabpanel" aria-labelledby="ta-pre-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="js">var prefetchExample = new Bloodhound({
+  datumTokenizer: Bloodhound.tokenizers.whitespace,
+  queryTokenizer: Bloodhound.tokenizers.whitespace,
+  prefetch: "../../assets/json/typeahead.json"
+});
+
+$(".typeahead-prefetch").typeahead(
+  {
+    highlight: true,
+    minLength: 1
+  },
+  {
+    name: "states",
+    source: prefetchExample
+  }
+);</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-12" />
+
+          <!-- Default Suggestion -->
+          <div class="row">
+            <div class="col-12">
+              <p id="ta-suggestions" class="anchor-heading mt-4 fw-bold">Default Suggestions</p>
+              <div class="doc-example">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="ta-sugg-preview-tab" data-bs-toggle="tab" data-bs-target="#ta-sugg-preview" role="tab" aria-controls="ta-sugg-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="ta-sugg-html-tab" data-bs-toggle="tab" data-bs-target="#ta-sugg-html" role="tab" aria-controls="ta-sugg-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="ta-sugg-js-tab" data-bs-toggle="tab" data-bs-target="#ta-sugg-js" role="tab" aria-controls="ta-sugg-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="ta-sugg-preview" role="tabpanel" aria-labelledby="ta-sugg-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="TypeaheadSuggestions" class="form-label">Default Suggestions</label>
+                        <input id="TypeaheadSuggestions" class="form-control typeahead-default-suggestions" type="text" autocomplete="off" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="ta-sugg-html" role="tabpanel" aria-labelledby="ta-sugg-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;TypeaheadSuggestions&quot; class=&quot;form-label&quot;&gt;Default Suggestions&lt;/label&gt;&#10;  &lt;input id=&quot;TypeaheadSuggestions&quot; class=&quot;form-control typeahead-default-suggestions&quot; type=&quot;text&quot; autocomplete=&quot;off&quot; /&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="ta-sugg-js" role="tabpanel" aria-labelledby="ta-sugg-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre
+                      class="docs-code"><code class="js">var prefetchExample = new Bloodhound({&#10;  datumTokenizer: Bloodhound.tokenizers.whitespace,&#10;  queryTokenizer: Bloodhound.tokenizers.whitespace,&#10;  prefetch: &quot;../../assets/json/typeahead.json&quot;&#10;});&#10;&#10;// Render Default Suggestions&#10;function renderDefaults(q, sync) {&#10;  if (q === &apos;&apos;) {&#10;    sync(prefetchExample.get(&apos;Alaska&apos;, &apos;New York&apos;, &apos;Washington&apos;));&#10;  } else {&#10;    prefetchExample.search(q, sync);&#10;  }&#10;}&#10;&#10;// Default Suggestions Example&#10;// --------------------------------------------------------------------&#10;$(&apos;.typeahead-default-suggestions&apos;).typeahead(&#10;  {&#10;    hint: !isRtl,&#10;    highlight: true,&#10;    minLength: 0&#10;  },&#10;  {&#10;    name: &apos;states&apos;,&#10;    source: renderDefaults&#10;  }&#10;);</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-12" />
+
+          <!-- Custom Template -->
+          <div class="row">
+            <div class="col-12">
+              <p id="ta-custom" class="anchor-heading mt-4 fw-bold">Custom Template</p>
+              <div class="doc-example">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="ta-custom-preview-tab" data-bs-toggle="tab" data-bs-target="#ta-custom-preview" role="tab" aria-controls="ta-custom-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="ta-custom-html-tab" data-bs-toggle="tab" data-bs-target="#ta-custom-html" role="tab" aria-controls="ta-custom-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="ta-custom-js-tab" data-bs-toggle="tab" data-bs-target="#ta-custom-js" role="tab" aria-controls="ta-custom-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="ta-custom-preview" role="tabpanel" aria-labelledby="ta-custom-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="TypeaheadCustom" class="form-label">Custom Template</label>
+                        <input id="TypeaheadCustom" class="form-control typeahead-custom-template" type="text" autocomplete="off" placeholder="Search For Oscar Winner" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="ta-custom-html" role="tabpanel" aria-labelledby="ta-custom-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;TypeaheadCustom&quot; class=&quot;form-label&quot;&gt;Custom Template&lt;/label&gt;&#10;  &lt;input id=&quot;TypeaheadCustom&quot; class=&quot;form-control typeahead-custom-template&quot; type=&quot;text&quot; autocomplete=&quot;off&quot; placeholder=&quot;Search For Oscar Winner&quot; /&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="ta-custom-js" role="tabpanel" aria-labelledby="ta-custom-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre
+                      class="docs-code"><code class="js">var customTemplate = new Bloodhound({&#10;  datumTokenizer: Bloodhound.tokenizers.obj.whitespace(&quot;value&quot;),&#10;  queryTokenizer: Bloodhound.tokenizers.whitespace,&#10;  prefetch: &quot;../../assets/json/typeahead-data-2.json&quot;&#10;});&#10;&#10;// Initialize Typeahead with custom templates&#10;if (customTemplateInput) {&#10;  $(customTemplateInput).typeahead(&#10;    {&#10;      highlight: true,&#10;      hint: !isRtl&#10;    },&#10;    {&#10;      name: &apos;best-movies&apos;,&#10;      display: &apos;value&apos;,&#10;      source: customTemplate,&#10;      templates: {&#10;        empty: `&#10;        &lt;div class=&quot;empty-message p-2&quot;&gt;&#10;          Unable to find any Best Picture winners that match the current query&#10;        &lt;/div&gt;&#10;      `,&#10;        suggestion: data =&gt; `&#10;        &lt;div&gt;&#10;          &lt;span class=&quot;fw-medium&quot;&gt;${data.value}&lt;/span&gt; &ndash; ${data.year}&#10;        &lt;/div&gt;&#10;      `&#10;      }&#10;    }&#10;  );&#10;}</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-12" />
+
+          <!-- Multiple Datasets -->
+          <div class="row">
+            <div class="col-12">
+              <p id="ta-multi" class="anchor-heading mt-4 fw-bold">Multiple Datasets</p>
+              <div class="doc-example">
+                <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="ta-multi-preview-tab" data-bs-toggle="tab" data-bs-target="#ta-multi-preview" role="tab" aria-controls="ta-multi-preview" aria-selected="true"> Preview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="ta-multi-html-tab" data-bs-toggle="tab" data-bs-target="#ta-multi-html" role="tab" aria-controls="ta-multi-html" aria-selected="false"> HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="ta-multi-js-tab" data-bs-toggle="tab" data-bs-target="#ta-multi-js" role="tab" aria-controls="ta-multi-js" aria-selected="false"> JS </a>
+                  </li>
+                </ul>
+                <div class="tab-content doc-example-content" id="tab-content" data-label="example">
+                  <div class="tab-pane fade show active" id="ta-multi-preview" role="tabpanel" aria-labelledby="ta-multi-preview-tab">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="TypeaheadMultipleDataset" class="form-label">Multiple Datasets</label>
+                        <input id="TypeaheadMultipleDataset" class="form-control typeahead-multi-datasets" type="text" autocomplete="off" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="ta-multi-html" role="tabpanel" aria-labelledby="ta-multi-html-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre class="docs-code"><code class="html">&lt;div class=&quot;mb-3&quot;&gt;&#10;  &lt;label for=&quot;TypeaheadMultipleDataset&quot; class=&quot;form-label&quot;&gt;Multiple Datasets&lt;/label&gt;&#10;  &lt;input id=&quot;TypeaheadMultipleDataset&quot; class=&quot;form-control typeahead-multi-datasets&quot; type=&quot;text&quot; autocomplete=&quot;off&quot; /&gt;&#10;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="ta-multi-js" role="tabpanel" aria-labelledby="ta-multi-js-tab">
+                    <div class="doc-clipboard">
+                      <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                    </div>
+                    <pre
+                      class="docs-code"><code class="js">const teamsData = {&#10;  nba: [...],&#10;  nhl: [...]&#10;};                  &#10;// Function to create a Bloodhound instance&#10;const createBloodhound = teamData =&gt; {&#10;  return new Bloodhound({&#10;    datumTokenizer: Bloodhound.tokenizers.obj.whitespace(&apos;team&apos;),&#10;    queryTokenizer: Bloodhound.tokenizers.whitespace,&#10;    local: teamData&#10;  });&#10;};&#10;&#10;// Bloodhound Instances&#10;const nbaExample = createBloodhound(teamsData.nba);&#10;const nhlExample = createBloodhound(teamsData.nhl);&#10;&#10;// Dataset Configurations&#10;const datasets = [&#10;  {&#10;    name: &apos;nba-teams&apos;,&#10;    source: nbaExample,&#10;    display: &apos;team&apos;,&#10;    templates: {&#10;      header: &apos;&lt;h4 class=&quot;league-name border-bottom mb-0 mx-3 mt-3 pb-2&quot;&gt;NBA Teams&lt;/h4&gt;&apos;&#10;    }&#10;  },&#10;  {&#10;    name: &apos;nhl-teams&apos;,&#10;    source: nhlExample,&#10;    display: &apos;team&apos;,&#10;    templates: {&#10;      header: &apos;&lt;h4 class=&quot;league-name border-bottom mb-0 mx-3 mt-3 pb-2&quot;&gt;NHL Teams&lt;/h4&gt;&apos;&#10;    }&#10;  }&#10;];&#10;&#10;// Initialize Typeahead&#10;const multiDatasetInput = document.querySelector(&apos;.typeahead-multi-datasets&apos;);&#10;if (multiDatasetInput) {&#10;  $(multiDatasetInput).typeahead(&#10;    {&#10;      hint: !isRtl,&#10;      highlight: true,&#10;      minLength: 0&#10;    },&#10;    ...datasets&#10;  );&#10;}</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Typeahead -->
+    </div>
+    <div class="d-none d-xl-block col-xl-2 doc-sidebar container-p-y">
+      <nav id="vertical-nav" class="navbar p-0">
+        <ul class="doc-sidebar-nav">
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#select2">Select2</a>
+            <ul>
+              <li class="doc-entry doc-h3">
+                <a href="#select2-usage" class="nav-link">Usage</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a href="#select2-basic" class="nav-link">Basic</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a href="#select2-multiple" class="nav-link">Multiple</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a href="#select2-disabled" class="nav-link">Disabled</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a href="#select2-icons" class="nav-link">Icons</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a href="#select2-colors" class="nav-link">Colors</a>
+              </li>
+            </ul>
+          </li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#tagify">Tagify</a>
+            <ul>
+              <li class="doc-entry doc-h3">
+                <a href="#tagify-usage" class="nav-link">Usage</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a href="#tagify-basic" class="nav-link">Basic</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a href="#tagify-readonly" class="nav-link">Readonly</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a href="#tagify-cs-inline" class="nav-link">Custom Suggestions: Inline</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a href="#tagify-cs-list" class="nav-link">Custom Suggestions: List</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a href="#tagify-user-list" class="nav-link">Users List</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a href="#tagify-email-list" class="nav-link">Email List</a>
+              </li>
+            </ul>
+          </li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#bs-select">Bootstrap Select</a>
+            <ul>
+              <li class="doc-entry doc-h3">
+                <a href="#bs-select-usage" class="nav-link">Usage</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a href="#bs-select-basic" class="nav-link">Basic</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a href="#bs-select-groups" class="nav-link">Groups</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a href="#bs-select-multiple" class="nav-link">Multiple</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a href="#bs-select-live-search" class="nav-link">Live Search</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a href="#bs-select-icons" class="nav-link">Icons</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a href="#bs-select-subtext" class="nav-link">Subtext</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a href="#bs-select-selection-limit" class="nav-link">Selection Limit</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a href="#bs-select-select-all" class="nav-link">Select all / Deselect all</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a href="#bs-select-divider" class="nav-link">Divider</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a href="#bs-select-header" class="nav-link">Header</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a href="#bs-select-disabled" class="nav-link">Disabled</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a href="#bs-select-disabled-options" class="nav-link">Disabled Options</a>
+              </li>
+            </ul>
+          </li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#typeahead">Typeahead</a>
+            <ul>
+              <li class="doc-entry doc-h3">
+                <a href="#ta-usage" class="nav-link">Usage</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a href="#ta-basic" class="nav-link">Basic</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a href="#ta-bloodhound" class="nav-link">Bloodhound</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a href="#ta-prefetch" class="nav-link">Prefetch</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a href="#ta-suggestions" class="nav-link">Default Suggestions</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a href="#ta-custom" class="nav-link">Custom Template</a>
+              </li>
+              <li class="doc-entry doc-h3">
+                <a href="#ta-multi" class="nav-link">Multiple Datasets</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div></div>
+          <!-- / Content -->
+
+          
+            <footer class="content-footer footer">
+  <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center text-center py-4">
+    <div>
+      &#169; 2017-
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      
+        <a href="https://pixinvent.com" class="footer-text fw-medium" target="_blank">Pixinvent</a>, Hand-crafted & Made with â¤ï¸
+      
+    </div>
+    <div>
+      
+        <a href="https://www.facebook.com/pixinvents/" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-facebook"></i></a>
+      
+      
+        <a href="https://x.com/pixinvents" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-twitter"></i></a>
+      
+      
+        <a href="https://github.com/pixinvent" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-github"></i></a>
+      
+      
+        <a href="https://dribbble.com/pixinvent" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-dribbble"></i></a>
+      
+      
+        <a href="https://www.instagram.com/pixinvents/" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-instagram"></i></a>
+      
+    </div>
+  </div>
+</footer>
+
+          
+        </div>
+        <!-- Content wrapper -->
+      </div>
+      <!-- / Layout page -->
+    </div>
+
+    
+      
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    
+    <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+    <div class="drag-target"></div>
+  </div>
+  <!-- / Layout wrapper -->
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="assets/vendor/libs/highlight/highlight.js"></script>
+    <script src="assets/vendor/libs/clipboard/clipboard.js"></script>
+    
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/vendor/libs/node-waves/node-waves.js"></script>
+    <script src="assets/vendor/libs/@algolia/autocomplete-js.js"></script>
+    <script src="assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="assets/vendor/js/menu.js"></script>
+    <!-- Vendors JS -->
+    <script src="assets/vendor/libs/select2/select2.js"></script>
+  <script src="assets/vendor/libs/tagify/tagify.js"></script>
+  <script src="assets/vendor/libs/bootstrap-select/bootstrap-select.js"></script>
+  <script src="assets/vendor/libs/typeahead-js/typeahead.js"></script>
+  <script src="assets/vendor/libs/bloodhound/bloodhound.js"></script>
+
+    <!-- Page JS -->
+    <script src="assets/js/docs.js"></script>
+    <script src="assets/js/forms-selects.js"></script>
+  <script src="assets/js/forms-typeahead.js"></script>
+  <script src="assets/js/forms-tagify.js"></script>
+  </body>
+</html>
+
+  <!-- beautify ignore:end -->
+

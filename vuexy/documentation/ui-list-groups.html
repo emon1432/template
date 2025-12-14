@@ -1,0 +1,2408 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- =========================================================
+* Vuexy - Bootstrap Dashboard PRO | v3.0.0
+==============================================================
+
+* Product Page: https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599
+* Created by: Pixinvent
+
+    * License: You must have a valid license purchased in order to legally use the theme for your project.
+  
+* Copyright Pixinvent (https://pixinvent.com)
+
+=========================================================
+ -->
+  <!-- beautify ignore:start -->
+
+<html lang="en" class="docs-page  layout-menu-fixed-offcanvas " data-assets-path="assets/" data-skin="bordered">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Docs: List Groups - UI elements | Vuexy - Bootstrap Dashboard PRO</title>
+
+    <meta name="description" content="Vuexy is the best bootstrap 5 dashboard for responsive web apps. Streamline your app development process with ease." />
+    <meta name="keywords" content="Vuexy bootstrap dashboard, vuexy bootstrap 5 dashboard, themeselection, html dashboard, web dashboard, frontend dashboard, responsive bootstrap theme" />
+    <meta property="og:title" content="Vuexy bootstrap Dashboard by Pixinvent" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" />
+    <meta property="og:image" content="https://pixinvent.com/wp-content/uploads/2023/06/vuexy-hero-image.png" />
+    <meta property="og:description" content="Vuexy is the best bootstrap 5 dashboard for responsive web apps. Streamline your app development process with ease." />
+    <meta property="og:site_name" content="Pixinvent" />
+
+    <!-- Canonical SEO -->
+    <link rel="canonical" href="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" />
+
+    
+      
+      <script>
+        (function (w, d, s, l, i) {
+          w[l] = w[l] || [];
+          w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+          });
+          var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+          j.async = true;
+          j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+          f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5J3LMKC');
+      </script>
+      
+    
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="48x48" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="16x16" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="32x32" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="180x180" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="192x192" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="512x512" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendor/fonts/iconify-icons.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/node-waves/node-waves.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/highlight/highlight.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+    
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="assets/vendor/css/core.css" />
+    <link rel="stylesheet" href="assets/css/demo.css" />
+    <link rel="stylesheet" href="assets/css/docs.css" />
+
+    <!-- Page CSS -->
+    
+
+    <!-- Core JS -->
+    <script src="assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: Don't remove unless you are aware of it, To hide customizer set displayCustomizer value false in config.js.  -->
+    <!-- <script src="assets/vendor/js/template-customizer.js"></script> -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="assets/js/config.js"></script>
+  </head>
+
+  <body>
+    
+      
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5J3LMKC" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+      
+    
+
+    <!-- Layout wrapper -->
+  <div class="layout-wrapper layout-navbar-full ">
+    <div class="layout-container">
+      
+        
+
+
+<!-- Navbar main -->
+
+<nav class="layout-navbar navbar navbar-expand-lg align-items-lg-center bg-white border-bottom" id="layout-navbar">
+  <div class="container-fluid">
+    
+      <!-- Menu toggle (see assets/css/demo/demo.css) -->
+      <div class="layout-menu-toggle navbar-nav d-lg-none align-items-lg-center">
+        <a class="nav-item nav-link px-0 me-lg-4" href="javascript:void(0)">
+          <i class="icon-base ti tabler-menu-2 icon-md align-middle"></i>
+        </a>
+      </div>
+    
+
+    <!-- Brand demo (see assets/css/demo/demo.css) -->
+    <div class="navbar-brand app-brand demo py-0 me-md-auto me-12 ms-lg-0 ms-0">
+      <a href="index.html" class="app-brand-link">
+        <span class="app-brand-logo demo">
+  <span class="text-primary">
+    <svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.00172773 0V6.85398C0.00172773 6.85398 -0.133178 9.01207 1.98092 10.8388L13.6912 21.9964L19.7809 21.9181L18.8042 9.88248L16.4951 7.17289L9.23799 0H0.00172773Z" fill="currentColor" />
+      <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd" d="M7.69824 16.4364L12.5199 3.23696L16.5541 7.25596L7.69824 16.4364Z" fill="#161616" />
+      <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd" d="M8.07751 15.9175L13.9419 4.63989L16.5849 7.28475L8.07751 15.9175Z" fill="#161616" />
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z" fill="currentColor" />
+    </svg>
+  </span>
+</span>
+        <span class="app-brand-text demo menu-text fw-bold">Vuexy</span>
+      </a>
+    </div>
+
+    <div class="d-flex ms-md-6 gap-3">
+      
+      <div class="navbar-nav align-items-lg-center justify-content-center">
+        <!-- Search -->
+        <div class="navbar-nav align-items-center">
+          <div class="nav-item navbar-search-wrapper mb-0">
+            <a class="nav-item nav-link search-toggler border rounded-3 py-2 px-md-4 px-2 d-flex align-items-center" href="javascript:void(0);">
+              <span class="d-inline-block text-body-secondary fw-normal" id="autocomplete"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbar-collapse">
+        <hr class="d-lg-none w-100 my-2" />
+        <!-- Divider -->
+
+        <div class="navbar-nav align-items-lg-center">
+          
+          <ul class="navbar-nav">
+            <!-- Technology dropdown -->
+            
+            
+              
+                <li class="nav-item dropdown me-2">
+                  <button class="btn dropdown-toggle py-2 btn-primary" type="button" id="livePreview" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-base ti tabler-current-location me-2"></i> Live preview</button>
+                  <ul class="dropdown-menu" aria-labelledby="livePreview">
+                    <li>
+                      <a href="https://pixinvent.com/vuexy-bootstrap-html-admin-template/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>HTML preview</a>
+                    </li>
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-laravel-admin-template/demo-1/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>Laravel preview</a>
+                      </li>
+                    
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-admin-template/html/vertical-menu-template/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>.Net Core preview</a>
+                      </li>
+                    
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-django-admin-template/demo-1/" target="_blank" class="nav-link text-nowrap"><i class="icon-base ti tabler-current-location me-2"></i>Django preview</a>
+                      </li>
+                    
+                  </ul>
+                </li>
+              
+            
+            
+              <li class="nav-item me-2">
+                <a href="https://pixinvent.ticksy.com/" target="_blank" class="nav-link d-flex align-items-center">
+                  <i class="icon-base ti tabler-lifebuoy me-2"></i>
+                  <span>Support</span>
+                </a>
+              </li>
+            
+            
+              <li class="nav-item">
+                <a href="https://themeforest.net/user/pixinvent/portfolio" target="_blank" class="nav-link d-flex align-items-center">
+                  <i class="icon-base ti tabler-gift me-2"></i>
+                  <span> More Themes</span>
+                </a>
+              </li>
+            
+            
+              <li class="nav-item">
+                <a href="https://themeselection.com/hire-us/" target="_blank" class="nav-link"><i class="icon-base ti tabler-briefcase"></i> Hire Us</a>
+              </li>
+            
+          </ul>
+
+          <!-- Divider -->
+          <div class="nav-item d-none d-lg-block text-big fw-light lh-1 me-4 ms-1">|</div>
+
+          
+            <div class="buy-now-btn">
+              <a href="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" target="_blank" class="btn btn-danger d-flex align-items-center gap-2">
+                <i class="icon-base ti tabler-shopping-cart"></i>
+                <span>Buy Now</span>
+              </a>
+            </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</nav>
+<!-- / Navbar main -->
+
+      
+
+      <!-- Layout page -->
+      <div class="layout-page">
+        
+          
+
+
+
+
+<!-- Menu -->
+<aside id="layout-menu" class="layout-menu menu-doc menu menu-vertical bg-menu-theme">
+  
+  <div class="menu-divider mt-0   d-xl-none "></div>
+
+  <!-- Links -->
+  <ul class="menu-inner py-1">
+    <li class="menu-header text-uppercase small fw-medium">Getting Started</li>
+    <li class="menu-item">
+      <a href="index.html" class="menu-link">
+        <div>Introduction</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="licenses.html" class="menu-link">
+        <div>Licenses</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="folder-structure.html" class="menu-link">
+        <div>Folder Structure</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="quick-start.html" class="menu-link">
+        <div>Quick Start</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="config.html" class="menu-link">
+        <div>Config ð¤©</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="installation-build.html" class="menu-link">
+        <div>Installation & Build</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="template-customizer.html" class="menu-link">
+        <div>Template Customizer</div>
+        
+      </a>
+    </li>
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Customization</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="customization-sass.html" class="menu-link">
+            <div>SASS</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="customization-js.html" class="menu-link">
+            <div>JavaScript</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="customization-third-party-plugins.html" class="menu-link">
+            <div>Third Party Plugins</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="layouts.html" class="menu-link">
+        <div>Layouts</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="dependencies.html" class="menu-link">
+        <div>Dependencies</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="faq.html" class="menu-link">
+        <div>FAQs</div>
+      </a>
+    </li>
+    
+      <!-- Laravel Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row">
+        <span class="me-1">Laravel</span>
+        <span class="badge badge-demo bg-label-danger ms-auto">HTML + Laravel Only</span>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="laravel-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-starter-kit-vs-full-version.html" class="menu-link">
+              <div>Starter-kit Vs Full-version</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-demo-config.html" class="menu-link">
+              <div>Demo Configs</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Auth & ACL</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-auth-jetstream.html" class="menu-link">
+              <div>JetStream</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-passport.html" class="menu-link">
+              <div>Passport</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-sanctum.html" class="menu-link">
+              <div>Sanctum</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-acl.html" class="menu-link">
+              <div>ACL</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-articles-database-connections.html" class="menu-link">
+              <div>Database Connections</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-existing-project.html" class="menu-link">
+              <div>Exiting Project Migration</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-form-validation-integration.html" class="menu-link">
+              <div>Form Validation Package Integration</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-localization.html" class="menu-link">
+          <div>Localization</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-search.html" class="menu-link">
+          <div>Search</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-sail-docker.html" class="menu-link">
+          <div>Sail & Docker</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-deployment.html" class="menu-link">
+          <div>Deployment</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Dotnet Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>ASP.NET CORE</span> <span class="badge badge-demo bg-label-danger ms-auto">Razor Pages</span></li>
+
+      <li class="menu-item">
+        <a href="net-core-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-assets-compilation.html" class="menu-link">
+              <div>Assets Compilation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-start-with-doker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-starter-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="net-core-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Dotnet Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>ASP.NET CORE MVC</span> <span class="badge badge-demo bg-label-danger ms-auto">MVC</span></li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-mvc-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-assets-compilation.html" class="menu-link">
+              <div>Assets Compilation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-start-with-docker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-starter-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="net-core-mvc-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-mvc-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Django Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>Django</span> <span class="badge badge-demo bg-label-danger ms-auto">Django Only</span></li>
+
+      <li class="menu-item">
+        <a href="django-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="django-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-start-with-doker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-demo-config.html" class="menu-link">
+              <div>Demo Config</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-starter-kit-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="django-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="django-articles-create-new-page.html" class="menu-link">
+              <div>Create New Apps & Pages</div>
+            </a>
+          </li>
+          <!-- <li class="menu-item">
+          <a href="django-articles-existing-project.html" class="menu-link">
+            <div>Exiting Project Migration</div>
+          </a>
+        </li> -->
+          <li class="menu-item">
+            <a href="django-articles-admin-superuser.html" class="menu-link">
+              <div>Admin and Create User</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-authentication.html" class="menu-link">
+              <div>Authentication</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="django-articles-permissions-authorization.html" class="menu-link">
+              <div>Permissions & Authorization</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-crud.html" class="menu-link">
+              <div>CRUD Example</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-admin-db.html" class="menu-link">
+              <div>Admin and Database</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-localization.html" class="menu-link">
+          <div>Localization</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-search.html" class="menu-link">
+          <div>Search</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-theme-api.html" class="menu-link">
+          <div>Theme API</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-deployment.html" class="menu-link">
+          <div>Deployment</div>
+        </a>
+      </li>
+    
+    <!-- Apps & Pages -->
+    <li class="menu-divider mb-1"></li>
+    <li class="menu-header text-uppercase small fw-medium">Design System</li>
+
+    <li class="menu-item">
+      <a href="typography.html" class="menu-link">
+        <div>Typography</div>
+      </a>
+    </li>
+
+    <li class="menu-item">
+      <a href="colors.html" class="menu-link">
+        <div>Colors</div>
+      </a>
+    </li>
+
+    <li class="menu-item">
+      <a href="Icons.html" class="menu-link">
+        <div>Icons</div>
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+    <!-- Components -->
+    <li class="menu-header text-uppercase small fw-medium">Components</li>
+
+    <!-- UI Elements -->
+    <li class="menu-item
+   active open">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>UI Elements</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="ui-accordion.html" class="menu-link">
+            <div>Accordion</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-alerts.html" class="menu-link">
+            <div>Alerts</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-app-brand.html" class="menu-link">
+            <div>App Brand</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-badges.html" class="menu-link">
+            <div>Badges</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-buttons.html" class="menu-link">
+            <div>Buttons</div>
+          </a>
+        </li>
+        <li class="menu-item
+  ">
+          <a href="javascript:void(0);" class="menu-link menu-toggle">
+            <div>Cards</div>
+          </a>
+          <ul class="menu-sub">
+            <li class="menu-item">
+              <a href="ui-cards-basic.html" class="menu-link">
+                <div>Basic</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="ui-cards-actions.html" class="menu-link">
+                <div>Actions</div>
+                
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="ui-carousel.html" class="menu-link">
+            <div>Carousel</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-collapse.html" class="menu-link">
+            <div>Collapse</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-dropdowns.html" class="menu-link">
+            <div>Dropdowns</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-footer.html" class="menu-link">
+            <div>Footer</div>
+          </a>
+        </li>
+        <li class="menu-item active">
+          <a href="ui-list-groups.html" class="menu-link">
+            <div>List groups</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-modals.html" class="menu-link">
+            <div>Modals</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-menu.html" class="menu-link">
+            <div>Menu</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-navbar.html" class="menu-link">
+            <div>Navbar</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-offcanvas.html" class="menu-link">
+            <div>Offcanvas</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-pagination-breadcrumbs.html" class="menu-link">
+            <div>Pagination &amp; Breadcrumbs</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-popovers.html" class="menu-link">
+            <div>Popovers</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-progress.html" class="menu-link">
+            <div>Progress</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-spinners.html" class="menu-link">
+            <div>Spinners</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-navs.html" class="menu-link">
+            <div>Navs</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-tabs-pills.html" class="menu-link">
+            <div>Tabs &amp; Pills</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-toasts.html" class="menu-link">
+            <div>Toasts</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-tooltips.html" class="menu-link">
+            <div>Tooltips</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+
+    <!-- Extended components -->
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Extended UI</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="extended-ui-avatar.html" class="menu-link">
+            <div>Avatar</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-blockui.html" class="menu-link">
+            <div>BlockUI</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-drag-and-drop.html" class="menu-link">
+            <div>Drag &amp; Drop</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-media-player.html" class="menu-link">
+            <div>Media Player</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-perfect-scrollbar.html" class="menu-link">
+            <div>Perfect scrollbar</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-star-ratings.html" class="menu-link">
+            <div>Star Ratings</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-sweetalert2.html" class="menu-link">
+            <div>SweetAlert2</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-text-divider.html" class="menu-link">
+            <div>Text Divider</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-timeline.html" class="menu-link">
+            <div>Timeline</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-tour.html" class="menu-link">
+            <div>Tour</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-treeview.html" class="menu-link">
+            <div>Treeview</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-misc.html" class="menu-link">
+            <div>Miscellaneous</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Forms -->
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Forms</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="forms-basic-inputs.html" class="menu-link">
+            <div>Basic Inputs</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-input-groups.html" class="menu-link">
+            <div>Input groups</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-custom-options.html" class="menu-link">
+            <div>Custom Options</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-editors.html" class="menu-link">
+            <div>Editors</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-file-upload.html" class="menu-link">
+            <div>File Upload</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-pickers.html" class="menu-link">
+            <div>Pickers</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-selects.html" class="menu-link">
+            <div>Select &amp; Tags</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-sliders.html" class="menu-link">
+            <div>Sliders</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-switches.html" class="menu-link">
+            <div>Switches</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-extras.html" class="menu-link">
+            <div>Extras</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-validation.html" class="menu-link">
+            <div>Validation</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-wizard.html" class="menu-link">
+            <div>Wizard</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-layouts-sticky.html" class="menu-link">
+            <div>Sticky Actions</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <!-- Tables -->
+    <li class="menu-item">
+      <a href="tables-basic.html" class="menu-link">
+        <div>Tables</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="tables-datatables.html" class="menu-link">
+        <div>Datatables</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="utilities.html" class="menu-link">
+        <div>Utilities</div>
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+    <!-- Charts & Maps -->
+    <li class="menu-header text-uppercase small fw-medium">Charts &amp; Maps</li>
+
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <div data-i18n="Charts">Charts</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="charts-apex.html" class="menu-link">
+            <div>Apex Charts</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="charts-chartjs.html" class="menu-link">
+            <div>ChartJS</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="maps-leaflet.html" class="menu-link">
+        <div>Leaflet</div>
+        
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+
+    <!-- Charts & Maps -->
+    <li class="menu-header text-uppercase small fw-medium">Others</li>
+    <li class="menu-item">
+      <a href="credits.html" class="menu-link">
+        <div>Credits</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="https://pixinvent.ticksy.com/" target="_blank" class="menu-link">
+        <div>Support</div>
+      </a>
+    </li>
+  </ul>
+</aside>
+<!-- / Menu -->
+
+        
+
+        <!-- Content wrapper -->
+        <div class="content-wrapper">
+          <!-- Content -->
+          <div class="container-xxl flex-grow-1 container-p-y">
+  <div class="row flex-xl-nowrap">
+    <div class="DocSearch-content col-12 col-xl-10 container-p-y">
+      <h2 class="mb-6 doc-page-title">List Groups</h2>
+      <p>List groups are a flexible and powerful component for displaying a series of content. Modify and extend them to support just about any content within.<br />Read the official <a href="https://getbootstrap.com/docs/5.3/components/list-group/" target="_blank">Bootstrap Documentation</a> for a full list of instructions and other options.</p>
+
+      <hr class="my-12" />
+
+      <!-- Basic List Group -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="basic-list-group" class="anchor-heading mb-6 fw-bold">Basic List Group</h4>
+          <p>The most basic list group is an unordered list with list items and the proper classes. Build upon it with the options that follow, or with your own CSS as needed. Add <code>.list-group</code> class to <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> and add <code>.list-group-item</code> class for default list group.</p>
+
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="basic-list-group-preview-tab" data-bs-toggle="tab" data-bs-target="#basic-list-group-preview" role="tab" aria-controls="basic-list-group-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="basic-list-group-html-tab" data-bs-toggle="tab" data-bs-target="#basic-list-group-html" role="tab" aria-controls="basic-list-group-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="basic-list-group-preview" role="tabpanel" aria-labelledby="basic-list-group-preview-tab">
+                <ul class="list-group">
+                  <li class="list-group-item">An item</li>
+                  <li class="list-group-item">A second item</li>
+                  <li class="list-group-item">A third item</li>
+                  <li class="list-group-item">A fourth item</li>
+                  <li class="list-group-item">And a fifth one</li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="basic-list-group-html" role="tabpanel" aria-labelledby="basic-list-group-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre class="docs-code"><code class="html">&lt;ul class=&quot;list-group&quot;&gt;&#10;  &lt;li class=&quot;list-group-item&quot;&gt;An item&lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item&quot;&gt;A second item&lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item&quot;&gt;A third item&lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item&quot;&gt;A fourth item&lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item&quot;&gt;And a fifth one&lt;/li&gt;&#10;&lt;/ul&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-12" />
+
+      <!-- Active items -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="active-item-list-group" class="anchor-heading mb-6 fw-bold">Active items</h4>
+          <p>Add <code>.active</code> to a <code>.list-group-item</code> to indicate the current active selection.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="active-list-group-preview-tab" data-bs-toggle="tab" data-bs-target="#active-list-group-preview" role="tab" aria-controls="active-list-group-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="active-list-group-html-tab" data-bs-toggle="tab" data-bs-target="#active-list-group-html" role="tab" aria-controls="active-list-group-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="active-list-group-preview" role="tabpanel" aria-labelledby="active-list-group-preview-tab">
+                <ul class="list-group">
+                  <li class="list-group-item active" aria-current="true">An active item</li>
+                  <li class="list-group-item">A second item</li>
+                  <li class="list-group-item">A third item</li>
+                  <li class="list-group-item">A fourth item</li>
+                  <li class="list-group-item">And a fifth one</li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="active-list-group-html" role="tabpanel" aria-labelledby="active-list-group-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;ul class=&quot;list-group&quot;&gt;&#10;  &lt;li class=&quot;list-group-item active&quot; aria-current=&quot;true&quot;&gt;An active item&lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item&quot;&gt;A second item&lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item&quot;&gt;A third item&lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item&quot;&gt;A fourth item&lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item&quot;&gt;And a fifth one&lt;/li&gt;&#10;&lt;/ul&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-12" />
+
+      <!-- Disabled items -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="disabled-list-item" class="anchor-heading mb-6 fw-bold">Disabled items</h4>
+          <p>Add <code>.disabled</code> to a <code>.list-group-item</code> to make it <i>appear</i> disabled. Note that some elements with <code>.disabled</code> will also require custom JavaScript to fully disable their click events.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="disabled-item-preview-tab" data-bs-toggle="tab" data-bs-target="#disabled-item-preview" role="tab" aria-controls="disabled-item-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="disabled-item-html-tab" data-bs-toggle="tab" data-bs-target="#disabled-item-html" role="tab" aria-controls="disabled-item-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="disabled-item-preview" role="tabpanel" aria-labelledby="disabled-item-preview-tab">
+                <ul class="list-group">
+                  <li class="list-group-item disabled" aria-disabled="true">A disabled item</li>
+                  <li class="list-group-item">A second item</li>
+                  <li class="list-group-item">A third item</li>
+                  <li class="list-group-item">A fourth item</li>
+                  <li class="list-group-item">And a fifth one</li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="disabled-item-html" role="tabpanel" aria-labelledby="disabled-item-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;ul class=&quot;list-group&quot;&gt;&#10;  &lt;li class=&quot;list-group-item disabled&quot; aria-disabled=&quot;true&quot;&gt;A disabled item&lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item&quot;&gt;A second item&lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item&quot;&gt;A third item&lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item&quot;&gt;A fourth item&lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item&quot;&gt;And a fifth one&lt;/li&gt;&#10;&lt;/ul&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-12" />
+
+      <!-- Links and buttons -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="link-button" class="anchor-heading mb-6 fw-bold">Links and buttons</h4>
+          <p>Use <code>&lt;a&gt;</code>s or <code>&lt;button&gt;</code>s to create actionable list group items with hover, disabled, and active states by adding <code>.list-group-item-action</code>. We separate these pseudo-classes to ensure list groups made of non-interactive elements (like <code>&lt;li&gt;</code>s or <code>&lt;div&gt;</code>s) donât provide a click or tap affordance.</p>
+          <p>
+            Be sure to <strong>not use the standard <code>.btn</code> classes here.</strong>
+          </p>
+
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="link-list-group-preview-tab" data-bs-toggle="tab" data-bs-target="#link-list-group-preview" role="tab" aria-controls="link-list-group-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" states="link-list-group-html-tab" data-bs-toggle="tab" data-bs-target="#link-list-group-html" role="tab" aria-controls="link-list-group-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="link-list-group-preview" role="tabpanel" aria-labelledby="link-list-group-preview-tab">
+                <div class="list-group">
+                  <a href="javascript:void(0);" class="list-group-item list-group-item-action active" aria-current="true"> The current link item </a>
+                  <a href="javascript:void(0);" class="list-group-item list-group-item-action">A second link item</a>
+                  <a href="javascript:void(0);" class="list-group-item list-group-item-action">A third link item</a>
+                  <a href="javascript:void(0);" class="list-group-item list-group-item-action">A fourth link item</a>
+                  <a href="javascript:void(0);" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">A disabled link item</a>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="link-list-group-html" role="tabpanel" aria-labelledby="link-list-group-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;list-group&quot;&gt;&#10;  &lt;a href=&quot;javascript:void(0);&quot; class=&quot;list-group-item list-group-item-action active&quot; aria-current=&quot;true&quot;&gt;&#10;    The current link item&#10;  &lt;/a&gt;&#10;  &lt;a href=&quot;javascript:void(0);&quot; class=&quot;list-group-item list-group-item-action&quot;&gt;A second link item&lt;/a&gt;&#10;  &lt;a href=&quot;javascript:void(0);&quot; class=&quot;list-group-item list-group-item-action&quot;&gt;A third link item&lt;/a&gt;&#10;  &lt;a href=&quot;javascript:void(0);&quot; class=&quot;list-group-item list-group-item-action&quot;&gt;A fourth link item&lt;/a&gt;&#10;  &lt;a href=&quot;javascript:void(0);&quot; class=&quot;list-group-item list-group-item-action disabled&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;A disabled link item&lt;/a&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mt-12">
+          <p>With <code>&lt;button&gt;</code>s, you can also make use of the <code>disabled</code> attribute instead of the <code>.disabled</code> class. Sadly, <code>&lt;a&gt;</code>s donât support the disabled attribute.</p>
+          <p>Add <code class="highlighter-rouge">data-bs-toggle="button"</code> to toggle a buttonâs <code class="highlighter-rouge">active</code> state. If youâre pre-toggling a button, you must manually add the <code class="highlighter-rouge">.active</code> class <strong>and</strong> <code class="highlighter-rouge">aria-pressed="true"</code> to the <code class="highlighter-rouge">&lt;button&gt;</code>.</p>
+
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="button-list-group-preview-tab" data-bs-toggle="tab" data-bs-target="#button-list-group-preview" role="tab" aria-controls="button-list-group-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" states="button-list-group-html-tab" data-bs-toggle="tab" data-bs-target="#button-list-group-html" role="tab" aria-controls="button-list-group-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="button-list-group-preview" role="tabpanel" aria-labelledby="button-list-group-preview-tab">
+                <div class="list-group">
+                  <button type="button" class="list-group-item list-group-item-action active" aria-current="true">The current button</button>
+                  <button type="button" class="list-group-item list-group-item-action">A second item</button>
+                  <button type="button" class="list-group-item list-group-item-action">A third button item</button>
+                  <button type="button" class="list-group-item list-group-item-action">A fourth button item</button>
+                  <button type="button" class="list-group-item list-group-item-action" disabled>A disabled button item</button>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="button-list-group-html" role="tabpanel" aria-labelledby="button-list-group-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;list-group&quot;&gt;&#10;  &lt;button type=&quot;button&quot; class=&quot;list-group-item list-group-item-action active&quot; aria-current=&quot;true&quot;&gt;&#10;    The current button&#10;  &lt;/button&gt;&#10;  &lt;button type=&quot;button&quot; class=&quot;list-group-item list-group-item-action&quot;&gt;A second item&lt;/button&gt;&#10;  &lt;button type=&quot;button&quot; class=&quot;list-group-item list-group-item-action&quot;&gt;A third button item&lt;/button&gt;&#10;  &lt;button type=&quot;button&quot; class=&quot;list-group-item list-group-item-action&quot;&gt;A fourth button item&lt;/button&gt;&#10;  &lt;button type=&quot;button&quot; class=&quot;list-group-item list-group-item-action&quot; disabled&gt;A disabled button item&lt;/button&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-12" />
+
+      <!-- Flush -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="flush-list-item" class="anchor-heading mb-6 fw-bold">Flush</h4>
+          <p>Add <code>.list-group-flush</code> to remove some borders and rounded corners to render list group items edge-to-edge in a parent container</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="flush-list-item-preview-tab" data-bs-toggle="tab" data-bs-target="#flush-list-item-preview" role="tab" aria-controls="flush-list-item-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="flush-list-item-html-tab" data-bs-toggle="tab" data-bs-target="#flush-list-item-html" role="tab" aria-controls="flush-list-item-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="flush-list-item-preview" role="tabpanel" aria-labelledby="flush-list-item-preview-tab">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">An item</li>
+                  <li class="list-group-item">A second item</li>
+                  <li class="list-group-item">A third item</li>
+                  <li class="list-group-item">A fourth item</li>
+                  <li class="list-group-item">And a fifth one</li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="flush-list-item-html" role="tabpanel" aria-labelledby="flush-list-item-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;ul class=&quot;list-group list-group-flush&quot;&gt;&#10;  &lt;li class=&quot;list-group-item&quot;&gt;An item&lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item&quot;&gt;A second item&lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item&quot;&gt;A third item&lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item&quot;&gt;A fourth item&lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item&quot;&gt;And a fifth one&lt;/li&gt;&#10;&lt;/ul&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-12" />
+
+      <!-- Numbered -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="numbered-list-item" class="anchor-heading mb-6 fw-bold">Numbered</h4>
+          <p>Add the <code>.list-group-numbered</code> modifier class (and optionally use an <code>&lt;ol&gt;</code> element) to opt into numbered list group items. Numbers are generated via CSS (as opposed to a <code>&lt;ol&gt;</code>s default browser styling) for better placement inside list group items and to allow for better customization.</p>
+          <p>Numbers are generated by <code>counter-reset</code> on the <code>&lt;ol&gt;</code>, and then styled and placed with a <code>::before</code> psuedo-element on the <code>&lt;li&gt;</code> with <code>counter-increment</code> and <code>content</code>.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="numbered-list-item-preview-tab" data-bs-toggle="tab" data-bs-target="#numbered-list-item-preview" role="tab" aria-controls="numbered-list-item-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="numbered-list-item-html-tab" data-bs-toggle="tab" data-bs-target="#numbered-list-item-html" role="tab" aria-controls="numbered-list-item-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="numbered-list-item-preview" role="tabpanel" aria-labelledby="numbered-list-item-preview-tab">
+                <ol class="list-group list-group-numbered">
+                  <li class="list-group-item">Bear claw cake biscuit</li>
+                  <li class="list-group-item">SoufflÃ© pastry pie ice</li>
+                  <li class="list-group-item">Tart tiramisu cake</li>
+                  <li class="list-group-item">Bonbon toffee muffin</li>
+                  <li class="list-group-item">DragÃ©e tootsie roll</li>
+                </ol>
+              </div>
+              <div class="tab-pane fade" id="numbered-list-item-html" role="tabpanel" aria-labelledby="numbered-list-item-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;ol class=&quot;list-group list-group-numbered&quot;&gt;&#10;  &lt;li class=&quot;list-group-item&quot;&gt;Bear claw cake biscuit&lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item&quot;&gt;Souffl&eacute; pastry pie ice&lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item&quot;&gt;Tart tiramisu cake&lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item&quot;&gt;Bonbon toffee muffin&lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item&quot;&gt;Drag&eacute;e tootsie roll&lt;/li&gt;&#10;&lt;/ol&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-12" />
+
+      <!-- Contextual Classes -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="contextual-classses" class="anchor-heading mb-6 fw-bold">Contextual Classes</h4>
+          <p>Use contextual classes to style list items with a stateful background and color.</p>
+          <p>Contextual classes also work with <code>.list-group-item-action</code>. Note the addition of the hover styles here not present in this example. Also supported is the <code>.active</code> state; apply it to indicate an active selection on a contextual list group item.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="contextual-classses-preview-tab" data-bs-toggle="tab" data-bs-target="#contextual-classses-preview" role="tab" aria-controls="contextual-classses-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="contextual-classses-html-tab" data-bs-toggle="tab" data-bs-target="#contextual-classses-html" role="tab" aria-controls="contextual-classses-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="contextual-classses-preview" role="tabpanel" aria-labelledby="contextual-classses-preview-tab">
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-action">Dapibus ac facilisis in</li>
+                  <li class="list-group-item list-group-item-action list-group-item-primary">A simple primary list group item</li>
+                  <li class="list-group-item list-group-item-action list-group-item-secondary">A simple secondary list group item</li>
+                  <li class="list-group-item list-group-item-action list-group-item-success">A simple success list group item</li>
+                  <li class="list-group-item list-group-item-action list-group-item-danger">A simple danger list group item</li>
+                  <li class="list-group-item list-group-item-action list-group-item-warning">A simple warning list group item</li>
+                  <li class="list-group-item list-group-item-action list-group-item-info">A simple info list group item</li>
+                  <li class="list-group-item list-group-item-action list-group-item-light">A simple light list group item</li>
+                  <li class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="contextual-classses-html" role="tabpanel" aria-labelledby="contextual-classses-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;ul class=&quot;list-group&quot;&gt;&#10;  &lt;li class=&quot;list-group-item list-group-item-action&quot;&gt;Dapibus ac facilisis in&lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item list-group-item-action list-group-item-primary&quot;&gt;&#10;    A simple primary list group item&#10;  &lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item list-group-item-action list-group-item-secondary&quot;&gt;&#10;    A simple secondary list group item&#10;  &lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item list-group-item-action list-group-item-success&quot;&gt;&#10;    A simple success list group item&#10;  &lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item list-group-item-action list-group-item-danger&quot;&gt;&#10;    A simple danger list group item&#10;  &lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item list-group-item-action list-group-item-warning&quot;&gt;&#10;    A simple warning list group item&#10;  &lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item list-group-item-action list-group-item-info&quot;&gt;&#10;    A simple info list group item&#10;  &lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item list-group-item-action list-group-item-light&quot;&gt;&#10;    A simple light list group item&#10;  &lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item list-group-item-action list-group-item-dark&quot;&gt;&#10;    A simple dark list group item&#10;  &lt;/li&gt;&#10;&lt;/ul&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-12" />
+
+      <!-- With Badges & Pills -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="badges-pills" class="anchor-heading mb-6 fw-bold">With Badges & Pills</h4>
+          <p>Add badges or rounded-pills to any list group item to show unread counts, activity, and more with the help of some utilities.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="badges-pills-preview-tab" data-bs-toggle="tab" data-bs-target="#badges-pills-preview" role="tab" aria-controls="badges-pills-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="badges-pills-html-tab" data-bs-toggle="tab" data-bs-target="#badges-pills-html" role="tab" aria-controls="badges-pills-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="badges-pills-preview" role="tabpanel" aria-labelledby="badges-pills-preview-tab">
+                <ul class="list-group">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Cras justo odio
+                    <span class="badge badge-center bg-primary">3</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Dapibus ac facilisis in
+                    <span class="badge badge-center bg-primary rounded-pill">2</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Cotton candy sesame
+                    <span class="badge badge-center bg-primary">6</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Morbi leo risus
+                    <span class="badge badge-center bg-primary rounded-pill">1</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="badges-pills-html" role="tabpanel" aria-labelledby="badges-pills-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;ul class=&quot;list-group&quot;&gt;&#10;  &lt;li class=&quot;list-group-item d-flex justify-content-between align-items-center&quot;&gt;&#10;    Cras justo odio&#10;    &lt;span class=&quot;badge badge-center bg-primary&quot;&gt;3&lt;/span&gt;&#10;  &lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item d-flex justify-content-between align-items-center&quot;&gt;&#10;    Dapibus ac facilisis in&#10;    &lt;span class=&quot;badge badge-center bg-primary rounded-pill&quot;&gt;2&lt;/span&gt;&#10;  &lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item d-flex justify-content-between align-items-center&quot;&gt;&#10;    Cotton candy sesame&#10;    &lt;span class=&quot;badge badge-center bg-primary&quot;&gt;6&lt;/span&gt;&#10;  &lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item d-flex justify-content-between align-items-center&quot;&gt;&#10;    Morbi leo risus&#10;    &lt;span class=&quot;badge badge-center bg-primary rounded-pill&quot;&gt;1&lt;/span&gt;&#10;  &lt;/li&gt;&#10;&lt;/ul&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-12" />
+
+      <!-- Custom content -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="custom-content" class="anchor-heading mb-6 fw-bold">Custom content</h4>
+          <p>Add nearly any HTML within, even for linked list groups like the one below, with the help of flexbox utilities.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="custom-content-preview-tab" data-bs-toggle="tab" data-bs-target="#custom-content-preview" role="tab" aria-controls="custom-content-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="custom-content-html-tab" data-bs-toggle="tab" data-bs-target="#custom-content-html" role="tab" aria-controls="custom-content-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="custom-content-preview" role="tabpanel" aria-labelledby="custom-content-preview-tab">
+                <div class="list-group">
+                  <a href="javascript:void(0);" class="list-group-item list-group-item-action active">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">List group item heading</h5>
+                      <small>3 days ago</small>
+                    </div>
+                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                    <small>Donec id elit non mi porta.</small>
+                  </a>
+                  <a href="javascript:void(0);" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">List group item heading</h5>
+                      <small class="text-body-secondary">3 days ago</small>
+                    </div>
+                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                    <small class="text-body-secondary">Donec id elit non mi porta.</small>
+                  </a>
+                  <a href="javascript:void(0);" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">List group item heading</h5>
+                      <small class="text-body-secondary">3 days ago</small>
+                    </div>
+                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                    <small class="text-body-secondary">Donec id elit non mi porta.</small>
+                  </a>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="custom-content-html" role="tabpanel" aria-labelledby="custom-content-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;list-group&quot;&gt;&#10;  &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action active&quot;&gt;&#10;    &lt;div class=&quot;d-flex w-100 justify-content-between&quot;&gt;&#10;      &lt;h5 class=&quot;mb-1&quot;&gt;List group item heading&lt;/h5&gt;&#10;      &lt;small&gt;3 days ago&lt;/small&gt;&#10;    &lt;/div&gt;&#10;    &lt;p class=&quot;mb-1&quot;&gt;Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.&lt;/p&gt;&#10;    &lt;small&gt;Donec id elit non mi porta.&lt;/small&gt;&#10;  &lt;/a&gt;&#10;  &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action&quot;&gt;&#10;    &lt;div class=&quot;d-flex w-100 justify-content-between&quot;&gt;&#10;      &lt;h5 class=&quot;mb-1&quot;&gt;List group item heading&lt;/h5&gt;&#10;      &lt;small class=&quot;text-body-secondary&quot;&gt;3 days ago&lt;/small&gt;&#10;    &lt;/div&gt;&#10;    &lt;p class=&quot;mb-1&quot;&gt;Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.&lt;/p&gt;&#10;    &lt;small class=&quot;text-body-secondary&quot;&gt;Donec id elit non mi porta.&lt;/small&gt;&#10;  &lt;/a&gt;&#10;  &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action&quot;&gt;&#10;    &lt;div class=&quot;d-flex w-100 justify-content-between&quot;&gt;&#10;      &lt;h5 class=&quot;mb-1&quot;&gt;List group item heading&lt;/h5&gt;&#10;      &lt;small class=&quot;text-body-secondary&quot;&gt;3 days ago&lt;/small&gt;&#10;    &lt;/div&gt;&#10;    &lt;p class=&quot;mb-1&quot;&gt;Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.&lt;/p&gt;&#10;    &lt;small class=&quot;text-body-secondary&quot;&gt;Donec id elit non mi porta.&lt;/small&gt;&#10;  &lt;/a&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-12" />
+
+      <!-- Checkboxes & Radio -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="checkboxes-radios" class="anchor-heading mb-6 fw-bold">Checkboxes & Radio</h4>
+          <p>Place Bootstrapâs checkboxes and radios within list group items and customize as needed. You can use them without <code>&lt;label&gt;</code>s, but please remember to include an <code>aria-label</code> attribute and value for accessibility.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="checkboxes-radios-preview-tab" data-bs-toggle="tab" data-bs-target="#checkboxes-radios-preview" role="tab" aria-controls="checkboxes-radios-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="checkboxes-radios-html-tab" data-bs-toggle="tab" data-bs-target="#checkboxes-radios-html" role="tab" aria-controls="checkboxes-radios-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="checkboxes-radios-preview" role="tabpanel" aria-labelledby="checkboxes-radios-preview-tab">
+                <div class="list-group">
+                  <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" />
+                    SoufflÃ© pastry pie ice
+                  </label>
+                  <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" />
+                    Bear claw cake biscuit
+                  </label>
+                  <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" />
+                    Tart tiramisu cake
+                  </label>
+                  <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" />
+                    Bonbon toffee muffin
+                  </label>
+                  <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" />
+                    DragÃ©e tootsie roll
+                  </label>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="checkboxes-radios-html" role="tabpanel" aria-labelledby="checkboxes-radios-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;list-group&quot;&gt;&#10;  &lt;label class=&quot;list-group-item&quot;&gt;&#10;    &lt;input class=&quot;form-check-input me-1&quot; type=&quot;checkbox&quot; value=&quot;&quot;&gt;&#10;    Souffl&eacute; pastry pie ice&#10;  &lt;/label&gt;&#10;  &lt;label class=&quot;list-group-item&quot;&gt;&#10;    &lt;input class=&quot;form-check-input me-1&quot; type=&quot;checkbox&quot; value=&quot;&quot;&gt;&#10;    Bear claw cake biscuit&#10;  &lt;/label&gt;&#10;  &lt;label class=&quot;list-group-item&quot;&gt;&#10;    &lt;input class=&quot;form-check-input me-1&quot; type=&quot;checkbox&quot; value=&quot;&quot;&gt;&#10;    Tart tiramisu cake&#10;  &lt;/label&gt;&#10;  &lt;label class=&quot;list-group-item&quot;&gt;&#10;    &lt;input class=&quot;form-check-input me-1&quot; type=&quot;checkbox&quot; value=&quot;&quot;&gt;&#10;    Bonbon toffee muffin&#10;  &lt;/label&gt;&#10;  &lt;label class=&quot;list-group-item&quot;&gt;&#10;    &lt;input class=&quot;form-check-input me-1&quot; type=&quot;checkbox&quot; value=&quot;&quot;&gt;&#10;    Drag&eacute;e tootsie roll&#10;  &lt;/label&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-12" />
+
+      <!-- JavaScript Behaviour -->
+
+      <!-- Vertical List -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="vertical-list" class="anchor-heading mb-6 fw-bold">JavaScript Behaviour</h4>
+          <p>
+            Use the tab JavaScript pluginâinclude it individually or through the compiled
+            <code>bootstrap.js</code> fileâto extend our list group to create tabbable panes of local content.
+          </p>
+          <h6 class="fw-bold">Vertical List Group</h6>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="vertical-list-preview-tab" data-bs-toggle="tab" data-bs-target="#vertical-list-preview" role="tab" aria-controls="vertical-list-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="vertical-list-html-tab" data-bs-toggle="tab" data-bs-target="#vertical-list-html" role="tab" aria-controls="vertical-list-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="vertical-list-preview" role="tabpanel" aria-labelledby="vertical-list-preview-tab">
+                <div class="row">
+                  <div class="col-md-4 col-12 mb-4 mb-md-0">
+                    <div class="list-group">
+                      <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home">Home</a>
+                      <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile">Profile</a>
+                      <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages">Messages</a>
+                      <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings">Settings</a>
+                    </div>
+                  </div>
+                  <div class="col-md-8 col-12">
+                    <div class="tab-content">
+                      <div class="tab-pane fade show active" id="list-home">
+                        Donut sugar plum sweet roll biscuit. Cake oat cake gummi bears. Tart wafer wafer halvah gummi bears cheesecake. Topping croissant cake sweet roll. Dessert fruitcake gingerbread halvah marshmallow pudding bear claw cheesecake. Bonbon dragÃ©e cookie gummies. Pudding marzipan liquorice. Sugar plum dragÃ©e cupcake cupcake cake dessert chocolate bar. Pastry lollipop lemon drops lollipop halvah croissant. Pastry sweet gingerbread lemon drops topping ice cream.
+                      </div>
+                      <div class="tab-pane fade" id="list-profile">
+                        Muffin lemon drops chocolate chupa chups jelly beans dessert jelly-o. SoufflÃ© gummies gummies. Ice cream powder marshmallow cotton candy oat cake wafer. Marshmallow gingerbread tootsie roll. Chocolate cake bonbon jelly beans lollipop jelly beans halvah marzipan danish pie. Oat cake chocolate cake pudding bear claw liquorice gingerbread icing sugar plum brownie. Toffee cookie apple pie cheesecake bear claw sugar plum wafer gummi bears fruitcake.
+                      </div>
+                      <div class="tab-pane fade" id="list-messages">
+                        Ice cream dessert candy sugar plum croissant cupcake tart pie apple pie. Pastry chocolate chupa chups tiramisu. Tiramisu cookie oat cake. Pudding brownie bonbon. Pie carrot cake chocolate macaroon. Halvah jelly jelly beans cake macaroon jelly-o. Danish pastry dessert gingerbread powder halvah. Muffin bonbon fruitcake dragÃ©e sweet sesame snaps oat cake marshmallow cheesecake. Cupcake donut sweet bonbon cheesecake soufflÃ© chocolate bar.
+                      </div>
+                      <div class="tab-pane fade" id="list-settings">
+                        Marzipan cake oat cake. Marshmallow pie chocolate. Liquorice oat cake donut halvah jelly-o. Jelly-o muffin macaroon cake gingerbread candy cupcake. Cake lollipop lollipop jelly brownie cake topping chocolate. Pie oat cake jelly. Lemon drops halvah jelly cookie bonbon cake cupcake ice cream. Donut tart bonbon sweet roll soufflÃ© gummies biscuit. Wafer toffee topping jelly beans icing pie apple pie toffee pudding. Tiramisu powder macaroon tiramisu cake halvah.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="vertical-list-html" role="tabpanel" aria-labelledby="vertical-list-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;row&quot;&gt;&#10;  &lt;div class=&quot;col-md-4 col-12 mb-4 mb-md-0&quot;&gt;&#10;    &lt;div class=&quot;list-group&quot;&gt;&#10;      &lt;a class=&quot;list-group-item list-group-item-action active&quot; id=&quot;list-home-list&quot; data-bs-toggle=&quot;list&quot; href=&quot;#list-home&quot;&gt;Home&lt;/a&gt;&#10;      &lt;a class=&quot;list-group-item list-group-item-action&quot; id=&quot;list-profile-list&quot; data-bs-toggle=&quot;list&quot; href=&quot;#list-profile&quot;&gt;Profile&lt;/a&gt;&#10;      &lt;a class=&quot;list-group-item list-group-item-action&quot; id=&quot;list-messages-list&quot; data-bs-toggle=&quot;list&quot; href=&quot;#list-messages&quot;&gt;Messages&lt;/a&gt;&#10;      &lt;a class=&quot;list-group-item list-group-item-action&quot; id=&quot;list-settings-list&quot; data-bs-toggle=&quot;list&quot; href=&quot;#list-settings&quot;&gt;Settings&lt;/a&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;col-md-8 col-12&quot;&gt;&#10;    &lt;div class=&quot;tab-content&quot;&gt;&#10;      &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;list-home&quot;&gt;&#10;        Donut sugar plum sweet roll biscuit. Cake oat cake gummi bears. Tart wafer wafer halvah gummi bears cheesecake. Topping croissant cake sweet roll. Dessert fruitcake gingerbread halvah marshmallow pudding bear claw cheesecake. Bonbon drag&eacute;e cookie gummies. Pudding marzipan liquorice. Sugar plum drag&eacute;e cupcake cupcake cake dessert chocolate bar. Pastry lollipop lemon drops lollipop halvah croissant. Pastry sweet gingerbread lemon drops topping ice cream.&#10;      &lt;/div&gt;&#10;      &lt;div class=&quot;tab-pane fade&quot; id=&quot;list-profile&quot;&gt;&#10;        Muffin lemon drops chocolate chupa chups jelly beans dessert jelly-o. Souffl&eacute; gummies gummies. Ice cream powder marshmallow cotton candy oat cake wafer. Marshmallow gingerbread tootsie roll. Chocolate cake bonbon jelly beans lollipop jelly beans halvah marzipan danish pie. Oat cake chocolate cake pudding bear claw liquorice gingerbread icing sugar plum brownie. Toffee cookie apple pie cheesecake bear claw sugar plum wafer gummi bears fruitcake. &#10;      &lt;/div&gt;&#10;      &lt;div class=&quot;tab-pane fade&quot; id=&quot;list-messages&quot;&gt;&#10;        Ice cream dessert candy sugar plum croissant cupcake tart pie apple pie. Pastry chocolate chupa chups tiramisu. Tiramisu cookie oat cake. Pudding brownie bonbon. Pie carrot cake chocolate macaroon. Halvah jelly jelly beans cake macaroon jelly-o. Danish pastry dessert gingerbread powder halvah. Muffin bonbon fruitcake drag&eacute;e sweet sesame snaps oat cake marshmallow cheesecake. Cupcake donut sweet bonbon cheesecake souffl&eacute; chocolate bar.&#10;      &lt;/div&gt;&#10;      &lt;div class=&quot;tab-pane fade&quot; id=&quot;list-settings&quot;&gt;&#10;        Marzipan cake oat cake. Marshmallow pie chocolate. Liquorice oat cake donut halvah jelly-o. Jelly-o muffin macaroon cake gingerbread candy cupcake. Cake lollipop lollipop jelly brownie cake topping chocolate. Pie oat cake jelly. Lemon drops halvah jelly cookie bonbon cake cupcake ice cream. Donut tart bonbon sweet roll souffl&eacute; gummies biscuit. Wafer toffee topping jelly beans icing pie apple pie toffee pudding. Tiramisu powder macaroon tiramisu cake halvah. &#10;      &lt;/div&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-12" />
+
+      <!-- Horizontal List -->
+      <div class="row">
+        <div class="col-12">
+          <h6 id="horizontal-list" class="anchor-heading fw-bold">Horizontal List Group</h6>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="horizontal-list-preview-tab" data-bs-toggle="tab" data-bs-target="#horizontal-list-preview" role="tab" aria-controls="horizontal-list-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="horizontal-list-html-tab" data-bs-toggle="tab" data-bs-target="#horizontal-list-html" role="tab" aria-controls="horizontal-list-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="horizontal-list-preview" role="tabpanel" aria-labelledby="horizontal-list-preview-tab">
+                <div class="list-group list-group-horizontal-md text-md-center">
+                  <a class="list-group-item list-group-item-action active" id="home-list-item" data-bs-toggle="list" href="#horizontal-home">Home</a>
+                  <a class="list-group-item list-group-item-action" id="profile-list-item" data-bs-toggle="list" href="#horizontal-profile">Profile</a>
+                  <a class="list-group-item list-group-item-action" id="messages-list-item" data-bs-toggle="list" href="#horizontal-messages">Messages</a>
+                  <a class="list-group-item list-group-item-action" id="settings-list-item" data-bs-toggle="list" href="#horizontal-settings">Settings</a>
+                </div>
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="horizontal-home">
+                    Donut sugar plum sweet roll biscuit. Cake oat cake gummi bears. Tart wafer wafer halvah gummi bears cheesecake. Topping croissant cake sweet roll. Dessert fruitcake gingerbread halvah marshmallow pudding bear claw cheesecake. Bonbon dragÃ©e cookie gummies. Pudding marzipan liquorice. Sugar plum dragÃ©e cupcake cupcake cake dessert chocolate bar. Pastry lollipop lemon drops lollipop halvah croissant. Pastry sweet gingerbread lemon drops topping ice cream.
+                  </div>
+                  <div class="tab-pane fade" id="horizontal-profile">
+                    Muffin lemon drops chocolate chupa chups jelly beans dessert jelly-o. SoufflÃ© gummies gummies. Ice cream powder marshmallow cotton candy oat cake wafer. Marshmallow gingerbread tootsie roll. Chocolate cake bonbon jelly beans lollipop jelly beans halvah marzipan danish pie. Oat cake chocolate cake pudding bear claw liquorice gingerbread icing sugar plum brownie. Toffee cookie apple pie cheesecake bear claw sugar plum wafer gummi bears fruitcake.
+                  </div>
+                  <div class="tab-pane fade" id="horizontal-messages">
+                    Ice cream dessert candy sugar plum croissant cupcake tart pie apple pie. Pastry chocolate chupa chups tiramisu. Tiramisu cookie oat cake. Pudding brownie bonbon. Pie carrot cake chocolate macaroon. Halvah jelly jelly beans cake macaroon jelly-o. Danish pastry dessert gingerbread powder halvah. Muffin bonbon fruitcake dragÃ©e sweet sesame snaps oat cake marshmallow cheesecake. Cupcake donut sweet bonbon cheesecake soufflÃ© chocolate bar.
+                  </div>
+                  <div class="tab-pane fade" id="horizontal-settings">
+                    Marzipan cake oat cake. Marshmallow pie chocolate. Liquorice oat cake donut halvah jelly-o. Jelly-o muffin macaroon cake gingerbread candy cupcake. Cake lollipop lollipop jelly brownie cake topping chocolate. Pie oat cake jelly. Lemon drops halvah jelly cookie bonbon cake cupcake ice cream. Donut tart bonbon sweet roll soufflÃ© gummies biscuit. Wafer toffee topping jelly beans icing pie apple pie toffee pudding. Tiramisu powder macaroon tiramisu cake halvah.
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="horizontal-list-html" role="tabpanel" aria-labelledby="horizontal-list-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;list-group list-group-horizontal-md text-md-center&quot;&gt;&#10;  &lt;a class=&quot;list-group-item list-group-item-action active&quot; id=&quot;home-list-item&quot; data-bs-toggle=&quot;list&quot; href=&quot;#horizontal-home&quot;&gt;Home&lt;/a&gt;&#10;  &lt;a class=&quot;list-group-item list-group-item-action&quot; id=&quot;profile-list-item&quot; data-bs-toggle=&quot;list&quot; href=&quot;#horizontal-profile&quot;&gt;Profile&lt;/a&gt;&#10;  &lt;a class=&quot;list-group-item list-group-item-action&quot; id=&quot;messages-list-item&quot; data-bs-toggle=&quot;list&quot; href=&quot;#horizontal-messages&quot;&gt;Messages&lt;/a&gt;&#10;  &lt;a class=&quot;list-group-item list-group-item-action&quot; id=&quot;settings-list-item&quot; data-bs-toggle=&quot;list&quot; href=&quot;#horizontal-settings&quot;&gt;Settings&lt;/a&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;tab-content mt-4&quot;&gt;&#10;  &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;horizontal-home&quot;&gt;&#10;    Donut sugar plum sweet roll biscuit. Cake oat cake gummi bears. Tart wafer wafer halvah gummi bears cheesecake. Topping croissant cake sweet roll. Dessert fruitcake gingerbread halvah marshmallow pudding bear claw cheesecake. Bonbon drag&eacute;e cookie gummies. Pudding marzipan liquorice. Sugar plum drag&eacute;e cupcake cupcake cake dessert chocolate bar. Pastry lollipop lemon drops lollipop halvah croissant. Pastry sweet gingerbread lemon drops topping ice cream.&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;tab-pane fade&quot; id=&quot;horizontal-profile&quot;&gt;&#10;    Muffin lemon drops chocolate chupa chups jelly beans dessert jelly-o. Souffl&eacute; gummies gummies. Ice cream powder marshmallow cotton candy oat cake wafer. Marshmallow gingerbread tootsie roll. Chocolate cake bonbon jelly beans lollipop jelly beans halvah marzipan danish pie. Oat cake chocolate cake pudding bear claw liquorice gingerbread icing sugar plum brownie. Toffee cookie apple pie cheesecake bear claw sugar plum wafer gummi bears fruitcake. &#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;tab-pane fade&quot; id=&quot;horizontal-messages&quot;&gt;&#10;    Ice cream dessert candy sugar plum croissant cupcake tart pie apple pie. Pastry chocolate chupa chups tiramisu. Tiramisu cookie oat cake. Pudding brownie bonbon. Pie carrot cake chocolate macaroon. Halvah jelly jelly beans cake macaroon jelly-o. Danish pastry dessert gingerbread powder halvah. Muffin bonbon fruitcake drag&eacute;e sweet sesame snaps oat cake marshmallow cheesecake. Cupcake donut sweet bonbon cheesecake souffl&eacute; chocolate bar.&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;tab-pane fade&quot; id=&quot;horizontal-settings&quot;&gt;&#10;    Marzipan cake oat cake. Marshmallow pie chocolate. Liquorice oat cake donut halvah jelly-o. Jelly-o muffin macaroon cake gingerbread candy cupcake. Cake lollipop lollipop jelly brownie cake topping chocolate. Pie oat cake jelly. Lemon drops halvah jelly cookie bonbon cake cupcake ice cream. Donut tart bonbon sweet roll souffl&eacute; gummies biscuit. Wafer toffee topping jelly beans icing pie apple pie toffee pudding. Tiramisu powder macaroon tiramisu cake halvah. &#10;  &lt;/div&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-12" />
+
+      <!-- List Group Variations -->
+      <h4 class="anchor-heading fw-bold" id="list-group-variations">List Group Variations</h4>
+      <!-- With Icon List Group -->
+      <div class="row">
+        <div class="col-12">
+          <h6 id="with-icon-list" class="anchor-heading fw-bold">List Group With Icon</h6>
+          <p>Adding icon begore the list group item for more user friendly list group.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="with-icon-list-preview-tab" data-bs-toggle="tab" data-bs-target="#with-icon-list-preview" role="tab" aria-controls="with-icon-list-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="with-icon-list-html-tab" data-bs-toggle="tab" data-bs-target="#with-icon-list-html" role="tab" aria-controls="with-icon-list-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="with-icon-list-preview" role="tabpanel" aria-labelledby="with-icon-list-preview-tab">
+                <ul class="list-group">
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="icon-base icon-base ti tabler-device-tv icon-sm me-3"></i>
+                    SoufflÃ© pastry pie ice
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="icon-base icon-base ti tabler-bell icon-sm me-3"></i>
+                    Bear claw cake biscuit
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="icon-base icon-base ti tabler-headphones icon-sm me-3"></i>
+                    Tart tiramisu cake
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="icon-base icon-base ti tabler-bookmark icon-sm me-3"></i>
+                    Bonbon toffee muffin
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="icon-base icon-base ti tabler-paper-bag icon-sm me-3"></i>
+                    DragÃ©e tootsie roll
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="with-icon-list-html" role="tabpanel" aria-labelledby="with-icon-list-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;ul class=&quot;list-group&quot;&gt;&#10;  &lt;li class=&quot;list-group-item d-flex align-items-center&quot;&gt;&#10;    &lt;i class=&quot;icon-base icon-base ti tabler-tv me-2&quot;&gt;&lt;/i&gt;&#10;    Souffl&eacute; pastry pie ice&lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item d-flex align-items-center&quot;&gt;&#10;    &lt;i class=&quot;icon-base icon-base ti tabler-bell me-2&quot;&gt;&lt;/i&gt;&#10;    Bear claw cake biscuit&lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item d-flex align-items-center&quot;&gt;&#10;    &lt;i class=&quot;icon-base icon-base ti tabler-support me-2&quot;&gt;&lt;/i&gt;&#10;    Tart tiramisu cake&lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item d-flex align-items-center&quot;&gt;&#10;    &lt;i class=&quot;icon-base icon-base ti tabler-purchase-tag-alt me-2&quot;&gt;&lt;/i&gt;&#10;    Bonbon toffee muffin&lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item d-flex align-items-center&quot;&gt;&#10;    &lt;i class=&quot;icon-base icon-base ti tabler-closet me-2&quot;&gt;&lt;/i&gt;&#10;    Drag&eacute;e tootsie roll&lt;/li&gt;&#10;&lt;/ul&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-12" />
+
+      <!-- List Group Timeline variation -->
+      <div class="row">
+        <div class="col-12">
+          <h6 id="timeline-list" class="anchor-heading fw-bold">
+            List Group Timeline
+            
+          </h6>
+          <p>Use <code>.list-group-timeline</code> class with <code>.list-group</code> to add timeline variantion. To add colored bullets of timeline, use <code>.list-group-timeline-{color}</code> class for bullet colors.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="timeline-list-preview-tab" data-bs-toggle="tab" data-bs-target="#timeline-list-preview" role="tab" aria-controls="timeline-list-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="timeline-list-html-tab" data-bs-toggle="tab" data-bs-target="#timeline-list-html" role="tab" aria-controls="timeline-list-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="timeline-list-preview" role="tabpanel" aria-labelledby="timeline-list-preview-tab">
+                <ul class="list-group list-group-timeline">
+                  <li class="list-group-item list-group-timeline-primary">Bear claw cake biscuit</li>
+                  <li class="list-group-item list-group-timeline-success">SoufflÃ© pastry pie ice</li>
+                  <li class="list-group-item list-group-timeline-warning">Tart tiramisu cake</li>
+                  <li class="list-group-item list-group-timeline-info">DragÃ©e tootsie roll</li>
+                  <li class="list-group-item list-group-timeline-danger">Bonbon toffee muffin</li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="timeline-list-html" role="tabpanel" aria-labelledby="timeline-list-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;ul class=&quot;list-group list-group-timeline&quot;&gt;&#10;  &lt;li class=&quot;list-group-item list-group-timeline-primary&quot;&gt;Bear claw cake biscuit&lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item list-group-timeline-success&quot;&gt;Souffl&eacute; pastry pie ice&lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item list-group-timeline-warning&quot;&gt;Tart tiramisu cake&lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item list-group-timeline-info&quot;&gt;Drag&eacute;e tootsie roll&lt;/li&gt;&#10;  &lt;li class=&quot;list-group-item list-group-timeline-danger&quot;&gt;Bonbon toffee muffin&lt;/li&gt;&#10;&lt;/ul&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-12" />
+
+      <!-- Notification variation -->
+      <div class="row">
+        <div class="col-12">
+          <h6 id="notification-list" class="anchor-heading fw-bold">
+            Notification
+            
+          </h6>
+          <p>Use other components with <code>.list-group</code> to modify list group as we have used avatar here.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="notification-list-preview-tab" data-bs-toggle="tab" data-bs-target="#notification-list-preview" role="tab" aria-controls="notification-list-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="notification-list-html-tab" data-bs-toggle="tab" data-bs-target="#notification-list-html" role="tab" aria-controls="notification-list-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="notification-list-preview" role="tabpanel" aria-labelledby="notification-list-preview-tab">
+                <div class="list-group">
+                  <a href="javascript:void(0);" class="list-group-item list-group-item-action d-flex justify-content-between">
+                    <div class="li-wrapper d-flex justify-content-start align-items-center">
+                      <div class="avatar avatar-sm me-4">
+                        <span class="avatar-initial rounded-circle bg-label-success">M</span>
+                      </div>
+                      <div class="list-content">
+                        <h6 class="mb-1">List group item heading</h6>
+                        <small class="text-body-secondary">Donec id elit non mi porta.</small>
+                      </div>
+                    </div>
+                    <small>3 days ago</small>
+                  </a>
+                  <a href="javascript:void(0);" class="list-group-item list-group-item-action d-flex justify-content-between">
+                    <div class="li-wrapper d-flex justify-content-start align-items-center">
+                      <div class="avatar avatar-sm me-4">
+                        <span class="avatar-initial rounded-circle bg-label-danger">B</span>
+                      </div>
+                      <div class="list-content">
+                        <h6 class="mb-1">List group item heading</h6>
+                        <small class="text-body-secondary">Donec id elit non mi porta.</small>
+                      </div>
+                    </div>
+                    <small>1 day ago</small>
+                  </a>
+                  <a href="javascript:void(0);" class="list-group-item list-group-item-action d-flex justify-content-between">
+                    <div class="li-wrapper d-flex justify-content-start align-items-center">
+                      <div class="avatar avatar-sm me-4">
+                        <span class="avatar-initial rounded-circle bg-label-primary">V</span>
+                      </div>
+                      <div class="list-content">
+                        <h6 class="mb-1">List group item heading</h6>
+                        <small class="text-body-secondary">Donec id elit non mi porta.</small>
+                      </div>
+                    </div>
+                    <small>5 days ago</small>
+                  </a>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="notification-list-html" role="tabpanel" aria-labelledby="notification-list-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;list-group&quot;&gt;&#10;  &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action d-flex justify-content-between&quot;&gt;&#10;    &lt;div class=&quot;li-wrapper d-flex justify-content-start align-items-center&quot;&gt;&#10;      &lt;div class=&quot;avatar avatar-sm me-4&quot;&gt;&#10;        &lt;span class=&quot;avatar-initial rounded-circle bg-label-success&quot;&gt;M&lt;/span&gt;&#10;      &lt;/div&gt;&#10;      &lt;div class=&quot;list-content&quot;&gt;&#10;        &lt;h6 class=&quot;mb-1&quot;&gt;List group item heading&lt;/h6&gt;&#10;        &lt;small class=&quot;text-body-secondary&quot;&gt;Donec id elit non mi porta.&lt;/small&gt;&#10;      &lt;/div&gt;&#10;    &lt;/div&gt;&#10;    &lt;small&gt;3 days ago&lt;/small&gt;&#10;  &lt;/a&gt;&#10;  &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action d-flex justify-content-between&quot;&gt;&#10;    &lt;div class=&quot;li-wrapper d-flex justify-content-start align-items-center&quot;&gt;&#10;      &lt;div class=&quot;avatar avatar-sm me-4&quot;&gt;&#10;        &lt;span class=&quot;avatar-initial rounded-circle bg-label-danger&quot;&gt;B&lt;/span&gt;&#10;      &lt;/div&gt;&#10;      &lt;div class=&quot;list-content&quot;&gt;&#10;        &lt;h6 class=&quot;mb-1&quot;&gt;List group item heading&lt;/h6&gt;&#10;        &lt;small class=&quot;text-body-secondary&quot;&gt;Donec id elit non mi porta.&lt;/small&gt;&#10;      &lt;/div&gt;&#10;    &lt;/div&gt;&#10;    &lt;small&gt;1 day ago&lt;/small&gt;&#10;  &lt;/a&gt;&#10;  &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action d-flex justify-content-between&quot;&gt;&#10;    &lt;div class=&quot;li-wrapper d-flex justify-content-start align-items-center&quot;&gt;&#10;      &lt;div class=&quot;avatar avatar-sm me-4&quot;&gt;&#10;        &lt;span class=&quot;avatar-initial rounded-circle bg-label-primary&quot;&gt;V&lt;/span&gt;&#10;      &lt;/div&gt;&#10;      &lt;div class=&quot;list-content&quot;&gt;&#10;        &lt;h6 class=&quot;mb-1&quot;&gt;List group item heading&lt;/h6&gt;&#10;        &lt;small class=&quot;text-body-secondary&quot;&gt;Donec id elit non mi porta.&lt;/small&gt;&#10;      &lt;/div&gt;&#10;    &lt;/div&gt;&#10;    &lt;small&gt;5 days ago&lt;/small&gt;&#10;  &lt;/a&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-12" />
+
+      <!-- User List variation -->
+      <div class="row">
+        <div class="col-12">
+          <h6 id="user-list" class="anchor-heading fw-bold">
+            User List
+            
+          </h6>
+          <p>User List to display user status variation with image & other information.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="user-list-preview-tab" data-bs-toggle="tab" data-bs-target="#user-list-preview" role="tab" aria-controls="user-list-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="user-list-html-tab" data-bs-toggle="tab" data-bs-target="#user-list-html" role="tab" aria-controls="user-list-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="user-list-preview" role="tabpanel" aria-labelledby="user-list-preview-tab">
+                <div class="list-group">
+                  <a href="javascript:void(0);" class="list-group-item list-group-item-action d-flex align-items-center">
+                    <img src="assets/img/avatars/2.png" alt="User Image" class="rounded-circle me-4 w-px-50" />
+                    <div class="w-100">
+                      <div class="d-flex justify-content-between">
+                        <div class="user-info">
+                          <h6 class="mb-1">Danish sesame snaps halvah</h6>
+                          <small>13 minutes</small>
+                          <div class="user-status">
+                            <span class="badge badge-dot bg-success"></span>
+                            <small>Online</small>
+                          </div>
+                        </div>
+                        <div class="add-btn">
+                          <button class="btn btn-primary btn-sm">Add</button>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0);" class="list-group-item list-group-item-action d-flex align-items-center">
+                    <img src="assets/img/avatars/8.png" alt="User Image" class="rounded-circle me-4 w-px-50" />
+                    <div class="w-100">
+                      <div class="d-flex justify-content-between">
+                        <div class="user-info">
+                          <h6 class="mb-1">Cake halvah biscuit cheesecake</h6>
+                          <small class="text-body-secondary">11 minutes</small>
+                          <div class="user-status">
+                            <span class="badge badge-dot bg-warning"></span>
+                            <small>Away</small>
+                          </div>
+                        </div>
+                        <div class="add-btn">
+                          <button class="btn btn-primary btn-sm">Add</button>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0);" class="list-group-item list-group-item-action d-flex align-items-center">
+                    <img src="assets/img/avatars/4.png" alt="User Image" class="rounded-circle me-4 w-px-50" />
+                    <div class="w-100">
+                      <div class="d-flex justify-content-between">
+                        <div class="user-info">
+                          <h6 class="mb-1">Tart cheesecake jujubes caramels</h6>
+                          <small class="text-body-secondary">9 minutes</small>
+                          <div class="user-status">
+                            <span class="badge badge-dot bg-secondary"></span>
+                            <small>Offline</small>
+                          </div>
+                        </div>
+                        <div class="add-btn">
+                          <button class="btn btn-primary btn-sm">Add</button>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0);" class="list-group-item list-group-item-action d-flex align-items-center">
+                    <img src="assets/img/avatars/11.png" alt="User Image" class="rounded-circle me-4 w-px-50" />
+                    <div class="w-100">
+                      <div class="d-flex justify-content-between">
+                        <div class="user-info">
+                          <h6 class="mb-1">Icing sweet gummies</h6>
+                          <small class="text-body-secondary">15 minutes</small>
+                          <div class="user-status">
+                            <span class="badge badge-dot bg-danger"></span>
+                            <small>In Meeting</small>
+                          </div>
+                        </div>
+                        <div class="add-btn">
+                          <button class="btn btn-primary btn-sm">Add</button>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0);" class="list-group-item list-group-item-action d-flex align-items-center">
+                    <img src="assets/img/avatars/12.png" alt="User Image" class="rounded-circle me-4 w-px-50" />
+                    <div class="w-100">
+                      <div class="d-flex justify-content-between">
+                        <div class="user-info">
+                          <h6 class="mb-1">Chocolate cookie cake sweet</h6>
+                          <small class="text-body-secondary">5 minutes</small>
+                          <div class="user-status">
+                            <span class="badge badge-dot bg-success"></span>
+                            <small>Online</small>
+                          </div>
+                        </div>
+                        <div class="add-btn">
+                          <button class="btn btn-primary btn-sm">Add</button>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="user-list-html" role="tabpanel" aria-labelledby="user-list-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;list-group&quot;&gt;&#10;  &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action d-flex align-items-center&quot;&gt;&#10;    &lt;img src=&quot;../../assets/img/avatars/2.png&quot; alt=&quot;User Image&quot; class=&quot;rounded-circle me-4 w-px-50&quot;&gt;&#10;    &lt;div class=&quot;w-100&quot;&gt;&#10;      &lt;div class=&quot;d-flex justify-content-between&quot;&gt;&#10;        &lt;div class=&quot;user-info&quot;&gt;&#10;          &lt;h6 class=&quot;mb-1&quot;&gt;Danish sesame snaps halvah&lt;/h6&gt;&#10;          &lt;small&gt;13 minutes&lt;/small&gt;&#10;          &lt;div class=&quot;user-status&quot;&gt;&#10;            &lt;span class=&quot;badge badge-dot bg-success&quot;&gt;&lt;/span&gt;&#10;            &lt;small&gt;Online&lt;/small&gt;&#10;          &lt;/div&gt;&#10;        &lt;/div&gt;&#10;        &lt;div class=&quot;add-btn&quot;&gt;&#10;          &lt;button class=&quot;btn btn-primary btn-sm&quot;&gt;Add&lt;/button&gt;&#10;        &lt;/div&gt;&#10;      &lt;/div&gt;&#10;    &lt;/div&gt;&#10;  &lt;/a&gt;&#10;  &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action d-flex align-items-center&quot;&gt;&#10;    &lt;img src=&quot;../../assets/img/avatars/8.png&quot; alt=&quot;User Image&quot; class=&quot;rounded-circle me-4 w-px-50&quot;&gt;&#10;    &lt;div class=&quot;w-100&quot;&gt;&#10;      &lt;div class=&quot;d-flex justify-content-between&quot;&gt;&#10;        &lt;div class=&quot;user-info&quot;&gt;&#10;          &lt;h6 class=&quot;mb-1&quot;&gt;Cake halvah biscuit cheesecake&lt;/h6&gt;&#10;          &lt;small class=&quot;text-body-secondary&quot;&gt;11 minutes&lt;/small&gt;&#10;          &lt;div class=&quot;user-status&quot;&gt;&#10;            &lt;span class=&quot;badge badge-dot bg-warning&quot;&gt;&lt;/span&gt;&#10;            &lt;small&gt;Away&lt;/small&gt;&#10;          &lt;/div&gt;&#10;        &lt;/div&gt;&#10;        &lt;div class=&quot;add-btn&quot;&gt;&#10;          &lt;button class=&quot;btn btn-primary btn-sm&quot;&gt;Add&lt;/button&gt;&#10;        &lt;/div&gt;&#10;      &lt;/div&gt;&#10;    &lt;/div&gt;&#10;  &lt;/a&gt;&#10;  &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action d-flex align-items-center&quot;&gt;&#10;    &lt;img src=&quot;../../assets/img/avatars/4.png&quot; alt=&quot;User Image&quot; class=&quot;rounded-circle me-4 w-px-50&quot;&gt;&#10;    &lt;div class=&quot;w-100&quot;&gt;&#10;      &lt;div class=&quot;d-flex justify-content-between&quot;&gt;&#10;        &lt;div class=&quot;user-info&quot;&gt;&#10;          &lt;h6 class=&quot;mb-1&quot;&gt;Tart cheesecake jujubes caramels&lt;/h6&gt;&#10;          &lt;small class=&quot;text-body-secondary&quot;&gt;9 minutes&lt;/small&gt;&#10;          &lt;div class=&quot;user-status&quot;&gt;&#10;            &lt;span class=&quot;badge badge-dot bg-secondary&quot;&gt;&lt;/span&gt;&#10;            &lt;small&gt;Offline&lt;/small&gt;&#10;          &lt;/div&gt;&#10;        &lt;/div&gt;&#10;        &lt;div class=&quot;add-btn&quot;&gt;&#10;          &lt;button class=&quot;btn btn-primary btn-sm&quot;&gt;Add&lt;/button&gt;&#10;        &lt;/div&gt;&#10;      &lt;/div&gt;&#10;    &lt;/div&gt;&#10;  &lt;/a&gt;&#10;  &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action d-flex align-items-center&quot;&gt;&#10;    &lt;img src=&quot;../../assets/img/avatars/11.png&quot; alt=&quot;User Image&quot; class=&quot;rounded-circle me-4 w-px-50&quot;&gt;&#10;    &lt;div class=&quot;w-100&quot;&gt;&#10;      &lt;div class=&quot;d-flex justify-content-between&quot;&gt;&#10;        &lt;div class=&quot;user-info&quot;&gt;&#10;          &lt;h6 class=&quot;mb-1&quot;&gt;Icing sweet gummies&lt;/h6&gt;&#10;          &lt;small class=&quot;text-body-secondary&quot;&gt;15 minutes&lt;/small&gt;&#10;          &lt;div class=&quot;user-status&quot;&gt;&#10;            &lt;span class=&quot;badge badge-dot bg-danger&quot;&gt;&lt;/span&gt;&#10;            &lt;small&gt;In Meeting&lt;/small&gt;&#10;          &lt;/div&gt;&#10;        &lt;/div&gt;&#10;        &lt;div class=&quot;add-btn&quot;&gt;&#10;          &lt;button class=&quot;btn btn-primary btn-sm&quot;&gt;Add&lt;/button&gt;&#10;        &lt;/div&gt;&#10;      &lt;/div&gt;&#10;    &lt;/div&gt;&#10;  &lt;/a&gt;&#10;  &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action d-flex align-items-center&quot;&gt;&#10;    &lt;img src=&quot;../../assets/img/avatars/12.png&quot; alt=&quot;User Image&quot; class=&quot;rounded-circle me-4 w-px-50&quot;&gt;&#10;    &lt;div class=&quot;w-100&quot;&gt;&#10;      &lt;div class=&quot;d-flex justify-content-between&quot;&gt;&#10;        &lt;div class=&quot;user-info&quot;&gt;&#10;          &lt;h6 class=&quot;mb-1&quot;&gt;Chocolate cookie cake sweet&lt;/h6&gt;&#10;          &lt;small class=&quot;text-body-secondary&quot;&gt;5 minutes&lt;/small&gt;&#10;          &lt;div class=&quot;user-status&quot;&gt;&#10;            &lt;span class=&quot;badge badge-dot bg-success&quot;&gt;&lt;/span&gt;&#10;            &lt;small&gt;Online&lt;/small&gt;&#10;          &lt;/div&gt;&#10;        &lt;/div&gt;&#10;        &lt;div class=&quot;add-btn&quot;&gt;&#10;          &lt;button class=&quot;btn btn-primary btn-sm&quot;&gt;Add&lt;/button&gt;&#10;        &lt;/div&gt;&#10;      &lt;/div&gt;&#10;    &lt;/div&gt;&#10;  &lt;/a&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-12" />
+
+      <!-- Progress variation -->
+      <div class="row">
+        <div class="col-12">
+          <h6 id="progress-list" class="anchor-heading fw-bold">
+            Progress
+            
+          </h6>
+          <p>Progressbar variation to show progress report.</p>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="progress-list-preview-tab" data-bs-toggle="tab" data-bs-target="#progress-list-preview" role="tab" aria-controls="progress-list-preview" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="progress-list-html-tab" data-bs-toggle="tab" data-bs-target="#progress-list-html" role="tab" aria-controls="progress-list-html" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="progress-list-preview" role="tabpanel" aria-labelledby="progress-list-preview-tab">
+                <div class="list-group">
+                  <a href="javascript:void(0);" class="list-group-item list-group-item-action d-flex align-items-center p-4">
+                    <div class="badge bg-primary rounded p-1 me-4"><i class="icon-base ti tabler-brand-bootstrap icon-xl text-white"></i></div>
+                    <div class="w-100">
+                      <h6 class="mb-2">Bootstrap is an open source toolkit</h6>
+                      <div class="progress" style="height: 5px;">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0);" class="list-group-item list-group-item-action d-flex align-items-center p-4">
+                    <div class="badge bg-success rounded p-1 me-4"><i class="icon-base ti tabler-brand-vue icon-xl text-white"></i></div>
+                    <div class="w-100">
+                      <h6 class="mb-2">Vue.js is the Progressive JavaScript Framework</h6>
+                      <div class="progress" style="height: 5px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0);" class="list-group-item list-group-item-action d-flex align-items-center p-4">
+                    <div class="badge bg-danger rounded p-1 me-4"><i class="icon-base ti tabler-brand-angular icon-xl text-white"></i></div>
+                    <div class="w-100">
+                      <h6 class="mb-2">Angular implements Functional Programming concepts</h6>
+                      <div class="progress" style="height: 5px;">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 55%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0);" class="list-group-item list-group-item-action d-flex align-items-center p-4">
+                    <div class="badge bg-info rounded p-1 me-4"><i class="icon-base ti tabler-brand-react-native icon-xl text-white"></i></div>
+                    <div class="w-100">
+                      <h6 class="mb-2">List group item heading</h6>
+                      <div class="progress" style="height: 5px;">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0);" class="list-group-item list-group-item-action d-flex align-items-center p-4">
+                    <div class="badge bg-warning rounded p-1 me-4"><i class="icon-base ti tabler-brand-javascript icon-xl text-white"></i></div>
+                    <div class="w-100">
+                      <h6 class="mb-2">JavaScript, the most popular framework</h6>
+                      <div class="progress" style="height: 5px;">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 65%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="progress-list-html" role="tabpanel" aria-labelledby="progress-list-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;list-group&quot;&gt;&#10;  &lt;a href=&quot;javascript:void(0);&quot; class=&quot;list-group-item list-group-item-action d-flex align-items-center p-4&quot;&gt;&#10;    &lt;div class=&quot;badge bg-primary rounded p-1 me-4&quot;&gt;&lt;i class=&quot;icon-base ti tabler-brand-bootstrap icon-xl text-white&quot;&gt;&lt;/i&gt;&lt;/div&gt;&#10;    &lt;div class=&quot;w-100&quot;&gt;&#10;      &lt;h6 class=&quot;mb-2&quot;&gt;Bootstrap is an open source toolkit&lt;/h6&gt;&#10;      &lt;div class=&quot;progress&quot; style=&quot;height: 5px;&quot;&gt;&#10;        &lt;div class=&quot;progress-bar bg-primary&quot; role=&quot;progressbar&quot; style=&quot;width: 95%;&quot; aria-valuenow=&quot;25&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;&#10;      &lt;/div&gt;&#10;    &lt;/div&gt;&#10;  &lt;/a&gt;&#10;  &lt;a href=&quot;javascript:void(0);&quot; class=&quot;list-group-item list-group-item-action d-flex align-items-center p-4&quot;&gt;&#10;    &lt;div class=&quot;badge bg-success rounded p-1 me-4&quot;&gt;&lt;i class=&quot;icon-base ti tabler-brand-vue icon-xl text-white&quot;&gt;&lt;/i&gt;&lt;/div&gt;&#10;    &lt;div class=&quot;w-100&quot;&gt;&#10;      &lt;h6 class=&quot;mb-2&quot;&gt;Vue.js is the Progressive JavaScript Framework&lt;/h6&gt;&#10;      &lt;div class=&quot;progress&quot; style=&quot;height: 5px;&quot;&gt;&#10;        &lt;div class=&quot;progress-bar bg-success&quot; role=&quot;progressbar&quot; style=&quot;width: 85%;&quot; aria-valuenow=&quot;25&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;&#10;      &lt;/div&gt;&#10;    &lt;/div&gt;&#10;  &lt;/a&gt;&#10;  &lt;a href=&quot;javascript:void(0);&quot; class=&quot;list-group-item list-group-item-action d-flex align-items-center p-4&quot;&gt;&#10;    &lt;div class=&quot;badge bg-danger rounded p-1 me-4&quot;&gt;&lt;i class=&quot;icon-base ti tabler-brand-angular icon-xl text-white&quot;&gt;&lt;/i&gt;&lt;/div&gt;&#10;    &lt;div class=&quot;w-100&quot;&gt;&#10;      &lt;h6 class=&quot;mb-2&quot;&gt;Angular implements Functional Programming concepts&lt;/h6&gt;&#10;      &lt;div class=&quot;progress&quot; style=&quot;height: 5px;&quot;&gt;&#10;        &lt;div class=&quot;progress-bar bg-danger&quot; role=&quot;progressbar&quot; style=&quot;width: 55%;&quot; aria-valuenow=&quot;25&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;&#10;      &lt;/div&gt;&#10;    &lt;/div&gt;&#10;  &lt;/a&gt;&#10;  &lt;a href=&quot;javascript:void(0);&quot; class=&quot;list-group-item list-group-item-action d-flex align-items-center p-4&quot;&gt;&#10;    &lt;div class=&quot;badge bg-info rounded p-1 me-4&quot;&gt;&lt;i class=&quot;icon-base ti tabler-brand-react-native icon-xl text-white&quot;&gt;&lt;/i&gt;&lt;/div&gt;&#10;    &lt;div class=&quot;w-100&quot;&gt;&#10;      &lt;h6 class=&quot;mb-2&quot;&gt;List group item heading&lt;/h6&gt;&#10;      &lt;div class=&quot;progress&quot; style=&quot;height: 5px;&quot;&gt;&#10;        &lt;div class=&quot;progress-bar bg-info&quot; role=&quot;progressbar&quot; style=&quot;width: 75%;&quot; aria-valuenow=&quot;25&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;&#10;      &lt;/div&gt;&#10;    &lt;/div&gt;&#10;  &lt;/a&gt;&#10;  &lt;a href=&quot;javascript:void(0);&quot; class=&quot;list-group-item list-group-item-action d-flex align-items-center p-4&quot;&gt;&#10;    &lt;div class=&quot;badge bg-warning rounded p-1 me-4&quot;&gt;&lt;i class=&quot;icon-base ti tabler-brand-javascript icon-xl text-white&quot;&gt;&lt;/i&gt;&lt;/div&gt;&#10;    &lt;div class=&quot;w-100&quot;&gt;&#10;      &lt;h6 class=&quot;mb-2&quot;&gt;JavaScript, the most popular framework&lt;/h6&gt;&#10;      &lt;div class=&quot;progress&quot; style=&quot;height: 5px;&quot;&gt;&#10;        &lt;div class=&quot;progress-bar bg-warning&quot; role=&quot;progressbar&quot; style=&quot;width: 65%;&quot; aria-valuenow=&quot;25&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;&#10;      &lt;/div&gt;&#10;    &lt;/div&gt;&#10;  &lt;/a&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-none d-xl-block col-xl-2 doc-sidebar container-p-y">
+      <nav id="vertical-nav" class="navbar p-0">
+        <ul class="doc-sidebar-nav">
+          <li class="doc-entry doc-h2"><a class="nav-link" href="#basic-list-group">Basic List Group</a></li>
+          <li class="doc-entry doc-h2"><a class="nav-link" href="#active-item-list-group">Active items</a></li>
+          <li class="doc-entry doc-h2"><a class="nav-link" href="#disabled-list-item">Disabled items</a></li>
+          <li class="doc-entry doc-h2"><a class="nav-link" href="#link-button">Links and Buttons</a></li>
+          <li class="doc-entry doc-h2"><a class="nav-link" href="#flush-list-item">Flush</a></li>
+          <li class="doc-entry doc-h2"><a class="nav-link" href="#numbered-list-item">Numbered</a></li>
+          <li class="doc-entry doc-h2"><a class="nav-link" href="#contextual-classses">Contextual Classes</a></li>
+          <li class="doc-entry doc-h2"><a class="nav-link" href="#badges-pills">With Badges & Pills</a></li>
+          <li class="doc-entry doc-h2"><a class="nav-link" href="#custom-content">Custom content</a></li>
+          <li class="doc-entry doc-h2"><a class="nav-link" href="#checkboxes-radios">Checkboxes and radios</a></li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#vertical-list">JavaScript behavior</a>
+            <ul>
+              <li class="doc-entry doc-h3"><a class="nav-link" href="#vertical-list">Vertical</a></li>
+              <li class="doc-entry doc-h3"><a class="nav-link" href="#horizontal-list">Horizontal</a></li>
+            </ul>
+          </li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#list-group-variations">List Group Variations <span class="badge badge-center rounded-pill bg-label-danger badge-sm">C</span></a>
+            <ul>
+              <li class="doc-entry doc-h3"><a class="nav-link" href="#with-icon-list">With Icons</a></li>
+              <li class="doc-entry doc-h3"><a class="nav-link" href="#timeline-list">Timeline</a></li>
+              <li class="doc-entry doc-h3"><a class="nav-link" href="#notification-list">Notification</a></li>
+              <li class="doc-entry doc-h3"><a class="nav-link" href="#user-list">User List</a></li>
+              <li class="doc-entry doc-h3"><a class="nav-link" href="#progress-list">Progress</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+          <!-- / Content -->
+
+          
+            <footer class="content-footer footer">
+  <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center text-center py-4">
+    <div>
+      &#169; 2017-
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      
+        <a href="https://pixinvent.com" class="footer-text fw-medium" target="_blank">Pixinvent</a>, Hand-crafted & Made with â¤ï¸
+      
+    </div>
+    <div>
+      
+        <a href="https://www.facebook.com/pixinvents/" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-facebook"></i></a>
+      
+      
+        <a href="https://x.com/pixinvents" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-twitter"></i></a>
+      
+      
+        <a href="https://github.com/pixinvent" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-github"></i></a>
+      
+      
+        <a href="https://dribbble.com/pixinvent" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-dribbble"></i></a>
+      
+      
+        <a href="https://www.instagram.com/pixinvents/" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-instagram"></i></a>
+      
+    </div>
+  </div>
+</footer>
+
+          
+        </div>
+        <!-- Content wrapper -->
+      </div>
+      <!-- / Layout page -->
+    </div>
+
+    
+      
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    
+    <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+    <div class="drag-target"></div>
+  </div>
+  <!-- / Layout wrapper -->
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="assets/vendor/libs/highlight/highlight.js"></script>
+    <script src="assets/vendor/libs/clipboard/clipboard.js"></script>
+    
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/vendor/libs/node-waves/node-waves.js"></script>
+    <script src="assets/vendor/libs/@algolia/autocomplete-js.js"></script>
+    <script src="assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="assets/vendor/js/menu.js"></script>
+    <!-- Vendors JS -->
+    
+
+    <!-- Page JS -->
+    <script src="assets/js/docs.js"></script>
+    
+  </body>
+</html>
+
+  <!-- beautify ignore:end -->
+

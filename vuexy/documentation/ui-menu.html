@@ -1,0 +1,3033 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- =========================================================
+* Vuexy - Bootstrap Dashboard PRO | v3.0.0
+==============================================================
+
+* Product Page: https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599
+* Created by: Pixinvent
+
+    * License: You must have a valid license purchased in order to legally use the theme for your project.
+  
+* Copyright Pixinvent (https://pixinvent.com)
+
+=========================================================
+ -->
+  <!-- beautify ignore:start -->
+
+<html lang="en" class="docs-page  layout-menu-fixed-offcanvas " data-assets-path="assets/" data-skin="bordered">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Docs: Menu - UI elements | Vuexy - Bootstrap Dashboard PRO</title>
+
+    <meta name="description" content="Vuexy is the best bootstrap 5 dashboard for responsive web apps. Streamline your app development process with ease." />
+    <meta name="keywords" content="Vuexy bootstrap dashboard, vuexy bootstrap 5 dashboard, themeselection, html dashboard, web dashboard, frontend dashboard, responsive bootstrap theme" />
+    <meta property="og:title" content="Vuexy bootstrap Dashboard by Pixinvent" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" />
+    <meta property="og:image" content="https://pixinvent.com/wp-content/uploads/2023/06/vuexy-hero-image.png" />
+    <meta property="og:description" content="Vuexy is the best bootstrap 5 dashboard for responsive web apps. Streamline your app development process with ease." />
+    <meta property="og:site_name" content="Pixinvent" />
+
+    <!-- Canonical SEO -->
+    <link rel="canonical" href="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" />
+
+    
+      
+      <script>
+        (function (w, d, s, l, i) {
+          w[l] = w[l] || [];
+          w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+          });
+          var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+          j.async = true;
+          j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+          f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5J3LMKC');
+      </script>
+      
+    
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="48x48" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="16x16" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="32x32" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="180x180" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="192x192" type="image/x-icon" />
+    <link rel="icon" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/assets/img/favicon/favicon.ico" sizes="512x512" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendor/fonts/iconify-icons.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/node-waves/node-waves.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/highlight/highlight.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+    
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="assets/vendor/css/core.css" />
+    <link rel="stylesheet" href="assets/css/demo.css" />
+    <link rel="stylesheet" href="assets/css/docs.css" />
+
+    <!-- Page CSS -->
+    
+
+    <!-- Core JS -->
+    <script src="assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: Don't remove unless you are aware of it, To hide customizer set displayCustomizer value false in config.js.  -->
+    <!-- <script src="assets/vendor/js/template-customizer.js"></script> -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="assets/js/config.js"></script>
+  </head>
+
+  <body>
+    
+      
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5J3LMKC" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+      
+    
+
+    <!-- Layout wrapper -->
+  <div class="layout-wrapper layout-navbar-full ">
+    <div class="layout-container">
+      
+        
+
+
+<!-- Navbar main -->
+
+<nav class="layout-navbar navbar navbar-expand-lg align-items-lg-center bg-white border-bottom" id="layout-navbar">
+  <div class="container-fluid">
+    
+      <!-- Menu toggle (see assets/css/demo/demo.css) -->
+      <div class="layout-menu-toggle navbar-nav d-lg-none align-items-lg-center">
+        <a class="nav-item nav-link px-0 me-lg-4" href="javascript:void(0)">
+          <i class="icon-base ti tabler-menu-2 icon-md align-middle"></i>
+        </a>
+      </div>
+    
+
+    <!-- Brand demo (see assets/css/demo/demo.css) -->
+    <div class="navbar-brand app-brand demo py-0 me-md-auto me-12 ms-lg-0 ms-0">
+      <a href="index.html" class="app-brand-link">
+        <span class="app-brand-logo demo">
+  <span class="text-primary">
+    <svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.00172773 0V6.85398C0.00172773 6.85398 -0.133178 9.01207 1.98092 10.8388L13.6912 21.9964L19.7809 21.9181L18.8042 9.88248L16.4951 7.17289L9.23799 0H0.00172773Z" fill="currentColor" />
+      <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd" d="M7.69824 16.4364L12.5199 3.23696L16.5541 7.25596L7.69824 16.4364Z" fill="#161616" />
+      <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd" d="M8.07751 15.9175L13.9419 4.63989L16.5849 7.28475L8.07751 15.9175Z" fill="#161616" />
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z" fill="currentColor" />
+    </svg>
+  </span>
+</span>
+        <span class="app-brand-text demo menu-text fw-bold">Vuexy</span>
+      </a>
+    </div>
+
+    <div class="d-flex ms-md-6 gap-3">
+      
+      <div class="navbar-nav align-items-lg-center justify-content-center">
+        <!-- Search -->
+        <div class="navbar-nav align-items-center">
+          <div class="nav-item navbar-search-wrapper mb-0">
+            <a class="nav-item nav-link search-toggler border rounded-3 py-2 px-md-4 px-2 d-flex align-items-center" href="javascript:void(0);">
+              <span class="d-inline-block text-body-secondary fw-normal" id="autocomplete"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbar-collapse">
+        <hr class="d-lg-none w-100 my-2" />
+        <!-- Divider -->
+
+        <div class="navbar-nav align-items-lg-center">
+          
+          <ul class="navbar-nav">
+            <!-- Technology dropdown -->
+            
+            
+              
+                <li class="nav-item dropdown me-2">
+                  <button class="btn dropdown-toggle py-2 btn-primary" type="button" id="livePreview" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-base ti tabler-current-location me-2"></i> Live preview</button>
+                  <ul class="dropdown-menu" aria-labelledby="livePreview">
+                    <li>
+                      <a href="https://pixinvent.com/vuexy-bootstrap-html-admin-template/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>HTML preview</a>
+                    </li>
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-laravel-admin-template/demo-1/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>Laravel preview</a>
+                      </li>
+                    
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-admin-template/html/vertical-menu-template/" target="_blank" class="nav-link"><i class="icon-base ti tabler-current-location me-2"></i>.Net Core preview</a>
+                      </li>
+                    
+                    
+                      <li>
+                        <a href="https://demos.pixinvent.com/vuexy-html-django-admin-template/demo-1/" target="_blank" class="nav-link text-nowrap"><i class="icon-base ti tabler-current-location me-2"></i>Django preview</a>
+                      </li>
+                    
+                  </ul>
+                </li>
+              
+            
+            
+              <li class="nav-item me-2">
+                <a href="https://pixinvent.ticksy.com/" target="_blank" class="nav-link d-flex align-items-center">
+                  <i class="icon-base ti tabler-lifebuoy me-2"></i>
+                  <span>Support</span>
+                </a>
+              </li>
+            
+            
+              <li class="nav-item">
+                <a href="https://themeforest.net/user/pixinvent/portfolio" target="_blank" class="nav-link d-flex align-items-center">
+                  <i class="icon-base ti tabler-gift me-2"></i>
+                  <span> More Themes</span>
+                </a>
+              </li>
+            
+            
+              <li class="nav-item">
+                <a href="https://themeselection.com/hire-us/" target="_blank" class="nav-link"><i class="icon-base ti tabler-briefcase"></i> Hire Us</a>
+              </li>
+            
+          </ul>
+
+          <!-- Divider -->
+          <div class="nav-item d-none d-lg-block text-big fw-light lh-1 me-4 ms-1">|</div>
+
+          
+            <div class="buy-now-btn">
+              <a href="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599" target="_blank" class="btn btn-danger d-flex align-items-center gap-2">
+                <i class="icon-base ti tabler-shopping-cart"></i>
+                <span>Buy Now</span>
+              </a>
+            </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</nav>
+<!-- / Navbar main -->
+
+      
+
+      <!-- Layout page -->
+      <div class="layout-page">
+        
+          
+
+
+
+
+<!-- Menu -->
+<aside id="layout-menu" class="layout-menu menu-doc menu menu-vertical bg-menu-theme">
+  
+  <div class="menu-divider mt-0   d-xl-none "></div>
+
+  <!-- Links -->
+  <ul class="menu-inner py-1">
+    <li class="menu-header text-uppercase small fw-medium">Getting Started</li>
+    <li class="menu-item">
+      <a href="index.html" class="menu-link">
+        <div>Introduction</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="licenses.html" class="menu-link">
+        <div>Licenses</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="folder-structure.html" class="menu-link">
+        <div>Folder Structure</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="quick-start.html" class="menu-link">
+        <div>Quick Start</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="config.html" class="menu-link">
+        <div>Config ð¤©</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="installation-build.html" class="menu-link">
+        <div>Installation & Build</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="template-customizer.html" class="menu-link">
+        <div>Template Customizer</div>
+        
+      </a>
+    </li>
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Customization</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="customization-sass.html" class="menu-link">
+            <div>SASS</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="customization-js.html" class="menu-link">
+            <div>JavaScript</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="customization-third-party-plugins.html" class="menu-link">
+            <div>Third Party Plugins</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="layouts.html" class="menu-link">
+        <div>Layouts</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="dependencies.html" class="menu-link">
+        <div>Dependencies</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="faq.html" class="menu-link">
+        <div>FAQs</div>
+      </a>
+    </li>
+    
+      <!-- Laravel Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row">
+        <span class="me-1">Laravel</span>
+        <span class="badge badge-demo bg-label-danger ms-auto">HTML + Laravel Only</span>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="laravel-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-starter-kit-vs-full-version.html" class="menu-link">
+              <div>Starter-kit Vs Full-version</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-init-demo-config.html" class="menu-link">
+              <div>Demo Configs</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Auth & ACL</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-auth-jetstream.html" class="menu-link">
+              <div>JetStream</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-passport.html" class="menu-link">
+              <div>Passport</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-sanctum.html" class="menu-link">
+              <div>Sanctum</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-auth-acl.html" class="menu-link">
+              <div>ACL</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="laravel-articles-database-connections.html" class="menu-link">
+              <div>Database Connections</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-existing-project.html" class="menu-link">
+              <div>Exiting Project Migration</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="laravel-articles-form-validation-integration.html" class="menu-link">
+              <div>Form Validation Package Integration</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-localization.html" class="menu-link">
+          <div>Localization</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-search.html" class="menu-link">
+          <div>Search</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-sail-docker.html" class="menu-link">
+          <div>Sail & Docker</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-deployment.html" class="menu-link">
+          <div>Deployment</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="laravel-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Dotnet Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>ASP.NET CORE</span> <span class="badge badge-demo bg-label-danger ms-auto">Razor Pages</span></li>
+
+      <li class="menu-item">
+        <a href="net-core-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-assets-compilation.html" class="menu-link">
+              <div>Assets Compilation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-start-with-doker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-init-starter-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="net-core-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Dotnet Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>ASP.NET CORE MVC</span> <span class="badge badge-demo bg-label-danger ms-auto">MVC</span></li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-mvc-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-assets-compilation.html" class="menu-link">
+              <div>Assets Compilation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-start-with-docker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="net-core-mvc-init-starter-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="net-core-mvc-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="net-core-mvc-articles-create-new-page.html" class="menu-link">
+              <div>Create New Page</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-crud.html" class="menu-link">
+          <div>CRUD</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="net-core-mvc-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+    
+
+    
+      <!-- Django Documentation -->
+      <li class="menu-divider mb-1"></li>
+      <li class="menu-header small fw-medium d-flex flex-row"><span>Django</span> <span class="badge badge-demo bg-label-danger ms-auto">Django Only</span></li>
+
+      <li class="menu-item">
+        <a href="django-introduction.html" class="menu-link">
+          <div>Introduction</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Overview</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="django-init-getting-started.html" class="menu-link">
+              <div>Getting Started</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-folder-structure.html" class="menu-link">
+              <div>Folder Structure</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-installation.html" class="menu-link">
+              <div>Installation</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-start-with-doker.html" class="menu-link">
+              <div>Start with Docker</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-layout.html" class="menu-link">
+              <div>Layout</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-configurations.html" class="menu-link">
+              <div>Configurations</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-demo-config.html" class="menu-link">
+              <div>Demo Config</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-starter-kit-vs-full-version.html" class="menu-link">
+              <div>Starter Vs Full Version</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-init-dependencies.html" class="menu-link">
+              <div>Dependencies</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="django-third-party-libraries.html" class="menu-link">
+          <div>Third-party Libraries</div>
+        </a>
+      </li>
+
+      <li class="menu-item
+  ">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Articles</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="django-articles-create-new-page.html" class="menu-link">
+              <div>Create New Apps & Pages</div>
+            </a>
+          </li>
+          <!-- <li class="menu-item">
+          <a href="django-articles-existing-project.html" class="menu-link">
+            <div>Exiting Project Migration</div>
+          </a>
+        </li> -->
+          <li class="menu-item">
+            <a href="django-articles-admin-superuser.html" class="menu-link">
+              <div>Admin and Create User</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-authentication.html" class="menu-link">
+              <div>Authentication</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="django-articles-permissions-authorization.html" class="menu-link">
+              <div>Permissions & Authorization</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-crud.html" class="menu-link">
+              <div>CRUD Example</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="django-articles-admin-db.html" class="menu-link">
+              <div>Admin and Database</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-localization.html" class="menu-link">
+          <div>Localization</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-menu.html" class="menu-link">
+          <div>Menu</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-search.html" class="menu-link">
+          <div>Search</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-theme-api.html" class="menu-link">
+          <div>Theme API</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-faqs.html" class="menu-link">
+          <div>FAQs</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="django-deployment.html" class="menu-link">
+          <div>Deployment</div>
+        </a>
+      </li>
+    
+    <!-- Apps & Pages -->
+    <li class="menu-divider mb-1"></li>
+    <li class="menu-header text-uppercase small fw-medium">Design System</li>
+
+    <li class="menu-item">
+      <a href="typography.html" class="menu-link">
+        <div>Typography</div>
+      </a>
+    </li>
+
+    <li class="menu-item">
+      <a href="colors.html" class="menu-link">
+        <div>Colors</div>
+      </a>
+    </li>
+
+    <li class="menu-item">
+      <a href="Icons.html" class="menu-link">
+        <div>Icons</div>
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+    <!-- Components -->
+    <li class="menu-header text-uppercase small fw-medium">Components</li>
+
+    <!-- UI Elements -->
+    <li class="menu-item
+   active open">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>UI Elements</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="ui-accordion.html" class="menu-link">
+            <div>Accordion</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-alerts.html" class="menu-link">
+            <div>Alerts</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-app-brand.html" class="menu-link">
+            <div>App Brand</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-badges.html" class="menu-link">
+            <div>Badges</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-buttons.html" class="menu-link">
+            <div>Buttons</div>
+          </a>
+        </li>
+        <li class="menu-item
+  ">
+          <a href="javascript:void(0);" class="menu-link menu-toggle">
+            <div>Cards</div>
+          </a>
+          <ul class="menu-sub">
+            <li class="menu-item">
+              <a href="ui-cards-basic.html" class="menu-link">
+                <div>Basic</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="ui-cards-actions.html" class="menu-link">
+                <div>Actions</div>
+                
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="ui-carousel.html" class="menu-link">
+            <div>Carousel</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-collapse.html" class="menu-link">
+            <div>Collapse</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-dropdowns.html" class="menu-link">
+            <div>Dropdowns</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-footer.html" class="menu-link">
+            <div>Footer</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-list-groups.html" class="menu-link">
+            <div>List groups</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-modals.html" class="menu-link">
+            <div>Modals</div>
+          </a>
+        </li>
+        <li class="menu-item active">
+          <a href="ui-menu.html" class="menu-link">
+            <div>Menu</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-navbar.html" class="menu-link">
+            <div>Navbar</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-offcanvas.html" class="menu-link">
+            <div>Offcanvas</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-pagination-breadcrumbs.html" class="menu-link">
+            <div>Pagination &amp; Breadcrumbs</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-popovers.html" class="menu-link">
+            <div>Popovers</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-progress.html" class="menu-link">
+            <div>Progress</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-spinners.html" class="menu-link">
+            <div>Spinners</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-navs.html" class="menu-link">
+            <div>Navs</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-tabs-pills.html" class="menu-link">
+            <div>Tabs &amp; Pills</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-toasts.html" class="menu-link">
+            <div>Toasts</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="ui-tooltips.html" class="menu-link">
+            <div>Tooltips</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+
+    <!-- Extended components -->
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Extended UI</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="extended-ui-avatar.html" class="menu-link">
+            <div>Avatar</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-blockui.html" class="menu-link">
+            <div>BlockUI</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-drag-and-drop.html" class="menu-link">
+            <div>Drag &amp; Drop</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-media-player.html" class="menu-link">
+            <div>Media Player</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-perfect-scrollbar.html" class="menu-link">
+            <div>Perfect scrollbar</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-star-ratings.html" class="menu-link">
+            <div>Star Ratings</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-sweetalert2.html" class="menu-link">
+            <div>SweetAlert2</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-text-divider.html" class="menu-link">
+            <div>Text Divider</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-timeline.html" class="menu-link">
+            <div>Timeline</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-tour.html" class="menu-link">
+            <div>Tour</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-treeview.html" class="menu-link">
+            <div>Treeview</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="extended-ui-misc.html" class="menu-link">
+            <div>Miscellaneous</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Forms -->
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <div>Forms</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="forms-basic-inputs.html" class="menu-link">
+            <div>Basic Inputs</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-input-groups.html" class="menu-link">
+            <div>Input groups</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-custom-options.html" class="menu-link">
+            <div>Custom Options</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-editors.html" class="menu-link">
+            <div>Editors</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-file-upload.html" class="menu-link">
+            <div>File Upload</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-pickers.html" class="menu-link">
+            <div>Pickers</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-selects.html" class="menu-link">
+            <div>Select &amp; Tags</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-sliders.html" class="menu-link">
+            <div>Sliders</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-switches.html" class="menu-link">
+            <div>Switches</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-extras.html" class="menu-link">
+            <div>Extras</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-validation.html" class="menu-link">
+            <div>Validation</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-wizard.html" class="menu-link">
+            <div>Wizard</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="forms-layouts-sticky.html" class="menu-link">
+            <div>Sticky Actions</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <!-- Tables -->
+    <li class="menu-item">
+      <a href="tables-basic.html" class="menu-link">
+        <div>Tables</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="tables-datatables.html" class="menu-link">
+        <div>Datatables</div>
+        
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="utilities.html" class="menu-link">
+        <div>Utilities</div>
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+    <!-- Charts & Maps -->
+    <li class="menu-header text-uppercase small fw-medium">Charts &amp; Maps</li>
+
+    <li class="menu-item
+  ">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <div data-i18n="Charts">Charts</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="charts-apex.html" class="menu-link">
+            <div>Apex Charts</div>
+            
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="charts-chartjs.html" class="menu-link">
+            <div>ChartJS</div>
+            
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="maps-leaflet.html" class="menu-link">
+        <div>Leaflet</div>
+        
+      </a>
+    </li>
+
+    <li class="menu-divider mb-1"></li>
+
+    <!-- Charts & Maps -->
+    <li class="menu-header text-uppercase small fw-medium">Others</li>
+    <li class="menu-item">
+      <a href="credits.html" class="menu-link">
+        <div>Credits</div>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="https://pixinvent.ticksy.com/" target="_blank" class="menu-link">
+        <div>Support</div>
+      </a>
+    </li>
+  </ul>
+</aside>
+<!-- / Menu -->
+
+        
+
+        <!-- Content wrapper -->
+        <div class="content-wrapper">
+          <!-- Content -->
+          <div class="container-xxl flex-grow-1 container-p-y">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-xl-10 container-p-y">
+      <h2 class="mb-6 doc-page-title">Menu</h2>
+      <p>Easily Navigate through the app using Menu. Here, you will find documentation for different types of menu, initialization options, collapsed, accordion, animation and color options one can use to meet requirements of his app.</p>
+
+      <hr class="my-12" />
+
+      <!-- Usage -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="menu-usage" class="anchor-heading mb-6 fw-bold">Usage</h4>
+          <p>In order to use Menu on your page, It is required to include the following vendors script in the "Vendors JS" area from the page's footer:</p>
+
+          <div class="doc-example">
+            <div class="doc-example-content" data-label="Code">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+              </div>
+              <pre class="docs-code"><code class="html">&lt;script src=&quot;../../assets/vendor/js/menu.js&quot;&gt;&lt;script&gt;</code></pre>
+            </div>
+          </div>
+
+          <div class="alert alert-info mt-4" role="alert"><strong>Tip:</strong> For Collapsed, Static and Fixed menu please refer <a class="alert-link" href="layouts.html#layout-options">layout options</a>.</div>
+        </div>
+      </div>
+      <!--/ Usage -->
+      <hr class="my-12" />
+
+      <!-- Menu Initialization Options -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="menu-initialization-options" class="anchor-heading mb-6 fw-bold">Menu Initialization Options</h4>
+          <p>Following are the available menu initialization options with data types, default values and description.</p>
+          <table class="table table-bordered doc-table mt-4">
+            <thead>
+              <tr>
+                <th scope="col">Option</th>
+                <th scope="col">Datatype</th>
+                <th scope="col">Default Value</th>
+                <th scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">
+                  <code>orientation</code>
+                </td>
+                <td>string</td>
+                <td>""</td>
+                <td>The orientation of the menu. Possible values: "horizontal". Default menu orientation will be vertical.</td>
+              </tr>
+
+              <tr>
+                <td scope="row">
+                  <code>animate</code>
+                </td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>Whether or not the menu should be animated.</td>
+              </tr>
+
+              <tr>
+                <td scope="row">
+                  <code>accordion</code>
+                </td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>Whether or not the menu should be accordion.</td>
+              </tr>
+
+              <tr>
+                <td scope="row">
+                  <code>showDropdownOnHover</code>
+                </td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>
+                  Whether or not the menu dropdown should open on mouse hover. This option only works for
+                  <code>Horizontal</code> menu.
+                </td>
+              </tr>
+
+              <tr>
+                <td scope="row">
+                  <code>closeChildren</code>
+                </td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>Whether or not the submenu items close when the parent menu item close.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!--/ Menu Initialization Options -->
+      <hr class="my-12" />
+
+      <!-- Menu Hooks -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="menu-hooks" class="anchor-heading mb-6 fw-bold">Menu Hooks</h4>
+          <p>Following are the events to hook in your functionality before / after menu open / close events.</p>
+          <table class="table table-bordered doc-table mt-4">
+            <thead>
+              <tr>
+                <th scope="col">Hook</th>
+                <th scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">
+                  <code>onOpen</code>
+                </td>
+                <td>Event is executed Before the menu opens.</td>
+              </tr>
+
+              <tr>
+                <td scope="row">
+                  <code>onOpened</code>
+                </td>
+                <td>Event is executed After the menu opens.</td>
+              </tr>
+
+              <tr>
+                <td scope="row">
+                  <code>onClose</code>
+                </td>
+                <td>Event is executed Before the menu close.</td>
+              </tr>
+
+              <tr>
+                <td scope="row">
+                  <code>onClosed</code>
+                </td>
+                <td>Event is executed After the menu close.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!--/ Menu Hooks -->
+      <hr class="my-12" />
+
+      <!-- Basic Menu -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="basic-menu" class="anchor-heading mb-6 fw-bold">Basic Menu</h4>
+          <p>Following are some examples of basic menu like vertical, horizontal (on click), horizontal menu (on hover)</p>
+
+          <h6 class="pb-1 mt-12 mb-6">Vertical</h6>
+
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="menu-basic-tab" data-bs-toggle="tab" data-bs-target="#menu-basic" role="tab" aria-controls="menu-basic" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="menu-basic-html-tab" data-bs-toggle="tab" data-bs-target="#menu-basic-html" role="tab" aria-controls="menu-basic-html" aria-selected="false">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="menu-basic-js-tab" data-bs-toggle="tab" data-bs-target="#menu-basic-js" role="tab" aria-controls="menu-basic-js" aria-selected="false">JS</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="menu-basic" role="tabpanel" aria-labelledby="menu-basic-tab">
+                <button type="button" id="menu-1-toggle-collapsed" class="btn btn-primary mb-6">Toggle collapsed</button>
+
+                <div id="menu-1" class="menu menu-vertical bg-menu-theme py-4 overflow-hidden" style="height: 450px"><ul class="menu-inner">
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-file-text"></i>
+      <div>Lorem Ipsum Long Long Long Text</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link menu-toggle">
+      <i class="menu-icon ti tabler-smart-home"></i>
+      <div>Dashboards</div>
+    </a>
+    <ul class="menu-sub">
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link">
+          <div>Dashboard 1</div>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link">
+          <div>Dashboard 2</div>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link">
+          <div>Dashboard 3</div>
+        </a>
+      </li>
+    </ul>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link menu-toggle">
+      <i class="menu-icon ti tabler-layout-navbar"></i>
+      <div>Pages</div>
+    </a>
+
+    <ul class="menu-sub">
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link">
+          <div>Account Settings</div>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Users</div>
+        </a>
+
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>List</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>View</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>Edit</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Authentication</div>
+        </a>
+
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>Login</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>Register</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>Forgot Password</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li class="menu-item active">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-mail"></i>
+      <div>Email</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-message-dots"></i>
+      <div>Chat</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-checklist"></i>
+      <div>Todo</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-calendar"></i>
+      <div>Calendar</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-layout-grid"></i>
+      <div>Kanban</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-receipt"></i>
+      <div>Invoice</div>
+    </a>
+  </li>
+</ul>
+</div>
+              </div>
+              <div class="tab-pane fade" id="menu-basic-html" role="tabpanel" aria-labelledby="menu-basic-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;menu menu-vertical bg-menu-theme py-4 overflow-hidden&quot; id=&quot;menu-1&quot; style=&quot;height: 450px&quot;&gt;&#10;  &lt;ul class=&quot;menu-inner&quot;&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-file&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Lorem Ipsum Long Long Long Text&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link menu-toggle&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-home-circle&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Dashboards&#10;      &lt;/div&gt;&lt;/a&gt;&#10;      &lt;ul class=&quot;menu-sub&quot;&gt;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#10;          &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;          &lt;div&gt;&#10;            Dashboard 1&#10;          &lt;/div&gt;&lt;/a&gt;&#10;        &lt;/li&gt;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#10;          &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;          &lt;div&gt;&#10;            Dashboard 2&#10;          &lt;/div&gt;&lt;/a&gt;&#10;        &lt;/li&gt;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#10;          &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;          &lt;div&gt;&#10;            Dashboard 3&#10;          &lt;/div&gt;&lt;/a&gt;&#10;        &lt;/li&gt;&#10;      &lt;/ul&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link menu-toggle&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-dock-top&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Pages&#10;      &lt;/div&gt;&lt;/a&gt;&#10;      &lt;ul class=&quot;menu-sub&quot;&gt;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#10;          &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;          &lt;div&gt;&#10;            Account Settings&#10;          &lt;/div&gt;&lt;/a&gt;&#10;        &lt;/li&gt;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#10;          &lt;a class=&quot;menu-link menu-toggle&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;          &lt;div&gt;&#10;            Users&#10;          &lt;/div&gt;&lt;/a&gt;&#10;          &lt;ul class=&quot;menu-sub&quot;&gt;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;              &lt;div&gt;&#10;                List&#10;              &lt;/div&gt;&lt;/a&gt;&#10;            &lt;/li&gt;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;              &lt;div&gt;&#10;                View&#10;              &lt;/div&gt;&lt;/a&gt;&#10;            &lt;/li&gt;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;              &lt;div&gt;&#10;                Edit&#10;              &lt;/div&gt;&lt;/a&gt;&#10;            &lt;/li&gt;&#10;          &lt;/ul&gt;&#10;        &lt;/li&gt;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#10;          &lt;a class=&quot;menu-link menu-toggle&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;          &lt;div&gt;&#10;            Authentication&#10;          &lt;/div&gt;&lt;/a&gt;&#10;          &lt;ul class=&quot;menu-sub&quot;&gt;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;              &lt;div&gt;&#10;                Login&#10;              &lt;/div&gt;&lt;/a&gt;&#10;            &lt;/li&gt;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;              &lt;div&gt;&#10;                Register&#10;              &lt;/div&gt;&lt;/a&gt;&#10;            &lt;/li&gt;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;              &lt;div&gt;&#10;                Forgot Password&#10;              &lt;/div&gt;&lt;/a&gt;&#10;            &lt;/li&gt;&#10;          &lt;/ul&gt;&#10;        &lt;/li&gt;&#10;      &lt;/ul&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item active&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-envelope&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Email&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-message-square&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Chat&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-task&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Todo&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-calendar&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Calendar&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-grid-alt&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Kanban&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-receipt&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Invoice&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;  &lt;/ul&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="menu-basic-js" role="tabpanel" aria-labelledby="menu-basic-js-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre class="docs-code"><code class="js">const menu1 = document.querySelector('#menu-1');
+if (menu1) {
+  new Menu(menu1);
+}</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <h6 class="pb-1 mt-12 mb-6">Horizontal</h6>
+
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="menu-basic-horizontal-tab" data-bs-toggle="tab" data-bs-target="#menu-basic-horizontal" role="tab" aria-controls="menu-basic-horizontal" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="menu-basic-horizontal-html-tab" data-bs-toggle="tab" data-bs-target="#menu-basic-horizontal-html" role="tab" aria-controls="menu-basic-horizontal-html" aria-selected="false">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="menu-basic-horizontal-js-tab" data-bs-toggle="tab" data-bs-target="#menu-basic-horizontal-js" role="tab" aria-controls="menu-basic-horizontal-js" aria-selected="false">JS</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="menu-basic-horizontal" role="tabpanel" aria-labelledby="menu-basic-horizontal-tab">
+                <div id="menu-2" class="menu menu-horizontal bg-menu-theme" style="position: relative;z-index: 100"><ul class="menu-inner">
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-file-text"></i>
+      <div>Lorem Ipsum Long Long Long Text</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link menu-toggle">
+      <i class="menu-icon ti tabler-smart-home"></i>
+      <div>Dashboards</div>
+    </a>
+    <ul class="menu-sub">
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link">
+          <div>Dashboard 1</div>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link">
+          <div>Dashboard 2</div>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link">
+          <div>Dashboard 3</div>
+        </a>
+      </li>
+    </ul>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link menu-toggle">
+      <i class="menu-icon ti tabler-layout-navbar"></i>
+      <div>Pages</div>
+    </a>
+
+    <ul class="menu-sub">
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link">
+          <div>Account Settings</div>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Users</div>
+        </a>
+
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>List</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>View</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>Edit</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Authentication</div>
+        </a>
+
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>Login</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>Register</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>Forgot Password</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li class="menu-item active">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-mail"></i>
+      <div>Email</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-message-dots"></i>
+      <div>Chat</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-checklist"></i>
+      <div>Todo</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-calendar"></i>
+      <div>Calendar</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-layout-grid"></i>
+      <div>Kanban</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-receipt"></i>
+      <div>Invoice</div>
+    </a>
+  </li>
+</ul>
+</div>
+              </div>
+              <div class="tab-pane fade" id="menu-basic-horizontal-html" role="tabpanel" aria-labelledby="menu-basic-horizontal-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;menu menu-horizontal bg-menu-theme&quot; id=&quot;menu-2&quot; style=&quot;position: relative;z-index: 100&quot;&gt;&#10;  &lt;ul class=&quot;menu-inner&quot;&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-file&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Lorem Ipsum Long Long Long Text&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link menu-toggle&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-home-circle&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Dashboards&#10;      &lt;/div&gt;&lt;/a&gt;&#10;      &lt;ul class=&quot;menu-sub&quot;&gt;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#10;          &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;          &lt;div&gt;&#10;            Dashboard 1&#10;          &lt;/div&gt;&lt;/a&gt;&#10;        &lt;/li&gt;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#10;          &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;          &lt;div&gt;&#10;            Dashboard 2&#10;          &lt;/div&gt;&lt;/a&gt;&#10;        &lt;/li&gt;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#10;          &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;          &lt;div&gt;&#10;            Dashboard 3&#10;          &lt;/div&gt;&lt;/a&gt;&#10;        &lt;/li&gt;&#10;      &lt;/ul&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link menu-toggle&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-dock-top&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Pages&#10;      &lt;/div&gt;&lt;/a&gt;&#10;      &lt;ul class=&quot;menu-sub&quot;&gt;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#10;          &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;          &lt;div&gt;&#10;            Account Settings&#10;          &lt;/div&gt;&lt;/a&gt;&#10;        &lt;/li&gt;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#10;          &lt;a class=&quot;menu-link menu-toggle&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;          &lt;div&gt;&#10;            Users&#10;          &lt;/div&gt;&lt;/a&gt;&#10;          &lt;ul class=&quot;menu-sub&quot;&gt;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;              &lt;div&gt;&#10;                List&#10;              &lt;/div&gt;&lt;/a&gt;&#10;            &lt;/li&gt;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;              &lt;div&gt;&#10;                View&#10;              &lt;/div&gt;&lt;/a&gt;&#10;            &lt;/li&gt;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;              &lt;div&gt;&#10;                Edit&#10;              &lt;/div&gt;&lt;/a&gt;&#10;            &lt;/li&gt;&#10;          &lt;/ul&gt;&#10;        &lt;/li&gt;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#10;          &lt;a class=&quot;menu-link menu-toggle&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;          &lt;div&gt;&#10;            Authentication&#10;          &lt;/div&gt;&lt;/a&gt;&#10;          &lt;ul class=&quot;menu-sub&quot;&gt;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;              &lt;div&gt;&#10;                Login&#10;              &lt;/div&gt;&lt;/a&gt;&#10;            &lt;/li&gt;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;              &lt;div&gt;&#10;                Register&#10;              &lt;/div&gt;&lt;/a&gt;&#10;            &lt;/li&gt;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;              &lt;div&gt;&#10;                Forgot Password&#10;              &lt;/div&gt;&lt;/a&gt;&#10;            &lt;/li&gt;&#10;          &lt;/ul&gt;&#10;        &lt;/li&gt;&#10;      &lt;/ul&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item active&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-envelope&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Email&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-message-square&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Chat&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-task&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Todo&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-calendar&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Calendar&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-grid-alt&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Kanban&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-receipt&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Invoice&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;  &lt;/ul&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="menu-basic-horizontal-js" role="tabpanel" aria-labelledby="menu-basic-horizontal-js-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre class="docs-code"><code class="js">const menu2 = document.querySelector('#menu-2');
+if (menu2) {
+  new Menu(menu2, {
+    orientation: 'horizontal'
+  });
+}</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <h6 class="pb-1 mt-12 mb-6">Horizontal (show dropdown on hover)</h6>
+
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="menu-basic-hover-tab" data-bs-toggle="tab" data-bs-target="#menu-basic-hover" role="tab" aria-controls="menu-basic" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="menu-basic-hover-html-tab" data-bs-toggle="tab" data-bs-target="#menu-basic-hover-html" role="tab" aria-controls="menu-basic-hover-html" aria-selected="false">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="menu-basic-hover-js-tab" data-bs-toggle="tab" data-bs-target="#menu-basic-hover-js" role="tab" aria-controls="menu-basic-hover-js" aria-selected="false">JS</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="menu-basic-hover" role="tabpanel" aria-labelledby="menu-basic-hover-tab">
+                <div id="menu-3" class="menu menu-horizontal bg-menu-theme" style="position: relative;z-index: 99"><ul class="menu-inner">
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-file-text"></i>
+      <div>Lorem Ipsum Long Long Long Text</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link menu-toggle">
+      <i class="menu-icon ti tabler-smart-home"></i>
+      <div>Dashboards</div>
+    </a>
+    <ul class="menu-sub">
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link">
+          <div>Dashboard 1</div>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link">
+          <div>Dashboard 2</div>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link">
+          <div>Dashboard 3</div>
+        </a>
+      </li>
+    </ul>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link menu-toggle">
+      <i class="menu-icon ti tabler-layout-navbar"></i>
+      <div>Pages</div>
+    </a>
+
+    <ul class="menu-sub">
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link">
+          <div>Account Settings</div>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Users</div>
+        </a>
+
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>List</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>View</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>Edit</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Authentication</div>
+        </a>
+
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>Login</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>Register</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>Forgot Password</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li class="menu-item active">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-mail"></i>
+      <div>Email</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-message-dots"></i>
+      <div>Chat</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-checklist"></i>
+      <div>Todo</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-calendar"></i>
+      <div>Calendar</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-layout-grid"></i>
+      <div>Kanban</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-receipt"></i>
+      <div>Invoice</div>
+    </a>
+  </li>
+</ul>
+</div>
+              </div>
+              <div class="tab-pane fade" id="menu-basic-hover-html" role="tabpanel" aria-labelledby="menu-basic-hover-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;menu menu-horizontal bg-menu-theme&quot; id=&quot;menu-3&quot; style=&quot;position: relative;z-index: 99&quot;&gt;&#10;  &lt;ul class=&quot;menu-inner&quot;&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-file&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Lorem Ipsum Long Long Long Text&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link menu-toggle&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-home-circle&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Dashboards&#10;      &lt;/div&gt;&lt;/a&gt;&#10;      &lt;ul class=&quot;menu-sub&quot;&gt;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#10;          &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;          &lt;div&gt;&#10;            Dashboard 1&#10;          &lt;/div&gt;&lt;/a&gt;&#10;        &lt;/li&gt;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#10;          &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;          &lt;div&gt;&#10;            Dashboard 2&#10;          &lt;/div&gt;&lt;/a&gt;&#10;        &lt;/li&gt;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#10;          &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;          &lt;div&gt;&#10;            Dashboard 3&#10;          &lt;/div&gt;&lt;/a&gt;&#10;        &lt;/li&gt;&#10;      &lt;/ul&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link menu-toggle&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-dock-top&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Pages&#10;      &lt;/div&gt;&lt;/a&gt;&#10;      &lt;ul class=&quot;menu-sub&quot;&gt;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#10;          &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;          &lt;div&gt;&#10;            Account Settings&#10;          &lt;/div&gt;&lt;/a&gt;&#10;        &lt;/li&gt;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#10;          &lt;a class=&quot;menu-link menu-toggle&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;          &lt;div&gt;&#10;            Users&#10;          &lt;/div&gt;&lt;/a&gt;&#10;          &lt;ul class=&quot;menu-sub&quot;&gt;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;              &lt;div&gt;&#10;                List&#10;              &lt;/div&gt;&lt;/a&gt;&#10;            &lt;/li&gt;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;              &lt;div&gt;&#10;                View&#10;              &lt;/div&gt;&lt;/a&gt;&#10;            &lt;/li&gt;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;              &lt;div&gt;&#10;                Edit&#10;              &lt;/div&gt;&lt;/a&gt;&#10;            &lt;/li&gt;&#10;          &lt;/ul&gt;&#10;        &lt;/li&gt;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#10;          &lt;a class=&quot;menu-link menu-toggle&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;          &lt;div&gt;&#10;            Authentication&#10;          &lt;/div&gt;&lt;/a&gt;&#10;          &lt;ul class=&quot;menu-sub&quot;&gt;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;              &lt;div&gt;&#10;                Login&#10;              &lt;/div&gt;&lt;/a&gt;&#10;            &lt;/li&gt;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;              &lt;div&gt;&#10;                Register&#10;              &lt;/div&gt;&lt;/a&gt;&#10;            &lt;/li&gt;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;              &lt;div&gt;&#10;                Forgot Password&#10;              &lt;/div&gt;&lt;/a&gt;&#10;            &lt;/li&gt;&#10;          &lt;/ul&gt;&#10;        &lt;/li&gt;&#10;      &lt;/ul&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item active&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-envelope&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Email&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-message-square&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Chat&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-task&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Todo&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-calendar&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Calendar&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-grid-alt&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Kanban&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-receipt&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Invoice&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;  &lt;/ul&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="menu-basic-hover-js" role="tabpanel" aria-labelledby="menu-basic-hover-js-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre class="docs-code"><code class="js">const menu3 = document.querySelector('#menu-3');
+if (menu3) {
+  new Menu(menu3, {
+    orientation: 'horizontal',
+    showDropdownOnHover: true
+  });
+}</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/ Basic Menu -->
+      <hr class="my-12" />
+
+      <!-- Menu Elements -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="menu-elements" class="anchor-heading mb-6 fw-bold">Menu Elements</h4>
+          <p>Add elements to your menu like user details or footer actions like in below example.</p>
+
+          <h6 class="pb-1 mt-12 mb-6">Elements</h6>
+
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="menu-elements-tab" data-bs-toggle="tab" data-bs-target="#menu-elements-id" role="tab" aria-controls="menu-elements-id" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="menu-elements-html-tab" data-bs-toggle="tab" data-bs-target="#menu-elements-html" role="tab" aria-controls="menu-elements-html" aria-selected="false">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="menu-elements-js-tab" data-bs-toggle="tab" data-bs-target="#menu-elements-js" role="tab" aria-controls="menu-elements-js" aria-selected="false">JS</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="menu-elements-id" role="tabpanel" aria-labelledby="menu-elements-tab">
+                <div class="mb-6">
+                  <button type="button" id="menus-9-toggle-collapsed" class="btn btn-primary">Toggle collapsed</button>
+                </div>
+
+                <div class="menus-9 menu menu-vertical d-inline-flex bg-menu-theme me-6" style="height: 500px">
+                  <div class="menu-block my-2 d-flex align-items-center">
+  <div class="avatar avatar-lg avatar-online me-2">
+    <img src="assets/img/avatars/7.png" alt="Avatar" class="rounded-circle shadow" />
+  </div>
+  <h5 class="menu-text mt-4 mb-1">John Doe</h5>
+  <div class="small">
+    <a href="javascript:void(0)" class="menu-link"> ABC Company, CEO</a>
+  </div>
+</div>
+
+                  <div class="menu-divider mt-0"></div>
+
+                  <ul class="menu-inner">
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-file-text"></i>
+      <div>Lorem Ipsum Long Long Long Text</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link menu-toggle">
+      <i class="menu-icon ti tabler-smart-home"></i>
+      <div>Dashboards</div>
+    </a>
+    <ul class="menu-sub">
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link">
+          <div>Dashboard 1</div>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link">
+          <div>Dashboard 2</div>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link">
+          <div>Dashboard 3</div>
+        </a>
+      </li>
+    </ul>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link menu-toggle">
+      <i class="menu-icon ti tabler-layout-navbar"></i>
+      <div>Pages</div>
+    </a>
+
+    <ul class="menu-sub">
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link">
+          <div>Account Settings</div>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Users</div>
+        </a>
+
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>List</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>View</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>Edit</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Authentication</div>
+        </a>
+
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>Login</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>Register</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>Forgot Password</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li class="menu-item active">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-mail"></i>
+      <div>Email</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-message-dots"></i>
+      <div>Chat</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-checklist"></i>
+      <div>Todo</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-calendar"></i>
+      <div>Calendar</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-layout-grid"></i>
+      <div>Kanban</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-receipt"></i>
+      <div>Invoice</div>
+    </a>
+  </li>
+</ul>
+
+
+                  <div class="menu-divider mb-0"></div>
+
+                  <ul class="m-0 p-0">
+                    <li class="menu-block my-1 d-flex flex-row justify-content-between">
+  <a href="javascript: void(0);" class="fold-show" data-bs-placement="top" data-bs-toggle="tooltip" title="Settings">
+    <span class="text-body icon-base ti tabler-settings" aria-hidden="true"></span>
+  </a>
+  <a href="javascript: void(0);" data-bs-placement="top" data-bs-toggle="tooltip" title="Lock">
+    <span class="text-body icon-base ti tabler-eye-off" aria-hidden="true"></span>
+  </a>
+  <a href="javascript: void(0);" data-bs-placement="top" data-bs-toggle="tooltip" title="Logout">
+    <span class="text-body icon-base ti tabler-power" aria-hidden="true"></span>
+  </a>
+</li>
+
+                  </ul>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="menu-elements-html" role="tabpanel" aria-labelledby="menu-elements-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;menus-9 menu menu-vertical d-inline-flex bg-menu-theme me-6&quot; style=&quot;height: 500px&quot;&gt;&#13;&#10;  &lt;div class=&quot;menu-block my-2 d-flex align-items-center&quot;&gt;&#13;&#10;    &lt;div class=&quot;avatar avatar-lg avatar-online me-2&quot;&gt;&lt;img alt=&quot;Avatar&quot; class=&quot;rounded-circle shadow&quot; src=&quot;../../assets/img/avatars/7.png&quot;&gt;&lt;/div&gt;&#13;&#10;    &lt;h5 class=&quot;menu-text mt-4 mb-1&quot;&gt;John Doe&lt;/h5&gt;&#13;&#10;    &lt;div class=&quot;small&quot;&gt;&#13;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;ABC Company, CEO&lt;/a&gt;&#13;&#10;    &lt;/div&gt;&#13;&#10;  &lt;/div&gt;&#13;&#10;  &lt;div class=&quot;menu-divider mt-0&quot;&gt;&lt;/div&gt;&#13;&#10;  &lt;ul class=&quot;menu-inner&quot;&gt;&#13;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#13;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-file&quot;&gt;&lt;/i&gt;&#13;&#10;      &lt;div&gt;&#13;&#10;        Lorem Ipsum Long Long Long Text&#13;&#10;      &lt;/div&gt;&lt;/a&gt;&#13;&#10;    &lt;/li&gt;&#13;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#13;&#10;      &lt;a class=&quot;menu-link menu-toggle&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-home-circle&quot;&gt;&lt;/i&gt;&#13;&#10;      &lt;div&gt;&#13;&#10;        Dashboards&#13;&#10;      &lt;/div&gt;&lt;/a&gt;&#13;&#10;      &lt;ul class=&quot;menu-sub&quot;&gt;&#13;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#13;&#10;          &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#13;&#10;          &lt;div&gt;&#13;&#10;            Dashboard 1&#13;&#10;          &lt;/div&gt;&lt;/a&gt;&#13;&#10;        &lt;/li&gt;&#13;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#13;&#10;          &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#13;&#10;          &lt;div&gt;&#13;&#10;            Dashboard 2&#13;&#10;          &lt;/div&gt;&lt;/a&gt;&#13;&#10;        &lt;/li&gt;&#13;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#13;&#10;          &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#13;&#10;          &lt;div&gt;&#13;&#10;            Dashboard 3&#13;&#10;          &lt;/div&gt;&lt;/a&gt;&#13;&#10;        &lt;/li&gt;&#13;&#10;      &lt;/ul&gt;&#13;&#10;    &lt;/li&gt;&#13;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#13;&#10;      &lt;a class=&quot;menu-link menu-toggle&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-dock-top&quot;&gt;&lt;/i&gt;&#13;&#10;      &lt;div&gt;&#13;&#10;        Pages&#13;&#10;      &lt;/div&gt;&lt;/a&gt;&#13;&#10;      &lt;ul class=&quot;menu-sub&quot;&gt;&#13;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#13;&#10;          &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#13;&#10;          &lt;div&gt;&#13;&#10;            Account Settings&#13;&#10;          &lt;/div&gt;&lt;/a&gt;&#13;&#10;        &lt;/li&gt;&#13;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#13;&#10;          &lt;a class=&quot;menu-link menu-toggle&quot; href=&quot;javascript:void(0)&quot;&gt;&#13;&#10;          &lt;div&gt;&#13;&#10;            Users&#13;&#10;          &lt;/div&gt;&lt;/a&gt;&#13;&#10;          &lt;ul class=&quot;menu-sub&quot;&gt;&#13;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#13;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#13;&#10;              &lt;div&gt;&#13;&#10;                List&#13;&#10;              &lt;/div&gt;&lt;/a&gt;&#13;&#10;            &lt;/li&gt;&#13;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#13;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#13;&#10;              &lt;div&gt;&#13;&#10;                View&#13;&#10;              &lt;/div&gt;&lt;/a&gt;&#13;&#10;            &lt;/li&gt;&#13;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#13;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#13;&#10;              &lt;div&gt;&#13;&#10;                Edit&#13;&#10;              &lt;/div&gt;&lt;/a&gt;&#13;&#10;            &lt;/li&gt;&#13;&#10;          &lt;/ul&gt;&#13;&#10;        &lt;/li&gt;&#13;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#13;&#10;          &lt;a class=&quot;menu-link menu-toggle&quot; href=&quot;javascript:void(0)&quot;&gt;&#13;&#10;          &lt;div&gt;&#13;&#10;            Authentication&#13;&#10;          &lt;/div&gt;&lt;/a&gt;&#13;&#10;          &lt;ul class=&quot;menu-sub&quot;&gt;&#13;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#13;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#13;&#10;              &lt;div&gt;&#13;&#10;                Login&#13;&#10;              &lt;/div&gt;&lt;/a&gt;&#13;&#10;            &lt;/li&gt;&#13;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#13;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#13;&#10;              &lt;div&gt;&#13;&#10;                Register&#13;&#10;              &lt;/div&gt;&lt;/a&gt;&#13;&#10;            &lt;/li&gt;&#13;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#13;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#13;&#10;              &lt;div&gt;&#13;&#10;                Forgot Password&#13;&#10;              &lt;/div&gt;&lt;/a&gt;&#13;&#10;            &lt;/li&gt;&#13;&#10;          &lt;/ul&gt;&#13;&#10;        &lt;/li&gt;&#13;&#10;      &lt;/ul&gt;&#13;&#10;    &lt;/li&gt;&#13;&#10;    &lt;li class=&quot;menu-item active&quot;&gt;&#13;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-envelope&quot;&gt;&lt;/i&gt;&#13;&#10;      &lt;div&gt;&#13;&#10;        Email&#13;&#10;      &lt;/div&gt;&lt;/a&gt;&#13;&#10;    &lt;/li&gt;&#13;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#13;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-message-square&quot;&gt;&lt;/i&gt;&#13;&#10;      &lt;div&gt;&#13;&#10;        Chat&#13;&#10;      &lt;/div&gt;&lt;/a&gt;&#13;&#10;    &lt;/li&gt;&#13;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#13;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-task&quot;&gt;&lt;/i&gt;&#13;&#10;      &lt;div&gt;&#13;&#10;        Todo&#13;&#10;      &lt;/div&gt;&lt;/a&gt;&#13;&#10;    &lt;/li&gt;&#13;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#13;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-calendar&quot;&gt;&lt;/i&gt;&#13;&#10;      &lt;div&gt;&#13;&#10;        Calendar&#13;&#10;      &lt;/div&gt;&lt;/a&gt;&#13;&#10;    &lt;/li&gt;&#13;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#13;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-grid-alt&quot;&gt;&lt;/i&gt;&#13;&#10;      &lt;div&gt;&#13;&#10;        Kanban&#13;&#10;      &lt;/div&gt;&lt;/a&gt;&#13;&#10;    &lt;/li&gt;&#13;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#13;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-receipt&quot;&gt;&lt;/i&gt;&#13;&#10;      &lt;div&gt;&#13;&#10;        Invoice&#13;&#10;      &lt;/div&gt;&lt;/a&gt;&#13;&#10;    &lt;/li&gt;&#13;&#10;  &lt;/ul&gt;&#13;&#10;  &lt;div class=&quot;menu-divider mb-0&quot;&gt;&lt;/div&gt;&#13;&#10;  &lt;ul class=&quot;m-0 p-0&quot;&gt;&#13;&#10;    &lt;li class=&quot;menu-block my-1 d-flex flex-row justify-content-between&quot;&gt;&#13;&#10;      &lt;a class=&quot;fold-show&quot;title=&quot;Settings&quot; data-bs-placement=&quot;top&quot; data-bs-toggle=&quot;tooltip&quot; href=&quot;javascript:%20void(0);&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;text-body ti tabler-settings&quot;&gt;&lt;/span&gt;&lt;/a&gt; &lt;atitle=&quot;Lock&quot; data-bs-placement=&quot;top&quot; data-bs-toggle=&quot;tooltip&quot; href=&quot;javascript:%20void(0);&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;text-body ti tabler-hide&quot;&gt;&lt;/span&gt;&lt;/a&gt; &lt;atitle=&quot;Logout&quot; data-bs-placement=&quot;top&quot; data-bs-toggle=&quot;tooltip&quot; href=&quot;javascript:%20void(0);&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;text-body ti tabler-power-off&quot;&gt;&lt;/span&gt;&lt;/a&gt;&#13;&#10;    &lt;/li&gt;&#13;&#10;  &lt;/ul&gt;&#13;&#10;&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="menu-elements-js" role="tabpanel" aria-labelledby="menu-elements-js-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre class="docs-code"><code class="js">const menus9List = document.querySelectorAll('.menus-9');
+if (menus9List) {
+  menus9List.forEach(e => {
+    new Menu(e);
+  });
+}</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/ Menu Elements -->
+      <hr class="my-12" />
+
+      <!-- Without Accordion -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="without-accordion" class="anchor-heading mb-6 fw-bold">Without Accordion</h4>
+          <p>Open / Close Menu without accordion. One has to manually open / close the menu items.</p>
+
+          <h6 class="pb-1 mt-12 mb-6">Vertical menu without accordion (Manually open / close)</h6>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="menu-accordion-tab" data-bs-toggle="tab" data-bs-target="#menu-accordion" role="tab" aria-controls="menu-accordion" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="menu-accordion-html-tab" data-bs-toggle="tab" data-bs-target="#menu-accordion-html" role="tab" aria-controls="menu-accordion-html" aria-selected="false">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="menu-accordion-js-tab" data-bs-toggle="tab" data-bs-target="#menu-accordion-js" role="tab" aria-controls="menu-accordion-js" aria-selected="false">JS</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="menu-accordion" role="tabpanel" aria-labelledby="menu-accordion-tab">
+                <button type="button" id="menu-7-toggle-collapsed" class="btn btn-primary mb-6">Toggle collapsed</button>
+
+                <div id="menu-7" class="menu menu-vertical bg-menu-theme mb-6" style="height: 450px"><ul class="menu-inner">
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-file-text"></i>
+      <div>Lorem Ipsum Long Long Long Text</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link menu-toggle">
+      <i class="menu-icon ti tabler-smart-home"></i>
+      <div>Dashboards</div>
+    </a>
+    <ul class="menu-sub">
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link">
+          <div>Dashboard 1</div>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link">
+          <div>Dashboard 2</div>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link">
+          <div>Dashboard 3</div>
+        </a>
+      </li>
+    </ul>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link menu-toggle">
+      <i class="menu-icon ti tabler-layout-navbar"></i>
+      <div>Pages</div>
+    </a>
+
+    <ul class="menu-sub">
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link">
+          <div>Account Settings</div>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Users</div>
+        </a>
+
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>List</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>View</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>Edit</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Authentication</div>
+        </a>
+
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>Login</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>Register</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>Forgot Password</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li class="menu-item active">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-mail"></i>
+      <div>Email</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-message-dots"></i>
+      <div>Chat</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-checklist"></i>
+      <div>Todo</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-calendar"></i>
+      <div>Calendar</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-layout-grid"></i>
+      <div>Kanban</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-receipt"></i>
+      <div>Invoice</div>
+    </a>
+  </li>
+</ul>
+</div>
+              </div>
+              <div class="tab-pane fade" id="menu-accordion-html" role="tabpanel" aria-labelledby="menu-accordion-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;menu menu-vertical bg-menu-theme mb-6&quot; id=&quot;menu-7&quot; style=&quot;height: 450px&quot;&gt;&#10;  &lt;ul class=&quot;menu-inner&quot;&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-file&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Lorem Ipsum Long Long Long Text&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link menu-toggle&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-home-circle&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Dashboards&#10;      &lt;/div&gt;&lt;/a&gt;&#10;      &lt;ul class=&quot;menu-sub&quot;&gt;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#10;          &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;          &lt;div&gt;&#10;            Dashboard 1&#10;          &lt;/div&gt;&lt;/a&gt;&#10;        &lt;/li&gt;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#10;          &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;          &lt;div&gt;&#10;            Dashboard 2&#10;          &lt;/div&gt;&lt;/a&gt;&#10;        &lt;/li&gt;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#10;          &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;          &lt;div&gt;&#10;            Dashboard 3&#10;          &lt;/div&gt;&lt;/a&gt;&#10;        &lt;/li&gt;&#10;      &lt;/ul&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link menu-toggle&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-dock-top&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Pages&#10;      &lt;/div&gt;&lt;/a&gt;&#10;      &lt;ul class=&quot;menu-sub&quot;&gt;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#10;          &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;          &lt;div&gt;&#10;            Account Settings&#10;          &lt;/div&gt;&lt;/a&gt;&#10;        &lt;/li&gt;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#10;          &lt;a class=&quot;menu-link menu-toggle&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;          &lt;div&gt;&#10;            Users&#10;          &lt;/div&gt;&lt;/a&gt;&#10;          &lt;ul class=&quot;menu-sub&quot;&gt;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;              &lt;div&gt;&#10;                List&#10;              &lt;/div&gt;&lt;/a&gt;&#10;            &lt;/li&gt;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;              &lt;div&gt;&#10;                View&#10;              &lt;/div&gt;&lt;/a&gt;&#10;            &lt;/li&gt;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;              &lt;div&gt;&#10;                Edit&#10;              &lt;/div&gt;&lt;/a&gt;&#10;            &lt;/li&gt;&#10;          &lt;/ul&gt;&#10;        &lt;/li&gt;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#10;          &lt;a class=&quot;menu-link menu-toggle&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;          &lt;div&gt;&#10;            Authentication&#10;          &lt;/div&gt;&lt;/a&gt;&#10;          &lt;ul class=&quot;menu-sub&quot;&gt;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;              &lt;div&gt;&#10;                Login&#10;              &lt;/div&gt;&lt;/a&gt;&#10;            &lt;/li&gt;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;              &lt;div&gt;&#10;                Register&#10;              &lt;/div&gt;&lt;/a&gt;&#10;            &lt;/li&gt;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;              &lt;div&gt;&#10;                Forgot Password&#10;              &lt;/div&gt;&lt;/a&gt;&#10;            &lt;/li&gt;&#10;          &lt;/ul&gt;&#10;        &lt;/li&gt;&#10;      &lt;/ul&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item active&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-envelope&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Email&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-message-square&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Chat&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-task&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Todo&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-calendar&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Calendar&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-grid-alt&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Kanban&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-receipt&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Invoice&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;  &lt;/ul&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="menu-accordion-js" role="tabpanel" aria-labelledby="menu-accordion-js-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre class="docs-code"><code class="js">const menu7 = document.querySelector('#menu-7');
+if (menu7) {
+  new Menu(menu7, {
+    accordion: false
+  });
+}</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/ Without Accordion -->
+      <hr class="my-12" />
+
+      <!-- Without Animation -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="without-animation" class="anchor-heading mb-6 fw-bold">Without Animation</h4>
+          <p>Open / Close Menu Without Animation. One has to manually open / close the menu items.</p>
+
+          <h6 class="pb-1 mt-12 mb-6">Vertical menu without animation</h6>
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="menu-animation-tab" data-bs-toggle="tab" data-bs-target="#menu-animation" role="tab" aria-controls="menu-animation" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="menu-animation-html-tab" data-bs-toggle="tab" data-bs-target="#menu-animation-html" role="tab" aria-controls="menu-animation-html" aria-selected="false">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="menu-animation-js-tab" data-bs-toggle="tab" data-bs-target="#menu-animation-js" role="tab" aria-controls="menu-animation-js" aria-selected="false">JS</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="menu-animation" role="tabpanel" aria-labelledby="menu-animation-tab">
+                <button type="button" id="menu-5-toggle-collapsed" class="btn btn-primary mb-6">Toggle collapsed</button>
+
+                <div id="menu-5" class="menu menu-vertical bg-menu-theme mb-6" style="height: 450px"><ul class="menu-inner">
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-file-text"></i>
+      <div>Lorem Ipsum Long Long Long Text</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link menu-toggle">
+      <i class="menu-icon ti tabler-smart-home"></i>
+      <div>Dashboards</div>
+    </a>
+    <ul class="menu-sub">
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link">
+          <div>Dashboard 1</div>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link">
+          <div>Dashboard 2</div>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link">
+          <div>Dashboard 3</div>
+        </a>
+      </li>
+    </ul>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link menu-toggle">
+      <i class="menu-icon ti tabler-layout-navbar"></i>
+      <div>Pages</div>
+    </a>
+
+    <ul class="menu-sub">
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link">
+          <div>Account Settings</div>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Users</div>
+        </a>
+
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>List</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>View</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>Edit</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Authentication</div>
+        </a>
+
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>Login</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>Register</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>Forgot Password</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li class="menu-item active">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-mail"></i>
+      <div>Email</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-message-dots"></i>
+      <div>Chat</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-checklist"></i>
+      <div>Todo</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-calendar"></i>
+      <div>Calendar</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-layout-grid"></i>
+      <div>Kanban</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-receipt"></i>
+      <div>Invoice</div>
+    </a>
+  </li>
+</ul>
+</div>
+              </div>
+              <div class="tab-pane fade" id="menu-animation-html" role="tabpanel" aria-labelledby="menu-animation-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;menu menu-vertical bg-menu-theme mb-6&quot; id=&quot;menu-5&quot; style=&quot;height: 450px&quot;&gt;&#10;  &lt;ul class=&quot;menu-inner&quot;&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-file&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Lorem Ipsum Long Long Long Text&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link menu-toggle&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-home-circle&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Dashboards&#10;      &lt;/div&gt;&lt;/a&gt;&#10;      &lt;ul class=&quot;menu-sub&quot;&gt;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#10;          &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;          &lt;div&gt;&#10;            Dashboard 1&#10;          &lt;/div&gt;&lt;/a&gt;&#10;        &lt;/li&gt;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#10;          &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;          &lt;div&gt;&#10;            Dashboard 2&#10;          &lt;/div&gt;&lt;/a&gt;&#10;        &lt;/li&gt;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#10;          &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;          &lt;div&gt;&#10;            Dashboard 3&#10;          &lt;/div&gt;&lt;/a&gt;&#10;        &lt;/li&gt;&#10;      &lt;/ul&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link menu-toggle&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-dock-top&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Pages&#10;      &lt;/div&gt;&lt;/a&gt;&#10;      &lt;ul class=&quot;menu-sub&quot;&gt;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#10;          &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;          &lt;div&gt;&#10;            Account Settings&#10;          &lt;/div&gt;&lt;/a&gt;&#10;        &lt;/li&gt;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#10;          &lt;a class=&quot;menu-link menu-toggle&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;          &lt;div&gt;&#10;            Users&#10;          &lt;/div&gt;&lt;/a&gt;&#10;          &lt;ul class=&quot;menu-sub&quot;&gt;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;              &lt;div&gt;&#10;                List&#10;              &lt;/div&gt;&lt;/a&gt;&#10;            &lt;/li&gt;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;              &lt;div&gt;&#10;                View&#10;              &lt;/div&gt;&lt;/a&gt;&#10;            &lt;/li&gt;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;              &lt;div&gt;&#10;                Edit&#10;              &lt;/div&gt;&lt;/a&gt;&#10;            &lt;/li&gt;&#10;          &lt;/ul&gt;&#10;        &lt;/li&gt;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#10;          &lt;a class=&quot;menu-link menu-toggle&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;          &lt;div&gt;&#10;            Authentication&#10;          &lt;/div&gt;&lt;/a&gt;&#10;          &lt;ul class=&quot;menu-sub&quot;&gt;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;              &lt;div&gt;&#10;                Login&#10;              &lt;/div&gt;&lt;/a&gt;&#10;            &lt;/li&gt;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;              &lt;div&gt;&#10;                Register&#10;              &lt;/div&gt;&lt;/a&gt;&#10;            &lt;/li&gt;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;              &lt;div&gt;&#10;                Forgot Password&#10;              &lt;/div&gt;&lt;/a&gt;&#10;            &lt;/li&gt;&#10;          &lt;/ul&gt;&#10;        &lt;/li&gt;&#10;      &lt;/ul&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item active&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-envelope&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Email&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-message-square&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Chat&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-task&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Todo&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-calendar&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Calendar&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-grid-alt&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Kanban&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-receipt&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Invoice&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;  &lt;/ul&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="menu-animation-js" role="tabpanel" aria-labelledby="menu-animation-js-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre class="docs-code"><code class="js">const menu5 = document.querySelector('#menu-5');
+if (menu5) {
+  new Menu(menu5, {
+    animate: false
+  });
+}</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/ Without Animation -->
+      <hr class="my-12" />
+
+      <!-- Menu Theme -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="menu-theme" class="anchor-heading mb-6 fw-bold">Menu Theme</h4>
+          <p>Here's an example of basic menu theme <code>.bg-menu-theme</code> that has theme menu bg color.</p>
+
+          <div class="doc-example">
+            <ul class="nav nav-tabs-example justify-content-end" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="menu-themes-tab" data-bs-toggle="tab" data-bs-target="#menu-themes" role="tab" aria-controls="menu-themes" aria-selected="true">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="menu-themes-html-tab" data-bs-toggle="tab" data-bs-target="#menu-themes-html" role="tab" aria-controls="menu-themes-html" aria-selected="false">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="menu-themes-js-tab" data-bs-toggle="tab" data-bs-target="#menu-themes-js" role="tab" aria-controls="menu-themes-js" aria-selected="false">JS</a>
+              </li>
+            </ul>
+            <div class="tab-content doc-example-content" id="tab-tabContent" data-label="Example">
+              <div class="tab-pane fade show active" id="menu-themes" role="tabpanel" aria-labelledby="menu-themes-tab">
+                <div class="mb-6">
+                  <button type="button" id="menus-12-toggle-collapsed" class="btn btn-primary">Toggle collapsed</button>
+                </div>
+
+                <div class="menus-12 menu menu-vertical d-inline-flex bg-menu-theme me-6 mb-6" style="height: 500px"><ul class="menu-inner">
+  <li class="menu-item"><div class="menu-block my-2 d-flex align-items-center">
+  <div class="avatar avatar-lg avatar-online me-2">
+    <img src="assets/img/avatars/7.png" alt="Avatar" class="rounded-circle shadow" />
+  </div>
+  <h5 class="menu-text mt-4 mb-1">John Doe</h5>
+  <div class="small">
+    <a href="javascript:void(0)" class="menu-link"> ABC Company, CEO</a>
+  </div>
+</div>
+</li>
+
+  <li class="menu-divider mt-0"></li>
+
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-file-text"></i>
+      <div>Lorem Ipsum Long Long Long Text</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link menu-toggle">
+      <i class="menu-icon ti tabler-smart-home"></i>
+      <div>Dashboards</div>
+    </a>
+    <ul class="menu-sub">
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link">
+          <div>Dashboard 1</div>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link">
+          <div>Dashboard 2</div>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link">
+          <div>Dashboard 3</div>
+        </a>
+      </li>
+    </ul>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link menu-toggle">
+      <i class="menu-icon ti tabler-layout-navbar"></i>
+      <div>Pages</div>
+    </a>
+
+    <ul class="menu-sub">
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link">
+          <div>Account Settings</div>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Users</div>
+        </a>
+
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>List</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>View</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>Edit</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+          <div>Authentication</div>
+        </a>
+
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>Login</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>Register</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+              <div>Forgot Password</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li class="menu-divider mb-0"></li>
+  <li class="menu-header small fw-medium">Apps</li>
+  <li class="menu-item active">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-mail"></i>
+      <div>Email</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-message-dots"></i>
+      <div>Chat</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-checklist"></i>
+      <div>Todo</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-calendar"></i>
+      <div>Calendar</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-layout-grid"></i>
+      <div>Kanban</div>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0)" class="menu-link">
+      <i class="menu-icon ti tabler-receipt"></i>
+      <div>Invoice</div>
+    </a>
+  </li>
+</ul>
+</div>
+              </div>
+              <div class="tab-pane fade" id="menu-themes-html" role="tabpanel" aria-labelledby="menu-themes-html-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre
+                  class="docs-code"><code class="html">&lt;div class=&quot;menus-12 menu menu-vertical d-inline-flex bg-menu-theme me-6 mb-6&quot; style=&quot;height: 500px&quot;&gt;&#10;  &lt;ul class=&quot;menu-inner&quot;&gt;&#10;    &lt;li style=&quot;list-style: none; display: inline&quot;&gt;&#10;      &lt;div class=&quot;menu-block my-2 d-flex align-items-center&quot;&gt;&#10;        &lt;div class=&quot;avatar avatar-lg avatar-online me-2&quot;&gt;&lt;img alt=&quot;Avatar&quot; class=&quot;rounded-circle shadow&quot; src=&quot;../../assets/img/avatars/7.png&quot;&gt;&lt;/div&gt;&#10;        &lt;h5 class=&quot;menu-text mt-4 mb-1&quot;&gt;John Doe&lt;/h5&gt;&#10;        &lt;div class=&quot;small&quot;&gt;&#10;          &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;ABC Company, CEO&lt;/a&gt;&#10;        &lt;/div&gt;&#10;      &lt;/div&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-divider mt-0&quot;&gt;&lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-file&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Lorem Ipsum Long Long Long Text&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link menu-toggle&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-home-circle&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Dashboards&#10;      &lt;/div&gt;&lt;/a&gt;&#10;      &lt;ul class=&quot;menu-sub&quot;&gt;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#10;          &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;          &lt;div&gt;&#10;            Dashboard 1&#10;          &lt;/div&gt;&lt;/a&gt;&#10;        &lt;/li&gt;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#10;          &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;          &lt;div&gt;&#10;            Dashboard 2&#10;          &lt;/div&gt;&lt;/a&gt;&#10;        &lt;/li&gt;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#10;          &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;          &lt;div&gt;&#10;            Dashboard 3&#10;          &lt;/div&gt;&lt;/a&gt;&#10;        &lt;/li&gt;&#10;      &lt;/ul&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link menu-toggle&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-dock-top&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Pages&#10;      &lt;/div&gt;&lt;/a&gt;&#10;      &lt;ul class=&quot;menu-sub&quot;&gt;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#10;          &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;          &lt;div&gt;&#10;            Account Settings&#10;          &lt;/div&gt;&lt;/a&gt;&#10;        &lt;/li&gt;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#10;          &lt;a class=&quot;menu-link menu-toggle&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;          &lt;div&gt;&#10;            Users&#10;          &lt;/div&gt;&lt;/a&gt;&#10;          &lt;ul class=&quot;menu-sub&quot;&gt;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;              &lt;div&gt;&#10;                List&#10;              &lt;/div&gt;&lt;/a&gt;&#10;            &lt;/li&gt;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;              &lt;div&gt;&#10;                View&#10;              &lt;/div&gt;&lt;/a&gt;&#10;            &lt;/li&gt;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;              &lt;div&gt;&#10;                Edit&#10;              &lt;/div&gt;&lt;/a&gt;&#10;            &lt;/li&gt;&#10;          &lt;/ul&gt;&#10;        &lt;/li&gt;&#10;        &lt;li class=&quot;menu-item&quot;&gt;&#10;          &lt;a class=&quot;menu-link menu-toggle&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;          &lt;div&gt;&#10;            Authentication&#10;          &lt;/div&gt;&lt;/a&gt;&#10;          &lt;ul class=&quot;menu-sub&quot;&gt;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;              &lt;div&gt;&#10;                Login&#10;              &lt;/div&gt;&lt;/a&gt;&#10;            &lt;/li&gt;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;              &lt;div&gt;&#10;                Register&#10;              &lt;/div&gt;&lt;/a&gt;&#10;            &lt;/li&gt;&#10;            &lt;li class=&quot;menu-item&quot;&gt;&#10;              &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&#10;              &lt;div&gt;&#10;                Forgot Password&#10;              &lt;/div&gt;&lt;/a&gt;&#10;            &lt;/li&gt;&#10;          &lt;/ul&gt;&#10;        &lt;/li&gt;&#10;      &lt;/ul&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-divider mb-0&quot;&gt;&lt;/li&gt;&#10;    &lt;li class=&quot;menu-header small fw-medium&quot;&gt;Apps&lt;/li&gt;&#10;    &lt;li class=&quot;menu-item active&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-envelope&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Email&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-message-square&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Chat&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-task&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Todo&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-calendar&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Calendar&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-grid-alt&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Kanban&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;    &lt;li class=&quot;menu-item&quot;&gt;&#10;      &lt;a class=&quot;menu-link&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;menu-icon ti tabler-receipt&quot;&gt;&lt;/i&gt;&#10;      &lt;div&gt;&#10;        Invoice&#10;      &lt;/div&gt;&lt;/a&gt;&#10;    &lt;/li&gt;&#10;  &lt;/ul&gt;&#10;&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="menu-themes-js" role="tabpanel" aria-labelledby="menu-themes-js-tab">
+                <div class="doc-clipboard">
+                  <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+                </div>
+                <pre class="docs-code"><code class="js">const menus12List = document.querySelectorAll('.menus-12');
+if (menus12List) {
+  menus12List.forEach(e => {
+    new Menu(e);
+  });
+}</code></pre>
+              </div>
+            </div>
+          </div>
+          <p class="pt-6">Here is the theme menu bg color mixin which allow you to easily customize menu style by adding your own class and colors.</p>
+
+          <div class="doc-example">
+            <div class="doc-example-content" data-label="Mixin">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+              </div>
+              <pre class="docs-code"><code class="css">@mixin template-menu-style($parent, $bg, $color: null, $active-color: null, $border: null, $active-bg: null)</code></pre>
+            </div>
+          </div>
+
+          <div class="doc-example">
+            <div class="doc-example-content" data-label="Usage">
+              <div class="doc-clipboard">
+                <button type="button" class="btn-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard">Copy</button>
+              </div>
+              <pre class="docs-code"><code class="css">@include template-menu-style('.bg-menu-theme', #fff, $color: #99a3b5, $active-color: $body-color, $active-bg: #f0f1f3);</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/ Menu Theme -->
+
+      <!--  Variables -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="menu-variables" class="anchor-heading fw-bold mt-6">Variables</h4>
+          <p>Refer the table given below for all the variables of Menu</p>
+          <table class="table table-bordered doc-table mt-4">
+            <thead>
+              <tr>
+                <th scope="col">Variable</th>
+                <th scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">
+                  <code class="scss">$menu-width</code>
+                </td>
+                <td>Variable for menu width</td>
+              </tr>
+              <tr>
+                <td scope="row">
+                  <code class="scss">$menu-font-size</code>
+                </td>
+                <td>Variable for menu font size</td>
+              </tr>
+              <tr>
+                <td scope="row">
+                  <code class="scss">$menu-collapsed-width</code>
+                </td>
+                <td>Variable for collapsed menu width</td>
+              </tr>
+              <tr>
+                <td scope="row">
+                  <code class="scss">$menu-item-spacer</code>
+                </td>
+                <td>Variable for menu item spacer</td>
+              </tr>
+              <tr>
+                <td scope="row">
+                  <code class="scss">$menu-vertical-link-padding-y</code>
+                </td>
+                <td>Variable for vertical menu item top & bottom padding</td>
+              </tr>
+              <tr>
+                <td scope="row">
+                  <code class="scss">$menu-vertical-link-padding-x</code>
+                </td>
+                <td>Variable for vertical menu item left & right padding</td>
+              </tr>
+              <tr>
+                <td scope="row">
+                  <code class="scss">$menu-vertical-menu-link-padding-y</code>
+                </td>
+                <td>Variable for vertical menu link top & bottom padding</td>
+              </tr>
+              <tr>
+                <td scope="row">
+                  <code class="scss">$menu-vertical-menu-level-spacer</code>
+                </td>
+                <td>Variable for vertical menu level spacer</td>
+              </tr>
+              <tr>
+                <td scope="row">
+                  <code class="scss">$menu-horizontal-link-padding-y</code>
+                </td>
+                <td>Variable for horizontal menu item top & bottom padding</td>
+              </tr>
+              <tr>
+                <td scope="row">
+                  <code class="scss">$menu-horizontal-link-padding-x</code>
+                </td>
+                <td>Variable for horizontal menu item left & right padding</td>
+              </tr>
+              <tr>
+                <td scope="row">
+                  <code class="scss">$menu-horizontal-menu-link-padding-y</code>
+                </td>
+                <td>Variable for horizontal menu link top & bottom padding</td>
+              </tr>
+              <tr>
+                <td scope="row">
+                  <code class="scss">$menu-horizontal-menu-level-spacer</code>
+                </td>
+                <td>Variable for horizontal menu level spacer</td>
+              </tr>
+              <tr>
+                <td scope="row">
+                  <code class="scss">$menu-sub-width</code>
+                </td>
+                <td>Variable for submenu width</td>
+              </tr>
+              <tr>
+                <td scope="row">
+                  <code class="scss">$menu-control-width</code>
+                </td>
+                <td>Variable for control width</td>
+              </tr>
+              <tr>
+                <td scope="row">
+                  <code class="scss">$menu-control-arrow-size</code>
+                </td>
+                <td>Variable for menu arrow size</td>
+              </tr>
+              <tr>
+                <td scope="row">
+                  <code class="scss">$menu-icon-expanded-width</code>
+                </td>
+                <td>Variable for expanded menu width</td>
+              </tr>
+              <tr>
+                <td scope="row">
+                  <code class="scss">$menu-icon-expanded-font-size</code>
+                </td>
+                <td>Variable for expanded menu font size</td>
+              </tr>
+              <tr>
+                <td scope="row">
+                  <code class="scss">$menu-icon-expanded-spacer</code>
+                </td>
+                <td>Variable for expanded menu spacer</td>
+              </tr>
+              <tr>
+                <td scope="row">
+                  <code class="scss">$menu-animation-duration</code>
+                </td>
+                <td>Variable for menu animation duration</td>
+              </tr>
+              <tr>
+                <td scope="row">
+                  <code class="scss">$menu-max-levels</code>
+                </td>
+                <td>Variable for menu max levels</td>
+              </tr>
+              <tr>
+                <td scope="row">
+                  <code class="scss">$menu-dark-border-color</code>
+                </td>
+                <td>Variable for light menu border color</td>
+              </tr>
+              <tr>
+                <td scope="row">
+                  <code class="scss">$menu-dark-menu-bg</code>
+                </td>
+                <td>Variable for dark menu bg color</td>
+              </tr>
+              <tr>
+                <td scope="row">
+                  <code class="scss">$menu-light-border-color</code>
+                </td>
+                <td>Variable for light menu border color</td>
+              </tr>
+              <tr>
+                <td scope="row">
+                  <code class="scss">$menu-light-menu-bg</code>
+                </td>
+                <td>Variable for light menu bg color</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- / Variables -->
+    </div>
+
+    <div class="d-none d-xl-block col-xl-2 doc-sidebar container-p-y">
+      <nav id="vertical-nav" class="navbar p-0">
+        <ul class="doc-sidebar-nav">
+          <li class="doc-entry doc-h2"><a class="nav-link" href="#menu-usage">Menu Usage</a></li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#menu-initialization-options">initialization Options</a>
+          </li>
+          <li class="doc-entry doc-h2"><a class="nav-link" href="#menu-hooks">Hooks</a></li>
+          <li class="doc-entry doc-h2"><a class="nav-link" href="#basic-menu">Basic Menu</a></li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#menu-elements">Menu Elements</a>
+          </li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#without-accordion">Without Accordion</a>
+          </li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#without-animation">Without- Animation</a>
+          </li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#menu-theme">Menu Theme</a>
+          </li>
+          <li class="doc-entry doc-h2">
+            <a class="nav-link" href="#menu-variables">Variables</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+          <!-- / Content -->
+
+          
+            <footer class="content-footer footer">
+  <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center text-center py-4">
+    <div>
+      &#169; 2017-
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      
+        <a href="https://pixinvent.com" class="footer-text fw-medium" target="_blank">Pixinvent</a>, Hand-crafted & Made with â¤ï¸
+      
+    </div>
+    <div>
+      
+        <a href="https://www.facebook.com/pixinvents/" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-facebook"></i></a>
+      
+      
+        <a href="https://x.com/pixinvents" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-twitter"></i></a>
+      
+      
+        <a href="https://github.com/pixinvent" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-github"></i></a>
+      
+      
+        <a href="https://dribbble.com/pixinvent" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-dribbble"></i></a>
+      
+      
+        <a href="https://www.instagram.com/pixinvents/" class="footer-link me-4" target="_blank"><i class="icon-base ti tabler-brand-instagram"></i></a>
+      
+    </div>
+  </div>
+</footer>
+
+          
+        </div>
+        <!-- Content wrapper -->
+      </div>
+      <!-- / Layout page -->
+    </div>
+
+    
+      
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    
+    <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+    <div class="drag-target"></div>
+  </div>
+  <!-- / Layout wrapper -->
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="assets/vendor/libs/highlight/highlight.js"></script>
+    <script src="assets/vendor/libs/clipboard/clipboard.js"></script>
+    
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/vendor/libs/node-waves/node-waves.js"></script>
+    <script src="assets/vendor/libs/@algolia/autocomplete-js.js"></script>
+    <script src="assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="assets/vendor/js/menu.js"></script>
+    <!-- Vendors JS -->
+    
+
+    <!-- Page JS -->
+    <script src="assets/js/docs.js"></script>
+    <script src="assets/js/ui-menu.js"></script>
+  </body>
+</html>
+
+  <!-- beautify ignore:end -->
+
